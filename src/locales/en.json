@@ -1,0 +1,11 @@
+{
+    "navbar": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "cv": "Resume",
+      "contact": "Contact"
+    },
+    "footer": {
+      "rights": "Ersen FİLİZ Presents with Respect. All rights reserved."
+    }
+  }  

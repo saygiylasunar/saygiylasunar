@@ -1,0 +1,11 @@
+{
+    "navbar": {
+      "home": "Anasayfa",
+      "portfolio": "Portfolyo",
+      "cv": "Özgeçmiş",
+      "contact": "İletişim"
+    },
+    "footer": {
+      "rights": "Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır."
+    }
+  }  
