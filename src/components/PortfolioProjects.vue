@@ -1,86 +1,111 @@
 <template>
-    <div class="carousel-container">
-      <h2>Projelerim</h2>
-      <div class="carousel">
+    <section class="section" id="portfolio">
+      <h2 class="section-title">{{ $t("portfolio.title") }}</h2>
+      <div class="projects-wrapper">
         <div
-          class="card"
-          v-for="(project, index) in projects"
-          :key="index"
-          :style="{ transform: `rotateY(${angle * (index - current)}deg) translateZ(300px)` }"
+          v-for="project in projects"
+          :key="project.title"
+          class="project-card"
+          @click="openGallery(project)"
         >
-          <img :src="project.image" alt="project" />
+          <img :src="project.images[0]" :alt="project.title" />
           <h3>{{ project.title }}</h3>
           <p>{{ project.desc }}</p>
         </div>
       </div>
-      <div class="controls">
-        <button @click="prev">←</button>
-        <button @click="next">→</button>
-      </div>
-    </div>
+  
+      <GalleryModal
+        v-if="activeProject"
+        v-model="showModal"
+        :images="activeProject.images"
+        :title="activeProject.title"
+        :id="activeProject.title"
+      />
+    </section>
   </template>
   
   <script setup>
   import { ref } from 'vue'
+  import GalleryModal from './GalleryModal.vue'
   
-  const current = ref(0)
-  const angle = 360 / 5 // 5 kartlık döngü
+  const showModal = ref(false)
+  const activeProject = ref(null)
   
   const projects = [
-    { title: 'AI Poster Generator', desc: 'Yapay zeka destekli görsel üretim aracı', image: '/placeholder.svg' },
-    { title: 'Gradio Tool Set', desc: 'Python + UI araçları', image: '/placeholder.svg' },
-    { title: 'Brand Identity Kit', desc: 'Kurumsal kimlik tasarımları', image: '/placeholder.svg' },
-    { title: 'Müzik & Şiir Serisi', desc: 'Sanat üretimleri', image: '/placeholder.svg' },
-    { title: 'Saygıyla Sunar Web', desc: 'Bu portfolyo sitesi', image: '/placeholder.svg' }
+    {
+      title: 'AI Poster Generator',
+      desc: 'Yapay zeka destekli görsel üretim aracı',
+      images: [
+        '/portfolio/ai-poster-generator-1.jpg',
+        '/portfolio/ai-poster-generator-2.jpg'
+      ]
+    },
+    {
+      title: 'Gradio Tool Set',
+      desc: 'Python + UI araçları',
+      images: ['/portfolio/gradio-tool-set-1.jpg']
+    },
+    {
+      title: 'Brand Identity Kit',
+      desc: 'Kurumsal kimlik tasarımları',
+      images: ['/portfolio/brand-kit.jpg']
+    }
   ]
   
-  function prev() {
-    current.value = (current.value - 1 + projects.length) % projects.length
-  }
-  
-  function next() {
-    current.value = (current.value + 1) % projects.length
+  function openGallery(project) {
+    activeProject.value = project
+    showModal.value = true
   }
   </script>
   
   <style scoped>
-  .carousel-container {
+  .section-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2rem;
+    color: var(--color-accent);
     text-align: center;
   }
   
-  .carousel {
-    perspective: 1000px;
-    height: 300px;
-    margin: 2rem auto;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-  }
-  
-  .card {
-    width: 220px;
-    height: 280px;
-    position: absolute;
-    top: 0;
-    left: calc(50% - 110px);
-    transform-origin: center;
-    transition: transform 0.5s;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-  }
-  
-  img {
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .controls {
-    margin-top: 1rem;
+  .projects-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
-    gap: 1rem;
+  }
+  
+  .project-card {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    padding: 1rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+  }
+  
+  .project-card h3 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-medium);
+    margin: 0.5rem 0;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
   }
   </style>  
