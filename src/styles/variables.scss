@@ -1,10 +1,41 @@
 :root {
-    --color-primary: #7d4fff;
-    --color-secondary: #f4a261;
-    --color-background: #ffffff;
-    --color-background-dark: #1e1e1e;
-    --color-text: #111111;
-    --color-text-light: #ffffff;
-  
-    --transition: 0.3s ease-in-out;
-  }  
+  /* Font Ayarları */
+  --font-main: 'all-round-gothic', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Boyutlar */
+  --font-size-base: 16px;
+  --border-radius: 8px;
+
+  /* Light Tema */
+  --color-background: #ffffff;
+  --color-surface: #f7f7f7;
+  --color-text: #222;
+  --color-text-secondary: #555;
+  --color-border: #ddd;
+
+  --color-accent: #7f5af0;
+  --color-accent-light: #b5a7f2;
+  --color-success: #28a745;
+  --color-error: #dc3545;
+
+  /* Reactions */
+  --reaction-like: #ff4d6d;
+  --reaction-star: #ffc107;
+  --reaction-clap: #17a2b8;
+  --reaction-fire: #ff5722;
+}
+
+/* Dark tema destekli */
+[data-theme='dark'] {
+  --color-background: #111;
+  --color-surface: #1a1a1a;
+  --color-text: #f0f0f0;
+  --color-text-secondary: #aaa;
+  --color-border: #333;
+
+  --color-accent: #a992ff;
+  --color-accent-light: #d3c8fa;
+}
