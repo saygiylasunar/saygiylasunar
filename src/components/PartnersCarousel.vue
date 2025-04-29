@@ -1,66 +1,82 @@
 <template>
-    <div class="partners-carousel">
-      <h2>İş Ortakları & Referanslar</h2>
-      <div class="logo-track">
-        <div class="logo-slide" v-for="(partner, index) in repeatedPartners" :key="index">
-          <img :src="partner.logo" :alt="partner.name" />
-          <p>{{ partner.name }}</p>
+    <section class="section" id="partners">
+      <h2 class="section-title">{{ $t("partners.title") }}</h2>
+  
+      <div class="carousel-wrapper">
+        <div class="carousel-track" :style="{ animationDuration: speed + 's' }">
+          <div
+            v-for="partner in partners"
+            :key="partner.name"
+            class="partner-logo"
+          >
+            <img :src="partner.logo" :alt="partner.name" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </template>
   
   <script setup>
-  // Gerçek projede logolar src/assets/ veya public/ içinde tutulabilir
-  const partners = [
-    { name: 'OpenAI', logo: '/placeholder.svg' },
-    { name: 'İstanbul Tech Hub', logo: '/placeholder.svg' },
-    { name: 'ArtHive Studio', logo: '/placeholder.svg' },
-    { name: 'BİLSEM & STK İşbirlikleri', logo: '/placeholder.svg' }
-  ]
+  import { ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
   
-  // Carousel döngüsünü oluşturmak için partner listesini 2x tekrar et
-  const repeatedPartners = [...partners, ...partners]
+  const { t } = useI18n()
+  
+  const partners = ref([
+    { name: 'Partner 1', logo: '/partners/partner1.png' },
+    { name: 'Partner 2', logo: '/partners/partner2.png' },
+    { name: 'Partner 3', logo: '/partners/partner3.png' },
+    { name: 'Partner 4', logo: '/partners/partner4.png' }
+  ])
+  
+  const speed = 30 // Carousel'in dönme süresi (saniye cinsinden)
   </script>
   
   <style scoped>
-  .partners-carousel {
+  .section-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-wrapper {
     overflow: hidden;
-    background: #fafafa;
-    padding: 2rem 0;
-    text-align: center;
+    width: 100%;
+    background: var(--color-surface);
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
   
-  .logo-track {
+  .carousel-track {
     display: flex;
-    width: max-content;
-    animation: scroll 20s linear infinite;
-    gap: 3rem;
-    align-items: center;
+    width: fit-content;
+    animation: scroll infinite linear;
+    gap: 4rem;
   }
   
-  .logo-slide {
+  .partner-logo {
     flex: 0 0 auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .logo-slide img {
-    width: 80px;
-    height: auto;
-    filter: grayscale(100%);
+  .partner-logo img {
+    height: 60px;
+    max-width: 120px;
+    object-fit: contain;
+    filter: brightness(0) invert(0);
     transition: filter 0.3s;
   }
   
-  .logo-slide img:hover {
-    filter: grayscale(0%);
+  .partner-logo img:hover {
+    filter: brightness(1) invert(0.2) sepia(0.5) saturate(3) hue-rotate(200deg);
   }
   
-  .logo-slide p {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
+  /* Sonsuz kaydırma animasyonu */
   @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }

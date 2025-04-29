@@ -1,55 +1,92 @@
 <template>
-    <div class="events-grid">
-      <h2>Etkinliklerden Kareler</h2>
-      <div class="grid">
+    <section class="section" id="events">
+      <h2 class="section-title">{{ $t("events.title") }}</h2>
+  
+      <div class="events-grid">
         <div
-          class="item"
-          v-for="(media, index) in events"
-          :key="index"
+          v-for="event in events"
+          :key="event.title"
+          class="event-card"
         >
-          <template v-if="media.type === 'image'">
-            <img :src="media.src" alt="event image" />
-          </template>
-          <template v-else-if="media.type === 'video'">
-            <video controls :src="media.src"></video>
-          </template>
-          <p>{{ media.desc }}</p>
+          <img :src="event.image" :alt="event.title" />
+          <div class="event-info">
+            <h3>{{ event.title }}</h3>
+            <p>{{ event.desc }}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </template>
   
   <script setup>
-  const events = [
-    { type: 'image', src: '/placeholder.svg', desc: 'AI Konferansı 2024' },
-    { type: 'video', src: '/media/sample.mp4', desc: 'Sunumdan kısa bir kesit' },
-    { type: 'image', src: '/placeholder.svg', desc: 'Tech Meetup 2023' },
-    { type: 'image', src: '/placeholder.svg', desc: 'Atölye Çalışması' }
-  ]
+  import { ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
+  
+  const { t } = useI18n()
+  
+  const events = ref([
+    {
+      title: 'AI Konferansı 2024',
+      desc: 'Yapay zeka etkinliğinden kareler.',
+      image: '/events/ai-konferansi.jpg'
+    },
+    {
+      title: 'UX Meetup 2023',
+      desc: 'Kullanıcı deneyimi üzerine bir buluşma.',
+      image: '/events/ux-meetup.jpg'
+    }
+  ])
   </script>
   
   <style scoped>
-  .events-grid {
+  .section-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent);
     text-align: center;
-    padding: 2rem 0;
+    margin-bottom: 2rem;
   }
   
-  .grid {
+  .events-grid {
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
   }
   
-  .item {
-    border: 1px solid #ddd;
-    border-radius: 6px;
+  .event-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .event-info {
     padding: 1rem;
-    background: white;
   }
   
-  img, video {
-    max-width: 100%;
-    border-radius: 4px;
+  .event-info h3 {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+  
+  .event-info p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
   }
   </style>  

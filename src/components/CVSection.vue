@@ -1,119 +1,120 @@
 <template>
-    <div class="cv-section">
-      <div class="tabs">
-        <button
-          v-for="(tab, index) in categories"
-          :key="index"
-          :class="{ active: activeTab === index }"
-          @click="activeTab = index"
-        >
-          {{ tab.title }}
-        </button>
-      </div>
+    <section class="section" id="cv">
+      <h2 class="section-title">{{ $t("cv.title") }}</h2>
   
-      <div class="content-grid">
+      <div class="accordion">
         <div
-          v-for="(item, i) in categories[activeTab].items"
-          :key="i"
-          class="card"
+          v-for="category in cvCategories"
+          :key="category.title"
+          class="accordion-item"
         >
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.desc }}</p>
-          <span class="tag">{{ item.tag }}</span>
+          <button class="accordion-header" @click="toggle(category)">
+            {{ category.title }}
+          </button>
+  
+          <div
+            class="accordion-body"
+            v-show="category.open"
+          >
+            <div
+              class="cv-card"
+              v-for="item in category.items"
+              :key="item.title"
+            >
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.detail }}</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </template>
   
   <script setup>
   import { ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
   
-  const activeTab = ref(0)
+  const { t } = useI18n()
   
-  const categories = [
+  const cvCategories = ref([
     {
-      title: 'Eğitim',
+      title: t('cv.education'),
+      open: true,
       items: [
-        { title: 'Bilgisayar Mühendisliği', desc: 'Üniversite', tag: '2020 - 2024' },
-        { title: 'Lise', desc: 'Fen Bilimleri Anadolu Lisesi', tag: '2016 - 2020' }
+        { title: 'İstanbul Üniversitesi', detail: 'Bilgisayar Mühendisliği, 2020 - 2024' }
       ]
     },
     {
-      title: 'İş Deneyimi',
+      title: t('cv.experience'),
+      open: false,
       items: [
-        { title: 'Frontend Developer', desc: 'XYZ Ajansı', tag: '2023 - Devam' }
-      ]
-    },
-    {
-      title: 'Sivil Toplum',
-      items: [
-        { title: 'Yapay Zeka Topluluğu', desc: 'Kurucu / Mentor', tag: '2022 -' }
-      ]
-    },
-    {
-      title: 'Projeler & Yayınlar',
-      items: [
-        { title: 'Saygıyla Sunar', desc: 'Kişisel marka & portfolyo', tag: '2024' }
-      ]
-    },
-    {
-      title: 'Organizasyonlar',
-      items: [
-        { title: 'TechFest 2024', desc: 'Panelist & Atölye Sunumu', tag: '2024' }
-      ]
-    },
-    {
-      title: 'Yetkinlikler',
-      items: [
-        { title: 'Vue / Angular / JS', desc: 'Frontend Geliştirme', tag: 'Uzmanlık' },
-        { title: 'Gradio / Python', desc: 'AI araçları & Otomasyon', tag: 'İleri Düzey' }
+        { title: 'Frontend Developer', detail: 'ABC Teknoloji, 2023 - ...' }
       ]
     }
-  ]
+  ])
+  
+  function toggle(cat) {
+    cat.open = !cat.open
+  }
   </script>
   
   <style scoped>
-  .cv-section {
+  .section-title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .accordion {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .tabs {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .tabs button {
-    background: none;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-  }
-  
-  .tabs .active {
-    border-bottom: 2px solid var(--color-primary);
-  }
-  
-  .content-grid {
-    display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
   
-  .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    background: white;
+  .accordion-header {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight-medium);
+    font-size: 1rem;
+    text-align: left;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  .tag {
-    font-size: 0.75rem;
-    color: var(--color-secondary);
+  .accordion-header:hover {
+    background: var(--color-accent-light);
+  }
+  
+  .accordion-body {
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--color-accent);
+    background: var(--color-background);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+  
+  .cv-card {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .cv-card:last-child {
+    border-bottom: none;
+  }
+  
+  .cv-card h3 {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-medium);
+    margin: 0 0 0.5rem;
+  }
+  
+  .cv-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin: 0;
   }
   </style>  
