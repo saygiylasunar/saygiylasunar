@@ -1,98 +1,149 @@
 <template>
-    <div class="floating-form">
-      <button class="toggle-btn" @click="toggleForm">
-        {{ isOpen ? '✖' : '✉️' }}
-      </button>
+    <div class="form-float-button" @click="toggleModal">
+      ✉️
+    </div>
   
-      <div v-if="isOpen" class="form-wrapper">
-        <form
-          action="https://formspree.io/f/xnndjjzl"
-          method="POST"
-          @submit.prevent="handleSubmit"
-        >
-          <input type="text" name="name" placeholder="Adınız" required />
-          <input type="email" name="email" placeholder="E-posta" required />
-          <textarea name="message" placeholder="Mesajınız" required></textarea>
+    <div v-if="showModal" class="form-modal-backdrop" @click.self="toggleModal">
+      <div class="form-modal-content">
+        <h2>{{ $t("contact.title") }}</h2>
+        <form @submit.prevent="submitForm">
+          <input type="text" v-model="form.name" :placeholder="$t('contact.name')" required />
+          <input type="email" v-model="form.email" :placeholder="$t('contact.email')" required />
+          <textarea v-model="form.message" :placeholder="$t('contact.message')" required></textarea>
   
-          <!-- Captcha yerine basit bir doğrulama örneği (reCAPTCHA entegresi istenirse eklenebilir) -->
-          <input type="checkbox" required /> <label>Robot değilim</label>
-  
-          <button type="submit">Gönder</button>
+          <button type="submit">{{ $t("contact.send") }}</button>
         </form>
   
-        <div v-if="feedback" class="popup">
-          {{ feedback }}
-        </div>
+        <button class="close-btn" @click="toggleModal">✖</button>
       </div>
     </div>
   </template>
   
   <script setup>
   import { ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
   
-  const isOpen = ref(false)
-  const feedback = ref('')
+  const { t } = useI18n()
   
-  function toggleForm() {
-    isOpen.value = !isOpen.value
-    feedback.value = ''
+  const showModal = ref(false)
+  const form = ref({
+    name: '',
+    email: '',
+    message: ''
+  })
+  
+  function toggleModal() {
+    showModal.value = !showModal.value
   }
   
-  function handleSubmit(e) {
-    const form = e.target
-    const data = new FormData(form)
+  async function submitForm() {
+    try {
+      const response = await fetch('https://formspree.io/f/xnndjjzl', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form.value)
+      })
   
-    fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { Accept: 'application/json' }
-    }).then(response => {
       if (response.ok) {
-        feedback.value = 'Mesajınız başarıyla gönderildi!'
-        form.reset()
+        alert(t('contact.success'))
+        form.value = { name: '', email: '', message: '' }
+        showModal.value = false
       } else {
-        feedback.value = 'Gönderimde bir hata oluştu.'
+        alert(t('contact.error'))
       }
-    })
+    } catch (error) {
+      console.error(error)
+      alert(t('contact.error'))
+    }
   }
   </script>
   
   <style scoped>
-  .floating-form {
+  .form-float-button {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    z-index: 999;
-  }
-  
-  .toggle-btn {
+    background: var(--color-accent);
+    color: #fff;
     font-size: 1.5rem;
-    padding: 0.75rem;
-    background: var(--color-primary);
-    color: white;
-    border: none;
+    padding: 0.8rem;
     border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     cursor: pointer;
+    z-index: 10000;
+    transition: background-color 0.3s;
   }
   
-  .form-wrapper {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin-top: 1rem;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  .form-float-button:hover {
+    background: var(--color-accent-light);
+  }
+  
+  .form-modal-backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .form-modal-content {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    color: var(--color-text);
   }
   
   form {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
   }
   
-  .popup {
-    margin-top: 1rem;
-    color: green;
-    font-weight: 500;
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  button[type="submit"] {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.8rem;
+    font-weight: var(--font-weight-bold);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background: var(--color-accent-light);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
   }
   </style>  
