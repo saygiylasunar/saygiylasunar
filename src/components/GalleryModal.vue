@@ -2,7 +2,7 @@
     <div v-if="visible" class="modal-backdrop" @click.self="close">
       <div class="modal-content">
         <div class="carousel">
-          <img :src="currentImage" :alt="currentTitle" class="carousel-image" />
+          <img :src="currentImage" :alt="currentTitle" class="carousel-image" loading="lazy" />
           <button class="nav-btn left" @click="prev">←</button>
           <button class="nav-btn right" @click="next">→</button>
         </div>

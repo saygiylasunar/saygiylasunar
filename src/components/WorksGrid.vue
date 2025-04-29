@@ -8,7 +8,7 @@
           :key="work.title"
           class="work-card"
         >
-          <img :src="work.image" :alt="work.title" />
+          <img :src="work.image" :alt="work.title" loading="lazy" />
           <h3>{{ work.title }}</h3>
           <p>{{ work.description }}</p>
         </div>

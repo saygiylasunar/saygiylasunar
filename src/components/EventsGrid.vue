@@ -8,7 +8,7 @@
           :key="event.title"
           class="event-card"
         >
-          <img :src="event.image" :alt="event.title" />
+          <img :src="event.image" :alt="event.title" loading="lazy" />
           <div class="event-info">
             <h3>{{ event.title }}</h3>
             <p>{{ event.desc }}</p>

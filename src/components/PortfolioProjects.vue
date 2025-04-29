@@ -8,7 +8,7 @@
           class="project-card"
           @click="openGallery(project)"
         >
-          <img :src="project.images[0]" :alt="project.title" />
+          <img :src="project.images[0]" :alt="project.title" loading="lazy" />
           <h3>{{ project.title }}</h3>
           <p>{{ project.desc }}</p>
         </div>
