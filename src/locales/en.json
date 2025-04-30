@@ -1,11 +1,137 @@
 {
-    "navbar": {
-      "home": "Home",
-      "portfolio": "Portfolio",
-      "cv": "Resume",
-      "contact": "Contact"
+  "navbar": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "cv": "Resume",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "Ersen FİLİZ Presents With Respect. All rights reserved. © 2025"
+  },
+  "categoryHub": {
+    "question": "What am I working on?"
+  },
+  "categories": {
+    "strategy": {
+      "title": "Strategy & Organizational Management",
+      "description": "Builds structures for sustainable solutions and enhances process efficiency."
     },
-    "footer": {
-      "rights": "Ersen FİLİZ Presents with Respect. All rights reserved."
+    "design": {
+      "title": "Digital and Visual Design Production",
+      "description": "Produces visual communication designs in areas like graphics, UI/UX, and social media."
+    },
+    "ai": {
+      "title": "AI-Powered Content Creation and Automation",
+      "description": "Provides AI-enhanced text, visual, and workflow generation."
+    },
+    "education": {
+      "title": "Education, Mentorship, and Knowledge Sharing",
+      "description": "Contributes through personal development, consulting, and collective learning practices."
+    },
+    "r_and_d": {
+      "title": "Research and Development (R&D)",
+      "description": "Involves projects focused on experimental production, testing, and analysis."
+    },
+    "it": {
+      "title": "IT / Information Systems and Technical Support",
+      "description": "Provides support for technical issues, setup, integration, and security."
     }
-  }  
+  },
+  "designSub": {
+    "graphic": {
+      "title": "Graphic Design",
+      "description": "Includes brand identity, posters, book covers, and creative compositions."
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "Develops user-centered interfaces and experience designs."
+    },
+    "identity": {
+      "title": "Corporate Identity",
+      "description": "Designs logos, color palettes, typography, and a consistent brand language."
+    },
+    "social": {
+      "title": "Social Media Content Design",
+      "description": "Creates aesthetic and functional visuals tailored to digital platforms."
+    },
+    "presentation": {
+      "title": "Presentation Design",
+      "description": "Prepares persuasive, clean, and purpose-driven presentations or pitch decks."
+    }
+  },
+  "cv": {
+    "education": {
+      "title": "Education",
+      "description": "My academic background and educational journey."
+    },
+    "experience": {
+      "title": "Work Experience",
+      "description": "Organizations and positions where I contributed."
+    },
+    "volunteer": {
+      "title": "Non-Profit Organizations",
+      "description": "Social responsibility and volunteering projects I participated in."
+    },
+    "projects": {
+      "title": "Projects and Publications",
+      "description": "Projects I contributed to and the publications I produced."
+    },
+    "academic": {
+      "title": "Academic Works and Organizations",
+      "description": "Scientific activities and events I organized or participated in."
+    },
+    "skills": {
+      "title": "Skills / Competencies",
+      "description": "My technical, creative, and communication abilities."
+    },
+    "details": {
+    }
+  },
+  "form": {
+  "name": "Name",
+  "email": "Email",
+  "message": "Your Message",
+  "send": "Send",
+  "namePlaceholder": "Enter your name",
+  "emailPlaceholder": "Enter your email",
+  "messagePlaceholder": "Write your message here",
+  "success": "Your message has been sent successfully!"
+},
+"cookie": {
+  "message": "This site uses cookies to ensure you get the best experience.",
+  "accept": "Accept"
+},
+"events": {
+  "title": "Events",
+  "description": "Snapshots from events I participated in.",
+  "items": [
+    {
+      "title": "Open Camp",
+      "description": "A moment from motivational camp sessions.",
+      "image": "/assets/events/kamp1.jpg"
+    }
+  ]
+},
+"footer": {
+  "rights": "Ersen FİLİZ Saygıyla Sunar. All rights reserved. © 2025"
+},
+"partners": {
+  "title": "İş Ortakları / Referanslar",
+  "description": "Birlikte çalışmaktan onur duyduğum kurumlar:",
+  "items": [
+    {
+      "name": "Beyaz Önlüklüler Derneği",
+      "logo": "/assets/logos/bod.svg"
+    },
+    {
+      "name": "SİYAMDER",
+      "logo": "/assets/logos/siyamder.svg"
+    },
+    {
+      "name": "Selçuk Üniversitesi",
+      "logo": "/assets/logos/selcuk.svg"
+    }
+  ]
+}
+
+}

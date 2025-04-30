@@ -1,62 +1,66 @@
 <template>
-    <section class="section" id="cv">
-      <h2 class="section-title">{{ $t("cv.title") }}</h2>
-  
-      <div class="accordion">
-        <div
-          v-for="category in cvCategories"
-          :key="category.title"
-          class="accordion-item"
-        >
-          <button class="accordion-header" @click="toggle(category)">
-            {{ category.title }}
-          </button>
-  
+  <section class="section" id="cv">
+    <!-- Başlık i18n'den çekiliyor -->
+    <h2 class="section-title">{{ $t("cv.title") || "CV" }}</h2>
+
+    <div class="accordion">
+      <!-- Anahtarlar üzerinden her CV bölümü döngüye alınıyor -->
+      <div
+        v-for="(key, index) in cvKeys"
+        :key="key"
+        class="accordion-item"
+      >
+        <!-- Başlıklar her key'e göre dinamik ve çok dilli -->
+        <button class="accordion-header" @click="toggle(index)">
+          {{ $t(`cv.${key}.title`) }}
+        </button>
+
+        <!-- Accordion içeriği sadece açık olan index için gösterilir -->
+        <div class="accordion-body" v-show="openIndex === index">
+          <!-- Alt içerik, JSON'dan $t ile çekiliyor -->
           <div
-            class="accordion-body"
-            v-show="category.open"
+            class="cv-card"
+            v-for="(item, idx) in $t(`cv.details.${key}`)"
+            :key="idx"
           >
-            <div
-              class="cv-card"
-              v-for="item in category.items"
-              :key="item.title"
-            >
-              <h3>{{ item.title }}</h3>
-              <p>{{ item.detail }}</p>
-            </div>
+            <!-- Farklı veri yapıları için esnek başlık tanımı -->
+            <h3>{{ item.title || item.school || item.institution || item.organization || item.event }}</h3>
+
+            <!-- Detay alanı dinamik -->
+            <p>{{ item.detail || item.department || item.role }}</p>
+
+            <!-- Tarih / süre bilgisi varsa göster -->
+            <p v-if="item.date || item.dates || item.duration || item.year">
+              <em>{{ item.date || item.dates || item.duration || item.year }}</em>
+            </p>
           </div>
         </div>
       </div>
-    </section>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  
-  const { t } = useI18n()
-  
-  const cvCategories = ref([
-    {
-      title: t('cv.education'),
-      open: true,
-      items: [
-        { title: 'İstanbul Üniversitesi', detail: 'Bilgisayar Mühendisliği, 2020 - 2024' }
-      ]
-    },
-    {
-      title: t('cv.experience'),
-      open: false,
-      items: [
-        { title: 'Frontend Developer', detail: 'ABC Teknoloji, 2023 - ...' }
-      ]
-    }
-  ])
-  
-  function toggle(cat) {
-    cat.open = !cat.open
-  }
-  </script>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+// i18n çeviri anahtarlarını temel alan sıralı kategori listesi
+const cvKeys = [
+  'education',
+  'experience',
+  'volunteer',
+  'skills',
+  'projects',
+  'academic'
+]
+
+// Accordion açık/kapalı durumunu kontrol eder
+const openIndex = ref(0)
+
+// Tıklanınca aç/kapat mantığı
+const toggle = (index) => {
+  openIndex.value = openIndex.value === index ? -1 : index
+}
+</script>
   
   <style scoped>
   .section-title {

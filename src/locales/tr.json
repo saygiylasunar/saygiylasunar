@@ -1,11 +1,137 @@
 {
-    "navbar": {
-      "home": "Anasayfa",
-      "portfolio": "Portfolyo",
-      "cv": "Özgeçmiş",
-      "contact": "İletişim"
+  "navbar": {
+    "home": "Anasayfa",
+    "portfolio": "Portfolyo",
+    "cv": "Özgeçmiş",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "rights": "Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır. © 2025"
+  },
+  "categoryHub": {
+    "question": "Ne üzerine çalışıyorum?"
+  },
+  "categories": {
+    "strategy": {
+      "title": "Strateji & Organizasyonel Yönetim",
+      "description": "Süreç verimliliğini artıran, sürdürülebilir çözümler için yapı kurar."
     },
-    "footer": {
-      "rights": "Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır."
+    "design": {
+      "title": "Dijital ve Görsel Tasarım Üretimi",
+      "description": "Grafik, UI/UX ve sosyal medya gibi alanlarda görsel iletişim tasarımı üretir."
+    },
+    "ai": {
+      "title": "Yapay Zeka Destekli İçerik Üretimi ve Otomasyon",
+      "description": "AI ile zenginleştirilmiş metin, görsel ve iş akışı üretimi sağlar."
+    },
+    "education": {
+      "title": "Eğitim, Mentorluk ve Bilgi Paylaşımı",
+      "description": "Bireysel gelişim, danışmanlık ve kolektif öğrenme pratikleriyle katkı sunar."
+    },
+    "r_and_d": {
+      "title": "Araştırma ve Geliştirme (ARGE)",
+      "description": "Deneysel üretim, test ve çözümleme odaklı projeler içerir."
+    },
+    "it": {
+      "title": "IT / Bilgi İşlem ve Teknik Destek",
+      "description": "Teknik sorunlara çözüm, kurulum, entegrasyon ve güvenlik desteği sağlar."
     }
-  }  
+  },
+  "designSub": {
+    "graphic": {
+      "title": "Grafik Tasarım",
+      "description": "Marka kimliği, afiş, kitap kapağı ve yaratıcı kompozisyonları içerir."
+    },
+    "uiux": {
+      "title": "UI/UX Tasarımı",
+      "description": "Kullanıcı odaklı arayüzler ve deneyim tasarımları geliştirir."
+    },
+    "identity": {
+      "title": "Kurumsal Kimlik",
+      "description": "Logo, renk paleti, yazı karakterleri ve marka dilini bütüncül olarak tasarlar."
+    },
+    "social": {
+      "title": "Sosyal Medya İçerik Tasarımı",
+      "description": "Dijital mecralara uygun estetik ve işlevsel görsel içerikler üretir."
+    },
+    "presentation": {
+      "title": "Sunum Tasarımı",
+      "description": "İkna edici, temiz ve hedef odaklı sunum/pitch deck formatları hazırlar."
+    }
+  },
+  "cv": {
+    "education": {
+      "title": "Eğitim",
+      "description": "Akademik geçmişim ve öğrenim hayatım."
+    },
+    "experience": {
+      "title": "İş Deneyimi",
+      "description": "Çalıştığım kurumlar ve görev aldığım pozisyonlar."
+    },
+    "volunteer": {
+      "title": "Sivil Toplum Kuruluşları",
+      "description": "Yer aldığım sosyal sorumluluk ve gönüllülük projeleri."
+    },
+    "projects": {
+      "title": "Projeler ve Yayınlar",
+      "description": "Katıldığım projeler ve ürettiğim yayınlar."
+    },
+    "academic": {
+      "title": "Akademik Çalışmalar ve Organizasyonlar",
+      "description": "Bilimsel faaliyetler ve düzenlediğim/kattığım organizasyonlar."
+    },
+    "skills": {
+      "title": "Yetkinlikler / Beceriler",
+      "description": "Teknik, yaratıcı ve iletişimsel yeteneklerim."
+    },
+    "details": {
+    }
+  },
+  "form": {
+  "name": "Adınız",
+  "email": "E-posta",
+  "message": "Mesajınız",
+  "send": "Gönder",
+  "namePlaceholder": "Adınızı yazınız",
+  "emailPlaceholder": "E-posta adresiniz",
+  "messagePlaceholder": "Mesajınızı yazınız",
+  "success": "Mesajınız başarıyla gönderildi!"
+},
+"cookie": {
+  "message": "Bu sitede size en iyi deneyimi sunmak için çerezler kullanılır.",
+  "accept": "Kabul Et"
+},
+"events": {
+  "title": "Etkinlikler",
+  "description": "Katıldığım organizasyonlardan görseller.",
+  "items": [
+    {
+      "title": "Açık Kamp Etkinliği",
+      "description": "Motivasyon kamplarından bir kare.",
+      "image": "/assets/events/kamp1.jpg"
+    }
+  ]
+},
+"footer": {
+  "rights": "Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır. © 2025"
+},
+"partners": {
+  "title": "İş Ortakları / Referanslar",
+  "description": "Birlikte çalışmaktan onur duyduğum kurumlar:",
+  "items": [
+    {
+      "name": "Beyaz Önlüklüler Derneği",
+      "logo": "/assets/logos/bod.svg"
+    },
+    {
+      "name": "SİYAMDER",
+      "logo": "/assets/logos/siyamder.svg"
+    },
+    {
+      "name": "Selçuk Üniversitesi",
+      "logo": "/assets/logos/selcuk.svg"
+    }
+  ]
+}
+
+}

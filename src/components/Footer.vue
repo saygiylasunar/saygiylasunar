@@ -1,17 +1,13 @@
 <template>
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">EFS</div>
-
-      <div class="footer-socials">
-        <a href="https://github.com/saygiylasunar" target="_blank" aria-label="GitHub">🐙</a>
-        <a href="https://linkedin.com/in/ersenfiliz" target="_blank" aria-label="LinkedIn">🔗</a>
-        <a href="mailto:saygiylasunar@gmail.com" aria-label="Email">✉️</a>
-      </div>
-
-      <div class="footer-copy">
-        © Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır.
-      </div>
+    <div class="footer-left">
+      <p>{{ $t("footer.rights") }}</p>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:saygiylasunar@gmail.com">📧</a>
+      <a href="https://github.com/ersenfiliz" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/ersenfiliz" target="_blank">LinkedIn</a>
+      <!-- Diğer ikonlar -->
     </div>
   </footer>
 </template>

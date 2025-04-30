@@ -1,22 +1,17 @@
 <template>
-    <section class="section" id="events">
-      <h2 class="section-title">{{ $t("events.title") }}</h2>
-  
-      <div class="events-grid">
-        <div
-          v-for="event in events"
-          :key="event.title"
-          class="event-card"
-        >
-          <img :src="event.image" :alt="event.title" loading="lazy" />
-          <div class="event-info">
-            <h3>{{ event.title }}</h3>
-            <p>{{ event.desc }}</p>
-          </div>
-        </div>
+  <section class="section" id="events">
+    <h2 class="section-title">{{ $t("events.title") }}</h2>
+    <p class="section-sub">{{ $t("events.description") }}</p>
+
+    <div class="events-grid">
+      <div v-for="(event, i) in $t('events.items')" :key="i" class="event-card">
+        <img :src="event.image" :alt="event.title" class="event-image" />
+        <h3>{{ event.title }}</h3>
+        <p>{{ event.description }}</p>
       </div>
-    </section>
-  </template>
+    </div>
+  </section>
+</template>
   
   <script setup>
   import { ref } from 'vue'

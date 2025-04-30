@@ -7,7 +7,7 @@
       <li><a href="#contact">{{ $t("navbar.contact") }}</a></li>
     </ul>
     <div class="toggles">
-      <button @click="$emit('toggleTheme')">🌓</button>
+      <ThemeToggle />
       <button @click="toggleLocale">{{ currentLocale.toUpperCase() }}</button>
     </div>
   </nav>
@@ -16,6 +16,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import ThemeToggle from '../components/ThemeToggle.vue'
 
 const { locale } = useI18n()
 

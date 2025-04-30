@@ -2,7 +2,7 @@
     <div v-if="visible" class="modal-backdrop" @click.self="close">
       <div class="modal-content">
         <div class="carousel">
-          <img :src="currentImage" :alt="currentTitle" class="carousel-image" loading="lazy" />
+          <img :src="currentImage" :alt="currentTitle" class="carousel-image" loading="lazy" @error="onImageError" />
           <button class="nav-btn left" @click="prev">←</button>
           <button class="nav-btn right" @click="next">→</button>
         </div>
@@ -17,7 +17,8 @@
   <script setup>
   import { ref, watch, computed } from 'vue'
   import ReactionBar from './ReactionBar.vue'
-  
+  import maintenanceImage from '@/assets/maintenance.jpg'
+
   const props = defineProps({
     images: Array,
     title: String,
@@ -49,6 +50,10 @@
   function next() {
     currentIndex.value = (currentIndex.value + 1) % props.images.length
   }
+
+  function onImageError(event) {
+  event.target.src = maintenanceImage;
+}
   </script>
   
   <style scoped>

@@ -1,149 +1,119 @@
 <template>
-    <div class="form-float-button" @click="toggleModal">
+  <div class="floating-form">
+    <button @click="isOpen = !isOpen" class="form-toggle">
       ✉️
+    </button>
+
+    <div v-if="isOpen" class="form-popup">
+      <form @submit.prevent="submitForm">
+        <label>
+          {{ $t("form.name") }}
+          <input type="text" v-model="form.name" :placeholder="$t('form.namePlaceholder')" required />
+        </label>
+
+        <label>
+          {{ $t("form.email") }}
+          <input type="email" v-model="form.email" :placeholder="$t('form.emailPlaceholder')" required />
+        </label>
+
+        <label>
+          {{ $t("form.message") }}
+          <textarea v-model="form.message" :placeholder="$t('form.messagePlaceholder')" required></textarea>
+        </label>
+
+        <!-- İsteğe bağlı Captcha alanı -->
+        <!-- <div class="captcha">[CAPTCHA]</div> -->
+
+        <button type="submit" class="submit-btn">
+          {{ $t("form.send") }}
+        </button>
+
+        <p v-if="submitted" class="success-message">
+          {{ $t("form.success") }}
+        </p>
+      </form>
     </div>
-  
-    <div v-if="showModal" class="form-modal-backdrop" @click.self="toggleModal">
-      <div class="form-modal-content">
-        <h2>{{ $t("contact.title") }}</h2>
-        <form @submit.prevent="submitForm">
-          <input type="text" v-model="form.name" :placeholder="$t('contact.name')" required />
-          <input type="email" v-model="form.email" :placeholder="$t('contact.email')" required />
-          <textarea v-model="form.message" :placeholder="$t('contact.message')" required></textarea>
-  
-          <button type="submit">{{ $t("contact.send") }}</button>
-        </form>
-  
-        <button class="close-btn" @click="toggleModal">✖</button>
-      </div>
-    </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  
-  const { t } = useI18n()
-  
-  const showModal = ref(false)
-  const form = ref({
-    name: '',
-    email: '',
-    message: ''
-  })
-  
-  function toggleModal() {
-    showModal.value = !showModal.value
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+const isOpen = ref(false)
+const submitted = ref(false)
+
+const form = ref({
+  name: '',
+  email: '',
+  message: ''
+})
+
+const submitForm = async () => {
+  try {
+    await fetch('https://formspree.io/f/your-code', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form.value)
+    })
+    submitted.value = true
+    setTimeout(() => submitted.value = false, 5000)
+    form.value = { name: '', email: '', message: '' }
+  } catch (e) {
+    alert('Bir hata oluştu.')
   }
-  
-  async function submitForm() {
-    try {
-      const response = await fetch('https://formspree.io/f/xnndjjzl', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form.value)
-      })
-  
-      if (response.ok) {
-        alert(t('contact.success'))
-        form.value = { name: '', email: '', message: '' }
-        showModal.value = false
-      } else {
-        alert(t('contact.error'))
-      }
-    } catch (error) {
-      console.error(error)
-      alert(t('contact.error'))
-    }
-  }
-  </script>
-  
-  <style scoped>
-  .form-float-button {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: var(--color-accent);
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0.8rem;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    cursor: pointer;
-    z-index: 10000;
-    transition: background-color 0.3s;
-  }
-  
-  .form-float-button:hover {
-    background: var(--color-accent-light);
-  }
-  
-  .form-modal-backdrop {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-  
-  .form-modal-content {
-    background: var(--color-surface);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    width: 90%;
-    max-width: 400px;
-    position: relative;
-    color: var(--color-text);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  input, textarea {
-    padding: 0.8rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    background: var(--color-background);
-    color: var(--color-text);
-    font-family: var(--font-main);
-    font-weight: var(--font-weight-regular);
-  }
-  
-  textarea {
-    resize: vertical;
-    min-height: 120px;
-  }
-  
-  button[type="submit"] {
-    background: var(--color-accent);
-    color: #fff;
-    padding: 0.8rem;
-    font-weight: var(--font-weight-bold);
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background: var(--color-accent-light);
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    color: var(--color-text-secondary);
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  </style>  
+}
+</script>
+
+<style scoped>
+.floating-form {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+}
+.form-toggle {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.form-popup {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 280px;
+  margin-top: 0.5rem;
+}
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+.submit-btn {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+.success-message {
+  margin-top: 1rem;
+  color: var(--color-success);
+  font-weight: bold;
+}
+</style>
