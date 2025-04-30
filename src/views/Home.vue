@@ -13,7 +13,10 @@
   
       <!-- Özgeçmiş (CV) -->
       <section id="cv" class="section">
-        <CVSection />
+        <!-- <CVSection /> -->
+        <!-- <CVMelez /> -->
+        <!-- <CVDNA /> -->
+        <CVJourney />
       </section>
   
       <!-- Portfolyo -->
@@ -23,6 +26,12 @@
         <PartnersCarousel />
       </section>
   
+
+<!-- Tools bölümü -->
+<section id="tools" class="section">
+  <ToolsPreview />
+</section>
+
       <!-- İlham -->
       <section id="inspirations" class="section">
         <InspirationGrid />
@@ -43,7 +52,11 @@
   
   <script setup>
   import CategoryHub from '../components/CategoryHub.vue'
-  import CVSection from '../components/CVSection.vue'
+  import ToolsPreview from '../components/ToolsPreview.vue'
+  //import CVSection from '../components/CVSection.vue'
+  //import CVMelez from '../components/CVMelez.vue'
+  //import CVDNA from '../components/CVDNA.vue'
+  import CVJourney from '../components/CVJourney.vue'
   import PortfolioProjects from '../components/PortfolioProjects.vue'
   import EventsGrid from '../components/EventsGrid.vue'
   import PartnersCarousel from '../components/PartnersCarousel.vue'

@@ -37,8 +37,16 @@ const router = createRouter({
 
 // SEO Meta güncellemesi
 router.afterEach((to) => {
-  if (to.meta.title) {
-    document.title = to.meta.title
+  if (to.meta.title) document.title = to.meta.title
+
+  if (to.meta.description) {
+    let descriptionTag = document.querySelector('meta[name="description"]')
+    if (!descriptionTag) {
+      descriptionTag = document.createElement('meta')
+      descriptionTag.setAttribute('name', 'description')
+      document.head.appendChild(descriptionTag)
+    }
+    descriptionTag.setAttribute('content', to.meta.description)
   }
 })
 

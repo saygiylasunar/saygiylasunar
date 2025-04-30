@@ -5,9 +5,6 @@
     "cv": "Özgeçmiş",
     "contact": "İletişim"
   },
-  "footer": {
-    "rights": "Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır. © 2025"
-  },
   "categoryHub": {
     "question": "Ne üzerine çalışıyorum?"
   },
@@ -59,7 +56,7 @@
       "description": "İkna edici, temiz ve hedef odaklı sunum/pitch deck formatları hazırlar."
     }
   },
-  "cv": {
+  "eski-cv": {
     "education": {
       "title": "Eğitim",
       "description": "Akademik geçmişim ve öğrenim hayatım."
@@ -132,6 +129,189 @@
       "logo": "/assets/logos/selcuk.svg"
     }
   ]
+},
+"inspirations": {
+  "title": "İlham Aldığım İsimler",
+  "items": [
+    {
+      "name": "Leonardo da Vinci",
+      "description": "Yaratıcılık ve çok yönlülükte ilham kaynağı.",
+      "image": "/inspirations/leonardo.jpg"
+    },
+    {
+      "name": "Marie Curie",
+      "description": "Bilim ve azim örneği.",
+      "image": "/inspirations/curie.jpg"
+    },
+    {
+      "name": "Steve Jobs",
+      "description": "Tasarım ve teknoloji vizyoneri.",
+      "image": "/inspirations/jobs.jpg"
+    }
+  ]
+},
+"references": {
+  "title": "Referanslar",
+  "items": [
+    {
+      "name": "Ayşe Demir",
+      "role": "UX Tasarımcı · ABC Ajansı",
+      "note": "Proje yönetimi ve kullanıcı araştırmalarında birlikte çalıştık.",
+      "image": "/references/ayse.jpg"
+    },
+    {
+      "name": "Dr. Ercan Yıldız",
+      "role": "Akademisyen · Selçuk Üniversitesi",
+      "note": "Bitirme projesi danışmanım olarak yönlendirmelerde bulundu.",
+      "image": "/references/ercan.jpg"
+    },
+    {
+      "name": "Beyaz Önlüklüler Derneği",
+      "role": "STK İş Ortağı",
+      "note": "Kurumsal kimlik ve dijital süreç danışmanlığı.",
+      "image": "/references/bod.svg"
+    }
+  ]
+},
+"category": {
+  "centerQuestion": "Peki, benim hangi yönüme ihtiyacınız var?",
+  "strategy": "Strateji",
+  "strategySubtitle": "Planlama & Yönetişim",
+  "strategyDesc": "Kurumsal vizyon ve yapılar için stratejik yön belirlerim.",
+  "design": "Tasarım",
+  "designSubtitle": "UI, Marka, Sunum",
+  "designDesc": "Estetik ve işlevsel görseller üretirim.",
+  "ai": "Yapay Zeka",
+  "aiSubtitle": "Otomasyon & İçerik",
+  "aiDesc": "Üretkenlik ve yaratıcılığı algoritmalarla birleştiririm.",
+  "edu": "Eğitim",
+  "eduSubtitle": "Mentorluk & Paylaşım",
+  "eduDesc": "Bilgiyi değerle paylaşırım.",
+  "rnd": "Ar-Ge",
+  "rndSubtitle": "Deneysel Üretim",
+  "rndDesc": "Yeni fikirler, araçlar ve sistemler geliştiririm.",
+  "it": "Teknik Destek",
+  "itSubtitle": "Sistem & Süreç",
+  "itDesc": "Günlük teknoloji ihtiyaçlarını çözüme ulaştırırım."
+},
+"tools": {
+  "title": "Siber güvenlik açısından gerçekten güvende misiniz?",
+  "description": "Size özel iki ücretsiz araç hazırladım. Hepsi tamamen lokal çalışır ve verilerinizi asla paylaşmaz.",
+  "reveal": "Gör ve kullan",
+  "password": {
+    "title": "Parola Oluşturucu",
+    "desc": "Create strong and secure passwords instantly."
+  },
+  "exif": {
+    "title": "Exif Temizleyici",
+    "desc": "Create strong and secure passwords instantly."
+  }
+},
+"cv": {
+  "title": "Özgeçmiş",
+  "education": {
+    "title": "Eğitim",
+    "description": "Akademik geçmişim ve öğrenim hayatım."
+  },
+  "experience": {
+    "title": "İş Deneyimi",
+    "description": "Çalıştığım kurumlar ve görev aldığım pozisyonlar."
+  },
+  "skills": {
+    "title": "Yetkinlikler / Beceriler",
+    "description": "Teknik, yaratıcı ve iletişimsel yeteneklerim."
+  },
+  "projects": {
+    "title": "Projeler ve Yayınlar",
+    "description": "Katıldığım projeler ve ürettiğim yayınlar."
+  },
+  "volunteer": {
+    "title": "Sivil Toplum Kuruluşları",
+    "description": "Yer aldığım sosyal sorumluluk ve gönüllülük projeleri."
+  },
+  "academic": {
+    "title": "Akademik Faaliyetler",
+    "description": "Bilimsel etkinlik ve katkılarım."
+  },
+  "details": {
+    "education": [
+      {
+        "school": "İstanbul Üniversitesi",
+        "department": "Bilgisayar Mühendisliği",
+        "year": "2020 - 2024"
+      },
+      {
+        "school": "İstanbul Üniversitesi Açıköğretim",
+        "department": "Sosyoloji (ÇAP)",
+        "year": "2022 - Devam"
+      },
+      {
+        "school": "Kadıköy Anadolu Lisesi",
+        "department": "Sayısal Bölüm",
+        "year": "2016 - 2020"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Frontend Developer",
+        "detail": "ABC Teknoloji A.Ş.",
+        "year": "2023 - Günümüz"
+      },
+      {
+        "title": "Stajyer Geliştirici",
+        "detail": "XYZ Bilişim",
+        "year": "2022 Yaz"
+      }
+    ],
+    "skills": [
+      {
+        "title": "Frontend",
+        "detail": "HTML, CSS, JavaScript, TypeScript, Vue, Angular"
+      },
+      {
+        "title": "Otomasyon",
+        "detail": "Selenium, REST API Testleri, Python"
+      },
+      {
+        "title": "UI/UX",
+        "detail": "Figma, Responsive Design, Tema sistemleri"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Akıllı Ev Otomasyonu",
+        "detail": "IoT ve web paneli ile kontrol edilebilir sistem"
+      },
+      {
+        "title": "Kişisel Portfolyo Sitesi",
+        "detail": "Vue + i18n destekli, dark/light temalı, tam responsive"
+      }
+    ],
+    "volunteer": [
+      {
+        "organization": "SİYAMDER",
+        "role": "İstihdam & Girişimcilik Direktörlüğü",
+        "year": "2022 - Günümüz"
+      },
+      {
+        "organization": "Bilgi Güvenliği Topluluğu",
+        "role": "Kurucu Üye",
+        "year": "2021 - 2023"
+      }
+    ],
+    "academic": [
+      {
+        "title": "Bitirme Projesi",
+        "detail": "Python ile görsel veri işleme üzerine çalışma",
+        "year": "2023"
+      },
+      {
+        "title": "Veri Bilimi Günleri",
+        "detail": "Sunum & organizasyon sorumluluğu",
+        "year": "2022"
+      }
+    ]
+  }
 }
 
 }

@@ -5,9 +5,6 @@
     "cv": "Resume",
     "contact": "Contact"
   },
-  "footer": {
-    "rights": "Ersen FİLİZ Presents With Respect. All rights reserved. © 2025"
-  },
   "categoryHub": {
     "question": "What am I working on?"
   },
@@ -59,7 +56,7 @@
       "description": "Prepares persuasive, clean, and purpose-driven presentations or pitch decks."
     }
   },
-  "cv": {
+  "old-cv": {
     "education": {
       "title": "Education",
       "description": "My academic background and educational journey."
@@ -116,8 +113,8 @@
   "rights": "Ersen FİLİZ Saygıyla Sunar. All rights reserved. © 2025"
 },
 "partners": {
-  "title": "İş Ortakları / Referanslar",
-  "description": "Birlikte çalışmaktan onur duyduğum kurumlar:",
+  "title": "Partners / References",
+  "description": "Organizations I've had the honor to collaborate with:",
   "items": [
     {
       "name": "Beyaz Önlüklüler Derneği",
@@ -132,6 +129,188 @@
       "logo": "/assets/logos/selcuk.svg"
     }
   ]
+},
+"inspirations": {
+  "title": "İlham Aldığım İsimler",
+  "items": [
+    {
+      "name": "Leonardo da Vinci",
+      "description": "Yaratıcılık ve çok yönlülükte ilham kaynağı.",
+      "image": "/inspirations/leonardo.jpg"
+    },
+    {
+      "name": "Marie Curie",
+      "description": "Bilim ve azim örneği.",
+      "image": "/inspirations/curie.jpg"
+    },
+    {
+      "name": "Steve Jobs",
+      "description": "Tasarım ve teknoloji vizyoneri.",
+      "image": "/inspirations/jobs.jpg"
+    }
+  ]
+},
+"references": {
+  "title": "Referanslar",
+  "items": [
+    {
+      "name": "Ayşe Demir",
+      "role": "UX Tasarımcı · ABC Ajansı",
+      "note": "Proje yönetimi ve kullanıcı araştırmalarında birlikte çalıştık.",
+      "image": "/references/ayse.jpg"
+    },
+    {
+      "name": "Dr. Ercan Yıldız",
+      "role": "Akademisyen · Selçuk Üniversitesi",
+      "note": "Bitirme projesi danışmanım olarak yönlendirmelerde bulundu.",
+      "image": "/references/ercan.jpg"
+    },
+    {
+      "name": "Beyaz Önlüklüler Derneği",
+      "role": "STK İş Ortağı",
+      "note": "Kurumsal kimlik ve dijital süreç danışmanlığı.",
+      "image": "/references/bod.svg"
+    }
+  ]
+},
+"category": {
+  "centerQuestion": "So... What are you hiring me for?",
+  "strategy": "Strategy",
+  "strategySubtitle": "Planning & Governance",
+  "strategyDesc": "I define strategic direction for organizations.",
+  "design": "Design",
+  "designSubtitle": "UI, Brand, Visuals",
+  "designDesc": "I produce visuals that are both aesthetic and functional.",
+  "ai": "AI",
+  "aiSubtitle": "Automation & Content",
+  "aiDesc": "I merge creativity and productivity with algorithms.",
+  "edu": "Education",
+  "eduSubtitle": "Mentorship & Sharing",
+  "eduDesc": "I share knowledge with purpose.",
+  "rnd": "R&D",
+  "rndSubtitle": "Experimental Practice",
+  "rndDesc": "I explore and prototype new ideas and tools.",
+  "it": "IT Support",
+  "itSubtitle": "Systems & Flow",
+  "itDesc": "I solve everyday technical needs with clarity."
+},  "tools": {
+    "title": "Tools",
+    "description": "Are you digitally safe? Use our free tools to test and secure your files.",
+    "reveal": "Reveal Tools",
+    "password": {
+      "title": "Password Generator",
+      "desc": "Create strong and secure passwords instantly."
+    },
+    "exif": {
+      "title": "EXIF Cleaner",
+      "desc": "Remove hidden metadata from your images safely."
+}
+},
+"cv": {
+  "title": "Resume",
+  "education": {
+    "title": "Education",
+    "description": "My academic background and learning journey."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Companies I've worked for and roles I've held."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "My technical, creative, and communication skills."
+  },
+  "projects": {
+    "title": "Projects & Publications",
+    "description": "Projects I've contributed to and content I've produced."
+  },
+  "volunteer": {
+    "title": "Volunteer Work",
+    "description": "My involvement in social responsibility and NGOs."
+  },
+  "academic": {
+    "title": "Academic Work",
+    "description": "Scientific contributions and events I've supported."
+  },
+  "details": {
+    "education": [
+      {
+        "school": "Istanbul University",
+        "department": "Computer Engineering",
+        "year": "2020 - 2024"
+      },
+      {
+        "school": "Istanbul Open Education",
+        "department": "Sociology (Double Major)",
+        "year": "2022 - Ongoing"
+      },
+      {
+        "school": "Kadıköy Anatolian High School",
+        "department": "Science Program",
+        "year": "2016 - 2020"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Frontend Developer",
+        "detail": "ABC Technology Inc.",
+        "year": "2023 - Present"
+      },
+      {
+        "title": "Intern Developer",
+        "detail": "XYZ Software",
+        "year": "Summer 2022"
+      }
+    ],
+    "skills": [
+      {
+        "title": "Frontend",
+        "detail": "HTML, CSS, JavaScript, TypeScript, Vue, Angular"
+      },
+      {
+        "title": "Automation",
+        "detail": "Selenium, REST API Testing, Python"
+      },
+      {
+        "title": "UI/UX",
+        "detail": "Figma, Responsive Design, Theme Systems"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Smart Home Automation",
+        "detail": "IoT-based system controllable via web dashboard"
+      },
+      {
+        "title": "Personal Portfolio Site",
+        "detail": "Vue + i18n powered, dark/light theme, fully responsive"
+      }
+    ],
+    "volunteer": [
+      {
+        "organization": "SİYAMDER",
+        "role": "Employment & Entrepreneurship Director",
+        "year": "2022 - Present"
+      },
+      {
+        "organization": "Cybersecurity Club",
+        "role": "Founder Member",
+        "year": "2021 - 2023"
+      }
+    ],
+    "academic": [
+      {
+        "title": "Graduation Project",
+        "detail": "Image processing with Python",
+        "year": "2023"
+      },
+      {
+        "title": "Data Science Days",
+        "detail": "Speaker & event organization lead",
+        "year": "2022"
+      }
+    ]
+  }
 }
 
 }

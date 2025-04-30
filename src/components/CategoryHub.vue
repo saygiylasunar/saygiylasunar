@@ -1,119 +1,188 @@
 <template>
-  <section id="category-hub">
-    <div class="hub-container">
-      <div class="hub-center">
-        <h2>{{ $t('categoryHub.question') }}</h2>
-      </div>
+  <section class="section" id="category-hub">
+    <!-- Üstte sabit soru -->
+    <div class="category-question">
+      <h2>{{ $t("category.centerQuestion") }}</h2>
+    </div>
 
+    <!-- Döner kategori halkası -->
+    <div class="category-orbit" ref="orbitRef">
       <div
-        v-for="key in categoryKeys"
-        :key="key"
-        class="hub-node"
-        :class="'node-' + (categoryKeys.indexOf(key) + 1)"
+        v-for="(item, i) in categories"
+        :key="i"
+        class="orbit-item"
+        :style="getTransformStyle(i)"
       >
-        <img :src="iconMap[key]" alt="" class="hub-icon" />
-        <h3>{{ $t(`categories.${key}.title`) }}</h3>
-        <p>{{ $t(`categories.${key}.description`) }}</p>
-      </div>
-
-      <div
-        v-for="key in subCategoryKeys"
-        :key="key"
-        class="sub-node"
-      >
-        <img :src="subIconMap[key]" alt="" class="hub-icon" />
-        <h4>{{ $t(`designSub.${key}.title`) }}</h4>
-        <p>{{ $t(`designSub.${key}.description`) }}</p>
+        <img :src="item.icon" :alt="item.label" />
+        <h3>{{ $t(item.label) }}</h3>
+        <h4>{{ $t(item.subtitle) }}</h4>
+        <p>{{ $t(item.description) }}</p>
       </div>
     </div>
+    <ToolsPreview />
   </section>
 </template>
 
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
+
 const { t } = useI18n()
 
-const categoryKeys = [
-  'strategy',
-  'design',
-  'ai',
-  'education',
-  'r_and_d',
-  'it'
+const categories = [
+  {
+    label: 'category.strategy',
+    icon: '/icons/strategy.svg',
+    subtitle: 'category.strategySubtitle',
+    description: 'category.strategyDesc'
+  },
+  {
+    label: 'category.design',
+    icon: '/icons/design.svg',
+    subtitle: 'category.designSubtitle',
+    description: 'category.designDesc'
+  },
+  {
+    label: 'category.ai',
+    icon: '/icons/ai.svg',
+    subtitle: 'category.aiSubtitle',
+    description: 'category.aiDesc'
+  },
+  {
+    label: 'category.edu',
+    icon: '/icons/edu.svg',
+    subtitle: 'category.eduSubtitle',
+    description: 'category.eduDesc'
+  },
+  {
+    label: 'category.rnd',
+    icon: '/icons/rnd.svg',
+    subtitle: 'category.rndSubtitle',
+    description: 'category.rndDesc'
+  },
+  {
+    label: 'category.it',
+    icon: '/icons/it.svg',
+    subtitle: 'category.itSubtitle',
+    description: 'category.itDesc'
+  }
 ]
 
-const subCategoryKeys = [
-  'graphic',
-  'uiux',
-  'identity',
-  'social',
-  'presentation'
-]
+const rotation = ref(0)
+const total = categories.length
+const anglePerItem = 360 / total
 
-const iconMap = {
-  strategy: new URL('@/assets/icons/strategy.svg', import.meta.url).href,
-  design: new URL('@/assets/icons/design.svg', import.meta.url).href,
-  ai: new URL('@/assets/icons/ai.svg', import.meta.url).href,
-  education: new URL('@/assets/icons/education.svg', import.meta.url).href,
-  r_and_d: new URL('@/assets/icons/r_and_d.svg', import.meta.url).href,
-  it: new URL('@/assets/icons/it.svg', import.meta.url).href
+let animationId = null
+
+function animate() {
+  const easing = Math.sin((rotation.value * Math.PI) / 180)
+  rotation.value = (rotation.value + 0.05 * (1 + easing)) % 360
+  animationId = requestAnimationFrame(animate)
 }
 
-const subIconMap = {
-  graphic: new URL('@/assets/icons/graphic.svg', import.meta.url).href,
-  uiux: new URL('@/assets/icons/uiux.svg', import.meta.url).href,
-  identity: new URL('@/assets/icons/identity.svg', import.meta.url).href,
-  social: new URL('@/assets/icons/social.svg', import.meta.url).href,
-  presentation: new URL('@/assets/icons/presentation.svg', import.meta.url).href
+onMounted(() => {
+  animate()
+})
+onBeforeUnmount(() => {
+  cancelAnimationFrame(animationId)
+})
+
+function getTransformStyle(index) {
+  const currentAngle = (index * anglePerItem + rotation.value) % 360
+  const rad = (currentAngle * Math.PI) / 180
+  const z = Math.cos(rad)
+  const scale = 0.8 + 0.4 * (z + 1) / 2
+  const zIndex = Math.round(z * 100)
+
+  return {
+    transform: `rotateY(${index * anglePerItem + rotation.value}deg) translateZ(280px) scale(${scale})`,
+    zIndex
+  }
 }
 </script>
 
 <style scoped>
-.hub-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.hub-center {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-accent);
-  color: white;
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.hub-node, .sub-node {
-  background: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  text-align: center;
+.section {
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.hub-icon {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1rem;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+.category-question {
+  margin-bottom: 3rem;
 }
 
-.hub-icon:hover {
-  transform: scale(1.1);
+.category-question h2 {
+  font-size: 1.8rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+}
+
+/* Döner yapı */
+.category-orbit {
+  position: relative;
+  width: 600px;
+  height: 480px;
+  margin: 0 auto;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit-item {
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.orbit-item img {
+  width: 40px;
+  margin-bottom: 0.5rem;
+}
+.orbit-item h3 {
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+.orbit-item h4 {
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+.orbit-item p {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-orbit {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    perspective: none;
+  }
+
+  .orbit-item {
+    position: static;
+    transform: none !important;
+    margin: 1rem;
+  }
 }
 </style>
