@@ -6,10 +6,10 @@
     </div>
 
     <!-- Döner kategori halkası -->
-    <div class="category-orbit" ref="orbitRef">
+    <div class="category-orbit">
       <div
         v-for="(item, i) in categories"
-        :key="i"
+        :key="`orbit-${i}`"
         class="orbit-item"
         :style="getTransformStyle(i)"
       >
@@ -19,7 +19,17 @@
         <p>{{ $t(item.description) }}</p>
       </div>
     </div>
-    <ToolsPreview />
+
+    <!-- Yatay sabit plaket dizisi -->
+    <div class="horizontal-cards">
+      <div v-for="(item, i) in categories" :key="`horizontal-${i}`" class="horizontal-item">
+        <div class="card-title">{{ $t(item.label) }}</div>       
+        <div class="card-description" :class="{ active: currentCard === i }">
+          {{ $t(item.description) }}
+        </div>
+
+      </div>
+    </div>
   </section>
 </template>
 
@@ -30,72 +40,45 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const categories = [
-  {
-    label: 'category.strategy',
-    icon: '/icons/strategy.svg',
-    subtitle: 'category.strategySubtitle',
-    description: 'category.strategyDesc'
-  },
-  {
-    label: 'category.design',
-    icon: '/icons/design.svg',
-    subtitle: 'category.designSubtitle',
-    description: 'category.designDesc'
-  },
-  {
-    label: 'category.ai',
-    icon: '/icons/ai.svg',
-    subtitle: 'category.aiSubtitle',
-    description: 'category.aiDesc'
-  },
-  {
-    label: 'category.edu',
-    icon: '/icons/edu.svg',
-    subtitle: 'category.eduSubtitle',
-    description: 'category.eduDesc'
-  },
-  {
-    label: 'category.rnd',
-    icon: '/icons/rnd.svg',
-    subtitle: 'category.rndSubtitle',
-    description: 'category.rndDesc'
-  },
-  {
-    label: 'category.it',
-    icon: '/icons/it.svg',
-    subtitle: 'category.itSubtitle',
-    description: 'category.itDesc'
-  }
+  { label: 'category.strategy', icon: '/icons/strategy.svg', subtitle: 'category.strategySubtitle', description: 'category.strategyDesc' },
+  { label: 'category.design', icon: '/icons/design.svg', subtitle: 'category.designSubtitle', description: 'category.designDesc' },
+  { label: 'category.ai', icon: '/icons/ai.svg', subtitle: 'category.aiSubtitle', description: 'category.aiDesc' },
+  { label: 'category.edu', icon: '/icons/edu.svg', subtitle: 'category.eduSubtitle', description: 'category.eduDesc' },
+  { label: 'category.rnd', icon: '/icons/rnd.svg', subtitle: 'category.rndSubtitle', description: 'category.rndDesc' },
+  { label: 'category.it', icon: '/icons/it.svg', subtitle: 'category.itSubtitle', description: 'category.itDesc' }
 ]
 
 const rotation = ref(0)
 const total = categories.length
 const anglePerItem = 360 / total
-
 let animationId = null
 
+const currentCard = ref(0)
+
 function animate() {
-  const easing = Math.sin((rotation.value * Math.PI) / 180)
-  rotation.value = (rotation.value + 0.05 * (1 + easing)) % 360
+  rotation.value = (rotation.value + 0.2) % 360
   animationId = requestAnimationFrame(animate)
+}
+
+function cycleCards() {
+  currentCard.value = (currentCard.value + 1) % total
 }
 
 onMounted(() => {
   animate()
+  setInterval(cycleCards, 1500)
 })
-onBeforeUnmount(() => {
-  cancelAnimationFrame(animationId)
-})
+onBeforeUnmount(() => cancelAnimationFrame(animationId))
 
 function getTransformStyle(index) {
   const currentAngle = (index * anglePerItem + rotation.value) % 360
   const rad = (currentAngle * Math.PI) / 180
   const z = Math.cos(rad)
   const scale = 0.8 + 0.4 * (z + 1) / 2
-  const zIndex = Math.round(z * 100)
+  const zIndex = Math.round(z * 1)
 
   return {
-    transform: `rotateY(${index * anglePerItem + rotation.value}deg) translateZ(280px) scale(${scale})`,
+    transform: `rotateY(${currentAngle}deg) translateZ(280px) scale(${scale})`,
     zIndex
   }
 }
@@ -120,7 +103,6 @@ function getTransformStyle(index) {
   color: var(--color-accent);
 }
 
-/* Döner yapı */
 .category-orbit {
   position: relative;
   width: 600px;
@@ -131,6 +113,7 @@ function getTransformStyle(index) {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .orbit-item {
@@ -149,40 +132,55 @@ function getTransformStyle(index) {
   transition: transform 0.3s ease, z-index 0.3s ease;
 }
 
-.orbit-item img {
-  width: 40px;
+.horizontal-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.horizontal-item {
+  flex: 1;
+  margin: 0 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 180px;
+}
+
+.card-title {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
-.orbit-item h3 {
-  font-size: 1rem;
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-  margin-bottom: 0.25rem;
-}
-.orbit-item h4 {
-  font-size: 0.85rem;
-  font-weight: var(--font-weight-regular);
-  color: var(--color-accent);
-  margin-bottom: 0.25rem;
-}
-.orbit-item p {
-  font-size: 0.75rem;
+
+.card-description {
+  padding-top: 36px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 1.25rem;
   color: var(--color-text-secondary);
 }
 
-/* Responsive */
+.card-description.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
-  .category-orbit {
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    perspective: none;
+  .horizontal-cards {
+    flex-direction: column;
   }
 
-  .orbit-item {
-    position: static;
-    transform: none !important;
-    margin: 1rem;
+  .horizontal-item {
+    margin: 1rem 0;
   }
 }
 </style>

@@ -56,6 +56,19 @@
       "description": "İkna edici, temiz ve hedef odaklı sunum/pitch deck formatları hazırlar."
     }
   },
+"inspirations": {
+  "title": "İlham Aldığım İsimler:",
+  "names": {
+    "Nadide": "Nadide YALÇIN",
+    "Murat": "Murat İLHAN",
+    "Kübra": "Kübra AYTEMİŞ"
+  },
+  "titles": {
+    "Nadide": "♥ Canım Anam ♥",
+    "Murat": "Bilgisayar Mühendisi",
+    "Kübra": "Bilgisayar Mühendisi"
+  }
+},  
   "eski-cv": {
     "education": {
       "title": "Eğitim",
@@ -99,54 +112,37 @@
   "accept": "Kabul Et"
 },
 "events": {
-  "title": "Etkinlikler",
-  "description": "Katıldığım organizasyonlardan görseller.",
-  "items": [
-    {
-      "title": "Açık Kamp Etkinliği",
-      "description": "Motivasyon kamplarından bir kare.",
-      "image": "/assets/events/kamp1.jpg"
+    "title": "Etkinlikler",
+    "description": "Organizatörlüğünü üstlendiğim & katıldığım etkinliklerden kareler.",
+    "items": {
+      "ai-konferansi": {
+        "title": "AI Konferansı 2024",
+        "description": "Yapay zeka dünyasından kareler."
+      },
+      "ux-meetup": {
+        "title": "UX Meetup Sahil",
+        "description": "Kullanıcı deneyimi üzerine bir buluşma."
+      }
     }
-  ]
-},
+  },
 "footer": {
-  "rights": "Ersen FİLİZ Saygıyla Sunar. Tüm hakları saklıdır. © 2025"
+  "rights": "Ersen FİLİZ Saygıyla Sunar™. Tüm hakları saklıdır. © 2025"
 },
 "partners": {
-  "title": "İş Ortakları / Referanslar",
-  "description": "Birlikte çalışmaktan onur duyduğum kurumlar:",
+  "title": "İş Ortakları",
+  "description": "Birlikte çalıştığım kurumlar:",
   "items": [
     {
       "name": "Beyaz Önlüklüler Derneği",
-      "logo": "/assets/logos/bod.svg"
+      "logo": "/assets/logos/beyazonlukluler.svg"
     },
     {
-      "name": "SİYAMDER",
+      "name": "Sivil Yaşam Derneği (SİYAMDER)",
       "logo": "/assets/logos/siyamder.svg"
     },
     {
       "name": "Selçuk Üniversitesi",
       "logo": "/assets/logos/selcuk.svg"
-    }
-  ]
-},
-"inspirations": {
-  "title": "İlham Aldığım İsimler",
-  "items": [
-    {
-      "name": "Leonardo da Vinci",
-      "description": "Yaratıcılık ve çok yönlülükte ilham kaynağı.",
-      "image": "/inspirations/leonardo.jpg"
-    },
-    {
-      "name": "Marie Curie",
-      "description": "Bilim ve azim örneği.",
-      "image": "/inspirations/curie.jpg"
-    },
-    {
-      "name": "Steve Jobs",
-      "description": "Tasarım ve teknoloji vizyoneri.",
-      "image": "/inspirations/jobs.jpg"
     }
   ]
 },
@@ -163,7 +159,7 @@
       "name": "Dr. Ercan Yıldız",
       "role": "Akademisyen · Selçuk Üniversitesi",
       "note": "Bitirme projesi danışmanım olarak yönlendirmelerde bulundu.",
-      "image": "/references/ercan.jpg"
+      "image": "/references/SelahattinAlan.jpg"
     },
     {
       "name": "Beyaz Önlüklüler Derneği",

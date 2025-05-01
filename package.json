@@ -7,6 +7,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
+    "lottie": "^0.0.1",
+    "lottie-web": "^5.12.2",
     "vue": "^3.4.0",
     "vue-i18n": "^9.8.0",
     "vue-router": "^4.5.1"

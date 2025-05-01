@@ -1,4 +1,4 @@
-// Serverless function
+// Node.js veya serverless function olarak
 import fs from 'fs'
 import path from 'path'
 

@@ -98,19 +98,22 @@
   "message": "This site uses cookies to ensure you get the best experience.",
   "accept": "Accept"
 },
-"events": {
-  "title": "Events",
-  "description": "Snapshots from events I participated in.",
-  "items": [
-    {
-      "title": "Open Camp",
-      "description": "A moment from motivational camp sessions.",
-      "image": "/assets/events/kamp1.jpg"
+  "events": {
+    "title": "Events",
+    "description": "Photos from events I organized or personally attended.",
+    "items": {
+      "ai-konferansi": {
+        "title": "AI Conference 2024",
+        "description": "Scenes from the world of artificial intelligence."
+      },
+      "ux-meetup": {
+        "title": "UX Meetup by the Coast",
+        "description": "A meetup focused on user experience."
+      }
     }
-  ]
-},
+  },
 "footer": {
-  "rights": "Ersen FİLİZ Saygıyla Sunar. All rights reserved. © 2025"
+  "rights": "Ersen FİLİZ Saygıyla Sunar™. All rights reserved. © 2025"
 },
 "partners": {
   "title": "Partners / References",
@@ -127,26 +130,6 @@
     {
       "name": "Selçuk Üniversitesi",
       "logo": "/assets/logos/selcuk.svg"
-    }
-  ]
-},
-"inspirations": {
-  "title": "İlham Aldığım İsimler",
-  "items": [
-    {
-      "name": "Leonardo da Vinci",
-      "description": "Yaratıcılık ve çok yönlülükte ilham kaynağı.",
-      "image": "/inspirations/leonardo.jpg"
-    },
-    {
-      "name": "Marie Curie",
-      "description": "Bilim ve azim örneği.",
-      "image": "/inspirations/curie.jpg"
-    },
-    {
-      "name": "Steve Jobs",
-      "description": "Tasarım ve teknoloji vizyoneri.",
-      "image": "/inspirations/jobs.jpg"
     }
   ]
 },
@@ -205,6 +188,19 @@
       "title": "EXIF Cleaner",
       "desc": "Remove hidden metadata from your images safely."
 }
+},
+"inspirations": {
+  "title": "Inspired by this People:",
+  "names": {
+    "Nadide": "Nadide YALÇIN",
+    "Murat": "Murat İLHAN",
+    "Kübra": "Kübra AYTEMİŞ"
+  },
+  "titles": {
+    "Nadide": "♥ Dear Mom ♥",
+    "Murat": "Computer Engineer",
+    "Kübra": "Computer Engineer"
+  }
 },
 "cv": {
   "title": "Resume",
