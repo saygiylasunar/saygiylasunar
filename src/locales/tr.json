@@ -88,7 +88,7 @@
     },
     "academic": {
       "title": "Akademik Çalışmalar ve Organizasyonlar",
-      "description": "Bilimsel faaliyetler ve düzenlediğim/kattığım organizasyonlar."
+      "description": "Bilimsel faaliyetler ve düzenlediğim/katıldığım organizasyonlar."
     },
     "skills": {
       "title": "Yetkinlikler / Beceriler",
@@ -232,45 +232,67 @@
   "details": {
     "education": [
       {
-        "school": "İstanbul Üniversitesi",
-        "department": "Bilgisayar Mühendisliği",
-        "year": "2020 - 2024"
+        "school": "Lisans: Bilgisayar Mühendisliği",
+        "department": "Selçuk Üniversitesi • Teknoloji Fakültesi",
+        "year": "2023 - 2017"
       },
       {
-        "school": "İstanbul Üniversitesi Açıköğretim",
-        "department": "Sosyoloji (ÇAP)",
-        "year": "2022 - Devam"
-      },
-      {
-        "school": "Kadıköy Anadolu Lisesi",
-        "department": "Sayısal Bölüm",
-        "year": "2016 - 2020"
+        "school": "Lise: Sayısal Bölüm • Okul Birincisi",
+        "department": "Akşehir Anadolu Lisesi",
+        "year": "2017 - 2013"
       }
     ],
     "experience": [
       {
-        "title": "Frontend Developer",
-        "detail": "ABC Teknoloji A.Ş.",
-        "year": "2023 - Günümüz"
+        "title": "STK Yöneticisi - Ulusal Kurumsal Operasyonlar Baş Direktörü • Kurucu Üye",
+        "detail": "Beyaz Önlüklüler Derneği",
+        "year": "[4+ Yıl] 2025 Ocak  - 2021 Kasım"
       },
       {
-        "title": "Stajyer Geliştirici",
-        "detail": "XYZ Bilişim",
-        "year": "2022 Yaz"
+        "title": "Bilgi İşlem İntörnü - Bilgisayar Mühendisi (T.C. CBİKO Ulusal Staj Pr.)",
+        "detail": "T.C. SAĞLIK BAKANLIĞI - Kırklareli Egitim ve Araştırma Hastanesi",
+        "year": "[6 Ay] 2023 Ocak - 2022 Ağustos"
+      },
+      {
+        "title": "Lead Grafik Tasarım Uzmanı • Junior UI/UX Geliştirici",
+        "detail": "MYDOS Teknoloji - Trakya Teknopark",
+        "year": "[6 Ay] 2022 Ağustos - 2022 Mart"
+      },
+      {
+        "title": "Bilgi İşlem İntörnü - Bilgisayar Mühendisi",
+        "detail": "T.C. Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü",
+        "year": "[3 ay] 2021 Ağustos - 2021 Haziran"
+      },
+      {
+        "title": "STK Yöneticisi - Ulusal Kurumsal İletişim Baş Direktörü • Bilgi İşlem Sorumlusu",
+        "detail": "Sivil Yaşam Derneği (SİYAMDER)",
+        "year": "[5+ Yıl] 2021 Haziran - 2017 Kasım"
       }
     ],
     "skills": [
       {
-        "title": "Frontend",
-        "detail": "HTML, CSS, JavaScript, TypeScript, Vue, Angular"
+        "title": "Grafik Tasarım",
+        "detail": "Adobe Illustrator, Canva, Figma, Photoshop, Premiere Pro, After Effects, XD, Audition, Media Encoder"
       },
       {
-        "title": "Otomasyon",
-        "detail": "Selenium, REST API Testleri, Python"
+        "title": "Kurumsal Marka Yönetimi",
+        "detail": "Kurumsal Kimlik, Sosyal Medya ve Dijital Pazarlama, Ekip Yönetimi"
+      },
+      {
+        "title": "Sanat",
+        "detail": "Şair, Güfte Yazarı(Songwriter) & Vokal, Mix & Mastering(FL Studio), Tiyatro Oyuncusu, Sahne Hizmetleri: Planlama-Sahne Önü-Sahne Arkası-Teknik Organizasyon"
+      },
+      {
+        "title": "Yapay Zeka",
+        "detail": "SunoAI, FADR • Stable Diffusion: FLUX, SDXL, ControlNet, ComfyUI, ForgeUI, Lora, Prompt(+/-), IPAdapter, Face Recognition, Consistent Character Generation"
+      },
+      {
+        "title": "Bilgi İşlem",
+        "detail": "Teknik Hizmetler: Bakım-Onarım-Kurulum, Yazıcı ve Ağ Yönetimi, Nizami Ofis ve Ortam Tertibatı"
       },
       {
         "title": "UI/UX",
-        "detail": "Figma, Responsive Design, Tema sistemleri"
+        "detail": "Figma, Responsive Design, Tema Sistemleri"
       }
     ],
     "projects": [
