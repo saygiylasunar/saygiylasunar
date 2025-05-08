@@ -6,38 +6,38 @@
     "contact": "Contact"
   },
   "categoryHub": {
-    "question": "What am I working on?"
+    "question": "Which field shall we work in?"
   },
   "categories": {
     "strategy": {
       "title": "Strategy & Organizational Management",
-      "description": "Builds structures for sustainable solutions and enhances process efficiency."
+      "description": "Builds structures for process efficiency and sustainable solutions in events and projects."
     },
     "design": {
       "title": "Digital and Visual Design Production",
-      "description": "Produces visual communication designs in areas like graphics, UI/UX, and social media."
+      "description": "Produces visual communication design in areas such as graphic design, UI/UX, and social media."
     },
     "ai": {
       "title": "AI-Powered Content Creation and Automation",
-      "description": "Provides AI-enhanced text, visual, and workflow generation."
+      "description": "Provides AI-enriched text, visual, and workflow generation."
     },
     "education": {
       "title": "Education, Mentorship, and Knowledge Sharing",
-      "description": "Contributes through personal development, consulting, and collective learning practices."
+      "description": "Contributes through personal development, consultancy, and collective learning practices."
     },
     "r_and_d": {
       "title": "Research and Development (R&D)",
-      "description": "Involves projects focused on experimental production, testing, and analysis."
+      "description": "Includes experimental production, testing, and analytical projects."
     },
     "it": {
-      "title": "IT / Information Systems and Technical Support",
-      "description": "Provides support for technical issues, setup, integration, and security."
+      "title": "IT / Technical Support",
+      "description": "Provides solutions to technical problems, setup, integration, and security support."
     }
   },
   "designSub": {
     "graphic": {
       "title": "Graphic Design",
-      "description": "Includes brand identity, posters, book covers, and creative compositions."
+      "description": "Includes brand identity, posters, videos, and creative compositions."
     },
     "uiux": {
       "title": "UI/UX Design",
@@ -45,268 +45,289 @@
     },
     "identity": {
       "title": "Corporate Identity",
-      "description": "Designs logos, color palettes, typography, and a consistent brand language."
+      "description": "Designs logo, color palette, fonts, and brand language in a holistic way."
     },
     "social": {
       "title": "Social Media Content Design",
-      "description": "Creates aesthetic and functional visuals tailored to digital platforms."
+      "description": "Creates aesthetic and functional visual content tailored for digital platforms."
     },
     "presentation": {
       "title": "Presentation Design",
-      "description": "Prepares persuasive, clean, and purpose-driven presentations or pitch decks."
+      "description": "Prepares persuasive, clean, and goal-oriented presentation/pitch deck formats."
     }
   },
-  "old-cv": {
+  "inspirations": {
+    "title": "People Who Inspire Me:",
+    "names": {
+      "Aile": "♥",
+      "Murat": "Murat İLHAN",
+      "Kübra": "Kübra AYTEMİŞ"
+    },
+    "titles": {
+      "Aile": "♥",
+      "Murat": "Computer Engineer",
+      "Kübra": "Computer Engineer"
+    }
+  },
+  "eski-cv": {
     "education": {
       "title": "Education",
       "description": "My academic background and educational journey."
     },
     "experience": {
       "title": "Work Experience",
-      "description": "Organizations and positions where I contributed."
+      "description": "Institutions I worked for and positions I held."
     },
     "volunteer": {
-      "title": "Non-Profit Organizations",
-      "description": "Social responsibility and volunteering projects I participated in."
+      "title": "Non-Governmental Organizations",
+      "description": "NGOs and volunteer projects I participated in."
     },
     "projects": {
       "title": "Projects and Publications",
-      "description": "Projects I contributed to and the publications I produced."
+      "description": "Projects I took part in and publications I produced."
     },
     "academic": {
-      "title": "Academic Works and Organizations",
-      "description": "Scientific activities and events I organized or participated in."
+      "title": "Academic Studies and Organizations",
+      "description": "Scientific activities and events I organized/attended."
+    },
+    "skills": {
+      "title": "Skills / Competencies",
+      "description": "My technical, creative, and communication skills."
+    },
+    "details": {}
+  },
+  "form": {
+    "name": "Your Name",
+    "email": "E-mail",
+    "message": "Your Message",
+    "send": "Send",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your e-mail address",
+    "messagePlaceholder": "Write your message",
+    "success": "Your message has been sent successfully!"
+  },
+  "cookie": {
+    "message": "This website uses cookies to ensure you get the best experience.",
+    "accept": "Accept"
+  },
+  "events": {
+    "title": "Events",
+    "description": "Highlights from events I organized and participated in.",
+    "items": {
+      "ai-konferansi": {
+        "title": "AI Conference 2024",
+        "description": "Snapshots from the world of artificial intelligence."
+      },
+      "ux-meetup": {
+        "title": "UX Meetup by the Coast",
+        "description": "A gathering on user experience design."
+      }
+    }
+  },
+  "footer": {
+    "rights": "Ersen FİLİZ Presents Respectfully™. All rights reserved. © 2025"
+  },
+  "partners": {
+    "title": "Partners",
+    "description": "Organizations I have worked with:",
+    "items": [
+      {
+        "name": "White Coats Association",
+        "logo": "/assets/logos/beyazonlukluler.svg"
+      },
+      {
+        "name": "Civil Life Association (SİYAMDER)",
+        "logo": "/assets/logos/siyamder.svg"
+      },
+      {
+        "name": "Selçuk University",
+        "logo": "/assets/logos/selcuk.svg"
+      }
+    ]
+  },
+  "references": {
+    "title": "References",
+    "items": [
+      {
+        "name": "Ayşe Demir",
+        "role": "UX Designer · ABC Agency",
+        "note": "We worked together on project management and user research.",
+        "image": "/references/ayse.jpg"
+      },
+      {
+        "name": "Dr. Ercan Yıldız",
+        "role": "Academic · Selçuk University",
+        "note": "Guided me as my thesis advisor.",
+        "image": "/references/SelahattinAlan.jpg"
+      },
+      {
+        "name": "White Coats Association",
+        "role": "NGO Partner",
+        "note": "Consultancy on corporate identity and digital processes.",
+        "image": "/references/bod.svg"
+      }
+    ]
+  },
+  "category": {
+    "centerQuestion": "So, which of my qualities do you need?",
+    "strategy": "Strategy",
+    "strategySubtitle": "Planning & Governance",
+    "strategyDesc": "I define strategic direction for organizational vision and structure.",
+    "design": "Design",
+    "designSubtitle": "UI, Brand, Presentation",
+    "designDesc": "I create aesthetic and functional visuals.",
+    "ai": "Artificial Intelligence",
+    "aiSubtitle": "Automation & Content",
+    "aiDesc": "I merge productivity and creativity with algorithms.",
+    "edu": "Education",
+    "eduSubtitle": "Mentorship & Sharing",
+    "eduDesc": "I share knowledge with value.",
+    "rnd": "R&D",
+    "rndSubtitle": "Experimental Production",
+    "rndDesc": "I develop new ideas, tools, and systems.",
+    "it": "Technical Support",
+    "itSubtitle": "Systems & Processes",
+    "itDesc": "I solve everyday tech needs."
+  },
+  "tools": {
+    "title": "Are you really safe in terms of cybersecurity?",
+    "description": "I’ve built two free tools just for you. All work entirely offline and never share your data.",
+    "reveal": "See and use",
+    "password": {
+      "title": "Password Generator",
+      "desc": "Create a strong and secure password. Instantly!"
+    },
+    "exif": {
+      "title": "Exif (Metadata) Cleaner",
+      "desc": "How much do your images say about you? Let’s clean it up."
+    }
+  },
+  "cv": {
+    "title": "Resume",
+    "education": {
+      "title": "Education",
+      "description": "My academic background and learning journey."
+    },
+    "experience": {
+      "title": "Work Experience",
+      "description": "The organizations I worked for and the roles I undertook."
     },
     "skills": {
       "title": "Skills / Competencies",
       "description": "My technical, creative, and communication abilities."
     },
+    "projects": {
+      "title": "Projects and Publications",
+      "description": "Projects I've participated in and the publications I've produced."
+    },
+    "volunteer": {
+      "title": "Non-Profit Organizations",
+      "description": "Volunteer and social responsibility projects I've been part of."
+    },
+    "academic": {
+      "title": "Academic Activities",
+      "description": "My contributions to scientific events and studies."
+    },
     "details": {
+      "education": [
+        {
+          "school": "Bachelor: Computer Engineering",
+          "department": "Selçuk University • Faculty of Technology",
+          "year": "2023 - 2017"
+        },
+        {
+          "school": "High School: Science Track • Valedictorian",
+          "department": "Akşehir Anatolian High School",
+          "year": "2017 - 2013"
+        }
+      ],
+      "experience": [
+        {
+          "title": "NGO Executive - National Director of Corporate Operations • Founding Member",
+          "detail": "White Coats Association",
+          "year": "[4+ Years] Jan 2025 - Nov 2021"
+        },
+        {
+          "title": "IT Intern - Computer Engineer (T.C. CBİKO National Internship Program)",
+          "detail": "T.C. Ministry of Health - Kırklareli Training and Research Hospital",
+          "year": "[6 Months] Jan 2023 - Aug 2022"
+        },
+        {
+          "title": "Lead Graphic Designer • Junior UI/UX Developer",
+          "detail": "MYDOS Technology - Trakya Technopark",
+          "year": "[6 Months] Aug 2022 - Mar 2022"
+        },
+        {
+          "title": "IT Intern - Computer Engineer",
+          "detail": "T.C. Selçuk University Faculty of Technology Department of Computer Engineering",
+          "year": "[3 Months] Aug 2021 - Jun 2021"
+        },
+        {
+          "title": "NGO Executive - National Director of Corporate Communication • IT Officer",
+          "detail": "Civil Life Association (SİYAMDER)",
+          "year": "[5+ Years] Jun 2021 - Nov 2017"
+        }
+      ],
+      "skills": [
+        {
+          "title": "Graphic Design",
+          "detail": "Adobe Illustrator, Canva, Figma, Photoshop, Premiere Pro, After Effects, XD, Audition, Media Encoder"
+        },
+        {
+          "title": "Corporate Brand Management",
+          "detail": "Corporate Identity, Social Media and Digital Marketing, Team Management"
+        },
+        {
+          "title": "Arts",
+          "detail": "Poet, Lyricist & Vocalist, Mix & Mastering (FL Studio), Theater Actor, Stage Services: Planning, On-stage, Backstage, Technical Organization"
+        },
+        {
+          "title": "Artificial Intelligence",
+          "detail": "SunoAI, FADR • Stable Diffusion: FLUX, SDXL, ControlNet, ComfyUI, ForgeUI, Lora, Prompt(+/-), IPAdapter, Face Recognition, Consistent Character Generation"
+        },
+        {
+          "title": "IT",
+          "detail": "Technical Services: Maintenance-Repair-Setup, Printer and Network Management, Proper Office and Environment Setup"
+        },
+        {
+          "title": "UI/UX",
+          "detail": "Figma, Responsive Design, Theme Systems"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Smart Home Automation",
+          "detail": "Controllable system via IoT and web panel"
+        },
+        {
+          "title": "Personal Portfolio Website",
+          "detail": "Vue + i18n supported, dark/light themed, fully responsive"
+        }
+      ],
+      "volunteer": [
+        {
+          "organization": "SİYAMDER",
+          "role": "Director of Employment & Entrepreneurship",
+          "year": "2022 - Present"
+        },
+        {
+          "organization": "Information Security Community",
+          "role": "Founding Member",
+          "year": "2021 - 2023"
+        }
+      ],
+      "academic": [
+        {
+          "title": "Graduation Project",
+          "detail": "Study on image data processing with Python",
+          "year": "2023"
+        },
+        {
+          "title": "Data Science Days",
+          "detail": "Responsible for presentations and organization",
+          "year": "2022"
+        }
+      ]
     }
-  },
-  "form": {
-  "name": "Name",
-  "email": "Email",
-  "message": "Your Message",
-  "send": "Send",
-  "namePlaceholder": "Enter your name",
-  "emailPlaceholder": "Enter your email",
-  "messagePlaceholder": "Write your message here",
-  "success": "Your message has been sent successfully!"
-},
-"cookie": {
-  "message": "This site uses cookies to ensure you get the best experience.",
-  "accept": "Accept"
-},
-  "events": {
-    "title": "Events",
-    "description": "Photos from events I organized or personally attended.",
-    "items": {
-      "ai-konferansi": {
-        "title": "AI Conference 2024",
-        "description": "Scenes from the world of artificial intelligence."
-      },
-      "ux-meetup": {
-        "title": "UX Meetup by the Coast",
-        "description": "A meetup focused on user experience."
-      }
-    }
-  },
-"footer": {
-  "rights": "Ersen FİLİZ Saygıyla Sunar™. All rights reserved. © 2025"
-},
-"partners": {
-  "title": "Partners / References",
-  "description": "Organizations I've had the honor to collaborate with:",
-  "items": [
-    {
-      "name": "Beyaz Önlüklüler Derneği",
-      "logo": "/assets/logos/bod.svg"
-    },
-    {
-      "name": "SİYAMDER",
-      "logo": "/assets/logos/siyamder.svg"
-    },
-    {
-      "name": "Selçuk Üniversitesi",
-      "logo": "/assets/logos/selcuk.svg"
-    }
-  ]
-},
-"references": {
-  "title": "Referanslar",
-  "items": [
-    {
-      "name": "Ayşe Demir",
-      "role": "UX Tasarımcı · ABC Ajansı",
-      "note": "Proje yönetimi ve kullanıcı araştırmalarında birlikte çalıştık.",
-      "image": "/references/ayse.jpg"
-    },
-    {
-      "name": "Dr. Ercan Yıldız",
-      "role": "Akademisyen · Selçuk Üniversitesi",
-      "note": "Bitirme projesi danışmanım olarak yönlendirmelerde bulundu.",
-      "image": "/references/ercan.jpg"
-    },
-    {
-      "name": "Beyaz Önlüklüler Derneği",
-      "role": "STK İş Ortağı",
-      "note": "Kurumsal kimlik ve dijital süreç danışmanlığı.",
-      "image": "/references/bod.svg"
-    }
-  ]
-},
-"category": {
-  "centerQuestion": "So... What are you hiring me for?",
-  "strategy": "Strategy",
-  "strategySubtitle": "Planning & Governance",
-  "strategyDesc": "I define strategic direction for organizations.",
-  "design": "Design",
-  "designSubtitle": "UI, Brand, Visuals",
-  "designDesc": "I produce visuals that are both aesthetic and functional.",
-  "ai": "AI",
-  "aiSubtitle": "Automation & Content",
-  "aiDesc": "I merge creativity and productivity with algorithms.",
-  "edu": "Education",
-  "eduSubtitle": "Mentorship & Sharing",
-  "eduDesc": "I share knowledge with purpose.",
-  "rnd": "R&D",
-  "rndSubtitle": "Experimental Practice",
-  "rndDesc": "I explore and prototype new ideas and tools.",
-  "it": "IT Support",
-  "itSubtitle": "Systems & Flow",
-  "itDesc": "I solve everyday technical needs with clarity."
-},  "tools": {
-    "title": "Tools",
-    "description": "Are you digitally safe? Use our free tools to test and secure your files.",
-    "reveal": "Reveal Tools",
-    "password": {
-      "title": "Password Generator",
-      "desc": "Create strong and secure passwords instantly."
-    },
-    "exif": {
-      "title": "EXIF Cleaner",
-      "desc": "Remove hidden metadata from your images safely."
-}
-},
-"inspirations": {
-  "title": "Inspired by this People:",
-  "names": {
-    "Nadide": "Nadide YALÇIN",
-    "Murat": "Murat İLHAN",
-    "Kübra": "Kübra AYTEMİŞ"
-  },
-  "titles": {
-    "Nadide": "♥ Dear Mom ♥",
-    "Murat": "Computer Engineer",
-    "Kübra": "Computer Engineer"
   }
-},
-"cv": {
-  "title": "Resume",
-  "education": {
-    "title": "Education",
-    "description": "My academic background and learning journey."
-  },
-  "experience": {
-    "title": "Experience",
-    "description": "Companies I've worked for and roles I've held."
-  },
-  "skills": {
-    "title": "Skills",
-    "description": "My technical, creative, and communication skills."
-  },
-  "projects": {
-    "title": "Projects & Publications",
-    "description": "Projects I've contributed to and content I've produced."
-  },
-  "volunteer": {
-    "title": "Volunteer Work",
-    "description": "My involvement in social responsibility and NGOs."
-  },
-  "academic": {
-    "title": "Academic Work",
-    "description": "Scientific contributions and events I've supported."
-  },
-  "details": {
-    "education": [
-      {
-        "school": "Istanbul University",
-        "department": "Computer Engineering",
-        "year": "2020 - 2024"
-      },
-      {
-        "school": "Istanbul Open Education",
-        "department": "Sociology (Double Major)",
-        "year": "2022 - Ongoing"
-      },
-      {
-        "school": "Kadıköy Anatolian High School",
-        "department": "Science Program",
-        "year": "2016 - 2020"
-      }
-    ],
-    "experience": [
-      {
-        "title": "Frontend Developer",
-        "detail": "ABC Technology Inc.",
-        "year": "2023 - Present"
-      },
-      {
-        "title": "Intern Developer",
-        "detail": "XYZ Software",
-        "year": "Summer 2022"
-      }
-    ],
-    "skills": [
-      {
-        "title": "Frontend",
-        "detail": "HTML, CSS, JavaScript, TypeScript, Vue, Angular"
-      },
-      {
-        "title": "Automation",
-        "detail": "Selenium, REST API Testing, Python"
-      },
-      {
-        "title": "UI/UX",
-        "detail": "Figma, Responsive Design, Theme Systems"
-      }
-    ],
-    "projects": [
-      {
-        "title": "Smart Home Automation",
-        "detail": "IoT-based system controllable via web dashboard"
-      },
-      {
-        "title": "Personal Portfolio Site",
-        "detail": "Vue + i18n powered, dark/light theme, fully responsive"
-      }
-    ],
-    "volunteer": [
-      {
-        "organization": "SİYAMDER",
-        "role": "Employment & Entrepreneurship Director",
-        "year": "2022 - Present"
-      },
-      {
-        "organization": "Cybersecurity Club",
-        "role": "Founder Member",
-        "year": "2021 - 2023"
-      }
-    ],
-    "academic": [
-      {
-        "title": "Graduation Project",
-        "detail": "Image processing with Python",
-        "year": "2023"
-      },
-      {
-        "title": "Data Science Days",
-        "detail": "Speaker & event organization lead",
-        "year": "2022"
-      }
-    ]
-  }
-}
-
 }
