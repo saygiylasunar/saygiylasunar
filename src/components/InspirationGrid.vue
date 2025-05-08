@@ -28,7 +28,7 @@ import { computed } from 'vue'
 const { t } = useI18n()
 
 const inspirations = computed(() => [
-{ image: 'Nadide.jpg', slug: 'Nadide' },  
+{ image: 'Aile.jpg', slug: 'Aile' },  
 { image: 'Murat.jpeg', slug: 'Murat' },
   { image: 'Kübra.jpeg', slug: 'Kübra' }
   

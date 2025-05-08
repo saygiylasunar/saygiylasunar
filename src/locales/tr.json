@@ -1,17 +1,17 @@
 {
   "navbar": {
     "home": "Anasayfa",
-    "portfolio": "Portfolyo",
+    "portfolio": "Portföy",
     "cv": "Özgeçmiş",
     "contact": "İletişim"
   },
   "categoryHub": {
-    "question": "Ne üzerine çalışıyorum?"
+    "question": "Hangi alanda çalışacağız?"
   },
   "categories": {
     "strategy": {
       "title": "Strateji & Organizasyonel Yönetim",
-      "description": "Süreç verimliliğini artıran, sürdürülebilir çözümler için yapı kurar."
+      "description": "Etkinlikler ve Projelerde: Süreç verimliliğini artıran, sürdürülebilir çözümler için yapı kurar."
     },
     "design": {
       "title": "Dijital ve Görsel Tasarım Üretimi",
@@ -37,7 +37,7 @@
   "designSub": {
     "graphic": {
       "title": "Grafik Tasarım",
-      "description": "Marka kimliği, afiş, kitap kapağı ve yaratıcı kompozisyonları içerir."
+      "description": "Marka kimliği, afiş, video ve yaratıcı kompozisyonları içerir."
     },
     "uiux": {
       "title": "UI/UX Tasarımı",
@@ -59,12 +59,12 @@
 "inspirations": {
   "title": "İlham Aldığım İsimler:",
   "names": {
-    "Nadide": "Nadide YALÇIN",
+    "Aile": "♥",
     "Murat": "Murat İLHAN",
     "Kübra": "Kübra AYTEMİŞ"
   },
   "titles": {
-    "Nadide": "♥ Canım Anam ♥",
+    "Aile": "♥",
     "Murat": "Bilgisayar Mühendisi",
     "Kübra": "Bilgisayar Mühendisi"
   }
@@ -80,7 +80,7 @@
     },
     "volunteer": {
       "title": "Sivil Toplum Kuruluşları",
-      "description": "Yer aldığım sosyal sorumluluk ve gönüllülük projeleri."
+      "description": "Yer aldığım sivil toplum kuruluşları(STK) ve gönüllülük projeleri."
     },
     "projects": {
       "title": "Projeler ve Yayınlar",
@@ -196,11 +196,11 @@
   "reveal": "Gör ve kullan",
   "password": {
     "title": "Parola Oluşturucu",
-    "desc": "Create strong and secure passwords instantly."
+    "desc": "Güçlü ve güvenli bir parola oluşturun. Anında!"
   },
   "exif": {
-    "title": "Exif Temizleyici",
-    "desc": "Create strong and secure passwords instantly."
+    "title": "Exif (Metadata) Temizleyici",
+    "desc": "Elinizdeki görseller hakkınızda ne kadar çok bilgi içeriyor olabilir? Hadi temizleyelim."
   }
 },
 "cv": {
