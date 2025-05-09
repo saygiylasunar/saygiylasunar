@@ -9,8 +9,11 @@
       <a href="https://linkedin.com/in/ersenfiliz" target="_blank">LinkedIn</a>
       <!-- Diğer ikonlar -->
     </div>
+
+
   </footer>
 </template>
+
 
 <style scoped>
 .footer {

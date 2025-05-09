@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div class="floating-form">
     <button @click="isOpen = !isOpen" class="form-toggle">
       ✉️
@@ -20,9 +20,8 @@
           {{ $t("form.message") }}
           <textarea v-model="form.message" :placeholder="$t('form.messagePlaceholder')" required></textarea>
         </label>
-
-        <!-- İsteğe bağlı Captcha alanı -->
-        <!-- <div class="captcha">[CAPTCHA]</div> -->
+        <-- İsteğe bağlı Captcha alanı->
+        <--<div class="captcha">[CAPTCHA]</div>->
 
         <button type="submit" class="submit-btn">
           {{ $t("form.send") }}
@@ -34,36 +33,47 @@
       </form>
     </div>
   </div>
+</template>-->
+
+<template>
+  <div class="text-center py-20 text-muted">
+    <p>Şu anda iletişim formu aktif değil.</p>
+    <p>
+      Bizimle iletişime geçmek için lütfen
+      <a href="mailto:saygiylasunar@gmail.com" class="underline">e-posta</a>
+      gönderin.
+    </p>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n()
-const isOpen = ref(false)
-const submitted = ref(false)
+const { t } = useI18n();
+const isOpen = ref(false);
+const submitted = ref(false);
 
 const form = ref({
   name: '',
   email: '',
-  message: ''
-})
+  message: '',
+});
 
 const submitForm = async () => {
   try {
     await fetch('https://formspree.io/f/your-code', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form.value)
-    })
-    submitted.value = true
-    setTimeout(() => submitted.value = false, 5000)
-    form.value = { name: '', email: '', message: '' }
+      body: JSON.stringify(form.value),
+    });
+    submitted.value = true;
+    setTimeout(() => (submitted.value = false), 5000);
+    form.value = { name: '', email: '', message: '' };
   } catch (e) {
-    alert('Bir hata oluştu.')
+    alert('Bir hata oluştu.');
   }
-}
+};
 </script>
 
 <style scoped>
@@ -88,7 +98,7 @@ const submitForm = async () => {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 280px;
   margin-top: 0.5rem;
 }
@@ -96,7 +106,8 @@ label {
   display: block;
   margin-bottom: 1rem;
 }
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;

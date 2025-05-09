@@ -3,7 +3,8 @@
     "home": "Anasayfa",
     "portfolio": "Portföy",
     "cv": "Özgeçmiş",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "tools": "Uygulamalar"
   },
   "categoryHub": {
     "question": "Hangi alanda çalışacağız?"
@@ -56,19 +57,19 @@
       "description": "İkna edici, temiz ve hedef odaklı sunum/pitch deck formatları hazırlar."
     }
   },
-"inspirations": {
-  "title": "İlham Aldığım İsimler:",
-  "names": {
-    "Aile": "♥",
-    "Murat": "Murat İLHAN",
-    "Kübra": "Kübra AYTEMİŞ"
+  "inspirations": {
+    "title": "İlham Aldığım İsimler:",
+    "names": {
+      "Aile": "♥",
+      "Murat": "Murat İLHAN",
+      "Kübra": "Kübra AYTEMİŞ"
+    },
+    "titles": {
+      "Aile": "♥",
+      "Murat": "Bilgisayar Mühendisi",
+      "Kübra": "Bilgisayar Mühendisi"
+    }
   },
-  "titles": {
-    "Aile": "♥",
-    "Murat": "Bilgisayar Mühendisi",
-    "Kübra": "Bilgisayar Mühendisi"
-  }
-},  
   "eski-cv": {
     "education": {
       "title": "Eğitim",
@@ -94,24 +95,23 @@
       "title": "Yetkinlikler / Beceriler",
       "description": "Teknik, yaratıcı ve iletişimsel yeteneklerim."
     },
-    "details": {
-    }
+    "details": {}
   },
   "form": {
-  "name": "Adınız",
-  "email": "E-posta",
-  "message": "Mesajınız",
-  "send": "Gönder",
-  "namePlaceholder": "Adınızı yazınız",
-  "emailPlaceholder": "E-posta adresiniz",
-  "messagePlaceholder": "Mesajınızı yazınız",
-  "success": "Mesajınız başarıyla gönderildi!"
-},
-"cookie": {
-  "message": "Bu sitede size en iyi deneyimi sunmak için çerezler kullanılır.",
-  "accept": "Kabul Et"
-},
-"events": {
+    "name": "Adınız",
+    "email": "E-posta",
+    "message": "Mesajınız",
+    "send": "Gönder",
+    "namePlaceholder": "Adınızı yazınız",
+    "emailPlaceholder": "E-posta adresiniz",
+    "messagePlaceholder": "Mesajınızı yazınız",
+    "success": "Mesajınız başarıyla gönderildi!"
+  },
+  "cookie": {
+    "message": "Bu sitede size en iyi deneyimi sunmak için çerezler kullanılır.",
+    "accept": "Kabul Et"
+  },
+  "events": {
     "title": "Etkinlikler",
     "description": "Organizatörlüğünü üstlendiğim & katıldığım etkinliklerden kareler.",
     "items": {
@@ -125,211 +125,220 @@
       }
     }
   },
-"footer": {
-  "rights": "Ersen FİLİZ Saygıyla Sunar™. Tüm hakları saklıdır. © 2025"
-},
-"partners": {
-  "title": "İş Ortakları",
-  "description": "Birlikte çalıştığım kurumlar:",
-  "items": [
-    {
-      "name": "Beyaz Önlüklüler Derneği",
-      "logo": "/assets/logos/beyazonlukluler.svg"
-    },
-    {
-      "name": "Sivil Yaşam Derneği (SİYAMDER)",
-      "logo": "/assets/logos/siyamder.svg"
-    },
-    {
-      "name": "Selçuk Üniversitesi",
-      "logo": "/assets/logos/selcuk.svg"
-    }
-  ]
-},
-"references": {
-  "title": "Referanslar",
-  "items": [
-    {
-      "name": "Ayşe Demir",
-      "role": "UX Tasarımcı · ABC Ajansı",
-      "note": "Proje yönetimi ve kullanıcı araştırmalarında birlikte çalıştık.",
-      "image": "/references/ayse.jpg"
-    },
-    {
-      "name": "Dr. Ercan Yıldız",
-      "role": "Akademisyen · Selçuk Üniversitesi",
-      "note": "Bitirme projesi danışmanım olarak yönlendirmelerde bulundu.",
-      "image": "/references/SelahattinAlan.jpg"
-    },
-    {
-      "name": "Beyaz Önlüklüler Derneği",
-      "role": "STK İş Ortağı",
-      "note": "Kurumsal kimlik ve dijital süreç danışmanlığı.",
-      "image": "/references/bod.svg"
-    }
-  ]
-},
-"category": {
-  "centerQuestion": "Peki, benim hangi yönüme ihtiyacınız var?",
-  "strategy": "Strateji",
-  "strategySubtitle": "Planlama & Yönetişim",
-  "strategyDesc": "Kurumsal vizyon ve yapılar için stratejik yön belirlerim.",
-  "design": "Tasarım",
-  "designSubtitle": "UI, Marka, Sunum",
-  "designDesc": "Estetik ve işlevsel görseller üretirim.",
-  "ai": "Yapay Zeka",
-  "aiSubtitle": "Otomasyon & İçerik",
-  "aiDesc": "Üretkenlik ve yaratıcılığı algoritmalarla birleştiririm.",
-  "edu": "Eğitim",
-  "eduSubtitle": "Mentorluk & Paylaşım",
-  "eduDesc": "Bilgiyi değerle paylaşırım.",
-  "rnd": "Ar-Ge",
-  "rndSubtitle": "Deneysel Üretim",
-  "rndDesc": "Yeni fikirler, araçlar ve sistemler geliştiririm.",
-  "it": "Teknik Destek",
-  "itSubtitle": "Sistem & Süreç",
-  "itDesc": "Günlük teknoloji ihtiyaçlarını çözüme ulaştırırım."
-},
-"tools": {
-  "title": "Siber güvenlik açısından gerçekten güvende misiniz?",
-  "description": "Size özel iki ücretsiz araç hazırladım. Hepsi tamamen lokal çalışır ve verilerinizi asla paylaşmaz.",
-  "reveal": "Gör ve kullan",
-  "password": {
-    "title": "Parola Oluşturucu",
-    "desc": "Güçlü ve güvenli bir parola oluşturun. Anında!"
+  "footer": {
+    "rights": "Ersen FİLİZ Saygıyla Sunar™. Tüm hakları saklıdır. © 2025"
   },
-  "exif": {
-    "title": "Exif (Metadata) Temizleyici",
-    "desc": "Elinizdeki görseller hakkınızda ne kadar çok bilgi içeriyor olabilir? Hadi temizleyelim."
-  }
-},
-"cv": {
-  "title": "Özgeçmiş",
-  "education": {
-    "title": "Eğitim",
-    "description": "Akademik geçmişim ve öğrenim hayatım."
-  },
-  "experience": {
-    "title": "İş Deneyimi",
-    "description": "Çalıştığım kurumlar ve görev aldığım pozisyonlar."
-  },
-  "skills": {
-    "title": "Yetkinlikler / Beceriler",
-    "description": "Teknik, yaratıcı ve iletişimsel yeteneklerim."
-  },
-  "projects": {
-    "title": "Projeler ve Yayınlar",
-    "description": "Katıldığım projeler ve ürettiğim yayınlar."
-  },
-  "volunteer": {
-    "title": "Sivil Toplum Kuruluşları",
-    "description": "Yer aldığım sosyal sorumluluk ve gönüllülük projeleri."
-  },
-  "academic": {
-    "title": "Akademik Faaliyetler",
-    "description": "Bilimsel etkinlik ve katkılarım."
-  },
-  "details": {
-    "education": [
+  "partners": {
+    "title": "İş Ortakları",
+    "description": "Birlikte çalıştığım kurumlar:",
+    "items": [
       {
-        "school": "Lisans: Bilgisayar Mühendisliği",
-        "department": "Selçuk Üniversitesi • Teknoloji Fakültesi",
-        "year": "2023 - 2017"
+        "name": "Beyaz Önlüklüler Derneği",
+        "logo": "/assets/logos/beyazonlukluler.svg"
       },
       {
-        "school": "Lise: Sayısal Bölüm • Okul Birincisi",
-        "department": "Akşehir Anadolu Lisesi",
-        "year": "2017 - 2013"
-      }
-    ],
-    "experience": [
-      {
-        "title": "STK Yöneticisi - Ulusal Kurumsal Operasyonlar Baş Direktörü • Kurucu Üye",
-        "detail": "Beyaz Önlüklüler Derneği",
-        "year": "[4+ Yıl] 2025 Ocak  - 2021 Kasım"
+        "name": "Sivil Yaşam Derneği (SİYAMDER)",
+        "logo": "/assets/logos/siyamder.svg"
       },
       {
-        "title": "Bilgi İşlem İntörnü - Bilgisayar Mühendisi (T.C. CBİKO Ulusal Staj Pr.)",
-        "detail": "T.C. SAĞLIK BAKANLIĞI - Kırklareli Egitim ve Araştırma Hastanesi",
-        "year": "[6 Ay] 2023 Ocak - 2022 Ağustos"
-      },
-      {
-        "title": "Lead Grafik Tasarım Uzmanı • Junior UI/UX Geliştirici",
-        "detail": "MYDOS Teknoloji - Trakya Teknopark",
-        "year": "[6 Ay] 2022 Ağustos - 2022 Mart"
-      },
-      {
-        "title": "Bilgi İşlem İntörnü - Bilgisayar Mühendisi",
-        "detail": "T.C. Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü",
-        "year": "[3 ay] 2021 Ağustos - 2021 Haziran"
-      },
-      {
-        "title": "STK Yöneticisi - Ulusal Kurumsal İletişim Baş Direktörü • Bilgi İşlem Sorumlusu",
-        "detail": "Sivil Yaşam Derneği (SİYAMDER)",
-        "year": "[5+ Yıl] 2021 Haziran - 2017 Kasım"
-      }
-    ],
-    "skills": [
-      {
-        "title": "Grafik Tasarım",
-        "detail": "Adobe Illustrator, Canva, Figma, Photoshop, Premiere Pro, After Effects, XD, Audition, Media Encoder"
-      },
-      {
-        "title": "Kurumsal Marka Yönetimi",
-        "detail": "Kurumsal Kimlik, Sosyal Medya ve Dijital Pazarlama, Ekip Yönetimi"
-      },
-      {
-        "title": "Sanat",
-        "detail": "Şair, Güfte Yazarı(Songwriter) & Vokal, Mix & Mastering(FL Studio), Tiyatro Oyuncusu, Sahne Hizmetleri: Planlama-Sahne Önü-Sahne Arkası-Teknik Organizasyon"
-      },
-      {
-        "title": "Yapay Zeka",
-        "detail": "SunoAI, FADR • Stable Diffusion: FLUX, SDXL, ControlNet, ComfyUI, ForgeUI, Lora, Prompt(+/-), IPAdapter, Face Recognition, Consistent Character Generation"
-      },
-      {
-        "title": "Bilgi İşlem",
-        "detail": "Teknik Hizmetler: Bakım-Onarım-Kurulum, Yazıcı ve Ağ Yönetimi, Nizami Ofis ve Ortam Tertibatı"
-      },
-      {
-        "title": "UI/UX",
-        "detail": "Figma, Responsive Design, Tema Sistemleri"
-      }
-    ],
-    "projects": [
-      {
-        "title": "Akıllı Ev Otomasyonu",
-        "detail": "IoT ve web paneli ile kontrol edilebilir sistem"
-      },
-      {
-        "title": "Kişisel Portfolyo Sitesi",
-        "detail": "Vue + i18n destekli, dark/light temalı, tam responsive"
-      }
-    ],
-    "volunteer": [
-      {
-        "organization": "SİYAMDER",
-        "role": "İstihdam & Girişimcilik Direktörlüğü",
-        "year": "2022 - Günümüz"
-      },
-      {
-        "organization": "Bilgi Güvenliği Topluluğu",
-        "role": "Kurucu Üye",
-        "year": "2021 - 2023"
-      }
-    ],
-    "academic": [
-      {
-        "title": "Bitirme Projesi",
-        "detail": "Python ile görsel veri işleme üzerine çalışma",
-        "year": "2023"
-      },
-      {
-        "title": "Veri Bilimi Günleri",
-        "detail": "Sunum & organizasyon sorumluluğu",
-        "year": "2022"
+        "name": "Selçuk Üniversitesi",
+        "logo": "/assets/logos/selcuk.svg"
       }
     ]
+  },
+  "references": {
+    "title": "Referanslar",
+    "items": [
+      {
+        "name": "Ayşe Demir",
+        "role": "UX Tasarımcı · ABC Ajansı",
+        "note": "Proje yönetimi ve kullanıcı araştırmalarında birlikte çalıştık.",
+        "image": "/references/ayse.jpg"
+      },
+      {
+        "name": "Dr. Ercan Yıldız",
+        "role": "Akademisyen · Selçuk Üniversitesi",
+        "note": "Bitirme projesi danışmanım olarak yönlendirmelerde bulundu.",
+        "image": "/references/SelahattinAlan.jpg"
+      },
+      {
+        "name": "Beyaz Önlüklüler Derneği",
+        "role": "STK İş Ortağı",
+        "note": "Kurumsal kimlik ve dijital süreç danışmanlığı.",
+        "image": "/references/bod.svg"
+      }
+    ]
+  },
+  "category": {
+    "centerQuestion": "Peki, benim hangi yönüme ihtiyacınız var?",
+    "strategy": "Strateji",
+    "strategySubtitle": "Planlama & Yönetişim",
+    "strategyDesc": "Kurumsal vizyon ve yapılar için stratejik yön belirlerim.",
+    "design": "Tasarım",
+    "designSubtitle": "UI, Marka, Sunum",
+    "designDesc": "Estetik ve işlevsel görseller üretirim.",
+    "ai": "Yapay Zeka",
+    "aiSubtitle": "Otomasyon & İçerik",
+    "aiDesc": "Üretkenlik ve yaratıcılığı algoritmalarla birleştiririm.",
+    "edu": "Eğitim",
+    "eduSubtitle": "Mentorluk & Paylaşım",
+    "eduDesc": "Bilgiyi değerle paylaşırım.",
+    "rnd": "Ar-Ge",
+    "rndSubtitle": "Deneysel Üretim",
+    "rndDesc": "Yeni fikirler, araçlar ve sistemler geliştiririm.",
+    "it": "Teknik Destek",
+    "itSubtitle": "Sistem & Süreç",
+    "itDesc": "Günlük teknoloji ihtiyaçlarını çözüme ulaştırırım."
+  },
+  "tools": {
+    "title": "Siber güvenlik açısından gerçekten güvende misiniz?",
+    "description": "Size özel iki ücretsiz araç hazırladım. Hepsi tamamen lokal çalışır ve verilerinizi asla paylaşmaz.",
+    "reveal": "Gör ve kullan",
+    "password": {
+      "title": "Parola Oluşturucu",
+      "desc": "Güçlü ve güvenli bir parola oluşturun. Anında!"
+    },
+    "exif": {
+      "title": "Exif (Metadata) Temizleyici",
+      "desc": "Elinizdeki görseller hakkınızda ne kadar çok bilgi içeriyor olabilir? Hadi temizleyelim."
+    }
+  },
+  "themes": {
+    "default": "Mor Tema",
+    "theme2": "Turuncu Tema",
+    "palet001": "1",
+    "palet001": "2",
+    "palet001": "3",
+    "palet001": "4",
+    "palet001": "5",
+    "palet001": "6"
+  },
+  "cv": {
+    "title": "Özgeçmiş",
+    "education": {
+      "title": "Eğitim",
+      "description": "Akademik geçmişim ve öğrenim hayatım."
+    },
+    "experience": {
+      "title": "İş Deneyimi",
+      "description": "Çalıştığım kurumlar ve görev aldığım pozisyonlar."
+    },
+    "skills": {
+      "title": "Yetkinlikler / Beceriler",
+      "description": "Teknik, yaratıcı ve iletişimsel yeteneklerim."
+    },
+    "projects": {
+      "title": "Projeler ve Yayınlar",
+      "description": "Katıldığım projeler ve ürettiğim yayınlar."
+    },
+    "volunteer": {
+      "title": "Sivil Toplum Kuruluşları",
+      "description": "Yer aldığım sosyal sorumluluk ve gönüllülük projeleri."
+    },
+    "academic": {
+      "title": "Akademik Faaliyetler",
+      "description": "Bilimsel etkinlik ve katkılarım."
+    },
+    "details": {
+      "education": [
+        {
+          "school": "Lisans: Bilgisayar Mühendisliği",
+          "department": "Selçuk Üniversitesi • Teknoloji Fakültesi",
+          "year": "2023 - 2017"
+        },
+        {
+          "school": "Lise: Sayısal Bölüm • Okul Birincisi",
+          "department": "Akşehir Anadolu Lisesi",
+          "year": "2017 - 2013"
+        }
+      ],
+      "experience": [
+        {
+          "title": "STK Yöneticisi - Ulusal Kurumsal Operasyonlar Baş Direktörü • Kurucu Üye",
+          "detail": "Beyaz Önlüklüler Derneği",
+          "year": "[4+ Yıl] 2025 Ocak  - 2021 Kasım"
+        },
+        {
+          "title": "Bilgi İşlem İntörnü - Bilgisayar Mühendisi (T.C. CBİKO Ulusal Staj Pr.)",
+          "detail": "T.C. SAĞLIK BAKANLIĞI - Kırklareli Egitim ve Araştırma Hastanesi",
+          "year": "[6 Ay] 2023 Ocak - 2022 Ağustos"
+        },
+        {
+          "title": "Lead Grafik Tasarım Uzmanı • Junior UI/UX Geliştirici",
+          "detail": "MYDOS Teknoloji - Trakya Teknopark",
+          "year": "[6 Ay] 2022 Ağustos - 2022 Mart"
+        },
+        {
+          "title": "Bilgi İşlem İntörnü - Bilgisayar Mühendisi",
+          "detail": "T.C. Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü",
+          "year": "[3 ay] 2021 Ağustos - 2021 Haziran"
+        },
+        {
+          "title": "STK Yöneticisi - Ulusal Kurumsal İletişim Baş Direktörü • Bilgi İşlem Sorumlusu",
+          "detail": "Sivil Yaşam Derneği (SİYAMDER)",
+          "year": "[5+ Yıl] 2021 Haziran - 2017 Kasım"
+        }
+      ],
+      "skills": [
+        {
+          "title": "Grafik Tasarım",
+          "detail": "Adobe Illustrator, Canva, Figma, Photoshop, Premiere Pro, After Effects, XD, Audition, Media Encoder"
+        },
+        {
+          "title": "Kurumsal Marka Yönetimi",
+          "detail": "Kurumsal Kimlik, Sosyal Medya ve Dijital Pazarlama, Ekip Yönetimi"
+        },
+        {
+          "title": "Sanat",
+          "detail": "Şair, Güfte Yazarı(Songwriter) & Vokal, Mix & Mastering(FL Studio), Tiyatro Oyuncusu, Sahne Hizmetleri: Planlama-Sahne Önü-Sahne Arkası-Teknik Organizasyon"
+        },
+        {
+          "title": "Yapay Zeka",
+          "detail": "SunoAI, FADR • Stable Diffusion: FLUX, SDXL, ControlNet, ComfyUI, ForgeUI, Lora, Prompt(+/-), IPAdapter, Face Recognition, Consistent Character Generation"
+        },
+        {
+          "title": "Bilgi İşlem",
+          "detail": "Teknik Hizmetler: Bakım-Onarım-Kurulum, Yazıcı ve Ağ Yönetimi, Nizami Ofis ve Ortam Tertibatı"
+        },
+        {
+          "title": "UI/UX",
+          "detail": "Figma, Responsive Design, Tema Sistemleri"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Akıllı Ev Otomasyonu",
+          "detail": "IoT ve web paneli ile kontrol edilebilir sistem"
+        },
+        {
+          "title": "Kişisel Portfolyo Sitesi",
+          "detail": "Vue + i18n destekli, dark/light temalı, tam responsive"
+        }
+      ],
+      "volunteer": [
+        {
+          "organization": "SİYAMDER",
+          "role": "İstihdam & Girişimcilik Direktörlüğü",
+          "year": "2022 - Günümüz"
+        },
+        {
+          "organization": "Bilgi Güvenliği Topluluğu",
+          "role": "Kurucu Üye",
+          "year": "2021 - 2023"
+        }
+      ],
+      "academic": [
+        {
+          "title": "Bitirme Projesi",
+          "detail": "Python ile görsel veri işleme üzerine çalışma",
+          "year": "2023"
+        },
+        {
+          "title": "Veri Bilimi Günleri",
+          "detail": "Sunum & organizasyon sorumluluğu",
+          "year": "2022"
+        }
+      ]
+    }
   }
-}
-
 }

@@ -3,16 +3,18 @@
       <Navbar />
       <router-view />
       <Footer />
-      <FloatingForm />
+      <!--<FloatingForm />-->
       <CookieConsent />
+      <BackToTop />
     </div>
   </template>
   
   <script setup>
   import Navbar from './components/Navbar.vue'
   import Footer from './components/Footer.vue'
-  import FloatingForm from './components/FloatingForm.vue'
+  //import FloatingForm from './components/FloatingForm.vue'
   import CookieConsent from './components/CookieConsent.vue'
+  import BackToTop from './components/BackToTop.vue'
   </script>
   
   <style scoped>

@@ -1,143 +1,146 @@
 <template>
-    <div class="particles-overlay">
-      <!-- Emoji particles -->
-      <span
-        v-for="(particle, index) in particles"
-        :key="index"
-        class="particle"
-        :style="particle.style"
-      >
-        {{ particle.emoji }}
-      </span>
-  
-      <!-- Lottie Animation (Magic Sparks, Yummy, Confetti) -->
-      <div ref="lottieContainer" class="lottie-container"></div>
-    </div>
-  </template>
-  
-  <script setup>
-  import { onMounted, ref } from 'vue'
-  import Lottie from 'lottie-web'
-  import { gsap } from 'gsap'
-  
-  // Emojiler
-  const emojis = ['❤️', '🔥', '👏', '🌟', '💖', '✨', '🎉', '😻']
-  const particles = ref([])
-  const showHalo = ref(false)
-  const lottieContainer = ref(null)
-  const ctx = ref(null)
-  
-  onMounted(() => {
-    // Lottie Animation Initialization
-    const animation = Lottie.loadAnimation({
-      container: lottieContainer.value, // Lottie container element
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: '/assets/lottie/magic-sparks.json', // Use path for Lottie JSON (Magic Sparks)
-    })
-  
-    // GSAP for Particle Effect
-    gsap.fromTo(lottieContainer.value, {
+  <div class="particles-overlay">
+    <!-- Emoji particles -->
+    <span
+      v-for="(particle, index) in particles"
+      :key="index"
+      class="particle"
+      :style="particle.style"
+    >
+      {{ particle.emoji }}
+    </span>
+
+    <!-- Lottie Animation (Magic Sparks, Yummy, Confetti) -->
+    <div ref="lottieContainer" class="lottie-container"></div>
+  </div>
+</template>
+
+<script setup>
+import { onMounted, ref } from 'vue';
+import Lottie from 'lottie-web';
+import { gsap } from 'gsap';
+
+// Emojiler
+const emojis = ['❤️', '🔥', '👏', '🌟', '💖', '✨', '🎉', '😻'];
+const particles = ref([]);
+const showHalo = ref(false);
+const lottieContainer = ref(null);
+const ctx = ref(null);
+
+onMounted(() => {
+  // Lottie Animation Initialization
+  const animation = Lottie.loadAnimation({
+    container: lottieContainer.value, // Lottie container element
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/assets/lottie/magic-sparks.json', // Use path for Lottie JSON (Magic Sparks)
+  });
+
+  // GSAP for Particle Effect
+  gsap.fromTo(
+    lottieContainer.value,
+    {
       opacity: 0,
       scale: 0.5,
-    }, {
+    },
+    {
       opacity: 1,
       scale: 1,
       duration: 1.5,
       ease: 'power4.out',
       repeat: -1,
-      yoyo: true
-    })
-  
-    // Particle Explosion Effect
-    for (let i = 0; i < 60; i++) {
-      const angle = Math.random() * 360
-      const radius = Math.random() * 500 + 100
-      const x = Math.cos(angle) * radius
-      const y = Math.sin(angle) * radius
-      const z = Math.random() * 800 - 400
-      const rotate = Math.random() * 720 - 360
-      const scale = Math.random() * 1.5 + 0.5
-      const duration = Math.random() * 1 + 1.5 // More random speed
-  
-      particles.value.push({
-        emoji: emojis[Math.floor(Math.random() * emojis.length)],
-        style: {
-          transform: `
+      yoyo: true,
+    }
+  );
+
+  // Particle Explosion Effect
+  for (let i = 0; i < 60; i++) {
+    const angle = Math.random() * 360;
+    const radius = Math.random() * 500 + 100;
+    const x = Math.cos(angle) * radius;
+    const y = Math.sin(angle) * radius;
+    const z = Math.random() * 800 - 400;
+    const rotate = Math.random() * 720 - 360;
+    const scale = Math.random() * 1.5 + 0.5;
+    const duration = Math.random() * 1 + 1.5; // More random speed
+
+    particles.value.push({
+      emoji: emojis[Math.floor(Math.random() * emojis.length)],
+      style: {
+        transform: `
             translate3d(${x}px, ${y}px, ${z}px)
             rotate(${rotate}deg)
             scale(${scale})
           `,
-          animationDelay: `${Math.random() * 0.5}s`,
-          animationDuration: `${duration}s`, // Random speed for each particle
-          opacity: 1,
-          filter: `hue-rotate(${Math.random() * 360}deg)` // Random color change
-        }
-      })
-    }
-    
-    // Clear particles after 2 seconds
-    setTimeout(() => {
-      particles.value = []
-    }, 2000)
-  })
-  </script>
-  
-  <style scoped>
-  .particles-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 9999; /* Make sure it's above other elements */
-    pointer-events: none;
-    overflow: visible;
-    perspective: 1200px;
+        animationDelay: `${Math.random() * 0.5}s`,
+        animationDuration: `${duration}s`, // Random speed for each particle
+        opacity: 1,
+        filter: `hue-rotate(${Math.random() * 360}deg)`, // Random color change
+      },
+    });
   }
-  
-  .particle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 2rem;
-    animation: popout 2s ease-out forwards, rotateParticle 4s linear infinite;
+
+  // Clear particles after 2 seconds
+  setTimeout(() => {
+    particles.value = [];
+  }, 2000);
+});
+</script>
+
+<style scoped>
+.particles-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999; /* Make sure it's above other elements */
+  pointer-events: none;
+  overflow: visible;
+  perspective: 1200px;
+}
+
+.particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  animation: popout 2s ease-out forwards, rotateParticle 4s linear infinite;
+  opacity: 0;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Make it more prominent */
+}
+
+@keyframes popout {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
     opacity: 0;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Make it more prominent */
+    transform: translate3d(var(--x), var(--y), var(--z)) scale(2);
   }
-  
-  @keyframes popout {
-    0% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translate3d(var(--x), var(--y), var(--z)) scale(2);
-    }
+}
+
+@keyframes rotateParticle {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes rotateParticle {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
-  
-  /* Lottie container for animation */
-  .lottie-container {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9998; /* Ensure it stays behind particles but still above other content */
-  }
-  </style>
-  
+}
+
+/* Lottie container for animation */
+.lottie-container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998; /* Ensure it stays behind particles but still above other content */
+}
+</style>
