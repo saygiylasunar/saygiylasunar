@@ -1,87 +1,142 @@
 <template>
   <section class="section" id="category-hub">
-    <!-- Üstte sabit soru -->
     <div class="category-question">
-      <h2>{{ $t("category.centerQuestion") }}</h2>
+      <h2>{{ $t('category.centerQuestion') }}</h2>
     </div>
 
-    <!-- Döner kategori halkası -->
-    <div class="category-orbit">
+    <!-- Yalnızca İkonların Döndüğü Orbit -->
+    <div ref="orbitContainer" class="category-orbit">
       <div
         v-for="(item, i) in categories"
         :key="`orbit-${i}`"
-        class="orbit-item"
+        class="orbit-icon-bubble"
         :style="getTransformStyle(i)"
       >
-        <img :src="item.icon" :alt="item.label" />
-        <h3>{{ $t(item.label) }}</h3>
-        <h4>{{ $t(item.subtitle) }}</h4>
-        <p>{{ $t(item.description) }}</p>
+        <img :src="item.icon" :alt="item.label" class="icon2" />
       </div>
     </div>
 
-    <!-- Yatay sabit plaket dizisi -->
+    <!-- Sabit Horizontal Cards -->
     <div class="horizontal-cards">
-      <div v-for="(item, i) in categories" :key="`horizontal-${i}`" class="horizontal-item">
-        <div class="card-title">{{ $t(item.label) }}</div>       
-        <div class="card-description" :class="{ active: currentCard === i }">
-          {{ $t(item.description) }}
+      <div
+        v-for="(item, i) in categories"
+        :key="`horizontal-${i}`"
+        class="horizontal-item"
+        :class="{ active: currentCard === i }"
+      >
+        <div class="card-icon">
+          <img :src="item.icon" :alt="item.label" class="icon" />
         </div>
-
+        <div class="card-title">{{ $t(item.label) }}</div>
+        <div class="card-subtitle">{{ $t(item.subtitle) }}</div>
+        <div class="card-description">{{ $t(item.description) }}</div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n()
+const { t } = useI18n();
 
+// Kategoriler (dokunulmuyor)
 const categories = [
-  { label: 'category.strategy', icon: '/icons/strategy.svg', subtitle: 'category.strategySubtitle', description: 'category.strategyDesc' },
-  { label: 'category.design', icon: '/icons/design.svg', subtitle: 'category.designSubtitle', description: 'category.designDesc' },
-  { label: 'category.ai', icon: '/icons/ai.svg', subtitle: 'category.aiSubtitle', description: 'category.aiDesc' },
-  { label: 'category.edu', icon: '/icons/edu.svg', subtitle: 'category.eduSubtitle', description: 'category.eduDesc' },
-  { label: 'category.rnd', icon: '/icons/rnd.svg', subtitle: 'category.rndSubtitle', description: 'category.rndDesc' },
-  { label: 'category.it', icon: '/icons/it.svg', subtitle: 'category.itSubtitle', description: 'category.itDesc' }
-]
+  {
+    label: 'category.strategy',
+    icon: '/icons/strategy.svg',
+    subtitle: 'category.strategySubtitle',
+    description: 'category.strategyDesc',
+  },
+  {
+    label: 'category.design',
+    icon: '/icons/design.svg',
+    subtitle: 'category.designSubtitle',
+    description: 'category.designDesc',
+  },
+  {
+    label: 'category.ai',
+    icon: '/icons/ai.svg',
+    subtitle: 'category.aiSubtitle',
+    description: 'category.aiDesc',
+  },
+  {
+    label: 'category.edu',
+    icon: '/icons/edu.svg',
+    subtitle: 'category.eduSubtitle',
+    description: 'category.eduDesc',
+  },
+  {
+    label: 'category.rnd',
+    icon: '/icons/rnd.svg',
+    subtitle: 'category.rndSubtitle',
+    description: 'category.rndDesc',
+  },
+  {
+    label: 'category.it',
+    icon: '/icons/it.svg',
+    subtitle: 'category.itSubtitle',
+    description: 'category.itDesc',
+  },
+];
 
-const rotation = ref(0)
-const total = categories.length
-const anglePerItem = 360 / total
-let animationId = null
+// Orbit için animasyon değişkenleri
+const rotation = ref(0);
+const total = categories.length;
+const anglePerItem = 360 / total;
+let animationId = null;
+const orbitContainer = ref(null);
 
-const currentCard = ref(0)
+// Horizontal için aktif kart kontrolü
+const currentCard = ref(0);
+let cardIntervalId = null;
 
+// Orbit Animasyonu
 function animate() {
-  rotation.value = (rotation.value + 0.2) % 360
-  animationId = requestAnimationFrame(animate)
+  rotation.value = (rotation.value + 0.05) % 360;
+  animationId = requestAnimationFrame(animate);
 }
 
-function cycleCards() {
-  currentCard.value = (currentCard.value + 1) % total
-}
-
-onMounted(() => {
-  animate()
-  setInterval(cycleCards, 1500)
-})
-onBeforeUnmount(() => cancelAnimationFrame(animationId))
-
+// Orbit için pozisyon hesaplama
 function getTransformStyle(index) {
-  const currentAngle = (index * anglePerItem + rotation.value) % 360
-  const rad = (currentAngle * Math.PI) / 180
-  const z = Math.cos(rad)
-  const scale = 0.8 + 0.4 * (z + 1) / 2
-  const zIndex = Math.round(z * 1)
-
-  return {
-    transform: `rotateY(${currentAngle}deg) translateZ(280px) scale(${scale})`,
-    zIndex
-  }
+  const currentAngle = (index * anglePerItem + rotation.value) % 360;
+  return { transform: `rotateY(${currentAngle}deg) translateZ(280px)` };
 }
+
+// Horizontal Kart Geçişi - Yumuşak, Dinamik
+function startCardCycling() {
+  cardIntervalId = setInterval(() => {
+    currentCard.value = (currentCard.value + 1) % total;
+  }, 3000);
+}
+
+// Sayfa görünürlüğüne göre animasyon kontrolü
+function observeVisibility() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animate();
+          startCardCycling();
+        } else {
+          cancelAnimationFrame(animationId);
+          clearInterval(cardIntervalId);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  if (orbitContainer.value) observer.observe(orbitContainer.value);
+}
+
+// Başlatma ve Temizlik
+onMounted(() => observeVisibility());
+onBeforeUnmount(() => {
+  cancelAnimationFrame(animationId);
+  clearInterval(cardIntervalId);
+});
 </script>
 
 <style scoped>
@@ -93,65 +148,84 @@ function getTransformStyle(index) {
   text-align: center;
 }
 
-.category-question {
-  margin-bottom: 3rem;
+/* Orbit Bubble */
+.category-orbit {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  height: 480px;
+  margin: 0 auto 1rem auto;
+  perspective: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
 }
 
 .category-question h2 {
   font-size: 1.8rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-accent);
+  margin-bottom: 3rem;
 }
 
-.category-orbit {
-  position: relative;
-  width: 600px;
-  height: 480px;
-  margin: 0 auto;
-  perspective: 1200px;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4rem;
+.card-title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
 }
 
-.orbit-item {
+.card-subtitle {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-light);
+}
+
+.orbit-icon-bubble {
   position: absolute;
-  width: 200px;
-  height: 220px;
-  background: var(--color-surface);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, z-index 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
+.orbit-icon-bubble img {
+  width: 50%;
+  filter: brightness(0) saturate(100%) var(--theme-icon-color, invert(0));
+}
+
+/* Horizontal Cards */
 .horizontal-cards {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   width: 100%;
   max-width: 1200px;
 }
 
 .horizontal-item {
-  flex: 1;
-  margin: 0 0.5rem;
+  flex: 1 1 200px;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow: hidden;
-  height: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.horizontal-item.active {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  background: var(
+    linear-gradient(135deg, var(--color-accent), var(--color-surface))
+  );
+  transform: scale(1.16);
+  box-shadow: 0 2px 8px var(--color-accent-light);
 }
 
 .card-title {
@@ -161,26 +235,45 @@ function getTransformStyle(index) {
 }
 
 .card-description {
-  padding-top: 36px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--color-text-secondary);
 }
 
-.card-description.active {
-  opacity: 1;
-  transform: translateY(0);
+img.icon {
+  width: clamp(24px, 5vw, 64px);
+  height: auto;
+  filter: brightness(0) saturate(100%) var(--color-accent, invert(0));
+
+  [data-theme='dark'] & {
+    filter: brightness(0) saturate(100%) invert(1);
+  }
+}
+img.icon2 {
+  height: auto;
+  filter: brightness(0) saturate(100%) var(--color-accent, invert(0));
+
+  [data-theme='dark'] & {
+    filter: brightness(0) saturate(100%) invert(1);
+  }
 }
 
 @media (max-width: 768px) {
+  .category-orbit {
+    height: 200px;
+  }
+
+  .orbit-icon-bubble {
+    width: 60px;
+    height: 60px;
+  }
+
   .horizontal-cards {
     flex-direction: column;
+    align-items: center;
   }
 
   .horizontal-item {
-    margin: 1rem 0;
+    width: 90%;
   }
 }
 </style>

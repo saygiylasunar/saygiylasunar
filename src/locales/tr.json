@@ -170,7 +170,7 @@
     ]
   },
   "category": {
-    "centerQuestion": "Peki, benim hangi yönüme ihtiyacınız var?",
+    "centerQuestion": "Bana hangi alanda ihtiyacınız var?",
     "strategy": "Strateji",
     "strategySubtitle": "Planlama & Yönetişim",
     "strategyDesc": "Kurumsal vizyon ve yapılar için stratejik yön belirlerim.",
@@ -204,14 +204,14 @@
     }
   },
   "themes": {
-    "default": "Mor Tema",
-    "theme2": "Turuncu Tema",
-    "palet001": "1",
-    "palet001": "2",
-    "palet001": "3",
-    "palet001": "4",
-    "palet001": "5",
-    "palet001": "6"
+    "default": "Morijinal",
+    "theme2": "Soğan Fiyatları",
+    "palet001": "Şeftalya",
+    "palet002": "Böcük Bayramısı",
+    "palet003": "Üretkenlik",
+    "palet004": "Mevsim Sonbahar",
+    "palet005": "Kış Geliyor",
+    "palet006": "Terminaloji"
   },
   "cv": {
     "title": "Özgeçmiş",

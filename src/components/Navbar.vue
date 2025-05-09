@@ -1,10 +1,8 @@
 <template>
   <nav class="navbar">
     <div class="nav-content">
-      <!-- LOGO -->
       <a href="#home" class="nav-logo">Saygıyla Sunar</a>
 
-      <!-- MENÜ -->
       <div class="nav-links">
         <a href="#portfolio" class="nav-item">{{ $t('navbar.portfolio') }}</a>
         <a href="#cv" class="nav-item">{{ $t('navbar.cv') }}</a>
@@ -12,46 +10,28 @@
         <a href="#contact" class="nav-item">{{ $t('navbar.contact') }}</a>
       </div>
 
-      <!-- DİL -->
       <div class="nav-controls">
-        <!--<select class="lang-switch" @change="changeLang" :value="locale">
-          <option value="tr">🇹🇷</option>
-          <option value="en">🇬🇧</option>
-        </select>-->
-        <!-- TEMA -->
         <div class="theme-switcher-wrapper">
           <button @click="toggleThemeDropdown" class="theme-current">
             🎨 Tema
           </button>
           <ul v-if="isThemeOpen" class="theme-dropdown">
-            <li @click="switchTheme('theme1')">{{ $t('themes.default') }}</li>
-            <li @click="switchTheme('theme2')">{{ $t('themes.theme2') }}</li>
-            <li @click="switchTheme('palet001')">
-              {{ $t('themes.palet001') }}
-            </li>
-            <li @click="switchTheme('palet002')">
-              {{ $t('themes.palet002') }}
-            </li>
-            <li @click="switchTheme('palet003')">
-              {{ $t('themes.palet003') }}
-            </li>
-            <li @click="switchTheme('palet004')">
-              {{ $t('themes.palet004') }}
-            </li>
-            <li @click="switchTheme('palet005')">
-              {{ $t('themes.palet005') }}
-            </li>
-            <li @click="switchTheme('palet006')">
-              {{ $t('themes.palet006') }}
-            </li>
+            <li @click="applyTheme('theme1')">{{ $t('themes.default') }}</li>
+            <li @click="applyTheme('theme2')">{{ $t('themes.theme2') }}</li>
+            <li @click="applyTheme('palet001')">{{ $t('themes.palet001') }}</li>
+            <li @click="applyTheme('palet002')">{{ $t('themes.palet002') }}</li>
+            <li @click="applyTheme('palet003')">{{ $t('themes.palet003') }}</li>
+            <li @click="applyTheme('palet004')">{{ $t('themes.palet004') }}</li>
+            <li @click="applyTheme('palet005')">{{ $t('themes.palet005') }}</li>
+            <li @click="applyTheme('palet006')">{{ $t('themes.palet006') }}</li>
           </ul>
         </div>
-        <ThemeToggle />
+        <ThemeToggle @mode-changed="applyModeAndReapplyTheme" />
         <div class="lang-switch-wrapper">
-          <button @click="toggleDropdown" class="lang-current">
+          <button @click="toggleLangDropdown" class="lang-current">
             {{ currentLabel }}
           </button>
-          <ul v-if="isOpen" class="lang-dropdown">
+          <ul v-if="isLangOpen" class="lang-dropdown">
             <li @click="selectLang('tr')">🇹🇷 Türkçe</li>
             <li @click="selectLang('en')">🇬🇧 English</li>
           </ul>
@@ -65,84 +45,119 @@
 import ThemeToggle from '../components/ThemeToggle.vue';
 import { useI18n } from 'vue-i18n';
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+
 const { locale, t } = useI18n();
-const isOpen = ref(false);
-function changeLang(event) {
-  locale.value = event.target.value;
-}
 
-function toggleDropdown() {
-  isOpen.value = !isOpen.value;
+const isLangOpen = ref(false);
+function toggleLangDropdown() {
+  isLangOpen.value = !isLangOpen.value;
 }
-
 function selectLang(lang) {
   locale.value = lang;
-  isOpen.value = false;
+  isLangOpen.value = false;
 }
+const currentLabel = computed(() =>
+  locale.value === 'tr' ? '🇹🇷 Türkçe' : '🇬🇧 English'
+);
 
-const currentLabel = computed(() => {
-  return locale.value === 'tr' ? '🇹🇷 Türkçe' : '🇬🇧 English';
-});
-
-// Dış tıklamada kapatma
-function onClickOutside(event) {
-  if (!event.target.closest('.lang-switch-wrapper')) {
-    isOpen.value = false;
-  }
-}
-
-onMounted(() => {
-  window.addEventListener('click', onClickOutside);
-});
-onBeforeUnmount(() => {
-  window.removeEventListener('click', onClickOutside);
-});
-/*Temalar*/
 const isThemeOpen = ref(false);
 const currentTheme = ref('theme1');
+
+function applyMode(mode) {
+  document.documentElement.setAttribute('data-theme', mode);
+  localStorage.setItem('selectedMode', mode);
+}
+
+function applyTheme(paletName, forceMode = null) {
+  const mode =
+    forceMode || document.documentElement.getAttribute('data-theme') || 'light';
+  applyMode(mode);
+  const themeSet = themes[paletName] || themes['theme1'];
+  const theme = themeSet[mode] || themeSet;
+  for (const key in theme) {
+    document.documentElement.style.setProperty(key, theme[key]);
+  }
+  currentTheme.value = paletName;
+  localStorage.setItem('selectedTheme', paletName);
+  isThemeOpen.value = false;
+}
+
+function applyModeAndReapplyTheme(newMode) {
+  applyMode(newMode);
+  applyTheme(currentTheme.value, newMode);
+}
 
 function toggleThemeDropdown() {
   isThemeOpen.value = !isThemeOpen.value;
 }
 
-function switchTheme(themeName) {
-  const theme = themes[themeName];
-  for (const key in theme) {
-    document.documentElement.style.setProperty(key, theme[key]);
-  }
-  currentTheme.value = themeName;
-  isThemeOpen.value = false;
+function handleClickOutside(event) {
+  if (!event.target.closest('.lang-switch-wrapper')) isLangOpen.value = false;
+  if (!event.target.closest('.theme-switcher-wrapper'))
+    isThemeOpen.value = false;
 }
 
-const currentThemeLabel = computed(() => {
-  return currentTheme.value === 'theme1'
-    ? t('themes.default')
-    : t('themes.theme2');
+onMounted(() => {
+  window.addEventListener('click', handleClickOutside);
+  const savedTheme = localStorage.getItem('selectedTheme') || 'theme1';
+  const savedMode = localStorage.getItem('selectedMode') || 'light';
+  applyMode(savedMode);
+  applyTheme(savedTheme, savedMode);
 });
 
-/*Tema json*/
+onBeforeUnmount(() => {
+  window.removeEventListener('click', handleClickOutside);
+});
+/* Tema JSON (light/dark uyumlu olmalı) */
+
 const themes = {
   theme1: {
-    '--color-background': '#ffffff',
-    '--color-surface': '#f7f7f7',
-    '--color-text': '#222222',
-    '--color-text-secondary': '#555555',
-    '--color-border': '#dddddd',
-    '--color-accent': '#7f5af0',
-    '--color-accent-light': '#b5a7f2',
-    '--color-success': '#28a745',
-    '--color-error': '#dc3545',
+    light: {
+      '--color-background': '#ffffff',
+      '--color-surface': '#f7f7f7',
+      '--color-text': '#222222',
+      '--color-text-secondary': '#555555',
+      '--color-border': '#dddddd',
+      '--color-accent': '#7f5af0',
+      '--color-accent-light': '#b5a7f2',
+      '--color-success': '#28a745',
+      '--color-error': '#dc3545',
+    },
+    dark: {
+      '--color-background': '#111111',
+      '--color-surface': '#1a1a1a',
+      '--color-text': '#f0f0f0',
+      '--color-text-secondary': '#aaaaaa',
+      '--color-border': '#333333',
+      '--color-accent': '#7f5af0',
+      '--color-accent-light': '#d3c8fa',
+      '--color-success': '#28a745',
+      '--color-error': '#dc3545',
+    },
   },
   theme2: {
-    '--color-background': '#FCFAF8',
-    '--color-surface': '#ffffff',
-    '--color-text': '#1d1d1d',
-    '--color-text-secondary': '#555555',
-    '--color-border': '#feac5d',
-    '--color-accent': '#ff5722',
-    '--color-accent-light': '#ff8a50',
-    '--color-success': '#4caf50',
-    '--color-error': '#f44336',
+    light: {
+      '--color-background': '#FCFAF8',
+      '--color-surface': '#ffffff',
+      '--color-text': '#1d1d1d',
+      '--color-text-secondary': '#555555',
+      '--color-border': '#feac5d',
+      '--color-accent': 'linear-gradient(90deg, #ff5722, #feac5d)',
+      '--color-accent-light': '#feac5d',
+      '--color-success': '#4caf50',
+      '--color-error': '#f44336',
+    },
+    dark: {
+      '--color-background': '#140f1f',
+      '--color-surface': '#2c2c2c',
+      '--color-text': '#ffffff',
+      '--color-text-secondary': '#cccccc',
+      '--color-border': '#ff8a50',
+      '--color-accent': 'linear-gradient(90deg, #ff5722, #ff8a50)',
+      '--color-accent-light': '#ff8a50',
+      '--color-success': '#4caf50',
+      '--color-error': '#f44336',
+    },
   },
   palet001: {
     light: {
@@ -394,17 +409,29 @@ const themes = {
 
 /* RESPONSIVE: Menü hep açık kalır, alt alta dizilir */
 @media (max-width: 768px) {
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 0.75rem;
+  .nav-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
-  .nav-content {
-    flex-direction: column;
-    align-items: flex-start;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0;
+  }
+
+  .nav-controls {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-logo {
+    flex: 1 1 100%;
+    text-align: center;
   }
 }
 

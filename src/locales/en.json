@@ -3,35 +3,36 @@
     "home": "Home",
     "portfolio": "Portfolio",
     "cv": "Resume",
-    "contact": "Contact"
+    "contact": "Contact",
+    "tools": "Tools"
   },
   "categoryHub": {
-    "question": "Which field shall we work in?"
+    "question": "Which field shall we work on?"
   },
   "categories": {
     "strategy": {
       "title": "Strategy & Organizational Management",
-      "description": "Builds structures for process efficiency and sustainable solutions in events and projects."
+      "description": "Establishes structures for sustainable solutions that enhance process efficiency in events and projects."
     },
     "design": {
       "title": "Digital and Visual Design Production",
-      "description": "Produces visual communication design in areas such as graphic design, UI/UX, and social media."
+      "description": "Produces visual communication designs for fields like graphic, UI/UX, and social media."
     },
     "ai": {
-      "title": "AI-Powered Content Creation and Automation",
-      "description": "Provides AI-enriched text, visual, and workflow generation."
+      "title": "AI-Powered Content Production & Automation",
+      "description": "Provides AI-enhanced text, visual, and workflow generation."
     },
     "education": {
-      "title": "Education, Mentorship, and Knowledge Sharing",
-      "description": "Contributes through personal development, consultancy, and collective learning practices."
+      "title": "Education, Mentoring, and Knowledge Sharing",
+      "description": "Contributes through individual development, consulting, and collective learning practices."
     },
     "r_and_d": {
       "title": "Research and Development (R&D)",
-      "description": "Includes experimental production, testing, and analytical projects."
+      "description": "Involves experimental production, testing, and solution-oriented projects."
     },
     "it": {
       "title": "IT / Technical Support",
-      "description": "Provides solutions to technical problems, setup, integration, and security support."
+      "description": "Provides solutions for technical problems, setup, integration, and security support."
     }
   },
   "designSub": {
@@ -45,19 +46,19 @@
     },
     "identity": {
       "title": "Corporate Identity",
-      "description": "Designs logo, color palette, fonts, and brand language in a holistic way."
+      "description": "Designs logo, color palette, typography, and brand language holistically."
     },
     "social": {
       "title": "Social Media Content Design",
-      "description": "Creates aesthetic and functional visual content tailored for digital platforms."
+      "description": "Creates aesthetic and functional visual content for digital platforms."
     },
     "presentation": {
       "title": "Presentation Design",
-      "description": "Prepares persuasive, clean, and goal-oriented presentation/pitch deck formats."
+      "description": "Prepares persuasive, clean, and goal-oriented presentations and pitch decks."
     }
   },
   "inspirations": {
-    "title": "People Who Inspire Me:",
+    "title": "Names That Inspire Me:",
     "names": {
       "Aile": "♥",
       "Murat": "Murat İLHAN",
@@ -75,20 +76,20 @@
       "description": "My academic background and educational journey."
     },
     "experience": {
-      "title": "Work Experience",
-      "description": "Institutions I worked for and positions I held."
+      "title": "Professional Experience",
+      "description": "Organizations I have worked for and the positions I held."
     },
     "volunteer": {
-      "title": "Non-Governmental Organizations",
-      "description": "NGOs and volunteer projects I participated in."
+      "title": "Volunteer Work",
+      "description": "Civil society organizations and volunteer projects I participated in."
     },
     "projects": {
       "title": "Projects and Publications",
-      "description": "Projects I took part in and publications I produced."
+      "description": "Projects I participated in and publications I produced."
     },
     "academic": {
-      "title": "Academic Studies and Organizations",
-      "description": "Scientific activities and events I organized/attended."
+      "title": "Academic Work and Organizations",
+      "description": "Scientific activities and organizations I organized/attended."
     },
     "skills": {
       "title": "Skills / Competencies",
@@ -98,41 +99,41 @@
   },
   "form": {
     "name": "Your Name",
-    "email": "E-mail",
-    "message": "Your Message",
+    "email": "Email",
+    "message": "Message",
     "send": "Send",
     "namePlaceholder": "Enter your name",
-    "emailPlaceholder": "Enter your e-mail address",
-    "messagePlaceholder": "Write your message",
+    "emailPlaceholder": "Enter your email address",
+    "messagePlaceholder": "Type your message",
     "success": "Your message has been sent successfully!"
   },
   "cookie": {
-    "message": "This website uses cookies to ensure you get the best experience.",
+    "message": "This website uses cookies to provide you with the best experience.",
     "accept": "Accept"
   },
   "events": {
     "title": "Events",
-    "description": "Highlights from events I organized and participated in.",
+    "description": "Moments from the events I organized & participated in.",
     "items": {
       "ai-konferansi": {
         "title": "AI Conference 2024",
         "description": "Snapshots from the world of artificial intelligence."
       },
       "ux-meetup": {
-        "title": "UX Meetup by the Coast",
-        "description": "A gathering on user experience design."
+        "title": "UX Meetup Beach",
+        "description": "A meetup focused on user experience."
       }
     }
   },
   "footer": {
-    "rights": "Ersen FİLİZ Presents Respectfully™. All rights reserved. © 2025"
+    "rights": "Ersen FİLİZ Presents™. All rights reserved. © 2025"
   },
   "partners": {
     "title": "Partners",
-    "description": "Organizations I have worked with:",
+    "description": "Organizations I collaborate with:",
     "items": [
       {
-        "name": "White Coats Association",
+        "name": "Beyaz Önlüklüler Association",
         "logo": "/assets/logos/beyazonlukluler.svg"
       },
       {
@@ -151,34 +152,34 @@
       {
         "name": "Ayşe Demir",
         "role": "UX Designer · ABC Agency",
-        "note": "We worked together on project management and user research.",
+        "note": "We collaborated on project management and user research.",
         "image": "/references/ayse.jpg"
       },
       {
         "name": "Dr. Ercan Yıldız",
-        "role": "Academic · Selçuk University",
-        "note": "Guided me as my thesis advisor.",
+        "role": "Academician · Selçuk University",
+        "note": "Guided me as my graduation project advisor.",
         "image": "/references/SelahattinAlan.jpg"
       },
       {
-        "name": "White Coats Association",
+        "name": "Beyaz Önlüklüler Association",
         "role": "NGO Partner",
-        "note": "Consultancy on corporate identity and digital processes.",
+        "note": "Provided corporate identity and digital process consultancy.",
         "image": "/references/bod.svg"
       }
     ]
   },
   "category": {
-    "centerQuestion": "So, which of my qualities do you need?",
+    "centerQuestion": "So, which of my strengths do you need?",
     "strategy": "Strategy",
     "strategySubtitle": "Planning & Governance",
-    "strategyDesc": "I define strategic direction for organizational vision and structure.",
+    "strategyDesc": "I define strategic directions for corporate visions and structures.",
     "design": "Design",
     "designSubtitle": "UI, Brand, Presentation",
-    "designDesc": "I create aesthetic and functional visuals.",
+    "designDesc": "I produce aesthetic and functional visuals.",
     "ai": "Artificial Intelligence",
     "aiSubtitle": "Automation & Content",
-    "aiDesc": "I merge productivity and creativity with algorithms.",
+    "aiDesc": "I combine productivity and creativity with algorithms.",
     "edu": "Education",
     "eduSubtitle": "Mentorship & Sharing",
     "eduDesc": "I share knowledge with value.",
@@ -187,30 +188,40 @@
     "rndDesc": "I develop new ideas, tools, and systems.",
     "it": "Technical Support",
     "itSubtitle": "Systems & Processes",
-    "itDesc": "I solve everyday tech needs."
+    "itDesc": "I solve daily technology needs."
   },
   "tools": {
     "title": "Are you really safe in terms of cybersecurity?",
-    "description": "I’ve built two free tools just for you. All work entirely offline and never share your data.",
+    "description": "I have prepared two free tools just for you. They work entirely locally and never share your data.",
     "reveal": "See and use",
     "password": {
       "title": "Password Generator",
-      "desc": "Create a strong and secure password. Instantly!"
+      "desc": "Create a strong and secure password instantly!"
     },
     "exif": {
       "title": "Exif (Metadata) Cleaner",
-      "desc": "How much do your images say about you? Let’s clean it up."
+      "desc": "Your images might reveal a lot about you. Let's clean them."
     }
+  },
+  "themes": {
+    "default": "Morijinal",
+    "theme2": "Onion Prices",
+    "palet001": "Peachy",
+    "palet002": "Bug Carnival",
+    "palet003": "Productivity",
+    "palet004": "Season: Autumn",
+    "palet005": "Winter is Coming",
+    "palet006": "Terminalogy"
   },
   "cv": {
     "title": "Resume",
     "education": {
       "title": "Education",
-      "description": "My academic background and learning journey."
+      "description": "My academic background and educational journey."
     },
     "experience": {
-      "title": "Work Experience",
-      "description": "The organizations I worked for and the roles I undertook."
+      "title": "Professional Experience",
+      "description": "Organizations and positions I have worked in."
     },
     "skills": {
       "title": "Skills / Competencies",
@@ -218,20 +229,20 @@
     },
     "projects": {
       "title": "Projects and Publications",
-      "description": "Projects I've participated in and the publications I've produced."
+      "description": "Projects I have participated in and publications I have produced."
     },
     "volunteer": {
-      "title": "Non-Profit Organizations",
-      "description": "Volunteer and social responsibility projects I've been part of."
+      "title": "Volunteer Activities",
+      "description": "My contributions to social responsibility and volunteer projects."
     },
     "academic": {
       "title": "Academic Activities",
-      "description": "My contributions to scientific events and studies."
+      "description": "My scientific activities and contributions."
     },
     "details": {
       "education": [
         {
-          "school": "Bachelor: Computer Engineering",
+          "school": "Bachelor's: Computer Engineering",
           "department": "Selçuk University • Faculty of Technology",
           "year": "2023 - 2017"
         },
@@ -243,8 +254,8 @@
       ],
       "experience": [
         {
-          "title": "NGO Executive - National Director of Corporate Operations • Founding Member",
-          "detail": "White Coats Association",
+          "title": "NGO Executive - National Corporate Operations Director • Founding Member",
+          "detail": "Beyaz Önlüklüler Association",
           "year": "[4+ Years] Jan 2025 - Nov 2021"
         },
         {
@@ -259,11 +270,11 @@
         },
         {
           "title": "IT Intern - Computer Engineer",
-          "detail": "T.C. Selçuk University Faculty of Technology Department of Computer Engineering",
+          "detail": "T.C. Selçuk University Faculty of Technology, Computer Engineering Department",
           "year": "[3 Months] Aug 2021 - Jun 2021"
         },
         {
-          "title": "NGO Executive - National Director of Corporate Communication • IT Officer",
+          "title": "NGO Executive - National Corporate Communications Director • IT Responsible",
           "detail": "Civil Life Association (SİYAMDER)",
           "year": "[5+ Years] Jun 2021 - Nov 2017"
         }
@@ -275,19 +286,19 @@
         },
         {
           "title": "Corporate Brand Management",
-          "detail": "Corporate Identity, Social Media and Digital Marketing, Team Management"
+          "detail": "Corporate Identity, Social Media & Digital Marketing, Team Management"
         },
         {
-          "title": "Arts",
-          "detail": "Poet, Lyricist & Vocalist, Mix & Mastering (FL Studio), Theater Actor, Stage Services: Planning, On-stage, Backstage, Technical Organization"
+          "title": "Art",
+          "detail": "Poet, Songwriter & Vocalist, Mix & Mastering (FL Studio), Theater Actor, Stage Services: Planning, Front Stage, Backstage, Technical Organization"
         },
         {
           "title": "Artificial Intelligence",
-          "detail": "SunoAI, FADR • Stable Diffusion: FLUX, SDXL, ControlNet, ComfyUI, ForgeUI, Lora, Prompt(+/-), IPAdapter, Face Recognition, Consistent Character Generation"
+          "detail": "SunoAI, FADR • Stable Diffusion: FLUX, SDXL, ControlNet, ComfyUI, ForgeUI, Lora, Prompt (+/-), IPAdapter, Face Recognition, Consistent Character Generation"
         },
         {
-          "title": "IT",
-          "detail": "Technical Services: Maintenance-Repair-Setup, Printer and Network Management, Proper Office and Environment Setup"
+          "title": "Information Technology",
+          "detail": "Technical Services: Maintenance, Repair, Setup, Printer & Network Management, Office and Environment Setup"
         },
         {
           "title": "UI/UX",
@@ -297,7 +308,7 @@
       "projects": [
         {
           "title": "Smart Home Automation",
-          "detail": "Controllable system via IoT and web panel"
+          "detail": "A system controllable via IoT and web panel"
         },
         {
           "title": "Personal Portfolio Website",
@@ -307,7 +318,7 @@
       "volunteer": [
         {
           "organization": "SİYAMDER",
-          "role": "Director of Employment & Entrepreneurship",
+          "role": "Employment & Entrepreneurship Director",
           "year": "2022 - Present"
         },
         {
@@ -319,12 +330,12 @@
       "academic": [
         {
           "title": "Graduation Project",
-          "detail": "Study on image data processing with Python",
+          "detail": "A study on image data processing with Python",
           "year": "2023"
         },
         {
           "title": "Data Science Days",
-          "detail": "Responsible for presentations and organization",
+          "detail": "Responsible for presentation & organization",
           "year": "2022"
         }
       ]
