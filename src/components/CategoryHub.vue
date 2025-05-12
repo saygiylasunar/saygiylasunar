@@ -1,4 +1,42 @@
 <template>
+  <section id="canva-embed">
+    <div
+      style="
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+        box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+        margin-top: 1.6em;
+        margin-bottom: 0.9em;
+        overflow: hidden;
+        border-radius: 8px;
+      "
+    >
+      <iframe
+        loading="lazy"
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border: none;
+        "
+        src="https://www.canva.com/design/DAGOvoWQVS8/LLX09QEy-iONHi-i6cDilA/view?embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p>
+      <a
+        href="https://www.canva.com/design/DAGOvoWQVS8/LLX09QEy-iONHi-i6cDilA/view?utm_content=DAGOvoWQVS8&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+        target="_blank"
+        rel="noopener"
+        >Grafik Tasarım</a
+      >
+      - Ersen Filiz
+    </p>
+  </section>
   <section class="section" id="category-hub">
     <div class="category-question">
       <h2>{{ $t('category.centerQuestion') }}</h2>
@@ -33,6 +71,26 @@
       </div>
     </div>
   </section>
+  <section id="spotify-embed">
+    <div class="spotify-container">
+      <iframe
+        class="spotify-iframe"
+        src="https://open.spotify.com/embed/track/0CNAmzpaJO8ezqS8E5diFl?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+  <section id="spotify-embed">
+    <div class="spotify-container">
+      <iframe
+        class="spotify-iframe"
+        src="https://open.spotify.com/embed/track/0kFYwgdNxcf72eyPhqCohn?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -45,37 +103,37 @@ const { t } = useI18n();
 const categories = [
   {
     label: 'category.strategy',
-    icon: '/icons/strategy.svg',
+    icon: 'strategy.svg',
     subtitle: 'category.strategySubtitle',
     description: 'category.strategyDesc',
   },
   {
     label: 'category.design',
-    icon: '/icons/design.svg',
+    icon: 'design.svg',
     subtitle: 'category.designSubtitle',
     description: 'category.designDesc',
   },
   {
     label: 'category.ai',
-    icon: '/icons/ai.svg',
+    icon: 'ai.svg',
     subtitle: 'category.aiSubtitle',
     description: 'category.aiDesc',
   },
   {
     label: 'category.edu',
-    icon: '/icons/edu.svg',
+    icon: 'edu.svg',
     subtitle: 'category.eduSubtitle',
     description: 'category.eduDesc',
   },
   {
     label: 'category.rnd',
-    icon: '/icons/rnd.svg',
+    icon: 'rnd.svg',
     subtitle: 'category.rndSubtitle',
     description: 'category.rndDesc',
   },
   {
     label: 'category.it',
-    icon: '/icons/it.svg',
+    icon: 'it.svg',
     subtitle: 'category.itSubtitle',
     description: 'category.itDesc',
   },
@@ -140,6 +198,48 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.spotify-container {
+  position: relative;
+  width: 100%;
+  padding-top: 80px; /* 152px yüksekliğe uygun oran */
+  box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.spotify-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.canva-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  margin-top: 1.6em;
+  margin-bottom: 0.9em;
+  overflow: hidden;
+  border-radius: 8px;
+  will-change: transform;
+}
+
+.canva-iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .section {
   padding: 4rem 2rem;
   display: flex;

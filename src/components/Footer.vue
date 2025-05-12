@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer-left">
-      <p>{{ $t("footer.rights") }}</p>
+      <p>{{ $t('footer.rights') }}</p>
     </div>
     <div class="footer-right">
       <a href="mailto:saygiylasunar@gmail.com">📧</a>
@@ -9,11 +9,8 @@
       <a href="https://linkedin.com/in/ersenfiliz" target="_blank">LinkedIn</a>
       <!-- Diğer ikonlar -->
     </div>
-
-
   </footer>
 </template>
-
 
 <style scoped>
 .footer {

@@ -1,15 +1,7 @@
 <template>
-  <div
-    v-if="visible"
-    class="modal-backdrop"
-    @click.self="close"
-    @keydown.esc="close"
-    tabindex="0"
-  >
+  <div v-if="visible" class="modal-backdrop" @click.self="close" tabindex="0">
     <div
       class="modal-content"
-      @keydown.left.prevent="prev"
-      @keydown.right.prevent="next"
       @touchstart="onTouchStart"
       @touchend="onTouchEnd"
     >
@@ -32,91 +24,102 @@
 </template>
 
 <script setup>
-import { ref, watch, computed, onMounted, onBeforeUnmount } from 'vue'
-import ReactionBar from './ReactionBar.vue'
-import maintenanceImage from '@/assets/maintenance.jpg'
+import { ref, watch, computed, onMounted, onBeforeUnmount } from 'vue';
+import { useI18n } from 'vue-i18n';
+import ReactionBar from './ReactionBar.vue';
+import maintenanceImage from '@/assets/maintenance.jpg';
+
+const { t } = useI18n();
 
 const props = defineProps({
   images: Array,
   title: String,
   id: String,
-  modelValue: Boolean
-})
+  modelValue: Boolean,
+});
+const emit = defineEmits(['update:modelValue']);
 
-const emit = defineEmits(['update:modelValue'])
+const currentIndex = ref(0);
+const visible = ref(false);
+const touchStartX = ref(0);
+const touchEndX = ref(0);
 
-const currentIndex = ref(0)
-const visible = ref(false)
-
-const touchStartX = ref(null)
-const touchEndX = ref(null)
-
-watch(() => props.modelValue, (val) => {
-  visible.value = val
-})
-
-const currentImage = computed(() => props.images[currentIndex.value])
-const currentTitle = computed(() => props.title)
-const currentId = computed(() => props.id)
+watch(
+  () => props.modelValue,
+  (val) => {
+    visible.value = val;
+    if (val) {
+      // her açılışta history adımı ekle
+      history.pushState({ modalOpen: true }, '');
+      window.addEventListener('popstate', onBack);
+    } else {
+      window.removeEventListener('popstate', onBack);
+      // eklediğimiz adımı geri al
+      if (history.state && history.state.modalOpen) history.back();
+    }
+  }
+);
 
 function close() {
-  emit('update:modelValue', false)
+  emit('update:modelValue', false);
 }
+
+function onBack() {
+  if (visible.value) {
+    close();
+  }
+}
+
+// carousel helpers
+const currentImage = computed(() => props.images[currentIndex.value]);
+const currentTitle = computed(() => props.title);
+const currentId = computed(() => props.id);
 
 function prev() {
-  currentIndex.value = (currentIndex.value - 1 + props.images.length) % props.images.length
+  currentIndex.value =
+    (currentIndex.value - 1 + props.images.length) % props.images.length;
 }
-
 function next() {
-  currentIndex.value = (currentIndex.value + 1) % props.images.length
+  currentIndex.value = (currentIndex.value + 1) % props.images.length;
+}
+function onImageError(e) {
+  e.target.src = maintenanceImage;
 }
 
-function onImageError(event) {
-  event.target.src = maintenanceImage
-}
-
-// Keyboard support
-function handleKey(e) {
-  if (!visible.value) return
-  if (e.key === 'ArrowLeft') prev()
-  if (e.key === 'ArrowRight') next()
-  if (e.key === 'Escape') close()
+// keyboard
+function onKey(e) {
+  if (!visible.value) return;
+  if (e.key === 'Escape') close();
+  if (e.key === 'ArrowLeft') prev();
+  if (e.key === 'ArrowRight') next();
 }
 
 onMounted(() => {
-  window.addEventListener('keydown', handleKey)
-})
-
+  window.addEventListener('keydown', onKey);
+});
 onBeforeUnmount(() => {
-  window.removeEventListener('keydown', handleKey)
-})
+  window.removeEventListener('keydown', onKey);
+  window.removeEventListener('popstate', onBack);
+});
 
-// Mobile swipe support
+// swipe
 function onTouchStart(e) {
-  touchStartX.value = e.changedTouches[0].screenX
+  touchStartX.value = e.changedTouches[0].screenX;
 }
 function onTouchEnd(e) {
-  touchEndX.value = e.changedTouches[0].screenX
-  handleSwipe()
-}
-function handleSwipe() {
-  if (touchStartX.value !== null && touchEndX.value !== null) {
-    const diff = touchStartX.value - touchEndX.value
-    if (Math.abs(diff) > 50) {
-      diff > 0 ? next() : prev()
-    }
-  }
+  touchEndX.value = e.changedTouches[0].screenX;
+  const diff = touchStartX.value - touchEndX.value;
+  if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
 }
 </script>
 
 <style scoped>
 .modal-backdrop {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
   z-index: 9990;
@@ -127,17 +130,12 @@ function handleSwipe() {
   background: var(--color-background);
   color: var(--color-text);
   border-radius: var(--border-radius);
-  padding: 2rem;
-  max-width: 90%;
-  max-height: 90%;
-  overflow: hidden;
+  padding: clamp(1rem, 2vw, 2rem);
+  width: clamp(280px, 90%, 600px);
+  max-height: 95vh;
+  overflow-y: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: zoomIn 0.5s ease;
-  transition: transform 0.3s ease;
-}
-
-.modal-content:hover {
-  transform: scale(1.01);
 }
 
 @keyframes zoomIn {
@@ -153,10 +151,14 @@ function handleSwipe() {
 
 .carousel {
   position: relative;
+  width: 100%;
 }
 
 .carousel-image {
+  display: block;
   width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   transition: transform 0.4s, opacity 0.3s ease;
@@ -165,37 +167,46 @@ function handleSwipe() {
 .carousel-image.fade {
   animation: fadeIn 0.4s ease-in-out;
 }
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  width: clamp(2.5rem, 8vw, 4rem);
+  height: clamp(2.5rem, 8vw, 4rem);
   background: transparent;
   border: none;
   color: var(--color-accent);
   cursor: pointer;
-  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease;
 }
-
 .nav-btn:hover {
   transform: scale(1.2) translateY(-50%);
 }
-
-.left { left: 10px; }
-.right { right: 10px; }
+.nav-btn.left {
+  left: clamp(0.5rem, 5vw, 1rem);
+}
+.nav-btn.right {
+  right: clamp(0.5rem, 5vw, 1rem);
+}
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.3rem;
+  top: clamp(0.5rem, 2vw, 1rem);
+  right: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
   background: transparent;
   border: none;
   color: var(--color-text-secondary);
