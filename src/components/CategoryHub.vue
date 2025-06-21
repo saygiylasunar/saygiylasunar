@@ -1,41 +1,11 @@
 <template>
-  <section id="canva-embed">
-    <div
-      style="
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: 56.25%;
-        box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-        margin-top: 1.6em;
-        margin-bottom: 0.9em;
-        overflow: hidden;
-        border-radius: 8px;
-      "
-    >
-      <iframe
-        loading="lazy"
-        style="
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          border: none;
-        "
-        src="https://www.canva.com/design/DAGOvoWQVS8/LLX09QEy-iONHi-i6cDilA/view?embed"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <p>
-      <a
-        href="https://www.canva.com/design/DAGOvoWQVS8/LLX09QEy-iONHi-i6cDilA/view?utm_content=DAGOvoWQVS8&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-        target="_blank"
-        rel="noopener"
-        >Grafik Tasarım</a
+  <section class="section" id="button-hub">
+    <div class="download-buttons">
+      <a href="cv.pdf" download class="btn download-btn">📄 Özgeçmişi İndir</a>
+      <a href="portfolio.pdf" download class="btn portfolio-btn"
+        >🎨 Portföyü İndir</a
       >
-      - Ersen Filiz
-    </p>
+    </div>
   </section>
   <section class="section" id="category-hub">
     <div class="category-question">
@@ -198,6 +168,41 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.download-btn:hover {
+  background-color: #4338ca;
+}
+
+.portfolio-btn {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.portfolio-btn:hover {
+  background-color: #059669;
+}
+
 .spotify-container {
   position: relative;
   width: 100%;
