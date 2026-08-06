@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" role="img" aria-labelledby="title desc">
+  <title id="title">Çuvuk yapım aşamasında</title>
+  <desc id="desc">Baret takan sade çizgisel kuş maskotu ve küçük bir anahtar.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M111 196c0-58 44-105 99-105s99 47 99 105c0 51-37 87-99 87s-99-36-99-87Z"/>
+    <path d="M144 112c7-38 34-63 66-63s59 25 66 63"/>
+    <path d="M129 113h162"/>
+    <path d="M161 180h1M258 180h1"/>
+    <path d="M190 205c12 10 28 10 40 0"/>
+    <path d="M210 183l-16 10 16 10 16-10-16-10Z"/>
+    <path d="M116 218 67 193M304 219l50-24"/>
+    <path d="m65 193-20-25M67 193l-28 11"/>
+    <path d="m355 195 18-29M354 195l29 8"/>
+    <path d="M174 279v22M246 279v22"/>
+    <path d="M150 301h48M222 301h48"/>
+    <path d="M330 78a28 28 0 0 0-35 35l-40 40 22 22 40-40a28 28 0 0 0 35-35l-17 17-18-4-4-18 17-17Z"/>
+  </g>
+</svg>

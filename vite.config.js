@@ -1,21 +1,11 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import { resolve } from 'path';
-
-// __dirname yerine process.cwd() kullanmak daha güvenli
-const r = (...paths) => resolve(process.cwd(), ...paths);
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  server: {
-    port: 5173,
-  },
   build: {
-    rollupOptions: {
-      input: {
-        main: r('index.html'),
-        cekilis: r('cekilis.html'),
-      },
-    },
+    target: 'es2022',
+    cssCodeSplit: true,
+    sourcemap: false,
   },
-});
+})

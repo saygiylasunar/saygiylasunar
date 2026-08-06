@@ -1,53 +1,70 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
-import Home from '../views/Home.vue'
-import PasswordTool from '../views/tools/PasswordTool.vue'
-import ExifTool from '../views/tools/ExifTool.vue'
-
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/tools/password-generator',
-    name: 'PasswordTool',
-    component: PasswordTool,
-    meta: {
-      title: 'Online Keygen – Parola Oluşturucu',
-      description: 'Güçlü rastgele parolalar oluşturun – güvenli, ücretsiz ve kullanımı kolay parola üretici.'
-    }
-  },
-  {
-    path: '/tools/exif-remover',
-    name: 'ExifTool',
-    component: ExifTool,
-    meta: {
-      title: 'EXIF Remover – Görsel Meta Temizleyici',
-      description: 'Görsellerinizdeki gizli bilgileri kaldırın – EXIF kaldırıcı aracı.'
-    }
-  }
-]
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
-
-// SEO Meta güncellemesi
-router.afterEach((to) => {
-  if (to.meta.title) document.title = to.meta.title
-
-  if (to.meta.description) {
-    let descriptionTag = document.querySelector('meta[name="description"]')
-    if (!descriptionTag) {
-      descriptionTag = document.createElement('meta')
-      descriptionTag.setAttribute('name', 'description')
-      document.head.appendChild(descriptionTag)
-    }
-    descriptionTag.setAttribute('content', to.meta.description)
-  }
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    if (to.hash) return { el: to.hash, behavior: 'smooth', top: 88 }
+    return { top: 0, behavior: 'smooth' }
+  },
+  routes: [
+    { path: '/', name: 'home', component: HomeView, meta: { title: 'home' } },
+    {
+      path: '/services',
+      name: 'services',
+      component: () => import('../views/ServicesView.vue'),
+      meta: { title: 'services' },
+    },
+    {
+      path: '/services/:slug',
+      name: 'service-detail',
+      component: () => import('../views/ServiceDetailView.vue'),
+      meta: { title: 'services' },
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: () => import('../views/ProjectsView.vue'),
+      meta: { title: 'projects' },
+    },
+    {
+      path: '/projects/:slug',
+      name: 'project-detail',
+      component: () => import('../views/ProjectDetailView.vue'),
+      meta: { title: 'projects' },
+    },
+    {
+      path: '/experience',
+      name: 'experience',
+      component: () => import('../views/ExperienceView.vue'),
+      meta: { title: 'experience' },
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue'),
+      meta: { title: 'about' },
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue'),
+      meta: { title: 'contact' },
+    },
+    {
+      path: '/tools/password',
+      name: 'password',
+      component: () => import('../views/PasswordToolView.vue'),
+      meta: { title: 'password' },
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../views/NotFoundView.vue'),
+      meta: { title: 'notFound' },
+    },
+  ],
 })
 
 export default router

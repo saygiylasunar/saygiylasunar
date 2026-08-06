@@ -1,0 +1,140 @@
+export const professionalExperience = [
+  {
+    institution: 'TNC Group [Software Persona & Social Office]',
+    role: {
+      tr: 'Multidisipliner Mühendislik Stajyeri',
+      en: 'Multidisciplinary Engineering Intern',
+    },
+    period: '2025 — 2026',
+    detail: {
+      tr: 'Bilişim teknolojileri, dijital tasarım, kurumsal iletişim, müşteri ilişkileri ve proje geliştirme süreçleri.',
+      en: 'Information technologies, digital design, institutional communication, client relations and project development processes.',
+    },
+  },
+  {
+    institution: {
+      tr: 'T.C. Sağlık Bakanlığı — Kırklareli Eğitim ve Araştırma Hastanesi',
+      en: 'Republic of Türkiye Ministry of Health — Kırklareli Training and Research Hospital',
+    },
+    role: {
+      tr: 'İntörn Bilgisayar Mühendisi · Bilgi İşlem Personeli',
+      en: 'Computer Engineering Intern · IT Personnel',
+    },
+    period: '2022 — 2023',
+    detail: {
+      tr: 'HBYS ve SQL süreçleri, teknik destek, yazıcı bakım ve onarımı, personel kart baskısı, bilgi güvenliği denetimi ve medya üretimi.',
+      en: 'HIS and SQL workflows, technical support, printer maintenance, personnel card production, information security review and media production.',
+    },
+  },
+  {
+    institution: 'MySoft Technology — Lingush App',
+    role: {
+      tr: 'UI/UX ve Grafik Tasarım Geliştirme Uzmanı',
+      en: 'UI/UX & Graphic Design Development Specialist',
+    },
+    period: '2022',
+    detail: {
+      tr: 'Mobil uygulama arayüzü, görsel sistem, Flutter tabanlı ürün geliştirme sürecine tasarım katkısı.',
+      en: 'Mobile application interface, visual system and design contribution to a Flutter-based product development process.',
+    },
+  },
+  {
+    institution: {
+      tr: 'Selçuk Üniversitesi Teknoloji Fakültesi',
+      en: 'Selçuk University Faculty of Technology',
+    },
+    role: {
+      tr: 'İntörn Bilgisayar Mühendisi · Bilgi İşlem Personeli',
+      en: 'Computer Engineering Intern · IT Personnel',
+    },
+    period: '2020 — 2021',
+    detail: {
+      tr: 'Web, UI/UX, bilgi işlem, Windows Server, SQL, Flutter ve Firebase tabanlı çalışmalar.',
+      en: 'Work involving web, UI/UX, IT operations, Windows Server, SQL, Flutter and Firebase.',
+    },
+  },
+]
+
+export const nonprofitExperience = [
+  {
+    institution: 'Beyaz Önlüklüler Derneği',
+    role: {
+      tr: 'Kurucu Üye · Kurumsal Operasyonlar Baş Direktörü',
+      en: 'Founding Member · Head of Corporate Operations',
+    },
+    period: { tr: '2021 — Günümüz', en: '2021 — Present' },
+    detail: {
+      tr: 'Bilgi işlem, tasarım, sosyal medya, kurumsal iletişim ve organizasyon süreçlerinin yönetimi.',
+      en: 'Management of IT, design, social media, institutional communication and organizational processes.',
+    },
+  },
+  {
+    institution: 'Sivil Yaşam Derneği (SİYAMDER)',
+    role: {
+      tr: 'Ulusal Kurumsal İletişim Direktörü',
+      en: 'National Director of Corporate Communications',
+    },
+    period: '2017 — 2021',
+    detail: {
+      tr: 'Kurumsal iletişim, grafik tasarım, sosyal medya, dijital pazarlama, eğitim ve organizasyon süreçleri.',
+      en: 'Institutional communication, graphic design, social media, digital marketing, training and organizational processes.',
+    },
+  },
+]
+
+export const education = [
+  {
+    institution: {
+      tr: 'Selçuk Üniversitesi Teknoloji Fakültesi',
+      en: 'Selçuk University Faculty of Technology',
+    },
+    degree: { tr: 'Bilgisayar Mühendisliği Lisans Programı', en: 'BSc in Computer Engineering' },
+    period: '2017 — 2023',
+  },
+  {
+    institution: { tr: 'Akşehir Anadolu Lisesi', en: 'Akşehir Anatolian High School' },
+    degree: { tr: 'Sayısal Bölüm · Okul Birincisi', en: 'Science Track · Valedictorian' },
+    period: '2013 — 2017',
+  },
+]
+
+export const skillGroups = [
+  {
+    title: { tr: 'Yazılım ve Sistemler', en: 'Software & Systems' },
+    items: ['JavaScript', 'TypeScript', 'Vue', 'HTML', 'CSS', 'SCSS', 'Python', 'SQL', 'Firebase', 'MongoDB', 'Flutter', 'Git'],
+  },
+  {
+    title: { tr: 'Tasarım ve Medya', en: 'Design & Media' },
+    items: ['Adobe Illustrator', 'Adobe Photoshop', 'Figma', 'Adobe XD', 'Premiere Pro', 'After Effects', 'Adobe Audition'],
+  },
+  {
+    title: { tr: 'Yapay Zekâ', en: 'Artificial Intelligence' },
+    items: ['ComfyUI', 'Flux', 'SDXL', 'Qwen Edit', 'Z-Image', 'LoRA', 'Prompt & workflow design'],
+  },
+  {
+    title: { tr: 'Kurumsal ve Operasyonel', en: 'Institutional & Operational' },
+    items: [
+      'Process design',
+      'Institutional communication',
+      'Brand systems',
+      'Stakeholder coordination',
+      'Technical support',
+      'Documentation',
+    ],
+  },
+]
+
+export const certificates = [
+  {
+    title: { tr: 'ISO Başdenetçilik Programı', en: 'ISO Lead Auditor Program' },
+    institution: 'Bilginet Akademi',
+    period: '2025 — 2026',
+    detail: 'ISO 27001 · ISO 9001 · ISO 14001 · ISO 50001 · ISO 45001',
+  },
+  {
+    title: { tr: 'Grafik Tasarım ve UI/UX Eğitimleri', en: 'Graphic Design & UI/UX Training' },
+    institution: 'Udemy',
+    period: '2017 — 2026',
+    detail: 'Adobe Illustrator · Adobe Photoshop · Figma · UI/UX',
+  },
+]
