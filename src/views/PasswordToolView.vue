@@ -1,44 +1,46 @@
 <template>
-  <section class="page-hero compact-hero">
-    <div class="container narrow-container">
-      <p class="eyebrow">{{ t('password.eyebrow') }}</p>
-      <h1>{{ t('password.title') }}</h1>
-      <p>{{ t('password.intro') }}</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container narrow-container">
-      <div class="password-tool" v-reveal>
-        <div class="password-output">
-          <code>{{ password }}</code>
-          <button type="button" @click="copyPassword">{{ copied ? t('password.copied') : t('password.copy') }}</button>
-        </div>
-
-        <label class="range-control">
-          <span>{{ t('password.length') }}: <strong>{{ length }}</strong></span>
-          <input v-model.number="length" type="range" min="8" max="48" step="1" @input="generatePassword" />
-        </label>
-
-        <div class="option-grid">
-          <label><input v-model="options.lowercase" type="checkbox" @change="generatePassword" /> {{ t('password.lowercase') }}</label>
-          <label><input v-model="options.uppercase" type="checkbox" @change="generatePassword" /> {{ t('password.uppercase') }}</label>
-          <label><input v-model="options.numbers" type="checkbox" @change="generatePassword" /> {{ t('password.numbers') }}</label>
-          <label><input v-model="options.symbols" type="checkbox" @change="generatePassword" /> {{ t('password.symbols') }}</label>
-        </div>
-
-        <p v-if="error" class="tool-error">{{ t('password.error') }}</p>
-        <button class="button button-primary full-button" type="button" @click="generatePassword">
-          {{ t('password.generate') }}
-        </button>
+  <div class="page-view password-view">
+    <section class="page-hero compact-hero">
+      <div class="container narrow-container">
+        <p class="eyebrow">{{ t('password.eyebrow') }}</p>
+        <h1>{{ t('password.title') }}</h1>
+        <p>{{ t('password.intro') }}</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section">
+      <div class="container narrow-container">
+        <div class="password-tool" v-reveal>
+          <div class="password-output">
+            <code>{{ password }}</code>
+            <button type="button" @click="copyPassword">{{ copied ? t('password.copied') : t('password.copy') }}</button>
+          </div>
+
+          <label class="range-control">
+            <span>{{ t('password.length') }}: <strong>{{ length }}</strong></span>
+            <input v-model.number="length" type="range" min="8" max="48" step="1" @input="generatePassword" />
+          </label>
+
+          <div class="option-grid">
+            <label><input v-model="options.lowercase" type="checkbox" @change="generatePassword" /> {{ t('password.lowercase') }}</label>
+            <label><input v-model="options.uppercase" type="checkbox" @change="generatePassword" /> {{ t('password.uppercase') }}</label>
+            <label><input v-model="options.numbers" type="checkbox" @change="generatePassword" /> {{ t('password.numbers') }}</label>
+            <label><input v-model="options.symbols" type="checkbox" @change="generatePassword" /> {{ t('password.symbols') }}</label>
+          </div>
+
+          <p v-if="error" class="tool-error">{{ t('password.error') }}</p>
+          <button class="button button-primary full-button" type="button" @click="generatePassword">
+            {{ t('password.generate') }}
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
-import { t } from '../i18n.js'
+import { t } from '../lib/locale.js'
 
 const groups = {
   lowercase: 'abcdefghijkmnopqrstuvwxyz',

@@ -2,8 +2,23 @@
   <Teleport to="body">
     <Transition name="modal">
       <div v-if="open" class="modal-backdrop" @click.self="close">
-        <section class="intent-modal" role="dialog" aria-modal="true" :aria-labelledby="titleId">
-          <button class="modal-close" type="button" :aria-label="t('common.close')" @click="close">×</button>
+        <section
+          ref="modalRef"
+          class="intent-modal"
+          role="dialog"
+          aria-modal="true"
+          :aria-labelledby="titleId"
+          tabindex="-1"
+        >
+          <button
+            ref="closeButtonRef"
+            class="modal-close"
+            type="button"
+            :aria-label="t('common.close')"
+            @click="close"
+          >
+            ×
+          </button>
           <p class="eyebrow">{{ t('intent.eyebrow') }}</p>
           <h2 :id="titleId">{{ t('intent.title') }}</h2>
 
@@ -32,15 +47,26 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import { t } from '../i18n.js'
+import { t } from '../lib/locale.js'
 
 const router = useRouter()
 const open = ref(false)
+const modalRef = ref(null)
+const closeButtonRef = ref(null)
 const titleId = 'intent-title'
+let previousFocus = null
+let previousOverflow = ''
+
+function restoreDocument() {
+  document.body.style.overflow = previousOverflow
+  if (previousFocus instanceof HTMLElement) previousFocus.focus()
+  previousFocus = null
+}
 
 function close() {
+  if (!open.value) return
   open.value = false
   sessionStorage.setItem('intent-seen-v2', 'true')
 }
@@ -54,6 +80,54 @@ function reopen() {
   open.value = true
 }
 
+function focusableElements() {
+  if (!modalRef.value) return []
+  return [...modalRef.value.querySelectorAll(
+    'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])',
+  )]
+}
+
+function onKeydown(event) {
+  if (!open.value) return
+
+  if (event.key === 'Escape') {
+    event.preventDefault()
+    close()
+    return
+  }
+
+  if (event.key !== 'Tab') return
+  const items = focusableElements()
+  if (!items.length) {
+    event.preventDefault()
+    modalRef.value?.focus()
+    return
+  }
+
+  const first = items[0]
+  const last = items[items.length - 1]
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault()
+    last.focus()
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault()
+    first.focus()
+  }
+}
+
+watch(open, async (isOpen) => {
+  if (isOpen) {
+    previousFocus = document.activeElement
+    previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    await nextTick()
+    closeButtonRef.value?.focus()
+  } else {
+    await nextTick()
+    restoreDocument()
+  }
+})
+
 onMounted(() => {
   if (!sessionStorage.getItem('intent-seen-v2')) {
     window.setTimeout(() => {
@@ -61,7 +135,12 @@ onMounted(() => {
     }, 350)
   }
   window.addEventListener('open-intent', reopen)
+  window.addEventListener('keydown', onKeydown)
 })
 
-onUnmounted(() => window.removeEventListener('open-intent', reopen))
+onUnmounted(() => {
+  window.removeEventListener('open-intent', reopen)
+  window.removeEventListener('keydown', onKeydown)
+  if (open.value) restoreDocument()
+})
 </script>

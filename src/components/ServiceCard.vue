@@ -9,7 +9,7 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
-import { localize, t } from '../i18n.js'
+import { localize, t } from '../lib/locale.js'
 
 defineProps({
   service: { type: Object, required: true },

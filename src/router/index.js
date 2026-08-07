@@ -6,7 +6,7 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition
     if (to.hash) return { el: to.hash, behavior: 'smooth', top: 88 }
-    return { top: 0, behavior: 'smooth' }
+    return { top: 0 }
   },
   routes: [
     { path: '/', name: 'home', component: HomeView, meta: { title: 'home' } },
@@ -57,6 +57,12 @@ const router = createRouter({
       name: 'password',
       component: () => import('../views/PasswordToolView.vue'),
       meta: { title: 'password' },
+    },
+    {
+      path: '/arsalar',
+      name: 'lands',
+      component: () => import('../views/LandPortfolioView.vue'),
+      meta: { title: 'lands' },
     },
     {
       path: '/:pathMatch(.*)*',

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-view home-view">
     <section class="hero-section">
       <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
       <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
@@ -9,23 +9,19 @@
           <h1>{{ t('home.title') }}</h1>
           <p class="hero-intro">{{ t('home.intro') }}</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:saygiylasunar@gmail.com?subject=Proje%20Talebi">
-              {{ t('home.primaryCta') }}
-            </a>
+            <a class="button button-primary" :href="projectMailHref">{{ t('home.primaryCta') }}</a>
             <RouterLink class="button button-ghost" to="/services">{{ t('home.secondaryCta') }}</RouterLink>
           </div>
         </div>
 
-        <aside class="identity-panel" aria-label="Profesyonel kimlik">
+        <aside class="identity-panel">
           <span class="identity-code">EF / 2026</span>
           <div class="identity-main">
-            <strong>Ersen Filiz</strong>
-            <p>Multidisciplinary Computer Engineer</p>
-            <p>AI-Oriented Developer</p>
-            <p>Creative Technologist</p>
+            <strong>{{ site.brand.name }}</strong>
+            <p v-for="role in t('home.identityRoles')" :key="role">{{ role }}</p>
           </div>
           <div class="identity-tags">
-            <span>Research</span><span>Build</span><span>Design</span><span>Compose</span>
+            <span v-for="tag in t('home.identityTags')" :key="tag">{{ tag }}</span>
           </div>
         </aside>
       </div>
@@ -34,7 +30,7 @@
     <section class="section" id="services">
       <div class="container">
         <header class="section-heading" v-reveal>
-          <p class="eyebrow">Services / Capabilities</p>
+          <p class="eyebrow">{{ t('home.servicesEyebrow') }}</p>
           <h2>{{ t('home.disciplinesTitle') }}</h2>
           <p>{{ t('home.disciplinesIntro') }}</p>
         </header>
@@ -46,9 +42,26 @@
 
     <section class="section section-tinted">
       <div class="container">
+        <header class="section-heading" v-reveal>
+          <p class="eyebrow">{{ t('home.engagementEyebrow') }}</p>
+          <h2>{{ t('home.engagementTitle') }}</h2>
+          <p>{{ t('home.engagementIntro') }}</p>
+        </header>
+        <div class="engagement-grid">
+          <article v-for="item in t('home.engagements')" :key="item[0]" v-reveal class="engagement-card">
+            <span>{{ item[0] }}</span>
+            <h3>{{ item[1] }}</h3>
+            <p>{{ item[2] }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
         <header class="section-heading section-heading-row" v-reveal>
           <div>
-            <p class="eyebrow">Selected Work</p>
+            <p class="eyebrow">{{ t('home.selectedWorkEyebrow') }}</p>
             <h2>{{ t('home.featuredTitle') }}</h2>
             <p>{{ t('home.featuredIntro') }}</p>
           </div>
@@ -60,10 +73,10 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-tinted">
       <div class="container split-layout">
         <header class="section-heading sticky-heading" v-reveal>
-          <p class="eyebrow">Method</p>
+          <p class="eyebrow">{{ t('home.methodEyebrow') }}</p>
           <h2>{{ t('home.processTitle') }}</h2>
         </header>
         <div class="process-list">
@@ -81,7 +94,7 @@
     <section class="section section-dark">
       <div class="container experience-preview">
         <div v-reveal>
-          <p class="eyebrow">Experience</p>
+          <p class="eyebrow">{{ t('home.experienceEyebrow') }}</p>
           <h2>{{ t('home.experienceTitle') }}</h2>
           <p>{{ t('home.experienceIntro') }}</p>
           <RouterLink class="button button-light" to="/experience">{{ t('nav.experience') }} →</RouterLink>
@@ -98,24 +111,30 @@
 
     <section class="section final-cta">
       <div class="container" v-reveal>
-        <p class="eyebrow">Start a conversation</p>
+        <p class="eyebrow">{{ t('home.conversationEyebrow') }}</p>
         <h2>{{ t('home.finalTitle') }}</h2>
         <p>{{ t('home.finalText') }}</p>
-        <a class="email-display" href="mailto:saygiylasunar@gmail.com">saygiylasunar@gmail.com ↗</a>
+        <a class="email-display" :href="`mailto:${site.brand.email}`">{{ site.brand.email }} ↗</a>
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import ServiceCard from '../components/ServiceCard.vue'
 import ProjectCard from '../components/ProjectCard.vue'
-import { services } from '../data/services.js'
-import { projects } from '../data/projects.js'
-import { professionalExperience, nonprofitExperience } from '../data/experience.js'
-import { localize, t } from '../i18n.js'
+import { experience, projects, services, site } from '../lib/content.js'
+import { localize, t } from '../lib/locale.js'
 
 const featuredProjects = projects.filter((project) => project.featured)
-const experiencePreview = [nonprofitExperience[0], professionalExperience[0], professionalExperience[1]]
+const experiencePreview = [
+  experience.nonprofit[0],
+  experience.professional[0],
+  experience.professional[1],
+]
+const projectMailHref = computed(() =>
+  `mailto:${site.brand.email}?subject=${encodeURIComponent(t('contact.mailSubject'))}`,
+)
 </script>

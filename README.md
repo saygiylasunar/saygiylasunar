@@ -1,6 +1,18 @@
 # Saygıyla Sunar — Portfolio V2
 
-A clean, multilingual Vue 3 + Vite portfolio focused on freelance work, professional experience and selected projects.
+Isolated refresh branch for `saygiylasunar.com`.
+
+## Stack
+
+- Vue 3
+- Vite
+- Vue Router
+- Vanilla CSS
+- JSON content files
+
+## Content
+
+Editable site content lives under `src/content/`. Vue components contain behavior and presentation; public copy and records are kept in JSON.
 
 ## Local development
 
@@ -9,11 +21,8 @@ npm install
 npm run dev
 ```
 
-## Production build
+Production build:
 
 ```bash
 npm run build
-npm run preview
 ```
-
-No CMS, database, PDF CV, phone number or postal address is used.

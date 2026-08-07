@@ -10,5 +10,5 @@
 </template>
 
 <script setup>
-import { t } from '../i18n.js'
+import { t } from '../lib/locale.js'
 </script>
