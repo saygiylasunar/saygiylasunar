@@ -1,12 +1,7 @@
 name: Portfolio Build Check
 
 on:
-  push:
-    branches:
-      - refresh/portfolio-v2
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
