@@ -9,7 +9,7 @@
       </RouterView>
     </main>
     <SiteFooter />
-    <IntentModal />
+    <IntentModal v-if="route.name !== 'lands'" />
     <LandsFab />
     <ToolsFab />
   </div>
