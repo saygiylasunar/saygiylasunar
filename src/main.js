@@ -5,6 +5,7 @@ import './styles/global.css'
 import './styles/additions.css'
 import './styles/phase2.css'
 import './styles/tools.css'
+import './styles/webp-bulk.css'
 import './styles/lands-kiss.css'
 import './styles/lands-final.css'
 
