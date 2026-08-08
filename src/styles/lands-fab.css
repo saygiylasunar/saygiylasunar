@@ -1,0 +1,84 @@
+.lands-fab {
+  position: fixed;
+  z-index: 88;
+  right: 18px;
+  bottom: 104px;
+  display: grid;
+  grid-template-columns: 46px minmax(96px, auto) 22px;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 3px 10px 3px 3px;
+  background: color-mix(in srgb, var(--surface-solid) 94%, transparent);
+  color: var(--text);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(16px);
+  transform: translateX(calc(100% - 52px));
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.lands-fab:hover,
+.lands-fab:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.2);
+  transform: translateX(0);
+}
+
+.lands-fab-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.lands-fab-copy {
+  display: grid;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.lands-fab-copy strong {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.lands-fab-copy small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.58rem;
+}
+
+.lands-fab-arrow {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+@media (max-width: 680px) {
+  .lands-fab {
+    right: 12px;
+    bottom: 88px;
+    grid-template-columns: 42px minmax(88px, auto) 18px;
+    min-height: 48px;
+    padding: 3px 8px 3px 3px;
+    transform: translateX(calc(100% - 48px));
+  }
+
+  .lands-fab-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.05rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lands-fab { transition: none; }
+}

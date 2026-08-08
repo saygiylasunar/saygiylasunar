@@ -1,0 +1,148 @@
+.music-hero {
+  min-height: auto;
+  padding: clamp(42px, 6vw, 76px) 0;
+}
+
+.music-hero-grid,
+.music-record-grid {
+  display: grid;
+  align-items: end;
+  gap: clamp(28px, 6vw, 72px);
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr);
+}
+
+.music-lead {
+  max-width: 66ch;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.music-identity {
+  display: grid;
+  gap: 6px;
+  border-top: 1px solid var(--line-strong);
+  padding-top: 14px;
+}
+
+.music-identity span,
+.music-platform-card > span,
+.music-release-list span {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.music-identity strong {
+  color: var(--accent);
+  font-size: clamp(1.35rem, 2.5vw, 2.2rem);
+  letter-spacing: -0.04em;
+}
+
+.music-identity p {
+  margin: 0;
+  font-size: 0.78rem;
+}
+
+.music-platform-section {
+  padding-top: clamp(44px, 6vw, 72px);
+}
+
+.music-heading {
+  max-width: 700px;
+}
+
+.music-platform-grid {
+  display: grid;
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.music-platform-card {
+  position: relative;
+  display: grid;
+  min-height: 180px;
+  align-content: start;
+  gap: 10px;
+  border-right: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+  padding: 20px;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.music-platform-card:hover,
+.music-platform-card:focus-visible {
+  background: var(--surface-solid);
+  transform: translateY(-2px);
+}
+
+.music-platform-card strong {
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+
+.music-platform-card small {
+  max-width: 28ch;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.music-platform-card b {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  color: var(--accent);
+}
+
+.music-record-grid {
+  align-items: start;
+}
+
+.music-release-list {
+  border-top: 1px solid var(--line-strong);
+}
+
+.music-release-list article {
+  display: grid;
+  gap: 6px;
+  border-bottom: 1px solid var(--line-strong);
+  padding: 14px 0;
+  grid-template-columns: 58px minmax(0, 1fr) minmax(180px, 0.7fr);
+}
+
+.music-release-list strong {
+  font-size: 0.95rem;
+}
+
+.music-release-list small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .music-hero-grid,
+  .music-record-grid,
+  .music-platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .music-platform-card {
+    min-height: 128px;
+  }
+
+  .music-platform-card strong {
+    margin-top: 8px;
+  }
+
+  .music-release-list article {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .music-release-list small {
+    grid-column: 2;
+    text-align: left;
+  }
+}

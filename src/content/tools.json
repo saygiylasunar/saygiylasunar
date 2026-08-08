@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "tr": {
+      "eyebrow": "Tarayıcıda çalışan mini araçlar",
+      "title": "Hızlı, yerel ve gereksiz bağımlılıklardan uzak araçlar.",
+      "intro": "Dosya ve veriler mümkün olan her yerde cihazınızda işlenir. Sunucuya yükleme gerektirmeyen küçük yardımcılar tek yerde.",
+      "floatingTitle": "Mini Araçlar",
+      "floatingNote": "7 araç · tarayıcı odaklı",
+      "viewAll": "Tüm araçları gör"
+    },
+    "en": {
+      "eyebrow": "Browser-based mini utilities",
+      "title": "Fast, local tools without unnecessary dependencies.",
+      "intro": "Files and data are processed on your device wherever possible. Small utilities that do not require server uploads live in one place.",
+      "floatingTitle": "Mini Tools",
+      "floatingNote": "7 tools · browser-first",
+      "viewAll": "View all tools"
+    }
+  },
+  "items": [
+    {
+      "index": "01",
+      "slug": "password",
+      "path": "/tools/password",
+      "glyph": "•••",
+      "title": { "tr": "Parola Oluşturucu", "en": "Password Generator" },
+      "description": { "tr": "Web Crypto API ile cihazınızda güçlü parola üretir.", "en": "Generates strong passwords on your device with the Web Crypto API." }
+    },
+    {
+      "index": "02",
+      "slug": "exif",
+      "path": "/tools/exif",
+      "glyph": "EX",
+      "title": { "tr": "Metadata Temizleyici", "en": "Metadata Cleaner" },
+      "description": { "tr": "Görseli tarayıcıda yeniden oluşturarak EXIF ve gömülü metadata'yı temizler.", "en": "Rebuilds the image in the browser to remove EXIF and embedded metadata." }
+    },
+    {
+      "index": "03",
+      "slug": "webp",
+      "path": "/tools/webp",
+      "glyph": "W",
+      "title": { "tr": "WebP Dönüştürücü", "en": "WebP Converter" },
+      "description": { "tr": "Çözünürlüğü koruyarak PNG/JPEG/WebP görselleri optimize WebP'ye dönüştürür.", "en": "Converts PNG/JPEG/WebP images to optimized WebP while preserving resolution." }
+    },
+    {
+      "index": "04",
+      "slug": "resize",
+      "path": "/tools/resize",
+      "glyph": "↔",
+      "title": { "tr": "Görsel Boyutlandırıcı", "en": "Image Resizer" },
+      "description": { "tr": "En-boy oranını kilitleyerek görselleri cihazınızda yeniden boyutlandırır.", "en": "Resizes images on your device with optional aspect-ratio locking." }
+    },
+    {
+      "index": "05",
+      "slug": "hash",
+      "path": "/tools/hash",
+      "glyph": "#",
+      "title": { "tr": "Dosya Hash", "en": "File Hash" },
+      "description": { "tr": "Dosyanızı yüklemeden SHA-256 doğrulama özeti hesaplar.", "en": "Calculates a SHA-256 checksum without uploading your file." }
+    },
+    {
+      "index": "06",
+      "slug": "json",
+      "path": "/tools/json",
+      "glyph": "{}",
+      "title": { "tr": "JSON Düzenleyici", "en": "JSON Formatter" },
+      "description": { "tr": "JSON verisini doğrular, biçimlendirir ve minify eder.", "en": "Validates, formats and minifies JSON data." }
+    },
+    {
+      "index": "07",
+      "slug": "contrast",
+      "path": "/tools/contrast",
+      "glyph": "◐",
+      "title": { "tr": "Kontrast Kontrolü", "en": "Contrast Checker" },
+      "description": { "tr": "İki rengin WCAG kontrast oranını ve AA/AAA sonuçlarını gösterir.", "en": "Shows WCAG contrast ratio and AA/AAA results for two colors." }
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+.status-state {
+  display: grid;
+  width: min(100%, 760px);
+  margin: 0 auto;
+  justify-items: center;
+  gap: 30px;
+}
+
+.status-artwork {
+  display: block;
+  width: min(100%, 680px);
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: contain;
+  box-shadow: var(--shadow);
+}
+
+.status-state-copy {
+  display: grid;
+  max-width: 680px;
+  justify-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.status-state-copy h1,
+.status-state-copy h2,
+.status-state-copy p {
+  margin-top: 0;
+}
+
+.status-state-copy p {
+  max-width: 60ch;
+}
+
+.not-found-section {
+  padding: clamp(40px, 7vw, 90px) 0;
+}
+
+.intent-quick {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
+.intent-quick-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.intent-quick-grid button {
+  display: grid;
+  gap: 5px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.intent-quick-grid button:hover,
+.intent-quick-grid button:focus-visible {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.intent-quick-grid small {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.tools-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tool-card {
+  display: grid;
+  min-height: 300px;
+  align-content: start;
+  gap: 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: clamp(24px, 4vw, 42px);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tool-card:hover,
+.tool-card:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.tool-card p {
+  color: var(--muted);
+}
+
+.tool-card-index {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  clip-path: inset(50%) !important;
+}
+
+.exif-tool {
+  display: grid;
+  gap: 24px;
+}
+
+.exif-drop {
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  padding: 36px;
+  background: var(--surface);
+  color: var(--text);
+  text-align: center;
+  cursor: pointer;
+}
+
+.exif-drop strong {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.exif-drop small {
+  max-width: 50ch;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.exif-preview-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.exif-preview-grid figure {
+  display: grid;
+  margin: 0;
+  gap: 10px;
+}
+
+.exif-preview-grid img,
+.exif-processing {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  object-fit: contain;
+}
+
+.exif-processing {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+
+.exif-preview-grid figcaption {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.tool-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-success {
+  color: var(--text);
+}
+
+.lands-selector-layout {
+  display: grid;
+  align-items: center;
+  gap: clamp(36px, 7vw, 90px);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+}
+
+.parcel-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.parcel-button-row button {
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.parcel-button-row button.is-active,
+.parcel-button-row button:hover,
+.parcel-button-row button:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.parcel-schematic {
+  display: grid;
+  gap: 12px;
+}
+
+.parcel-schematic svg {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.parcel-schematic small {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.parcel-shape {
+  color: var(--line-strong);
+  cursor: pointer;
+  outline: none;
+}
+
+.parcel-shape polygon {
+  fill: var(--bg);
+  stroke: currentColor;
+  stroke-width: 3;
+  transition: 160ms ease;
+}
+
+.parcel-shape text {
+  fill: var(--text);
+  font-size: 28px;
+  font-weight: 800;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.parcel-shape:hover,
+.parcel-shape:focus-visible,
+.parcel-shape.is-active {
+  color: var(--accent);
+}
+
+.parcel-shape.is-active polygon {
+  fill: color-mix(in srgb, var(--accent) 14%, var(--surface));
+}
+
+.parcel-detail-grid {
+  display: grid;
+  gap: clamp(30px, 6vw, 70px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.parcel-facts {
+  display: grid;
+  margin: 0;
+}
+
+.parcel-facts > div {
+  display: grid;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  grid-template-columns: minmax(120px, 0.65fr) minmax(0, 1.35fr);
+}
+
+.parcel-facts dt,
+.parcel-technical-copy span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.parcel-facts dd {
+  margin: 0;
+  font-weight: 720;
+}
+
+.parcel-price-row dd {
+  color: var(--accent);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.parcel-technical-copy {
+  display: grid;
+  align-content: start;
+  gap: 24px;
+}
+
+.parcel-technical-copy article {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+}
+
+.parcel-technical-copy p {
+  margin-bottom: 0;
+}
+
+.parcel-gallery-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.parcel-gallery-card {
+  overflow: hidden;
+  min-height: 250px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.parcel-gallery-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parcel-gallery-placeholder {
+  display: grid;
+  min-height: 250px;
+  align-content: space-between;
+  padding: 22px;
+}
+
+.parcel-gallery-placeholder span {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+}
+
+.parcel-gallery-placeholder small {
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .intent-quick-grid,
+  .tools-grid,
+  .exif-preview-grid,
+  .lands-selector-layout,
+  .parcel-detail-grid,
+  .parcel-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-artwork {
+    width: min(100%, 620px);
+  }
+
+  .parcel-facts > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

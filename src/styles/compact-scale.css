@@ -1,0 +1,237 @@
+/* Final proportion pass: keep the site editorial, but reduce oversized page portions. */
+
+h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.7rem, 6vw, 6.2rem);
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.9rem, 3.7vw, 3.9rem);
+}
+
+h3 {
+  font-size: clamp(1.18rem, 1.7vw, 1.7rem);
+}
+
+.section {
+  padding: clamp(56px, 7vw, 100px) 0;
+}
+
+.section-heading {
+  margin-bottom: 34px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  font-size: 0.72rem;
+}
+
+.button {
+  min-height: 44px;
+  padding: 10px 18px;
+  font-size: 0.86rem;
+}
+
+.header-inner {
+  min-height: 36px;
+}
+
+.brand-mark {
+  width: 21px;
+  height: 21px;
+  font-size: 0.56rem;
+}
+
+.brand-copy strong {
+  font-size: 0.66rem;
+}
+
+.brand-copy small {
+  font-size: 0.48rem;
+}
+
+.primary-nav {
+  gap: 9px;
+  font-size: 0.65rem;
+}
+
+.text-button,
+.icon-button {
+  min-width: 23px;
+  height: 23px;
+  font-size: 0.58rem;
+}
+
+.hero-section {
+  min-height: min(760px, calc(88svh - 36px));
+  padding: clamp(52px, 7vw, 78px) 0;
+}
+
+.hero-grid {
+  gap: clamp(34px, 6vw, 82px);
+}
+
+.hero-intro {
+  max-width: 680px;
+  margin-bottom: 26px;
+  font-size: clamp(1rem, 1.55vw, 1.25rem);
+}
+
+.identity-panel {
+  min-height: 310px;
+  padding: 22px;
+}
+
+.identity-code {
+  margin-bottom: 68px;
+}
+
+.identity-main strong {
+  font-size: 1.7rem;
+}
+
+.identity-tags {
+  margin-top: 20px;
+}
+
+.service-card {
+  min-height: 255px;
+  padding: 23px;
+}
+
+.service-number {
+  margin-bottom: 42px;
+}
+
+.card-link {
+  right: 23px;
+  bottom: 21px;
+  left: 23px;
+}
+
+.project-card {
+  min-height: 280px;
+  padding: 23px;
+}
+
+.project-meta {
+  margin-bottom: 50px;
+}
+
+.project-actions {
+  margin-top: 20px;
+}
+
+.engagement-card,
+.contact-brief-grid article {
+  min-height: 215px;
+  padding: 23px;
+}
+
+.engagement-card > span,
+.contact-brief-grid article > span {
+  margin-bottom: 46px;
+}
+
+.tool-card {
+  min-height: 245px;
+  padding: clamp(20px, 3vw, 30px);
+}
+
+.tool-card-top {
+  margin-bottom: 36px;
+}
+
+.browser-tool-panel {
+  gap: 20px;
+  padding: clamp(18px, 3vw, 30px);
+}
+
+.file-drop {
+  min-height: 145px;
+  padding: 20px;
+}
+
+.project-record-panel {
+  gap: 20px;
+  padding: clamp(20px, 3.5vw, 34px);
+}
+
+.process-item {
+  gap: 22px;
+  padding: 22px 0;
+}
+
+/* Land page already has its own KISS proportions; only reduce the title row a touch. */
+.land-widget-intro h1 {
+  font-size: clamp(1.2rem, 2.6vw, 1.9rem);
+}
+
+.land-widget-intro .eyebrow {
+  font-size: 0.54rem;
+}
+
+@media (max-width: 960px) {
+  .header-inner {
+    min-height: 35px;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 54px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size: clamp(2.2rem, 11vw, 3.8rem);
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 8vw, 2.7rem);
+  }
+
+  .section {
+    padding: 46px 0;
+  }
+
+  .header-inner {
+    min-height: 34px;
+  }
+
+  .brand-mark {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brand-copy strong {
+    font-size: 0.64rem;
+  }
+
+  .menu-button {
+    padding: 3px 6px;
+    font-size: 0.62rem;
+  }
+
+  .hero-section {
+    padding: 42px 0;
+  }
+
+  .hero-grid {
+    gap: 30px;
+  }
+
+  .identity-panel,
+  .service-card,
+  .project-card,
+  .engagement-card,
+  .contact-brief-grid article,
+  .tool-card {
+    min-height: auto;
+  }
+
+  .land-widget-intro h1 {
+    font-size: clamp(1.18rem, 6.2vw, 1.55rem);
+  }
+}

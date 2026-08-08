@@ -1,0 +1,175 @@
+.header-inner {
+  min-height: 40px;
+  gap: 10px;
+}
+
+.brand {
+  gap: 6px;
+}
+
+.brand-mark {
+  width: 24px;
+  height: 24px;
+  font-size: 0.6rem;
+}
+
+.brand-copy {
+  line-height: 1.05;
+}
+
+.brand-copy strong {
+  font-size: 0.72rem;
+}
+
+.brand-copy small {
+  font-size: 0.5rem;
+}
+
+.primary-nav {
+  gap: 10px;
+  font-size: 0.68rem;
+}
+
+.header-actions {
+  gap: 4px;
+  margin-left: 0;
+}
+
+.text-button,
+.icon-button {
+  min-width: 25px;
+  height: 25px;
+  font-size: 0.62rem;
+}
+
+.land-widget-section {
+  padding: 9px 0 28px;
+}
+
+.land-widget-intro {
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.land-widget-intro .eyebrow {
+  margin-bottom: 2px;
+  font-size: 0.58rem;
+  letter-spacing: 0.09em;
+}
+
+.land-widget-intro h1 {
+  max-width: 560px;
+  font-size: clamp(1.45rem, 3.2vw, 2.35rem);
+  line-height: 1;
+}
+
+.land-widget-location {
+  margin-bottom: 1px;
+  font-size: 0.68rem;
+}
+
+.land-widget-list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 1px;
+}
+
+.land-widget-count {
+  display: inline-grid;
+  min-width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.66rem;
+}
+
+.land-widget-contact-block {
+  display: grid;
+  gap: 7px;
+  margin-top: auto;
+}
+
+.land-widget-contact-block .button {
+  width: 100%;
+  min-height: 42px;
+}
+
+.land-widget-contact-block small {
+  color: var(--muted);
+  font-size: 0.66rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .header-inner {
+    min-height: 38px;
+  }
+
+  .brand-mark {
+    width: 23px;
+    height: 23px;
+  }
+
+  .menu-button {
+    padding: 4px 7px;
+    font-size: 0.64rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .header-inner {
+    min-height: 36px;
+  }
+
+  .brand-mark {
+    width: 22px;
+    height: 22px;
+    font-size: 0.58rem;
+  }
+
+  .brand-copy strong {
+    font-size: 0.68rem;
+  }
+
+  .menu-button {
+    padding: 3px 6px;
+  }
+
+  .land-widget-section {
+    padding-top: 6px;
+  }
+
+  .land-widget-intro {
+    margin-bottom: 5px;
+  }
+
+  .land-widget-intro h1 {
+    font-size: clamp(1.35rem, 7vw, 1.85rem);
+  }
+
+  .land-widget-location {
+    font-size: 0.64rem;
+  }
+
+  .land-widget-list-head {
+    grid-column: 1 / -1;
+    min-width: 70px;
+    align-self: center;
+    padding-right: 4px;
+  }
+
+  .land-widget-column-label {
+    display: block;
+  }
+
+  .land-widget-count {
+    min-width: 20px;
+    height: 20px;
+  }
+}
