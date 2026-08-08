@@ -31,7 +31,31 @@
             </div>
           </section>
 
-          <aside class="land-widget-list" aria-label="Parseller">
+          <section class="land-earth-panel" :aria-label="copy.earthTitle">
+            <div class="land-earth-head">
+              <div>
+                <strong>{{ copy.earthTitle }}</strong>
+                <span>{{ copy.earthLead }}</span>
+              </div>
+              <a
+                :href="parcels.config.earthProjectUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ copy.openEarth }} ↗</a>
+            </div>
+            <div class="land-earth-frame">
+              <iframe
+                :src="earthEmbedUrl"
+                :title="copy.earthTitle"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <p>{{ copy.earthFallback }}</p>
+          </section>
+
+          <aside class="land-widget-list" :aria-label="copy.parcelsTitle">
             <div class="land-widget-list-head">
               <span class="land-widget-column-label">{{ copy.parcelsTitle }}</span>
               <b class="land-widget-count">{{ publishedParcels.length }}</b>
@@ -53,35 +77,30 @@
           </aside>
 
           <div class="land-widget-visual">
-            <img
-              v-if="selectedVisual"
-              :src="selectedVisual.src"
-              :alt="selectedVisual.label"
-              loading="eager"
-              decoding="async"
-            />
-
-            <div v-else class="land-widget-schematic">
-              <svg viewBox="0 0 720 420" role="img" :aria-label="copy.visualPending">
-                <g
-                  v-for="(parcel, index) in publishedParcels"
-                  :key="parcel.id"
-                  class="parcel-shape"
-                  :class="{ 'is-active': parcel.id === selectedId }"
-                  role="button"
-                  tabindex="0"
-                  @click="selectParcel(parcel.id)"
-                  @keydown.enter.prevent="selectParcel(parcel.id)"
-                  @keydown.space.prevent="selectParcel(parcel.id)"
-                >
-                  <polygon :points="schematicPoints[index]" />
-                  <text :x="index === 0 ? 220 : 510" y="215">{{ parcel.ada }}/{{ parcel.parsel }}</text>
-                </g>
-              </svg>
-              <div>
+            <div class="land-widget-main-visual">
+              <img
+                v-if="selectedVisual && !imageLoadError"
+                :key="selectedVisual.src"
+                :src="selectedVisual.src"
+                :alt="`${selectedParcel?.ada}/${selectedParcel?.parsel} · ${selectedVisual.label}`"
+                loading="eager"
+                decoding="async"
+                @error="imageLoadError = true"
+              />
+              <div v-else class="land-widget-image-fallback">
                 <strong>{{ selectedParcel?.ada }}/{{ selectedParcel?.parsel }}</strong>
-                <span>{{ copy.visualPending }}</span>
+                <span>{{ copy.visualUnavailable }}</span>
               </div>
+            </div>
+
+            <div v-if="availableGalleryItems.length" class="land-widget-gallery-tabs" :aria-label="copy.galleryTitle">
+              <button
+                v-for="item in availableGalleryItems"
+                :key="item.key"
+                type="button"
+                :class="{ 'is-active': item.key === selectedVisual?.key }"
+                @click="selectImage(item.key)"
+              >{{ item.label }}</button>
             </div>
           </div>
 
@@ -172,8 +191,10 @@ const initialId = publishedParcels.some((parcel) => parcel.id === route.query.pa
   ? route.query.parsel
   : publishedParcels[0]?.id
 const selectedId = ref(initialId)
-const schematicPoints = ['80,82 340,58 370,336 115,354', '395,70 650,100 625,354 375,330']
+const activeImageKey = ref('')
+const imageLoadError = ref(false)
 const whatsappMessage = 'Arsalar hk bilgi almak istiyorum'
+const preferredImageKeys = ['googleEarth', 'arazi', 'uzay', 'imar', 'dokum', 'tumImar']
 
 const copy = computed(() => locale.value === 'tr'
   ? {
@@ -188,7 +209,12 @@ const copy = computed(() => locale.value === 'tr'
       technicalLead: 'Seçili parsele ait yayımlanmış temel bilgiler.',
       legalHeading: 'Önemli bilgilendirme',
       legalLead: 'Satış sürecine ilişkin esas açıklamalar aşağıda açıkça yer almaktadır.',
-      visualPending: 'Parsel görseli hazırlanıyor',
+      earthTitle: 'Canlı Google Earth projesi',
+      earthLead: 'Satışa sunulan taşınmazların bölgedeki konumlarını etkileşimli olarak inceleyin.',
+      openEarth: "Google Earth'te aç",
+      earthFallback: 'Harita bu tarayıcıda gömülü açılmazsa yukarıdaki bağlantı aynı projeyi Google Earth üzerinde açar.',
+      galleryTitle: 'Parsel görselleri',
+      visualUnavailable: 'Görsel yüklenemedi. Diğer görsel sekmelerini veya Google Earth projesini kullanabilirsiniz.',
       priceRule: 'Fiyat, tapu alanının tam m² kısmı × 5.000 TL kuralıyla hesaplanır.',
       officialCheck: 'Tapu, imar, yapılaşma ve uygulamaya ilişkin nihai ve güncel bilgiler ilgili kamu kurumlarından teyit edilmelidir.',
       noPaymentLong: 'Bu internet sayfası üzerinden kapora, satış bedeli veya başka bir taşınmaz ödemesi tahsil edilmez.',
@@ -205,7 +231,12 @@ const copy = computed(() => locale.value === 'tr'
       technicalLead: 'Published basic information for the selected parcel.',
       legalHeading: 'Important information',
       legalLead: 'The essential statements concerning the sale process are shown openly below.',
-      visualPending: 'Parcel visual is being prepared',
+      earthTitle: 'Live Google Earth project',
+      earthLead: 'Explore the locations of the properties offered for sale on an interactive map.',
+      openEarth: 'Open in Google Earth',
+      earthFallback: 'If the embedded map is blocked by this browser, the link above opens the same project directly in Google Earth.',
+      galleryTitle: 'Parcel images',
+      visualUnavailable: 'The image could not be loaded. Try another image tab or the Google Earth project.',
       priceRule: 'Price is calculated as the whole-number part of the registered m² × TRY 5,000.',
       officialCheck: 'Final and current title deed, zoning, construction and implementation information should be confirmed with the relevant public authorities.',
       noPaymentLong: 'No deposit, sale price or other real-estate payment is collected through this website.',
@@ -220,13 +251,33 @@ const galleryItems = computed(() =>
     src: selectedParcel.value?.images?.[key] || '',
   })),
 )
-const selectedVisual = computed(() => galleryItems.value.find((item) => item.src) || null)
+const availableGalleryItems = computed(() => galleryItems.value.filter((item) => item.src))
+const selectedVisual = computed(() =>
+  availableGalleryItems.value.find((item) => item.key === activeImageKey.value)
+  || availableGalleryItems.value[0]
+  || null,
+)
 const whatsappHref = computed(() => `https://wa.me/905469633690?text=${encodeURIComponent(whatsappMessage)}`)
+const earthEmbedUrl = computed(() => {
+  const url = parcels.config.earthProjectUrl
+  return `${url}${url.includes('?') ? '&' : '?'}embedded=true`
+})
+
+function setDefaultImage() {
+  const images = selectedParcel.value?.images || {}
+  activeImageKey.value = preferredImageKeys.find((key) => images[key]) || ''
+  imageLoadError.value = false
+}
 
 function selectParcel(id) {
   if (id === selectedId.value) return
   selectedId.value = id
   router.replace({ query: { ...route.query, parsel: id } })
+}
+
+function selectImage(key) {
+  activeImageKey.value = key
+  imageLoadError.value = false
 }
 
 function formatArea(value) {
@@ -244,6 +295,8 @@ function formatMoney(value) {
     maximumFractionDigits: 0,
   }).format(value)
 }
+
+watch(selectedId, setDefaultImage, { immediate: true })
 
 watch(
   () => route.query.parsel,
