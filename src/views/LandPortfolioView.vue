@@ -71,15 +71,23 @@
             </div>
 
             <div class="land-widget-main-visual">
-              <img
+              <button
                 v-if="selectedVisual && !imageLoadError"
                 :key="selectedVisual.src"
-                :src="selectedVisual.src"
-                :alt="`${selectedParcel?.ada}/${selectedParcel?.parsel} · ${selectedVisual.label}`"
-                loading="eager"
-                decoding="async"
-                @error="imageLoadError = true"
-              />
+                type="button"
+                class="land-widget-image-open"
+                :aria-label="`${copy.openLarge}: ${selectedVisual.label}`"
+                @click="openLightbox"
+              >
+                <img
+                  :src="selectedVisual.src"
+                  :alt="`${selectedParcel?.ada}/${selectedParcel?.parsel} · ${selectedVisual.label}`"
+                  loading="eager"
+                  decoding="async"
+                  @error="imageLoadError = true"
+                />
+                <span class="land-widget-expand-hint">{{ copy.openLarge }} ↗</span>
+              </button>
 
               <div v-else class="land-widget-image-fallback">
                 <strong>{{ selectedParcel?.ada }}/{{ selectedParcel?.parsel }}</strong>
@@ -165,11 +173,80 @@
         rel="noopener noreferrer"
       >{{ copy.askInfoShort }}</a>
     </div>
+
+    <div
+      v-if="lightboxOpen && selectedVisual"
+      class="land-lightbox"
+      role="dialog"
+      aria-modal="true"
+      :aria-label="copy.viewerTitle"
+    >
+      <header class="land-lightbox-head">
+        <div>
+          <strong>{{ selectedParcel?.ada }}/{{ selectedParcel?.parsel }}</strong>
+          <span>{{ selectedVisual.label }}</span>
+        </div>
+        <div class="land-lightbox-controls">
+          <button type="button" :aria-label="copy.zoomOut" :disabled="zoom <= 1" @click="zoomBy(-0.25)">−</button>
+          <button type="button" class="land-lightbox-zoom" :aria-label="copy.resetZoom" @click="resetTransform">{{ Math.round(zoom * 100) }}%</button>
+          <button type="button" :aria-label="copy.zoomIn" :disabled="zoom >= 5" @click="zoomBy(0.25)">+</button>
+          <button type="button" class="land-lightbox-close" :aria-label="copy.closeViewer" @click="closeLightbox">×</button>
+        </div>
+      </header>
+
+      <button
+        v-if="availableGalleryItems.length > 1"
+        type="button"
+        class="land-lightbox-nav is-prev"
+        :aria-label="copy.previousImage"
+        @click="cycleImage(-1)"
+      >‹</button>
+
+      <div
+        class="land-lightbox-canvas"
+        :class="{ 'is-zoomed': zoom > 1, 'is-dragging': dragging }"
+        @wheel.prevent="onLightboxWheel"
+        @pointerdown="startPan"
+        @pointermove="movePan"
+        @pointerup="endPan"
+        @pointercancel="endPan"
+      >
+        <img
+          :key="`lightbox-${selectedVisual.src}`"
+          :src="selectedVisual.src"
+          :alt="`${selectedParcel?.ada}/${selectedParcel?.parsel} · ${selectedVisual.label}`"
+          :style="lightboxImageStyle"
+          draggable="false"
+        />
+      </div>
+
+      <button
+        v-if="availableGalleryItems.length > 1"
+        type="button"
+        class="land-lightbox-nav is-next"
+        :aria-label="copy.nextImage"
+        @click="cycleImage(1)"
+      >›</button>
+
+      <footer class="land-lightbox-foot">
+        <span>{{ copy.viewerHelp }}</span>
+        <div class="land-lightbox-dots" :aria-label="copy.galleryTitle">
+          <button
+            v-for="item in availableGalleryItems"
+            :key="`lightbox-${item.key}`"
+            type="button"
+            :class="{ 'is-active': item.key === selectedVisual.key }"
+            :aria-label="item.label"
+            @click="selectImage(item.key)"
+          ></button>
+        </div>
+      </footer>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getPublishedParcels, parcelTotalPrice, parcels } from '../lib/content.js'
 import { locale, localize, t } from '../lib/locale.js'
@@ -183,8 +260,15 @@ const initialId = publishedParcels.some((parcel) => parcel.id === route.query.pa
 const selectedId = ref(initialId)
 const activeImageKey = ref('')
 const imageLoadError = ref(false)
+const lightboxOpen = ref(false)
+const zoom = ref(1)
+const panX = ref(0)
+const panY = ref(0)
+const dragging = ref(false)
 const whatsappMessage = 'Arsalar hk bilgi almak istiyorum'
 const preferredImageKeys = ['googleEarth', 'arazi', 'uzay', 'imar', 'dokum', 'tumImar']
+let dragOrigin = { x: 0, y: 0, panX: 0, panY: 0 }
+let previousBodyOverflow = ''
 
 const copy = computed(() => locale.value === 'tr'
   ? {
@@ -205,6 +289,15 @@ const copy = computed(() => locale.value === 'tr'
       priceRule: 'Fiyat, tapu alanının tam m² kısmı × 5.000 TL kuralıyla hesaplanır.',
       officialCheck: 'Tapu, imar, yapılaşma ve uygulamaya ilişkin nihai ve güncel bilgiler ilgili kamu kurumlarından teyit edilmelidir.',
       noPaymentLong: 'Bu internet sayfası üzerinden kapora, satış bedeli veya başka bir taşınmaz ödemesi tahsil edilmez.',
+      openLarge: 'Büyük görüntü',
+      viewerTitle: 'Parsel görsel görüntüleyici',
+      zoomIn: 'Yakınlaştır',
+      zoomOut: 'Uzaklaştır',
+      resetZoom: 'Yakınlaştırmayı sıfırla',
+      closeViewer: 'Görüntüleyiciyi kapat',
+      previousImage: 'Önceki görsel',
+      nextImage: 'Sonraki görsel',
+      viewerHelp: 'Tekerlek ile yakınlaştır · Yakınken sürükle · ← → ile görsel değiştir · Esc ile kapat',
     }
   : {
       eyebrow: 'Family-owned properties',
@@ -224,6 +317,15 @@ const copy = computed(() => locale.value === 'tr'
       priceRule: 'Price is calculated as the whole-number part of the registered m² × TRY 5,000.',
       officialCheck: 'Final and current title deed, zoning, construction and implementation information should be confirmed with the relevant public authorities.',
       noPaymentLong: 'No deposit, sale price or other real-estate payment is collected through this website.',
+      openLarge: 'Open large',
+      viewerTitle: 'Parcel image viewer',
+      zoomIn: 'Zoom in',
+      zoomOut: 'Zoom out',
+      resetZoom: 'Reset zoom',
+      closeViewer: 'Close viewer',
+      previousImage: 'Previous image',
+      nextImage: 'Next image',
+      viewerHelp: 'Wheel to zoom · Drag while zoomed · ← → to change image · Esc to close',
     })
 
 const selectedParcel = computed(() => publishedParcels.find((parcel) => parcel.id === selectedId.value))
@@ -242,6 +344,9 @@ const selectedVisual = computed(() =>
   || null,
 )
 const whatsappHref = computed(() => `https://wa.me/905469633690?text=${encodeURIComponent(whatsappMessage)}`)
+const lightboxImageStyle = computed(() => ({
+  transform: `translate3d(${panX.value}px, ${panY.value}px, 0) scale(${zoom.value})`,
+}))
 
 function setDefaultImage() {
   const images = selectedParcel.value?.images || {}
@@ -258,6 +363,86 @@ function selectParcel(id) {
 function selectImage(key) {
   activeImageKey.value = key
   imageLoadError.value = false
+  resetTransform()
+}
+
+function openLightbox() {
+  if (!selectedVisual.value || imageLoadError.value) return
+  resetTransform()
+  previousBodyOverflow = document.body.style.overflow
+  document.body.style.overflow = 'hidden'
+  lightboxOpen.value = true
+}
+
+function closeLightbox() {
+  if (!lightboxOpen.value) return
+  lightboxOpen.value = false
+  dragging.value = false
+  document.body.style.overflow = previousBodyOverflow
+  resetTransform()
+}
+
+function resetTransform() {
+  zoom.value = 1
+  panX.value = 0
+  panY.value = 0
+}
+
+function setZoom(nextZoom) {
+  zoom.value = Math.min(5, Math.max(1, nextZoom))
+  if (zoom.value === 1) {
+    panX.value = 0
+    panY.value = 0
+  }
+}
+
+function zoomBy(delta) {
+  setZoom(zoom.value + delta)
+}
+
+function onLightboxWheel(event) {
+  zoomBy(event.deltaY < 0 ? 0.25 : -0.25)
+}
+
+function startPan(event) {
+  if (zoom.value <= 1) return
+  dragging.value = true
+  dragOrigin = {
+    x: event.clientX,
+    y: event.clientY,
+    panX: panX.value,
+    panY: panY.value,
+  }
+  event.currentTarget.setPointerCapture?.(event.pointerId)
+}
+
+function movePan(event) {
+  if (!dragging.value) return
+  panX.value = dragOrigin.panX + event.clientX - dragOrigin.x
+  panY.value = dragOrigin.panY + event.clientY - dragOrigin.y
+}
+
+function endPan(event) {
+  if (!dragging.value) return
+  dragging.value = false
+  event.currentTarget.releasePointerCapture?.(event.pointerId)
+}
+
+function cycleImage(direction) {
+  const items = availableGalleryItems.value
+  if (items.length < 2 || !selectedVisual.value) return
+  const currentIndex = items.findIndex((item) => item.key === selectedVisual.value.key)
+  const nextIndex = (currentIndex + direction + items.length) % items.length
+  selectImage(items[nextIndex].key)
+}
+
+function onKeydown(event) {
+  if (!lightboxOpen.value) return
+  if (event.key === 'Escape') closeLightbox()
+  if (event.key === 'ArrowLeft') cycleImage(-1)
+  if (event.key === 'ArrowRight') cycleImage(1)
+  if (event.key === '+' || event.key === '=') zoomBy(0.25)
+  if (event.key === '-') zoomBy(-0.25)
 }
 
 function formatArea(value) {
@@ -276,7 +461,10 @@ function formatMoney(value) {
   }).format(value)
 }
 
-watch(selectedId, setDefaultImage, { immediate: true })
+watch(selectedId, () => {
+  setDefaultImage()
+  closeLightbox()
+}, { immediate: true })
 
 watch(
   () => route.query.parsel,
@@ -284,4 +472,10 @@ watch(
     if (publishedParcels.some((parcel) => parcel.id === id)) selectedId.value = id
   },
 )
+
+onMounted(() => window.addEventListener('keydown', onKeydown))
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
+  if (lightboxOpen.value) document.body.style.overflow = previousBodyOverflow
+})
 </script>
