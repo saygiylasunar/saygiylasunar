@@ -1,0 +1,9 @@
+:root {
+  --accent: #8952ee;
+  --accent-soft: rgba(137, 82, 238, 0.12);
+}
+
+:root[data-theme='dark'] {
+  --accent: #8c55e8;
+  --accent-soft: rgba(140, 85, 232, 0.16);
+}
