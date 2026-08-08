@@ -55,16 +55,10 @@
           <div class="land-widget-visual">
             <div class="land-widget-media-head" :aria-label="copy.galleryTitle">
               <button
-                type="button"
-                :class="{ 'is-active': activeMedia === 'earth' }"
-                @click="selectEarth"
-              >{{ copy.earthTab }}</button>
-
-              <button
                 v-for="item in availableGalleryItems"
                 :key="item.key"
                 type="button"
-                :class="{ 'is-active': activeMedia === 'image' && item.key === selectedVisual?.key }"
+                :class="{ 'is-active': item.key === selectedVisual?.key }"
                 @click="selectImage(item.key)"
               >{{ item.label }}</button>
 
@@ -77,19 +71,8 @@
             </div>
 
             <div class="land-widget-main-visual">
-              <div v-if="activeMedia === 'earth'" class="land-widget-earth-inline">
-                <iframe
-                  :src="earthEmbedUrl"
-                  :title="copy.earthTitle"
-                  loading="lazy"
-                  allowfullscreen
-                  referrerpolicy="strict-origin-when-cross-origin"
-                ></iframe>
-                <p>{{ copy.earthFallback }}</p>
-              </div>
-
               <img
-                v-else-if="selectedVisual && !imageLoadError"
+                v-if="selectedVisual && !imageLoadError"
                 :key="selectedVisual.src"
                 :src="selectedVisual.src"
                 :alt="`${selectedParcel?.ada}/${selectedParcel?.parsel} · ${selectedVisual.label}`"
@@ -101,6 +84,12 @@
               <div v-else class="land-widget-image-fallback">
                 <strong>{{ selectedParcel?.ada }}/{{ selectedParcel?.parsel }}</strong>
                 <span>{{ copy.visualUnavailable }}</span>
+                <a
+                  class="button button-ghost"
+                  :href="parcels.config.earthProjectUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >{{ copy.openEarth }} ↗</a>
               </div>
             </div>
           </div>
@@ -192,7 +181,6 @@ const initialId = publishedParcels.some((parcel) => parcel.id === route.query.pa
   ? route.query.parsel
   : publishedParcels[0]?.id
 const selectedId = ref(initialId)
-const activeMedia = ref('earth')
 const activeImageKey = ref('')
 const imageLoadError = ref(false)
 const whatsappMessage = 'Arsalar hk bilgi almak istiyorum'
@@ -211,12 +199,9 @@ const copy = computed(() => locale.value === 'tr'
       technicalLead: 'Seçili parsele ait yayımlanmış temel bilgiler.',
       legalHeading: 'Önemli bilgilendirme',
       legalLead: 'Satış sürecine ilişkin esas açıklamalar aşağıda açıkça yer almaktadır.',
-      earthTab: 'Canlı Harita',
-      earthTitle: 'Canlı Google Earth projesi',
-      openEarth: "Earth'te aç",
-      earthFallback: 'Google Earth bu tarayıcıda gömülü görünümü engellerse “Earth’te aç” bağlantısını kullanın.',
+      openEarth: "Google Earth'te aç",
       galleryTitle: 'Harita ve parsel görselleri',
-      visualUnavailable: 'Görsel yüklenemedi. Başka bir görseli veya Canlı Harita sekmesini kullanabilirsiniz.',
+      visualUnavailable: 'Görsel yüklenemedi. Google Earth bağlantısından konumu inceleyebilirsiniz.',
       priceRule: 'Fiyat, tapu alanının tam m² kısmı × 5.000 TL kuralıyla hesaplanır.',
       officialCheck: 'Tapu, imar, yapılaşma ve uygulamaya ilişkin nihai ve güncel bilgiler ilgili kamu kurumlarından teyit edilmelidir.',
       noPaymentLong: 'Bu internet sayfası üzerinden kapora, satış bedeli veya başka bir taşınmaz ödemesi tahsil edilmez.',
@@ -233,12 +218,9 @@ const copy = computed(() => locale.value === 'tr'
       technicalLead: 'Published basic information for the selected parcel.',
       legalHeading: 'Important information',
       legalLead: 'The essential statements concerning the sale process are shown openly below.',
-      earthTab: 'Live Map',
-      earthTitle: 'Live Google Earth project',
-      openEarth: 'Open in Earth',
-      earthFallback: 'If Google Earth blocks the embedded view in this browser, use the “Open in Earth” link.',
+      openEarth: 'Open in Google Earth',
       galleryTitle: 'Map and parcel images',
-      visualUnavailable: 'The image could not be loaded. Try another image or the Live Map tab.',
+      visualUnavailable: 'The image could not be loaded. You can inspect the location using the Google Earth link.',
       priceRule: 'Price is calculated as the whole-number part of the registered m² × TRY 5,000.',
       officialCheck: 'Final and current title deed, zoning, construction and implementation information should be confirmed with the relevant public authorities.',
       noPaymentLong: 'No deposit, sale price or other real-estate payment is collected through this website.',
@@ -260,10 +242,6 @@ const selectedVisual = computed(() =>
   || null,
 )
 const whatsappHref = computed(() => `https://wa.me/905469633690?text=${encodeURIComponent(whatsappMessage)}`)
-const earthEmbedUrl = computed(() => {
-  const url = parcels.config.earthProjectUrl
-  return `${url}${url.includes('?') ? '&' : '?'}embedded=true`
-})
 
 function setDefaultImage() {
   const images = selectedParcel.value?.images || {}
@@ -277,13 +255,7 @@ function selectParcel(id) {
   router.replace({ query: { ...route.query, parsel: id } })
 }
 
-function selectEarth() {
-  activeMedia.value = 'earth'
-  imageLoadError.value = false
-}
-
 function selectImage(key) {
-  activeMedia.value = 'image'
   activeImageKey.value = key
   imageLoadError.value = false
 }
