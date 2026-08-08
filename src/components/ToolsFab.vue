@@ -52,7 +52,7 @@ import { localize } from '../lib/locale.js'
 const route = useRoute()
 const rootRef = ref(null)
 const open = ref(false)
-const visible = computed(() => !route.path.startsWith('/tools'))
+const visible = computed(() => !route.path.startsWith('/tools') && route.path !== '/arsalar')
 const quickTools = tools.items.slice(0, 5)
 
 function onPointerDown(event) {
