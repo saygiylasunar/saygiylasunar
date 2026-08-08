@@ -12,6 +12,8 @@ import './styles/lands-earth.css'
 import './styles/compact-scale.css'
 import './styles/lands-fab.css'
 import './styles/palette-purple.css'
+import './styles/lands-density.css'
+import './styles/music.css'
 
 const app = createApp(App)
 const revealObservers = new WeakMap()
