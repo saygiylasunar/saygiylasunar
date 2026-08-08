@@ -1,3 +1,7 @@
+body {
+  background: var(--bg);
+}
+
 .page-view {
   min-height: calc(100svh - 78px);
 }
@@ -69,6 +73,49 @@
   font-weight: 650;
 }
 
+.construction-panel-rich {
+  overflow: hidden;
+  padding: clamp(18px, 4vw, 42px);
+  grid-template-columns: minmax(260px, 0.92fr) minmax(0, 1.08fr);
+}
+
+.construction-visual {
+  width: min(100%, 520px);
+  aspect-ratio: 1;
+  justify-self: center;
+  border-radius: calc(var(--radius) - 6px);
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.construction-copy {
+  align-self: center;
+}
+
+.not-found-section {
+  display: grid;
+  min-height: calc(100svh - 78px);
+  align-items: center;
+  padding: clamp(46px, 7vw, 90px) 0;
+}
+
+.not-found-layout {
+  display: grid;
+  align-items: center;
+  gap: clamp(36px, 7vw, 96px);
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+}
+
+.not-found-visual {
+  width: min(100%, 620px);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.not-found-copy h1 {
+  font-size: clamp(2.6rem, 5vw, 5.7rem);
+}
+
 .lands-pilot-grid {
   display: grid;
   align-items: center;
@@ -81,8 +128,12 @@
 }
 
 .lands-cuvuk {
-  width: min(100%, 360px);
+  width: min(100%, 430px);
+  aspect-ratio: 1;
   justify-self: center;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow);
 }
 
 .parcel-chip-row {
@@ -116,7 +167,9 @@
 @media (max-width: 760px) {
   .engagement-grid,
   .contact-brief-grid,
-  .lands-pilot-grid {
+  .lands-pilot-grid,
+  .construction-panel-rich,
+  .not-found-layout {
     grid-template-columns: 1fr;
   }
 
@@ -130,7 +183,17 @@
     gap: 6px;
   }
 
+  .construction-visual,
+  .not-found-visual,
   .lands-cuvuk {
-    width: min(75vw, 300px);
+    width: min(100%, 560px);
+  }
+
+  .not-found-copy {
+    text-align: center;
+  }
+
+  .not-found-copy .eyebrow {
+    justify-content: center;
   }
 }

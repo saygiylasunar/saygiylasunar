@@ -18,7 +18,16 @@
             <span v-for="parcel in parcels.items" :key="parcel.id">{{ parcel.ada }}/{{ parcel.parsel }}</span>
           </div>
         </div>
-        <img v-reveal class="lands-cuvuk" src="/cuvuk-construction.svg" alt="" />
+        <img
+          v-reveal
+          class="lands-cuvuk"
+          :src="constructionImage"
+          alt=""
+          width="720"
+          height="720"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </section>
 
@@ -40,6 +49,13 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { parcels, site } from '../lib/content.js'
-import { t } from '../lib/locale.js'
+import { locale, t } from '../lib/locale.js'
+
+const constructionImage = computed(() =>
+  locale.value === 'en'
+    ? '/cuvuk/construction-en.webp'
+    : '/cuvuk/construction-tr.webp',
+)
 </script>

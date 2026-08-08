@@ -1,17 +1,32 @@
 <template>
   <div class="page-view not-found-view">
-    <section class="page-hero contact-hero">
-      <div class="container narrow-container">
-        <p class="eyebrow">404</p>
-        <h1>{{ t('notFound.title') }}</h1>
-        <p>{{ t('notFound.text') }}</p>
-        <RouterLink class="button button-primary" to="/">{{ t('nav.home') }}</RouterLink>
+    <section class="not-found-section">
+      <div class="container not-found-layout">
+        <img
+          class="not-found-visual"
+          :src="imageSrc"
+          alt=""
+          width="960"
+          height="960"
+          decoding="async"
+        />
+        <div class="not-found-copy">
+          <p class="eyebrow">404</p>
+          <h1>{{ t('notFound.title') }}</h1>
+          <p>{{ t('notFound.text') }}</p>
+          <RouterLink class="button button-primary" to="/">{{ t('nav.home') }}</RouterLink>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
-import { t } from '../lib/locale.js'
+import { locale, t } from '../lib/locale.js'
+
+const imageSrc = computed(() =>
+  locale.value === 'en' ? '/cuvuk/404-en.webp' : '/cuvuk/404-tr.webp',
+)
 </script>
