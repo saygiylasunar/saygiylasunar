@@ -9,6 +9,7 @@ import './styles/webp-bulk.css'
 import './styles/lands-kiss.css'
 import './styles/lands-final.css'
 import './styles/lands-earth.css'
+import './styles/compact-scale.css'
 
 const app = createApp(App)
 const revealObservers = new WeakMap()
