@@ -25,6 +25,7 @@ const router = createRouter({
       },
     },
     { path: '/projects/:slug', name: 'project-detail', component: () => import('../views/ProjectDetailView.vue'), meta: { title: 'projects' } },
+    { path: '/music', name: 'music', component: () => import('../views/MusicView.vue'), meta: { title: 'music' } },
     { path: '/experience', name: 'experience', component: () => import('../views/ExperienceView.vue'), meta: { title: 'experience' } },
     { path: '/about', name: 'about', component: () => import('../views/AboutView.vue'), meta: { title: 'about' } },
     { path: '/contact', name: 'contact', component: () => import('../views/ContactView.vue'), meta: { title: 'contact' } },
