@@ -1,15 +1,15 @@
 <template>
-  <section class="construction-panel construction-panel-rich">
+  <section class="status-state construction-state">
     <img
-      class="construction-visual"
+      class="status-artwork"
       :src="imageSrc"
       alt=""
-      width="720"
-      height="720"
+      width="960"
+      height="960"
       loading="lazy"
       decoding="async"
     />
-    <div class="construction-copy">
+    <div class="status-state-copy">
       <span class="status-pill">{{ t('common.inDevelopment') }}</span>
       <h2>{{ t('projects.underTitle') }}</h2>
       <p>{{ t('projects.underText') }}</p>
