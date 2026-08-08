@@ -4,7 +4,7 @@
       <div class="container">
         <header class="land-widget-intro">
           <div>
-            <p class="eyebrow">{{ t('lands.eyebrow') }}</p>
+            <p class="eyebrow">{{ copy.eyebrow }}</p>
             <h1>{{ copy.title }}</h1>
           </div>
           <p class="land-widget-location">{{ parcels.config.mahalle }} · {{ parcels.config.ilce }} · {{ parcels.config.il }}</p>
@@ -32,7 +32,10 @@
           </section>
 
           <aside class="land-widget-list" aria-label="Parseller">
-            <span class="land-widget-column-label">{{ copy.parcelsTitle }}</span>
+            <div class="land-widget-list-head">
+              <span class="land-widget-column-label">{{ copy.parcelsTitle }}</span>
+              <b class="land-widget-count">{{ publishedParcels.length }}</b>
+            </div>
             <button
               v-for="parcel in publishedParcels"
               :key="parcel.id"
@@ -108,7 +111,15 @@
               </div>
             </dl>
 
-            <a class="button button-primary" :href="parcelMailHref">{{ copy.askInfo }}</a>
+            <div class="land-widget-contact-block">
+              <a
+                class="button button-primary"
+                :href="whatsappHref"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ copy.askInfo }}</a>
+              <small>Ersen Filiz · +90 546 963 3690</small>
+            </div>
           </aside>
 
           <section v-if="selectedParcel" class="land-widget-technical">
@@ -138,7 +149,12 @@
         <span>{{ selectedParcel.ada }}/{{ selectedParcel.parsel }}</span>
         <strong>{{ formatMoney(totalPrice) }}</strong>
       </div>
-      <a class="button button-primary" :href="parcelMailHref">{{ copy.askInfo }}</a>
+      <a
+        class="button button-primary"
+        :href="whatsappHref"
+        target="_blank"
+        rel="noopener noreferrer"
+      >{{ copy.askInfoShort }}</a>
     </div>
   </div>
 </template>
@@ -146,7 +162,7 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { getPublishedParcels, parcelTotalPrice, parcels, site } from '../lib/content.js'
+import { getPublishedParcels, parcelTotalPrice, parcels } from '../lib/content.js'
 import { locale, localize, t } from '../lib/locale.js'
 
 const route = useRoute()
@@ -157,14 +173,17 @@ const initialId = publishedParcels.some((parcel) => parcel.id === route.query.pa
   : publishedParcels[0]?.id
 const selectedId = ref(initialId)
 const schematicPoints = ['80,82 340,58 370,336 115,354', '395,70 650,100 625,354 375,330']
+const whatsappMessage = 'Arsalar hk bilgi almak istiyorum'
 
 const copy = computed(() => locale.value === 'tr'
   ? {
-      title: "Kayran'da Satılık Arsalar",
+      eyebrow: 'Aile taşınmazları',
+      title: 'Kayran Parsel Bilgileri',
       parcelsTitle: 'Parseller',
       selected: 'Seçili parsel',
       salePrice: 'Satış fiyatı',
-      askInfo: 'Bilgi al',
+      askInfo: "WhatsApp'tan bilgi al",
+      askInfoShort: 'WhatsApp',
       technicalTitle: 'Tapu ve imar bilgileri',
       technicalLead: 'Seçili parsele ait yayımlanmış temel bilgiler.',
       legalHeading: 'Önemli bilgilendirme',
@@ -175,11 +194,13 @@ const copy = computed(() => locale.value === 'tr'
       noPaymentLong: 'Bu internet sayfası üzerinden kapora, satış bedeli veya başka bir taşınmaz ödemesi tahsil edilmez.',
     }
   : {
-      title: 'Land for Sale in Kayran',
+      eyebrow: 'Family-owned properties',
+      title: 'Kayran Parcel Information',
       parcelsTitle: 'Parcels',
       selected: 'Selected parcel',
       salePrice: 'Sale price',
-      askInfo: 'Ask for details',
+      askInfo: 'Ask via WhatsApp',
+      askInfoShort: 'WhatsApp',
       technicalTitle: 'Title deed and zoning information',
       technicalLead: 'Published basic information for the selected parcel.',
       legalHeading: 'Important information',
@@ -200,13 +221,10 @@ const galleryItems = computed(() =>
   })),
 )
 const selectedVisual = computed(() => galleryItems.value.find((item) => item.src) || null)
-const parcelMailHref = computed(() => {
-  const parcel = selectedParcel.value
-  const subject = parcel ? `${parcels.config.ilce} ${parcel.ada}/${parcel.parsel} parsel bilgi talebi` : 'Arsa portföyü bilgi talebi'
-  return `mailto:${site.brand.email}?subject=${encodeURIComponent(subject)}`
-})
+const whatsappHref = computed(() => `https://wa.me/905469633690?text=${encodeURIComponent(whatsappMessage)}`)
 
 function selectParcel(id) {
+  if (id === selectedId.value) return
   selectedId.value = id
   router.replace({ query: { ...route.query, parsel: id } })
 }
