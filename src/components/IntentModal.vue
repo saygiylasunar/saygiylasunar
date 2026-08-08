@@ -40,6 +40,20 @@
               <small>{{ t('intent.knowText') }}</small>
             </button>
           </div>
+
+          <div class="intent-quick">
+            <p class="mini-title">{{ t('intent.quickTitle') }}</p>
+            <div class="intent-quick-grid">
+              <button type="button" @click="choose('/projects/loravow')">
+                <strong>{{ t('intent.loravowTitle') }}</strong>
+                <small>{{ t('intent.loravowText') }}</small>
+              </button>
+              <button type="button" @click="choose('/tools')">
+                <strong>{{ t('intent.toolsTitle') }}</strong>
+                <small>{{ t('intent.toolsText') }}</small>
+              </button>
+            </div>
+          </div>
         </section>
       </div>
     </Transition>
