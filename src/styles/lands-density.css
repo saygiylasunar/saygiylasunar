@@ -1,11 +1,11 @@
-/* Final land-page density pass. Keeps legal copy readable while reducing UI chrome. */
+/* Land portfolio density + wide-screen gallery tuning. */
 
 .lands-view .container {
-  width: min(calc(100% - 22px), 1240px);
+  width: min(calc(100% - 32px), 1480px);
 }
 
 .land-widget {
-  grid-template-columns: minmax(150px, 0.58fr) minmax(320px, 1.58fr) minmax(190px, 0.78fr);
+  grid-template-columns: minmax(190px, 230px) minmax(0, 1fr) minmax(230px, 280px);
 }
 
 .land-widget-legal-head,
@@ -32,7 +32,7 @@
 
 .land-widget-list {
   gap: 4px;
-  max-height: 398px;
+  max-height: 520px;
   padding: 8px;
 }
 
@@ -70,51 +70,120 @@
 }
 
 .land-widget-media-head {
-  gap: 4px;
-  padding: 6px;
+  gap: 5px;
+  padding: 7px;
 }
 
 .land-widget-media-head button {
-  padding: 5px 7px;
-  font-size: 0.6rem;
+  border-color: var(--line-strong);
+  padding: 6px 9px;
+  font-size: 0.62rem;
+}
+
+.land-widget-media-head button:hover,
+.land-widget-media-head button:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.land-widget-media-head button.is-active,
+.land-widget-media-head button.is-active:hover,
+.land-widget-media-head button.is-active:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 28%, transparent);
 }
 
 .land-widget-earth-link {
   font-size: 0.61rem;
 }
 
+.land-widget-visual {
+  min-height: clamp(390px, 28vw, 560px);
+}
+
+.land-widget-main-visual {
+  min-height: clamp(350px, 25vw, 520px);
+}
+
+.land-widget-image-open {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(350px, 25vw, 520px);
+  overflow: hidden;
+  place-items: stretch;
+  border: 0;
+  padding: 0;
+  background: var(--surface);
+  cursor: zoom-in;
+}
+
+.land-widget-image-open img {
+  width: 100%;
+  height: 100%;
+  min-height: clamp(350px, 25vw, 520px);
+  object-fit: contain;
+  background: var(--surface);
+}
+
+.land-widget-expand-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid color-mix(in srgb, #fff 28%, transparent);
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: color-mix(in srgb, #0b0d10 78%, transparent);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 760;
+  line-height: 1;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
 .land-widget-summary {
-  gap: 10px;
-  padding: 11px;
+  gap: 9px;
+  padding: 10px;
 }
 
 .land-widget-status-row {
-  font-size: 0.63rem;
+  font-size: 0.62rem;
 }
 
 .land-widget-status-row b {
   padding: 3px 6px;
-  font-size: 0.58rem;
+  font-size: 0.57rem;
 }
 
 .land-widget-price {
-  padding: 10px 0;
+  padding: 9px 0;
 }
 
 .land-widget-price strong {
-  font-size: clamp(1.45rem, 2.6vw, 2.2rem);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
 }
 
 .land-widget-summary dl {
-  gap: 7px;
+  gap: 6px;
 }
 
 .land-widget-summary dd {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
 }
 
 .land-widget-contact-block .button {
-  min-height: 38px;
+  min-height: 36px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.land-widget-contact-block small {
+  font-size: 0.61rem;
 }
 
 .land-widget-technical-grid article {
@@ -127,9 +196,237 @@
   line-height: 1.42;
 }
 
-@media (max-width: 960px) and (min-width: 761px) {
+/* Full-screen image viewer */
+.land-lightbox {
+  position: fixed;
+  z-index: 500;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  padding: 12px;
+  background: rgba(7, 8, 12, 0.96);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.land-lightbox-head,
+.land-lightbox-foot {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.land-lightbox-head > div:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+}
+
+.land-lightbox-head strong {
+  font-size: 0.86rem;
+}
+
+.land-lightbox-head span,
+.land-lightbox-foot > span {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.66rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.land-lightbox-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.land-lightbox-controls button,
+.land-lightbox-nav {
+  display: inline-grid;
+  min-width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.land-lightbox-controls button:hover,
+.land-lightbox-controls button:focus-visible,
+.land-lightbox-nav:hover,
+.land-lightbox-nav:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.land-lightbox-controls button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.land-lightbox-controls button:disabled:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.land-lightbox-controls .land-lightbox-zoom {
+  min-width: 58px;
+  font-size: 0.7rem;
+  font-weight: 760;
+}
+
+.land-lightbox-controls .land-lightbox-close {
+  margin-left: 5px;
+  font-size: 1.25rem;
+}
+
+.land-lightbox-canvas {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.025)),
+    #050609;
+  cursor: default;
+  touch-action: none;
+}
+
+.land-lightbox-canvas.is-zoomed {
+  cursor: grab;
+}
+
+.land-lightbox-canvas.is-dragging {
+  cursor: grabbing;
+}
+
+.land-lightbox-canvas img {
+  display: block;
+  max-width: 96%;
+  max-height: 100%;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+  transform-origin: center center;
+  transition: transform 120ms ease;
+  will-change: transform;
+}
+
+.land-lightbox-canvas.is-dragging img {
+  transition: none;
+}
+
+.land-lightbox-nav {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  width: 42px;
+  height: 58px;
+  transform: translateY(-50%);
+  border-radius: 12px;
+  background: rgba(10, 11, 16, 0.72);
+  font-size: 2rem;
+}
+
+.land-lightbox-nav.is-prev {
+  left: 20px;
+}
+
+.land-lightbox-nav.is-next {
+  right: 20px;
+}
+
+.land-lightbox-foot {
+  min-height: 24px;
+}
+
+.land-lightbox-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.land-lightbox-dots button {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.land-lightbox-dots button.is-active {
+  width: 22px;
+  background: var(--accent);
+}
+
+@media (min-width: 1800px) {
+  .lands-view .container {
+    width: min(calc(100% - 64px), 1840px);
+  }
+
   .land-widget {
-    grid-template-columns: minmax(142px, 0.55fr) minmax(270px, 1.35fr) minmax(176px, 0.72fr);
+    grid-template-columns: 230px minmax(0, 1fr) 280px;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 901px) {
+  .land-widget {
+    grid-template-columns: minmax(165px, 200px) minmax(0, 1fr) minmax(205px, 235px);
+  }
+}
+
+@media (max-width: 900px) {
+  .land-widget {
+    grid-template-columns: 1fr;
+  }
+
+  .land-widget-list,
+  .land-widget-visual {
+    border-right: 0;
+    border-bottom: 1px solid var(--line-strong);
+  }
+
+  .land-widget-summary {
+    border-left: 0;
+  }
+
+  .land-widget-list {
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(142px, 34%);
+  }
+
+  .land-widget-column-label {
+    display: none;
+  }
+
+  .land-widget-list-head {
+    min-width: 62px;
+    align-self: center;
+  }
+
+  .land-widget-visual,
+  .land-widget-main-visual,
+  .land-widget-image-open,
+  .land-widget-image-open img {
+    min-height: 360px;
   }
 }
 
@@ -140,7 +437,6 @@
 
   .land-widget-list {
     gap: 6px;
-    max-height: none;
     padding: 7px;
     grid-auto-columns: minmax(132px, 68%);
   }
@@ -158,6 +454,51 @@
     min-height: 200px;
     padding: 11px;
   }
+
+  .land-widget-visual,
+  .land-widget-main-visual,
+  .land-widget-image-open,
+  .land-widget-image-open img {
+    min-height: 280px;
+  }
+
+  .land-lightbox {
+    gap: 7px;
+    padding: 8px;
+  }
+
+  .land-lightbox-head {
+    align-items: flex-start;
+  }
+
+  .land-lightbox-head > div:first-child {
+    display: grid;
+    gap: 2px;
+  }
+
+  .land-lightbox-foot > span {
+    display: none;
+  }
+
+  .land-lightbox-foot {
+    justify-content: center;
+  }
+
+  .land-lightbox-nav {
+    top: auto;
+    bottom: 48px;
+    width: 38px;
+    height: 44px;
+    transform: none;
+  }
+
+  .land-lightbox-nav.is-prev {
+    left: 12px;
+  }
+
+  .land-lightbox-nav.is-next {
+    right: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -165,9 +506,27 @@
     grid-auto-columns: minmax(128px, 64%);
   }
 
+  .land-widget-visual,
   .land-widget-main-visual,
-  .land-widget-main-visual > img,
+  .land-widget-image-open,
+  .land-widget-image-open img,
   .land-widget-image-fallback {
-    min-height: 210px;
+    min-height: 230px;
+  }
+
+  .land-widget-expand-hint {
+    right: 7px;
+    bottom: 7px;
+    padding: 5px 7px;
+    font-size: 0.58rem;
+  }
+
+  .land-lightbox-controls button {
+    min-width: 31px;
+    height: 31px;
+  }
+
+  .land-lightbox-controls .land-lightbox-zoom {
+    min-width: 52px;
   }
 }
