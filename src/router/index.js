@@ -53,10 +53,22 @@ const router = createRouter({
       meta: { title: 'contact' },
     },
     {
+      path: '/tools',
+      name: 'tools',
+      component: () => import('../views/ToolsView.vue'),
+      meta: { title: 'tools' },
+    },
+    {
       path: '/tools/password',
       name: 'password',
       component: () => import('../views/PasswordToolView.vue'),
       meta: { title: 'password' },
+    },
+    {
+      path: '/tools/exif',
+      name: 'exif',
+      component: () => import('../views/ExifCleanerView.vue'),
+      meta: { title: 'exif' },
     },
     {
       path: '/arsalar',
