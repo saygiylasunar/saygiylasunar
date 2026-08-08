@@ -20,7 +20,8 @@ export function getProjectsForService(serviceSlug) {
 }
 
 export function getPublishedParcels() {
-  return parcels.items.filter((parcel) => parcel.published)
+  const withheld = new Set(['304-11', ...(parcels.config.excluded || [])])
+  return parcels.items.filter((parcel) => parcel.published && !withheld.has(parcel.id))
 }
 
 export function parcelTotalPrice(parcel) {
