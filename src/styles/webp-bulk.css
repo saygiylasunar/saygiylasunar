@@ -3,8 +3,96 @@
   background: var(--accent-soft);
 }
 
+.webp-quality-panel {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-small);
+  padding: 18px;
+  background: var(--bg-soft);
+}
+
+.webp-quality-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.webp-quality-head > div {
+  display: grid;
+  gap: 4px;
+}
+
+.webp-quality-head strong {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.webp-quality-head span {
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.webp-quality-head b {
+  min-width: 52px;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-align: right;
+}
+
+.webp-quality-panel > input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.webp-list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.webp-list-head strong {
+  font-size: 0.86rem;
+}
+
+.webp-list-head strong span {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.webp-list-head button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.74rem;
+  font-weight: 750;
+}
+
+.webp-list-head button:hover {
+  color: var(--text);
+}
+
 .webp-bulk-stats {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.webp-primary-actions {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.webp-primary-actions .button {
+  width: 100%;
+  cursor: pointer;
 }
 
 .webp-progress {
@@ -24,20 +112,21 @@
   accent-color: var(--accent);
 }
 
-.webp-bulk-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.webp-bulk-actions .button {
-  cursor: pointer;
-}
-
-.webp-bulk-actions .button:disabled,
+.webp-primary-actions .button:disabled,
+.webp-list-head button:disabled,
 .preset-row button:disabled {
   opacity: 0.48;
-  cursor: wait;
+  cursor: not-allowed;
+}
+
+.webp-change-note {
+  margin: 0;
+  border-left: 3px solid var(--accent);
+  padding: 10px 12px;
+  background: var(--accent-soft);
+  color: var(--text);
+  font-size: 0.76rem;
+  line-height: 1.45;
 }
 
 .webp-file-list {
@@ -84,10 +173,7 @@
   white-space: nowrap;
 }
 
-.webp-file-size span {
-  color: var(--muted);
-}
-
+.webp-file-size span,
 .webp-file-size b {
   color: var(--muted);
 }
@@ -124,9 +210,8 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .webp-bulk-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .webp-primary-actions {
+    grid-template-columns: 1fr;
   }
 
   .webp-file-row {
@@ -152,5 +237,19 @@
     grid-column: 1 / -1;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .webp-quality-head {
+    align-items: center;
+  }
+
+  .webp-quality-head span {
+    font-size: 0.7rem;
+  }
+
+  .webp-quality-head b {
+    font-size: 1.55rem;
   }
 }
