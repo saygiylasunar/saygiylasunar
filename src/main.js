@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router/index.js'
 import './styles/global.css'
 import './styles/additions.css'
-import './styles/phase2.css'
+import './styles/tools.css'
 
 const app = createApp(App)
 const revealObservers = new WeakMap()

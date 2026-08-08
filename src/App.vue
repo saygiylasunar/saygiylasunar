@@ -10,6 +10,7 @@
     </main>
     <SiteFooter />
     <IntentModal />
+    <ToolsFab />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import { RouterView, useRoute } from 'vue-router'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import IntentModal from './components/IntentModal.vue'
+import ToolsFab from './components/ToolsFab.vue'
 import { getProject, getService } from './lib/content.js'
 import { locale, localize, t } from './lib/locale.js'
 
