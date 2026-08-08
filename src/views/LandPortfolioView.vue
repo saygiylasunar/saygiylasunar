@@ -11,13 +11,25 @@
         </header>
 
         <div class="land-widget">
-          <div class="land-widget-disclaimers">
-            <article v-for="item in quickDisclaimers" :key="item.title">
-              <strong>{{ item.title }}</strong>
-              <span>{{ item.text }}</span>
-            </article>
-            <p>{{ copy.officialCheck }}</p>
-          </div>
+          <section class="land-widget-legal" :aria-label="copy.legalHeading">
+            <div class="land-widget-legal-head">
+              <strong>{{ copy.legalHeading }}</strong>
+              <span>{{ copy.legalLead }}</span>
+            </div>
+
+            <div class="land-widget-legal-main">
+              <p v-for="paragraph in t('lands.legal')" :key="paragraph">{{ paragraph }}</p>
+            </div>
+
+            <p class="land-widget-representative">
+              <strong>{{ t('lands.representative') }}</strong>
+            </p>
+
+            <div class="land-widget-legal-notes">
+              <p>{{ copy.noPaymentLong }}</p>
+              <p>{{ copy.officialCheck }}</p>
+            </div>
+          </section>
 
           <aside class="land-widget-list" aria-label="Parseller">
             <span class="land-widget-column-label">{{ copy.parcelsTitle }}</span>
@@ -99,30 +111,22 @@
             <a class="button button-primary" :href="parcelMailHref">{{ copy.askInfo }}</a>
           </aside>
 
-          <div class="land-widget-bottom">
-            <details class="land-widget-details">
-              <summary>{{ copy.technicalTitle }}</summary>
-              <div>
-                <article>
-                  <strong>{{ t('lands.zoning') }}</strong>
-                  <p>{{ localize(selectedParcel?.imarDurumu) }}</p>
-                </article>
-                <article>
-                  <strong>{{ t('lands.deed') }}</strong>
-                  <p>{{ localize(selectedParcel?.tapuDurumu) }}</p>
-                </article>
-              </div>
-            </details>
-
-            <details class="land-widget-details">
-              <summary>{{ copy.fullLegal }}</summary>
-              <div>
-                <p v-for="paragraph in t('lands.legal')" :key="paragraph">{{ paragraph }}</p>
-                <p><strong>{{ t('lands.representative') }}</strong></p>
-                <p>{{ copy.noPaymentLong }}</p>
-              </div>
-            </details>
-          </div>
+          <section v-if="selectedParcel" class="land-widget-technical">
+            <div class="land-widget-technical-head">
+              <strong>{{ copy.technicalTitle }}</strong>
+              <span>{{ copy.technicalLead }}</span>
+            </div>
+            <div class="land-widget-technical-grid">
+              <article>
+                <strong>{{ t('lands.zoning') }}</strong>
+                <p>{{ localize(selectedParcel.imarDurumu) }}</p>
+              </article>
+              <article>
+                <strong>{{ t('lands.deed') }}</strong>
+                <p>{{ localize(selectedParcel.tapuDurumu) }}</p>
+              </article>
+            </div>
+          </section>
         </div>
 
         <p class="land-widget-footnote">{{ copy.priceRule }}</p>
@@ -162,7 +166,9 @@ const copy = computed(() => locale.value === 'tr'
       salePrice: 'Satış fiyatı',
       askInfo: 'Bilgi al',
       technicalTitle: 'Tapu ve imar bilgileri',
-      fullLegal: 'Ayrıntılı bilgilendirme',
+      technicalLead: 'Seçili parsele ait yayımlanmış temel bilgiler.',
+      legalHeading: 'Önemli bilgilendirme',
+      legalLead: 'Satış sürecine ilişkin esas açıklamalar aşağıda açıkça yer almaktadır.',
       visualPending: 'Parsel görseli hazırlanıyor',
       priceRule: 'Fiyat, tapu alanının tam m² kısmı × 5.000 TL kuralıyla hesaplanır.',
       officialCheck: 'Tapu, imar, yapılaşma ve uygulamaya ilişkin nihai ve güncel bilgiler ilgili kamu kurumlarından teyit edilmelidir.',
@@ -175,42 +181,14 @@ const copy = computed(() => locale.value === 'tr'
       salePrice: 'Sale price',
       askInfo: 'Ask for details',
       technicalTitle: 'Title deed and zoning information',
-      fullLegal: 'Detailed information',
+      technicalLead: 'Published basic information for the selected parcel.',
+      legalHeading: 'Important information',
+      legalLead: 'The essential statements concerning the sale process are shown openly below.',
       visualPending: 'Parcel visual is being prepared',
       priceRule: 'Price is calculated as the whole-number part of the registered m² × TRY 5,000.',
       officialCheck: 'Final and current title deed, zoning, construction and implementation information should be confirmed with the relevant public authorities.',
       noPaymentLong: 'No deposit, sale price or other real-estate payment is collected through this website.',
     })
-
-const quickDisclaimers = computed(() => locale.value === 'tr'
-  ? [
-      {
-        title: 'Aile taşınmazları',
-        text: 'Hak sahiplerinin bilgisi ve rızası dahilinde satışa sunulmaktadır.',
-      },
-      {
-        title: 'Aracılık / komisyon yok',
-        text: 'Bu sayfa üçüncü kişiler için emlak aracılığı veya bağımsız ilan hizmeti sunmaz.',
-      },
-      {
-        title: 'Resmî işlem yetkili kişilerle',
-        text: 'Satış ve devir hak sahipleri ile yetkili temsilci Tolga Yalçın aracılığıyla yürütülür.',
-      },
-    ]
-  : [
-      {
-        title: 'Family-owned properties',
-        text: 'Offered for sale with the knowledge and consent of the relevant right holders.',
-      },
-      {
-        title: 'No brokerage / commission',
-        text: 'This page does not provide brokerage or independent listing services for third parties.',
-      },
-      {
-        title: 'Official procedures through authorized parties',
-        text: 'Sale and transfer are handled through the right holders and authorized representative Tolga Yalçın.',
-      },
-    ])
 
 const selectedParcel = computed(() => publishedParcels.find((parcel) => parcel.id === selectedId.value))
 const totalPrice = computed(() => parcelTotalPrice(selectedParcel.value))
