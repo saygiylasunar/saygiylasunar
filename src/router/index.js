@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+const LORAVOW_URL = 'https://loravow.com'
+
 const router = createRouter({
   history: createWebHistory(),
   scrollBehavior(to, from, savedPosition) {
@@ -14,6 +16,14 @@ const router = createRouter({
     { path: '/services', name: 'services', component: () => import('../views/ServicesView.vue'), meta: { title: 'services' } },
     { path: '/services/:slug', name: 'service-detail', component: () => import('../views/ServiceDetailView.vue'), meta: { title: 'services' } },
     { path: '/projects', name: 'projects', component: () => import('../views/ProjectsView.vue'), meta: { title: 'projects' } },
+    {
+      path: '/projects/loravow',
+      name: 'loravow-external',
+      beforeEnter() {
+        window.location.assign(LORAVOW_URL)
+        return false
+      },
+    },
     { path: '/projects/:slug', name: 'project-detail', component: () => import('../views/ProjectDetailView.vue'), meta: { title: 'projects' } },
     { path: '/experience', name: 'experience', component: () => import('../views/ExperienceView.vue'), meta: { title: 'experience' } },
     { path: '/about', name: 'about', component: () => import('../views/AboutView.vue'), meta: { title: 'about' } },
