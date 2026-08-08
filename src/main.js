@@ -5,6 +5,7 @@ import './styles/global.css'
 import './styles/additions.css'
 import './styles/phase2.css'
 import './styles/tools.css'
+import './styles/lands-kiss.css'
 
 const app = createApp(App)
 const revealObservers = new WeakMap()
