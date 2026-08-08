@@ -1,5 +1,6 @@
 import { computed, ref } from 'vue'
 import ui from '../content/ui.json'
+import uiExtras from '../content/ui-extras.json'
 
 const supportedLocales = ['tr', 'en']
 const storedLocale = localStorage.getItem('site-locale')
@@ -16,11 +17,14 @@ export function setLocale(nextLocale) {
   document.documentElement.lang = nextLocale
 }
 
-export function t(path, fallback = '') {
-  const value = path
+function resolve(source, path) {
+  return path
     .split('.')
-    .reduce((current, key) => current?.[key], ui[locale.value])
+    .reduce((current, key) => current?.[key], source)
+}
 
+export function t(path, fallback = '') {
+  const value = resolve(uiExtras[locale.value], path) ?? resolve(ui[locale.value], path)
   return value ?? fallback ?? path
 }
 
