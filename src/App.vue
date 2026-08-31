@@ -9,9 +9,9 @@
       </RouterView>
     </main>
     <SiteFooter />
-    <IntentModal v-if="route.name !== 'lands'" />
-    <LandsFab />
-    <ToolsFab />
+    <IntentModal v-if="route.name !== 'lands' && route.name !== 'ogg'" />
+    <LandsFab v-if="route.name !== 'ogg'" />
+    <ToolsFab v-if="route.name !== 'ogg'" />
   </div>
 </template>
 
@@ -43,6 +43,7 @@ function routeTitle() {
   if (route.name === 'service-detail') return localize(getService(route.params.slug)?.title)
   if (route.name === 'project-detail') return localize(getProject(route.params.slug)?.title)
   if (route.name === 'music') return locale.value === 'tr' ? 'Müzik · Saygıyla Sunar' : 'Music · Saygıyla Sunar'
+  if (route.name === 'ogg') return 'ÖGG Kurs Programı'
   if (route.name === 'home') return ''
   return t(`meta.${route.meta.title || ''}`, '')
 }
@@ -58,6 +59,9 @@ function routeDescription() {
     return locale.value === 'tr'
       ? 'Saygıyla Sunar, Ersen Filiz’in müzik yayınlarında kullandığı sanatçı adıdır. Spotify, YouTube Music ve Apple Music dinleme bağlantılarına buradan ulaşabilirsiniz.'
       : 'Saygıyla Sunar is the artist name used by Ersen Filiz for music releases. Find Spotify, YouTube Music and Apple Music listening links here.'
+  }
+  if (route.name === 'ogg') {
+    return 'Eylül 2026 silahlı özel güvenlik kurs programı; ders saatleri, eğitmenler, sınıflar ve uygulama günleri düzenli takvim görünümünde.'
   }
   return baseDescription()
 }
