@@ -12,6 +12,11 @@ const FIRST_AID = 'Temel İlk Yardım'
 const SYSTEMS = 'Güvenlik Sistem ve Cihazları'
 const NARCOTICS = 'Uyuşturucu Madde Bilgileri'
 const WEAPONS = 'Silah Bilgisi ve Atış'
+const CROWD = 'Kalabalık Yönetimi'
+const FIRE = 'Yangın Güvenliği ve Tabii Afet'
+const LAW_ENFORCEMENT = 'Genel Kolluklar İlişkileri'
+const COMMUNICATION = 'Etkili İletişim'
+const PROTECTION = 'Kişi Koruma'
 
 export const oggSchedule = [
   {
@@ -124,18 +129,99 @@ export const oggSchedule = [
       slot('16:20 - 17:00', WEAPONS, 'Uygulama', 'Levent Yıldız', 'Emniyet Poligonu 2'),
     ],
   },
+  {
+    date: '2026-09-11',
+    sessions: [
+      slot('08:50 - 09:30', CROWD, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('09:40 - 10:20', CROWD, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('10:30 - 11:10', CROWD, 'Uygulama', 'Dede Yaşar', 'Uygulama Sınıfı'),
+      slot('11:20 - 12:00', CROWD, 'Uygulama', 'Dede Yaşar', 'Uygulama Sınıfı'),
+      slot('12:10 - 12:50', CROWD, 'Uygulama', 'Dede Yaşar', 'Uygulama Sınıfı'),
+      slot('13:00 - 13:40', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('13:50 - 14:30', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('14:40 - 15:20', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+    ],
+  },
+  {
+    date: '2026-09-12',
+    sessions: [
+      slot('08:50 - 09:30', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('09:40 - 10:20', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('10:30 - 11:10', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('11:20 - 12:00', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('12:10 - 12:50', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('13:00 - 13:40', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('13:50 - 14:30', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+      slot('14:40 - 15:20', FIRE, 'Teorik', 'M.T. Şakir Büyükkoşucu', 'A Sınıfı'),
+    ],
+  },
+  {
+    date: '2026-09-14',
+    sessions: [
+      slot('08:50 - 09:30', LAW, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('09:40 - 10:20', LAW, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('10:30 - 11:10', LAW, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('11:20 - 12:00', LAW, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('12:10 - 12:50', SECURITY, 'Teorik', 'Levent Yıldız', 'A Sınıfı'),
+      slot('13:00 - 13:40', SECURITY, 'Teorik', 'Levent Yıldız', 'A Sınıfı'),
+      slot('13:50 - 14:30', SECURITY, 'Teorik', 'Levent Yıldız', 'A Sınıfı'),
+      slot('14:40 - 15:20', SECURITY, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+    ],
+  },
+  {
+    date: '2026-09-15',
+    sessions: [
+      slot('08:50 - 09:30', CROWD, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('09:40 - 10:20', CROWD, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('10:30 - 11:10', CROWD, 'Uygulama', 'Dede Yaşar', 'Uygulama Sınıfı'),
+      slot('11:20 - 12:00', CROWD, 'Uygulama', 'Dede Yaşar', 'Uygulama Sınıfı'),
+      slot('12:10 - 12:50', CROWD, 'Uygulama', 'Dede Yaşar', 'Uygulama Sınıfı'),
+      slot('13:00 - 13:40', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('13:50 - 14:30', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('14:40 - 15:20', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+    ],
+  },
+  {
+    date: '2026-09-16',
+    sessions: [
+      slot('08:50 - 09:30', LAW_ENFORCEMENT, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('09:40 - 10:20', LAW_ENFORCEMENT, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('10:30 - 11:10', LAW_ENFORCEMENT, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('11:20 - 12:00', LAW_ENFORCEMENT, 'Teorik', 'Dede Yaşar', 'A Sınıfı'),
+      slot('12:10 - 12:50', SECURITY, 'Teorik', 'Levent Yıldız', 'A Sınıfı'),
+      slot('13:00 - 13:40', SECURITY, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('13:50 - 14:30', SECURITY, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('14:40 - 15:20', SECURITY, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+    ],
+  },
+  {
+    date: '2026-09-17',
+    sessions: [
+      slot('08:50 - 09:30', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('09:40 - 10:20', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('10:30 - 11:10', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('11:20 - 12:00', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('12:10 - 12:50', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('13:00 - 13:40', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('13:50 - 14:30', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('14:40 - 15:20', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+    ],
+  },
+  {
+    date: '2026-09-18',
+    sessions: [
+      slot('08:50 - 09:30', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('09:40 - 10:20', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('10:30 - 11:10', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('11:20 - 12:00', COMMUNICATION, 'Teorik', 'Fatime Şule Doğancı', 'A Sınıfı'),
+      slot('12:10 - 12:50', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('13:00 - 13:40', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+      slot('13:50 - 14:30', PROTECTION, 'Uygulama', 'Levent Yıldız', 'Uygulama Sınıfı'),
+    ],
+  },
 ]
 
-// Ana program ekranında görünen, ancak ayrıntı ekran görüntüsü henüz eklenmemiş tarihler.
-export const oggPendingDates = [
-  '2026-09-11',
-  '2026-09-12',
-  '2026-09-14',
-  '2026-09-15',
-  '2026-09-16',
-  '2026-09-17',
-  '2026-09-18',
-]
+export const oggPendingDates = []
 
 export const oggScheduleMeta = {
   provider: 'Yavuz Özel Güvenlik Hizmetleri Sanayi ve Ticaret Limited Şirketi',
