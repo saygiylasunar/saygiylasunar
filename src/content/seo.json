@@ -1,0 +1,118 @@
+{
+  "tr": {
+    "home": {
+      "title": "Ersen Filiz · Saygıyla Sunar — Mühendislik, AI, Tasarım ve Yaratıcı Teknoloji",
+      "description": "Ersen Filiz’in yazılım, yapay zekâ, UI/UX, grafik tasarım, yaratıcı teknoloji, araç geliştirme ve Saygıyla Sunar müzik çalışmalarını bir araya getiren kişisel stüdyo ve portföy."
+    },
+    "services": {
+      "title": "Hizmetler ve Çalışma Alanları",
+      "description": "Yapay zekâ, yazılım sistemleri, web geliştirme, UI/UX, görsel tasarım, kurumsal dijital dönüşüm ve yaratıcı teknoloji alanlarında Ersen Filiz’in çalışma kapsamı."
+    },
+    "projects": {
+      "title": "Projeler ve Ürünler",
+      "description": "LoraVow, ReversenUI, EFSS PDE, Beyaz Önlüklüler, Yavuz Özel Güvenlik ve diğer yazılım, AI, tasarım ve yaratıcı teknoloji projeleri."
+    },
+    "logbook": {
+      "title": "Logbook — AI, Mühendislik ve Tasarım Notları",
+      "description": "Ersen Filiz’in yapay zekâ, local-first araçlar, ComfyUI, pixel art, ürün geliştirme, tasarım sistemleri ve deneysel yazılım üzerine geliştirme notları."
+    },
+    "music": {
+      "title": "Müzik · Saygıyla Sunar",
+      "description": "Ersen Filiz’in Saygıyla Sunar adıyla yayımladığı müzik çalışmaları ve Spotify, YouTube Music ile Apple Music dinleme bağlantıları."
+    },
+    "experience": {
+      "title": "Deneyim ve Yetkinlikler",
+      "description": "Ersen Filiz’in bilgisayar mühendisliği, frontend, UI/UX, grafik tasarım, bilgi işlem, kurumsal ve sivil toplum deneyiminin profesyonel özeti."
+    },
+    "about": {
+      "title": "Hakkımda",
+      "description": "Bilgisayar mühendisi Ersen Filiz’in yazılım, yapay zekâ, tasarım, ürün geliştirme ve yaratıcı teknoloji eksenindeki çalışma yaklaşımı."
+    },
+    "contact": {
+      "title": "İletişim",
+      "description": "Yazılım, AI, web, tasarım veya yaratıcı teknoloji projeleri için Ersen Filiz ile iletişime geçin."
+    },
+    "tools": {
+      "title": "Mini Araçlar",
+      "description": "Tarayıcıda mümkün olduğunca yerel çalışan parola, metadata, görsel dönüştürme, hash, JSON ve kontrast araçları."
+    },
+    "password": {
+      "title": "Sade Parola Oluşturucu",
+      "description": "Web Crypto API kullanan ve parolayı tarayıcı içinde oluşturan hızlı, yerel parola üretim aracı."
+    },
+    "exif": {
+      "title": "EXIF / Metadata Temizleyici",
+      "description": "Görselleri sunucuya yüklemeden tarayıcı içinde yeniden oluşturarak EXIF ve gömülü metadata alanlarını temizleyen araç."
+    },
+    "lands": {
+      "title": "Sultandağı / Kayran Arsa Portföyü",
+      "description": "Afyonkarahisar Sultandağı Kayran’daki aile taşınmazlarına ait parsel, alan, konum, görsel ve imar bilgilerinin düzenlendiği bilgi portföyü."
+    },
+    "ogg": {
+      "title": "ÖGG Kurs Programı",
+      "description": "Eylül 2026 silahlı özel güvenlik kursu için ders saatleri, eğitmenler, sınıflar ve uygulama günlerini düzenleyen program görünümü."
+    },
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "description": "Aradığınız sayfa bulunamadı."
+    }
+  },
+  "en": {
+    "home": {
+      "title": "Ersen Filiz · Saygıyla Sunar — Engineering, AI, Design and Creative Technology",
+      "description": "The personal studio and portfolio of Ersen Filiz, bringing together software engineering, artificial intelligence, UI/UX, graphic design, creative technology, tools and music."
+    },
+    "services": {
+      "title": "Services and Capabilities",
+      "description": "Ersen Filiz’s work across artificial intelligence, software systems, web development, UI/UX, visual design, institutional digital transformation and creative technology."
+    },
+    "projects": {
+      "title": "Projects and Products",
+      "description": "LoraVow, ReversenUI, EFSS PDE, Beyaz Önlüklüler, Yavuz Private Security and other software, AI, design and creative technology projects."
+    },
+    "logbook": {
+      "title": "Logbook — AI, Engineering and Design Notes",
+      "description": "Development notes by Ersen Filiz on AI, local-first tools, ComfyUI, pixel art, product development, design systems and experimental software."
+    },
+    "music": {
+      "title": "Music · Saygıyla Sunar",
+      "description": "Music released by Ersen Filiz under the artist name Saygıyla Sunar, with Spotify, YouTube Music and Apple Music links."
+    },
+    "experience": {
+      "title": "Experience and Capabilities",
+      "description": "A professional overview of Ersen Filiz’s work in computer engineering, frontend development, UI/UX, graphic design, IT, institutional and nonprofit environments."
+    },
+    "about": {
+      "title": "About",
+      "description": "Ersen Filiz’s approach to software engineering, artificial intelligence, design, product development and creative technology."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Ersen Filiz for software, AI, web, design or creative technology projects."
+    },
+    "tools": {
+      "title": "Mini Tools",
+      "description": "Small browser utilities for passwords, metadata, image conversion, hashing, JSON and contrast, designed to run locally whenever possible."
+    },
+    "password": {
+      "title": "Simple Password Generator",
+      "description": "A fast local password generator powered by the Web Crypto API and executed entirely in the browser."
+    },
+    "exif": {
+      "title": "EXIF / Metadata Cleaner",
+      "description": "A browser tool that removes EXIF and embedded metadata by rebuilding images locally without uploading them to a server."
+    },
+    "lands": {
+      "title": "Sultandağı / Kayran Land Portfolio",
+      "description": "An information portfolio organizing parcel, area, location, imagery and zoning data for family-owned land in Sultandağı, Afyonkarahisar."
+    },
+    "ogg": {
+      "title": "Private Security Course Schedule",
+      "description": "A structured view of lesson times, instructors, classrooms and practice days for the September 2026 armed private security course."
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "The requested page could not be found."
+    }
+  }
+}
