@@ -1063,7 +1063,7 @@ Refactor as each section is redesigned.
 - [x] Redesign IntentModal
 - [x] Add featured quick links
 - [x] Add Music
-- [ ] Add Instagram
+- [x] Add Instagram
 - [x] Add AI Logbook
 - [x] Add LoraVow
 - [x] Add Beyaz Önlüklüler

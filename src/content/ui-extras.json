@@ -30,7 +30,8 @@
       "musicTitle": "Müzik",
       "musicText": "Saygıyla Sunar yayınlarına geç.",
       "projectsTitle": "Tüm Projeler",
-      "projectsText": "Yayımlanabilir proje arşivini aç."
+      "projectsText": "Yayımlanabilir proje arşivini aç.",
+      "externalTitle": "Dış bağlantılar"
     },
     "tools": {
       "eyebrow": "Tarayıcıda çalışan mini araçlar",
@@ -183,7 +184,8 @@
       "musicTitle": "Music",
       "musicText": "Open Saygıyla Sunar releases.",
       "projectsTitle": "All Projects",
-      "projectsText": "Browse the public project archive."
+      "projectsText": "Browse the public project archive.",
+      "externalTitle": "Elsewhere"
     },
     "tools": {
       "eyebrow": "Browser-based mini tools",

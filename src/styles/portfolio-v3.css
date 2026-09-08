@@ -749,3 +749,36 @@
     scroll-behavior: auto !important;
   }
 }
+
+.intent-external {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.intent-external > .mini-title {
+  margin-bottom: 10px;
+  color: var(--text);
+  font-size: 0.76rem;
+  font-weight: 760;
+}
+
+.intent-external > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.intent-external a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.intent-external a:hover {
+  border-color: var(--line-strong);
+  color: var(--text);
+}

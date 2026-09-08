@@ -62,6 +62,15 @@
               </button>
             </div>
           </div>
+
+          <div class="intent-external">
+            <p class="mini-title">{{ t('intent.externalTitle') }}</p>
+            <div>
+              <a :href="site.profiles.instagram" target="_blank" rel="noreferrer">Instagram ↗</a>
+              <a :href="site.profiles.github" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a :href="site.music.linktree" target="_blank" rel="noreferrer">Linktree ↗</a>
+            </div>
+          </div>
         </section>
       </div>
     </Transition>
@@ -71,6 +80,7 @@
 <script setup>
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import { site } from '../lib/content.js'
 import { t } from '../lib/locale.js'
 
 const router = useRouter()
