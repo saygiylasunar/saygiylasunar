@@ -10,8 +10,27 @@
 
     <section class="section">
       <div class="container">
+        <div class="logbook-filter" :aria-label="t('logbook.filter')">
+          <button
+            type="button"
+            :class="{ active: activeTag === 'all' }"
+            @click="activeTag = 'all'"
+          >
+            {{ t('logbook.all') }}
+          </button>
+          <button
+            v-for="tag in tags"
+            :key="tag"
+            type="button"
+            :class="{ active: activeTag === tag }"
+            @click="activeTag = tag"
+          >
+            #{{ tag }}
+          </button>
+        </div>
+
         <div class="logbook-grid">
-          <article v-for="entry in logbookEntries" :key="entry.slug" class="logbook-card" v-reveal>
+          <article v-for="entry in filteredEntries" :key="entry.slug" class="logbook-card" v-reveal>
             <div class="logbook-card-meta">
               <span>{{ localize(entry.category) }}</span>
               <time :datetime="entry.publishedAt">{{ formatDate(entry.publishedAt) }}</time>
@@ -32,9 +51,18 @@
 </template>
 
 <script setup>
+import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { logbookEntries } from '../lib/logbook.js'
 import { locale, localize, t } from '../lib/locale.js'
+
+const activeTag = ref('all')
+const tags = [...new Set(logbookEntries.flatMap((entry) => entry.tags || []))].sort()
+const filteredEntries = computed(() =>
+  activeTag.value === 'all'
+    ? logbookEntries
+    : logbookEntries.filter((entry) => entry.tags?.includes(activeTag.value)),
+)
 
 function formatDate(value) {
   return new Intl.DateTimeFormat(locale.value === 'tr' ? 'tr-TR' : 'en-US', {

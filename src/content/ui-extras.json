@@ -100,7 +100,51 @@
       "updated": "Güncelleme",
       "back": "Logbook’a dön",
       "language": "İçerik dili",
-      "related": "İlgili projeler"
+      "related": "İlgili projeler",
+      "all": "Tümü",
+      "filter": "Etiketle filtrele"
+    },
+    "homeV3": {
+      "studio": "Saygıyla Sunar / Digital Studio",
+      "title": "Kod, görsel sistem ve yaratıcı teknoloji arasında çalışan ürünler geliştiriyorum.",
+      "intro": "Bilgisayar mühendisliği altyapısını AI tooling, arayüz tasarımı, kurumsal sistemler, görsel üretim ve müzikle aynı üretim hattında birleştiriyorum.",
+      "exploreWork": "Projeleri incele",
+      "readLogbook": "Logbook’u aç",
+      "openLauncher": "Hızlı erişim",
+      "signal": "Şu anda",
+      "signalText": "Local-first AI tooling, pixel discipline ve portföy sistemini geliştiriyorum.",
+      "workEyebrow": "Seçili işler",
+      "workTitle": "Sunumdan önce çalışan sistemi göster.",
+      "workIntro": "Ürünler, mühendislik araçları ve kurumsal sistemler üzerinden ne yaptığımı doğrudan inceleyebilirsiniz.",
+      "buildingEyebrow": "Now / Building",
+      "buildingTitle": "Aktif geliştirme masası",
+      "buildingItems": [
+        [
+          "ReversenUI",
+          "Local-first AI engineering workbench",
+          "/projects/reversenui"
+        ],
+        [
+          "EFSS PDE",
+          "Deterministik pixel mapping ve ComfyUI node sistemi",
+          "/projects/efss-pde"
+        ],
+        [
+          "LoraVow",
+          "Etkinlik medya aktarım ürünü",
+          "/projects/loravow"
+        ]
+      ],
+      "logEyebrow": "Dev Logbook",
+      "logTitle": "Kararlar, deneyler ve işe yaramayan yollar da işin parçası.",
+      "logIntro": "Geliştirme sürecindeki teknik notları sonuçtan koparmadan yayımlıyorum.",
+      "capabilityEyebrow": "Çalışma alanları",
+      "capabilityTitle": "Tek disiplin yerine birleşim noktalarında çalışıyorum.",
+      "capabilityIntro": "Yazılım, AI, ürün, tasarım ve operasyon gerektiğinde aynı projede birbirine bağlanıyor.",
+      "experienceEyebrow": "Arka plan",
+      "experienceTitle": "Mühendislik, tasarım ve kurumsal operasyon aynı özgeçmişte.",
+      "contactEyebrow": "Birlikte çalışalım",
+      "contactTitle": "İhtiyacı anlatın; çözüm mimarisini birlikte netleştirelim."
     }
   },
   "en": {
@@ -204,7 +248,51 @@
       "updated": "Updated",
       "back": "Back to Logbook",
       "language": "Content language",
-      "related": "Related projects"
+      "related": "Related projects",
+      "all": "All",
+      "filter": "Filter by tag"
+    },
+    "homeV3": {
+      "studio": "Saygıyla Sunar / Digital Studio",
+      "title": "I build products where code, visual systems and creative technology meet.",
+      "intro": "I combine a computer-engineering foundation with AI tooling, interface design, institutional systems, visual production and music in the same production pipeline.",
+      "exploreWork": "Explore projects",
+      "readLogbook": "Open Logbook",
+      "openLauncher": "Quick access",
+      "signal": "Currently",
+      "signalText": "Building local-first AI tooling, pixel-discipline systems and this portfolio.",
+      "workEyebrow": "Selected work",
+      "workTitle": "Show the working system before the pitch.",
+      "workIntro": "Explore products, engineering tools and institutional systems as direct evidence of how I work.",
+      "buildingEyebrow": "Now / Building",
+      "buildingTitle": "Active development desk",
+      "buildingItems": [
+        [
+          "ReversenUI",
+          "Local-first AI engineering workbench",
+          "/projects/reversenui"
+        ],
+        [
+          "EFSS PDE",
+          "Deterministic pixel mapping and ComfyUI node system",
+          "/projects/efss-pde"
+        ],
+        [
+          "LoraVow",
+          "Event media transfer product",
+          "/projects/loravow"
+        ]
+      ],
+      "logEyebrow": "Dev Logbook",
+      "logTitle": "Decisions, experiments and failed paths are part of the work.",
+      "logIntro": "I publish technical development notes without separating them from the products they shaped.",
+      "capabilityEyebrow": "Capabilities",
+      "capabilityTitle": "I work at the intersections rather than inside one discipline.",
+      "capabilityIntro": "Software, AI, product, design and operations connect inside the same project when the problem requires it.",
+      "experienceEyebrow": "Background",
+      "experienceTitle": "Engineering, design and institutional operations in one professional history.",
+      "contactEyebrow": "Work together",
+      "contactTitle": "Describe the need; we can define the solution architecture together."
     }
   }
 }
