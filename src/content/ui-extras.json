@@ -145,6 +145,11 @@
       "experienceTitle": "Mühendislik, tasarım ve kurumsal operasyon aynı özgeçmişte.",
       "contactEyebrow": "Birlikte çalışalım",
       "contactTitle": "İhtiyacı anlatın; çözüm mimarisini birlikte netleştirelim."
+    },
+    "projectsV3": {
+      "caseStudy": "Vaka çalışması",
+      "relatedLogbook": "İlgili Logbook kayıtları",
+      "sourceLinks": "Kaynaklar / bağlantılar"
     }
   },
   "en": {
@@ -293,6 +298,11 @@
       "experienceTitle": "Engineering, design and institutional operations in one professional history.",
       "contactEyebrow": "Work together",
       "contactTitle": "Describe the need; we can define the solution architecture together."
+    },
+    "projectsV3": {
+      "caseStudy": "Case study",
+      "relatedLogbook": "Related Logbook entries",
+      "sourceLinks": "Sources / links"
     }
   }
 }
