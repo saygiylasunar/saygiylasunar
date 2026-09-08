@@ -706,3 +706,46 @@
     grid-template-columns: 1fr;
   }
 }
+
+:root {
+  --motion-fast: 160ms;
+  --motion-base: 220ms;
+  --motion-slow: 600ms;
+  --ease-out: cubic-bezier(0.2, 0.75, 0.2, 1);
+}
+
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 72%, white);
+  outline-offset: 4px;
+}
+
+.v3-project-card,
+.v3-log-entry,
+.v3-building-row,
+.project-related-log > a,
+.article-related > a {
+  transition:
+    transform var(--motion-base) var(--ease-out),
+    border-color var(--motion-base) ease,
+    background var(--motion-base) ease;
+}
+
+.v3-log-entry:hover,
+.v3-building-row:hover {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

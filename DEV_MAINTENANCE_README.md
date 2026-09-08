@@ -1047,7 +1047,7 @@ Refactor as each section is redesigned.
 - [x] Add Article metadata
 - [x] Expand structured data
 - [x] Generate sitemap from content
-- [ ] Evaluate prerender / SSG
+- [ ] Evaluate prerender / SSG — intentionally deferred until browser-global code is hydration-safe; route metadata, JSON-LD, sitemap and OG assets are complete in V3.
 
 ## Phase 4 — Homepage Art Direction
 
@@ -1076,10 +1076,10 @@ Refactor as each section is redesigned.
 - [x] LoraVow
 - [x] Beyaz Önlüklüler
 - [x] Yavuz Özel Güvenlik
-- [ ] Saygıyla Sunar Font
-- [ ] BellekPad
+- [x] Saygıyla Sunar Font
+- [x] BellekPad
 - [x] EFSS PDE
-- [ ] AI visual workflows
+- [x] AI visual workflows
 - [x] ReversenUI / EzgiWave where relevant
 
 ## Phase 7 — Logbook
@@ -1103,17 +1103,17 @@ Refactor as each section is redesigned.
 
 ## Phase 9 — Motion
 
-- [ ] define motion tokens
+- [x] define motion tokens
 - [x] hero entrance
 - [x] hover micro-interactions
 - [x] route transition
 - [x] selected scroll reveals
 - [x] reduced-motion behavior
-- [ ] performance check
+- [x] performance check
 
 ## Phase 10 — Quality Pass
 
-- [ ] keyboard audit
+- [x] keyboard audit
 - [ ] mobile audit
 - [ ] 320–430 px width audit
 - [ ] tablet audit
@@ -1121,9 +1121,9 @@ Refactor as each section is redesigned.
 - [ ] Turkish content review
 - [ ] English content review
 - [ ] broken links
-- [ ] image alt text
-- [ ] metadata inspection
-- [ ] sitemap inspection
+- [x] image alt text
+- [x] metadata inspection
+- [x] sitemap inspection
 - [x] local production build
 
 ---
