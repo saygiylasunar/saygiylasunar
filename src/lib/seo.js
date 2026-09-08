@@ -1,5 +1,6 @@
 import seo from '../content/seo.json'
 import { getProject, getService } from './content.js'
+import { getLogbookEntry } from './logbook.js'
 import { localize } from './locale.js'
 
 const SITE_URL = 'https://saygiylasunar.com'
@@ -33,6 +34,20 @@ function setCanonical(url) {
   link.setAttribute('href', url)
 }
 
+function clearArticleTags() {
+  document.head.querySelectorAll('meta[property="article:tag"]').forEach((node) => node.remove())
+}
+
+function addArticleTags(tags = []) {
+  clearArticleTags()
+  for (const tag of tags) {
+    const meta = document.createElement('meta')
+    meta.setAttribute('property', 'article:tag')
+    meta.setAttribute('content', tag)
+    document.head.appendChild(meta)
+  }
+}
+
 function staticSeo(route, localeValue) {
   const key = route.meta.seoKey || route.name || 'home'
   return seo[localeValue]?.[key] || seo[localeValue]?.home
@@ -58,6 +73,21 @@ function dynamicSeo(route, localeValue) {
       description: localize(service.short) || staticSeo(route, localeValue).description,
       image: service.ogImage || '',
       type: 'website',
+    }
+  }
+
+  if (route.name === 'logbook-detail') {
+    const entry = getLogbookEntry(route.params.slug)
+    if (!entry) return null
+    return {
+      title: localize(entry.title),
+      description: localize(entry.description),
+      image: entry.ogImage || '',
+      type: 'article',
+      publishedTime: entry.publishedAt,
+      modifiedTime: entry.updatedAt,
+      section: localize(entry.category),
+      tags: entry.tags || [],
     }
   }
 
@@ -91,5 +121,10 @@ export function applyRouteSeo(route, localeValue = 'tr') {
   setMeta('name', 'twitter:title', title)
   setMeta('name', 'twitter:description', record.description)
   setMeta('name', 'twitter:image', absoluteImage)
+  setMeta('property', 'article:published_time', record.publishedTime || '')
+  setMeta('property', 'article:modified_time', record.modifiedTime || '')
+  setMeta('property', 'article:section', record.section || '')
+  if (record.type === 'article') addArticleTags(record.tags)
+  else clearArticleTags()
   setCanonical(canonical)
 }
