@@ -1,13 +1,12 @@
 import { mkdirSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
-
-const root = new URL('../', import.meta.url)
 const seo = JSON.parse(readFileSync(new URL('../src/content/seo.json', import.meta.url), 'utf8'))
 const projects = JSON.parse(readFileSync(new URL('../src/content/projects.json', import.meta.url), 'utf8'))
 const logbook = JSON.parse(readFileSync(new URL('../src/content/logbook.json', import.meta.url), 'utf8'))
 
-const outRoot = new URL('../public/og/', import.meta.url)
+const outRoot = fileURLToPath(new URL('../public/og/', import.meta.url))
 
 function escapeXml(value='') {
   return String(value)
@@ -70,7 +69,7 @@ function svgCard({title, label='SAYGIYLA SUNAR', kicker='ERSEN FILIZ / 2026'}) {
 }
 
 async function writeCard(relativePath, data) {
-  const path = join(new URL('.', outRoot).pathname, relativePath)
+  const path = join(outRoot, relativePath)
   mkdirSync(dirname(path), { recursive: true })
   await sharp(Buffer.from(svgCard(data))).png({ compressionLevel: 9 }).toFile(path)
 }

@@ -10,11 +10,11 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "generate:og": "node scripts/generate-og.mjs",
     "generate:seo": "npm run generate:sitemap && npm run generate:og",
-    "predev": "npm run generate:seo",
     "prebuild": "npm run check:content && npm run generate:seo",
     "check:content": "node scripts/check-content.mjs",
     "check:bundle": "node scripts/check-bundle-budget.mjs",
-    "postbuild": "npm run check:bundle"
+    "postbuild": "npm run check:bundle",
+    "dev:seo": "npm run generate:seo && vite"
   },
   "dependencies": {
     "vue": "^3.4.0",
