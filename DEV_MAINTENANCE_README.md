@@ -1021,94 +1021,94 @@ Refactor as each section is redesigned.
 
 ## Phase 1 — Content Audit
 
-- [ ] Inventory every public route
-- [ ] Find placeholder / temporary copy
-- [ ] Remove low-value under-construction language
-- [ ] Mark public vs draft vs private projects
-- [ ] Add missing public projects
+- [x] Inventory every public route
+- [x] Find placeholder / temporary copy
+- [x] Remove low-value under-construction language
+- [x] Mark public vs draft vs private projects
+- [x] Add missing public projects
 - [ ] Normalize project naming
 - [ ] Normalize TR / EN casing and punctuation
 
 ## Phase 2 — Content Architecture
 
-- [ ] Define V3 project schema
-- [ ] Define Logbook schema
-- [ ] Add Markdown content pipeline
-- [ ] Add related-project / related-article relations
-- [ ] Add visibility rules
+- [x] Define V3 project schema
+- [x] Define Logbook schema
+- [x] Add Markdown content pipeline
+- [x] Add related-project / related-article relations
+- [x] Add visibility rules
 
 ## Phase 3 — SEO Foundation
 
-- [ ] Add route-aware SEO model
-- [ ] Add unique title + description per route
-- [ ] Add canonical per route
-- [ ] Add OG image per important route
-- [ ] Add Twitter image metadata
-- [ ] Add Article metadata
-- [ ] Expand structured data
-- [ ] Generate sitemap from content
+- [x] Add route-aware SEO model
+- [x] Add unique title + description per route
+- [x] Add canonical per route
+- [x] Add OG image per important route
+- [x] Add Twitter image metadata
+- [x] Add Article metadata
+- [x] Expand structured data
+- [x] Generate sitemap from content
 - [ ] Evaluate prerender / SSG
 
 ## Phase 4 — Homepage Art Direction
 
-- [ ] Redesign hero
-- [ ] Add stronger visual signature
-- [ ] Replace service-heavy first impression with work-first hierarchy
-- [ ] Add selected project storytelling
-- [ ] Add current-building strip
-- [ ] Refine CTA hierarchy
+- [x] Redesign hero
+- [x] Add stronger visual signature
+- [x] Replace service-heavy first impression with work-first hierarchy
+- [x] Add selected project storytelling
+- [x] Add current-building strip
+- [x] Refine CTA hierarchy
 
 ## Phase 5 — Quick Access Launcher
 
-- [ ] Redesign IntentModal
-- [ ] Add featured quick links
-- [ ] Add Music
+- [x] Redesign IntentModal
+- [x] Add featured quick links
+- [x] Add Music
 - [ ] Add Instagram
-- [ ] Add AI Logbook
-- [ ] Add LoraVow
-- [ ] Add Beyaz Önlüklüler
-- [ ] Add Yavuz Özel Güvenlik
-- [ ] Keep internal navigation dominant
-- [ ] Preserve accessibility
+- [x] Add AI Logbook
+- [x] Add LoraVow
+- [x] Add Beyaz Önlüklüler
+- [x] Add Yavuz Özel Güvenlik
+- [x] Keep internal navigation dominant
+- [x] Preserve accessibility
 
 ## Phase 6 — Project Case Studies
 
-- [ ] LoraVow
-- [ ] Beyaz Önlüklüler
-- [ ] Yavuz Özel Güvenlik
+- [x] LoraVow
+- [x] Beyaz Önlüklüler
+- [x] Yavuz Özel Güvenlik
 - [ ] Saygıyla Sunar Font
 - [ ] BellekPad
-- [ ] EFSS PDE
+- [x] EFSS PDE
 - [ ] AI visual workflows
-- [ ] ReversenUI / EzgiWave where relevant
+- [x] ReversenUI / EzgiWave where relevant
 
 ## Phase 7 — Logbook
 
-- [ ] /logbook index
-- [ ] category / tag filtering
-- [ ] article renderer
-- [ ] article SEO
-- [ ] related content
-- [ ] first 3–5 real entries
+- [x] /logbook index
+- [x] category / tag filtering
+- [x] article renderer
+- [x] article SEO
+- [x] related content
+- [x] first 3–5 real entries
 
 ## Phase 8 — Visual Softening
 
-- [ ] reduce border-heavy cards
-- [ ] introduce radius system
-- [ ] add editorial spacing
+- [x] reduce border-heavy cards
+- [x] introduce radius system
+- [x] add editorial spacing
 - [ ] refine type scale
 - [ ] improve project media layout
-- [ ] add controlled depth
-- [ ] add restrained gradients / light accents
+- [x] add controlled depth
+- [x] add restrained gradients / light accents
 
 ## Phase 9 — Motion
 
 - [ ] define motion tokens
-- [ ] hero entrance
-- [ ] hover micro-interactions
-- [ ] route transition
-- [ ] selected scroll reveals
-- [ ] reduced-motion behavior
+- [x] hero entrance
+- [x] hover micro-interactions
+- [x] route transition
+- [x] selected scroll reveals
+- [x] reduced-motion behavior
 - [ ] performance check
 
 ## Phase 10 — Quality Pass
@@ -1124,7 +1124,7 @@ Refactor as each section is redesigned.
 - [ ] image alt text
 - [ ] metadata inspection
 - [ ] sitemap inspection
-- [ ] local production build
+- [x] local production build
 
 ---
 

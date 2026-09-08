@@ -1,5 +1,34 @@
 [
   {
+    "slug": "programmatic-font-geometry",
+    "publishedAt": "2026-09-08",
+    "updatedAt": "2026-09-08",
+    "visibility": "public",
+    "language": "tr",
+    "featured": true,
+    "category": {
+      "tr": "Tipografi · Programatik Geometri",
+      "en": "Typography · Programmatic Geometry"
+    },
+    "title": {
+      "tr": "Bir Fontu Harf Harf Değil, Geometrik Bir Sistem Olarak Tasarlamak",
+      "en": "Designing a Typeface as a Geometric System, Not Letter by Letter"
+    },
+    "description": {
+      "tr": "Glifleri tek tek çizmek yerine ortak motif, genişlik, terminal davranışı ve programatik geometri kuralları üzerinden tutarlı bir font sistemi oluşturma yaklaşımı.",
+      "en": "An approach to building a consistent typeface through shared motifs, widths, terminal behavior and programmatic geometry rather than drawing glyphs independently."
+    },
+    "tags": [
+      "typography",
+      "font-engineering",
+      "geometry",
+      "design-systems"
+    ],
+    "relatedProjects": [
+      "saygiylasunar-font"
+    ]
+  },
+  {
     "slug": "pixel-art-downscaling-is-not-just-resize",
     "publishedAt": "2026-09-08",
     "updatedAt": "2026-09-08",
