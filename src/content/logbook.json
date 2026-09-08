@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "pixel-art-downscaling-is-not-just-resize",
+    "publishedAt": "2026-09-08",
+    "updatedAt": "2026-09-08",
+    "visibility": "public",
+    "language": "tr",
+    "featured": true,
+    "category": {
+      "tr": "AI · Pixel Art · Görüntü İşleme",
+      "en": "AI · Pixel Art · Image Processing"
+    },
+    "title": {
+      "tr": "Pixel Art Downscale Neden Sadece Resize Değil?",
+      "en": "Why Pixel-Art Downscaling Is More Than Resize"
+    },
+    "description": {
+      "tr": "Nearest, area ve medoid örnekleme yaklaşımlarının farklı görsel yapıları neden farklı koruduğu; pixel-art downscale problemini tersine tile generation gibi ele alma fikri.",
+      "en": "Why nearest, area and medoid sampling preserve different structures, and how pixel-art downscaling can be framed as the inverse of tiled generation."
+    },
+    "tags": [
+      "pixel-art",
+      "downscale",
+      "sampling",
+      "comfyui",
+      "ai"
+    ],
+    "relatedProjects": [
+      "efss-pde"
+    ]
+  },
+  {
+    "slug": "reversenui-local-first-ai-workbench",
+    "publishedAt": "2026-09-08",
+    "updatedAt": "2026-09-08",
+    "visibility": "public",
+    "language": "tr",
+    "featured": true,
+    "category": {
+      "tr": "AI Engineering · Local-first",
+      "en": "AI Engineering · Local-first"
+    },
+    "title": {
+      "tr": "ReversenUI: AI Çıktısını Dosya Değil Mühendislik Artifaktı Olarak Okumak",
+      "en": "ReversenUI: Treating AI Output as an Engineering Artifact"
+    },
+    "description": {
+      "tr": "Generatif görselin prompt, model, LoRA, VAE ve workflow bilgisini yeniden okunabilir hale getiren local-first bir AI engineering workbench tasarlarken oluşan mimari yaklaşım.",
+      "en": "The architecture behind a local-first AI engineering workbench that recovers prompt, model, LoRA, VAE and workflow information from generative-image artifacts."
+    },
+    "tags": [
+      "local-first",
+      "comfyui",
+      "electron",
+      "ai-tooling",
+      "metadata"
+    ],
+    "relatedProjects": [
+      "reversenui"
+    ]
+  }
+]
