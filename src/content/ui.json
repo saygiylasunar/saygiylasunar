@@ -1,1 +1,506 @@
-{"tr":{"meta":{"title":"Ersen Filiz — Saygıyla Sunar","description":"Ersen Filiz — multidisipliner bilgisayar mühendisi; yapay zekâ, yazılım, tasarım ve yaratıcı teknoloji odaklı üretim.","services":"Hizmetler ve çalışma alanları","projects":"Projeler ve ürün kayıtları","experience":"Deneyim, eğitim ve yetkinlikler","about":"Hakkımda","contact":"İletişim","password":"Sade Parola Oluşturucu","lands":"Sultandağı / Kayran Arsa Portföyü"},"nav":{"home":"Ana Sayfa","services":"Hizmetler","projects":"Projeler","experience":"Deneyim","about":"Hakkımda","contact":"İletişim","password":"Parola Aracı","lands":"Arazi Portföyü"},"common":{"explore":"İncele","viewAll":"Tümünü gör","back":"Geri dön","emailMe":"E-posta gönder","inDevelopment":"Geliştirilme aşamasında","current":"Günümüz","close":"Kapat","menu":"Menü","openMenu":"Menüyü aç","closeMenu":"Menüyü kapat","homeAria":"Saygıyla Sunar ana sayfası","primaryNavAria":"Ana navigasyon","switchToLight":"Açık temaya geç","switchToDark":"Koyu temaya geç","language":"Dil","projectStatus":{"active":"Aktif","development":"Geliştiriliyor","concept":"Konsept","completed":"Tamamlandı"}},"home":{"availability":"Seçili freelance projeler için müsait","title":"Fikirleri çalışan dijital sistemlere dönüştürüyorum.","intro":"Yapay zekâ, yazılım, tasarım ve yaratıcı üretimi tek bir mühendislik sürecinde birleştiriyorum.","primaryCta":"Bir proje konuşalım","secondaryCta":"Çalışma alanlarını gör","identityRoles":["Multidisipliner Bilgisayar Mühendisi","Yapay Zekâ Odaklı Geliştirici","Yaratıcı Teknoloji Üreticisi"],"identityTags":["Araştır","Geliştir","Tasarla","Üret"],"servicesEyebrow":"Hizmetler / Yetkinlikler","disciplinesTitle":"Hangi alanda desteğe ihtiyacınız var?","disciplinesIntro":"İhtiyacınızı seçin; ilgili hizmetleri, deneyimi ve proje kayıtlarını tek akışta görün.","engagementEyebrow":"Çalışma biçimleri","engagementTitle":"Benden ne tür bir çalışma alabilirsiniz?","engagementIntro":"İhtiyaca göre tek teslimlik bir üretimden, daha geniş sistem geliştirme ve iyileştirme çalışmalarına kadar ölçeklenebiliriz.","engagements":[["01","Tek seferlik üretim","Web arayüzü, tasarım, prototip, görsel sistem veya belirli bir dijital çıktı."],["02","Sistem geliştirme","Bir ihtiyacın çalışan ürüne, entegrasyona veya sürdürülebilir operasyon yapısına dönüştürülmesi."],["03","Süreç iyileştirme","Var olan dijital yapının sadeleştirilmesi, yeniden düzenlenmesi veya daha verimli hâle getirilmesi."]],"selectedWorkEyebrow":"Seçili işler","featuredTitle":"Seçili proje kayıtları","featuredIntro":"Detaylı vaka çalışmaları hazırlanıyor. Şimdilik proje başlıkları, kapsam ve durum bilgileri yayımdadır.","methodEyebrow":"Yöntem","processTitle":"Çalışma biçimi","process":[["01","İhtiyacı netleştirme","Hedefi, kapsamı ve gerçek kısıtları birlikte belirleriz."],["02","Sistem tasarımı","En az bağımlılıkla sürdürülebilir çözüm omurgasını kurarım."],["03","Üretim ve test","Görsel, teknik ve operasyonel parçaları çalışan üründe birleştiririm."],["04","Teslim ve devamlılık","Dokümantasyon, aktarım ve ihtiyaç duyulan desteği planlarım."]],"experienceEyebrow":"Deneyim","experienceTitle":"Teknik ve kurumsal deneyim","experienceIntro":"Bilgisayar mühendisliği, dijital tasarım, bilgi işlem ve sivil toplum yönetimini bir arada taşıyan çalışma geçmişi.","conversationEyebrow":"İletişime geç","finalTitle":"Bir fikri, sistemi veya markayı birlikte geliştirebiliriz.","finalText":"İlk temas için yalnızca proje ihtiyacınızı ve hedefinizi yazmanız yeterli."},"intent":{"eyebrow":"Önce sizi doğru yere yönlendireyim","title":"Hangi yönümle ilgileniyorsunuz?","aboutTitle":"Kısaca ben","aboutOne":"Ben Ersen Filiz; yapay zekâ, yazılım, tasarım ve dijital üretim alanlarında çalışan multidisipliner bir bilgisayar mühendisiyim. Teknik sistemleri, görsel düşünceyi ve yaratıcı üretimi aynı projede birleştiriyorum. Fikirleri çalışan, sürdürülebilir ve sunulabilir ürünlere dönüştürüyorum.","aboutTwo":"Web platformları, yapay zekâ destekli iş akışları, görsel kimlikler, müzik ve oyun projeleri geliştiriyorum. Bağımsız girişimlerden kurumsal ve STK çalışmalarına kadar farklı ölçeklerde çözüm üretiyorum. Buradaysanız, birlikte geliştirebileceğimiz iyi bir fikir olabilir.","workTitle":"Bir proje için çalışmak istiyorum","workText":"Hizmetleri, çalışma biçimini ve iletişim kanalını göster.","knowTitle":"Ersen’i ve çalışmalarını tanımak istiyorum","knowText":"Deneyimi, projeleri ve üretim alanlarını keşfet."},"services":{"eyebrow":"Freelance ve proje hizmetleri","title":"Bir ihtiyacı, ölçülebilir ve sunulabilir bir çözüme dönüştürelim.","intro":"Araç listesi satmıyorum; ihtiyaca göre teknik, görsel ve operasyonel çözüm tasarlıyorum.","deliverablesEyebrow":"Çıktılar","outcomesTitle":"Sunulabilecek çıktılar","audienceEyebrow":"Uygunluk","audienceTitle":"Kimler için uygun?","methodsEyebrow":"Araçlar ve yöntemler","stackTitle":"Çalışma paleti","relatedEyebrow":"İlgili çalışmalar","relatedTitle":"Bu alanla ilişkili proje kayıtları","processEyebrow":"Kısa süreç","processTitle":"Nasıl ilerleriz?","contactTitle":"Bu alanda bir projeniz mi var?"},"projects":{"eyebrow":"Proje günlüğü","title":"Ürünler, sistemler ve yaratıcı girişimler","intro":"Vaka çalışmaları aşamalı olarak yayımlanacaktır. Kayıtlar şimdilik başlık, kapsam, rol ve durum bilgisi taşır.","postLabel":"Proje kaydı","roleLabel":"Rol","yearLabel":"Yıl","statusLabel":"Durum","underTitle":"Bu proje kaydı şu anda detaylandırılıyor.","underText":"Süreç, kararlar, teknik yapı ve görsel çıktılar tamamlandığında bu sayfada yayımlanacaktır."},"experience":{"eyebrow":"Web tabanlı özgeçmiş","title":"Deneyim, eğitim ve yetkinlikler","intro":"PDF indirmeden okunabilen, kişisel iletişim verilerinden arındırılmış profesyonel özet.","work":"İş deneyimi","nonprofit":"Kurumsal ve sivil toplum deneyimi","education":"Eğitim","skills":"Yetkinlikler","certificates":"Eğitim ve sertifikalar"},"about":{"eyebrow":"Hakkımda","title":"Teknik doğruluk ile yaratıcı üretim arasında çalışıyorum.","lead":"Bilgisayar mühendisliği temelini; yapay zekâ, tasarım, kurumsal iletişim ve ürün geliştirme deneyimiyle birleştiriyorum.","bodyOne":"Bir projeyi yalnızca arayüz veya kod olarak ele almam. Gereksinimi, kullanıcıyı, operasyonu, sunumu ve sürdürülebilirliği birlikte değerlendiririm.","bodyTwo":"Bağımsız ürünlerden sivil toplum yapılarına kadar farklı ölçeklerde çalıştım. Ortak hedefim, karmaşık görünen ihtiyacı anlaşılır bir sisteme dönüştürmektir.","principlesEyebrow":"İlkeler","principlesTitle":"Çalışma ilkeleri","principles":[["KISS","Gereksiz teknoloji ve bağımlılık eklemeden çözüm üretmek."],["Kanıt","Söylem yerine çalışan çıktı, süreç ve ölçülebilir sonuç göstermek."],["Bütünlük","Teknik, görsel ve kurumsal kararları aynı ürün dili içinde tutmak."]]},"contact":{"eyebrow":"İletişim","title":"Projenizi tek bir e-posta ile başlatabilirsiniz.","text":"İhtiyacınızı, hedef tarihinizi ve varsa mevcut materyalleri kısaca paylaşın. İlk değerlendirmeyi e-posta üzerinden yapalım.","briefTitle":"İlk mesajda üç şey yeterli","brief":[["01","Konu","Ne yapmak veya neyi düzeltmek istiyorsunuz?"],["02","Kapsam","Şu anda elinizde hangi içerik, sistem veya materyaller var?"],["03","Zaman","Varsa hedef tarihiniz veya öncelik sıralamanız nedir?"]],"mailSubject":"Proje Talebi"},"password":{"eyebrow":"Yerel çalışan mini araç","title":"Sade Parola Oluşturucu","intro":"Parola tarayıcınızda oluşturulur; herhangi bir sunucuya gönderilmez veya kaydedilmez.","length":"Uzunluk","lowercase":"Küçük harf","uppercase":"Büyük harf","numbers":"Rakam","symbols":"Sembol","generate":"Yeni parola oluştur","copy":"Kopyala","copied":"Kopyalandı","error":"En az bir karakter grubu seçin."},"lands":{"eyebrow":"Aile taşınmazları bilgi portföyü","title":"Sultandağı / Kayran Arsa Portföyü","intro":"Aile hak sahiplerine ait satışa sunulan taşınmazların bilgi, belge, görsel, konum ve imar verilerini tek merkezde düzenlemek üzere hazırlanan portföy.","pilotTitle":"Portföy hazırlanıyor","pilotText":"İlk pilot kayıtlar 304/11 ve 308/9 parselleri üzerinden doğrulanacaktır. Parsel geometrileri, resmî alan ve görsel setleri tamamlandıkça interaktif harita ve dinamik bilgi paneli etkinleştirilecektir.","legalTitle":"Bilgilendirme","legal":["Bu sayfada yer alan taşınmazlar, ilgili hak sahiplerinin bilgisi ve rızası dahilinde ve yürürlükteki mevzuatın öngördüğü sınırlar çerçevesinde satışa sunulmaktadır.","Satış, devir ve gerekli resmî işlemler hak sahipleri ile bu işlemler bakımından yetkilendirilmiş temsilci aracılığıyla yürütülmektedir. Bu sayfa üçüncü kişilere yönelik emlak aracılığı, komisyonculuk veya bağımsız ilan hizmeti sunmaz.","Yayımlanan bilgiler mevcut resmî kayıtlar, plan ve belgeler esas alınarak hazırlanır; tapu, imar, yapılaşma, parselasyon ve uygulamaya ilişkin nihai ve güncel bilgiler ilgili kamu kurumlarından teyit edilmelidir."],"representative":"Satış ve resmî işlemlerin yürütülmesinde yetkili temsilci: Tolga Yalçın.","contact":"Bilgi talebi için e-posta"},"footer":{"line":"Multidisipliner bilgisayar mühendisi · Yapay zekâ odaklı geliştirici · Yaratıcı teknoloji üreticisi","rights":"Ersen Filiz Saygıyla Sunar. Tüm hakları saklıdır."},"notFound":{"title":"Bu sayfa bulunamadı.","text":"Aradığınız içerik taşınmış veya henüz yayımlanmamış olabilir."}},"en":{"meta":{"title":"Ersen Filiz — Saygıyla Sunar","description":"Ersen Filiz — multidisciplinary computer engineer focused on artificial intelligence, software, design and creative technology.","services":"Services and capabilities","projects":"Projects and product records","experience":"Experience, education and capabilities","about":"About","contact":"Contact","password":"Simple Password Generator","lands":"Sultandağı / Kayran Land Portfolio"},"nav":{"home":"Home","services":"Services","projects":"Projects","experience":"Experience","about":"About","contact":"Contact","password":"Password Tool","lands":"Land Portfolio"},"common":{"explore":"Explore","viewAll":"View all","back":"Go back","emailMe":"Send an email","inDevelopment":"In development","current":"Present","close":"Close","menu":"Menu","openMenu":"Open menu","closeMenu":"Close menu","homeAria":"Saygıyla Sunar home page","primaryNavAria":"Primary navigation","switchToLight":"Switch to light theme","switchToDark":"Switch to dark theme","language":"Language","projectStatus":{"active":"Active","development":"In development","concept":"Concept","completed":"Completed"}},"home":{"availability":"Available for selected freelance projects","title":"I turn ideas into working digital systems.","intro":"I combine artificial intelligence, software, design and creative production in one engineering process.","primaryCta":"Discuss a project","secondaryCta":"Explore capabilities","identityRoles":["Multidisciplinary Computer Engineer","AI-Oriented Developer","Creative Technologist"],"identityTags":["Research","Build","Design","Create"],"servicesEyebrow":"Services / Capabilities","disciplinesTitle":"Where do you need support?","disciplinesIntro":"Choose your need and follow a focused path through relevant services, experience and project records.","engagementEyebrow":"Engagement types","engagementTitle":"What kind of work can you hire me for?","engagementIntro":"We can scale from a focused one-off deliverable to broader systems development and improvement work.","engagements":[["01","One-off production","A web interface, design, prototype, visual system or another clearly scoped digital deliverable."],["02","Systems development","Turning a need into a working product, integration or sustainable operational structure."],["03","Process improvement","Simplifying, restructuring or improving an existing digital system."]],"selectedWorkEyebrow":"Selected work","featuredTitle":"Selected project records","featuredIntro":"Detailed case studies are being prepared. Project titles, scope and status information are currently available.","methodEyebrow":"Method","processTitle":"How I work","process":[["01","Clarify the need","We define the goal, scope and real constraints together."],["02","Design the system","I build a sustainable solution with minimal dependencies."],["03","Produce and test","I combine visual, technical and operational parts in a working product."],["04","Deliver and sustain","I plan documentation, handover and the required support."]],"experienceEyebrow":"Experience","experienceTitle":"Technical and institutional experience","experienceIntro":"A multidisciplinary background spanning computer engineering, digital design, IT operations and nonprofit management.","conversationEyebrow":"Start a conversation","finalTitle":"We can develop a product, system or brand together.","finalText":"For the first contact, briefly describe your project need and intended outcome."},"intent":{"eyebrow":"Let me guide you first","title":"Which side of my work are you interested in?","aboutTitle":"A brief introduction","aboutOne":"I am Ersen Filiz, a multidisciplinary computer engineer working across artificial intelligence, software, design and digital production. I combine technical systems, visual thinking and creative production within the same project. I turn ideas into working, sustainable and presentable products.","aboutTwo":"I develop web platforms, AI-assisted workflows, visual identities, music and game projects. I work across different scales, from independent ventures to institutional and nonprofit initiatives. If you are here, there may be a good idea we can develop together.","workTitle":"I want to work together on a project","workText":"Show services, workflow and the contact channel.","knowTitle":"I want to know Ersen and his work","knowText":"Explore experience, projects and creative disciplines."},"services":{"eyebrow":"Freelance and project services","title":"Let us turn a need into a measurable and presentable solution.","intro":"I do not sell a list of tools; I design technical, visual and operational solutions around the actual need.","deliverablesEyebrow":"Deliverables","outcomesTitle":"Possible deliverables","audienceEyebrow":"Fit","audienceTitle":"Who is this for?","methodsEyebrow":"Tools & methods","stackTitle":"Working palette","relatedEyebrow":"Related work","relatedTitle":"Project records related to this field","processEyebrow":"Short process","processTitle":"How do we proceed?","contactTitle":"Do you have a project in this field?"},"projects":{"eyebrow":"Project journal","title":"Products, systems and creative ventures","intro":"Case studies will be published progressively. For now, records contain titles, scope, roles and status information.","postLabel":"Project record","roleLabel":"Role","yearLabel":"Year","statusLabel":"Status","underTitle":"This project record is currently being expanded.","underText":"The process, decisions, technical structure and visual outputs will be published here when ready."},"experience":{"eyebrow":"Web-based résumé","title":"Experience, education and capabilities","intro":"A professional summary that can be read online without a PDF and without exposing personal contact data.","work":"Professional experience","nonprofit":"Institutional and nonprofit experience","education":"Education","skills":"Capabilities","certificates":"Training and certifications"},"about":{"eyebrow":"About","title":"I work between technical accuracy and creative production.","lead":"I combine my computer engineering foundation with experience in AI, design, institutional communication and product development.","bodyOne":"I do not treat a project only as an interface or a codebase. I evaluate requirements, users, operations, presentation and sustainability together.","bodyTwo":"I have worked across different scales, from independent products to nonprofit organizations. My consistent goal is to turn complex needs into understandable systems.","principlesEyebrow":"Principles","principlesTitle":"Working principles","principles":[["KISS","Build solutions without unnecessary technology or dependencies."],["Evidence","Show working output, process and measurable results instead of broad claims."],["Coherence","Keep technical, visual and institutional decisions within one product language."]]},"contact":{"eyebrow":"Contact","title":"Start your project with a single email.","text":"Briefly share your need, intended timeline and any existing material. We can make the first assessment by email.","briefTitle":"Three things are enough for the first message","brief":[["01","Topic","What do you want to build, change or fix?"],["02","Scope","What content, system or material do you already have?"],["03","Timing","Do you have a target date or a priority order?"]],"mailSubject":"Project Inquiry"},"password":{"eyebrow":"Small local-first utility","title":"Simple Password Generator","intro":"The password is generated in your browser and is never sent to or stored on a server.","length":"Length","lowercase":"Lowercase","uppercase":"Uppercase","numbers":"Numbers","symbols":"Symbols","generate":"Generate new password","copy":"Copy","copied":"Copied","error":"Select at least one character group."},"lands":{"eyebrow":"Family property information portfolio","title":"Sultandağı / Kayran Land Portfolio","intro":"A central portfolio prepared to organize information, documents, visuals, location and zoning data for properties offered for sale by family right holders.","pilotTitle":"Portfolio in preparation","pilotText":"The first pilot records will be validated with parcels 304/11 and 308/9. The interactive map and dynamic information panel will be enabled as parcel geometry, official area data and visual sets are completed.","legalTitle":"Information notice","legal":["The properties on this page are offered for sale with the knowledge and consent of the relevant right holders and within the boundaries of applicable legislation.","Sale, transfer and required official procedures are carried out by the right holders and the representative authorized for those procedures. This page does not provide real-estate brokerage, commission-based brokerage or an independent listing service for third parties.","Published information is prepared from the available official records, plans and documents; final and current information on title, zoning, construction, parcel arrangements and implementation must be confirmed with the relevant public authorities."],"representative":"Authorized representative for sale and official procedures: Tolga Yalçın.","contact":"Email for information requests"},"footer":{"line":"Multidisciplinary computer engineer · AI-oriented developer · Creative technologist","rights":"Ersen Filiz Saygıyla Sunar. All rights reserved."},"notFound":{"title":"This page could not be found.","text":"The content may have moved or may not have been published yet."}}}
+{
+  "tr": {
+    "meta": {
+      "title": "Ersen Filiz — Saygıyla Sunar",
+      "description": "Ersen Filiz — multidisipliner bilgisayar mühendisi; yapay zekâ, yazılım, tasarım ve yaratıcı teknoloji odaklı üretim.",
+      "services": "Hizmetler ve çalışma alanları",
+      "projects": "Projeler ve ürün kayıtları",
+      "experience": "Deneyim, eğitim ve yetkinlikler",
+      "about": "Hakkımda",
+      "contact": "İletişim",
+      "password": "Sade Parola Oluşturucu",
+      "lands": "Sultandağı / Kayran Arsa Portföyü"
+    },
+    "nav": {
+      "home": "Ana Sayfa",
+      "services": "Hizmetler",
+      "projects": "Projeler",
+      "experience": "Deneyim",
+      "about": "Hakkımda",
+      "contact": "İletişim",
+      "password": "Parola Aracı",
+      "lands": "Arazi Portföyü"
+    },
+    "common": {
+      "explore": "İncele",
+      "viewAll": "Tümünü gör",
+      "back": "Geri dön",
+      "emailMe": "E-posta gönder",
+      "inDevelopment": "Geliştirilme aşamasında",
+      "current": "Günümüz",
+      "close": "Kapat",
+      "menu": "Menü",
+      "openMenu": "Menüyü aç",
+      "closeMenu": "Menüyü kapat",
+      "homeAria": "Saygıyla Sunar ana sayfası",
+      "primaryNavAria": "Ana navigasyon",
+      "switchToLight": "Açık temaya geç",
+      "switchToDark": "Koyu temaya geç",
+      "language": "Dil",
+      "projectStatus": {
+        "active": "Aktif",
+        "development": "Geliştiriliyor",
+        "concept": "Konsept",
+        "completed": "Tamamlandı"
+      }
+    },
+    "home": {
+      "availability": "Seçili freelance projeler için müsait",
+      "title": "Fikirleri çalışan dijital sistemlere dönüştürüyorum.",
+      "intro": "Yapay zekâ, yazılım, tasarım ve yaratıcı üretimi tek bir mühendislik sürecinde birleştiriyorum.",
+      "primaryCta": "Bir proje konuşalım",
+      "secondaryCta": "Çalışma alanlarını gör",
+      "identityRoles": [
+        "Multidisipliner Bilgisayar Mühendisi",
+        "Yapay Zekâ Odaklı Geliştirici",
+        "Yaratıcı Teknoloji Üreticisi"
+      ],
+      "identityTags": [
+        "Araştır",
+        "Geliştir",
+        "Tasarla",
+        "Üret"
+      ],
+      "servicesEyebrow": "Hizmetler / Yetkinlikler",
+      "disciplinesTitle": "Hangi alanda desteğe ihtiyacınız var?",
+      "disciplinesIntro": "İhtiyacınızı seçin; ilgili hizmetleri, deneyimi ve proje kayıtlarını tek akışta görün.",
+      "engagementEyebrow": "Çalışma biçimleri",
+      "engagementTitle": "Benden ne tür bir çalışma alabilirsiniz?",
+      "engagementIntro": "İhtiyaca göre tek teslimlik bir üretimden, daha geniş sistem geliştirme ve iyileştirme çalışmalarına kadar ölçeklenebiliriz.",
+      "engagements": [
+        [
+          "01",
+          "Tek seferlik üretim",
+          "Web arayüzü, tasarım, prototip, görsel sistem veya belirli bir dijital çıktı."
+        ],
+        [
+          "02",
+          "Sistem geliştirme",
+          "Bir ihtiyacın çalışan ürüne, entegrasyona veya sürdürülebilir operasyon yapısına dönüştürülmesi."
+        ],
+        [
+          "03",
+          "Süreç iyileştirme",
+          "Var olan dijital yapının sadeleştirilmesi, yeniden düzenlenmesi veya daha verimli hâle getirilmesi."
+        ]
+      ],
+      "selectedWorkEyebrow": "Seçili işler",
+      "featuredTitle": "Seçili proje kayıtları",
+      "featuredIntro": "Ürün, mühendislik aracı, kurumsal dönüşüm ve yaratıcı teknoloji çalışmalarından seçilmiş kayıtlar.",
+      "methodEyebrow": "Yöntem",
+      "processTitle": "Çalışma biçimi",
+      "process": [
+        [
+          "01",
+          "İhtiyacı netleştirme",
+          "Hedefi, kapsamı ve gerçek kısıtları birlikte belirleriz."
+        ],
+        [
+          "02",
+          "Sistem tasarımı",
+          "En az bağımlılıkla sürdürülebilir çözüm omurgasını kurarım."
+        ],
+        [
+          "03",
+          "Üretim ve test",
+          "Görsel, teknik ve operasyonel parçaları çalışan üründe birleştiririm."
+        ],
+        [
+          "04",
+          "Teslim ve devamlılık",
+          "Dokümantasyon, aktarım ve ihtiyaç duyulan desteği planlarım."
+        ]
+      ],
+      "experienceEyebrow": "Deneyim",
+      "experienceTitle": "Teknik ve kurumsal deneyim",
+      "experienceIntro": "Bilgisayar mühendisliği, dijital tasarım, bilgi işlem ve sivil toplum yönetimini bir arada taşıyan çalışma geçmişi.",
+      "conversationEyebrow": "İletişime geç",
+      "finalTitle": "Bir fikri, sistemi veya markayı birlikte geliştirebiliriz.",
+      "finalText": "İlk temas için yalnızca proje ihtiyacınızı ve hedefinizi yazmanız yeterli."
+    },
+    "intent": {
+      "eyebrow": "Önce sizi doğru yere yönlendireyim",
+      "title": "Hangi yönümle ilgileniyorsunuz?",
+      "aboutTitle": "Kısaca ben",
+      "aboutOne": "Ben Ersen Filiz; yapay zekâ, yazılım, tasarım ve dijital üretim alanlarında çalışan multidisipliner bir bilgisayar mühendisiyim. Teknik sistemleri, görsel düşünceyi ve yaratıcı üretimi aynı projede birleştiriyorum. Fikirleri çalışan, sürdürülebilir ve sunulabilir ürünlere dönüştürüyorum.",
+      "aboutTwo": "Web platformları, yapay zekâ destekli iş akışları, görsel kimlikler, müzik ve oyun projeleri geliştiriyorum. Bağımsız girişimlerden kurumsal ve STK çalışmalarına kadar farklı ölçeklerde çözüm üretiyorum. Buradaysanız, birlikte geliştirebileceğimiz iyi bir fikir olabilir.",
+      "workTitle": "Bir proje için çalışmak istiyorum",
+      "workText": "Hizmetleri, çalışma biçimini ve iletişim kanalını göster.",
+      "knowTitle": "Ersen’i ve çalışmalarını tanımak istiyorum",
+      "knowText": "Deneyimi, projeleri ve üretim alanlarını keşfet."
+    },
+    "services": {
+      "eyebrow": "Freelance ve proje hizmetleri",
+      "title": "Bir ihtiyacı, ölçülebilir ve sunulabilir bir çözüme dönüştürelim.",
+      "intro": "Araç listesi satmıyorum; ihtiyaca göre teknik, görsel ve operasyonel çözüm tasarlıyorum.",
+      "deliverablesEyebrow": "Çıktılar",
+      "outcomesTitle": "Sunulabilecek çıktılar",
+      "audienceEyebrow": "Uygunluk",
+      "audienceTitle": "Kimler için uygun?",
+      "methodsEyebrow": "Araçlar ve yöntemler",
+      "stackTitle": "Çalışma paleti",
+      "relatedEyebrow": "İlgili çalışmalar",
+      "relatedTitle": "Bu alanla ilişkili proje kayıtları",
+      "processEyebrow": "Kısa süreç",
+      "processTitle": "Nasıl ilerleriz?",
+      "contactTitle": "Bu alanda bir projeniz mi var?"
+    },
+    "projects": {
+      "eyebrow": "Proje günlüğü",
+      "title": "Ürünler, sistemler ve yaratıcı girişimler",
+      "intro": "Yayımlanabilir ürünler, sistemler, araçlar ve yaratıcı girişimler. Her kayıt; kapsamı, rolümü, kullanılan yaklaşımı ve erişilebilir olduğunda ilgili kaynakları gösterir.",
+      "postLabel": "Proje kaydı",
+      "roleLabel": "Rol",
+      "yearLabel": "Yıl",
+      "statusLabel": "Durum",
+      "underTitle": "Bu proje kaydı şu anda detaylandırılıyor.",
+      "underText": "Süreç, kararlar, teknik yapı ve görsel çıktılar tamamlandığında bu sayfada yayımlanacaktır."
+    },
+    "experience": {
+      "eyebrow": "Web tabanlı özgeçmiş",
+      "title": "Deneyim, eğitim ve yetkinlikler",
+      "intro": "PDF indirmeden okunabilen, kişisel iletişim verilerinden arındırılmış profesyonel özet.",
+      "work": "İş deneyimi",
+      "nonprofit": "Kurumsal ve sivil toplum deneyimi",
+      "education": "Eğitim",
+      "skills": "Yetkinlikler",
+      "certificates": "Eğitim ve sertifikalar"
+    },
+    "about": {
+      "eyebrow": "Hakkımda",
+      "title": "Teknik doğruluk ile yaratıcı üretim arasında çalışıyorum.",
+      "lead": "Bilgisayar mühendisliği temelini; yapay zekâ, tasarım, kurumsal iletişim ve ürün geliştirme deneyimiyle birleştiriyorum.",
+      "bodyOne": "Bir projeyi yalnızca arayüz veya kod olarak ele almam. Gereksinimi, kullanıcıyı, operasyonu, sunumu ve sürdürülebilirliği birlikte değerlendiririm.",
+      "bodyTwo": "Bağımsız ürünlerden sivil toplum yapılarına kadar farklı ölçeklerde çalıştım. Ortak hedefim, karmaşık görünen ihtiyacı anlaşılır bir sisteme dönüştürmektir.",
+      "principlesEyebrow": "İlkeler",
+      "principlesTitle": "Çalışma ilkeleri",
+      "principles": [
+        [
+          "KISS",
+          "Gereksiz teknoloji ve bağımlılık eklemeden çözüm üretmek."
+        ],
+        [
+          "Kanıt",
+          "Söylem yerine çalışan çıktı, süreç ve ölçülebilir sonuç göstermek."
+        ],
+        [
+          "Bütünlük",
+          "Teknik, görsel ve kurumsal kararları aynı ürün dili içinde tutmak."
+        ]
+      ]
+    },
+    "contact": {
+      "eyebrow": "İletişim",
+      "title": "Projenizi tek bir e-posta ile başlatabilirsiniz.",
+      "text": "İhtiyacınızı, hedef tarihinizi ve varsa mevcut materyalleri kısaca paylaşın. İlk değerlendirmeyi e-posta üzerinden yapalım.",
+      "briefTitle": "İlk mesajda üç şey yeterli",
+      "brief": [
+        [
+          "01",
+          "Konu",
+          "Ne yapmak veya neyi düzeltmek istiyorsunuz?"
+        ],
+        [
+          "02",
+          "Kapsam",
+          "Şu anda elinizde hangi içerik, sistem veya materyaller var?"
+        ],
+        [
+          "03",
+          "Zaman",
+          "Varsa hedef tarihiniz veya öncelik sıralamanız nedir?"
+        ]
+      ],
+      "mailSubject": "Proje Talebi"
+    },
+    "password": {
+      "eyebrow": "Yerel çalışan mini araç",
+      "title": "Sade Parola Oluşturucu",
+      "intro": "Parola tarayıcınızda oluşturulur; herhangi bir sunucuya gönderilmez veya kaydedilmez.",
+      "length": "Uzunluk",
+      "lowercase": "Küçük harf",
+      "uppercase": "Büyük harf",
+      "numbers": "Rakam",
+      "symbols": "Sembol",
+      "generate": "Yeni parola oluştur",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "error": "En az bir karakter grubu seçin."
+    },
+    "lands": {
+      "eyebrow": "Aile taşınmazları bilgi portföyü",
+      "title": "Sultandağı / Kayran Arsa Portföyü",
+      "intro": "Aile hak sahiplerine ait satışa sunulan taşınmazların bilgi, belge, görsel, konum ve imar verilerini tek merkezde düzenlemek üzere hazırlanan portföy.",
+      "pilotTitle": "Portföy hazırlanıyor",
+      "pilotText": "İlk pilot kayıtlar 304/11 ve 308/9 parselleri üzerinden doğrulanacaktır. Parsel geometrileri, resmî alan ve görsel setleri tamamlandıkça interaktif harita ve dinamik bilgi paneli etkinleştirilecektir.",
+      "legalTitle": "Bilgilendirme",
+      "legal": [
+        "Bu sayfada yer alan taşınmazlar, ilgili hak sahiplerinin bilgisi ve rızası dahilinde ve yürürlükteki mevzuatın öngördüğü sınırlar çerçevesinde satışa sunulmaktadır.",
+        "Satış, devir ve gerekli resmî işlemler hak sahipleri ile bu işlemler bakımından yetkilendirilmiş temsilci aracılığıyla yürütülmektedir. Bu sayfa üçüncü kişilere yönelik emlak aracılığı, komisyonculuk veya bağımsız ilan hizmeti sunmaz.",
+        "Yayımlanan bilgiler mevcut resmî kayıtlar, plan ve belgeler esas alınarak hazırlanır; tapu, imar, yapılaşma, parselasyon ve uygulamaya ilişkin nihai ve güncel bilgiler ilgili kamu kurumlarından teyit edilmelidir."
+      ],
+      "representative": "Satış ve resmî işlemlerin yürütülmesinde yetkili temsilci: Tolga Yalçın.",
+      "contact": "Bilgi talebi için e-posta"
+    },
+    "footer": {
+      "line": "Multidisipliner bilgisayar mühendisi · Yapay zekâ odaklı geliştirici · Yaratıcı teknoloji üreticisi",
+      "rights": "Ersen Filiz Saygıyla Sunar. Tüm hakları saklıdır."
+    },
+    "notFound": {
+      "title": "Bu sayfa bulunamadı.",
+      "text": "Aradığınız içerik taşınmış veya henüz yayımlanmamış olabilir."
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Ersen Filiz — Saygıyla Sunar",
+      "description": "Ersen Filiz — multidisciplinary computer engineer focused on artificial intelligence, software, design and creative technology.",
+      "services": "Services and capabilities",
+      "projects": "Projects and product records",
+      "experience": "Experience, education and capabilities",
+      "about": "About",
+      "contact": "Contact",
+      "password": "Simple Password Generator",
+      "lands": "Sultandağı / Kayran Land Portfolio"
+    },
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "projects": "Projects",
+      "experience": "Experience",
+      "about": "About",
+      "contact": "Contact",
+      "password": "Password Tool",
+      "lands": "Land Portfolio"
+    },
+    "common": {
+      "explore": "Explore",
+      "viewAll": "View all",
+      "back": "Go back",
+      "emailMe": "Send an email",
+      "inDevelopment": "In development",
+      "current": "Present",
+      "close": "Close",
+      "menu": "Menu",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "homeAria": "Saygıyla Sunar home page",
+      "primaryNavAria": "Primary navigation",
+      "switchToLight": "Switch to light theme",
+      "switchToDark": "Switch to dark theme",
+      "language": "Language",
+      "projectStatus": {
+        "active": "Active",
+        "development": "In development",
+        "concept": "Concept",
+        "completed": "Completed"
+      }
+    },
+    "home": {
+      "availability": "Available for selected freelance projects",
+      "title": "I turn ideas into working digital systems.",
+      "intro": "I combine artificial intelligence, software, design and creative production in one engineering process.",
+      "primaryCta": "Discuss a project",
+      "secondaryCta": "Explore capabilities",
+      "identityRoles": [
+        "Multidisciplinary Computer Engineer",
+        "AI-Oriented Developer",
+        "Creative Technologist"
+      ],
+      "identityTags": [
+        "Research",
+        "Build",
+        "Design",
+        "Create"
+      ],
+      "servicesEyebrow": "Services / Capabilities",
+      "disciplinesTitle": "Where do you need support?",
+      "disciplinesIntro": "Choose your need and follow a focused path through relevant services, experience and project records.",
+      "engagementEyebrow": "Engagement types",
+      "engagementTitle": "What kind of work can you hire me for?",
+      "engagementIntro": "We can scale from a focused one-off deliverable to broader systems development and improvement work.",
+      "engagements": [
+        [
+          "01",
+          "One-off production",
+          "A web interface, design, prototype, visual system or another clearly scoped digital deliverable."
+        ],
+        [
+          "02",
+          "Systems development",
+          "Turning a need into a working product, integration or sustainable operational structure."
+        ],
+        [
+          "03",
+          "Process improvement",
+          "Simplifying, restructuring or improving an existing digital system."
+        ]
+      ],
+      "selectedWorkEyebrow": "Selected work",
+      "featuredTitle": "Selected project records",
+      "featuredIntro": "Selected records spanning products, engineering tools, institutional transformation and creative technology.",
+      "methodEyebrow": "Method",
+      "processTitle": "How I work",
+      "process": [
+        [
+          "01",
+          "Clarify the need",
+          "We define the goal, scope and real constraints together."
+        ],
+        [
+          "02",
+          "Design the system",
+          "I build a sustainable solution with minimal dependencies."
+        ],
+        [
+          "03",
+          "Produce and test",
+          "I combine visual, technical and operational parts in a working product."
+        ],
+        [
+          "04",
+          "Deliver and sustain",
+          "I plan documentation, handover and the required support."
+        ]
+      ],
+      "experienceEyebrow": "Experience",
+      "experienceTitle": "Technical and institutional experience",
+      "experienceIntro": "A multidisciplinary background spanning computer engineering, digital design, IT operations and nonprofit management.",
+      "conversationEyebrow": "Start a conversation",
+      "finalTitle": "We can develop a product, system or brand together.",
+      "finalText": "For the first contact, briefly describe your project need and intended outcome."
+    },
+    "intent": {
+      "eyebrow": "Let me guide you first",
+      "title": "Which side of my work are you interested in?",
+      "aboutTitle": "A brief introduction",
+      "aboutOne": "I am Ersen Filiz, a multidisciplinary computer engineer working across artificial intelligence, software, design and digital production. I combine technical systems, visual thinking and creative production within the same project. I turn ideas into working, sustainable and presentable products.",
+      "aboutTwo": "I develop web platforms, AI-assisted workflows, visual identities, music and game projects. I work across different scales, from independent ventures to institutional and nonprofit initiatives. If you are here, there may be a good idea we can develop together.",
+      "workTitle": "I want to work together on a project",
+      "workText": "Show services, workflow and the contact channel.",
+      "knowTitle": "I want to know Ersen and his work",
+      "knowText": "Explore experience, projects and creative disciplines."
+    },
+    "services": {
+      "eyebrow": "Freelance and project services",
+      "title": "Let us turn a need into a measurable and presentable solution.",
+      "intro": "I do not sell a list of tools; I design technical, visual and operational solutions around the actual need.",
+      "deliverablesEyebrow": "Deliverables",
+      "outcomesTitle": "Possible deliverables",
+      "audienceEyebrow": "Fit",
+      "audienceTitle": "Who is this for?",
+      "methodsEyebrow": "Tools & methods",
+      "stackTitle": "Working palette",
+      "relatedEyebrow": "Related work",
+      "relatedTitle": "Project records related to this field",
+      "processEyebrow": "Short process",
+      "processTitle": "How do we proceed?",
+      "contactTitle": "Do you have a project in this field?"
+    },
+    "projects": {
+      "eyebrow": "Project journal",
+      "title": "Products, systems and creative ventures",
+      "intro": "Public products, systems, tools and creative initiatives. Each record shows its scope, my role, the approach used and relevant sources when available.",
+      "postLabel": "Project record",
+      "roleLabel": "Role",
+      "yearLabel": "Year",
+      "statusLabel": "Status",
+      "underTitle": "This project record is currently being expanded.",
+      "underText": "The process, decisions, technical structure and visual outputs will be published here when ready."
+    },
+    "experience": {
+      "eyebrow": "Web-based résumé",
+      "title": "Experience, education and capabilities",
+      "intro": "A professional summary that can be read online without a PDF and without exposing personal contact data.",
+      "work": "Professional experience",
+      "nonprofit": "Institutional and nonprofit experience",
+      "education": "Education",
+      "skills": "Capabilities",
+      "certificates": "Training and certifications"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "I work between technical accuracy and creative production.",
+      "lead": "I combine my computer engineering foundation with experience in AI, design, institutional communication and product development.",
+      "bodyOne": "I do not treat a project only as an interface or a codebase. I evaluate requirements, users, operations, presentation and sustainability together.",
+      "bodyTwo": "I have worked across different scales, from independent products to nonprofit organizations. My consistent goal is to turn complex needs into understandable systems.",
+      "principlesEyebrow": "Principles",
+      "principlesTitle": "Working principles",
+      "principles": [
+        [
+          "KISS",
+          "Build solutions without unnecessary technology or dependencies."
+        ],
+        [
+          "Evidence",
+          "Show working output, process and measurable results instead of broad claims."
+        ],
+        [
+          "Coherence",
+          "Keep technical, visual and institutional decisions within one product language."
+        ]
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Start your project with a single email.",
+      "text": "Briefly share your need, intended timeline and any existing material. We can make the first assessment by email.",
+      "briefTitle": "Three things are enough for the first message",
+      "brief": [
+        [
+          "01",
+          "Topic",
+          "What do you want to build, change or fix?"
+        ],
+        [
+          "02",
+          "Scope",
+          "What content, system or material do you already have?"
+        ],
+        [
+          "03",
+          "Timing",
+          "Do you have a target date or a priority order?"
+        ]
+      ],
+      "mailSubject": "Project Inquiry"
+    },
+    "password": {
+      "eyebrow": "Small local-first utility",
+      "title": "Simple Password Generator",
+      "intro": "The password is generated in your browser and is never sent to or stored on a server.",
+      "length": "Length",
+      "lowercase": "Lowercase",
+      "uppercase": "Uppercase",
+      "numbers": "Numbers",
+      "symbols": "Symbols",
+      "generate": "Generate new password",
+      "copy": "Copy",
+      "copied": "Copied",
+      "error": "Select at least one character group."
+    },
+    "lands": {
+      "eyebrow": "Family property information portfolio",
+      "title": "Sultandağı / Kayran Land Portfolio",
+      "intro": "A central portfolio prepared to organize information, documents, visuals, location and zoning data for properties offered for sale by family right holders.",
+      "pilotTitle": "Portfolio in preparation",
+      "pilotText": "The first pilot records will be validated with parcels 304/11 and 308/9. The interactive map and dynamic information panel will be enabled as parcel geometry, official area data and visual sets are completed.",
+      "legalTitle": "Information notice",
+      "legal": [
+        "The properties on this page are offered for sale with the knowledge and consent of the relevant right holders and within the boundaries of applicable legislation.",
+        "Sale, transfer and required official procedures are carried out by the right holders and the representative authorized for those procedures. This page does not provide real-estate brokerage, commission-based brokerage or an independent listing service for third parties.",
+        "Published information is prepared from the available official records, plans and documents; final and current information on title, zoning, construction, parcel arrangements and implementation must be confirmed with the relevant public authorities."
+      ],
+      "representative": "Authorized representative for sale and official procedures: Tolga Yalçın.",
+      "contact": "Email for information requests"
+    },
+    "footer": {
+      "line": "Multidisciplinary computer engineer · AI-oriented developer · Creative technologist",
+      "rights": "Ersen Filiz Saygıyla Sunar. All rights reserved."
+    },
+    "notFound": {
+      "title": "This page could not be found.",
+      "text": "The content may have moved or may not have been published yet."
+    }
+  }
+}

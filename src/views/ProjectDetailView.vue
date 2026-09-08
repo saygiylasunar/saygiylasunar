@@ -14,32 +14,24 @@
         <div class="container narrow-container">
           <div class="project-record-panel" v-reveal>
             <dl>
-              <div>
-                <dt>{{ t('projects.yearLabel') }}</dt>
-                <dd>{{ project.year }}</dd>
-              </div>
-              <div>
-                <dt>{{ t('projects.statusLabel') }}</dt>
-                <dd>{{ t(`common.projectStatus.${project.status}`) }}</dd>
-              </div>
-              <div>
-                <dt>{{ t('projects.roleLabel') }}</dt>
-                <dd>{{ localize(project.roles).join(' · ') }}</dd>
-              </div>
+              <div><dt>{{ t('projects.yearLabel') }}</dt><dd>{{ project.year }}</dd></div>
+              <div><dt>{{ t('projects.statusLabel') }}</dt><dd>{{ t(`common.projectStatus.${project.status}`) }}</dd></div>
+              <div><dt>{{ t('projects.roleLabel') }}</dt><dd>{{ localize(project.roles).join(' · ') }}</dd></div>
             </dl>
+
             <div class="tag-cloud compact-tags">
               <span v-for="technology in project.technologies" :key="technology">{{ technology }}</span>
             </div>
-            <RouterLink v-if="project.toolPath" class="button button-primary" :to="project.toolPath">
-              {{ t('nav.password') }} →
-            </RouterLink>
-          </div>
-        </div>
-      </section>
 
-      <section v-if="project.development" class="section section-tinted">
-        <div class="container narrow-container">
-          <UnderConstruction />
+            <ul v-if="localize(project.highlights)?.length" class="project-highlight-list">
+              <li v-for="highlight in localize(project.highlights)" :key="highlight">{{ highlight }}</li>
+            </ul>
+
+            <div v-if="project.links?.length || project.toolPath" class="project-link-row">
+              <a v-for="link in project.links" :key="link.url" class="button button-ghost" :href="link.url" target="_blank" rel="noreferrer">{{ link.label }} ↗</a>
+              <RouterLink v-if="project.toolPath" class="button button-primary" :to="project.toolPath">{{ t('common.openTool') || t('nav.password') }} →</RouterLink>
+            </div>
+          </div>
         </div>
       </section>
     </template>
@@ -50,7 +42,6 @@
 <script setup>
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import UnderConstruction from '../components/UnderConstruction.vue'
 import NotFoundView from './NotFoundView.vue'
 import { getProject } from '../lib/content.js'
 import { localize, t } from '../lib/locale.js'

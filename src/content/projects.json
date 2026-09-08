@@ -1,1 +1,696 @@
-[{"slug":"loravow","title":{"tr":"LoraVow","en":"LoraVow"},"year":"2026","status":"development","featured":true,"development":true,"category":{"tr":"Web Ürünü · Sistem Geliştirme","en":"Web Product · Systems Development"},"summary":{"tr":"Etkinlik katılımcılarının medya dosyalarını alıcının kendi depolama alanına aktarması için geliştirilen ürün.","en":"A product designed to transfer event guests' media files into the recipient's own storage."},"roles":{"tr":["Ürün mimarisi","UI/UX","Frontend","Entegrasyon"],"en":["Product architecture","UI/UX","Frontend","Integration"]},"technologies":["Vue/React prototyping","Google Drive","Netlify","JavaScript"],"serviceSlugs":["software-systems","artificial-intelligence"]},{"slug":"beyaz-onlukluler-digital-transformation","title":{"tr":"Beyaz Önlüklüler — Dijital Dönüşüm","en":"Beyaz Önlüklüler — Digital Transformation"},"year":"2026","status":"development","featured":true,"development":true,"category":{"tr":"Kurumsal · STK · Web","en":"Institutional · Nonprofit · Web"},"summary":{"tr":"Kurumsal web, içerik, DNS, e-posta sürekliliği ve operasyon ihtiyaçlarının birlikte ele alındığı dönüşüm çalışması.","en":"A transformation project combining institutional web, content, DNS, email continuity and operational needs."},"roles":{"tr":["Sistem tasarımı","Web geliştirme","İçerik mimarisi","Operasyon"],"en":["Systems design","Web development","Content architecture","Operations"]},"technologies":["Astro","Sanity","Netlify","Google Workspace"],"serviceSlugs":["institutional-nonprofit","software-systems","design"]},{"slug":"cuvuk","title":{"tr":"Çuvuk","en":"Çuvuk"},"year":"2026","status":"development","featured":true,"development":true,"category":{"tr":"Oyun Geliştirme","en":"Game Development"},"summary":{"tr":"Yumuşak low-poly dünyada geçen izometrik toplama, keşif ve çatışma oyunu girişimi.","en":"An isometric collection, exploration and combat game project set in a soft low-poly world."},"roles":{"tr":["Konsept","Sistem tasarımı","Sanat yönü","Ürün geliştirme"],"en":["Concept","Systems design","Art direction","Product development"]},"technologies":["Game prototyping","Figma","Aseprite","AI-assisted production"],"serviceSlugs":["game-development","design","music-sound"]},{"slug":"ersen-please","title":{"tr":"Ersen Please!","en":"Ersen Please!"},"year":"2026","status":"development","featured":true,"development":true,"category":{"tr":"Oyun · Görsel Anlatı","en":"Game · Visual Narrative"},"summary":{"tr":"Soğuk ve bürokratik bir dünyada geçen, karar ve kontrol temalı oyun girişimi.","en":"A game project about decisions and control in a cold, bureaucratic world."},"roles":{"tr":["Konsept","Ürün tasarımı","Görsel yön","Ses"],"en":["Concept","Product design","Visual direction","Sound"]},"technologies":["Game prototyping","Aseprite","Figma","Audio production"],"serviceSlugs":["game-development","design","music-sound"]},{"slug":"association-member-management","title":{"tr":"Dernek Üye Kayıt ve Yönetim Arayüzü","en":"Association Member Registration & Management Interface"},"year":"2025","status":"concept","featured":false,"development":true,"category":{"tr":"UI/UX · Operasyon","en":"UI/UX · Operations"},"summary":{"tr":"Üyelik başvurusu, kayıt takibi ve temel yönetim süreçleri için arayüz çalışması.","en":"An interface concept for membership applications, tracking and core management processes."},"roles":{"tr":["UI/UX","Süreç tasarımı"],"en":["UI/UX","Process design"]},"technologies":["Figma","Process design"],"serviceSlugs":["institutional-nonprofit","design","software-systems"]},{"slug":"password-generator","title":{"tr":"Sade Parola Oluşturucu","en":"Simple Password Generator"},"year":"2026","status":"active","featured":false,"development":false,"category":{"tr":"Mini Araç · Güvenlik","en":"Mini Utility · Security"},"summary":{"tr":"Tarayıcı içinde çalışan, sade ve hızlı parola oluşturma aracı.","en":"A simple and fast password generator that runs entirely in the browser."},"roles":{"tr":["Frontend","Ürün tasarımı"],"en":["Frontend","Product design"]},"technologies":["Vue","Web Crypto API"],"serviceSlugs":["software-systems"],"toolPath":"/tools/password"},{"slug":"metadata-cleaner","title":{"tr":"Görsel Metadata Temizleme Aracı","en":"Image Metadata Cleaner"},"year":"2025","status":"concept","featured":false,"development":true,"category":{"tr":"Mini Araç · Gizlilik","en":"Mini Utility · Privacy"},"summary":{"tr":"Görsellerde bulunan EXIF ve benzeri metadata alanlarını temizlemeye yönelik araç çalışması.","en":"A utility concept for removing EXIF and related metadata from images."},"roles":{"tr":["Frontend","Ürün tasarımı"],"en":["Frontend","Product design"]},"technologies":["JavaScript","Browser APIs"],"serviceSlugs":["software-systems"]},{"slug":"ai-visual-workflows","title":{"tr":"AI Destekli Görsel Üretim İş Akışları","en":"AI-Assisted Visual Production Workflows"},"year":"2026","status":"development","featured":false,"development":true,"category":{"tr":"Yapay Zekâ · Görsel Üretim","en":"Artificial Intelligence · Visual Production"},"summary":{"tr":"Tutarlı karakter, düzenleme ve kontrollü üretim için geliştirilen düğüm tabanlı iş akışları.","en":"Node-based workflows for consistent characters, editing and controlled visual production."},"roles":{"tr":["Workflow tasarımı","Araştırma","Görsel üretim"],"en":["Workflow design","Research","Visual production"]},"technologies":["ComfyUI","Flux","SDXL","LoRA"],"serviceSlugs":["artificial-intelligence","design"]},{"slug":"music-sound-experiments","title":{"tr":"Müzik ve Ses Üretim Çalışmaları","en":"Music & Sound Production Studies"},"year":"2026","status":"development","featured":false,"development":true,"category":{"tr":"Müzik · Yaratıcı Teknoloji","en":"Music · Creative Technology"},"summary":{"tr":"Dijital projeler, oyun atmosferleri ve AI destekli müzik üretimi üzerine çalışmalar.","en":"Experiments in digital project music, game atmospheres and AI-assisted music production."},"roles":{"tr":["Beste","Ses düzenleme","Üretim akışı"],"en":["Composition","Audio editing","Production workflow"]},"technologies":["FL Studio","Adobe Audition","Suno","FADR"],"serviceSlugs":["music-sound"]}]
+[
+  {
+    "slug": "loravow",
+    "title": {
+      "tr": "LoraVow",
+      "en": "LoraVow"
+    },
+    "year": "2026",
+    "status": "development",
+    "featured": true,
+    "development": true,
+    "category": {
+      "tr": "Web Ürünü · Sistem Geliştirme",
+      "en": "Web Product · Systems Development"
+    },
+    "summary": {
+      "tr": "Etkinlik katılımcılarının medya dosyalarını alıcının kendi depolama alanına aktarması için geliştirilen ürün.",
+      "en": "A product designed to transfer event guests' media files into the recipient's own storage."
+    },
+    "roles": {
+      "tr": [
+        "Ürün mimarisi",
+        "UI/UX",
+        "Frontend",
+        "Entegrasyon"
+      ],
+      "en": [
+        "Product architecture",
+        "UI/UX",
+        "Frontend",
+        "Integration"
+      ]
+    },
+    "technologies": [
+      "Vue/React prototyping",
+      "Google Drive",
+      "Netlify",
+      "JavaScript"
+    ],
+    "serviceSlugs": [
+      "software-systems",
+      "artificial-intelligence"
+    ],
+    "visibility": "public",
+    "links": [
+      {
+        "label": "LoraVow",
+        "url": "https://loravow.com"
+      }
+    ]
+  },
+  {
+    "slug": "beyaz-onlukluler-digital-transformation",
+    "title": {
+      "tr": "Beyaz Önlüklüler — Dijital Dönüşüm",
+      "en": "Beyaz Önlüklüler — Digital Transformation"
+    },
+    "year": "2026",
+    "status": "development",
+    "featured": true,
+    "development": true,
+    "category": {
+      "tr": "Kurumsal · STK · Web",
+      "en": "Institutional · Nonprofit · Web"
+    },
+    "summary": {
+      "tr": "Kurumsal web, içerik, DNS, e-posta sürekliliği ve operasyon ihtiyaçlarının birlikte ele alındığı dönüşüm çalışması.",
+      "en": "A transformation project combining institutional web, content, DNS, email continuity and operational needs."
+    },
+    "roles": {
+      "tr": [
+        "Sistem tasarımı",
+        "Web geliştirme",
+        "İçerik mimarisi",
+        "Operasyon"
+      ],
+      "en": [
+        "Systems design",
+        "Web development",
+        "Content architecture",
+        "Operations"
+      ]
+    },
+    "technologies": [
+      "Astro",
+      "Sanity",
+      "Netlify",
+      "Google Workspace"
+    ],
+    "serviceSlugs": [
+      "institutional-nonprofit",
+      "software-systems",
+      "design"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "cuvuk",
+    "title": {
+      "tr": "Çuvuk",
+      "en": "Çuvuk"
+    },
+    "year": "2026",
+    "status": "development",
+    "featured": false,
+    "development": true,
+    "category": {
+      "tr": "Oyun Geliştirme",
+      "en": "Game Development"
+    },
+    "summary": {
+      "tr": "Yumuşak low-poly dünyada geçen izometrik toplama, keşif ve çatışma oyunu girişimi.",
+      "en": "An isometric collection, exploration and combat game project set in a soft low-poly world."
+    },
+    "roles": {
+      "tr": [
+        "Konsept",
+        "Sistem tasarımı",
+        "Sanat yönü",
+        "Ürün geliştirme"
+      ],
+      "en": [
+        "Concept",
+        "Systems design",
+        "Art direction",
+        "Product development"
+      ]
+    },
+    "technologies": [
+      "Game prototyping",
+      "Figma",
+      "Aseprite",
+      "AI-assisted production"
+    ],
+    "serviceSlugs": [
+      "game-development",
+      "design",
+      "music-sound"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "ersen-please",
+    "title": {
+      "tr": "Ersen Please!",
+      "en": "Ersen Please!"
+    },
+    "year": "2026",
+    "status": "development",
+    "featured": false,
+    "development": true,
+    "category": {
+      "tr": "Oyun · Görsel Anlatı",
+      "en": "Game · Visual Narrative"
+    },
+    "summary": {
+      "tr": "Soğuk ve bürokratik bir dünyada geçen, karar ve kontrol temalı oyun girişimi.",
+      "en": "A game project about decisions and control in a cold, bureaucratic world."
+    },
+    "roles": {
+      "tr": [
+        "Konsept",
+        "Ürün tasarımı",
+        "Görsel yön",
+        "Ses"
+      ],
+      "en": [
+        "Concept",
+        "Product design",
+        "Visual direction",
+        "Sound"
+      ]
+    },
+    "technologies": [
+      "Game prototyping",
+      "Aseprite",
+      "Figma",
+      "Audio production"
+    ],
+    "serviceSlugs": [
+      "game-development",
+      "design",
+      "music-sound"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "association-member-management",
+    "title": {
+      "tr": "Dernek Üye Kayıt ve Yönetim Arayüzü",
+      "en": "Association Member Registration & Management Interface"
+    },
+    "year": "2025",
+    "status": "concept",
+    "featured": false,
+    "development": true,
+    "category": {
+      "tr": "UI/UX · Operasyon",
+      "en": "UI/UX · Operations"
+    },
+    "summary": {
+      "tr": "Üyelik başvurusu, kayıt takibi ve temel yönetim süreçleri için arayüz çalışması.",
+      "en": "An interface concept for membership applications, tracking and core management processes."
+    },
+    "roles": {
+      "tr": [
+        "UI/UX",
+        "Süreç tasarımı"
+      ],
+      "en": [
+        "UI/UX",
+        "Process design"
+      ]
+    },
+    "technologies": [
+      "Figma",
+      "Process design"
+    ],
+    "serviceSlugs": [
+      "institutional-nonprofit",
+      "design",
+      "software-systems"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "password-generator",
+    "title": {
+      "tr": "Sade Parola Oluşturucu",
+      "en": "Simple Password Generator"
+    },
+    "year": "2026",
+    "status": "active",
+    "featured": false,
+    "development": false,
+    "category": {
+      "tr": "Mini Araç · Güvenlik",
+      "en": "Mini Utility · Security"
+    },
+    "summary": {
+      "tr": "Tarayıcı içinde çalışan, sade ve hızlı parola oluşturma aracı.",
+      "en": "A simple and fast password generator that runs entirely in the browser."
+    },
+    "roles": {
+      "tr": [
+        "Frontend",
+        "Ürün tasarımı"
+      ],
+      "en": [
+        "Frontend",
+        "Product design"
+      ]
+    },
+    "technologies": [
+      "Vue",
+      "Web Crypto API"
+    ],
+    "serviceSlugs": [
+      "software-systems"
+    ],
+    "toolPath": "/tools/password",
+    "visibility": "public"
+  },
+  {
+    "slug": "metadata-cleaner",
+    "title": {
+      "tr": "Görsel Metadata Temizleme Aracı",
+      "en": "Image Metadata Cleaner"
+    },
+    "year": "2025",
+    "status": "concept",
+    "featured": false,
+    "development": true,
+    "category": {
+      "tr": "Mini Araç · Gizlilik",
+      "en": "Mini Utility · Privacy"
+    },
+    "summary": {
+      "tr": "Görsellerde bulunan EXIF ve benzeri metadata alanlarını temizlemeye yönelik araç çalışması.",
+      "en": "A utility concept for removing EXIF and related metadata from images."
+    },
+    "roles": {
+      "tr": [
+        "Frontend",
+        "Ürün tasarımı"
+      ],
+      "en": [
+        "Frontend",
+        "Product design"
+      ]
+    },
+    "technologies": [
+      "JavaScript",
+      "Browser APIs"
+    ],
+    "serviceSlugs": [
+      "software-systems"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "ai-visual-workflows",
+    "title": {
+      "tr": "AI Destekli Görsel Üretim İş Akışları",
+      "en": "AI-Assisted Visual Production Workflows"
+    },
+    "year": "2026",
+    "status": "development",
+    "featured": false,
+    "development": true,
+    "category": {
+      "tr": "Yapay Zekâ · Görsel Üretim",
+      "en": "Artificial Intelligence · Visual Production"
+    },
+    "summary": {
+      "tr": "Tutarlı karakter, düzenleme ve kontrollü üretim için geliştirilen düğüm tabanlı iş akışları.",
+      "en": "Node-based workflows for consistent characters, editing and controlled visual production."
+    },
+    "roles": {
+      "tr": [
+        "Workflow tasarımı",
+        "Araştırma",
+        "Görsel üretim"
+      ],
+      "en": [
+        "Workflow design",
+        "Research",
+        "Visual production"
+      ]
+    },
+    "technologies": [
+      "ComfyUI",
+      "Flux",
+      "SDXL",
+      "LoRA"
+    ],
+    "serviceSlugs": [
+      "artificial-intelligence",
+      "design"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "music-sound-experiments",
+    "title": {
+      "tr": "Müzik ve Ses Üretim Çalışmaları",
+      "en": "Music & Sound Production Studies"
+    },
+    "year": "2026",
+    "status": "development",
+    "featured": false,
+    "development": true,
+    "category": {
+      "tr": "Müzik · Yaratıcı Teknoloji",
+      "en": "Music · Creative Technology"
+    },
+    "summary": {
+      "tr": "Dijital projeler, oyun atmosferleri ve AI destekli müzik üretimi üzerine çalışmalar.",
+      "en": "Experiments in digital project music, game atmospheres and AI-assisted music production."
+    },
+    "roles": {
+      "tr": [
+        "Beste",
+        "Ses düzenleme",
+        "Üretim akışı"
+      ],
+      "en": [
+        "Composition",
+        "Audio editing",
+        "Production workflow"
+      ]
+    },
+    "technologies": [
+      "FL Studio",
+      "Adobe Audition",
+      "Suno",
+      "FADR"
+    ],
+    "serviceSlugs": [
+      "music-sound"
+    ],
+    "visibility": "public"
+  },
+  {
+    "slug": "reversenui",
+    "title": {
+      "tr": "ReversenUI",
+      "en": "ReversenUI"
+    },
+    "year": "2026",
+    "status": "development",
+    "visibility": "public",
+    "featured": true,
+    "category": {
+      "tr": "AI Engineering · Local-first Masaüstü Araçları",
+      "en": "AI Engineering · Local-first Desktop Tools"
+    },
+    "summary": {
+      "tr": "Generatif görsel çıktıları incelemek, model ve workflow bilgilerini çözümlemek, model-aware promptlar oluşturmak ve yerel AI araçlarını tek masaüstü çalışma alanında birleştirmek için geliştirilen local-first AI engineering workbench.",
+      "en": "A local-first AI engineering workbench for inspecting generative-image artifacts, recovering model and workflow information, composing model-aware prompts and hosting local AI tools in one desktop workspace."
+    },
+    "roles": {
+      "tr": [
+        "Ürün mimarisi",
+        "AI tooling",
+        "UI/UX",
+        "Masaüstü entegrasyonu"
+      ],
+      "en": [
+        "Product architecture",
+        "AI tooling",
+        "UI/UX",
+        "Desktop integration"
+      ]
+    },
+    "technologies": [
+      "Electron",
+      "React",
+      "Python",
+      "ComfyUI"
+    ],
+    "serviceSlugs": [
+      "artificial-intelligence",
+      "software-systems",
+      "design"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/saygiylasunar/reversenui"
+      }
+    ],
+    "highlights": {
+      "tr": [
+        "ComfyUI workflow ve prompt metadata çözümleme",
+        "Model-aware Prompt Architect",
+        "Yerel AI araçlarını sekmeli masaüstü çalışma alanında birleştirme",
+        "Kaynak tüketimini azaltmak için workspace hibernation yaklaşımı"
+      ],
+      "en": [
+        "ComfyUI workflow and prompt metadata inspection",
+        "Model-aware Prompt Architect",
+        "Tabbed desktop workspace for local AI tools",
+        "Workspace hibernation for resource-aware operation"
+      ]
+    }
+  },
+  {
+    "slug": "efss-pde",
+    "title": {
+      "tr": "EFSS PDE",
+      "en": "EFSS PDE"
+    },
+    "year": "2026",
+    "status": "development",
+    "visibility": "public",
+    "featured": true,
+    "category": {
+      "tr": "ComfyUI · Pixel Art · AI Tooling",
+      "en": "ComfyUI · Pixel Art · AI Tooling"
+    },
+    "summary": {
+      "tr": "Üretilen görselleri hedef pixel gridine deterministik biçimde eşleyen; medoid, area ve nearest örnekleme yaklaşımlarını kontrollü palette mapping ve guiding ile birleştiren ComfyUI node sistemi.",
+      "en": "A ComfyUI node system that deterministically maps generated images to a target pixel grid, combining medoid, area and nearest sampling with controlled palette mapping and guiding."
+    },
+    "roles": {
+      "tr": [
+        "Algoritma tasarımı",
+        "Node mimarisi",
+        "Workflow tasarımı",
+        "Pixel disiplini"
+      ],
+      "en": [
+        "Algorithm design",
+        "Node architecture",
+        "Workflow design",
+        "Pixel discipline"
+      ]
+    },
+    "technologies": [
+      "Python",
+      "ComfyUI",
+      "Deterministic Sampling"
+    ],
+    "serviceSlugs": [
+      "artificial-intelligence",
+      "software-systems",
+      "design"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/saygiylasunar/efsspde"
+      }
+    ],
+    "highlights": {
+      "tr": [
+        "Native hedef grid ile integer-aligned generation canvas eşleştirmesi",
+        "Manuel veya otomatik palette contract",
+        "Medoid, area ve nearest mantıksal örnekleme",
+        "Indexed pixel komşuluk temizliği ve nearest preview"
+      ],
+      "en": [
+        "Native target-grid to integer-aligned generation-canvas mapping",
+        "Manual or automatic palette contract",
+        "Medoid, area and nearest logical sampling",
+        "Indexed-pixel neighborhood cleanup and nearest preview"
+      ]
+    }
+  },
+  {
+    "slug": "yavuz-ozel-guvenlik",
+    "title": {
+      "tr": "Yavuz Özel Güvenlik — Web Uygulaması",
+      "en": "Yavuz Private Security — Web Application"
+    },
+    "year": "2026",
+    "status": "development",
+    "visibility": "public",
+    "featured": true,
+    "category": {
+      "tr": "Kurumsal Web · Eğitim · Güvenlik",
+      "en": "Institutional Web · Training · Security"
+    },
+    "summary": {
+      "tr": "Yavuz Özel Güvenlik Eğitim Kurumu için geliştirilen kurumsal web uygulaması.",
+      "en": "An institutional web application developed for Yavuz Private Security Training Institution."
+    },
+    "roles": {
+      "tr": [
+        "Web geliştirme",
+        "UI/UX",
+        "İçerik düzeni"
+      ],
+      "en": [
+        "Web development",
+        "UI/UX",
+        "Content structure"
+      ]
+    },
+    "technologies": [
+      "Web",
+      "Responsive UI",
+      "Content Architecture"
+    ],
+    "serviceSlugs": [
+      "software-systems",
+      "design"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/saygiylasunar/yavuzozelguvenlik"
+      }
+    ]
+  },
+  {
+    "slug": "saygiylasunar-font",
+    "title": {
+      "tr": "Saygıyla Sunar Font",
+      "en": "Saygıyla Sunar Font"
+    },
+    "year": "2026",
+    "status": "development",
+    "visibility": "public",
+    "featured": true,
+    "category": {
+      "tr": "Tipografi · Programatik Geometri",
+      "en": "Typography · Programmatic Geometry"
+    },
+    "summary": {
+      "tr": "Tekrarlanabilir glif motifleri, programatik geometri ve eş genişlikli sistem davranışı üzerinden geliştirilen deneysel yazı karakteri çalışması.",
+      "en": "An experimental typeface exploring reusable glyph motifs, programmatic geometry and consistent monospaced system behavior."
+    },
+    "roles": {
+      "tr": [
+        "Tipografi sistemi",
+        "Glif geometrisi",
+        "Görsel araştırma"
+      ],
+      "en": [
+        "Typography system",
+        "Glyph geometry",
+        "Visual research"
+      ]
+    },
+    "technologies": [
+      "Programmatic Geometry",
+      "Typography",
+      "Font Engineering"
+    ],
+    "serviceSlugs": [
+      "design",
+      "software-systems"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/saygiylasunar/saygiylasunarfont"
+      }
+    ]
+  },
+  {
+    "slug": "bellekpad",
+    "title": {
+      "tr": "BellekPad",
+      "en": "BellekPad"
+    },
+    "year": "2026",
+    "status": "development",
+    "visibility": "public",
+    "featured": false,
+    "category": {
+      "tr": "Kişisel Sistemler · Local-first",
+      "en": "Personal Systems · Local-first"
+    },
+    "summary": {
+      "tr": "Notlar, projeler, bilgi, günlük operasyon ve kişisel takip alanlarını tek oyunlaştırılmış çalışma alanında birleştirmeyi amaçlayan kişisel yönetim deneyi.",
+      "en": "A personal workspace experiment designed to bring notes, projects, knowledge, daily operations and personal tracking into one gamified environment."
+    },
+    "roles": {
+      "tr": [
+        "Ürün tasarımı",
+        "Bilgi mimarisi",
+        "UI/UX"
+      ],
+      "en": [
+        "Product design",
+        "Information architecture",
+        "UI/UX"
+      ]
+    },
+    "technologies": [
+      "Local-first",
+      "Web App",
+      "Product Design"
+    ],
+    "serviceSlugs": [
+      "software-systems",
+      "design"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/saygiylasunar/bellekpad"
+      }
+    ]
+  },
+  {
+    "slug": "ezgiwave",
+    "title": {
+      "tr": "EzgiWave",
+      "en": "EzgiWave"
+    },
+    "year": "2025",
+    "status": "development",
+    "visibility": "public",
+    "featured": false,
+    "category": {
+      "tr": "Ses Araçları · Yaratıcı Teknoloji",
+      "en": "Audio Tools · Creative Technology"
+    },
+    "summary": {
+      "tr": "Ses katmanlarını waveform, volume, pan, mute/solo ve slot tabanlı kontrollerle yönetmek için geliştirilen kompakt çok kanallı DAW yardımcı uygulaması.",
+      "en": "A compact multi-track DAW companion for managing audio layers with waveform, volume, pan, mute/solo and slot-based controls."
+    },
+    "roles": {
+      "tr": [
+        "Ürün tasarımı",
+        "Frontend",
+        "Ses arayüzü"
+      ],
+      "en": [
+        "Product design",
+        "Frontend",
+        "Audio interface"
+      ]
+    },
+    "technologies": [
+      "React",
+      "Vite",
+      "SCSS"
+    ],
+    "serviceSlugs": [
+      "music-sound",
+      "software-systems",
+      "design"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/saygiylasunar/EzgiWave"
+      }
+    ]
+  }
+]

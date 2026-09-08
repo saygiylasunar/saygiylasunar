@@ -1,9 +1,15 @@
 import site from '../content/site.json'
 import services from '../content/services.json'
-import projects from '../content/projects.json'
+import projectRecords from '../content/projects.json'
 import experience from '../content/experience.json'
 import skills from '../content/skills.json'
 import parcels from '../content/parcels.json'
+
+/**
+ * Public site content only.
+ * Never place genuinely private project information in projects.json.
+ */
+const projects = projectRecords.filter((project) => project.visibility === 'public')
 
 export { site, services, projects, experience, skills, parcels }
 
