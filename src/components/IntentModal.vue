@@ -10,15 +10,7 @@
           :aria-labelledby="titleId"
           tabindex="-1"
         >
-          <button
-            ref="closeButtonRef"
-            class="modal-close"
-            type="button"
-            :aria-label="t('common.close')"
-            @click="close"
-          >
-            ×
-          </button>
+          <button ref="closeButtonRef" class="modal-close" type="button" :aria-label="t('common.close')" @click="close">×</button>
           <p class="eyebrow">{{ t('intent.eyebrow') }}</p>
           <h2 :id="titleId">{{ t('intent.title') }}</h2>
 
@@ -29,15 +21,15 @@
           </div>
 
           <div class="intent-actions">
-            <button class="intent-card intent-card-primary" type="button" @click="choose('/services')">
+            <button class="intent-card intent-card-primary" type="button" @click="choose('/projects')">
               <span>01</span>
-              <strong>{{ t('intent.workTitle') }}</strong>
-              <small>{{ t('intent.workText') }}</small>
-            </button>
-            <button class="intent-card" type="button" @click="choose('/about')">
-              <span>02</span>
               <strong>{{ t('intent.knowTitle') }}</strong>
               <small>{{ t('intent.knowText') }}</small>
+            </button>
+            <button class="intent-card" type="button" @click="choose('/services')">
+              <span>02</span>
+              <strong>{{ t('intent.workTitle') }}</strong>
+              <small>{{ t('intent.workText') }}</small>
             </button>
           </div>
 
@@ -48,9 +40,25 @@
                 <strong>{{ t('intent.loravowTitle') }}</strong>
                 <small>{{ t('intent.loravowText') }}</small>
               </button>
-              <button type="button" @click="choose('/tools')">
-                <strong>{{ t('intent.toolsTitle') }}</strong>
-                <small>{{ t('intent.toolsText') }}</small>
+              <button type="button" @click="choose('/projects/beyaz-onlukluler-digital-transformation')">
+                <strong>{{ t('intent.beyazTitle') }}</strong>
+                <small>{{ t('intent.beyazText') }}</small>
+              </button>
+              <button type="button" @click="choose('/projects/yavuz-ozel-guvenlik')">
+                <strong>{{ t('intent.yavuzTitle') }}</strong>
+                <small>{{ t('intent.yavuzText') }}</small>
+              </button>
+              <button type="button" @click="choose('/logbook')">
+                <strong>{{ t('intent.logbookTitle') }}</strong>
+                <small>{{ t('intent.logbookText') }}</small>
+              </button>
+              <button type="button" @click="choose('/music')">
+                <strong>{{ t('intent.musicTitle') }}</strong>
+                <small>{{ t('intent.musicText') }}</small>
+              </button>
+              <button type="button" @click="choose('/projects')">
+                <strong>{{ t('intent.projectsTitle') }}</strong>
+                <small>{{ t('intent.projectsText') }}</small>
               </button>
             </div>
           </div>
@@ -82,7 +90,7 @@ function restoreDocument() {
 function close() {
   if (!open.value) return
   open.value = false
-  sessionStorage.setItem('intent-seen-v2', 'true')
+  sessionStorage.setItem('intent-seen-v3', 'true')
 }
 
 function choose(path) {
@@ -103,14 +111,13 @@ function focusableElements() {
 
 function onKeydown(event) {
   if (!open.value) return
-
   if (event.key === 'Escape') {
     event.preventDefault()
     close()
     return
   }
-
   if (event.key !== 'Tab') return
+
   const items = focusableElements()
   if (!items.length) {
     event.preventDefault()
@@ -143,10 +150,8 @@ watch(open, async (isOpen) => {
 })
 
 onMounted(() => {
-  if (!sessionStorage.getItem('intent-seen-v2')) {
-    window.setTimeout(() => {
-      open.value = true
-    }, 350)
+  if (!sessionStorage.getItem('intent-seen-v3')) {
+    window.setTimeout(() => { open.value = true }, 420)
   }
   window.addEventListener('open-intent', reopen)
   window.addEventListener('keydown', onKeydown)

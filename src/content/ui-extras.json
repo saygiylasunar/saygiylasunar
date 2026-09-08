@@ -18,9 +18,19 @@
     "intent": {
       "quickTitle": "Hızlı erişim",
       "loravowTitle": "LoraVow",
-      "loravowText": "Etkinlik medya aktarım ürününü incele.",
+      "loravowText": "Ürün kaydını site içinde incele.",
       "toolsTitle": "Mini Araçlar",
-      "toolsText": "Tarayıcıda çalışan küçük araçları aç."
+      "toolsText": "Tarayıcıda çalışan küçük araçları aç.",
+      "beyazTitle": "Beyaz Önlüklüler",
+      "beyazText": "Dijital dönüşüm çalışmasına git.",
+      "yavuzTitle": "Yavuz Özel Güvenlik",
+      "yavuzText": "Kurumsal web uygulamasını incele.",
+      "logbookTitle": "AI / Dev Logbook",
+      "logbookText": "Deneyleri, kararları ve geliştirme notlarını oku.",
+      "musicTitle": "Müzik",
+      "musicText": "Saygıyla Sunar yayınlarına geç.",
+      "projectsTitle": "Tüm Projeler",
+      "projectsText": "Yayımlanabilir proje arşivini aç."
     },
     "tools": {
       "eyebrow": "Tarayıcıda çalışan mini araçlar",
@@ -112,9 +122,19 @@
     "intent": {
       "quickTitle": "Quick access",
       "loravowTitle": "LoraVow",
-      "loravowText": "Explore the event media transfer product.",
+      "loravowText": "Explore the product record without leaving the portfolio.",
       "toolsTitle": "Mini Tools",
-      "toolsText": "Open small utilities that run in your browser."
+      "toolsText": "Open small utilities that run in your browser.",
+      "beyazTitle": "Beyaz Önlüklüler",
+      "beyazText": "Open the digital transformation project.",
+      "yavuzTitle": "Yavuz Private Security",
+      "yavuzText": "Explore the institutional web application.",
+      "logbookTitle": "AI / Dev Logbook",
+      "logbookText": "Read experiments, decisions and development notes.",
+      "musicTitle": "Music",
+      "musicText": "Open Saygıyla Sunar releases.",
+      "projectsTitle": "All Projects",
+      "projectsText": "Browse the public project archive."
     },
     "tools": {
       "eyebrow": "Browser-based mini tools",

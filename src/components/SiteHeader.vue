@@ -25,10 +25,9 @@
         :class="{ 'is-open': menuOpen }"
         :aria-label="t('common.primaryNavAria')"
       >
-        <RouterLink to="/services">{{ t('nav.services') }}</RouterLink>
         <RouterLink to="/projects">{{ t('nav.projects') }}</RouterLink>
+        <RouterLink to="/logbook">{{ t('nav.logbook') }}</RouterLink>
         <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
-        <RouterLink to="/experience">{{ t('nav.experience') }}</RouterLink>
         <RouterLink to="/about">{{ t('nav.about') }}</RouterLink>
         <RouterLink class="nav-contact" to="/contact">{{ t('nav.contact') }}</RouterLink>
 

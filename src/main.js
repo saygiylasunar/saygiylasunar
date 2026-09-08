@@ -52,3 +52,5 @@ app.directive('reveal', {
 
 app.use(router)
 app.mount('#app')
+
+import './styles/portfolio-v3.css'

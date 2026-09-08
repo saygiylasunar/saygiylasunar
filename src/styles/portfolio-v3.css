@@ -1,0 +1,282 @@
+:root {
+  --radius: 28px;
+  --radius-small: 16px;
+}
+
+.home-view .service-grid,
+.home-view .engagement-grid {
+  gap: 16px;
+  border: 0;
+}
+
+.home-view .service-card,
+.home-view .engagement-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+}
+
+.home-view .service-card:hover {
+  background: var(--surface-solid);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.identity-panel {
+  border-radius: 36px;
+}
+
+.intent-quick {
+  margin-top: 30px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+
+.intent-quick > .mini-title {
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 760;
+}
+
+.intent-quick-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.intent-quick-grid button {
+  display: grid;
+  min-height: 128px;
+  align-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  padding: 17px;
+  background: color-mix(in srgb, var(--bg-soft) 66%, transparent);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.intent-quick-grid button:hover {
+  border-color: var(--line-strong);
+  background: var(--bg-soft);
+  transform: translateY(-3px);
+}
+
+.intent-quick-grid strong {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.intent-quick-grid small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.project-highlight-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-highlight-list li {
+  position: relative;
+  border-top: 1px solid var(--line);
+  padding: 14px 0 0 24px;
+  color: var(--muted);
+}
+
+.project-highlight-list li::before {
+  position: absolute;
+  top: 20px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  content: '';
+}
+
+.project-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logbook-hero {
+  background:
+    radial-gradient(circle at 78% 28%, var(--accent-soft), transparent 24%),
+    linear-gradient(145deg, transparent, color-mix(in srgb, var(--surface) 58%, transparent));
+}
+
+.logbook-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.logbook-card {
+  display: grid;
+  min-height: 420px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  padding: clamp(24px, 4vw, 38px);
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.logbook-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.logbook-card-meta,
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 70px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.logbook-card h2 {
+  font-size: clamp(1.8rem, 3.4vw, 3.2rem);
+}
+
+.logbook-card .tag-cloud {
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.logbook-read-link {
+  margin-top: 26px;
+  font-size: 0.82rem;
+  font-weight: 760;
+}
+
+.logbook-post-head .article-meta {
+  max-width: 720px;
+  margin: 34px 0 0;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.article-shell {
+  display: grid;
+  align-items: start;
+  gap: clamp(50px, 8vw, 110px);
+  grid-template-columns: minmax(0, 1fr) 260px;
+}
+
+.article-body {
+  max-width: 780px;
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.82;
+}
+
+.article-body h2 {
+  margin-top: 2.4em;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.article-body p,
+.article-body li {
+  color: color-mix(in srgb, var(--text) 78%, var(--muted));
+}
+
+.article-body strong {
+  color: var(--text);
+}
+
+.article-body code {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 0.15em 0.4em;
+  background: var(--bg-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.article-body blockquote {
+  margin: 2em 0;
+  border-left: 3px solid var(--accent);
+  padding: 0.2em 0 0.2em 1.4em;
+}
+
+.article-related {
+  position: sticky;
+  top: 118px;
+  display: grid;
+  gap: 10px;
+}
+
+.article-related > a {
+  display: grid;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  padding: 16px;
+  background: var(--surface);
+}
+
+.article-related small {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+@media (max-width: 900px) {
+  .intent-quick-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .article-related {
+    position: static;
+  }
+}
+
+@media (max-width: 680px) {
+  .logbook-grid,
+  .intent-actions,
+  .intent-quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intent-card {
+    min-height: 180px;
+  }
+
+  .intent-quick-grid button {
+    min-height: 105px;
+  }
+
+  .logbook-card {
+    min-height: 0;
+  }
+
+  .logbook-card-meta {
+    margin-bottom: 42px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logbook-card,
+  .intent-quick-grid button,
+  .home-view .service-card {
+    transition: none;
+  }
+}

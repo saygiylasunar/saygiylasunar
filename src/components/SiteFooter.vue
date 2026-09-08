@@ -9,6 +9,7 @@
         <a :href="`mailto:${site.brand.email}`">{{ site.brand.email }}</a>
         <a :href="site.profiles.github" target="_blank" rel="noreferrer">GitHub</a>
         <a :href="site.profiles.linkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+        <RouterLink to="/logbook">{{ t('nav.logbook') }}</RouterLink>
         <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
         <RouterLink to="/tools">{{ t('nav.tools') }}</RouterLink>
         <RouterLink to="/arsalar">{{ t('nav.lands') }}</RouterLink>
