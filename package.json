@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "generate:og": "node scripts/generate-og.mjs",
+    "generate:seo": "npm run generate:sitemap && npm run generate:og",
+    "predev": "npm run generate:seo",
+    "prebuild": "npm run generate:seo"
   },
   "dependencies": {
     "vue": "^3.4.0",
@@ -16,7 +21,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.3.3"
+    "vite": "^6.3.3",
+    "sharp": "^0.35.4"
   },
   "engines": {
     "node": ">=20.19.0"

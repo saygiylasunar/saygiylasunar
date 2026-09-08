@@ -2,117 +2,145 @@
   "tr": {
     "home": {
       "title": "Ersen Filiz · Saygıyla Sunar — Mühendislik, AI, Tasarım ve Yaratıcı Teknoloji",
-      "description": "Ersen Filiz’in yazılım, yapay zekâ, UI/UX, grafik tasarım, yaratıcı teknoloji, araç geliştirme ve Saygıyla Sunar müzik çalışmalarını bir araya getiren kişisel stüdyo ve portföy."
+      "description": "Ersen Filiz’in yazılım, yapay zekâ, UI/UX, grafik tasarım, yaratıcı teknoloji, araç geliştirme ve Saygıyla Sunar müzik çalışmalarını bir araya getiren kişisel stüdyo ve portföy.",
+      "image": "/og/home.png"
     },
     "services": {
       "title": "Hizmetler ve Çalışma Alanları",
-      "description": "Yapay zekâ, yazılım sistemleri, web geliştirme, UI/UX, görsel tasarım, kurumsal dijital dönüşüm ve yaratıcı teknoloji alanlarında Ersen Filiz’in çalışma kapsamı."
+      "description": "Yapay zekâ, yazılım sistemleri, web geliştirme, UI/UX, görsel tasarım, kurumsal dijital dönüşüm ve yaratıcı teknoloji alanlarında Ersen Filiz’in çalışma kapsamı.",
+      "image": "/og/services.png"
     },
     "projects": {
       "title": "Projeler ve Ürünler",
-      "description": "LoraVow, ReversenUI, EFSS PDE, Beyaz Önlüklüler, Yavuz Özel Güvenlik ve diğer yazılım, AI, tasarım ve yaratıcı teknoloji projeleri."
+      "description": "LoraVow, ReversenUI, EFSS PDE, Beyaz Önlüklüler, Yavuz Özel Güvenlik ve diğer yazılım, AI, tasarım ve yaratıcı teknoloji projeleri.",
+      "image": "/og/projects.png"
     },
     "logbook": {
       "title": "Logbook — AI, Mühendislik ve Tasarım Notları",
-      "description": "Ersen Filiz’in yapay zekâ, local-first araçlar, ComfyUI, pixel art, ürün geliştirme, tasarım sistemleri ve deneysel yazılım üzerine geliştirme notları."
+      "description": "Ersen Filiz’in yapay zekâ, local-first araçlar, ComfyUI, pixel art, ürün geliştirme, tasarım sistemleri ve deneysel yazılım üzerine geliştirme notları.",
+      "image": "/og/logbook.png"
     },
     "music": {
       "title": "Müzik · Saygıyla Sunar",
-      "description": "Ersen Filiz’in Saygıyla Sunar adıyla yayımladığı müzik çalışmaları ve Spotify, YouTube Music ile Apple Music dinleme bağlantıları."
+      "description": "Ersen Filiz’in Saygıyla Sunar adıyla yayımladığı müzik çalışmaları ve Spotify, YouTube Music ile Apple Music dinleme bağlantıları.",
+      "image": "/og/music.png"
     },
     "experience": {
       "title": "Deneyim ve Yetkinlikler",
-      "description": "Ersen Filiz’in bilgisayar mühendisliği, frontend, UI/UX, grafik tasarım, bilgi işlem, kurumsal ve sivil toplum deneyiminin profesyonel özeti."
+      "description": "Ersen Filiz’in bilgisayar mühendisliği, frontend, UI/UX, grafik tasarım, bilgi işlem, kurumsal ve sivil toplum deneyiminin profesyonel özeti.",
+      "image": "/og/experience.png"
     },
     "about": {
       "title": "Hakkımda",
-      "description": "Bilgisayar mühendisi Ersen Filiz’in yazılım, yapay zekâ, tasarım, ürün geliştirme ve yaratıcı teknoloji eksenindeki çalışma yaklaşımı."
+      "description": "Bilgisayar mühendisi Ersen Filiz’in yazılım, yapay zekâ, tasarım, ürün geliştirme ve yaratıcı teknoloji eksenindeki çalışma yaklaşımı.",
+      "image": "/og/about.png"
     },
     "contact": {
       "title": "İletişim",
-      "description": "Yazılım, AI, web, tasarım veya yaratıcı teknoloji projeleri için Ersen Filiz ile iletişime geçin."
+      "description": "Yazılım, AI, web, tasarım veya yaratıcı teknoloji projeleri için Ersen Filiz ile iletişime geçin.",
+      "image": "/og/contact.png"
     },
     "tools": {
       "title": "Mini Araçlar",
-      "description": "Tarayıcıda mümkün olduğunca yerel çalışan parola, metadata, görsel dönüştürme, hash, JSON ve kontrast araçları."
+      "description": "Tarayıcıda mümkün olduğunca yerel çalışan parola, metadata, görsel dönüştürme, hash, JSON ve kontrast araçları.",
+      "image": "/og/tools.png"
     },
     "password": {
       "title": "Sade Parola Oluşturucu",
-      "description": "Web Crypto API kullanan ve parolayı tarayıcı içinde oluşturan hızlı, yerel parola üretim aracı."
+      "description": "Web Crypto API kullanan ve parolayı tarayıcı içinde oluşturan hızlı, yerel parola üretim aracı.",
+      "image": "/og/password.png"
     },
     "exif": {
       "title": "EXIF / Metadata Temizleyici",
-      "description": "Görselleri sunucuya yüklemeden tarayıcı içinde yeniden oluşturarak EXIF ve gömülü metadata alanlarını temizleyen araç."
+      "description": "Görselleri sunucuya yüklemeden tarayıcı içinde yeniden oluşturarak EXIF ve gömülü metadata alanlarını temizleyen araç.",
+      "image": "/og/exif.png"
     },
     "lands": {
       "title": "Sultandağı / Kayran Arsa Portföyü",
-      "description": "Afyonkarahisar Sultandağı Kayran’daki aile taşınmazlarına ait parsel, alan, konum, görsel ve imar bilgilerinin düzenlendiği bilgi portföyü."
+      "description": "Afyonkarahisar Sultandağı Kayran’daki aile taşınmazlarına ait parsel, alan, konum, görsel ve imar bilgilerinin düzenlendiği bilgi portföyü.",
+      "image": "/og/lands.png"
     },
     "ogg": {
       "title": "ÖGG Kurs Programı",
-      "description": "Eylül 2026 silahlı özel güvenlik kursu için ders saatleri, eğitmenler, sınıflar ve uygulama günlerini düzenleyen program görünümü."
+      "description": "Eylül 2026 silahlı özel güvenlik kursu için ders saatleri, eğitmenler, sınıflar ve uygulama günlerini düzenleyen program görünümü.",
+      "image": "/og/ogg.png"
     },
     "notFound": {
       "title": "Sayfa Bulunamadı",
-      "description": "Aradığınız sayfa bulunamadı."
+      "description": "Aradığınız sayfa bulunamadı.",
+      "image": "/og/notFound.png"
     }
   },
   "en": {
     "home": {
       "title": "Ersen Filiz · Saygıyla Sunar — Engineering, AI, Design and Creative Technology",
-      "description": "The personal studio and portfolio of Ersen Filiz, bringing together software engineering, artificial intelligence, UI/UX, graphic design, creative technology, tools and music."
+      "description": "The personal studio and portfolio of Ersen Filiz, bringing together software engineering, artificial intelligence, UI/UX, graphic design, creative technology, tools and music.",
+      "image": "/og/home.png"
     },
     "services": {
       "title": "Services and Capabilities",
-      "description": "Ersen Filiz’s work across artificial intelligence, software systems, web development, UI/UX, visual design, institutional digital transformation and creative technology."
+      "description": "Ersen Filiz’s work across artificial intelligence, software systems, web development, UI/UX, visual design, institutional digital transformation and creative technology.",
+      "image": "/og/services.png"
     },
     "projects": {
       "title": "Projects and Products",
-      "description": "LoraVow, ReversenUI, EFSS PDE, Beyaz Önlüklüler, Yavuz Private Security and other software, AI, design and creative technology projects."
+      "description": "LoraVow, ReversenUI, EFSS PDE, Beyaz Önlüklüler, Yavuz Private Security and other software, AI, design and creative technology projects.",
+      "image": "/og/projects.png"
     },
     "logbook": {
       "title": "Logbook — AI, Engineering and Design Notes",
-      "description": "Development notes by Ersen Filiz on AI, local-first tools, ComfyUI, pixel art, product development, design systems and experimental software."
+      "description": "Development notes by Ersen Filiz on AI, local-first tools, ComfyUI, pixel art, product development, design systems and experimental software.",
+      "image": "/og/logbook.png"
     },
     "music": {
       "title": "Music · Saygıyla Sunar",
-      "description": "Music released by Ersen Filiz under the artist name Saygıyla Sunar, with Spotify, YouTube Music and Apple Music links."
+      "description": "Music released by Ersen Filiz under the artist name Saygıyla Sunar, with Spotify, YouTube Music and Apple Music links.",
+      "image": "/og/music.png"
     },
     "experience": {
       "title": "Experience and Capabilities",
-      "description": "A professional overview of Ersen Filiz’s work in computer engineering, frontend development, UI/UX, graphic design, IT, institutional and nonprofit environments."
+      "description": "A professional overview of Ersen Filiz’s work in computer engineering, frontend development, UI/UX, graphic design, IT, institutional and nonprofit environments.",
+      "image": "/og/experience.png"
     },
     "about": {
       "title": "About",
-      "description": "Ersen Filiz’s approach to software engineering, artificial intelligence, design, product development and creative technology."
+      "description": "Ersen Filiz’s approach to software engineering, artificial intelligence, design, product development and creative technology.",
+      "image": "/og/about.png"
     },
     "contact": {
       "title": "Contact",
-      "description": "Contact Ersen Filiz for software, AI, web, design or creative technology projects."
+      "description": "Contact Ersen Filiz for software, AI, web, design or creative technology projects.",
+      "image": "/og/contact.png"
     },
     "tools": {
       "title": "Mini Tools",
-      "description": "Small browser utilities for passwords, metadata, image conversion, hashing, JSON and contrast, designed to run locally whenever possible."
+      "description": "Small browser utilities for passwords, metadata, image conversion, hashing, JSON and contrast, designed to run locally whenever possible.",
+      "image": "/og/tools.png"
     },
     "password": {
       "title": "Simple Password Generator",
-      "description": "A fast local password generator powered by the Web Crypto API and executed entirely in the browser."
+      "description": "A fast local password generator powered by the Web Crypto API and executed entirely in the browser.",
+      "image": "/og/password.png"
     },
     "exif": {
       "title": "EXIF / Metadata Cleaner",
-      "description": "A browser tool that removes EXIF and embedded metadata by rebuilding images locally without uploading them to a server."
+      "description": "A browser tool that removes EXIF and embedded metadata by rebuilding images locally without uploading them to a server.",
+      "image": "/og/exif.png"
     },
     "lands": {
       "title": "Sultandağı / Kayran Land Portfolio",
-      "description": "An information portfolio organizing parcel, area, location, imagery and zoning data for family-owned land in Sultandağı, Afyonkarahisar."
+      "description": "An information portfolio organizing parcel, area, location, imagery and zoning data for family-owned land in Sultandağı, Afyonkarahisar.",
+      "image": "/og/lands.png"
     },
     "ogg": {
       "title": "Private Security Course Schedule",
-      "description": "A structured view of lesson times, instructors, classrooms and practice days for the September 2026 armed private security course."
+      "description": "A structured view of lesson times, instructors, classrooms and practice days for the September 2026 armed private security course.",
+      "image": "/og/ogg.png"
     },
     "notFound": {
       "title": "Page Not Found",
-      "description": "The requested page could not be found."
+      "description": "The requested page could not be found.",
+      "image": "/og/notFound.png"
     }
   }
 }

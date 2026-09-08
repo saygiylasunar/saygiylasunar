@@ -5,22 +5,20 @@ import { localize } from './locale.js'
 
 const SITE_URL = 'https://saygiylasunar.com'
 const SITE_NAME = 'Ersen Filiz · Saygıyla Sunar'
+const PERSON_ID = `${SITE_URL}/#ersen-filiz`
 
 function setMeta(attribute, key, value) {
   const selector = `meta[${attribute}="${key}"]`
   let element = document.head.querySelector(selector)
-
   if (!value) {
     element?.remove()
     return
   }
-
   if (!element) {
     element = document.createElement('meta')
     element.setAttribute(attribute, key)
     document.head.appendChild(element)
   }
-
   element.setAttribute('content', value)
 }
 
@@ -48,9 +46,37 @@ function addArticleTags(tags = []) {
   }
 }
 
+function setStructuredData(data) {
+  let script = document.head.querySelector('#route-structured-data')
+  if (!data) {
+    script?.remove()
+    return
+  }
+  if (!script) {
+    script = document.createElement('script')
+    script.id = 'route-structured-data'
+    script.type = 'application/ld+json'
+    document.head.appendChild(script)
+  }
+  script.textContent = JSON.stringify(data).replaceAll('<', '\\u003c')
+}
+
+function breadcrumb(items) {
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: `${SITE_URL}${item.path}`,
+    })),
+  }
+}
+
 function staticSeo(route, localeValue) {
   const key = route.meta.seoKey || route.name || 'home'
-  return seo[localeValue]?.[key] || seo[localeValue]?.home
+  const record = seo[localeValue]?.[key] || seo[localeValue]?.home
+  return { ...record, image: record.image || `/og/${key}.png` }
 }
 
 function dynamicSeo(route, localeValue) {
@@ -60,8 +86,28 @@ function dynamicSeo(route, localeValue) {
     return {
       title: localize(project.title),
       description: localize(project.seo?.description) || localize(project.summary),
-      image: project.ogImage || '',
+      image: project.ogImage || `/og/projects/${project.slug}.png`,
       type: 'website',
+      structured: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'CreativeWork',
+            '@id': `${SITE_URL}/projects/${project.slug}#work`,
+            name: localize(project.title),
+            description: localize(project.summary),
+            url: `${SITE_URL}/projects/${project.slug}`,
+            creator: { '@id': PERSON_ID },
+            dateCreated: project.year,
+            keywords: project.technologies,
+          },
+          breadcrumb([
+            { name: localeValue === 'tr' ? 'Ana Sayfa' : 'Home', path: '/' },
+            { name: localeValue === 'tr' ? 'Projeler' : 'Projects', path: '/projects' },
+            { name: localize(project.title), path: `/projects/${project.slug}` },
+          ]),
+        ],
+      },
     }
   }
 
@@ -71,8 +117,16 @@ function dynamicSeo(route, localeValue) {
     return {
       title: localize(service.title),
       description: localize(service.short) || staticSeo(route, localeValue).description,
-      image: service.ogImage || '',
+      image: service.ogImage || '/og/services.png',
       type: 'website',
+      structured: {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: localize(service.title),
+        description: localize(service.short),
+        provider: { '@id': PERSON_ID },
+        url: `${SITE_URL}/services/${service.slug}`,
+      },
     }
   }
 
@@ -82,12 +136,33 @@ function dynamicSeo(route, localeValue) {
     return {
       title: localize(entry.title),
       description: localize(entry.description),
-      image: entry.ogImage || '',
+      image: entry.ogImage || `/og/logbook/${entry.slug}.png`,
       type: 'article',
       publishedTime: entry.publishedAt,
       modifiedTime: entry.updatedAt,
       section: localize(entry.category),
       tags: entry.tags || [],
+      structured: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            headline: localize(entry.title),
+            description: localize(entry.description),
+            datePublished: entry.publishedAt,
+            dateModified: entry.updatedAt,
+            author: { '@id': PERSON_ID },
+            mainEntityOfPage: `${SITE_URL}/logbook/${entry.slug}`,
+            image: `${SITE_URL}${entry.ogImage || `/og/logbook/${entry.slug}.png`}`,
+            keywords: entry.tags,
+          },
+          breadcrumb([
+            { name: localeValue === 'tr' ? 'Ana Sayfa' : 'Home', path: '/' },
+            { name: 'Logbook', path: '/logbook' },
+            { name: localize(entry.title), path: `/logbook/${entry.slug}` },
+          ]),
+        ],
+      },
     }
   }
 
@@ -117,6 +192,8 @@ export function applyRouteSeo(route, localeValue = 'tr') {
   setMeta('property', 'og:site_name', SITE_NAME)
   setMeta('property', 'og:locale', localeValue === 'tr' ? 'tr_TR' : 'en_US')
   setMeta('property', 'og:image', absoluteImage)
+  setMeta('property', 'og:image:width', absoluteImage ? '1200' : '')
+  setMeta('property', 'og:image:height', absoluteImage ? '630' : '')
   setMeta('name', 'twitter:card', absoluteImage ? 'summary_large_image' : 'summary')
   setMeta('name', 'twitter:title', title)
   setMeta('name', 'twitter:description', record.description)
@@ -126,5 +203,6 @@ export function applyRouteSeo(route, localeValue = 'tr') {
   setMeta('property', 'article:section', record.section || '')
   if (record.type === 'article') addArticleTags(record.tags)
   else clearArticleTags()
+  setStructuredData(record.structured || null)
   setCanonical(canonical)
 }
