@@ -15,9 +15,6 @@ import { computed } from 'vue'
 import {
   ArrowRight,
   ExternalLink,
-  Github,
-  Instagram,
-  Linkedin,
   Mail,
   Moon,
   ShieldCheck,
@@ -35,9 +32,6 @@ const props = defineProps({
 const icons = {
   arrowRight: ArrowRight,
   externalLink: ExternalLink,
-  github: Github,
-  instagram: Instagram,
-  linkedin: Linkedin,
   mail: Mail,
   moon: Moon,
   shieldCheck: ShieldCheck,
