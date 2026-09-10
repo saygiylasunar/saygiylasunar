@@ -1,7 +1,10 @@
 import { createApp } from 'vue'
+import { MotionPlugin } from 'motion-v'
+import '@fontsource-variable/inter/wght.css'
 import App from './App.vue'
 import router from './router/index.js'
 import './styles/global.css'
+import './styles/foundation.css'
 import './styles/additions.css'
 import './styles/phase2.css'
 import './styles/tools.css'
@@ -50,5 +53,6 @@ app.directive('reveal', {
   },
 })
 
+app.use(MotionPlugin)
 app.use(router)
 app.mount('#app')
