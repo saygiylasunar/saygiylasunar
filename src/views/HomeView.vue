@@ -1,5 +1,5 @@
 <template>
-  <div class="page-view home-view">
+  <div ref="pageRef" class="page-view home-view">
     <section class="hero-section">
       <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
       <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
@@ -121,12 +121,16 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import ServiceCard from '../components/ServiceCard.vue'
 import ProjectCard from '../components/ProjectCard.vue'
+import { createGsapContext, gsap, motion } from '../lib/animation.js'
 import { experience, projects, services, site } from '../lib/content.js'
 import { localize, t } from '../lib/locale.js'
+
+const pageRef = ref(null)
+let heroMotionContext = null
 
 const featuredProjects = projects.filter((project) => project.featured)
 const experiencePreview = [
@@ -137,4 +141,62 @@ const experiencePreview = [
 const projectMailHref = computed(() =>
   `mailto:${site.brand.email}?subject=${encodeURIComponent(t('contact.mailSubject'))}`,
 )
+
+onMounted(async () => {
+  await nextTick()
+
+  heroMotionContext = createGsapContext(pageRef.value, () => {
+    const timeline = gsap.timeline({ defaults: { ease: motion.ease.emphasized } })
+
+    timeline
+      .from('.hero-copy .eyebrow', {
+        autoAlpha: 0,
+        y: motion.distance.subtle,
+        duration: motion.duration.base,
+      })
+      .from(
+        '.hero-copy h1',
+        {
+          autoAlpha: 0,
+          y: motion.distance.strong,
+          duration: motion.duration.slow,
+        },
+        '-=0.18',
+      )
+      .from(
+        '.hero-intro',
+        {
+          autoAlpha: 0,
+          y: motion.distance.base,
+          duration: 0.52,
+        },
+        '-=0.42',
+      )
+      .from(
+        '.hero-actions .button',
+        {
+          autoAlpha: 0,
+          y: motion.distance.subtle,
+          duration: 0.38,
+          stagger: 0.08,
+        },
+        '-=0.26',
+      )
+      .from(
+        '.identity-panel',
+        {
+          autoAlpha: 0,
+          y: motion.distance.base,
+          scale: 0.985,
+          duration: 0.68,
+        },
+        '-=0.54',
+      )
+  })
+})
+
+onUnmounted(() => {
+  heroMotionContext?.revert()
+  heroMotionContext = null
+})
 </script>

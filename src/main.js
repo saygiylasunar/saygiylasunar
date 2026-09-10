@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import '@fontsource-variable/inter'
 import App from './App.vue'
 import router from './router/index.js'
-import { installAnimationFoundation } from './lib/animation.js'
+import { installAnimationFoundation, revealOnScroll } from './lib/animation.js'
 import './styles/foundation.css'
 import './styles/global.css'
 import './styles/additions.css'
@@ -19,40 +19,23 @@ import './styles/lands-density.css'
 import './styles/lands-mobile.css'
 import './styles/music.css'
 
+installAnimationFoundation()
+
 const app = createApp(App)
-const revealObservers = new WeakMap()
+const revealAnimations = new WeakMap()
 
 app.directive('reveal', {
   mounted(element) {
-    element.classList.add('reveal')
-
-    if (
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
-      !('IntersectionObserver' in window)
-    ) {
-      element.classList.add('is-visible')
-      return
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return
-        element.classList.add('is-visible')
-        observer.disconnect()
-        revealObservers.delete(element)
-      },
-      { threshold: 0.08, rootMargin: '0px 0px -5% 0px' },
-    )
-
-    revealObservers.set(element, observer)
-    window.requestAnimationFrame(() => observer.observe(element))
+    const animation = revealOnScroll(element)
+    if (animation) revealAnimations.set(element, animation)
   },
   unmounted(element) {
-    revealObservers.get(element)?.disconnect()
-    revealObservers.delete(element)
+    const animation = revealAnimations.get(element)
+    animation?.scrollTrigger?.kill()
+    animation?.kill()
+    revealAnimations.delete(element)
   },
 })
 
-installAnimationFoundation()
 app.use(router)
 app.mount('#app')
