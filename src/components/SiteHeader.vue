@@ -42,7 +42,7 @@
             {{ locale === 'tr' ? 'EN' : 'TR' }}
           </button>
           <button class="icon-button" type="button" :aria-label="themeLabel" @click="toggleTheme">
-            {{ theme === 'dark' ? '☀' : '◐' }}
+            <AppIcon :name="theme === 'dark' ? 'sun' : 'moon'" />
           </button>
         </div>
       </nav>
@@ -53,6 +53,7 @@
 <script setup>
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import AppIcon from './AppIcon.vue'
 import { site } from '../lib/content.js'
 import { locale, setLocale, t } from '../lib/locale.js'
 
