@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - refresh/portfolio-v2
+      - revamp/portfolio-v4
   pull_request:
     branches:
       - main
