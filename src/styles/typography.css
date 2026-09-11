@@ -1,0 +1,153 @@
+/* V4 typography roles
+   Core stays readable; cult/display faces are accents, not a costume. */
+
+:root,
+body {
+  font-family: var(--font-ui);
+}
+
+h1,
+h2,
+h3,
+.brand-mark,
+.identity-code {
+  font-family: var(--font-display);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.025em;
+}
+
+.eyebrow,
+.site-nav,
+.button,
+.text-link,
+.back-link {
+  font-family: var(--font-ui);
+}
+
+/* Quotes: deliberately lighter and stranger than the interface. */
+blockquote,
+.quote,
+.pull-quote,
+[data-type-role='quote'] {
+  font-family: var(--font-quote);
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+
+blockquote,
+.pull-quote {
+  font-size: clamp(1.35rem, 2.6vw, 2.4rem);
+  line-height: 1.35;
+}
+
+/* Future blog/feed surface. Jura is readable but keeps the technical/editorial voice. */
+.blog-view,
+.blog-article,
+.article-prose,
+[data-type-role='editorial'] {
+  font-family: var(--font-editorial);
+  font-weight: 430;
+}
+
+.blog-view h1,
+.blog-view h2,
+.blog-view h3,
+.blog-article h1,
+.blog-article h2,
+.blog-article h3,
+.article-prose h1,
+.article-prose h2,
+.article-prose h3 {
+  font-family: var(--font-display);
+}
+
+/* ÖGG: purpose-built, squared and operational. */
+.ogg-view,
+.ogg-view button,
+.ogg-view input {
+  font-family: var(--font-security);
+  font-weight: 500;
+}
+
+.ogg-view h1,
+.ogg-view h2,
+.ogg-view h3,
+.ogg-view .ogg-summary strong,
+.ogg-view .ogg-date-block strong,
+.ogg-view .ogg-time-column strong {
+  font-family: var(--font-security);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Experience / CV: compact enough to scan, still personal. */
+.experience-view,
+.experience-view .resume-nav {
+  font-family: var(--font-experience);
+  font-weight: 400;
+}
+
+.experience-view h1,
+.experience-view h2,
+.experience-view h3,
+.experience-view .timeline-period,
+.experience-view .timeline-item > div > strong {
+  font-family: var(--font-experience);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.experience-view .timeline-item p {
+  font-size: 1.04rem;
+}
+
+/* Music gets a record-sleeve display face while prose remains Exo 2. */
+.music-view {
+  font-family: var(--font-ui);
+}
+
+.music-view h1,
+.music-view h2,
+.music-view .music-identity strong,
+.music-view .music-platform-card > strong,
+.music-view .music-release-list > article > strong {
+  font-family: var(--font-music);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Tool index: technical console identity without touching individual tool ergonomics. */
+.tools-view {
+  font-family: var(--font-tools);
+}
+
+.tools-view h1,
+.tools-view h2,
+.tools-view h3,
+.tools-view .tool-card-index {
+  font-family: var(--font-tools);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+/* Opt-in display palette for later cards, banners, blog covers and easter eggs. */
+.font-exo-2 { font-family: var(--font-ui) !important; }
+.font-oxanium { font-family: var(--font-display) !important; }
+.font-jura { font-family: var(--font-editorial) !important; }
+.font-text-me-one { font-family: var(--font-quote) !important; }
+.font-tektur { font-family: var(--font-security) !important; }
+.font-saira-condensed { font-family: var(--font-experience) !important; }
+.font-chakra-petch { font-family: var(--font-tools) !important; }
+.font-audiowide { font-family: var(--font-music) !important; }
+.font-rajdhani { font-family: var(--font-condensed) !important; }
+.font-black-ops { font-family: var(--font-stencil) !important; }
+.font-saira-stencil { font-family: var(--font-stencil-alt) !important; }
+.font-russo { font-family: var(--font-retro) !important; }
+.font-michroma { font-family: var(--font-scifi) !important; }
+.font-bruno-ace { font-family: var(--font-scifi-alt) !important; }
+.font-bungee { font-family: var(--font-playful) !important; }
+.font-stint { font-family: var(--font-weird) !important; }
