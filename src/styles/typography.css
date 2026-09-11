@@ -6,10 +6,6 @@ body {
   font-family: var(--font-ui);
 }
 
-body {
-  font-variation-settings: "wght" 430;
-}
-
 h1,
 h2,
 h3,
@@ -54,7 +50,7 @@ blockquote,
 .article-prose,
 [data-type-role='editorial'] {
   font-family: var(--font-editorial);
-  font-variation-settings: "wght" 430;
+  font-weight: 430;
 }
 
 .blog-view h1,
@@ -74,7 +70,7 @@ blockquote,
 .ogg-view button,
 .ogg-view input {
   font-family: var(--font-security);
-  font-variation-settings: "wght" 500;
+  font-weight: 500;
 }
 
 .ogg-view h1,
@@ -84,7 +80,7 @@ blockquote,
 .ogg-view .ogg-date-block strong,
 .ogg-view .ogg-time-column strong {
   font-family: var(--font-security);
-  font-variation-settings: "wght" 700;
+  font-weight: 700;
   letter-spacing: -0.015em;
 }
 
