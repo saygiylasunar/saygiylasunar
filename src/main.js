@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import '@fontsource-variable/inter'
+import './styles/typefaces.js'
 import App from './App.vue'
 import router from './router/index.js'
 import { installAnimationFoundation, revealOnScroll } from './lib/animation.js'
@@ -18,6 +18,7 @@ import './styles/palette-purple.css'
 import './styles/lands-density.css'
 import './styles/lands-mobile.css'
 import './styles/music.css'
+import './styles/typography.css'
 
 installAnimationFoundation()
 
