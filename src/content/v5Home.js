@@ -1,0 +1,56 @@
+export const v5HeroCopy = {
+  tr: {
+    authorKicker: '01 / Yazar ve üretici',
+    orientation: 'Yazılım, sistemler, arayüzler, güvenlik ve arada tuhaf şeyler üretiyorum.',
+    archive: 'İş / Arşiv',
+    contact: 'İletişim',
+    current: 'EF / Güncel',
+    currentRows: [
+      ['ÇALIŞIYOR', 'Portfolio V5'],
+      ['GELİŞTİRİYOR', 'EFSS PDE'],
+      ['ALAN', 'Security / Operations'],
+      ['YAN AKIŞ', 'Music / Visual Work'],
+    ],
+    active: '2026 / Aktif',
+    consoleTitle: 'Çalışma yüzeyi',
+    consoleSub: 'Bu site bitmiş bir vitrin değil; devam eden işlerin, kayıtların ve deneylerin yaşayan indeksi.',
+    threads: 'Aktif izler',
+    lastUpdated: 'V5 / prototip',
+    artifactKicker: 'Artifact / 01',
+    artifactTitle: 'EFSS PDE',
+    artifactText: 'Palette extraction, downscale ve pixel discipline üzerine çalışan bir araç setinden görsel çalışma fragmanı.',
+    input: 'INPUT',
+    process: 'PALETTE / DOWNSCALE',
+    output: 'DISCIPLINED OUTPUT',
+    prototype: 'V5 / HERO LAB',
+  },
+  en: {
+    authorKicker: '01 / Author and maker',
+    orientation: 'I build software, systems, interfaces, security work and the occasional strange thing.',
+    archive: 'Work / Archive',
+    contact: 'Contact',
+    current: 'EF / Current',
+    currentRows: [
+      ['WORKING ON', 'Portfolio V5'],
+      ['BUILDING', 'EFSS PDE'],
+      ['FIELD', 'Security / Operations'],
+      ['SIDE THREAD', 'Music / Visual Work'],
+    ],
+    active: '2026 / Active',
+    consoleTitle: 'Working surface',
+    consoleSub: 'This site is not a finished showcase; it is a living index of ongoing work, records and experiments.',
+    threads: 'Active threads',
+    lastUpdated: 'V5 / prototype',
+    artifactKicker: 'Artifact / 01',
+    artifactTitle: 'EFSS PDE',
+    artifactText: 'A visual study fragment from tooling around palette extraction, downscale and pixel discipline.',
+    input: 'INPUT',
+    process: 'PALETTE / DOWNSCALE',
+    output: 'DISCIPLINED OUTPUT',
+    prototype: 'V5 / HERO LAB',
+  },
+}
+
+export function getV5HeroCopy(locale) {
+  return v5HeroCopy[locale] ?? v5HeroCopy.tr
+}
