@@ -48,6 +48,28 @@ Turkish support remains mandatory:
 
 Motion starts from a scene or interaction requirement. The implementation library comes afterwards. Scroll effects, timelines and micro-interactions must support hierarchy and character rather than advertise the animation engine.
 
+## Creative framework pocket
+
+V5 intentionally keeps a broad **research palette** without installing every candidate into the production bundle.
+
+The source of truth is `src/config/creativeStack.js`. It groups tools by the problem they solve so framework variety stays useful instead of becoming dependency collection for its own sake.
+
+Current pocket includes:
+
+- native View Transition API, Web Animations API and Web Audio API,
+- GSAP, Motion for Vue, Anime.js and Theatre.js for different motion-authoring models,
+- Pts.js, p5.js, Two.js, Paper.js and canvas-sketch for math/vector/generative work,
+- PixiJS for GPU-assisted 2D/pixel scenes,
+- ralph-gpu for small experimental WebGPU/WGSL work,
+- Three.js/TSL, OGL and regl for increasingly explicit GPU/shader work,
+- Hydra for music/live-visual experiments,
+- Lenis only when scroll synchronization genuinely needs it,
+- Rive for deliberately authored reusable vector/state-machine animation.
+
+**Catalogued does not mean installed.** A candidate enters `package.json` only when a real V5 scene has selected it.
+
+The Home prototype contains a deliberately small `LAB / GENERATIVE SYSTEMS` strip. Its first animation is native Canvas driven by a loop plus `sin`/`cos`; it proves the visual idea before a framework is chosen.
+
 ## Working sequence
 
 1. Audit what already feels right in the current site.
