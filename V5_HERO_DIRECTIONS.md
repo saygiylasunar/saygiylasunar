@@ -4,6 +4,8 @@ These directions use the **same information** on purpose. The goal is to compare
 
 None of them is the final design. Do not merge their strongest gimmicks into one direction before testing them separately.
 
+The V5 environment switcher is a **separate test axis**. Paper / Night / Garden / Field must be evaluated independently from A / B / C, so a strong palette cannot disguise a weak composition and a strong composition is not rejected merely because one palette fails.
+
 ---
 
 ## Shared content for all three prototypes
