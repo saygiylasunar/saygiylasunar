@@ -97,10 +97,10 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import ServiceCard from '../components/ServiceCard.vue'
 import ProjectCard from '../components/ProjectCard.vue'
+import ServiceCard from '../components/ServiceCard.vue'
 import V5CreativeLabStrip from '../components/V5CreativeLabStrip.vue'
 import V5HeroLab from '../components/V5HeroLab.vue'
 import { experience, projects, services, site } from '../lib/content.js'
@@ -115,4 +115,12 @@ const experiencePreview = [
 const projectMailHref = computed(() =>
   `mailto:${site.brand.email}?subject=${encodeURIComponent(t('contact.mailSubject'))}`,
 )
+
+onMounted(() => {
+  document.documentElement.dataset.v5Page = 'home'
+})
+
+onUnmounted(() => {
+  delete document.documentElement.dataset.v5Page
+})
 </script>
