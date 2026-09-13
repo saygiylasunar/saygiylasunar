@@ -1,0 +1,81 @@
+.v5-hero-lab::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+:root[data-v5-environment='paper'] .v5-hero-lab::after {
+  background:
+    linear-gradient(90deg, transparent 0 48%, color-mix(in srgb, var(--v5-secondary) 20%, transparent) 48% 48.35%, transparent 48.35%),
+    linear-gradient(0deg, transparent 0 67%, color-mix(in srgb, var(--v5-accent) 18%, transparent) 67% 67.45%, transparent 67.45%);
+  opacity: 0.35;
+  animation: v5-paper-registration 8s steps(1, end) infinite;
+}
+
+:root[data-v5-environment='night'] .v5-hero-lab::after {
+  background:
+    linear-gradient(180deg, transparent 0 38%, color-mix(in srgb, var(--v5-accent) 20%, transparent) 48%, transparent 58%),
+    repeating-linear-gradient(90deg, transparent 0 72px, color-mix(in srgb, var(--v5-secondary) 6%, transparent) 73px 74px, transparent 75px 146px);
+  opacity: 0.42;
+  animation: v5-night-scan 7.5s linear infinite;
+}
+
+:root[data-v5-environment='garden'] .v5-hero-lab::after {
+  inset: -12%;
+  background:
+    radial-gradient(ellipse at 24% 68%, color-mix(in srgb, var(--v5-accent) 18%, transparent) 0 5%, transparent 22%),
+    radial-gradient(ellipse at 80% 24%, color-mix(in srgb, var(--v5-secondary) 16%, transparent) 0 7%, transparent 24%),
+    radial-gradient(ellipse at 62% 78%, color-mix(in srgb, var(--v5-third) 22%, transparent) 0 4%, transparent 20%);
+  opacity: 0.62;
+  transform-origin: center;
+  animation: v5-garden-breathe 10s ease-in-out infinite alternate;
+}
+
+:root[data-v5-environment='field'] .v5-hero-lab::after {
+  background:
+    linear-gradient(90deg, transparent 0 calc(50% - 0.5px), color-mix(in srgb, var(--v5-secondary) 20%, transparent) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent 0 calc(50% - 0.5px), color-mix(in srgb, var(--v5-accent) 18%, transparent) 50%, transparent calc(50% + 0.5px));
+  background-size: 180px 180px;
+  opacity: 0.24;
+  animation: v5-field-coordinate 12s linear infinite;
+}
+
+.v5-lab-switcher,
+.v5-stage {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes v5-paper-registration {
+  0%, 18%, 100% { transform: translate(0, 0); }
+  19%, 21% { transform: translate(2px, -1px); }
+  22%, 47% { transform: translate(0, 0); }
+  48%, 50% { transform: translate(-1px, 1px); }
+  51%, 78% { transform: translate(0, 0); }
+  79%, 81% { transform: translate(1px, 0); }
+}
+
+@keyframes v5-night-scan {
+  from { transform: translateY(-48%); }
+  to { transform: translateY(48%); }
+}
+
+@keyframes v5-garden-breathe {
+  from { transform: scale(0.96) rotate(-0.8deg); }
+  to { transform: scale(1.035) rotate(0.9deg); }
+}
+
+@keyframes v5-field-coordinate {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 180px 0, 0 180px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-v5-environment] .v5-hero-lab::after {
+    animation: none;
+  }
+}

@@ -18,6 +18,7 @@ import './styles/palette-purple.css'
 import './styles/lands-density.css'
 import './styles/lands-mobile.css'
 import './styles/music.css'
+import './styles/v5-environment-motion.css'
 
 installAnimationFoundation()
 

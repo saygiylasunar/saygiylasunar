@@ -41,7 +41,13 @@
           >
             {{ locale === 'tr' ? 'EN' : 'TR' }}
           </button>
-          <button class="icon-button" type="button" :aria-label="themeLabel" @click="toggleTheme">
+          <button
+            v-if="route.path !== '/'"
+            class="icon-button"
+            type="button"
+            :aria-label="themeLabel"
+            @click="toggleTheme"
+          >
             <AppIcon :name="theme === 'dark' ? 'sun' : 'moon'" />
           </button>
         </div>
