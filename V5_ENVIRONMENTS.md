@@ -119,6 +119,13 @@ The small generative LAB now changes **algorithm**, not only color:
 - Garden grows branching structures,
 - Field draws bearings, range rings and coordinate locks.
 
-`src/styles/v5-environment-motion.css` adds a second, deliberately quiet ambient layer to the hero for each environment. The Canvas experiment and ambient layer remain native so the environment experiment adds no new runtime dependency.
+`src/styles/v5-environment-motion.css` adds a second, deliberately quiet ambient layer to the hero for each environment:
+
+- Paper occasionally shifts registration by one or two pixels,
+- Night sweeps a transmission band,
+- Garden slowly breathes its procedural color fields,
+- Field moves coordinate references through the page plane.
+
+Both layers respect `prefers-reduced-motion`. The Canvas experiment and ambient layer remain native so the environment experiment adds no new runtime dependency.
 
 The goal is not “four themes.” The goal is one authored site that can inhabit four believable visual conditions.
