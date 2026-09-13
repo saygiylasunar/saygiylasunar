@@ -53,9 +53,11 @@ function draw(time = 0) {
   context.setTransform(dpr, 0, 0, dpr, 0, 0)
   context.clearRect(0, 0, rect.width, rect.height)
 
-  const styles = getComputedStyle(document.documentElement)
+  const styles = getComputedStyle(canvas)
   const text = styles.getPropertyValue('--text').trim() || '#121417'
   const accent = styles.getPropertyValue('--accent').trim() || '#dd4b2f'
+  const secondary = styles.getPropertyValue('--v5-secondary').trim() || accent
+  const third = styles.getPropertyValue('--v5-third').trim() || accent
   const width = rect.width
   const height = rect.height
   const centerX = width * 0.5
@@ -78,9 +80,9 @@ function draw(time = 0) {
     })
   }
 
-  context.strokeStyle = text
+  context.strokeStyle = secondary
   context.lineWidth = 0.7
-  context.globalAlpha = 0.17
+  context.globalAlpha = 0.18
 
   for (let index = 0; index < points.length; index += 1) {
     const point = points[index]
@@ -100,14 +102,21 @@ function draw(time = 0) {
     context.fill()
   })
 
-  const activePoint = points[Math.floor((phase * 4) % points.length)] || points[0]
-  if (activePoint) {
-    context.globalAlpha = 0.9
-    context.fillStyle = accent
+  const activeIndex = Math.floor((phase * 4) % points.length)
+  const highlights = [
+    { point: points[activeIndex], color: accent, radius: 2.7 },
+    { point: points[(activeIndex + 11) % points.length], color: secondary, radius: 2.25 },
+    { point: points[(activeIndex + 22) % points.length], color: third, radius: 2.1 },
+  ]
+
+  highlights.forEach(({ point, color, radius }) => {
+    if (!point) return
+    context.globalAlpha = 0.92
+    context.fillStyle = color
     context.beginPath()
-    context.arc(activePoint.x, activePoint.y, 2.6, 0, Math.PI * 2)
+    context.arc(point.x, point.y, radius, 0, Math.PI * 2)
     context.fill()
-  }
+  })
 
   context.globalAlpha = 1
 
@@ -155,7 +164,6 @@ onUnmounted(() => {
 .v5-creative-lab {
   border-top: 1px solid var(--line-strong);
   border-bottom: 1px solid var(--line-strong);
-  background: color-mix(in srgb, var(--bg-soft) 58%, var(--bg));
 }
 
 .v5-creative-lab-inner {
