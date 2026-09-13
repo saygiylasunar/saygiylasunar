@@ -1,8 +1,9 @@
 <template>
-  <section class="v5-hero-lab" :data-direction="direction">
+  <section class="v5-hero-lab" :data-direction="direction" :data-environment="v5Environment">
     <div class="container v5-lab-switcher" aria-label="V5 hero direction prototype">
       <span>{{ copy.prototype }}</span>
-      <div>
+
+      <div class="v5-direction-switcher">
         <button
           v-for="option in directions"
           :key="option.id"
@@ -13,6 +14,21 @@
         >
           <b>{{ option.id }}</b>
           <span>{{ option.label }}</span>
+        </button>
+      </div>
+
+      <div class="v5-environment-switcher" aria-label="V5 visual environment">
+        <button
+          v-for="environment in v5Environments"
+          :key="environment.id"
+          type="button"
+          :class="{ 'is-active': v5Environment === environment.id }"
+          :aria-pressed="v5Environment === environment.id"
+          :title="environment.name"
+          @click="setV5Environment(environment.id)"
+        >
+          <i class="v5-env-swatch" :style="{ '--env-swatch': environment.swatch }" aria-hidden="true"></i>
+          <span>{{ environment.label[locale] }}</span>
         </button>
       </div>
     </div>
@@ -140,9 +156,10 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
 import { RouterLink } from 'vue-router'
+import { getV5HeroCopy } from '../content/v5Home.js'
 import { site } from '../lib/content.js'
 import { locale } from '../lib/locale.js'
-import { getV5HeroCopy } from '../content/v5Home.js'
+import { setV5Environment, v5Environment, v5Environments } from '../lib/v5Environment.js'
 
 const props = defineProps({
   projectMailHref: {
@@ -167,4 +184,5 @@ const outputPixels = [4, 5, 11, 12, 13, 18, 19, 20, 21, 27, 28, 29, 35, 36, 37, 
 watch(direction, (value) => localStorage.setItem('v5-hero-direction', value))
 </script>
 
+<style src="../styles/v5-environments.css"></style>
 <style scoped src="../styles/v5-hero-lab.css"></style>
