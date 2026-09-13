@@ -1,6 +1,7 @@
 <template>
   <div class="page-view home-view">
     <V5HeroLab :project-mail-href="projectMailHref" />
+    <V5CreativeLabStrip />
 
     <section class="section" id="services">
       <div class="container">
@@ -100,6 +101,7 @@ import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import ServiceCard from '../components/ServiceCard.vue'
 import ProjectCard from '../components/ProjectCard.vue'
+import V5CreativeLabStrip from '../components/V5CreativeLabStrip.vue'
 import V5HeroLab from '../components/V5HeroLab.vue'
 import { experience, projects, services, site } from '../lib/content.js'
 import { localize, t } from '../lib/locale.js'
