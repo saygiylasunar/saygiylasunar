@@ -113,7 +113,13 @@
     linear-gradient(0deg, rgba(25, 33, 29, 0.045) 1px, transparent 1px);
 }
 
-.home-view {
+/*
+ * Home has exactly one color owner: the selected V5 environment.
+ * The selector intentionally outranks both the global light/dark theme and
+ * palette-purple.css so those systems cannot partially bleed into Home.
+ */
+:root[data-v5-page='home'][data-v5-environment] {
+  color-scheme: light;
   --bg: var(--v5-bg);
   --bg-soft: var(--v5-bg-soft);
   --surface: var(--v5-surface);
@@ -126,6 +132,14 @@
   --accent-soft: color-mix(in srgb, var(--v5-accent) 13%, transparent);
   --dark: var(--v5-dark);
   --dark-text: var(--v5-dark-text);
+  --shadow: 0 24px 80px color-mix(in srgb, var(--v5-ink) 11%, transparent);
+}
+
+:root[data-v5-page='home'][data-v5-environment='night'] {
+  color-scheme: dark;
+}
+
+.home-view {
   background: var(--bg);
   transition: background-color 260ms ease, color 260ms ease;
 }
