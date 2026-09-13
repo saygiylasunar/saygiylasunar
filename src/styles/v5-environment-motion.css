@@ -44,6 +44,12 @@
   animation: v5-field-coordinate 12s linear infinite;
 }
 
+.v5-lab-switcher,
+.v5-stage {
+  position: relative;
+  z-index: 1;
+}
+
 @keyframes v5-paper-registration {
   0%, 18%, 100% { transform: translate(0, 0); }
   19%, 21% { transform: translate(2px, -1px); }
