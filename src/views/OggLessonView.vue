@@ -61,6 +61,18 @@
             <h2>{{ category.title }}</h2>
           </header>
           <div class="prose" v-html="category.html"></div>
+
+          <div v-if="category.examNotes?.length" class="exam-note-stack">
+            <article v-for="(note,noteIndex) in category.examNotes" :key="`${category.id}-exam-${noteIndex}`" class="exam-note">
+              <p class="tech-label">{{ note.label }}</p>
+              <blockquote>{{ note.wording }}</blockquote>
+              <div class="exam-note-academic">
+                <strong>Güncel / akademik karşılığı</strong>
+                <p>{{ note.academic }}</p>
+              </div>
+            </article>
+          </div>
+
           <a class="category-top" href="#top">↑ Ders başına dön</a>
         </section>
 
@@ -166,6 +178,12 @@ function formatDate(value){
 .prose :deep(.editorial-warning) { margin:20px 0; padding:14px 16px; border-left:3px solid #b78638; border-radius:0 10px 10px 0; background:color-mix(in srgb,#b78638 8%,transparent); }\n.prose :deep(.ogg-image-transcript) { display:grid; gap:4px; margin:20px 0; padding:14px; border:1px dashed var(--line-strong); border-radius:12px; background:var(--bg-soft); }
 .prose :deep(.ogg-image-transcript b) { color:var(--accent); font-family:var(--tech); font-size:.72rem; }
 .prose :deep(.ogg-image-transcript span) { color:var(--muted); font-size:.76rem; }
+.exam-note-stack { display:grid; gap:12px; margin:22px 0 0; }
+.exam-note { padding:16px; border:1px solid color-mix(in srgb,#b78638 48%,var(--line)); border-radius:14px; background:color-mix(in srgb,#b78638 7%,var(--surface-solid)); }
+.exam-note blockquote { margin:10px 0 0; padding:12px 14px; border-left:3px solid #b78638; background:color-mix(in srgb,#b78638 6%,transparent); font-weight:720; line-height:1.55; }
+.exam-note-academic { margin-top:12px; padding-top:12px; border-top:1px solid color-mix(in srgb,#b78638 24%,var(--line)); }
+.exam-note-academic strong { display:block; margin-bottom:5px; color:var(--muted); font-family:var(--tech); font-size:.64rem; letter-spacing:.06em; text-transform:uppercase; }
+.exam-note-academic p { margin:0; color:var(--muted); font-size:.82rem; line-height:1.62; }
 .category-top { display:inline-flex; margin-top:18px; color:var(--muted); font-size:.7rem; text-decoration:none; }
 .lesson-references { margin-bottom:18px; padding:22px; border:1px solid var(--line); border-radius:16px; background:var(--surface-solid); }
 .lesson-references h2 { margin:8px 0 16px; font-size:1.35rem; letter-spacing:-.03em; }
