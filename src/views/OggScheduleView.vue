@@ -29,9 +29,9 @@
             <h2>Her ders ayrı, her konu kendi hiyerarşisinde.</h2>
           </div>
           <p>
-            İçerikler Notion’daki kurs notları ve sağlanan PowerPoint ders slaytlarının özetlenmiş hâli değildir.
-            Kaynaklardaki sınav dili korunmuş; başlık yapısı, tekrar eden sunum işaretleri ve okunabilirlik
-            akademik blog düzenine göre yeniden işlenmiştir.
+            İçerikler sınav hazırlığı için ders ve konu hiyerarşisine göre düzenlenmiştir.
+            Sınav terminolojisi korunmuş; güncel veya teknik açıklamalar gerektiği yerde
+            ayrı notlar hâlinde gösterilmiştir.
           </p>
         </header>
 
@@ -61,13 +61,13 @@
       <div class="container editorial-grid">
         <div>
           <p class="tech-label">EDİTORYAL YAPI</p>
-          <h2>Not defteri + kurs slaytı → akademik blog.</h2>
+          <h2>Ders notları → akademik çalışma arşivi.</h2>
         </div>
         <div>
           <p>
-            Düzenleme katmanı dört seviyede ilerliyor:
+            İçerik yapısı dört seviyede ilerler:
             <b>ders → ana konu → alt konu → bilgi / ezber / istisna.</b>
-            Ders sırasında alınmış kısa ifadeler silinmek yerine ilgili kavramın altında korunuyor.
+            Sınavda kullanılan kısa ifadeler ilgili kavramın altında ayrıca korunur.
           </p>
           <p>
             Mevzuata bağlı içeriklerde bu arşiv çalışma kaynağıdır; resmî işlem ve güncel uygulama
