@@ -175,7 +175,26 @@ function formatDate(value){
 .prose :deep(table) { width:100%; border-collapse:collapse; min-width:520px; font-size:.82rem; }
 .prose :deep(th), .prose :deep(td) { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
 .prose :deep(th) { background:var(--bg-soft); font-family:var(--tech); font-size:.7rem; }
-.prose :deep(.editorial-warning) { margin:20px 0; padding:14px 16px; border-left:3px solid #b78638; border-radius:0 10px 10px 0; background:color-mix(in srgb,#b78638 8%,transparent); }\n.prose :deep(.ogg-image-transcript) { display:grid; gap:4px; margin:20px 0; padding:14px; border:1px dashed var(--line-strong); border-radius:12px; background:var(--bg-soft); }
+.prose :deep(.editorial-warning) { margin:20px 0; padding:14px 16px; border-left:3px solid #b78638; border-radius:0 10px 10px 0; background:color-mix(in srgb,#b78638 8%,transparent); }
+.prose :deep(.study-figure) { margin:22px 0; padding:16px; overflow:hidden; border:1px solid var(--line); border-radius:14px; background:var(--bg-soft); }
+.prose :deep(.study-figure>b) { display:block; margin-bottom:12px; color:var(--accent); font-family:var(--tech); font-size:.66rem; letter-spacing:.08em; }
+.prose :deep(.study-flow) { display:flex; align-items:center; gap:8px; overflow-x:auto; padding-bottom:3px; scrollbar-width:thin; }
+.prose :deep(.study-flow span) { min-height:42px; display:flex; align-items:center; flex:0 0 auto; max-width:190px; padding:7px 11px; border:1px solid var(--line); border-radius:10px; background:var(--surface-solid); font-size:.76rem; line-height:1.3; }
+.prose :deep(.study-flow i) { color:var(--accent); font-style:normal; font-weight:800; }
+.prose :deep(.concept-grid) { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.prose :deep(.concept-grid>div) { padding:12px; border:1px solid var(--line); border-radius:10px; background:var(--surface-solid); }
+.prose :deep(.concept-grid strong) { display:block; margin-bottom:4px; color:var(--accent); font-family:var(--tech); font-size:.72rem; }
+.prose :deep(.concept-grid small) { color:var(--muted); font-size:.72rem; line-height:1.45; }
+.prose :deep(.ring-figure) { position:relative; width:min(320px,82vw); aspect-ratio:1; margin:10px auto 0; }
+.prose :deep(.ring-figure .ring) { position:absolute; inset:50%; transform:translate(-50%,-50%); display:grid; place-items:start center; padding-top:11px; border:1px solid var(--line-strong); border-radius:50%; font-family:var(--tech); font-size:.62rem; font-weight:800; }
+.prose :deep(.ring-figure .outer) { width:100%; height:100%; background:color-mix(in srgb,var(--accent) 4%,transparent); }
+.prose :deep(.ring-figure .middle) { width:68%; height:68%; background:var(--bg-soft); }
+.prose :deep(.ring-figure .inner) { width:38%; height:38%; background:var(--surface-solid); }
+.prose :deep(.ring-figure .vip) { position:absolute; inset:50% auto auto 50%; transform:translate(-50%,-50%); z-index:3; padding:7px 9px; border-radius:999px; background:var(--text); color:var(--bg); font-family:var(--tech); font-size:.62rem; font-weight:800; }
+.prose :deep(.vehicle-figure) { display:grid; grid-template-columns:1fr 1.2fr 1fr; gap:8px; align-items:stretch; }
+.prose :deep(.vehicle-figure>div) { min-height:72px; display:grid; place-items:center; padding:10px; border:1px solid var(--line); border-radius:12px; background:var(--surface-solid); text-align:center; font-size:.72rem; line-height:1.4; }
+.prose :deep(.vehicle-figure .main) { border-color:var(--accent); }
+@media(max-width:520px){ .prose :deep(.concept-grid){grid-template-columns:1fr}.prose :deep(.vehicle-figure){grid-template-columns:1fr}.prose :deep(.study-flow){padding-bottom:8px} }\n.prose :deep(.ogg-image-transcript) { display:grid; gap:4px; margin:20px 0; padding:14px; border:1px dashed var(--line-strong); border-radius:12px; background:var(--bg-soft); }
 .prose :deep(.ogg-image-transcript b) { color:var(--accent); font-family:var(--tech); font-size:.72rem; }
 .prose :deep(.ogg-image-transcript span) { color:var(--muted); font-size:.76rem; }
 .exam-note-stack { display:grid; gap:12px; margin:22px 0 0; }
