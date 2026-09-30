@@ -64,7 +64,17 @@ export const oggLessons = [
         "html": "\n<h3>Haftalık çalışma ve fazla çalışma</h3>\n<ul>\n<li>Genel kural olarak haftalık çalışma süresi <strong>45 saat</strong>tir.</li>\n<li>Fazla çalışma ücreti normal saat ücretinin yüzde 50 artırılmış tutarı üzerinden hesaplanır.</li>\n<li>Yıllık fazla çalışma toplamı kural olarak 270 saati aşamaz.</li>\n<li>Ulusal bayram ve genel tatil günlerinde çalışma için İş Kanunundaki ayrıca ücret hükümleri uygulanır.</li>\n</ul>\n<h3>Deneme süresi</h3>\n<p>İş sözleşmesinde deneme süresi en çok iki ay olabilir; toplu iş sözleşmesiyle dört aya kadar uzatılabilir. Deneme süresi sigortasız çalışma dönemi değildir.</p>\n<h3>Yıllık ücretli izin</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Hizmet süresi</th><th>Asgari yıllık izin</th></tr>\n<tr><td>1 yıldan 5 yıla kadar (5 yıl dahil)</td><td>14 gün</td></tr>\n<tr><td>5 yıldan fazla, 15 yıldan az</td><td>20 gün</td></tr>\n<tr><td>15 yıl ve üzeri</td><td>26 gün</td></tr>\n</tbody></table></div>\n<p>18 yaşından küçük ve 50 yaşından büyük işçilere verilecek yıllık ücretli izin süresi 20 günden az olamaz.</p>\n<h3>Ara dinlenmeleri</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Günlük çalışma</th><th>Asgari ara dinlenmesi</th></tr>\n<tr><td>4 saate kadar</td><td>15 dakika</td></tr>\n<tr><td>4 saatten fazla, 7,5 saate kadar</td><td>30 dakika</td></tr>\n<tr><td>7,5 saatten fazla</td><td>60 dakika</td></tr>\n</tbody></table></div>\n<p>Ara dinlenmeleri çalışma süresinden sayılmaz.</p>\n<h3>Gece dönemi ve özel güvenlik istisnası</h3>\n<p>Çalışma hayatında gece dönemi en geç 20.00’de başlayıp en erken 06.00’ya kadar geçen ve her hâlde en fazla 11 saat süren dönemdir. Genel kural işçinin gece çalışmasının 7,5 saati aşmamasıdır.</p>\n<blockquote><strong>ÖGG için önemli istisna:</strong> Turizm, özel güvenlik ve sağlık hizmetlerinde işçinin <strong>yazılı onayı</strong> alınması şartıyla 7,5 saatin üzerinde gece çalışması yaptırılabilir. Ham ders notundaki “gece en fazla 7,5 saat” cümlesi bu nedenle özel güvenlik sektörü açısından tek başına eksiktir.</blockquote>\n"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Faaliyetleri Hakkında",
+        "href": "https://egm.gov.tr/ozelguvenlik/ozel-guvenlik-faaliyetleri-hakkinda"
+      }
+    ]
   },
   {
     "id": "temel-ilk-yardim",
@@ -94,7 +104,17 @@ export const oggLessons = [
         "html": "\n<h3>Otomatik eksternal defibrilatör</h3>\n<p>OED/AED kalp ritmini analiz eden ve gerektiğinde kullanıcıyı şok uygulaması için yönlendiren cihazdır. Cihazın sesli ve görsel komutları takip edilir.</p>\n<ul>\n<li>Pedlerin çıplak ve mümkün olduğunca kuru cilde yapışması gerekir.</li>\n<li>Göğüste kalp pili/implante cihaz çıkıntısı görülüyorsa ped doğrudan cihazın üzerine yerleştirilmez.</li>\n<li>Metal, sıvı, oksijen kaynağı ve elektriksel riskler açısından çevre değerlendirilir.</li>\n<li>Ritim analizi ve şok sırasında kimse hastaya temas etmez.</li>\n</ul>\n<h3>Kurtarma pozisyonu</h3>\n<p>Bilinci kapalı fakat normal soluyan kişide, travma şüphesi ve diğer kontrendikasyonlar değerlendirilerek yan yatış/kurtarma pozisyonu kullanılabilir.</p>\n<h3>Şokta pozisyon</h3>\n<p>Ham notta “sırtüstü, ayaklar havada” şeklinde şok pozisyonu kaydı bulunur. Bu, her yaralıya otomatik uygulanacak bir kural değildir; travma, omurga/kalça/bacak yaralanması, solunum sıkıntısı ve kişinin klinik durumu dikkate alınır. Güncel ilk yardım protokolü esas alınmalıdır.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "Sağlık Bakanlığı · OED",
+        "href": "https://acilafet.saglik.gov.tr/TR-115987/oed.html"
+      },
+      {
+        "label": "Sağlık Bakanlığı · İlk Yardım Eğitim Sunumları",
+        "href": "https://karsism.saglik.gov.tr/TR-328074/ilk-yardim-egitim-sunumlari.html"
+      }
+    ]
   },
   {
     "id": "guvenlik-sistemleri",
@@ -129,7 +149,13 @@ export const oggLessons = [
         "html": "\n<h3>Metal dedektörleri</h3>\n<ul>\n<li>El tipi metal dedektörü,</li>\n<li>Kapı tipi metal dedektörü.</li>\n</ul>\n<p>Dedektörün alarm vermesi yasaklı bir eşyanın kesin olarak bulunduğu anlamına gelmez. <strong>Alarm kaynağı açıklığa kavuşturulmalı</strong>; kontrol görev alanı, mevzuat ve kurum prosedürü içinde sürdürülmelidir.</p>\n<h3>Geçiş kontrol sistemleri</h3>\n<ul>\n<li>Kartlı geçiş kontrol sistemleri,</li>\n<li>Biyometrik doğrulama sistemleri,</li>\n<li>Kapalı devre görüntüleme / kimlik belirleme sistemleri,</li>\n<li>Yetki seviyesine göre çalışan turnike ve kapı kontrol sistemleri.</li>\n</ul>\n<p>Bu sistemlerde erişim yetkisi, log/kayıt yönetimi ve kişisel verilerin korunması birlikte ele alınmalıdır.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
   },
   {
     "id": "silah-bilgisi",
@@ -184,7 +210,17 @@ export const oggLessons = [
         "html": "\n<h3>Revolver</h3>\n<p>Revolver tabancalarda fişekler döner tamburda bulunur; klasik çıkarılabilir şarjör kullanılmaz. Boş kovanların toplu şekilde çıkarılmasında ejector/çıkarıcı yıldız mekanizması görev yapar.</p>\n<p>Ham notta “iğne tertibatı yoktur” ifadesi yer almaktadır; bu evrensel değildir. Revolver tasarımına göre horoza bağlı veya gövdeye yerleştirilmiş ateşleme iğnesi sistemleri bulunabilir.</p>\n<h3>Silahlı yakın koruma notu</h3>\n<p>Ders notunda yakın koruma görevlisinin silah taşıma yetkisinin korunan kişiyle birlikte bulunma ve koruma kararının coğrafi kapsamıyla ilişkili olduğu özellikle vurgulanmıştır. Uygulamada karar metni ve 5188 sayılı mevzuat esas alınır.</p>\n<h3>Ruhsat kavramları</h3>\n<ul><li>Taşıma ruhsatı</li><li>Bulundurma ruhsatı</li></ul>\n<p>Silah ruhsatları yetkili idari makamlar tarafından düzenlenir ve mevzuatta öngörülen sürelerde yenilenir. Özel güvenlik hizmetinde kullanılan görev silahları bakımından ayrıca 5188 sayılı sistemdeki izin, kayıt ve muhafaza hükümleri uygulanır.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Sivil Kullanım Amaçlı Silahlar ve Mevzuat Uygulamaları",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Sivil-Kullanim-Amacli-Silahlar-ve-Mevzuat-Uygulamalari.pdf"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
   },
   {
     "id": "kalabalik-yonetimi",
@@ -249,7 +285,13 @@ export const oggLessons = [
         "html": "\n<h3>Toplantı ve gösteri yürüyüşü hakkı</h3>\n<p>Anayasanın 34’üncü maddesi, herkesin önceden izin almadan silahsız ve saldırısız toplantı ve gösteri yürüyüşü düzenleme hakkını güvence altına alır. 2911 sayılı Kanun; bildirim, yer, güzergâh, zaman, düzenleme kurulu ve kamu düzeniyle ilgili uygulama ayrıntılarını düzenler.</p>\n<p>Ders notunda açık/kapalı toplantıların zaman sınırları, mahallî mülkî amirin toplantı alanlarıyla ilgili rolü, belirli alanlardaki sınırlamalar ve 2911 kapsamı dışındaki bazı toplantı türleri ezber başlıkları olarak yer almıştır. Bu ayrıntılar mevzuat değişikliklerine açık olduğundan güncel 2911 metniyle birlikte çalışılmalıdır.</p>\n<h3>Panik faktörleri</h3>\n<ul><li>Tehlikenin varlığı ve acil algılanması,</li><li>izdiham ve çıkışların yetersizliği,</li><li>takip/taklit davranışı,</li><li>korku ve güvenilir iletişim eksikliği,</li><li>ani fiziksel/kimyasal uyaranlar.</li></ul>\n<h3>Paniği azaltma</h3>\n<p>Doğru bilgi vermek, kaçış yollarını açık tutmak, tek ve anlaşılır iletişim kaynağı oluşturmak, çelişkili emirleri azaltmak ve gerekli kuvveti yalnızca ölçülü biçimde kullanmak temel yaklaşımlardır.</p>\n<h3>Çatışma nedenleri ve çözüm araçları</h3>\n<p>Kaynak paylaşımı, amaç ve algı farklılıkları, görev alanı belirsizliği, iletişim eksikliği, statü/çıkar/kişilik farklılıkları çatışma nedeni olabilir. Problem çözme, uzlaşma, kaçınma, uyma, hakeme başvurma, iletişimi artırma, kaynakları artırma ve yapısal değişiklik çatışma yönetimi araçları arasında sayılmıştır.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
   },
   {
     "id": "kisi-koruma",
@@ -319,7 +361,13 @@ export const oggLessons = [
         "html": "\n<p>Koruma planında korunan kişinin kişisel araç tercihi, konforu veya alışkanlığı güvenlik değerlendirmesinin yerine geçmez. Öncelik; tehdidin azaltılması, güvenli hareket, alternatif plan, sağlık/acil durum erişimi ve ekip koordinasyonudur.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görsel 2</b><span>Notion’da kişi koruma/araç düzenine ilişkin ikinci bir ders görseli bulunuyor. Görselin içerikteki yeri korunmuştur.</span></div>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
   },
   {
     "id": "yangin-guvenligi",
@@ -389,7 +437,13 @@ export const oggLessons = [
         "html": "\n<h3>Temel parçalar</h3>\n<ul><li>Gövde,</li><li>manometre (basınç göstergesi bulunan modellerde),</li><li>emniyet pimi,</li><li>tetik/kol mekanizması,</li><li>hortum,</li><li>lans/nozul.</li></ul>\n<p>ABC kuru kimyevi tozlu söndürücülerde monoamonyum fosfat (MAP) yaygın söndürme bileşenlerinden biridir. Basınçlandırmada azot gibi inert gazlar kullanılabilir.</p>\n<h3>Kontrol</h3>\n<p>Manometreli cihazlarda ibrenin üreticinin normal çalışma aralığında olması gerekir. Mühür/pim, hortum, gövde ve son bakım tarihi düzenli kontrol edilir.</p>\n<h3>Kullanım prensibi</h3>\n<p>Kullanıcı güvenli kaçış yolunu arkasında tutar, rüzgârı ve yangın sınıfını değerlendirir, güvenli mesafeden alevin değil <strong>yanan yüzey/kaynağın tabanına</strong> yönelir ve süpürme hareketiyle müdahale eder. Yangın büyümüşse veya duman/ısı güvenli yaklaşımı engelliyorsa tahliye ve profesyonel itfaiye müdahalesi önceliklidir.</p>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Ham nottaki “90 cm montaj yüksekliği” ve “4 yıl geçerlilik” ifadeleri tüm söndürücüler için evrensel kural olarak yayımlanmadı; yerleşim, periyodik kontrol ve dolum süreleri yürürlükteki yönetmelik/standart ve üretici talimatına göre belirlenir.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "İstanbul İtfaiyesi · Yangın Güvenliği Terminolojisi / TS EN 2",
+        "href": "https://itfaiye.ibb.gov.tr/tr/terminoloji.html"
+      }
+    ]
   },
   {
     "id": "guvenlik-tedbirleri",
@@ -439,7 +493,13 @@ export const oggLessons = [
         "html": "\n<p>Dersin “Ş.Ü.P.H.E.” başlığında kullanılan temel cümle: <strong>“Bulunmaması gereken yerde bulunan her şey şüphelidir.”</strong></p>\n<p>Bu ifade otomatik suç şüphesi üretmek için değil, görevlinin çevredeki olağandışı değişiklikleri fark etmesini sağlayan durumsal farkındalık ezberidir. Şüphe; nesnel gözlem, bağlam ve davranışla desteklenmeli; kişilerin kimliği veya önyargıya dayalı varsayımlarla karıştırılmamalıdır.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
   },
   {
     "id": "genel-kolluk",
@@ -514,7 +574,21 @@ export const oggLessons = [
         "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Kavram</th><th>Karşılığı</th></tr>\n<tr><td>ÖGNET</td><td>Özel Güvenlik Bilgi Sistemi Otomasyonu</td></tr>\n<tr><td>PATBİS</td><td>Patlayıcı Maddeler ve Silah Bilgi Sistemi</td></tr>\n<tr><td>ASİP</td><td>Ateşli Silahlar Projesi</td></tr>\n<tr><td>KAAN</td><td>Genel Kolluk – Özel Güvenlik İşbirliği ve Entegrasyonu</td></tr>\n<tr><td>ÖZGE</td><td>Özel Güvenlik Eğitimlerinin Geliştirilmesi / Alan-Branş Eğitimleri</td></tr>\n<tr><td>SEP</td><td>Sürekli Eğitim Projesi</td></tr>\n<tr><td>ÖGYS</td><td>Özel Güvenlik Yoklama Sistemi</td></tr>\n</tbody></table></div>\n<p>Dersin kısa ezber haritası:</p>\n<blockquote><strong>ÖG – DEN – SIN – SİL – PAT – KAAN – ÖZGE</strong><br>Özel güvenlik → denetim → sınav → silah → patlayıcı → kolluk işbirliği → eğitim.</blockquote>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Denetleme Başkanlığı Hakkımızda",
+        "href": "https://egm.gov.tr/ozelguvenlik/hakkimizda"
+      },
+      {
+        "label": "EGM · PATBİS",
+        "href": "https://www.egm.gov.tr/ozelguvenlik/patbis"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Faaliyetleri Hakkında",
+        "href": "https://egm.gov.tr/ozelguvenlik/ozel-guvenlik-faaliyetleri-hakkinda"
+      }
+    ]
   },
   {
     "id": "etkili-iletisim",
@@ -559,7 +633,13 @@ export const oggLessons = [
         "html": "\n<h3>Kitle iletişim araçları</h3>\n<p>Akıllı telefon, televizyon, radyo, gazete, dergi, sinema, internet, bilgisayar ve açık hava reklam panoları geniş kitlelere mesaj ulaştırabilen araçlardır.</p>\n<h3>Araç ve ortam ayrımı</h3>\n<p>Ders notundaki önemli ayrım; <strong>iletişim aracı</strong> ile iletişimin gerçekleştiği <strong>ortam/mekânın</strong> aynı kavram olmamasıdır. Örneğin okul veya tiyatro binası bir iletişim ortamı olabilir; tek başına “kitle iletişim aracı” sayılması gerekmez.</p>\n<p>Günümüzde sosyal medya, mesajlaşma platformları, dijital yayın ve çevrim içi toplantı sistemleri de kitle veya grup iletişiminde temel kanallar hâline gelmiştir.</p>"
       }
     ],
-    "editorialStatus": "curated"
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
   }
 ]
 
