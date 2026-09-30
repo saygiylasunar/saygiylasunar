@@ -2,172 +2,217 @@
   <div class="page-view ogg-view">
     <section class="ogg-hero">
       <div class="container ogg-hero-grid">
-        <div>
-          <p class="eyebrow">ÖGG · Silahlı Özel Güvenlik</p>
-          <h1>Kurs Programı</h1>
+        <div class="ogg-hero-copy">
+          <p class="ogg-tech-label">ÖGG // FIELD NOTES · 2026</p>
+          <h1>{{ oggNotesMeta.title }}</h1>
           <p class="ogg-lead">
-            ÖGYS ekranındaki tekrarları sadeleştirilmiş bloklara dönüştürdüm. Saat, ders,
-            eğitmen ve sınıf bilgileri tek bakışta görülebilir; istersen 40 dakikalık
-            ders saatlerini de açabilirsin.
+            {{ oggNotesMeta.subtitle }}. Dağınık ders notlarını; tanım, kritik bilgi,
+            sınav hatırlatması ve kısa özet düzeninde yeniden toparladım.
           </p>
+
           <div class="ogg-actions">
-            <button type="button" class="ogg-primary-button" @click="downloadCalendar">
-              Takvime aktar (.ics)
+            <a class="ogg-primary-button" href="#ders-notlari">Notlara git</a>
+            <button type="button" class="ogg-secondary-button" @click="downloadCalendar">
+              Programı indir (.ics)
             </button>
-            <span v-if="nextDetailedDay" class="ogg-next-chip">
-              <b>{{ relativeLabel(nextDetailedDay.date) || 'Sıradaki' }}</b>
-              {{ shortDate(nextDetailedDay.date) }} · {{ firstStart(nextDetailedDay) }}
-            </span>
           </div>
         </div>
 
-        <aside class="ogg-summary" aria-label="Program özeti">
+        <aside class="ogg-summary" aria-label="ÖGG sayfası özeti">
+          <div>
+            <strong>{{ oggNoteTopics.length }}</strong>
+            <span>notlandırılmış ders</span>
+          </div>
+          <div>
+            <strong>{{ uniqueScheduleCourses }}</strong>
+            <span>programdaki ders</span>
+          </div>
           <div>
             <strong>{{ oggSchedule.length }}</strong>
-            <span>detaylı gün</span>
+            <span>eğitim günü</span>
           </div>
           <div>
             <strong>{{ totalSlots }}</strong>
             <span>40 dk. ders</span>
           </div>
-          <div>
-            <strong>{{ totalDuration }}</strong>
-            <span>toplam eğitim</span>
-          </div>
-          <div>
-            <strong>{{ oggPendingDates.length }}</strong>
-            <span>detayı beklenen gün</span>
-          </div>
         </aside>
       </div>
     </section>
 
-    <section class="ogg-date-nav-section">
+    <nav class="ogg-topic-nav-wrap" aria-label="Ders notlarına hızlı geçiş">
       <div class="container">
-        <div class="ogg-date-nav" aria-label="Tarihe git">
-          <button
-            v-for="date in allDates"
-            :key="date"
-            type="button"
-            :class="{
-              'is-pending': oggPendingDates.includes(date),
-              'is-today': relativeLabel(date) === 'Bugün',
-            }"
-            @click="scrollToDate(date)"
+        <div class="ogg-topic-nav">
+          <a
+            v-for="topic in oggNoteTopics"
+            :key="topic.id"
+            :href="`#${topic.id}`"
+            :title="topic.course"
           >
-            <small>{{ weekday(date) }}</small>
-            <strong>{{ dayNumber(date) }}</strong>
-            <span>Eyl</span>
-          </button>
+            <span>{{ topic.no }}</span>
+            {{ shortCourse(topic.course) }}
+          </a>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section class="ogg-program-section">
-      <div class="container ogg-program-layout">
-        <main class="ogg-days">
+    <section id="ders-notlari" class="ogg-notes-section">
+      <div class="container ogg-notes-layout">
+        <aside class="ogg-notes-index" aria-label="Ders içindekiler">
+          <p class="ogg-tech-label">INDEX // 10</p>
+          <ol>
+            <li v-for="topic in oggNoteTopics" :key="`toc-${topic.id}`">
+              <a :href="`#${topic.id}`">
+                <span>{{ topic.no }}</span>
+                {{ topic.course }}
+              </a>
+            </li>
+          </ol>
+          <p class="ogg-index-footnote">
+            Programda olup Notion arşivinde ders notu bulunmayan başlıklar bu listede gösterilmez.
+          </p>
+        </aside>
+
+        <main class="ogg-article">
+          <section class="ogg-editor-note" aria-labelledby="editor-note-title">
+            <div>
+              <p class="ogg-tech-label">READ ME // ÇALIŞMA NOTU</p>
+              <h2 id="editor-note-title">Notları yayıma uygun hâle getirdim.</h2>
+            </div>
+            <p>
+              Yazım tekrarlarını temizledim, benzer maddeleri birleştirdim ve ders başlıklarını
+              mevcut Eylül 2026 kurs programıyla eşleştirdim. Ham notlardaki tartışmalı veya
+              güncelliği değişebilecek noktaları da yayımlanabilir bir dille yeniden çerçeveledim.
+            </p>
+            <p class="ogg-warning">{{ oggNotesMeta.notice }}</p>
+          </section>
+
           <article
-            v-for="day in oggSchedule"
-            :id="`day-${day.date}`"
-            :key="day.date"
-            class="ogg-day"
+            v-for="topic in oggNoteTopics"
+            :id="topic.id"
+            :key="topic.id"
+            class="ogg-note"
+            :data-tone="topic.tone"
           >
-            <header class="ogg-day-head">
-              <div class="ogg-date-block">
-                <strong>{{ dayNumber(day.date) }}</strong>
-                <span>{{ weekday(day.date) }}</span>
+            <header class="ogg-note-head">
+              <div class="ogg-note-number">{{ topic.no }}</div>
+              <div class="ogg-note-heading">
+                <div class="ogg-note-meta">
+                  <span>{{ topic.tag }}</span>
+                  <span>ÖGG · Temel Eğitim</span>
+                </div>
+                <h2>{{ topic.course }}</h2>
+                <p>{{ topic.short }}</p>
               </div>
-              <div>
-                <p class="ogg-day-kicker">
-                  {{ relativeLabel(day.date) || 'Eylül 2026' }}
-                </p>
-                <h2>{{ longDate(day.date) }}</h2>
-              </div>
-              <span class="ogg-day-count">{{ day.sessions.length }} ders</span>
             </header>
 
-            <div class="ogg-blocks">
-              <section
-                v-for="(group, index) in groupSessions(day.sessions)"
-                :key="`${day.date}-${group.start}-${index}`"
-                class="ogg-course-block"
-                :class="courseClass(group.course)"
-              >
-                <div class="ogg-time-column">
-                  <strong>{{ group.start }}</strong>
-                  <span>{{ group.end }}</span>
-                  <small>{{ group.count }} × 40 dk</small>
-                </div>
+            <blockquote class="ogg-keyline">
+              <span>KEYLINE</span>
+              <p>{{ topic.keyline }}</p>
+            </blockquote>
 
-                <div class="ogg-course-content">
-                  <div class="ogg-course-title-row">
-                    <h3>{{ group.course }}</h3>
-                    <span :class="['ogg-type', group.type === 'Uygulama' ? 'is-practice' : '']">
-                      {{ group.type }}
-                    </span>
-                  </div>
-                  <p>
-                    <strong>{{ group.instructor }}</strong>
-                    <span aria-hidden="true">·</span>
-                    {{ group.room }}
-                  </p>
-                </div>
+            <div class="ogg-note-sections">
+              <section v-for="section in topic.sections" :key="section.title">
+                <h3>{{ section.title }}</h3>
+                <ul>
+                  <li v-for="bullet in section.bullets" :key="bullet">{{ bullet }}</li>
+                </ul>
               </section>
             </div>
 
-            <details class="ogg-exact-times">
-              <summary>40 dakikalık ders saatlerini göster</summary>
-              <div class="ogg-slot-list">
-                <div v-for="(session, index) in day.sessions" :key="`${day.date}-slot-${index}`">
-                  <strong>{{ session.time }}</strong>
-                  <span>{{ session.course }} · {{ session.type }}</span>
-                </div>
-              </div>
-            </details>
+            <section class="ogg-exam-box" aria-label="Sınav için hızlı tekrar">
+              <header>
+                <span class="ogg-tech-label">QUICK RECALL</span>
+                <h3>Sınav için hızlı tekrar</h3>
+              </header>
+              <ul>
+                <li v-for="item in topic.exam" :key="item">{{ item }}</li>
+              </ul>
+            </section>
+
+            <a class="ogg-back-top" href="#ders-notlari">↑ İçindekilere dön</a>
           </article>
 
-          <section class="ogg-pending" aria-labelledby="pending-title">
-            <header>
-              <p class="eyebrow">Devamı gelecek</p>
-              <h2 id="pending-title">Detayı beklenen tarihler</h2>
-              <p>
-                Ana ÖGYS programında bu tarihler görünüyor. Ayrıntı ekran görüntüleri geldikçe
-                aynı veri yapısına eklenecek.
-              </p>
-            </header>
-            <div class="ogg-pending-grid">
-              <article
-                v-for="date in oggPendingDates"
-                :id="`day-${date}`"
-                :key="date"
-                class="ogg-pending-card"
+          <section class="ogg-reference-section" aria-labelledby="official-references">
+            <p class="ogg-tech-label">VERIFY // OFFICIAL</p>
+            <h2 id="official-references">Resmî kaynaklardan kontrol et</h2>
+            <p>
+              Bu sayfa ders çalışmak için hazırlanmış kişisel bir derlemedir. Güncel mevzuat ve
+              uygulama ayrıntılarında aşağıdaki resmî kaynakları esas al.
+            </p>
+            <div class="ogg-reference-grid">
+              <a
+                v-for="reference in oggOfficialReferences"
+                :key="reference.href"
+                :href="reference.href"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <strong>{{ longDate(date) }}</strong>
-                <span>Program detayı bekleniyor</span>
-              </article>
+                <span>{{ reference.label }}</span>
+                <b aria-hidden="true">↗</b>
+              </a>
             </div>
           </section>
-        </main>
 
-        <aside class="ogg-side-note">
-          <p class="eyebrow">Kaynak</p>
-          <strong>{{ oggScheduleMeta.provider }}</strong>
-          <p>{{ oggScheduleMeta.source }}</p>
-          <dl>
-            <div>
-              <dt>Son düzenleme</dt>
-              <dd>{{ longDate(oggScheduleMeta.updatedAt) }}</dd>
+          <section class="ogg-schedule-section" aria-labelledby="schedule-archive-title">
+            <div class="ogg-schedule-head">
+              <div>
+                <p class="ogg-tech-label">ARCHIVE // SEP 2026</p>
+                <h2 id="schedule-archive-title">Kurs programı arşivi</h2>
+                <p>
+                  Eski /ogg sayfasındaki ÖGYS programını burada koruyorum. Notların hangi ders
+                  akışından üretildiğini görmek veya takvim dosyasını almak için açabilirsin.
+                </p>
+              </div>
+              <button type="button" class="ogg-secondary-button" @click="downloadCalendar">
+                .ics indir
+              </button>
             </div>
-            <div>
-              <dt>Program aralığı</dt>
-              <dd>1–18 Eylül 2026</dd>
-            </div>
-          </dl>
-          <p class="ogg-source-warning">
-            Bu sayfa kişisel çalışma kolaylığı için düzenlenmiştir. Resmî değişikliklerde ÖGYS
-            programı esas alınmalıdır.
-          </p>
-        </aside>
+
+            <details class="ogg-program-archive">
+              <summary>
+                <span>Eylül 2026 eğitim programını göster</span>
+                <small>{{ oggSchedule.length }} gün · {{ totalSlots }} ders</small>
+              </summary>
+
+              <div class="ogg-program-days">
+                <details v-for="day in oggSchedule" :key="day.date" class="ogg-program-day">
+                  <summary>
+                    <div>
+                      <strong>{{ dayNumber(day.date) }}</strong>
+                      <span>{{ monthShort(day.date) }}</span>
+                    </div>
+                    <p>
+                      <b>{{ weekday(day.date) }}</b>
+                      <small>{{ groupSessions(day.sessions).length }} ders bloğu</small>
+                    </p>
+                  </summary>
+
+                  <div class="ogg-program-blocks">
+                    <div
+                      v-for="(group, index) in groupSessions(day.sessions)"
+                      :key="`${day.date}-${group.start}-${index}`"
+                      class="ogg-program-block"
+                    >
+                      <time>{{ group.start }}–{{ group.end }}</time>
+                      <div>
+                        <strong>{{ group.course }}</strong>
+                        <span>
+                          {{ group.type }} · {{ group.instructor }} · {{ group.room }} ·
+                          {{ group.count }} × 40 dk
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <footer class="ogg-program-source">
+                <span>Kaynak: {{ oggScheduleMeta.source }}</span>
+                <span>{{ oggScheduleMeta.provider }}</span>
+              </footer>
+            </details>
+          </section>
+        </main>
       </div>
     </section>
   </div>
@@ -175,31 +220,29 @@
 
 <script setup>
 import { computed } from 'vue'
-import { oggPendingDates, oggSchedule, oggScheduleMeta } from '../content/oggSchedule.js'
+import {
+  oggNotesMeta,
+  oggNoteTopics,
+  oggOfficialReferences,
+} from '../content/oggNotes.js'
+import { oggSchedule, oggScheduleMeta } from '../content/oggSchedule.js'
 
 const totalSlots = computed(() =>
   oggSchedule.reduce((sum, day) => sum + day.sessions.length, 0),
 )
 
-const totalDuration = computed(() => {
-  const minutes = totalSlots.value * 40
-  const hours = Math.floor(minutes / 60)
-  const rest = minutes % 60
-  return rest ? `${hours} sa ${rest} dk` : `${hours} saat`
-})
-
-const allDates = computed(() =>
-  [...oggSchedule.map((day) => day.date), ...oggPendingDates].sort(),
+const uniqueScheduleCourses = computed(
+  () => new Set(oggSchedule.flatMap((day) => day.sessions.map((session) => session.course))).size,
 )
 
-const todayKey = localDateKey(new Date())
-const nextDetailedDay = computed(() => oggSchedule.find((day) => day.date >= todayKey) || null)
-
-function localDateKey(date) {
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  return `${year}-${month}-${day}`
+function shortCourse(course) {
+  return course
+    .replace('Özel Güvenlik ', '')
+    .replace(' ve Kişi Hakları', '')
+    .replace('Güvenlik Sistem ve Cihazları', 'Sistemler')
+    .replace('Yangın Güvenliği ve Tabii Afet', 'Yangın')
+    .replace('Genel Kolluklar İlişkileri', 'Kolluk')
+    .replace('Silah Bilgisi ve Atış', 'Silah')
 }
 
 function parseDate(date) {
@@ -207,39 +250,17 @@ function parseDate(date) {
 }
 
 function weekday(date) {
-  return new Intl.DateTimeFormat('tr-TR', { weekday: 'short' })
-    .format(parseDate(date))
-    .replace('.', '')
+  return new Intl.DateTimeFormat('tr-TR', { weekday: 'long' }).format(parseDate(date))
 }
 
 function dayNumber(date) {
   return String(parseDate(date).getDate()).padStart(2, '0')
 }
 
-function shortDate(date) {
-  return new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short' }).format(parseDate(date))
-}
-
-function longDate(date) {
-  return new Intl.DateTimeFormat('tr-TR', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    weekday: 'long',
-  }).format(parseDate(date))
-}
-
-function relativeLabel(date) {
-  const target = Date.parse(`${date}T00:00:00`)
-  const today = Date.parse(`${todayKey}T00:00:00`)
-  const difference = Math.round((target - today) / 86_400_000)
-  if (difference === 0) return 'Bugün'
-  if (difference === 1) return 'Yarın'
-  return ''
-}
-
-function firstStart(day) {
-  return day.sessions[0]?.time.split(' - ')[0] || ''
+function monthShort(date) {
+  return new Intl.DateTimeFormat('tr-TR', { month: 'short' })
+    .format(parseDate(date))
+    .replace('.', '')
 }
 
 function groupSessions(sessions) {
@@ -265,25 +286,9 @@ function groupSessions(sessions) {
       end,
       count: 1,
     })
+
     return groups
   }, [])
-}
-
-function courseClass(course) {
-  if (course.includes('Hukuku')) return 'course-law'
-  if (course.includes('Tedbirleri')) return 'course-security'
-  if (course.includes('Yardım')) return 'course-first-aid'
-  if (course.includes('Sistem')) return 'course-systems'
-  if (course.includes('Uyuşturucu')) return 'course-narcotics'
-  if (course.includes('Silah')) return 'course-weapons'
-  return ''
-}
-
-function scrollToDate(date) {
-  document.getElementById(`day-${date}`)?.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  })
 }
 
 function icsEscape(value) {
@@ -318,7 +323,7 @@ function downloadCalendar() {
     })
   })
 
-  const content = [
+  const calendar = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//Saygiyla Sunar//OGG Kurs Programi//TR',
@@ -330,7 +335,7 @@ function downloadCalendar() {
     'END:VCALENDAR',
   ].join('\r\n')
 
-  const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' })
+  const blob = new Blob([calendar], { type: 'text/calendar;charset=utf-8' })
   const url = URL.createObjectURL(blob)
   const link = document.createElement('a')
   link.href = url
@@ -344,77 +349,103 @@ function downloadCalendar() {
 
 <style scoped>
 .ogg-view {
-  --ogg-teal: #278c91;
-  --ogg-teal-soft: color-mix(in srgb, var(--ogg-teal) 12%, transparent);
-  --ogg-card: color-mix(in srgb, var(--surface-solid) 92%, transparent);
-  padding-bottom: 80px;
+  --ogg-accent: #278c91;
+  --ogg-accent-soft: color-mix(in srgb, var(--ogg-accent) 12%, transparent);
+  --ogg-card: color-mix(in srgb, var(--surface-solid) 94%, transparent);
+  --ogg-tech:
+    ui-monospace, "Cascadia Code", "Roboto Mono", "SFMono-Regular", Menlo, Monaco,
+    Consolas, monospace;
+  padding-bottom: 84px;
+}
+
+.ogg-tech-label {
+  margin: 0;
+  color: var(--ogg-accent);
+  font-family: var(--ogg-tech);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
 }
 
 .ogg-hero {
-  padding: clamp(72px, 8vw, 116px) 0 42px;
+  padding: clamp(72px, 9vw, 124px) 0 clamp(42px, 6vw, 72px);
   border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--ogg-accent) 7%, transparent),
+      transparent 44%
+    );
 }
 
 .ogg-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
-  gap: clamp(40px, 8vw, 110px);
+  gap: clamp(42px, 8vw, 112px);
   align-items: end;
 }
 
-.ogg-view h1 {
-  max-width: 760px;
-  margin-bottom: 22px;
-  font-size: clamp(3rem, 7vw, 6.8rem);
+.ogg-hero h1 {
+  max-width: 880px;
+  margin: 16px 0 20px;
+  font-family: var(--ogg-tech);
+  font-size: clamp(3rem, 7.4vw, 7.2rem);
+  font-weight: 760;
+  letter-spacing: -0.075em;
+  line-height: 0.92;
 }
 
 .ogg-lead {
   max-width: 760px;
-  margin-bottom: 28px;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.45vw, 1.18rem);
+  line-height: 1.72;
 }
 
 .ogg-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.ogg-primary-button,
+.ogg-secondary-button {
+  min-height: 46px;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 740;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .ogg-primary-button {
-  min-height: 46px;
-  padding: 0 18px;
-  border: 0;
-  border-radius: 999px;
+  border: 1px solid var(--text);
   background: var(--text);
   color: var(--bg);
-  cursor: pointer;
-  font-weight: 700;
 }
 
-.ogg-primary-button:hover {
-  transform: translateY(-1px);
-}
-
-.ogg-next-chip {
-  min-height: 46px;
-  display: inline-flex;
-  gap: 7px;
-  align-items: center;
-  padding: 0 16px;
-  border: 1px solid color-mix(in srgb, var(--ogg-teal) 42%, var(--line));
-  border-radius: 999px;
-  background: var(--ogg-teal-soft);
+.ogg-secondary-button {
+  border: 1px solid var(--line-strong);
+  background: var(--surface-solid);
   color: var(--text);
 }
 
-.ogg-next-chip b {
-  color: var(--ogg-teal);
+.ogg-primary-button:hover,
+.ogg-secondary-button:hover {
+  transform: translateY(-1px);
 }
 
 .ogg-summary {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -426,7 +457,7 @@ function downloadCalendar() {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 19px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -440,476 +471,702 @@ function downloadCalendar() {
 }
 
 .ogg-summary strong {
-  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-family: var(--ogg-tech);
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
   line-height: 1;
 }
 
 .ogg-summary span {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 }
 
-.ogg-date-nav-section {
+.ogg-topic-nav-wrap {
   position: sticky;
-  z-index: 8;
+  z-index: 9;
   top: 0;
-  padding: 12px 0;
   border-bottom: 1px solid var(--line);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  background: color-mix(in srgb, var(--bg) 91%, transparent);
   backdrop-filter: blur(16px);
 }
 
-.ogg-date-nav {
+.ogg-topic-nav {
   display: flex;
   gap: 8px;
   overflow-x: auto;
+  padding: 10px 0;
   scrollbar-width: thin;
+  scroll-snap-type: x proximity;
 }
 
-.ogg-date-nav button {
-  min-width: 70px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: 'weekday weekday' 'number month';
-  gap: 0 4px;
-  padding: 9px 11px;
+.ogg-topic-nav a {
+  min-height: 40px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
   border: 1px solid var(--line);
-  border-radius: 13px;
+  border-radius: 999px;
   background: var(--surface-solid);
-  cursor: pointer;
-  text-align: left;
+  color: var(--text);
+  font-size: 0.78rem;
+  text-decoration: none;
+  scroll-snap-align: start;
 }
 
-.ogg-date-nav button:hover,
-.ogg-date-nav button.is-today {
-  border-color: var(--ogg-teal);
+.ogg-topic-nav a:hover {
+  border-color: var(--ogg-accent);
 }
 
-.ogg-date-nav button.is-pending {
-  opacity: 0.56;
-}
-
-.ogg-date-nav small {
-  grid-area: weekday;
-  color: var(--muted);
+.ogg-topic-nav a span {
+  color: var(--ogg-accent);
+  font-family: var(--ogg-tech);
   font-size: 0.68rem;
-  text-transform: uppercase;
+  font-weight: 800;
 }
 
-.ogg-date-nav strong {
-  grid-area: number;
-  font-size: 1.15rem;
+.ogg-notes-section {
+  padding: clamp(42px, 7vw, 88px) 0;
 }
 
-.ogg-date-nav span {
-  grid-area: month;
-  align-self: end;
-  color: var(--muted);
-  font-size: 0.7rem;
-}
-
-.ogg-program-section {
-  padding: clamp(38px, 6vw, 82px) 0;
-}
-
-.ogg-program-layout {
+.ogg-notes-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 270px;
-  gap: clamp(34px, 6vw, 72px);
+  grid-template-columns: minmax(210px, 260px) minmax(0, 820px);
+  gap: clamp(36px, 7vw, 94px);
+  justify-content: center;
   align-items: start;
 }
 
-.ogg-days {
+.ogg-notes-index {
+  position: sticky;
+  top: 84px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--ogg-card);
+}
+
+.ogg-notes-index ol {
+  display: grid;
+  gap: 3px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ogg-notes-index a {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 8px;
+  padding: 8px 5px;
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.77rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.ogg-notes-index a:hover {
+  background: var(--ogg-accent-soft);
+}
+
+.ogg-notes-index a span {
+  color: var(--ogg-accent);
+  font-family: var(--ogg-tech);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.ogg-index-footnote {
+  margin: 14px 0 0;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.55;
+}
+
+.ogg-article {
+  min-width: 0;
+}
+
+.ogg-editor-note,
+.ogg-note,
+.ogg-reference-section,
+.ogg-schedule-section {
+  scroll-margin-top: 88px;
+}
+
+.ogg-editor-note {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 58px;
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--ogg-card);
+}
+
+.ogg-editor-note h2,
+.ogg-reference-section h2,
+.ogg-schedule-section h2 {
+  margin: 7px 0 0;
+  font-size: clamp(1.65rem, 4vw, 2.6rem);
+  letter-spacing: -0.045em;
+}
+
+.ogg-editor-note > p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.ogg-warning {
+  padding: 14px 16px;
+  border-left: 3px solid var(--ogg-accent);
+  background: var(--ogg-accent-soft);
+  color: var(--text) !important;
+  font-size: 0.86rem;
+}
+
+.ogg-note {
+  --topic: var(--ogg-accent);
+  padding: clamp(12px, 1vw, 4px) 0 clamp(58px, 8vw, 94px);
+}
+
+.ogg-note[data-tone="law"] { --topic: #6476d1; }
+.ogg-note[data-tone="security"] { --topic: #278c91; }
+.ogg-note[data-tone="aid"] { --topic: #c85672; }
+.ogg-note[data-tone="systems"] { --topic: #a97336; }
+.ogg-note[data-tone="weapons"] { --topic: #68727d; }
+.ogg-note[data-tone="crowd"] { --topic: #7566bb; }
+.ogg-note[data-tone="protection"] { --topic: #9b6384; }
+.ogg-note[data-tone="fire"] { --topic: #c76643; }
+.ogg-note[data-tone="law-enforcement"] { --topic: #4f7aa6; }
+.ogg-note[data-tone="communication"] { --topic: #5a8f70; }
+
+.ogg-note-head {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ogg-note-number {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--topic) 60%, var(--line));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--topic) 10%, transparent);
+  color: var(--topic);
+  font-family: var(--ogg-tech);
+  font-size: 1rem;
+  font-weight: 820;
+}
+
+.ogg-note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.ogg-note-meta span {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--topic) 10%, transparent);
+  color: var(--topic);
+  font-family: var(--ogg-tech);
+  font-size: 0.62rem;
+  font-weight: 760;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.ogg-note-heading h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4.4vw, 3.25rem);
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.ogg-note-heading > p {
+  max-width: 680px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.ogg-keyline {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 18px;
+  margin: 22px 0 30px;
+  padding: 16px 18px;
+  border: 1px solid color-mix(in srgb, var(--topic) 32%, var(--line));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--topic) 7%, transparent);
+}
+
+.ogg-keyline span {
+  color: var(--topic);
+  font-family: var(--ogg-tech);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.ogg-keyline p {
+  margin: 0;
+  font-size: 0.94rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ogg-note-sections {
   display: grid;
   gap: 28px;
 }
 
-.ogg-day {
-  scroll-margin-top: 104px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: var(--ogg-card);
-  box-shadow: 0 18px 50px rgba(18, 20, 23, 0.035);
-}
-
-.ogg-day-head {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 18px;
-  align-items: center;
-  padding: 20px;
+.ogg-note-sections section {
+  padding-bottom: 26px;
   border-bottom: 1px solid var(--line);
 }
 
-.ogg-date-block {
-  width: 62px;
-  height: 62px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  background: var(--text);
-  color: var(--bg);
-}
-
-.ogg-date-block strong {
-  font-size: 1.35rem;
-  line-height: 1;
-}
-
-.ogg-date-block span {
-  margin-top: 5px;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-}
-
-.ogg-day-kicker {
-  margin: 0 0 3px;
-  color: var(--ogg-teal);
-  font-size: 0.72rem;
-  font-weight: 760;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.ogg-view .ogg-day h2,
-.ogg-view .ogg-pending h2 {
-  margin: 0;
-  font-size: clamp(1.35rem, 2.6vw, 2.1rem);
-  letter-spacing: -0.035em;
-}
-
-.ogg-day-count {
-  padding: 7px 10px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  font-size: 0.74rem;
-  white-space: nowrap;
-}
-
-.ogg-blocks {
-  padding: 10px 20px 4px;
-}
-
-.ogg-course-block {
-  --course: var(--ogg-teal);
-  position: relative;
-  display: grid;
-  grid-template-columns: 128px 1fr;
-  min-height: 112px;
-  border-bottom: 1px solid var(--line);
-}
-
-.ogg-course-block::before {
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: 20px;
-  bottom: 20px;
-  width: 4px;
-  border-radius: 999px;
-  background: var(--course);
-}
-
-.ogg-course-block:last-child {
-  border-bottom: 0;
-}
-
-.course-law { --course: #5369c8; }
-.course-security { --course: #278c91; }
-.course-first-aid { --course: #c84d68; }
-.course-systems { --course: #a56b2d; }
-.course-narcotics { --course: #7558a6; }
-.course-weapons { --course: #4e5964; }
-
-.ogg-time-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 18px 18px 18px 0;
-  border-right: 1px solid var(--line);
-}
-
-.ogg-time-column strong {
-  font-size: 1.04rem;
-}
-
-.ogg-time-column span,
-.ogg-time-column small {
-  color: var(--muted);
-}
-
-.ogg-time-column small {
-  margin-top: 6px;
-  font-size: 0.72rem;
-}
-
-.ogg-course-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 18px 0 18px 22px;
-}
-
-.ogg-course-title-row {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.ogg-course-content h3 {
-  margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.45rem);
+.ogg-note-sections h3,
+.ogg-exam-box h3 {
+  margin: 0 0 13px;
+  font-size: clamp(1.12rem, 2.7vw, 1.42rem);
   letter-spacing: -0.025em;
 }
 
-.ogg-course-content p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin: 10px 0 0;
-  font-size: 0.9rem;
+.ogg-note-sections ul,
+.ogg-exam-box ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 1.15rem;
 }
 
-.ogg-course-content p strong {
+.ogg-note-sections li,
+.ogg-exam-box li {
+  padding-left: 4px;
+  line-height: 1.72;
+}
+
+.ogg-note-sections li::marker {
+  color: var(--topic);
+}
+
+.ogg-exam-box {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.38fr) minmax(0, 0.62fr);
+  gap: 28px;
+  margin-top: 28px;
+  padding: 20px;
+  border: 1px solid color-mix(in srgb, var(--topic) 42%, var(--line));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--topic) 6%, transparent);
+}
+
+.ogg-exam-box .ogg-tech-label {
+  color: var(--topic);
+  margin-bottom: 7px;
+}
+
+.ogg-exam-box li {
+  font-family: var(--ogg-tech);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.ogg-back-top {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.ogg-back-top:hover {
   color: var(--text);
 }
 
-.ogg-type {
-  padding: 5px 8px;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--course) 12%, transparent);
-  color: var(--course);
-  font-size: 0.7rem;
-  font-weight: 760;
-  white-space: nowrap;
-}
-
-.ogg-type.is-practice {
-  background: color-mix(in srgb, var(--course) 19%, transparent);
-}
-
-.ogg-exact-times {
-  margin: 6px 20px 20px;
-  border-top: 1px dashed var(--line);
-}
-
-.ogg-exact-times summary {
-  padding: 14px 0 0;
-  color: var(--muted);
-  cursor: pointer;
-  font-size: 0.82rem;
-  font-weight: 650;
-}
-
-.ogg-slot-list {
-  display: grid;
-  gap: 7px;
+.ogg-reference-section,
+.ogg-schedule-section {
   margin-top: 12px;
-}
-
-.ogg-slot-list > div {
-  display: grid;
-  grid-template-columns: 116px 1fr;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 9px;
-  background: var(--bg-soft);
-  font-size: 0.78rem;
-}
-
-.ogg-slot-list span {
-  color: var(--muted);
-}
-
-.ogg-pending {
-  padding: clamp(32px, 5vw, 52px) 0 0;
-  scroll-margin-top: 104px;
-}
-
-.ogg-pending > header > p:last-child {
-  max-width: 640px;
-  margin-top: 12px;
-}
-
-.ogg-pending-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.ogg-pending-card {
-  scroll-margin-top: 104px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 16px;
-  border: 1px dashed var(--line-strong);
-  border-radius: 14px;
-}
-
-.ogg-pending-card span {
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.ogg-side-note {
-  position: sticky;
-  top: 102px;
-  padding: 20px;
+  padding: clamp(28px, 5vw, 42px);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 22px;
+  background: var(--ogg-card);
+}
+
+.ogg-reference-section > p:not(.ogg-tech-label),
+.ogg-schedule-head p {
+  margin: 13px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.ogg-reference-grid {
+  display: grid;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.ogg-reference-grid a {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-solid);
+  color: var(--text);
+  font-size: 0.84rem;
+  text-decoration: none;
+}
+
+.ogg-reference-grid a:hover {
+  border-color: var(--ogg-accent);
+}
+
+.ogg-reference-grid b {
+  color: var(--ogg-accent);
+}
+
+.ogg-schedule-section {
+  margin-top: 24px;
+}
+
+.ogg-schedule-head {
+  display: flex;
+  gap: 24px;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.ogg-schedule-head > div {
+  max-width: 610px;
+}
+
+.ogg-program-archive {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.ogg-program-archive > summary {
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ogg-program-archive > summary::-webkit-details-marker,
+.ogg-program-day > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ogg-program-archive > summary span {
+  font-weight: 740;
+}
+
+.ogg-program-archive > summary small {
+  color: var(--muted);
+  font-family: var(--ogg-tech);
+  font-size: 0.68rem;
+}
+
+.ogg-program-days {
+  display: grid;
+  gap: 8px;
+  padding: 4px 0 20px;
+}
+
+.ogg-program-day {
+  border: 1px solid var(--line);
+  border-radius: 13px;
   background: var(--surface-solid);
 }
 
-.ogg-side-note > strong {
-  display: block;
-  margin-bottom: 10px;
-  line-height: 1.35;
+.ogg-program-day > summary {
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  list-style: none;
 }
 
-.ogg-side-note > p {
-  font-size: 0.82rem;
+.ogg-program-day > summary > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 12px;
+  border-right: 1px solid var(--line);
 }
 
-.ogg-side-note dl {
-  margin: 18px 0;
-  padding: 14px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+.ogg-program-day > summary strong {
+  font-family: var(--ogg-tech);
+  font-size: 1.15rem;
 }
 
-.ogg-side-note dl > div + div {
-  margin-top: 10px;
-}
-
-.ogg-side-note dt {
+.ogg-program-day > summary span,
+.ogg-program-day > summary small {
   color: var(--muted);
   font-size: 0.7rem;
 }
 
-.ogg-side-note dd {
-  margin: 2px 0 0;
-  font-size: 0.82rem;
-  font-weight: 650;
+.ogg-program-day > summary p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
 }
 
-.ogg-source-warning {
-  margin-bottom: 0;
+.ogg-program-day > summary b {
+  font-size: 0.86rem;
+}
+
+.ogg-program-blocks {
+  padding: 0 12px 12px 82px;
+}
+
+.ogg-program-block {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+}
+
+.ogg-program-block time {
+  color: var(--ogg-accent);
+  font-family: var(--ogg-tech);
+  font-size: 0.69rem;
+}
+
+.ogg-program-block > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ogg-program-block strong {
+  font-size: 0.82rem;
+}
+
+.ogg-program-block span {
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.ogg-program-source {
+  display: grid;
+  gap: 4px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 900px) {
-  .ogg-hero-grid,
-  .ogg-program-layout {
+  .ogg-hero-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .ogg-summary {
     max-width: 620px;
   }
 
-  .ogg-side-note {
-    position: static;
-    order: -1;
+  .ogg-notes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .ogg-notes-index {
+    display: none;
   }
 }
 
-@media (max-width: 620px) {
-  .ogg-hero {
-    padding-top: 54px;
+@media (max-width: 720px) {
+  .ogg-view {
+    padding-bottom: 56px;
   }
 
-  .ogg-view h1 {
-    font-size: clamp(2.8rem, 15vw, 4.4rem);
+  .ogg-hero {
+    padding: 64px 0 38px;
+  }
+
+  .ogg-hero h1 {
+    margin-top: 13px;
+    font-size: clamp(2.65rem, 13vw, 4.4rem);
+    line-height: 0.96;
+  }
+
+  .ogg-lead {
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .ogg-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .ogg-primary-button,
+  .ogg-secondary-button {
+    width: 100%;
+    min-height: 48px;
   }
 
   .ogg-summary > div {
-    min-height: 100px;
+    min-height: 96px;
     padding: 15px;
   }
 
-  .ogg-date-nav-section {
-    top: 0;
+  .ogg-topic-nav-wrap .container {
+    padding-right: 0;
   }
 
-  .ogg-program-layout {
-    width: min(calc(100% - 24px), var(--container));
+  .ogg-topic-nav {
+    padding-right: 18px;
   }
 
-  .ogg-day-head {
-    grid-template-columns: auto 1fr;
-    gap: 12px;
-    padding: 14px;
+  .ogg-topic-nav a {
+    min-height: 42px;
   }
 
-  .ogg-date-block {
-    width: 54px;
-    height: 54px;
+  .ogg-notes-section {
+    padding-top: 32px;
   }
 
-  .ogg-day-count {
-    grid-column: 1 / -1;
-    width: max-content;
+  .ogg-editor-note {
+    margin-bottom: 48px;
+    border-radius: 18px;
   }
 
-  .ogg-blocks {
-    padding-inline: 14px;
+  .ogg-note {
+    padding-bottom: 66px;
   }
 
-  .ogg-course-block {
-    grid-template-columns: 92px 1fr;
+  .ogg-note-head {
+    grid-template-columns: 48px 1fr;
+    gap: 13px;
   }
 
-  .ogg-course-block::before {
-    left: -14px;
-  }
-
-  .ogg-time-column {
-    padding-right: 10px;
-  }
-
-  .ogg-time-column strong {
-    font-size: 0.9rem;
-  }
-
-  .ogg-course-content {
-    padding-left: 14px;
-  }
-
-  .ogg-course-title-row {
-    display: block;
-  }
-
-  .ogg-type {
-    display: inline-block;
-    margin-top: 8px;
-  }
-
-  .ogg-course-content p {
-    display: block;
+  .ogg-note-number {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
     font-size: 0.82rem;
   }
 
-  .ogg-course-content p span {
-    margin-inline: 4px;
+  .ogg-note-heading h2 {
+    font-size: clamp(1.75rem, 8.4vw, 2.5rem);
   }
 
-  .ogg-exact-times {
-    margin-inline: 14px;
+  .ogg-note-heading > p {
+    font-size: 0.9rem;
   }
 
-  .ogg-slot-list > div {
+  .ogg-keyline {
     grid-template-columns: 1fr;
-    gap: 2px;
+    gap: 7px;
+    margin-top: 18px;
   }
 
-  .ogg-pending-grid {
+  .ogg-note-sections {
+    gap: 22px;
+  }
+
+  .ogg-note-sections li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .ogg-exam-box {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ogg-reference-section,
+  .ogg-schedule-section {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .ogg-schedule-head {
+    display: grid;
+    gap: 18px;
+  }
+
+  .ogg-schedule-head .ogg-secondary-button {
+    width: auto;
+    justify-self: start;
+  }
+
+  .ogg-program-archive > summary {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .ogg-program-blocks {
+    padding-left: 12px;
+  }
+
+  .ogg-program-block {
+    grid-template-columns: 84px 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .ogg-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ogg-summary strong {
+    font-size: 1.55rem;
+  }
+
+  .ogg-note-head {
+    grid-template-columns: 1fr;
+  }
+
+  .ogg-note-number {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ogg-program-block {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ogg-view *,
+  .ogg-view *::before,
+  .ogg-view *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
   }
 }
 </style>
