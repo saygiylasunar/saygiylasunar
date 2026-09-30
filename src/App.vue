@@ -66,12 +66,12 @@ function routeDescription() {
       : 'Saygıyla Sunar is the artist name used by Ersen Filiz for music releases. Find Spotify, YouTube Music and Apple Music listening links here.'
   }
   if (route.name === 'ogg') {
-    return 'Silahlı özel güvenlik temel eğitimi için Notion ders notlarından düzenlenmiş tam sürüm akademik ÖGG arşivi; 10 ders, konu hiyerarşisi ve Eylül 2026 kurs programı.'
+    return 'Silahlı özel güvenlik temel eğitimi için 11 ders ve kapsamlı konu hiyerarşisinden oluşan ÖGG çalışma arşivi; sınav notları, resmî doğrulama kaynakları ve Eylül 2026 kurs programı.'
   }
   if (route.name === 'ogg-lesson') {
     const lesson = oggLessons.find((item) => item.slug === route.params.slug)
     return lesson
-      ? `${lesson.title} dersi için Eylül 2026 ÖGG temel eğitiminde tutulan Notion notlarının özetlenmeden, konu hiyerarşisine göre düzenlenmiş tam metin sürümü.`
+      ? `${lesson.title} dersi için konu hiyerarşisine göre düzenlenmiş kapsamlı ÖGG çalışma notları; sınav ifadeleri ve güncel açıklamalar bir arada.`
       : 'ÖGG temel eğitim ders notlarının tam metin akademik sürümü.'
   }
   return baseDescription()
