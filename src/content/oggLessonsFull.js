@@ -76,24 +76,25 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3cfbb40fbf3c8099bb6ef28a462620c7?pvs=204",
     "updatedAt": "2026-09-04T06:16:01.176Z",
     "imageCount": 0,
-    "introHtml": "",
+    "introHtml": "<p>Bu dersin notları temel ilk yardım yaklaşımını, bilinç kaybında ilk değerlendirmeyi, temel yaşam desteğini, otomatik eksternal defibrilatör (OED/AED) kullanım mantığını ve temel pozisyonları içerir. Uygulamada güncel Sağlık Bakanlığı/ilk yardım eğitim protokolü ve sertifikalı eğitimci talimatı esas alınmalıdır.</p>",
     "categories": [
       {
         "id": "temel-ilk-yardim-1",
         "title": "İlk Yardımın Temel Yaklaşımı",
-        "html": "<p>Uyarılar</p><p><strong>Kötüleşmeyi önle</strong></p>"
+        "html": "\n<p>Dersin ana ezber zinciri <strong>Koruma → Bildirme → Kurtarma</strong> olarak tutulmuştur.</p>\n<ul>\n<li><strong>Koruma:</strong> Önce ilk yardımcı, yaralı ve çevre için olay yeri güvenliği sağlanır.</li>\n<li><strong>Bildirme:</strong> Profesyonel yardım mümkün olan en erken aşamada çağrılır; Türkiye’de acil çağrı numarası 112’dir.</li>\n<li><strong>Kurtarma:</strong> İlk yardımcı, eğitim düzeyi ve olayın şartları içinde yaşamı korumaya ve kötüleşmeyi önlemeye yönelik müdahaleyi sürdürür.</li>\n</ul>\n<blockquote>Temel amaç yalnızca müdahale etmek değil; yeni tehlike oluşturmamak ve mevcut durumun kötüleşmesini önlemektir.</blockquote>\n<p>Gaz kaçağı, elektrik, yangın veya trafik gibi ikincil tehlikeler varsa yaralıya yaklaşmadan önce çevre güvenliği değerlendirilmelidir. Olay yeri, hem güvenlik hem de gerektiğinde adli inceleme bakımından mümkün olduğunca korunur.</p>"
       },
       {
         "id": "temel-ilk-yardim-2",
-        "title": "Bilinç Kaybında Temel Değerlendirme",
-        "html": "<p>Airway (Baş çene) Breathe (Bak Dinle Hisset) Circulation (Dolaşım)</p><p>Yardımı araması için bir gönüllü seç. Gönüllü sana bilgi vermeli, iletişim hattını açık tutmalı. Yardım gelene kadar CPR</p><p>Yardım gelene kadar döngü 30 × 2</p><ul><li>30 Pulse</li><li>2 Air Flow</li></ul><hr><p>Gaz varlığı varsa elektrik kıvılcım vs dikkat Kaydedin. Olay yerini koruyun.</p>"
+        "title": "Bilinç Kaybı, Solunum ve Temel Yaşam Desteği",
+        "html": "\n<h3>İlk değerlendirme</h3>\n<p>Ham notlarda bilinç kaybı için <strong>Airway – Breathing – Circulation</strong> (hava yolu – solunum – dolaşım) hatırlatması tutulmuştur. Güncel temel yaşam desteği eğitimlerinde değerlendirme sırası kullanılan protokole göre ifade edilebilir; uygulamada sertifikalı ilk yardım eğitimi esas alınmalıdır.</p>\n<ul>\n<li>Bilinci kontrol et.</li>\n<li>Hava yolunun açıklığını değerlendir.</li>\n<li>Normal solunumu değerlendir.</li>\n<li>Yardım çağrısını organize et.</li>\n</ul>\n<h3>Yardım çağrısının organizasyonu</h3>\n<p>Çevrede birden fazla kişi varsa “biri 112’yi arasın” şeklinde belirsiz çağrı yerine belirli bir kişiyi görevlendirmek daha etkilidir. Görevlendirilen kişinin geri dönerek yardımın çağrıldığını bildirmesi iletişim döngüsünü kapatır.</p>\n<h3>CPR / temel yaşam desteği</h3>\n<p>Yetişkin temel yaşam desteğinde eğitimlerde kullanılan standart oran <strong>30 göğüs basısı + 2 soluk</strong> şeklindedir. Müdahale profesyonel yardım gelene, kişi yaşam belirtisi gösterene veya ilk yardımcının güvenli biçimde devam edemeyeceği bir durum oluşana kadar protokole uygun sürdürülür.</p>"
       },
       {
         "id": "temel-ilk-yardim-3",
-        "title": "OED / Defibrilatör ve Temel Pozisyonlar",
-        "html": "<p>Kuru, akım iletkenlerden steril. Temiz, açık, tene yapışacak. Kalp pili ile farklı konumlanıyor. (Çıkıntı) Elektrikle etkileşecek tüm materyallerden arındır.</p><p>Koma Pose: Yan yatış, kurtarma pozisyonu Şok Pozisyonu: Sırtüstü ayaklar havada</p>"
+        "title": "OED / AED, Kurtarma Pozisyonu ve Şok",
+        "html": "\n<h3>Otomatik eksternal defibrilatör</h3>\n<p>OED/AED kalp ritmini analiz eden ve gerektiğinde kullanıcıyı şok uygulaması için yönlendiren cihazdır. Cihazın sesli ve görsel komutları takip edilir.</p>\n<ul>\n<li>Pedlerin çıplak ve mümkün olduğunca kuru cilde yapışması gerekir.</li>\n<li>Göğüste kalp pili/implante cihaz çıkıntısı görülüyorsa ped doğrudan cihazın üzerine yerleştirilmez.</li>\n<li>Metal, sıvı, oksijen kaynağı ve elektriksel riskler açısından çevre değerlendirilir.</li>\n<li>Ritim analizi ve şok sırasında kimse hastaya temas etmez.</li>\n</ul>\n<h3>Kurtarma pozisyonu</h3>\n<p>Bilinci kapalı fakat normal soluyan kişide, travma şüphesi ve diğer kontrendikasyonlar değerlendirilerek yan yatış/kurtarma pozisyonu kullanılabilir.</p>\n<h3>Şokta pozisyon</h3>\n<p>Ham notta “sırtüstü, ayaklar havada” şeklinde şok pozisyonu kaydı bulunur. Bu, her yaralıya otomatik uygulanacak bir kural değildir; travma, omurga/kalça/bacak yaralanması, solunum sıkıntısı ve kişinin klinik durumu dikkate alınır. Güncel ilk yardım protokolü esas alınmalıdır.</p>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   },
   {
     "id": "guvenlik-sistemleri",
@@ -105,29 +106,30 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3d2bb40fbf3c80a3a8fbc55b7794537b?pvs=204",
     "updatedAt": "2026-09-05T09:33:00.162Z",
     "imageCount": 0,
-    "introHtml": "",
+    "introHtml": "<p>Güvenlik sistemleri dersi; insan gözetimini destekleyen fiziki ve elektronik sistemleri, algılama–değerlendirme zincirini, metal dedektörlerini, geçiş kontrol sistemlerini ve cihazların bakım/kalibrasyon mantığını ele alır.</p>",
     "categories": [
       {
         "id": "guvenlik-sistemleri-1",
         "title": "Fiziki ve Elektronik Güvenlik Sistemleri",
-        "html": "<h4>Fiziki Sistemler</h4><p>Operatöre ihtiyaç duyan, muhakemesi olmayan.</p><h4>Elektronik Sistemler</h4><ul><li>Duyu / Sensör</li><li>Filtre Seçilim</li><li>Bağımsız Çalışabilme</li><li>Çalıştıktan sonra filtreye uygun kendi başına KARAR verebilme</li></ul><p>Sensör » Filtre » Değerlendirme » Karar</p><p>🦫 Kontrol Paneli</p>"
+        "html": "\n<h3>Fiziki sistemler</h3>\n<p>Fiziki güvenlik unsurları kendi başına muhakeme üretmeyen; bariyer, kapı, kilit, turnike ve benzeri pasif/operatör destekli tedbirler olarak düşünülebilir. Etkinlikleri yerleşim, insan kontrolü ve prosedürle birlikte değerlendirilir.</p>\n<h3>Elektronik sistemler</h3>\n<p>Elektronik güvenlik sistemlerinde temel mantık ders notunda şu zincirle tutulmuştur:</p>\n<blockquote><strong>Sensör → Filtre → Değerlendirme → Karar / Alarm</strong></blockquote>\n<p>Sensör çevresel veriyi algılar; sistem filtre/parametreler aracılığıyla sinyali işler; kontrol paneli veya yazılım değerlendirme sonucunu kullanıcıya alarm, kayıt ya da erişim kararı olarak sunar.</p>"
       },
       {
         "id": "guvenlik-sistemleri-2",
-        "title": "Elektronik Güvenlik Sistemlerinin Kategorileri",
-        "html": "<ol><li>Güvenlik Personeline Yardımcı</li><li>İşletme Güvenliği</li><li>İşletme Çevre Güvenliği</li></ol><p>Monokrom: Metaller siyah</p><p>Colorful: Metaller siyaha yakın koyu</p><p>Dozimetre <strong>Rem</strong> 250 milirem dayanıklılık</p><p>Kullanım kılavuzu Arada aleti kontrol edeceksin.</p><p>Kalibrasyon Türkiye Atom Enerjisi Kurumu</p>"
+        "title": "Elektronik Güvenlik Sistemlerinin Kullanım Alanları",
+        "html": "\n<p>Ders notunda elektronik güvenlik sistemleri üç ana kullanım alanında sınıflandırılmıştır:</p>\n<ol>\n<li>Güvenlik personeline yardımcı sistemler,</li>\n<li>İşletme içi güvenlik sistemleri,</li>\n<li>İşletme çevre/perimetre güvenlik sistemleri.</li>\n</ol>\n<p>Elektronik sistem, güvenlik görevlisinin yerini tamamen alan bir karar mercii değil; algılama, kayıt ve doğrulama kapasitesini artıran destek unsurudur.</p>"
       },
       {
         "id": "guvenlik-sistemleri-3",
-        "title": "Dedektör, Kalibrasyon ve Kontrol Sistemleri",
-        "html": "<p>Manyetik El Dedektörü Manyetik Kapı Dedektörü</p><p>Sinyal verildiyse, kaynağı saptanmalı.</p>"
+        "title": "X-Ray, Dozimetre, Cihaz Kontrolü ve Kalibrasyon",
+        "html": "\n<h3>X-Ray görüntüleme notları</h3>\n<p>Ham notlarda monokrom görüntülemede metallerin koyu/siyah; renkli görüntülemede ise materyal yoğunluğu ve cihazın sınıflandırma algoritmasına göre farklı tonlarda gösterilebildiği not edilmiştir. Renklerin kesin anlamı cihaz üreticisine ve görüntüleme moduna göre değişebileceğinden cihaz eğitiminde üretici şeması esas alınır.</p>\n<h3>Dozimetre</h3>\n<p>Dozimetre, iyonlaştırıcı radyasyona maruziyeti takip etmek amacıyla kullanılan ölçüm aracıdır. Notta “rem / 250 milirem” ifadesi yer almakla birlikte bu değer burada genel bir güvenlik sınırı olarak kabul edilmemiştir; radyasyon birimleri ve mesleki maruziyet limitleri güncel radyasyon mevzuatına göre değerlendirilmelidir.</p>\n<h3>Kontrol ve kalibrasyon</h3>\n<p>Güvenlik cihazları kullanım kılavuzuna göre periyodik olarak test edilmeli; gerekiyorsa yetkili/akredite kuruluşlarca kalibrasyon ve bakım yapılmalıdır. Ham notta geçen “TAEK” ifadesi eski kurumsal terminolojidir; güncel nükleer düzenleme ve metroloji yapısı ayrıca kontrol edilmelidir.</p>"
       },
       {
         "id": "guvenlik-sistemleri-4",
-        "title": "Geçiş Kontrol ve Kimlik Belirleme Sistemleri",
-        "html": "<p>Kartlı sistemler Biyometrik sistemler Kapalı devre kimlik belirleme sistemleri</p>"
+        "title": "Metal Dedektörleri ve Geçiş Kontrol Sistemleri",
+        "html": "\n<h3>Metal dedektörleri</h3>\n<ul>\n<li>El tipi metal dedektörü,</li>\n<li>Kapı tipi metal dedektörü.</li>\n</ul>\n<p>Dedektörün alarm vermesi yasaklı bir eşyanın kesin olarak bulunduğu anlamına gelmez. <strong>Alarm kaynağı açıklığa kavuşturulmalı</strong>; kontrol görev alanı, mevzuat ve kurum prosedürü içinde sürdürülmelidir.</p>\n<h3>Geçiş kontrol sistemleri</h3>\n<ul>\n<li>Kartlı geçiş kontrol sistemleri,</li>\n<li>Biyometrik doğrulama sistemleri,</li>\n<li>Kapalı devre görüntüleme / kimlik belirleme sistemleri,</li>\n<li>Yetki seviyesine göre çalışan turnike ve kapı kontrol sistemleri.</li>\n</ul>\n<p>Bu sistemlerde erişim yetkisi, log/kayıt yönetimi ve kişisel verilerin korunması birlikte ele alınmalıdır.</p>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   },
   {
     "id": "silah-bilgisi",
@@ -139,49 +141,50 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3d5bb40fbf3c80d7aeddc4a25a843fbd?pvs=204",
     "updatedAt": "2026-09-09T07:57:31.260Z",
     "imageCount": 5,
-    "introHtml": "",
+    "introHtml": "<p>Silah bilgisi dersi; emniyet, bakım, ateşli silahların sınıflandırılması, fişek ve şarjör yapısı, tabancanın parçaları, temel balistik kavramlar, MP5 ve revolver sistemleri ile ruhsat kavramlarını içerir. Uygulamalı sökme–takma, arıza giderme ve atış yalnızca yetkili eğitmen gözetimindeki eğitim/poligon ortamında yapılmalıdır.</p>",
     "categories": [
       {
         "id": "silah-bilgisi-1",
-        "title": "Bakım ve Emniyet Notları",
-        "html": "<p>Silahlar belirli bir periyotla(sıklıkla/aralıkla) değil;</p><blockquote><strong>Her ATIŞTAN SONRA Temizlenir.</strong></blockquote><p>Harbi Seti / Silah Temizleme Kiti</p>"
+        "title": "Silah Emniyeti, Bakım ve Temizlik",
+        "html": "\n<p>Ders notunda bakım için ana hatırlatma <strong>“atıştan sonra temizlik”</strong> şeklinde tutulmuştur. Temizlik ve bakım sıklığı silahın modeli, kullanım yoğunluğu, mühimmat, çevre şartları ve üretici talimatıyla birlikte değerlendirilir.</p>\n<p>Harbi seti/silah temizleme kiti; namlu ve erişilebilir parçaların bakımında kullanılan ekipmandır. Temizlik öncesi silahın boş olduğunun güvenli şekilde doğrulanması ve mühimmatın çalışma alanından ayrılması temel emniyet ilkesidir.</p>\n<blockquote>Uygulamalı sökme–takma ve arıza işlemleri için bu blog metni değil, üretici kılavuzu ve yetkili silah eğitmeni esas alınmalıdır.</blockquote>"
       },
       {
         "id": "silah-bilgisi-2",
-        "title": "Silahların Sınıflandırılması",
-        "html": "<p>Kullanıcının ilk hareket yapılıp da</p><ul><li>Otomatik</li><li>Yarı-Otomatik</li></ul><h4>Yarı Otomatik Silahlar</h4><p>Kullanıcısı tarafından ilk dolduruş hareketi yapıldıktan sonra tetiğe her basmada tek tek atış yapan silahlara denir.</p><h4>Otomatik Silahlar</h4><p>Tetiğe basılı tutulduğunda haznedeki (şarjör) tüm mermiyi atan tabancalara da otomatik tabanca/tüfekler denir.</p>"
+        "title": "Ateşli Silahların Sınıflandırılması",
+        "html": "\n<h3>Yarı otomatik silah</h3>\n<p>İlk dolduruş hareketinden sonra, tetiğin her ayrı çekilişinde tek atım yapan ve sonraki fişeği mekanik olarak atışa hazırlayan sistemdir.</p>\n<h3>Otomatik silah</h3>\n<p>Atış seçici ve mekanizma tasarımına bağlı olarak tetik basılı tutulduğu sürece ardışık atış yapabilen sistemdir.</p>\n<p>Sınıflandırmada “otomatik” ve “yarı otomatik” terimleri silahın çalışma çevrimini anlatır; tabanca/tüfek adıyla karıştırılmamalıdır.</p>"
       },
       {
         "id": "silah-bilgisi-3",
-        "title": "Fişek ve Mühimmatın Yapısı",
-        "html": "<h4>Kapsül</h4><h4>Barut</h4><h4>Çekirdek</h4><h4>Kovan</h4><hr>"
+        "title": "Fişek ve Mühimmatın Temel Bileşenleri",
+        "html": "\n<p>Bir merkez ateşlemeli fişeğin temel bileşenleri ders notunda dört parça olarak tutulmuştur:</p>\n<ul><li><strong>Kapsül</strong></li><li><strong>Barut</strong></li><li><strong>Çekirdek</strong></li><li><strong>Kovan</strong></li></ul>\n<p>Kapsül ateşlemeyi başlatır; barut yanarak gaz üretir; oluşan basınç çekirdeği namlu boyunca hareket ettirir; kovan ise bileşenleri bir arada tutar ve atış sonrası mekanizma tarafından tahliye edilir.</p>"
       },
       {
         "id": "silah-bilgisi-4",
-        "title": "Şarjörün Yapısı ve Parçaları",
-        "html": "<h4>Kapak</h4><h4>Kilit</h4><p>Yay ve kapağı birleştiren, yaya bağımlı, tampon kısım.</p><h4>Yay</h4><h4><strong>Gerdel</strong></h4><p>Şarjör de sırası gelen mermiyi fişek yatağına vermek. Bittiğinde, tabanca geride kalacak. Gerdel varsa silah arıza verir. Ya gerdelin üzerine mermi binmeli. Değilse dolu şarjör takılmalı.</p><ul><li>Haznede (şarjör tüpünde bekleyen) sırası gelen mermiyi fişek yatağı önünde hazır etmek,</li><li>Şarjörde mermi bittiğinde üst sürgünün geride kalmasını sağlamak.</li></ul><h4>Şarjör tüpü</h4><hr>"
+        "title": "Şarjörün Yapısı ve Görevi",
+        "html": "\n<p>Çıkarılabilir kutu tipi şarjörün temel parçaları notlarda <strong>şarjör gövdesi/tüpü, yay, gerdel, taban/kapak ve kilit</strong> olarak geçmektedir.</p>\n<h3>Gerdel (follower)</h3>\n<p>Gerdel, yayın kuvvetiyle fişekleri besleme dudaklarına doğru yükselten parçadır. Bazı tabanca sistemlerinde son fişekten sonra sürgü tutucunun devreye girmesine de katkı sağlar.</p>\n<p>Şarjör arızaları yalnızca gerdelden kaynaklanmaz; yay, besleme dudakları, kirlenme, mühimmat veya şarjörün fiziksel hasarı da besleme sorununa yol açabilir.</p>"
       },
       {
         "id": "silah-bilgisi-5",
         "title": "Tabancanın Ana Parçaları",
-        "html": "<h4>Alt Gövde</h4><h5>Kabze</h5><p>Şarjörün yerleştiği, elle tutulan kısım.</p><h5>Şarjör Çıkartma Mandalı</h5><h5>Tetik Korkuluğu</h5><h5>Tetik</h5><h5>Tetik Mekanizması</h5><h5>✓ Horoz</h5><p>Horozlu silahlarda Tetik/Tetik mekanizması sürekli çalışabilir.</p><h5>✓ Tetik Manivelası</h5><p>Horozlu silahlarda Horoz ile Tetik arasındaki bağlantıyı sağlar. Taktik silahlarda Tetik Manivelası bulunmaz.</p><h5>✓ Emniyet Mandalı</h5><h4>Üst Gövde / Üst Sürgü</h4><h5>Arpacık (ucu)</h5><h5>Gez (arka)</h5><h5>Kovan Atma Boşluğu</h5><h5>Tırnak</h5><p>Haznede bekleyen merminin boşalması sonucu</p><h5>İğne tertibatı</h5><h4>Namlu</h4><h5>İcra Mili</h5><h5>İcra Yayı</h5><h5>Namlu</h5><h5>Dirsekli Kurs</h5><p>İcra milinin/yayının takıldığı kısım.</p><p>Yiv Set Tabancada 6 tanedir Uzun namlulularda 4 Çukur yiv Tümsek set Şap: İki set arası mesafe</p><p>Sağ’a helezonik</p><p>Namlu, üst gövdenin ana parçası değildir.</p><aside class=\"ogg-image-transcript\" data-image=\"1\"><b>Görsel 1</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside><aside class=\"ogg-image-transcript\" data-image=\"2\"><b>Görsel 2</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside>"
+        "html": "\n<h3>Alt gövde / çerçeve</h3>\n<ul>\n<li><strong>Kabze:</strong> Silahın elde tutulduğu, birçok tabancada şarjör yuvasını da içeren bölüm.</li>\n<li><strong>Şarjör çıkarma mandalı:</strong> Şarjörün gövdeden serbest bırakılmasını sağlar.</li>\n<li><strong>Tetik korkuluğu:</strong> Tetiği dış darbelerden koruyan yapı.</li>\n<li><strong>Tetik ve tetik mekanizması:</strong> Ateşleme sisteminin kullanıcı tarafından kumanda edilen bölümüdür.</li>\n<li><strong>Horoz / striker sistemi:</strong> Model tasarımına göre ateşleme enerjisinin iğneye aktarılma biçimi değişir.</li>\n<li><strong>Emniyet mekanizmaları:</strong> Manuel veya otomatik emniyetlerin varlığı modele göre farklıdır.</li>\n</ul>\n<h3>Üst sürgü</h3>\n<ul>\n<li>Arpacık ve gez,</li>\n<li>Kovan atma penceresi,</li>\n<li>Tırnak/extractor,</li>\n<li>Ateşleme iğnesi/striker tertibatı.</li>\n</ul>\n<h3>Namlu ve geri getirme sistemi</h3>\n<p>Namlu, icra yayı/geri getirme yayı ve kılavuz mili gibi parçalar çalışma çevriminin temel elemanlarıdır. Ham notta “namlu üst gövdenin ana parçası değildir” ayrımı özellikle sınav ifadesi olarak kaydedilmiştir.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görseller 1–2</b><span>Notion’da tabanca parçalarını gösteren iki ders görseli bulunuyor. Konumları korunmuştur; görsellerdeki özgün yazılar binary erişim kısıtı nedeniyle henüz güvenilir biçimde çözümlenemedi.</span></div>"
       },
       {
         "id": "silah-bilgisi-6",
-        "title": "Namlu ve Balistik Kavramlar",
-        "html": "<p>Tabanca ateşlendikten sonra kovan ve çekirdek üzerindeki fişek yatağı ve namlunun izlerine Rayyür denir.</p><h4>Hatve</h4><p>Mermi ateşlendikten sonra çekirdeğin namlu içerisindeki aldığı yola hatve denir.</p><h4>Rayyür</h4><p>Tabanca ateşlendikten sonra kovan ve çekirdek üzerindeki fişek yatağı ve namlunun izlerine Rayyür denir. <strong>Namlu, çekirdeğe iz bırakır.</strong></p><h4>Hatve</h4><p>Mermi ateşlendikten sonra çekirdeğin namlu içerisindeki aldığı yola hatve denir.</p><aside class=\"ogg-image-transcript\" data-image=\"3\"><b>Görsel 3</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside><aside class=\"ogg-image-transcript\" data-image=\"4\"><b>Görsel 4</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside><p>Nişan hattında en hareketli parça <strong>Arpacık</strong></p><h5>Nişan hattında en hareketli parça?</h5><p><strong>Arpacık</strong></p><p>Atış esnasında silah arızası yaşandı 15 saniye kuralı, sol ele al kaldır, atış istikametinde tut</p><p>.38 cal = 9.65 mm</p>"
+        "title": "Namlu, Yiv–Set ve Temel Balistik Kavramlar",
+        "html": "\n<h3>Yiv ve set</h3>\n<p>Yivli namluda yiv ve setler çekirdeğe dönme hareketi kazandırır. <strong>Yiv–set sayısı ve dönüş yönü silah modeline göre değişir;</strong> ham nottaki “tabancada 6, uzun namluda 4” ifadesi evrensel kural değildir.</p>\n<h3>Rayyür</h3>\n<p>Adli balistikte namlu, fişek yatağı, iğne, tırnak ve diğer mekanik parçaların çekirdek/kapsül/kovan üzerinde bırakabildiği karakteristik izler karşılaştırma amacıyla incelenir. Notta bu izler “rayyür” başlığı altında ele alınmıştır.</p>\n<h3>Hatve</h3>\n<p>Hatve, yiv-setin namlu içinde bir tam dönüşü tamamladığı mesafeyi ifade eden balistik/geometrik kavramdır. Ham nottaki “çekirdeğin namluda aldığı yol” ifadesi bu nedenle teknik olarak daraltılarak düzeltilmiştir.</p>\n<h3>Nişan elemanları</h3>\n<p>Gez ve arpacık mekanik nişangâhın temel iki unsurudur. Dersin ezber sorusunda “nişan hattında en hareketli parça” cevabı <strong>arpacık</strong> olarak kaydedilmiştir; bunun bağlamı nişan hatası ve namlu hareketinin hedef üzerindeki etkisidir.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görseller 3–4</b><span>Notion’da namlu/balistik konusuna ait iki görsel bulunuyor; görsel yerleri korunmuştur.</span></div>"
       },
       {
         "id": "silah-bilgisi-7",
-        "title": "MP5 Sistemi",
-        "html": "<p>El kundağında Emniyet Mandalı var Emniyet Tek Tek Seri</p><aside class=\"ogg-image-transcript\" data-image=\"5\"><b>Görsel 5</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside><p>MP5 Otomatik Tabancalarda Kurma Kolu İlk besleme anında çekilir. Bir daha çalışmaz. Şarjörde mermi kalmayınca, silah geride kalır. Çekilir, şarjör düşürülür. Kurulu kalır. Yeni şarjör takılır, sürülür.</p><p>Tabanca / MP5 sökümü •Ölü bölgeye çevrilir •Şarjör çıkarılır •Doldur boşalt yapılır Dipçik pimi sökülür Kabze pimi sökülür Mekanizma içinden çıkarılır El kundağı sökülür</p>"
+        "title": "Atış Arızası, Kalibre ve MP5 Notları",
+        "html": "\n<h3>Atışta gecikme / arıza</h3>\n<p>Ham notta atış sırasında beklenmeyen bir ateşleme/arıza hâli için “15 saniye, atış istikametinde tut” şeklinde poligon güvenlik notu vardır. Bu süre ve prosedür evrensel bir arıza giderme talimatı olarak değil, <strong>eğitim yapılan poligonun güvenlik prosedürü</strong> olarak değerlendirilmelidir.</p>\n<h3>.38 kalibre notu</h3>\n<p>.38 inç nominal çap yaklaşık 9,65 mm’dir; fişek ve namlu ölçülerinde ticari adlandırma ile gerçek ölçü aynı olmayabilir.</p>\n<h3>MP5</h3>\n<p>MP5, seçici ateşleme sistemine sahip varyantları bulunan, kapalı sürgüden ateşleyen 9×19 mm makineli tabanca ailesidir. Ders notunda emniyet/tekli/seri seçici konumları, kurma kolu ve şarjör değişimi kavramları işlenmiştir.</p>\n<p>Kurma kolu, mekanizmayı geriye alarak ilk besleme ve belirli kontrol işlemlerinde kullanılır. Sökme-takma sırası ve arıza giderme adımları varyanta göre değişebileceğinden uygulama yalnızca yetkili eğitmen ve üretici dokümantasyonuyla yapılmalıdır.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görsel 5</b><span>Notion’da MP5 sistemine ilişkin bir ders görseli bulunuyor; görsel konumu korunmuştur.</span></div>"
       },
       {
         "id": "silah-bilgisi-8",
-        "title": "Revolver Tabancalar ve Ruhsat Bilgileri",
-        "html": "<p>Bu Tabancalarda iğne tertibatı yoktur. Top içerisindeki atışa hazır mermi Horoz sayesinde ateşleme yapar. Şarjör yoktur. Şarjör görevini gövdede bulunan top yerine getirir. Boş kovanların dışa atılmasını top üzerinde bulunan Çıkarıcı Yıldız sağlar.</p><p>Silahlı yakın koruma görevlisi koruduğu şahıs yanında ise silahı ülke genelinde gezdirebilir. Koruma yaptığı şahıs yanında değilse sadece koruma kararı çıkartılan il sınırları içerisinde gezdirebilir.</p><h3>Silah Ruhsatları</h3><p>Bu ruhsatları sadece Valilikler (Mülkî Amir) vermeye yetkilidir. 5 yılda bir yenilenir.</p><ul><li>Taşıma Ruhsatı</li><li>Bulundurma Ruhsatı</li></ul>"
+        "title": "Revolver Tabancalar, Yakın Koruma ve Ruhsat Kavramları",
+        "html": "\n<h3>Revolver</h3>\n<p>Revolver tabancalarda fişekler döner tamburda bulunur; klasik çıkarılabilir şarjör kullanılmaz. Boş kovanların toplu şekilde çıkarılmasında ejector/çıkarıcı yıldız mekanizması görev yapar.</p>\n<p>Ham notta “iğne tertibatı yoktur” ifadesi yer almaktadır; bu evrensel değildir. Revolver tasarımına göre horoza bağlı veya gövdeye yerleştirilmiş ateşleme iğnesi sistemleri bulunabilir.</p>\n<h3>Silahlı yakın koruma notu</h3>\n<p>Ders notunda yakın koruma görevlisinin silah taşıma yetkisinin korunan kişiyle birlikte bulunma ve koruma kararının coğrafi kapsamıyla ilişkili olduğu özellikle vurgulanmıştır. Uygulamada karar metni ve 5188 sayılı mevzuat esas alınır.</p>\n<h3>Ruhsat kavramları</h3>\n<ul><li>Taşıma ruhsatı</li><li>Bulundurma ruhsatı</li></ul>\n<p>Silah ruhsatları yetkili idari makamlar tarafından düzenlenir ve mevzuatta öngörülen sürelerde yenilenir. Özel güvenlik hizmetinde kullanılan görev silahları bakımından ayrıca 5188 sayılı sistemdeki izin, kayıt ve muhafaza hükümleri uygulanır.</p>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   },
   {
     "id": "kalabalik-yonetimi",
