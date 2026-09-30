@@ -9,9 +9,9 @@
       </RouterView>
     </main>
     <SiteFooter />
-    <IntentModal v-if="route.name !== 'lands' && route.name !== 'ogg'" />
-    <LandsFab v-if="route.name !== 'ogg'" />
-    <ToolsFab v-if="route.name !== 'ogg'" />
+    <IntentModal v-if="route.name !== 'lands' && route.name !== 'ogg' && route.name !== 'ogg-lesson'" />
+    <LandsFab v-if="route.name !== 'ogg' && route.name !== 'ogg-lesson'" />
+    <ToolsFab v-if="route.name !== 'ogg' && route.name !== 'ogg-lesson'" />
   </div>
 </template>
 
@@ -24,6 +24,7 @@ import IntentModal from './components/IntentModal.vue'
 import LandsFab from './components/LandsFab.vue'
 import ToolsFab from './components/ToolsFab.vue'
 import { getProject, getService } from './lib/content.js'
+import { oggLessons } from './content/oggLessonsFull.js'
 import { locale, localize, t } from './lib/locale.js'
 
 const route = useRoute()
@@ -43,7 +44,11 @@ function routeTitle() {
   if (route.name === 'service-detail') return localize(getService(route.params.slug)?.title)
   if (route.name === 'project-detail') return localize(getProject(route.params.slug)?.title)
   if (route.name === 'music') return locale.value === 'tr' ? 'Müzik · Saygıyla Sunar' : 'Music · Saygıyla Sunar'
-  if (route.name === 'ogg') return 'ÖGG Çalışma Notları'
+  if (route.name === 'ogg') return 'ÖGG Akademik Çalışma Notları'
+  if (route.name === 'ogg-lesson') {
+    const lesson = oggLessons.find((item) => item.slug === route.params.slug)
+    return lesson ? `${lesson.title} · ÖGG` : 'ÖGG Ders Notları'
+  }
   if (route.name === 'home') return ''
   return t(`meta.${route.meta.title || ''}`, '')
 }
@@ -61,7 +66,13 @@ function routeDescription() {
       : 'Saygıyla Sunar is the artist name used by Ersen Filiz for music releases. Find Spotify, YouTube Music and Apple Music listening links here.'
   }
   if (route.name === 'ogg') {
-    return 'Silahlı özel güvenlik temel eğitimi için düzenlenmiş ÖGG çalışma notları; hukuk, güvenlik tedbirleri, ilk yardım, güvenlik sistemleri, silah bilgisi, kalabalık yönetimi, kişi koruma, yangın, genel kolluk ilişkileri ve etkili iletişim başlıkları ile Eylül 2026 kurs programı arşivi.'
+    return 'Silahlı özel güvenlik temel eğitimi için Notion ders notlarından düzenlenmiş tam sürüm akademik ÖGG arşivi; 10 ders, konu hiyerarşisi ve Eylül 2026 kurs programı.'
+  }
+  if (route.name === 'ogg-lesson') {
+    const lesson = oggLessons.find((item) => item.slug === route.params.slug)
+    return lesson
+      ? `${lesson.title} dersi için Eylül 2026 ÖGG temel eğitiminde tutulan Notion notlarının özetlenmeden, konu hiyerarşisine göre düzenlenmiş tam metin sürümü.`
+      : 'ÖGG temel eğitim ders notlarının tam metin akademik sürümü.'
   }
   return baseDescription()
 }
