@@ -186,7 +186,7 @@ function formatDate(value){
 .prose :deep(.concept-grid strong) { display:block; margin-bottom:4px; color:var(--accent); font-family:var(--tech); font-size:.72rem; }
 .prose :deep(.concept-grid small) { color:var(--muted); font-size:.72rem; line-height:1.45; }
 .prose :deep(.ring-figure) { position:relative; width:min(320px,82vw); aspect-ratio:1; margin:10px auto 0; }
-.prose :deep(.ring-figure .ring) { position:absolute; inset:50%; transform:translate(-50%,-50%); display:grid; place-items:start center; padding-top:11px; border:1px solid var(--line-strong); border-radius:50%; font-family:var(--tech); font-size:.62rem; font-weight:800; }
+.prose :deep(.ring-figure .ring) { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:grid; place-items:start center; padding-top:11px; border:1px solid var(--line-strong); border-radius:50%; font-family:var(--tech); font-size:.62rem; font-weight:800; }
 .prose :deep(.ring-figure .outer) { width:100%; height:100%; background:color-mix(in srgb,var(--accent) 4%,transparent); }
 .prose :deep(.ring-figure .middle) { width:68%; height:68%; background:var(--bg-soft); }
 .prose :deep(.ring-figure .inner) { width:38%; height:38%; background:var(--surface-solid); }
@@ -194,6 +194,7 @@ function formatDate(value){
 .prose :deep(.vehicle-figure) { display:grid; grid-template-columns:1fr 1.2fr 1fr; gap:8px; align-items:stretch; }
 .prose :deep(.vehicle-figure>div) { min-height:72px; display:grid; place-items:center; padding:10px; border:1px solid var(--line); border-radius:12px; background:var(--surface-solid); text-align:center; font-size:.72rem; line-height:1.4; }
 .prose :deep(.vehicle-figure .main) { border-color:var(--accent); }
+.prose :deep(.visual-caption) { margin:12px 0 0; color:var(--muted); font-size:.7rem; line-height:1.5; }
 @media(max-width:520px){ .prose :deep(.concept-grid){grid-template-columns:1fr}.prose :deep(.vehicle-figure){grid-template-columns:1fr}.prose :deep(.study-flow){padding-bottom:8px} }\n.prose :deep(.ogg-image-transcript) { display:grid; gap:4px; margin:20px 0; padding:14px; border:1px dashed var(--line-strong); border-radius:12px; background:var(--bg-soft); }
 .prose :deep(.ogg-image-transcript b) { color:var(--accent); font-family:var(--tech); font-size:.72rem; }
 .prose :deep(.ogg-image-transcript span) { color:var(--muted); font-size:.76rem; }
