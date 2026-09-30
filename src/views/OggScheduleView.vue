@@ -29,8 +29,8 @@
             <h2>Her ders ayrı, her konu kendi hiyerarşisinde.</h2>
           </div>
           <p>
-            İçerikler Notion’daki kurs notlarının özetlenmiş hâli değildir. Derslerin tam metni
-            korunmuş; yalnızca başlık yapısı, tekrar eden sunum işaretleri ve okunabilirlik
+            İçerikler Notion’daki kurs notları ve sağlanan PowerPoint ders slaytlarının özetlenmiş hâli değildir.
+            Kaynaklardaki sınav dili korunmuş; başlık yapısı, tekrar eden sunum işaretleri ve okunabilirlik
             akademik blog düzenine göre yeniden işlenmiştir.
           </p>
         </header>
@@ -61,7 +61,7 @@
       <div class="container editorial-grid">
         <div>
           <p class="tech-label">EDİTORYAL YAPI</p>
-          <h2>Not defteri → akademik blog.</h2>
+          <h2>Not defteri + kurs slaytı → akademik blog.</h2>
         </div>
         <div>
           <p>
