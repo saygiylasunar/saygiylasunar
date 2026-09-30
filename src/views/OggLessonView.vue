@@ -64,6 +64,22 @@
           <a class="category-top" href="#top">↑ Ders başına dön</a>
         </section>
 
+        <section v-if="lesson.references?.length" class="lesson-references" aria-labelledby="official-sources-title">
+          <p class="tech-label">DOĞRULAMA // RESMÎ KAYNAKLAR</p>
+          <h2 id="official-sources-title">Resmî doğrulama kaynakları</h2>
+          <div>
+            <a
+              v-for="reference in lesson.references"
+              :key="reference.href"
+              :href="reference.href"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{{ reference.label }}</span><b aria-hidden="true">↗</b>
+            </a>
+          </div>
+        </section>
+
         <aside class="lesson-source-note">
           <p class="tech-label">KAYNAK / EDİTORYAL NOT</p>
           <p>
@@ -151,6 +167,12 @@ function formatDate(value){
 .prose :deep(.ogg-image-transcript b) { color:var(--accent); font-family:var(--tech); font-size:.72rem; }
 .prose :deep(.ogg-image-transcript span) { color:var(--muted); font-size:.76rem; }
 .category-top { display:inline-flex; margin-top:18px; color:var(--muted); font-size:.7rem; text-decoration:none; }
+.lesson-references { margin-bottom:18px; padding:22px; border:1px solid var(--line); border-radius:16px; background:var(--surface-solid); }
+.lesson-references h2 { margin:8px 0 16px; font-size:1.35rem; letter-spacing:-.03em; }
+.lesson-references>div { display:grid; gap:8px; }
+.lesson-references a { min-height:46px; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:0 12px; border:1px solid var(--line); border-radius:10px; color:var(--text); font-size:.78rem; text-decoration:none; }
+.lesson-references a:hover { border-color:var(--accent); }
+.lesson-references b { color:var(--accent); }
 .lesson-source-note { padding:22px; border:1px solid var(--line); border-radius:16px; background:var(--surface-solid); }
 .lesson-source-note p:not(.tech-label) { margin:12px 0; color:var(--muted); font-size:.84rem; line-height:1.65; }
 .lesson-source-note a { color:var(--text); font-size:.78rem; }
