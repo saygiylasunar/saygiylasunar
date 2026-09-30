@@ -353,7 +353,7 @@ function downloadCalendar() {
   --ogg-accent-soft: color-mix(in srgb, var(--ogg-accent) 12%, transparent);
   --ogg-card: color-mix(in srgb, var(--surface-solid) 94%, transparent);
   --ogg-tech:
-    ui-monospace, "Cascadia Code", "Roboto Mono", "SFMono-Regular", Menlo, Monaco,
+    "EFSS", "Saygiyla Sunar", ui-monospace, "Cascadia Code", "Roboto Mono", "SFMono-Regular", Menlo, Monaco,
     Consolas, monospace;
   padding-bottom: 84px;
 }
