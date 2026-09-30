@@ -968,4 +968,11 @@ export const oggLessonsMeta = {
   updatedAt: '2026-09-30',
   fullVersion: true,
   examLayer: true,
+  sourceDecks: [
+    'SİLAH BİLGİSİ VE ATIŞ.ppt',
+    'OFG KİŞİ KORUMA.ppt',
+    'GÜVENLİK TEDBİRLERİ--SLAYT.ppt',
+    'uyuşturucu.PPT',
+  ],
+  sourceDeckAudit: '2026-09-30',
 }
