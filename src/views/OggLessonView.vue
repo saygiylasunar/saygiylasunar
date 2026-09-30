@@ -42,6 +42,24 @@
             </a>
           </li>
         </ol>
+
+        <div class="lesson-author-card">
+          <p class="tech-label">HAZIRLAYAN</p>
+          <strong>Ersen Filiz</strong>
+          <small>@saygiylasunar</small>
+          <p>ÖGG çalışma arşivinin derlenmesi, düzenlenmesi ve web uygulaması.</p>
+          <nav aria-label="Hazırlayan bağlantıları">
+            <a href="https://saygiylasunar.com" target="_blank" rel="noopener noreferrer">Website ↗</a>
+            <a href="https://github.com/saygiylasunar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://x.com/saygiylasunar" target="_blank" rel="noopener noreferrer">X ↗</a>
+            <a href="https://instagram.com/saygiylasunar" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          </nav>
+          <div class="related-work">
+            <span>İLGİLİ ÇALIŞMA</span>
+            <a href="https://yavuzozelguvenlik.netlify.app" target="_blank" rel="noopener noreferrer">Yavuz ÖGG web görünümü ↗</a>
+            <small>Kurs programı ve kurum bilgileri</small>
+          </div>
+        </div>
       </aside>
 
       <main class="lesson-article">
@@ -100,6 +118,19 @@
             Mevzuata bağlı uygulamalarda yürürlükteki resmî kaynaklar esas alınmalıdır.
           </p>
         </aside>
+
+        <aside class="lesson-author-card lesson-author-mobile">
+          <p class="tech-label">HAZIRLAYAN</p>
+          <strong>Ersen Filiz · @saygiylasunar</strong>
+          <p>ÖGG çalışma arşivinin derlenmesi, düzenlenmesi ve web uygulaması.</p>
+          <nav aria-label="Hazırlayan bağlantıları">
+            <a href="https://saygiylasunar.com" target="_blank" rel="noopener noreferrer">Website ↗</a>
+            <a href="https://github.com/saygiylasunar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://x.com/saygiylasunar" target="_blank" rel="noopener noreferrer">X ↗</a>
+            <a href="https://instagram.com/saygiylasunar" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://yavuzozelguvenlik.netlify.app" target="_blank" rel="noopener noreferrer">Yavuz ÖGG ↗</a>
+          </nav>
+        </aside>
       </main>
     </div>
   </div>
@@ -152,6 +183,19 @@ function formatDate(value){
 .lesson-toc a { display:grid; grid-template-columns:24px 1fr; gap:7px; padding:7px 4px; border-radius:8px; color:var(--text); font-size:.73rem; line-height:1.35; text-decoration:none; }
 .lesson-toc a:hover { background:color-mix(in srgb,var(--accent) 10%,transparent); }
 .lesson-toc a span { color:var(--accent); font-family:var(--tech); font-size:.61rem; }
+.lesson-author-card{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.lesson-author-card>strong{display:block;margin-top:9px;font-size:.88rem}
+.lesson-author-card>small{display:block;margin-top:2px;color:var(--muted);font-family:var(--tech);font-size:.64rem}
+.lesson-author-card>p:not(.tech-label){margin:9px 0 0;color:var(--muted);font-size:.69rem;line-height:1.52}
+.lesson-author-card nav{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}
+.lesson-author-card nav a{display:flex;min-height:32px;align-items:center;padding:0 8px;border:1px solid var(--line);border-radius:8px;color:var(--text);font-family:var(--tech);font-size:.61rem;text-decoration:none}
+.lesson-author-card nav a:hover{border-color:var(--accent)}
+.related-work{margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
+.related-work>span{display:block;color:var(--accent);font-family:var(--tech);font-size:.56rem;font-weight:800;letter-spacing:.08em}
+.related-work>a{display:block;margin-top:6px;color:var(--text);font-size:.68rem;font-weight:700;text-decoration:none}
+.related-work>small{display:block;margin-top:3px;color:var(--muted);font-size:.59rem;line-height:1.4}
+.lesson-author-mobile{display:none;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface-solid)}
+.lesson-author-mobile nav{grid-template-columns:repeat(2,minmax(0,1fr))}
 .lesson-article { min-width:0; }
 .lesson-intro { margin-bottom:54px; padding:22px; border:1px solid var(--line); border-radius:18px; background:var(--surface-solid); }
 .lesson-category { scroll-margin-top:84px; padding:0 0 clamp(56px,8vw,86px); }
@@ -214,7 +258,7 @@ function formatDate(value){
 .lesson-source-note p:not(.tech-label) { margin:12px 0; color:var(--muted); font-size:.84rem; line-height:1.65; }
 .lesson-source-note a { color:var(--text); font-size:.78rem; }
 .lesson-missing { padding:120px 0; }
-@media(max-width:900px){ .lesson-layout{grid-template-columns:1fr}.lesson-toc{display:none} }
+@media(max-width:900px){ .lesson-layout{grid-template-columns:1fr}.lesson-toc{display:none}.lesson-author-mobile{display:block;margin-top:18px} }
 @media(max-width:720px){
   .lesson-hero{padding:62px 0 34px}
   .lesson-back{margin-bottom:22px}
