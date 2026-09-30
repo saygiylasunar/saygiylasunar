@@ -331,64 +331,65 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3d9bb40fbf3c80af9559cbd86468a114?pvs=204",
     "updatedAt": "2026-09-12T12:01:27.240Z",
     "imageCount": 0,
-    "introHtml": "",
+    "introHtml": "<p>Yangın güvenliği dersi; yangın ve yanma kavramlarını, acil durum organizasyonunu, yangın sınıflarını, yangın nedenlerini, algılama ve söndürme sistemlerini, koruyucu donanımı, gazların özelliklerini ve taşınabilir yangın söndürücülerin temel yapısını kapsar. Ham dersteki eski sınıflandırmalar güncel teknik terminolojiyle düzeltilmiştir.</p>",
     "categories": [
       {
         "id": "yangin-guvenligi-1",
-        "title": "İtfaiye Teşkilatı ve Temel Tarihçe",
-        "html": "<p>1718 Fransız Davut Tulumbası TC Belediyeleri teşkilattan sorumludur</p><h3>İtfaiye Teşkilatı neye göre kurulur?</h3><p>Bir ilin;</p><p>Bakılır.</p><ol><li>Nüfus sayısına göre</li><li>İmar durumuna göre</li><li>Bitki örtüsüne göre</li><li>Özel İtfaiye Teşkilatının olup olmadığına</li></ol><p>Parlama, patlama, kıvılcım</p><p>Orman yangını çeşitleri</p><ul><li>Tepe Yangını</li><li>Örtü Yangını</li><li>Gövde Yangını</li></ul><p>Patlayıcı/Patlayıcı madde meskun mahalde depo edilemez/boşaltılamaz.</p>"
+        "title": "İtfaiye Tarihçesi ve Teşkilatın Kuruluş Mantığı",
+        "html": "\n<h3>Ders tarihçesi notları</h3>\n<p>Notlarda Osmanlı döneminde 1579 tarihli yangın tedbirleri ve 18. yüzyılda tulumbacılık teşkilatının gelişimi tarihsel başlangıç noktaları olarak işlenmiştir. “Fransız Davut/Davut Tulumbası” ifadesi ders anlatımındaki tarihçe notudur; akademik kullanımda dönem kaynaklarıyla ayrıca doğrulanmalıdır.</p>\n<h3>İtfaiye teşkilatının planlanması</h3>\n<p>Yerel itfaiye yapılanması; nüfus, yapılaşma ve imar yoğunluğu, coğrafi/bitkisel riskler, sanayi ve özel riskli tesisler, ulaşım ve mevcut müdahale kapasitesi gibi değişkenler dikkate alınarak planlanır. Türkiye’de belediye itfaiyeleri yerel yangınla mücadelede temel kurumsal aktörlerdendir.</p>\n<h3>Orman yangınları</h3>\n<p>Ders notunda orman yangınları tepe, örtü ve gövde yangını şeklinde sınıflandırılmıştır. Bu sınıflandırma yangının orman dokusunda ilerlediği katmanı anlatır.</p>"
       },
       {
         "id": "yangin-guvenligi-2",
-        "title": "Acil Durum Planı ve Ekipler",
-        "html": "<ol><li>Söndürme</li><li>Kurtarma</li><li>Koruma</li><li>İlkyardım</li></ol><blockquote>En az 2 kişi, çalışan sayısı % oranında</blockquote><hr><p>Söndürme: Yangına İlk Müdahale Kurtarma: Önceliklendirilmiş eşyaların tahliyesi Koruma: Tahliye ve Çevre Güvenliği İlkyardım: Yaralıya İlk Müdahale</p>"
+        "title": "İşyerlerinde Acil Durum Planı ve Ekipler",
+        "html": "\n<p>İşyerinde yangın güvenliği, yalnızca söndürücü bulundurmakla sınırlı değildir. Acil durum planı; alarm/bildirim, tahliye, toplanma, söndürme, kurtarma, koruma ve ilk yardım organizasyonunu birlikte ele alır.</p>\n<ul>\n<li><strong>Söndürme:</strong> başlangıç aşamasındaki yangına güvenli ve eğitimli ilk müdahale.</li>\n<li><strong>Kurtarma:</strong> insanların güvenli tahliyesi; yalnızca eşya kurtarmaya indirgenemez.</li>\n<li><strong>Koruma:</strong> tahliye güzergâhı, çevre ve kritik alan güvenliğinin sağlanması.</li>\n<li><strong>İlk yardım:</strong> yaralanan kişiye profesyonel sağlık yardımı gelene kadar uygun ilk yardım.</li>\n</ul>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Ham nottaki “her ekip en az iki kişi / çalışan sayısının belirli yüzdesi” ifadesi evrensel kural değildir. Destek elemanı sayısı işyerinin tehlike sınıfı, çalışan sayısı ve yürürlükteki acil durum mevzuatına göre belirlenir.</p>"
       },
       {
         "id": "yangin-guvenligi-3",
-        "title": "Yangın ve Yanmanın Temel Kavramları",
-        "html": "<p>Yararlanmak amacı ile yakılan ateşin kontrolden çıkmasıdır.</p><h3>Yanma nedir?</h3><p>Yanıcı madde, ısı, oksijen birleşime gelen kimyasal olaya denir.</p><h4>Yanıcı Maddeler</h4><h5>Katı</h5><p>Ağaç, Tekstil</p><h5>Sıvı</h5><p>Petrol</p><h5>Gaz</h5><p>LPG, Doğalgaz</p>"
+        "title": "Yangın, Yanma ve Yanma Üçgeni",
+        "html": "\n<h3>Yangın</h3>\n<p>Kontrol altındaki ateşin istenmeyen biçimde yayılması ve can, mal veya çevre için tehlike oluşturması yangın olarak değerlendirilir.</p>\n<h3>Yanma</h3>\n<p>Yanma, yanıcı madde ile oksitleyicinin yeterli aktivasyon enerjisi/ısı altında gerçekleşen ekzotermik kimyasal tepkimesidir. Temel eğitimde bu ilişki <strong>yanıcı madde + ısı + oksijen</strong> şeklindeki “yanma üçgeni” ile anlatılır.</p>\n<h3>Yanıcı maddenin fiziksel hâli</h3>\n<ul><li>Katı: odun, tekstil, kâğıt vb.</li><li>Sıvı: benzin, solvent ve çeşitli yanıcı sıvılar.</li><li>Gaz: LPG, doğal gaz, hidrojen vb.</li></ul>"
       },
       {
         "id": "yangin-guvenligi-4",
-        "title": "Oksijen, Isı ve Yanma Çeşitleri",
-        "html": "<p>Gökte ne var?</p><ul><li>%78 Azot</li><li>%21 Oksijen</li><li>%1 Diğer Zehirli Gazlar</li></ul><h3>Oksijen</h3><ul><li>Havada %21 oranında bulunur.</li><li>Renksiz</li><li>Kokusuz</li><li>Saydam</li><li>(-183°C) Sıvılaşır, dolum/depolama yapılır.</li></ul><hr><h3>Söndürme</h3><p>Oksijen %12’nin altına düşürülmeye çalışılır. Isı düşürülür.</p><h3>Isı Kaynakları</h3><p>Güneş, Yıldırım, Volkanlar</p><h3>Yapay Işık Kaynakları</h3><p>İnsanlar tarafından üretilir. (Yapay)</p><ul><li>Meşale</li><li>Gaz Lambası</li><li>Mum</li><li>Ampul</li><li>Floresan</li><li>LED</li></ul><h3>Yanmanın Çeşitleri</h3><ol><li>Yavaş</li><li>Hızlı</li><li>Parlama / Patlama</li><li>Kendiliğinden</li></ol>"
+        "title": "Hava, Oksijen, Isı ve Yanma Çeşitleri",
+        "html": "\n<h3>Havanın bileşimi</h3>\n<p>Kuru havanın yaklaşık %78’i azot, %21’i oksijendir; kalan yaklaşık %1’lik bölümün büyük kısmı argon başta olmak üzere diğer gazlardan oluşur. Ham nottaki “%1 diğer zehirli gazlar” ifadesi teknik olarak yanlıştır.</p>\n<h3>Oksijen</h3>\n<p>Oksijen renksiz ve kokusuz bir gazdır; yanıcı değildir fakat yanmayı güçlü biçimde destekleyen <strong>oksitleyici</strong> bir gazdır. Sıvı oksijen yaklaşık −183 °C civarında oluşur ve özel kriyojenik şartlarda depolanır.</p>\n<h3>Isı kaynakları</h3>\n<p>Güneş, yıldırım ve volkanik faaliyet doğal ısı/ateşleme kaynakları; açık alev, elektrik arkı, sıcak yüzey, sürtünme ve insan yapımı cihazlar ise yapay ateşleme kaynakları olabilir.</p>\n<h3>Yanma çeşitleri</h3>\n<ul><li>Yavaş yanma,</li><li>hızlı yanma,</li><li>parlama/patlama niteliğindeki çok hızlı yanma,</li><li>kendiliğinden tutuşma.</li></ul>"
       },
       {
         "id": "yangin-guvenligi-5",
-        "title": "Yangının Oluşum Aşamaları",
-        "html": "<p>(<strong>KDA</strong>)</p><ol><li>Koku</li><li>Duman</li><li>Alev</li></ol>"
+        "title": "Yangının Belirtileri ve KDA Ezberi",
+        "html": "\n<p>Ders notunda erken farkındalık için <strong>KDA = Koku → Duman → Alev</strong> ezberi kullanılmıştır. Bu, sınav ve farkındalık için pratik bir hatırlatmadır; her yangının zorunlu olarak bu sırayla geliştiği anlamına gelmez. Bazı yangınlar görünür duman veya belirgin koku oluşmadan hızla alevlenebilir.</p>\n<p>Erken algılama sistemleri yangının türüne göre duman, ısı, alev veya belirli gazları algılayan sensörlerden yararlanabilir.</p>"
       },
       {
         "id": "yangin-guvenligi-6",
-        "title": "Yangın Sınıfları",
-        "html": "<div class=\"ogg-data-table\"><table><tbody><tr><th>Sınıf</th><th>Kategori</th><th>Söndürücü</th><th>Müdahale</th></tr><tr><td>A</td><td>Katı</td><td>Su</td><td></td></tr><tr><td>B</td><td>Sıvı</td><td>Köpük</td><td>Susuz</td></tr><tr><td>C</td><td>Gaz</td><td>Kuru Kimyevi Toz (KKT)</td><td>Gazı Kes</td></tr><tr><td>D</td><td>Metal (Yanabilen metaller, kimyasal metaller)</td><td>Met-EX\n(Metaliks)</td><td></td></tr><tr><td>E</td><td>Elektrik</td><td>CO² Gazlı\nK. K. T.</td><td></td></tr><tr><td>F</td><td>Yağ</td><td>K. K. T.\nKapak ört</td><td>Susuz</td></tr></tbody></table></div>"
+        "title": "Yangın Sınıfları ve Uygun Söndürme Yaklaşımı",
+        "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Sınıf</th><th>Yanıcı madde</th><th>Genel yaklaşım</th></tr>\n<tr><td>A</td><td>Katı maddeler</td><td>Su, köpük veya uygun çok amaçlı söndürücü; malzemeye göre seçilir.</td></tr>\n<tr><td>B</td><td>Yanıcı sıvılar / sıvılaşabilen katılar</td><td>Köpük, kuru kimyevi toz veya uygun gazlı sistem; suyun doğrudan kullanımı riskli olabilir.</td></tr>\n<tr><td>C</td><td>Yanıcı gazlar</td><td>Öncelik mümkünse gaz akışını güvenli biçimde kesmek; uygun söndürücü kullanmak.</td></tr>\n<tr><td>D</td><td>Yanıcı metaller</td><td>Metal türüne uygun özel D sınıfı söndürücü.</td></tr>\n<tr><td>F</td><td>Pişirme yağları</td><td>F sınıfına uygun söndürücü / yangın battaniyesi; su kullanılmaz.</td></tr>\n</tbody></table></div>\n<blockquote><strong>Önemli düzeltme:</strong> Güncel TS EN 2 sınıflandırmasında “E = elektrik yangını” şeklinde ayrı bir yangın sınıfı yoktur. Enerjili elektrikli ekipman, yangının yakıt sınıfından ayrı olarak elektrik çarpması ve iletkenlik riski yaratır; mümkünse enerji kesilir ve ekipmana uygun söndürücü seçilir.</blockquote>"
       },
       {
         "id": "yangin-guvenligi-7",
-        "title": "Yangının Nedenleri ve Etkenleri",
-        "html": "<ol><li>Önlemsizlik (Korunma Önlemi)</li><li>İhmal &amp; Dikkatsizlik</li><li>Kazalar</li><li>Sıçrama</li><li>Sabotaj</li><li>Tabiat Olayları</li></ol><h3>Tüp / Tank</h3><p>Doluyken alev. Boşken içine dolan hava yüzünden patlama ve şarapnel.</p><h3>Yangın Etkenleri</h3><ul><li>Bacalar</li><li>Sigara</li><li>Kibrit</li><li>LPG</li><li>Doğalgaz</li><li>Kıvılcım</li><li>Benzin</li><li>Hayvanlar</li><li>Yıldırım</li><li>Güneş Işığı</li></ul>"
+        "title": "Yangın Nedenleri, Risk Kaynakları ve Tüp/Tank Tehlikeleri",
+        "html": "\n<h3>Yangın nedenleri</h3>\n<ul><li>Koruyucu önlemlerin yetersizliği,</li><li>ihmal ve dikkatsizlik,</li><li>kazalar ve teknik arızalar,</li><li>başka bir yangından sıçrama,</li><li>kasıt/sabotaj,</li><li>yıldırım ve diğer doğa olayları.</li></ul>\n<h3>Sık risk kaynakları</h3>\n<p>Bacalar, sigara ve açık alev, LPG/doğal gaz tesisatı, elektrik kıvılcımları, akaryakıt, sıcak yüzeyler ve yıldırım ders notunda başlıca risk kaynakları olarak sayılmıştır.</p>\n<h3>Basınçlı kaplar</h3>\n<p>LPG tüpü ve benzeri basınçlı kaplar yangında ısıya maruz kaldığında basınç artışı ve kap yırtılması riski oluşturabilir. “Boş” görünen kapta dahi yanıcı buhar/hava karışımı bulunabileceğinden güvenli kabul edilmez.</p>"
       },
       {
         "id": "yangin-guvenligi-8",
-        "title": "Yangına Karşı Önlemler ve Yangın Çeşitleri",
-        "html": "<h4>1- İnşai Yönden</h4><h4>2- Tesisat Bakımından</h4><h3>Yangın Çeşitleri</h3><div class=\"ogg-data-table\"><table><tbody><tr><th></th><th></th></tr><tr><td>LPG</td><td></td></tr><tr><td>Bina</td><td></td></tr><tr><td>Araç</td><td></td></tr><tr><td>Orman</td><td></td></tr><tr><td>Elektrik</td><td></td></tr><tr><td>Doğalgaz</td><td></td></tr><tr><td>Akaryakıt</td><td></td></tr></tbody></table></div><p>Halon gazı</p>"
+        "title": "Yapısal Önlemler, Algılama ve Sabit Söndürme Sistemleri",
+        "html": "\n<h3>Yapısal ve tesisat önlemleri</h3>\n<p>Yangın bölmelendirmesi, yangına dayanımlı yapı elemanları, kaçış yolları, acil aydınlatma, elektrik ve gaz tesisatının güvenliği ile bakım programları önleyici güvenliğin temelidir.</p>\n<h3>Algılama sistemleri</h3>\n<ul><li>Duman dedektörleri,</li><li>ısı dedektörleri,</li><li>alev dedektörleri,</li><li>belirli risklerde gaz dedektörleri.</li></ul>\n<h3>Sabit söndürme sistemleri</h3>\n<ul><li>Sprinkler/yağmurlama sistemleri,</li><li>köpüklü sistemler,</li><li>CO₂ ve diğer gazlı söndürme sistemleri,</li><li>kuru kimyevi tozlu sistemler,</li><li>özel riskler için temiz ajanlı sistemler.</li></ul>\n<p>Halon ajanları tarihsel olarak kullanılmıştır; ozon tabakasına etkileri nedeniyle üretim ve kullanımları uluslararası çevre düzenlemeleriyle büyük ölçüde sınırlandırılmıştır.</p>"
       },
       {
         "id": "yangin-guvenligi-9",
-        "title": "Koruyucu Malzemeler, Söndürme Maddeleri ve Sistemleri",
-        "html": "<ul><li>Çizme</li><li>Baret</li><li>Suit</li><li>Temiz Hava Solunum Cihazı</li></ul><h3>YANGIN SÖNDÜRME MADDELERİ</h3><ul><li>Su</li><li>Köpük</li><li>Kimyasal Tozlar</li></ul><h3>Yangın Dedektörleri</h3><ul><li>Koku</li><li>Duman</li><li>Isı</li><li>Alev</li></ul><h3>Yangın Söndürme Sistemleri</h3><ol><li>Yağmurlama Sprinkler</li><li>Köpüklü</li><li>CO² Gazlı</li><li>Kuru Kimyevi Tozlu</li><li>Halon (Halokarbon) Bazlı</li></ol>"
+        "title": "Yangından Koruyucu Donanım ve Söndürme Maddeleri",
+        "html": "\n<h3>Koruyucu donanım</h3>\n<p>Yangınla mücadelede baret, koruyucu çizme/eldiven, ısıya dayanımlı koruyucu kıyafet ve eğitimli ekipler için temiz hava solunum cihazı gibi donanımlar kullanılabilir. Donanımın seviyesi müdahale görevine ve risk değerlendirmesine göre belirlenir.</p>\n<h3>Başlıca söndürme maddeleri</h3>\n<ul><li>Su,</li><li>köpük,</li><li>kuru kimyevi toz,</li><li>karbondioksit ve diğer uygun gazlı ajanlar,</li><li>metal veya yağ yangınları için özel ajanlar.</li></ul>\n<p>“En iyi söndürücü” diye tek bir madde yoktur; yanan maddenin sınıfı ve çevredeki elektrik/kimyasal riskler seçimi belirler.</p>"
       },
       {
         "id": "yangin-guvenligi-10",
-        "title": "Yanıcı ve Yakıcı Gazlar",
-        "html": "<ul><li>Asetilen</li><li>Hidrojen</li><li>Etan</li><li>Metan</li><li>Propan</li><li>LPG</li><li>Doğalgaz</li><li>Karbonmonoksit</li><li>Kükürt karbonat</li><li>Etilen</li></ul><h3>Yakıcı Gazlar (2. Grup)</h3><ul><li>Oksijen</li><li>Helyum</li><li>Karbondioksit</li><li>Argon</li></ul><p>Hidrojen yanıcı bir gazdır. Oksijen yakıcı bir gazdır.</p>"
+        "title": "Yanıcı, Oksitleyici ve İnert Gazlar",
+        "html": "\n<h3>Yanıcı gaz örnekleri</h3>\n<p>Asetilen, hidrojen, metan, etan, propan, LPG ve doğal gaz yanıcı gazlara örnektir. Karbonmonoksit de uygun konsantrasyonda yanabilir.</p>\n<h3>Oksitleyici gaz</h3>\n<p><strong>Oksijen</strong> yanıcı değildir; yanmayı destekleyen oksitleyici gazdır.</p>\n<h3>İnert / yanmayı desteklemeyen gazlar</h3>\n<p>Ham notta helyum, karbondioksit ve argon “yakıcı gazlar” altında yazılmıştır; bu sınıflandırma yanlıştır. Helyum ve argon inert gazlardır; CO₂ de normal koşullarda yanmayı desteklemez ve bazı söndürme sistemlerinde kullanılır. Kapalı ortamda bu gazların yüksek yoğunluğu boğucu/asfiksan risk oluşturabilir.</p>"
       },
       {
         "id": "yangin-guvenligi-11",
-        "title": "Yangın Söndürücü / Tüp Bilgisi",
-        "html": "<blockquote>Yerden yüksekliği 90cm</blockquote><p>4 yıl geçerlidir (Dolum, toz) Azot iticidir Yeşilde olacak ibre</p><p>100-150cm geriden, radyal tarayarak/süpürerek, kesişim/kaynak noktasında.</p><h4>Parçalar</h4><p>Mono Amonyum Phosphat MAP Gübreden imal</p><ol><li>Gövde</li><li>Manometre</li><li>Pim</li><li>Tetik</li><li>Hortum</li><li>Hortum Ucundaki (Lans)</li></ol>"
+        "title": "Taşınabilir Yangın Söndürücüler: Yapı, Kontrol ve Kullanım",
+        "html": "\n<h3>Temel parçalar</h3>\n<ul><li>Gövde,</li><li>manometre (basınç göstergesi bulunan modellerde),</li><li>emniyet pimi,</li><li>tetik/kol mekanizması,</li><li>hortum,</li><li>lans/nozul.</li></ul>\n<p>ABC kuru kimyevi tozlu söndürücülerde monoamonyum fosfat (MAP) yaygın söndürme bileşenlerinden biridir. Basınçlandırmada azot gibi inert gazlar kullanılabilir.</p>\n<h3>Kontrol</h3>\n<p>Manometreli cihazlarda ibrenin üreticinin normal çalışma aralığında olması gerekir. Mühür/pim, hortum, gövde ve son bakım tarihi düzenli kontrol edilir.</p>\n<h3>Kullanım prensibi</h3>\n<p>Kullanıcı güvenli kaçış yolunu arkasında tutar, rüzgârı ve yangın sınıfını değerlendirir, güvenli mesafeden alevin değil <strong>yanan yüzey/kaynağın tabanına</strong> yönelir ve süpürme hareketiyle müdahale eder. Yangın büyümüşse veya duman/ısı güvenli yaklaşımı engelliyorsa tahliye ve profesyonel itfaiye müdahalesi önceliklidir.</p>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Ham nottaki “90 cm montaj yüksekliği” ve “4 yıl geçerlilik” ifadeleri tüm söndürücüler için evrensel kural olarak yayımlanmadı; yerleşim, periyodik kontrol ve dolum süreleri yürürlükteki yönetmelik/standart ve üretici talimatına göre belirlenir.</p>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   },
   {
     "id": "guvenlik-tedbirleri",
@@ -400,44 +401,45 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3dbbb40fbf3c80c69d47d261a81d897e?pvs=204",
     "updatedAt": "2026-09-15T10:07:42.161Z",
     "imageCount": 0,
-    "introHtml": "",
+    "introHtml": "<p>Güvenlik tedbirleri dersi; nokta ve devriye hizmetlerini, zor kullanmanın genel çerçevesini, eşgal tanımını, olay yeri korumasını ve bulgu/delil sınıflandırmasını içerir. Dersin temel yaklaşımı, güvenliğin önleyici yönü ile olay sonrası adli süreç arasındaki sınırı doğru kurmaktır.</p>",
     "categories": [
       {
         "id": "guvenlik-tedbirleri-1",
-        "title": "Mesleki Donanım ve Göreve Hazırlık",
-        "html": "<p>Bröve, üniforma, kimlik, ekipman, emniyet bildirimi Mali sorumluluk sigortası Yarın gel işe başla yok, sigorta + mali sorumluluk sigortası yapılacak</p>"
+        "title": "Mesleki Hazırlık, Kimlik ve Donanım",
+        "html": "\n<p>ÖGG göreve başlarken yalnızca üniforma giymiş olmakla değil; geçerli kimlik, kurumca sağlanan görev ekipmanı, gerekli sigorta/bildirim işlemleri ve görev talimatıyla birlikte göreve hazır kabul edilir.</p>\n<p>Ham notta bröve, üniforma, kimlik, ekipman ve bildirim disiplini “mesleki saygınlık” unsurları olarak kaydedilmiştir. İşe başlatma, SGK ve özel güvenlik mali sorumluluk sigortası gibi süreçler ilgili mevzuat ve işveren yükümlülükleri kapsamında tamamlanmalıdır.</p>"
       },
       {
         "id": "guvenlik-tedbirleri-2",
         "title": "Nokta Hizmetleri",
-        "html": "<blockquote>Perimetre: 20 Adım</blockquote><p>Görev noktasını 20 adımdan fazla terk edemez.</p><h4>Nokta</h4><p>amacıyla;</p><p>görev yerine Nokta denir.</p><ul><li>Kamu düzeninin korunması</li><li>Suçların önlenmesi</li><li>Özel dikkat gerektiren</li><li>Belirli yerlere karşın yapılabilecek saldırıların önlenmesi</li><li>Çevre sakinlerine güven verilmesi</li><li>Özel olarak belirlenmiş</li><li>Belirli bir sınırlı alanı olan</li></ul><blockquote>Buradan sorumlu olan ve bu görevi yerine getiren kişilere Nokta görevlisi denir.</blockquote><p>Nöbet değişimi yapılmadan veya bir görevli bırakılmadan terk edemez.</p><blockquote>Mevcut nokta görevlisi;</blockquote><p>Değişim için gerekli personel gelmezse:</p><ul><li>Gelmeyene: 3 maaş/yevmiye</li><li>Görev yerini terk edene: Meslekten ihraç/sözleşme feshi</li></ul><p>Noktanın sınırları vardır.</p>"
+        "html": "\n<h3>Nokta nedir?</h3>\n<p>Nokta; kamu düzeni ve güvenliğinin desteklenmesi, suçların önlenmesi, belirli kişi/yer/tesisin korunması ve çevreye güven hissi verilmesi amacıyla sınırları belirlenmiş sabit görev yeridir. Burada görev yapan personele nokta görevlisi denir.</p>\n<h3>Görev alanını terk etmeme</h3>\n<p>Nokta görevlisi, usulüne uygun devir teslim yapılmadan görev yerini terk etmemelidir. Ham nottaki “20 adım” perimetre ifadesi eğitimde kullanılan pratik bir sınırlandırmadır; her kurum için kanuni ve evrensel bir metre/adım kuralı değildir.</p>\n<h3>Devir teslim</h3>\n<p>Görevi devralacak personel gelmemişse durum amire bildirilir ve kurum prosedürü uygulanır. Ham notta yer alan “3 maaş/yevmiye” ve “meslekten ihraç” gibi yaptırım ifadeleri kurum/iş sözleşmesi ve disiplin mevzuatına göre değişebileceğinden genel hukuk kuralı olarak yayımlanmamıştır.</p>"
       },
       {
         "id": "guvenlik-tedbirleri-3",
-        "title": "Devriye Hizmetleri",
-        "html": "<p>Genel güvenlik ve ahlakın, oluşabilecek suçların veya olmuş/devam eden suçlara müdahale etmek amacıyla veya engellemek amacıyla yapılır.</p><h4>Devriye Uygulaması ve Zorunlulukları</h4><ul><li>Beliri bir süre içerisinde</li><li>Belirli bir güzergahta</li><li>En az 2 personel tarafından</li><li>Resmi Üniformalı</li><li>Kimlikli</li><li>Tam Teçhizatlı</li></ul><h4>Devriye Türleri</h4><ul><li>Yaya</li><li>Araçla</li><li>Motorsiklet ile</li><li>Bisiklet ile</li><li>Atlı</li><li>Plaj</li></ul><h4>Devriye Çeşitleri</h4><ul><li>Olağan Devriye</li><li>Planlı Devriye</li><li>Dairesel Devriye</li><li>Geri Dönüşlü Devriye</li></ul><h4>Devriyenin Görevleri (Amaçları)</h4><ul><li>Önleyici (Hırsızlık vb.)</li><li>Koruyucu (Can ve Mal)</li><li>Yardım (Aciz, düşkün, yaşlı, kısıtlı vb. Kişilere)</li><li>Adli <strong>(SUÇ OLUŞTUKTAN SONRA)</strong></li></ul>"
+        "title": "Devriye Hizmetleri: Amaç, Tür ve Yöntem",
+        "html": "\n<h3>Devriyenin amacı</h3>\n<p>Devriye; belirlenen alanı düzenli olarak gözlemek, risk ve düzensizlikleri erken fark etmek, suçları önlemek, can-mal güvenliğini desteklemek, ihtiyaç sahiplerine yardım etmek ve olay sonrası ilk güvenlik tedbirlerini almak için yürütülen hareketli güvenlik hizmetidir.</p>\n<h3>Devriye türleri</h3>\n<ul><li>Yaya,</li><li>araçlı,</li><li>motosikletli,</li><li>bisikletli,</li><li>atlı,</li><li>özel alanlara uyarlanmış devriye (ör. sahil/plaj).</li></ul>\n<h3>Devriye yöntemleri</h3>\n<ul><li>Olağan/rutin devriye,</li><li>planlı devriye,</li><li>dairesel devriye,</li><li>geri dönüşlü devriye.</li></ul>\n<h3>Görev kategorileri</h3>\n<ul><li><strong>Önleyici:</strong> suç ve tehlikeyi gerçekleşmeden fark etmek.</li><li><strong>Koruyucu:</strong> can, mal ve tesis güvenliğini sürdürmek.</li><li><strong>Yardım:</strong> aciz, yaşlı, kısıtlı veya yardıma ihtiyaç duyan kişilere görev sınırında destek olmak.</li><li><strong>Adli nitelikli ilk görevler:</strong> olay gerçekleştikten sonra alanı/delili korumak, bildirmek ve teslim sürecini yürütmek.</li></ul>\n<p>Personel sayısı, güzergâh, üniforma ve teçhizat kurum risk analizi ve görev talimatına göre belirlenir; ham nottaki “devriye daima en az iki kişi” ifadesi her görev için evrensel kanun kuralı değildir.</p>"
       },
       {
         "id": "guvenlik-tedbirleri-4",
         "title": "Zor Kullanma ve Kelepçe",
-        "html": "<p>Direnme ve saldırının mahiyetine ve derecesine göre etkisiz hale getirecek şekilde, kademeli olarak artar. Oranda:</p><ol><li>Fiziki gösteri</li><li>Sözlü ikaz</li><li>Bedeni kuvvet</li><li>Maddi güç kullanma</li><li>Kanuni Şartları Gerçekleştirdiği takdirde: her çeşit Silah kullanma</li></ol><hr><ol><li>İkaz</li><li>Kademeyi orantıyla artır</li><li>Orantısız olmayacak yerde bırak</li><li>Kelepçe takana kadar</li></ol><hr><h4>Zor Kullanma Yetkisi Unsurları</h4><ol><li>Zorunlu</li><li>Direnme Söz Konusuysa</li><li>Yasaya Uygun</li><li>Dengeli</li></ol><h4>Şekil ve Aşamalar</h4><hr><h3>Kelepçe</h3><p>Zor Kullanma, kelepçe talana kadardır. Yakalama tamamlanınca bırak.</p><h3>Kelepçe Çeşitleri</h3><p>Kelepçe takarken bir parmak boşluk, kendiliğinden sıkabilir.</p>"
+        "html": "\n<p>Zor kullanma, direnme veya saldırının niteliğine göre kanuni yetki içinde ve ölçülü biçimde kullanılan güçtür. Temel ilkeler:</p>\n<ul><li>zorunluluk,</li><li>kanuni dayanak,</li><li>direnme/saldırı ile bağlantı,</li><li>ölçülülük ve kademelilik.</li></ul>\n<p>Eğitim notunda fiziki varlık/ikaz, bedeni kuvvet ve maddi güç şeklinde artan bir ölçek kullanılmıştır. Silah kullanımı ayrı ve çok daha ağır hukuki şartlara tabidir; “zor kullanmanın doğal son basamağı” gibi otomatik düşünülmemelidir.</p>\n<h3>Kelepçe</h3>\n<p>Kelepçe, yakalanan kişinin kaçma veya kendisine/başkasına zarar verme riskini kontrol etmek amacıyla kullanılabilen bir güvenlik aracıdır. Gereklilik ortadan kalkınca kısıtlama da sona ermelidir; dolaşımı bozacak aşırı sıkma ve gereksiz acı verme hukuka uygun değildir.</p>"
       },
       {
         "id": "guvenlik-tedbirleri-5",
-        "title": "Eşgal Bilgisi",
-        "html": "<p>Canlı bir kişi ya da bir malın tanıtımı amacıyla verilen tanıtma bilgisidir. Sabitler bildirilir. Değişkenler kriter sayılmaz. Ruh hali vb verilemez</p><hr>"
+        "title": "Eşgal ve Tanımlayıcı Bilgi",
+        "html": "\n<p><strong>Eşgal</strong>, kişi veya nesnenin ayırt edilmesine yarayan tanımlayıcı bilgilerin sistemli şekilde aktarılmasıdır.</p>\n<h3>Sabit ve daha güvenilir özellikler</h3>\n<p>Boy aralığı, beden yapısı, yüz/saç özellikleri, belirgin iz veya dövme gibi görece kalıcı özellikler önceliklidir.</p>\n<h3>Değişken özellikler</h3>\n<p>Kıyafet, taşınan eşya ve anlık görünüm değişebilir; yine de olay anı için kayda değer olabilir. “Ruh hâli” gibi öznel yorumlar eşgalin nesnel tanımlayıcı unsuru olarak kullanılmamalıdır.</p>"
       },
       {
         "id": "guvenlik-tedbirleri-6",
-        "title": "Olay Yeri İncelemesi",
-        "html": "<h4>Olay</h4><p>Kanunlarda açıkça suç olarak belirtilen fiil ve hareketlerin belli bir zaman ve mekânda gerçekleşmesidir.</p><h4>Olay Yeri</h4><p>Olayın işleniş anının, mağdur ve suç sanıkları ile ilişkisinin saptanabildiği dinamik bölgeyi ifade eder.</p><h4>Olay Yeri İncelemesinin Amacı</h4><ol><li>Olay yerinin doğal özelliklerini olduğu gibi tespit ve muhafaza etmek</li><li>Olayın faillerini tespit etmek</li><li>Tespit edilen özellikleri kayıtlara geçirmek</li><li>Fail ile Mağdur arasındaki ilişkiyi kurarak maddi suç delillerini bulmak</li></ol><h4>Bulgu</h4><p>Olay yeri incelemesi sırasında <strong>Olay Yeri • Fail • Mağdur </strong>ilişkisini ortaya koymak amacıyla elde edilen her türlü materyale bulgu denir.</p><h4>Delil</h4><p>Herhangi bir hukuksuzluğu ya da hukuksal sorunu çözmeye, suç fiilini ispata, meydana gelen bir suçun aydınlatılması veya suç sanıklarının tespitine yarayan, ikamesi hukuk tarafından yasaklanmamış her tür bulguya delil veya ispat vasıtası denilmektedir.</p><p>Her delil bir bulgudur, her bulgu bir delil değildir.</p><h4>Maddi Suç Delili</h4><ul><li>İşlenen suçun yeniden canlandırılmasına</li><li>Failin tespitine,</li><li>Şüpheli - Mağdur - Olay Yeri ilişkisi tespitine yarayacak</li><li>Laboratuvar ve Bilimsel Ortamlarda</li><li>Uzmanlar tarafından incelenip işlem yapıldıktan sonra</li><li>Soruşturma ve yargılama sürecinde ispat vasıtası (delil) olarak kullanılabilecek herhangi bir nesne veya ize denilir.</li></ul><blockquote>Örnek:</blockquote><ul><li>Tükürük</li><li>Kan Örneği</li><li>Balistik / Mermi - Çekirdek - Kovan ilişkisi</li></ul><h5>Maddi Delil Çeşitleri ★</h5><ul><li>Biyolojik Deliller</li><li>Kimyasal Deliller</li><li>Fiziksel Deliller</li><li>İz Delilleri</li></ul><h6>Biyolojik Deliller</h6><p>Canlıların vücutlarından kopan, düşen, akan her türlü delildir.</p><p>Biyolojik Delillerin ncelenmesindeki amaç DNA Tespitidir.</p><h6>Kimyasal Deliller</h6><p>Olay yerinde mağdur, maktül, fail üzerinde veya çevresinde bulunan kimyasal özellikler taşıyan ve üzerinde mutlaka kimyasal inceleme yapılması gereken delillerdir. Yanıcı/parlayıcı/patlayıcı maddeler, barut artıkları, narkotik maddeler, ilaçlar, gazlar vb.</p><h6>Fiziksel Deliller</h6><p>Olay yerinde mağdur, maktül veya şüpheli üzerinde veya çevresinde bulunan; suçta kullanılan, fiziksel özellik taşıyan ve üzerinde inceleme gerektiren tüm bulgulardır.</p><blockquote>Silah mermi kartuş vb. Cam kırıkları, giyecekler, paralar vb.</blockquote><h6>İz Delilleri</h6><p>Temas ve sürtünme sonrası oluşabilen izlerin tamamı.</p><blockquote>Parmak, kan, diş, el, ayak, ayakkabı, lastik vb.</blockquote><hr>"
+        "title": "Olay Yeri, Bulgu ve Delil",
+        "html": "\n<h3>Olay ve olay yeri</h3>\n<p>Olay, hukuken önem taşıyan fiilin belirli zaman ve mekânda gerçekleşmesidir. Olay yeri yalnızca suçun tam işlendiği nokta değil; fail, mağdur, giriş-çıkış, iz ve eşyanın olayla ilişkisinin kurulabildiği dinamik alanı kapsayabilir.</p>\n<h3>ÖGG’nin olay yerindeki önceliği</h3>\n<ol><li>Can güvenliğini sağlamak ve acil yardım çağırmak.</li><li>Genel kolluğa bildirmek.</li><li>Alanı gereksiz giriş-çıkıştan korumak.</li><li>Delile dokunmamak, taşımamak ve temizlememek.</li><li>Gözlenen değişiklikleri ve zorunlu müdahaleleri kayıt altına almak.</li></ol>\n<h3>Bulgu ve delil</h3>\n<p><strong>Bulgu</strong>, olay yeri–fail–mağdur ilişkisini açıklamaya yardımcı olabilecek materyal veya izdir. <strong>Delil</strong>, soruşturma/yargılama sürecinde hukuken kullanılabilir ispat aracıdır.</p>\n<blockquote>Ezber: <strong>Her delil bir bulgudur; her bulgu kendiliğinden delil niteliği kazanmaz.</strong></blockquote>\n<h3>Maddi bulgu türleri</h3>\n<ul>\n<li><strong>Biyolojik:</strong> kan, tükürük, doku, saç vb.; DNA incelemesine konu olabilir.</li>\n<li><strong>Kimyasal:</strong> yanıcı/patlayıcı madde kalıntıları, narkotik maddeler, ilaç, gaz ve kimyasal kalıntılar.</li>\n<li><strong>Fiziksel:</strong> silah, fişek/kovan, cam, giysi, para ve diğer nesneler.</li>\n<li><strong>İz:</strong> parmak, ayak/ayakkabı, lastik, alet, temas ve sürtünme izleri.</li>\n</ul>"
       },
       {
         "id": "guvenlik-tedbirleri-7",
-        "title": "Şüphe ve Olay Yeri Farkındalığı",
-        "html": "<p>Bulunmaması gereken yerde bulunan her şey şüphelidir.</p>"
+        "title": "Şüphe ve Durumsal Farkındalık",
+        "html": "\n<p>Dersin “Ş.Ü.P.H.E.” başlığında kullanılan temel cümle: <strong>“Bulunmaması gereken yerde bulunan her şey şüphelidir.”</strong></p>\n<p>Bu ifade otomatik suç şüphesi üretmek için değil, görevlinin çevredeki olağandışı değişiklikleri fark etmesini sağlayan durumsal farkındalık ezberidir. Şüphe; nesnel gözlem, bağlam ve davranışla desteklenmeli; kişilerin kimliği veya önyargıya dayalı varsayımlarla karıştırılmamalıdır.</p>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   },
   {
     "id": "genel-kolluk",
@@ -449,69 +451,70 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3ddbb40fbf3c8010b369f67479222b22?pvs=204",
     "updatedAt": "2026-09-16T07:54:17.680Z",
     "imageCount": 0,
-    "introHtml": "",
+    "introHtml": "<p>Genel Kolluk İlişkileri dersi; özel güvenliğin polis, jandarma ve sahil güvenlikle koordinasyonunu, Özel Güvenlik Denetleme Başkanlığının görev alanını, eğitim/sınav organizasyonunu ve EGM’nin özel güvenlik alanındaki dijital sistem ve projelerini kapsar. Ham nottaki eski “Daire Başkanlığı” ifadeleri güncel kurumsal adla ayrıştırılmıştır.</p>",
     "categories": [
       {
         "id": "genel-kolluk-1",
-        "title": "Genel Kolluk ile Özel Güvenliğin İlişkisi",
-        "html": ""
+        "title": "Genel Kolluk ile Özel Güvenlik Arasındaki Hukuki İlişki",
+        "html": "\n<p>Genel kolluk; genel emniyet ve asayişten sorumlu <strong>Polis, Jandarma ve Sahil Güvenliği</strong> ifade eder. Özel güvenlik görevlileri ise 5188 sayılı Kanunla verilen sınırlı yetkileri kendi görev alan ve sürelerinde kullanır.</p>\n<p>5442 sayılı <strong>İl İdaresi Kanunu</strong> ve özel güvenlik mevzuatı, kamu düzeni bakımından mülki idare amirinin ve genel kolluğun koordinasyon rolünü düzenler. Ham nottaki “İl Özel İdaresi Kanunu” ifadesi bu nedenle düzeltilmiştir.</p>\n<ul><li>Suç veya şüpheli olayı genel kolluğa bildirmek,</li><li>olay yerini ve delilleri korumak,</li><li>yakalanan kişiyi ve emanete alınan suç unsurunu genel kolluğa teslim etmek,</li><li>müşterek görevde yetki ve emir-komuta sınırına uymak.</li></ul>"
       },
       {
         "id": "genel-kolluk-2",
-        "title": "EGM Denetleme Yapısı ve Sınav Hizmetleri",
-        "html": "<p>Kurucu temsilci yönetici başvuru işlemlerinin sekreterya işlemlerini yapma ÖGG’lerin sınavlarına ilişkin sınav komisyonlarının hazırlanması Soru bankasının oluşturulması Matbaa ve kurye personellerinin tespit edilmesi Optik formlarının hazırlanması Sınav sonuçlarının okunması ve açıklanması</p><ul><li>ÖG Temel Eğitimi ve Yenileme Eğitimi sınavları</li><li>A, B, C sınıfı Ateşleyici Yeterlilik Belge sınavı</li><li>Silah Tamir Yeri Açma sınavı</li><li>Görev Hayvanı İdarecisi sınavı</li><li>ÖG Şirketleri ve Eğitim Kurumları ile İl Özel İdaresi ve (…)</li></ul>"
+        "title": "Özel Güvenlik Denetleme Başkanlığı: Kurumsal Yapı ve Görev Alanı",
+        "html": "\n<p>Özel Güvenlik Denetleme Başkanlığı; özel güvenlik hizmetleri ile sivil kullanım amaçlı silah ve patlayıcı madde alanındaki merkezî EGM birimidir. 2019’daki yeniden yapılanmayla eski Özel Güvenlik Daire Başkanlığının alt birimleri ve görevleri Denetleme Başkanlığı çatısı altında birleştirilmiştir.</p>\n<h3>Başlıca görev alanları</h3>\n<ul>\n<li>Özel güvenlik şirketleri, birimleri ve eğitim kurumları,</li>\n<li>alarm izleme merkezleri,</li>\n<li>özel güvenlik görevlileri ve yöneticiler,</li>\n<li>eğitim ve sınav hizmetleri,</li>\n<li>denetim,</li>\n<li>sivil silah ve patlayıcı madde işlemleri,</li>\n<li>genel kolluk–özel güvenlik koordinasyonu,</li>\n<li>dijital sistem ve projeler.</li>\n</ul>"
       },
       {
         "id": "genel-kolluk-3",
-        "title": "Özel Güvenlik Projeleri ve Bilgi Sistemleri",
-        "html": "<h4>KAAN</h4><p>Meydana gelen olayların ÖGG tarafından, doğrudan Genel Kolluğa bildirilmesini sağlar. Görevleri etkin ve verimli şekilde yapılmasını Genel kolluğa bildirilmesini</p><p>KAAN Mobil uygulaması Ekonomik iletişim sağladığı imkanlardan değildir.</p><h4>ÖGNET (ÖG BGYS Otomasyonu)</h4><p>İş ve işlemlerin yerine getirilmesinde kullanılan fiziki ve beşeri unsurların en aza indirilerek Bürokrasi ve kırtasiye masrafının önlenmesi.</p><h4>ASİP</h4><p>Ateşli Silahlar Projesi</p><h4>ÖZGE</h4><p>Özel Güvenlik Eğitim Geliştirme Projesi</p><h4>ÖGYS</h4><p>Özel Güvenlik Yoklama Sistemi</p><h4>PATBİS</h4><p>Patlayıcı Madde iş ve işlemleri</p><p>Sivil kullanım amaçlı Patlayıcı maddeler ile 6136 2521 5729 sayılı kanunlar kapsamındaki silah ve mermi işlemlerinin etkin, verimli, ölçülebilir, kontrol edilebilir, sürdürülebilir hale getirilnesi. Üretimden tüketime kadar tüm süreçlerin dijital platformlarda yapılması</p><h4>SEP</h4><p>Sürekli Eğitim Projesi</p>"
+        "title": "Eğitim ve Sınav Hizmetleri",
+        "html": "\n<h3>Başkanlığın yürüttüğü sınav başlıkları</h3>\n<ul>\n<li>Özel Güvenlik Temel Eğitim Sınavı,</li>\n<li>Özel Güvenlik Yenileme Eğitimi Sınavı,</li>\n<li>A/B/C sınıfı Ateşleyici Yeterlilik Belgesi sınavları,</li>\n<li>Silah Tamir Yeri Açma sınavı,</li>\n<li>Görev hayvanı ve idarecisine ilişkin sınavlar.</li>\n</ul>\n<h3>Sınav organizasyonu</h3>\n<p>Sınav komisyonlarının oluşturulması, soru bankası ve sınav evrakının hazırlanması, optik formlar, salon/görevli planlaması, matbaa-kurye güvenliği, sınavın uygulanması, değerlendirilmesi ve sonuçların açıklanması bu hizmet zincirinin parçalarıdır.</p>"
       },
       {
         "id": "genel-kolluk-4",
-        "title": "Düzenlenen Sınavlar",
-        "html": "<ul><li>ÖG Temel/Yenileme Eğitimi</li><li>A,B,C, ateşleyici yeterlilik</li><li>Silah Tamir Yeri</li></ul><hr>"
+        "title": "Şirketler, Eğitim Kurumları ve ÖGG İşlemleri",
+        "html": "\n<p>Başkanlık; özel güvenlik şirketi, eğitim kurumu, özel güvenlik birimi ve alarm izleme merkezlerine ilişkin kurucu/temsilci/yönetici başvuruları ile faaliyet izin süreçlerinde merkezî görevler yürütür.</p>\n<h3>ÖGG süreçleri</h3>\n<ul><li>Temel ve yenileme eğitim süreçleri,</li><li>silahlı/silahsız yeterlilik işlemleri,</li><li>sınav ve kimlik sistemleri,</li><li>eğitim standartları,</li><li>alan, branş ve hizmet içi eğitimlerin geliştirilmesi.</li></ul>"
       },
       {
         "id": "genel-kolluk-5",
-        "title": "Özel Güvenlik Denetleme Başkanlığının Görev Alanı",
-        "html": "<h4>1. Genel Görev Alanı</h4><p>Özel Güvenlik Denetleme Başkanlığı;</p><p>konularında görev yapar.</p><ul><li>Özel güvenlik hizmetleri</li><li>Özel güvenlik şirketleri</li><li>Özel güvenlik eğitim kurumları</li><li>Özel güvenlik birimleri</li><li>Alarm izleme merkezleri</li><li>Özel güvenlik görevlileri</li><li>Silah işlemleri</li><li>Sivil kullanım amaçlı patlayıcı maddeler</li><li>Eğitim ve sınav hizmetleri</li><li>Denetim faaliyetleri</li><li>Genel kolluk–özel güvenlik koordinasyonu</li><li>Özel güvenlik alanındaki dijital sistem ve projeler</li></ul>"
+        "title": "Denetleme Faaliyetleri",
+        "html": "\n<p>Denetim; özel güvenlik hizmetinin mevzuata ve izin şartlarına uygun yürütülmesini sağlamak, eksiklikleri tespit etmek ve uygulama birliğini geliştirmek amacıyla yapılır.</p>\n<h3>Denetlenen yapılar</h3>\n<ul><li>Özel güvenlik şirketleri,</li><li>eğitim kurumları,</li><li>özel güvenlik birimleri,</li><li>alarm izleme merkezleri,</li><li>özel güvenlik hizmeti verilen kurum/kuruluşlar.</li></ul>\n<h3>Denetimin amaçları</h3>\n<ul><li>mevzuata uygunluk,</li><li>eksikliklerin giderilmesi,</li><li>hizmet kalitesi,</li><li>standart ve uygulama birliği,</li><li>risk ve performans takibi.</li></ul>"
       },
       {
         "id": "genel-kolluk-6",
-        "title": "Eğitim ve Sınav Organizasyonu",
-        "html": "<h5>Yapılan Sınavlar</h5><ul><li>Özel Güvenlik Temel Eğitim Sınavı</li><li>Özel Güvenlik Yenileme Eğitimi Sınavı</li><li>A Sınıfı Ateşleyici Yeterlilik Belgesi Sınavı</li><li>B Sınıfı Ateşleyici Yeterlilik Belgesi Sınavı</li><li>C Sınıfı Ateşleyici Yeterlilik Belgesi Sınavı</li><li>Silah Tamir Yeri Açma Sınavı</li><li>Görev Hayvanı ve İdarecisi Sınavları</li></ul><h5>Sınav Organizasyonu</h5><ul><li>ÖGG sınavlarına ilişkin sınav komisyonlarının oluşturulması</li><li>Soru bankasının oluşturulması ve güncellenmesi</li><li>Sınav sorularının hazırlanması</li><li>Sınav evraklarının hazırlanması</li><li>Optik formların hazırlanması</li><li>Sınav salonlarının planlanması</li><li>Sınav görevlilerinin belirlenmesi</li><li>Matbaa personelinin belirlenmesi</li><li>Kurye personelinin belirlenmesi</li><li>Sınav güvenliğinin sağlanmasına yönelik işlemler</li><li>Sınavların uygulanması ve sonuçlandırılması</li></ul>"
+        "title": "Silah ve Sivil Kullanım Amaçlı Patlayıcı Madde İşlemleri",
+        "html": "\n<h3>İlgili temel kanunlar</h3>\n<ul>\n<li><strong>6136 sayılı Kanun:</strong> ateşli silahlar, bıçaklar ve diğer aletler.</li>\n<li><strong>2521 sayılı Kanun:</strong> avda/sporda kullanılan tüfekler, nişan tabancaları ve av bıçakları.</li>\n<li><strong>5729 sayılı Kanun:</strong> ses ve gaz fişeği atabilen silahlar.</li>\n</ul>\n<p>Silah ruhsatlandırma süreçleri, silah tamir yerleri ve ilgili kayıt sistemleri Başkanlığın görev alanıyla bağlantılıdır.</p>\n<h3>Patlayıcı maddeler</h3>\n<p>Sivil kullanım amaçlı patlayıcı maddelerin üretim/ithalat, depolama, nakil, satış, kullanım, denetim ve ateşleyici yeterlilik süreçleri ayrı mevzuat ve izin rejimine tabidir.</p>"
       },
       {
         "id": "genel-kolluk-7",
-        "title": "Şirketler, Eğitim Kurumları ve ÖGG İşlemleri",
-        "html": "<p>Başkanlık;</p><p>ile ilgili işlemleri yürütür.</p><ul><li>Özel güvenlik şirketleri</li><li>Özel güvenlik eğitim kurumları</li><li>Özel güvenlik birimleri</li><li>Alarm izleme merkezleri</li></ul><h5>İlgili İşlemler</h5><ul><li>Kurucu başvuruları</li><li>Temsilci başvuruları</li><li>Yönetici başvuruları</li><li>Başvuruların sekretarya işlemleri</li><li>Faaliyet izinleriyle ilgili işlemler</li><li>Eğitim kurumlarının faaliyetlerinin takibi</li><li>Özel güvenlik şirketlerinin faaliyetlerinin takibi</li><li>Mevzuata uygunluk kontrolleri</li><li>Denetim işlemleri</li></ul><h4>4. Özel Güvenlik Görevlileri</h4><p>Başkanlığın görev alanına giren başlıca ÖGG işlemleri:</p><ul><li>Temel eğitim süreçleri</li><li>Yenileme eğitimleri</li><li>Silahlı / silahsız eğitim süreçleri</li><li>Sınav işlemleri</li><li>Özel güvenlik kimlik işlemlerine ilişkin sistemlerin yürütülmesi</li><li>Eğitim ve yeterlilik standartlarının belirlenmesine yönelik çalışmalar</li><li>Özel güvenlik personelinin hizmet içi eğitimlerinin geliştirilmesi</li></ul>"
+        "title": "ÖGNET — Özel Güvenlik Bilgi Sistemi Otomasyonu",
+        "html": "\n<p><strong>ÖGNET</strong>, özel güvenlik sektöründeki idarî iş ve işlemleri elektronik ortama taşıyan bilgi sistemi otomasyonudur.</p>\n<ul><li>ÖGG ve yönetici kayıtları,</li><li>şirket ve eğitim kurumu süreçleri,</li><li>özel güvenlik birimleri,</li><li>başvuru, eğitim ve sınav işlemleri,</li><li>merkez-taşra ve sektör arasındaki dijital süreçler.</li></ul>\n<blockquote>Ezber: <strong>ÖGNET = Özel Güvenlik Bilgi Sistemi Otomasyonu.</strong></blockquote>"
       },
       {
         "id": "genel-kolluk-8",
-        "title": "Denetleme Faaliyetleri",
-        "html": "<p>Özel güvenlik hizmetlerinin mevzuata uygun yürütülmesi amacıyla denetimler gerçekleştirilir.</p><h5>Denetlenen Yapılar</h5><ul><li>Özel güvenlik şirketleri</li><li>Özel güvenlik eğitim kurumları</li><li>Özel güvenlik birimleri</li><li>Alarm izleme merkezleri</li><li>Özel güvenlik hizmeti verilen kurum ve kuruluşlar</li></ul><h5>Denetimin Amaçları</h5><ul><li>Mevzuata uygunluğun kontrol edilmesi</li><li>Eksikliklerin tespit edilmesi</li><li>Tespit edilen eksikliklerin giderilmesinin sağlanması</li><li>Hizmet kalitesinin artırılması</li><li>Özel güvenlik hizmetlerinde uygulama birliğinin sağlanması</li></ul>"
+        "title": "PATBİS ve ASİP",
+        "html": "\n<h3>PATBİS</h3>\n<p><strong>PATBİS = Patlayıcı Maddeler ve Silah Bilgi Sistemi.</strong> Sivil kullanım amaçlı patlayıcı maddeler ile silah/mermi işlemlerinin kayıt, izleme ve kurumlar arası koordinasyonunu dijitalleştirmeyi amaçlar.</p>\n<h3>ASİP</h3>\n<p><strong>ASİP = Ateşli Silahlar Projesi.</strong> EGM’nin sivil silah işlemleri alanında geliştirdiği proje başlıklarından biridir.</p>\n<p>Ham notta PATBİS yalnızca “patlayıcı madde işlemleri” gibi dar yazılmıştır; güncel resmî açılım silah boyutunu da açıkça içerir.</p>"
       },
       {
         "id": "genel-kolluk-9",
-        "title": "Silah ve Patlayıcı Madde İşlemleri",
-        "html": "<p>Başkanlığın görev alanına giren konular arasında sivil silah işlemleri de bulunur.</p><h5>İlgili Mevzuat Alanları</h5><h6>6136 Sayılı Kanun</h6><p>Ateşli silahlar, bıçaklar ve diğer aletlerle ilgili işlemler.</p><h6>2521 Sayılı Kanun</h6><p>Avda ve sporda kullanılan tüfekler, nişan tabancaları ve av bıçaklarıyla ilgili işlemler.</p><h6>5729 Sayılı Kanun</h6><p>Ses ve gaz fişeği atabilen silahlarla ilgili işlemler.</p><h5>Diğer İşlemler</h5><ul><li>Silah ruhsatlandırma süreçlerine ilişkin işlemler</li><li>Silah tamir yerleri</li><li>Silah tamir yeri açma sınavları</li><li>İlgili izin ve kayıt işlemleri</li></ul><h4>7. Sivil Kullanım Amaçlı Patlayıcı Maddeler</h4><p>Başkanlık;</p><p>konularında görev yürütür.</p><ul><li>Patlayıcı madde üretimi</li><li>Depolanması</li><li>Nakli</li><li>Satışı</li><li>Kullanılması</li><li>Denetlenmesi</li><li>Ateşleyici yeterlilik işlemleri</li></ul><h5>Ateşleyici Yeterlilik Belgeleri</h5><ul><li>A Sınıfı Ateşleyici Yeterlilik Belgesi</li><li>B Sınıfı Ateşleyici Yeterlilik Belgesi</li><li>C Sınıfı Ateşleyici Yeterlilik Belgesi</li></ul>"
+        "title": "KAAN — Genel Kolluk ve Özel Güvenlik İşbirliği",
+        "html": "\n<p><strong>KAAN = Genel Kolluk – Özel Güvenlik İşbirliği ve Entegrasyonu.</strong></p>\n<p>Uygulamanın amacı özel güvenlik görevlileri ile genel kolluk arasında etkili iletişim ve koordinasyon kurarak suçun önlenmesine katkı sağlamak ve meydana gelen olaylarda genel kolluğun hızlı biçimde bilgilendirilmesini sağlamaktır.</p>\n<h3>KAAN kapsamındaki temel işlevler</h3>\n<ul><li>şüpheli olayların zamanında bildirilmesi,</li><li>önleyici güvenliğe katkı,</li><li>devam eden olayda genel kollukla koordinasyon,</li><li>olay yeri ve delillerin korunması,</li><li>yakalanan kişi ve suç unsurunun genel kolluğa teslimi.</li></ul>\n<blockquote>Ezber: <strong>KAAN = Genel Kolluk + Özel Güvenlik işbirliği.</strong></blockquote>"
       },
       {
         "id": "genel-kolluk-10",
-        "title": "ÖGNET, PATBİS, KAAN ve ÖZGE",
-        "html": "<h5>Özel Güvenlik Bilgi Sistemi Otomasyonu</h5><p>Özel güvenlik sektöründeki birçok işlem elektronik ortamda ÖGNET üzerinden yürütülür. ÖGNET kapsamında;</p><p>gibi veriler ve süreçler yönetilir.</p><ul><li>Özel güvenlik görevlileri</li><li>Özel güvenlik şirketleri</li><li>Eğitim kurumları</li><li>Özel güvenlik birimleri</li><li>Yöneticiler</li><li>Başvurular</li><li>Eğitim işlemleri</li><li>Sınav işlemleri</li></ul><h4>9. PATBİS</h4><h5>Patlayıcı ve Silah Bilgi Sistemi</h5><p>Silah ve sivil kullanım amaçlı patlayıcı maddelerle ilgili işlemlerin elektronik ortamda yürütülmesine yönelik sistemdir.</p><h5>Başlıca Alanları</h5><ul><li>Silah işlemleri</li><li>Patlayıcı madde işlemleri</li><li>Ateşleyici işlemleri</li><li>İzin ve ruhsat süreçleri</li><li>Kayıt ve takip işlemleri</li></ul><h4>10. KAAN</h4><h5>Genel Kolluk–Özel Güvenlik İşbirliği ve Entegrasyonu</h5><p>KAAN Projesinin temel amacı; <strong>Genel kolluk ile özel güvenlik görevlileri arasındaki işbirliği ve koordinasyonu artırmaktır.</strong></p><h5>KAAN Kapsamında</h5><ul><li>ÖGG ile genel kolluk arasında hızlı iletişim</li><li>Şüpheli olayların kolluğa bildirilmesi</li><li>Suçların önlenmesine katkı</li><li>Olaylara hızlı müdahale</li><li>Olay yerinin korunması</li><li>Delillerin korunması</li><li>Yakalanan kişilerin genel kolluğa teslim edilmesi</li><li>Genel kolluk ve ÖGG arasında koordinasyon sağlanması</li></ul><h5>Ezber</h5><p><strong>KAAN = Genel Kolluk + Özel Güvenlik İşbirliği</strong></p><h4>11. ÖZGE</h4><h5>Özel Güvenlik Eğitimlerini Geliştirme ve Alan/Branş Eğitimleri</h5><p>Özel güvenlik görevlilerinin görev yaptıkları alanlara göre daha nitelikli ve uzmanlaşmış eğitim almalarını amaçlar.</p><h5>Örnek Çalışma Alanları</h5><ul><li>AVM güvenliği</li><li>Hastane güvenliği</li><li>Üniversite güvenliği</li><li>Turizm tesisleri</li><li>Spor müsabakaları</li><li>Toplu taşıma alanları</li><li>Kritik tesisler</li><li>Kamu kurumları</li></ul><h5>Ezber</h5><p><strong>ÖZGE = ÖGG eğitimlerinin geliştirilmesi</strong></p>"
+        "title": "ÖZGE ve SEP — Eğitim Projeleri",
+        "html": "\n<h3>ÖZGE</h3>\n<p><strong>ÖZGE</strong>, özel güvenlik eğitimlerinin geliştirilmesi ile alan/branş eğitimlerine odaklanan proje başlığıdır. AVM, hastane, üniversite, turizm tesisi, spor müsabakası, toplu taşıma ve kritik tesis gibi farklı görev alanlarının özgün risklerine uygun eğitimlerin geliştirilmesi hedeflenir.</p>\n<h3>SEP</h3>\n<p><strong>SEP = Sürekli Eğitim Projesi.</strong> Temel/yenileme eğitiminin ötesinde mesleki bilginin güncel tutulmasını hedefleyen EGM proje başlıklarındandır.</p>"
       },
       {
         "id": "genel-kolluk-11",
-        "title": "Genel Kolluk–ÖGG Koordinasyonu",
-        "html": "<p>Özel güvenlik görevlileri görevleri sırasında genel kollukla koordineli çalışır.</p><h5>Genel Kolluk</h5><ul><li>Polis</li><li>Jandarma</li><li>Sahil Güvenlik</li></ul><h5>Özel Güvenlik Görevlileri</h5><ul><li>Suç teşkil eden olayları genel kolluğa bildirir.</li><li>Olay yerini korur.</li><li>Delillerin kaybolmasını veya bozulmasını önler.</li><li>Yakalanan kişileri ve elde edilen suç unsurlarını genel kolluğa teslim eder.</li></ul><h4>13. Özel Güvenlik Eğitimlerinin Geliştirilmesi</h4><p>Başkanlık özel güvenlik sektöründe;</p><p>üzerinde çalışmalar yürütür.</p><ul><li>Hizmet içi eğitimler</li><li>Alan eğitimleri</li><li>Branş eğitimleri</li><li>Yönetici eğitimleri</li><li>Güvenlik sorumlusu eğitimleri</li><li>Eğitim standartları</li></ul><h5>Amaç</h5><p><strong>Özel güvenlik hizmetlerinde kaliteyi, uzmanlaşmayı ve uygulama birliğini artırmaktır.</strong></p>"
+        "title": "ÖGYS ve Diğer Dijital Eğitim/Kayıt Araçları",
+        "html": "\n<p>Ders notunda <strong>ÖGYS = Özel Güvenlik Yoklama Sistemi</strong> başlığı ayrıca tutulmuştur. Kurs devamı ve yoklama süreçlerinin elektronik takibi bakımından kullanılan sistemlerle ÖGNET’in idarî veri/işlem fonksiyonları birbirinden ayrılmalıdır.</p>\n<p>EGM’nin özel güvenlik alanındaki dijital dönüşümü yalnızca tek sisteme dayanmaz; kimlik, eğitim, sınav, silah, patlayıcı madde ve kolluk koordinasyonu farklı modül/projeler üzerinden yürütülebilir.</p>"
       },
       {
         "id": "genel-kolluk-12",
-        "title": "Sınav Eşleştirmeleri ve Ezber Kodları",
-        "html": "<div class=\"ogg-data-table\"><table><tbody><tr><th>Kavram</th><th>Karşılığı</th></tr><tr><td>ÖGNET</td><td>Özel Güvenlik Bilgi Sistemi Otomasyonu</td></tr><tr><td>PATBİS</td><td>Patlayıcı ve Silah Bilgi Sistemi</td></tr><tr><td>KAAN</td><td>Genel Kolluk–Özel Güvenlik İşbirliği ve Entegrasyonu</td></tr><tr><td>ÖZGE</td><td>Özel Güvenlik Eğitimlerini Geliştirme / Alan-Branş Eğitimleri</td></tr><tr><td>ÖGG Temel Sınavı</td><td>Özel Güvenlik Denetleme Başkanlığı</td></tr><tr><td>ÖGG Yenileme Sınavı</td><td>Özel Güvenlik Denetleme Başkanlığı</td></tr><tr><td>Ateşleyici Yeterlilik Sınavları</td><td>Özel Güvenlik Denetleme Başkanlığı</td></tr><tr><td>Silah Tamir Yeri Açma Sınavı</td><td>Özel Güvenlik Denetleme Başkanlığı</td></tr><tr><td>Görev Hayvanı ve İdarecisi Sınavı</td><td>Özel Güvenlik Denetleme Başkanlığı</td></tr><tr><td>Özel güvenlik denetimleri</td><td>Özel Güvenlik Denetleme Başkanlığı</td></tr></tbody></table></div><h4>15. Tek Cümlelik Ezber</h4><blockquote><strong>Özel Güvenlik Denetleme Başkanlığı = ÖGG + şirket/eğitim kurumları + sınav + denetim + silah + patlayıcı + ÖGNET + PATBİS + KAAN + ÖZGE</strong></blockquote><h5>Süper Kısa Kod</h5><p><strong>ÖG – DEN – SIN – SİL – PAT – KAAN – ÖZGE</strong></p><ul><li><strong>ÖG</strong> → Özel Güvenlik</li><li><strong>DEN</strong> → Denetim</li><li><strong>SIN</strong> → Sınav</li><li><strong>SİL</strong> → Silah</li><li><strong>PAT</strong> → Patlayıcı / PATBİS</li><li><strong>KAAN</strong> → Kolluk işbirliği</li><li><strong>ÖZGE</strong> → Eğitim</li></ul>"
+        "title": "Sınav Eşleştirmeleri ve Ezber Haritası",
+        "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Kavram</th><th>Karşılığı</th></tr>\n<tr><td>ÖGNET</td><td>Özel Güvenlik Bilgi Sistemi Otomasyonu</td></tr>\n<tr><td>PATBİS</td><td>Patlayıcı Maddeler ve Silah Bilgi Sistemi</td></tr>\n<tr><td>ASİP</td><td>Ateşli Silahlar Projesi</td></tr>\n<tr><td>KAAN</td><td>Genel Kolluk – Özel Güvenlik İşbirliği ve Entegrasyonu</td></tr>\n<tr><td>ÖZGE</td><td>Özel Güvenlik Eğitimlerinin Geliştirilmesi / Alan-Branş Eğitimleri</td></tr>\n<tr><td>SEP</td><td>Sürekli Eğitim Projesi</td></tr>\n<tr><td>ÖGYS</td><td>Özel Güvenlik Yoklama Sistemi</td></tr>\n</tbody></table></div>\n<p>Dersin kısa ezber haritası:</p>\n<blockquote><strong>ÖG – DEN – SIN – SİL – PAT – KAAN – ÖZGE</strong><br>Özel güvenlik → denetim → sınav → silah → patlayıcı → kolluk işbirliği → eğitim.</blockquote>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   },
   {
     "id": "etkili-iletisim",
@@ -523,39 +526,40 @@ export const oggLessons = [
     "sourceUrl": "https://app.notion.com/p/3debb40fbf3c804b94b8c1e700135aff?pvs=204",
     "updatedAt": "2026-09-17T10:29:00.219Z",
     "imageCount": 3,
-    "introHtml": "",
+    "introHtml": "<p>Etkili iletişim dersi; iletişimin amaçlarını, iletişim sürecinin öğelerini, kodlama-kod çözme ilişkisini, geribildirimi, kişisel ve çevresel iletişim faktörlerini, örgüt içi çatışmayı ve kitle iletişim araçlarını ele alır. Güvenlik görevlisi için iletişim aynı zamanda gerilimi düşürme ve doğru bilgi aktarma aracıdır.</p>",
     "categories": [
       {
         "id": "etkili-iletisim-1",
         "title": "İletişimin Tanımı ve Temel Amaçları",
-        "html": "<ul><li>Paylaşmak</li><li>Bilgi Aktarmak</li><li>Haberleşmek</li><li>Etkilemek</li><li>Var Olmak</li><li>İkna Olmak</li><li>Gelişmek</li><li>Yönlendirmek (Manipülasyon)</li></ul><p>İnsan Hayvan Bitki Makine arasında her tür yolla gerçekleşen bilgi alışverişine iletişim denir.</p>"
+        "html": "\n<p><strong>İletişim</strong>, canlılar veya insanlar ile teknik sistemler arasında anlam, bilgi, duygu veya komut aktarımının gerçekleştiği süreçtir. Ders notundaki geniş tanım “insan–hayvan–bitki–makine arasında çeşitli yollarla gerçekleşen bilgi alışverişi” şeklindedir.</p>\n<h3>Temel amaçlar</h3>\n<ul><li>paylaşmak,</li><li>bilgi aktarmak,</li><li>haberleşmek,</li><li>etkilemek,</li><li>kendini ifade etmek/var olmak,</li><li>ikna etmek,</li><li>gelişmek ve öğrenmek,</li><li>yönlendirmek.</li></ul>\n<p>“Yönlendirme” ile “manipülasyon” aynı şey değildir. Yönlendirme açık ve meşru bir iletişim amacı olabilir; manipülasyon ise çoğu zaman karşı tarafın bilgi veya iradesini örtülü biçimde etkilemeyi ifade eder.</p>"
       },
       {
         "id": "etkili-iletisim-2",
         "title": "İletişim Süreci ve Temel Öğeler",
-        "html": "<ul><li>Kaynak (Verici, Gönderici)</li><li>Mesaj (İleti)</li><li>Kanal</li><li>Hedef (Alıcı)</li><li>Geribildirim (Dönüt, Yansıma, Feedback)</li><li>Kodlama</li></ul><aside class=\"ogg-image-transcript\" data-image=\"1\"><b>Görsel 1</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside>"
+        "html": "\n<p>Dersin temel iletişim modeli:</p>\n<blockquote><strong>Kaynak → Mesaj → Kanal → Hedef/Alıcı → Geribildirim</strong></blockquote>\n<ul>\n<li><strong>Kaynak:</strong> mesajı oluşturan/gönderen kişi veya sistem.</li>\n<li><strong>Mesaj:</strong> aktarılmak istenen bilgi, duygu veya düşünce.</li>\n<li><strong>Kanal:</strong> mesajın taşındığı sözlü, yazılı, görsel, işitsel veya dijital ortam.</li>\n<li><strong>Hedef/alıcı:</strong> mesajın ulaştığı kişi veya grup.</li>\n<li><strong>Geribildirim:</strong> alıcının mesaja verdiği tepki; iletişim döngüsünü tamamlar.</li>\n<li><strong>Kodlama/kod çözme:</strong> anlamın sözcük, sembol, jest veya işaretlere dönüştürülmesi ve alıcı tarafından yeniden anlamlandırılması.</li>\n</ul>\n<div class=\"ogg-image-transcript\"><b>Kaynak görsel 1</b><span>Notion’da iletişim sürecini gösteren bir şema bulunuyor. Şemadaki konum korunmuş; metindeki öğeler akademik biçimde yukarıda yazıya dönüştürüldü.</span></div>"
       },
       {
         "id": "etkili-iletisim-3",
-        "title": "Kodlama ve Anlamlandırma",
-        "html": "<p>Kaynak, kodlamayı yapar. Hedef, kod çözer. Bir ifadenin kalıp olarak iletisi.</p><blockquote>“Avucunu yala”</blockquote><p>“Ayağını denk al.”</p><p>Önyargı İnterapsiyon</p>"
+        "title": "Kodlama, Kod Çözme, Bağlam ve Önyargı",
+        "html": "\n<p>Kaynak düşünceyi bir iletişim koduna dönüştürür; hedef/alıcı bu kodu kendi dil, deneyim ve bağlamı üzerinden çözer. Aynı cümle sözlük anlamından farklı bir kültürel anlam taşıyabilir.</p>\n<p>Ders notundaki “avucunu yala” ve “ayağını denk al” örnekleri, kelimelerin tek tek anlamının mesajın gerçek anlamını açıklamaya yetmediği <strong>deyimsel/kültürel kodlama</strong> örnekleridir.</p>\n<h3>İletişim engelleri</h3>\n<p>Önyargı, yanlış varsayım, dikkat bölünmesi, mesaj kesintisi/interruption, dil farkı ve bağlam eksikliği kod çözmeyi bozabilir. Güvenlik iletişiminde kısa, açık, gözlenebilir olguya dayalı ifade tercih edilmelidir.</p>"
       },
       {
         "id": "etkili-iletisim-4",
-        "title": "İletişimi Etkileyen Faktörler",
-        "html": "<h4>1- Kişiye bağlı özellikler</h4><ul><li>Yaş</li><li>Cinsiyet</li><li>Eğitim Durumu</li><li>Sosyal Mevkii</li></ul><h4>2- İletişim Ortamının Sosyal Özellikleri</h4><ul><li>Resmiyet</li><li>Samimiyet</li></ul><h4>3- İletişim Ortamının Fiziksel Özellikleri</h4><ul><li>Isı, ışık, kalabalık, insan sayısı, gürültü</li></ul><aside class=\"ogg-image-transcript\" data-image=\"2\"><b>Görsel 2</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside><aside class=\"ogg-image-transcript\" data-image=\"3\"><b>Görsel 3</b><span>Notion kaynak görseli · metinleştirme kuyruğunda</span></aside>"
+        "title": "İletişimi Etkileyen Kişisel, Sosyal ve Fiziksel Faktörler",
+        "html": "\n<h3>Kişisel faktörler</h3>\n<ul><li>yaş ve gelişim özellikleri,</li><li>eğitim ve bilgi düzeyi,</li><li>sosyal rol/statü,</li><li>deneyim, dil ve kültürel arka plan.</li></ul>\n<h3>Sosyal ortam</h3>\n<p>İletişimin resmî veya samimi oluşu, tarafların rol ve yetki ilişkisi, grup baskısı ve kurum kültürü mesajın biçimini değiştirir.</p>\n<h3>Fiziksel ortam</h3>\n<p>Isı, ışık, gürültü, kalabalık, mekânın büyüklüğü ve insan yoğunluğu; mesajın duyulması, dikkat ve stres düzeyi üzerinde doğrudan etkilidir.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görsel 2</b><span>Notion’da iletişimi etkileyen faktörlere ilişkin bir ders görseli bulunuyor; ana kavramlar metne işlendi.</span></div>"
       },
       {
         "id": "etkili-iletisim-5",
         "title": "Örgüt İçi İletişim ve Çatışmalar",
-        "html": "<ul><li>Ast-Üst Çatışması</li><li>Rol Çatışması</li></ul>"
+        "html": "\n<p>Örgüt içi iletişimde emir, bilgi, rapor ve geribildirim farklı yönlerde hareket eder. Güvenlik hizmetinde görev devri, olay bildirimi ve amir–personel iletişimindeki belirsizlik doğrudan operasyonel hataya dönüşebilir.</p>\n<h3>Ders notunda öne çıkan çatışmalar</h3>\n<ul><li><strong>Ast–üst çatışması:</strong> yetki, beklenti, iletişim tarzı veya görev yorumundan doğabilir.</li><li><strong>Rol çatışması:</strong> bir kişiden aynı anda birbiriyle uyumsuz görev veya beklentiler talep edildiğinde oluşabilir.</li></ul>\n<p>Çatışmayı azaltmak için görev tanımı, iletişim zinciri, yazılı prosedür, aktif dinleme ve zamanında geribildirim önemlidir.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görsel 3</b><span>Notion’da örgüt içi iletişim/çatışma konusuna ait üçüncü görsel bulunuyor; görselin bulunduğu bölüm korunmuştur.</span></div>"
       },
       {
         "id": "etkili-iletisim-6",
-        "title": "Kitle İletişim Araçları",
-        "html": "<p>Akıllı telefon, TV, Radyo, Gazete, Dergi, Sinema, İnternet, Bilgisayar, Reklam Panoları</p><blockquote>Tiyatro ve okullar ortamdır, kişiler vardır, bunlar araç değildir.</blockquote>"
+        "title": "Kitle İletişim Araçları ve İletişim Ortamı",
+        "html": "\n<h3>Kitle iletişim araçları</h3>\n<p>Akıllı telefon, televizyon, radyo, gazete, dergi, sinema, internet, bilgisayar ve açık hava reklam panoları geniş kitlelere mesaj ulaştırabilen araçlardır.</p>\n<h3>Araç ve ortam ayrımı</h3>\n<p>Ders notundaki önemli ayrım; <strong>iletişim aracı</strong> ile iletişimin gerçekleştiği <strong>ortam/mekânın</strong> aynı kavram olmamasıdır. Örneğin okul veya tiyatro binası bir iletişim ortamı olabilir; tek başına “kitle iletişim aracı” sayılması gerekmez.</p>\n<p>Günümüzde sosyal medya, mesajlaşma platformları, dijital yayın ve çevrim içi toplantı sistemleri de kitle veya grup iletişiminde temel kanallar hâline gelmiştir.</p>"
       }
-    ]
+    ],
+    "editorialStatus": "curated"
   }
 ]
 
