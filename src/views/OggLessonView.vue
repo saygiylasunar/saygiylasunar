@@ -147,7 +147,7 @@ function formatDate(value){
 .prose :deep(table) { width:100%; border-collapse:collapse; min-width:520px; font-size:.82rem; }
 .prose :deep(th), .prose :deep(td) { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
 .prose :deep(th) { background:var(--bg-soft); font-family:var(--tech); font-size:.7rem; }
-.prose :deep(.ogg-image-transcript) { display:grid; gap:4px; margin:20px 0; padding:14px; border:1px dashed var(--line-strong); border-radius:12px; background:var(--bg-soft); }
+.prose :deep(.editorial-warning) { margin:20px 0; padding:14px 16px; border-left:3px solid #b78638; border-radius:0 10px 10px 0; background:color-mix(in srgb,#b78638 8%,transparent); }\n.prose :deep(.ogg-image-transcript) { display:grid; gap:4px; margin:20px 0; padding:14px; border:1px dashed var(--line-strong); border-radius:12px; background:var(--bg-soft); }
 .prose :deep(.ogg-image-transcript b) { color:var(--accent); font-family:var(--tech); font-size:.72rem; }
 .prose :deep(.ogg-image-transcript span) { color:var(--muted); font-size:.76rem; }
 .category-top { display:inline-flex; margin-top:18px; color:var(--muted); font-size:.7rem; text-decoration:none; }
