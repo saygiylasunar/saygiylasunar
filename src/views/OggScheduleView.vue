@@ -8,6 +8,7 @@
           <p class="lead">{{ oggLessonsMeta.description }}</p>
           <div class="hero-actions">
             <a class="primary" href="#dersler">Derslere git</a>
+            <button class="secondary" type="button" @click="aboutOpen=true">Künye & kaynak</button>
             <button class="secondary" type="button" @click="downloadCalendar">Programı indir (.ics)</button>
           </div>
         </div>
@@ -83,7 +84,7 @@
           <div>
             <p class="tech-label">KURS PROGRAMI // EYLÜL 2026</p>
             <h2>ÖGYS program arşivi</h2>
-            <p>Notların hangi ders akışından üretildiğini görmek için eski programı da koruyorum.</p>
+            <p>Derslerin eğitim programındaki akışını görmek için Eylül 2026 programı arşivde korunmuştur.</p>
           </div>
           <button class="secondary" type="button" @click="downloadCalendar">.ics indir</button>
         </header>
@@ -115,19 +116,33 @@
         </details>
       </div>
     </section>
+
+    <OggArchiveModal v-model="aboutOpen" />
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink } from 'vue-router'
+import OggArchiveModal from '../components/OggArchiveModal.vue'
 import { oggLessons, oggLessonsMeta } from '../content/oggLessonsFull.js'
 import { oggSchedule, oggScheduleMeta } from '../content/oggSchedule.js'
+
+const aboutOpen=ref(false)
+const ABOUT_SEEN_KEY='ogg-archive-about-seen-v1'
 
 const totalCategories=computed(()=>oggLessons.reduce((sum,lesson)=>sum+lesson.categories.length,0))
 const sourceImages=computed(()=>oggLessons.reduce((sum,lesson)=>sum+lesson.imageCount,0))
 const totalSlots=computed(()=>oggSchedule.reduce((sum,day)=>sum+day.sessions.length,0))
 const uniqueCourses=computed(()=>new Set(oggSchedule.flatMap(day=>day.sessions.map(x=>x.course))).size)
+
+onMounted(()=>{
+  if(window.localStorage.getItem(ABOUT_SEEN_KEY)!=='1') aboutOpen.value=true
+})
+
+watch(aboutOpen,(isOpen,wasOpen)=>{
+  if(wasOpen&&!isOpen) window.localStorage.setItem(ABOUT_SEEN_KEY,'1')
+})
 
 function parseDate(value){return new Date(`${value}T12:00:00`)}
 function dayLabel(value){
