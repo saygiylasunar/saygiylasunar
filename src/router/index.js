@@ -39,6 +39,7 @@ const router = createRouter({
     { path: '/tools/contrast', name: 'contrast', component: () => import('../views/ContrastToolView.vue'), meta: { title: 'tools' } },
     { path: '/arsalar', name: 'lands', component: () => import('../views/LandPortfolioView.vue'), meta: { title: 'lands' } },
     { path: '/ogg', name: 'ogg', component: () => import('../views/OggScheduleView.vue'), meta: { title: 'ogg' } },
+    { path: '/ogg/:slug', name: 'ogg-lesson', component: () => import('../views/OggLessonView.vue'), meta: { title: 'ogg' } },
     { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import('../views/NotFoundView.vue'), meta: { title: 'notFound' } },
   ],
 })
