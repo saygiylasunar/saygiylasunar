@@ -46,7 +46,14 @@ export const oggLessons = [
       {
         "id": "ozel-guvenlik-hukuku-7",
         "title": "Kimlik, Kıyafet ve Özel Güvenlik Eğitimi",
-        "html": "\n<h3>Özel güvenlik kimlik kartı</h3>\n<ul>\n<li>Kimlik kartı valilik tarafından verilir.</li>\n<li>Kart üzerinde görevlinin adı-soyadı ile silahlı veya silahsız statüsü belirtilir.</li>\n<li>Görev sırasında kimlik kartı herkes tarafından görülebilecek şekilde taşınır.</li>\n<li>Kimlik ve çalışma izinlerinin yenilenmesi belirli süre ve eğitim şartlarına bağlıdır.</li>\n</ul>\n<h3>Kıyafet</h3>\n<p>Özel güvenlik görevlisinin kıyafeti, görev alanı ve kurumun onaylı kıyafet düzeniyle bağlantılıdır. Kamu kurumlarında kullanılan kıyafetler ve özel güvenlik logosu için ayrıca EGM yönergeleri bulunmaktadır.</p>\n<h3>Temel eğitim ve yenileme eğitimi</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Eğitim</th><th>Silahsız</th><th>Silahlı</th></tr>\n<tr><td>Temel eğitim</td><td>100 saat</td><td>120 saat</td></tr>\n<tr><td>Yenileme eğitimi</td><td>50 saat</td><td>60 saat</td></tr>\n</tbody></table></div>\n<p>Silahlı temel eğitimde silah bilgisi ve atış eğitimi, silahsız temel eğitime eklenir. Özel güvenlik eğitimleri İçişleri Bakanlığının gözetimindeki yetkili eğitim kurumları ve mevzuatta izin verilen yükseköğretim kurumları eliyle yürütülür.</p>\n<h3>Temel eğitimden muafiyetle ilgili not</h3>\n<p>Ders notlarında genel kolluk ve MİT’te belirli süre çalışmış/emekli personel ile güvenlikle ilgili yükseköğretim programı mezunlarının temel eğitim bakımından özel düzenlemelere tabi olduğu kaydedilmiştir. Yükseköğretim mezuniyetindeki muafiyet silah eğitimi bakımından ayrıca değerlendirilir.</p>\n<p class=\"editorial-warning\"><strong>Editoryal düzeltme:</strong> Ham nottaki “%75 devam / %25 devamsızlık” ifadesi burada kesin kural olarak yayınlanmadı; devam şartı ve muafiyetler güncel yönetmelik üzerinden kontrol edilmelidir.</p>\n"
+        "html": "\n<h3>Özel güvenlik kimlik kartı</h3>\n<ul>\n<li>Kimlik kartı valilik tarafından verilir.</li>\n<li>Kart üzerinde görevlinin adı-soyadı ile silahlı veya silahsız statüsü belirtilir.</li>\n<li>Görev sırasında kimlik kartı herkes tarafından görülebilecek şekilde taşınır.</li>\n<li>Kimlik ve çalışma izinlerinin yenilenmesi belirli süre ve eğitim şartlarına bağlıdır.</li>\n</ul>\n<h3>Kıyafet</h3>\n<p>Özel güvenlik görevlisinin kıyafeti, görev alanı ve kurumun onaylı kıyafet düzeniyle bağlantılıdır. Kamu kurumlarında kullanılan kıyafetler ve özel güvenlik logosu için ayrıca EGM yönergeleri bulunmaktadır.</p>\n<h3>Temel eğitim ve yenileme eğitimi</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Eğitim</th><th>Silahsız</th><th>Silahlı</th></tr>\n<tr><td>Temel eğitim</td><td>100 saat</td><td>120 saat</td></tr>\n<tr><td>Yenileme eğitimi</td><td>50 saat</td><td>60 saat</td></tr>\n</tbody></table></div>\n<p>Silahlı temel eğitimde silah bilgisi ve atış eğitimi, silahsız temel eğitime eklenir. Özel güvenlik eğitimleri İçişleri Bakanlığının gözetimindeki yetkili eğitim kurumları ve mevzuatta izin verilen yükseköğretim kurumları eliyle yürütülür.</p>\n<h3>Temel eğitimden muafiyetle ilgili not</h3>\n<p>Ders notlarında genel kolluk ve MİT’te belirli süre çalışmış/emekli personel ile güvenlikle ilgili yükseköğretim programı mezunlarının temel eğitim bakımından özel düzenlemelere tabi olduğu kaydedilmiştir. Yükseköğretim mezuniyetindeki muafiyet silah eğitimi bakımından ayrıca değerlendirilir.</p>\n<p class=\"editorial-warning\"><strong>Editoryal düzeltme:</strong> Ham nottaki “%75 devam / %25 devamsızlık” ifadesi burada kesin kural olarak yayınlanmadı; devam şartı ve muafiyetler güncel yönetmelik üzerinden kontrol edilmelidir.</p>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Devam zorunluluğu %75, devamsızlık hakkı %25.",
+            "academic": "Bu oranı sınav ezberi olarak koruyoruz; güncel devam şartı için yürürlükteki yönetmelik ve EGM duyurusu ayrıca kontrol edilir."
+          }
+        ]
       },
       {
         "id": "ozel-guvenlik-hukuku-8",
@@ -56,12 +63,26 @@ export const oggLessons = [
       {
         "id": "ozel-guvenlik-hukuku-9",
         "title": "PVSK, TCK, İnsan Hakları ve Normlar Hiyerarşisi",
-        "html": "\n<h3>2559 sayılı Polis Vazife ve Salahiyet Kanunu</h3>\n<p>PVSK, polis yetkilerinin hukuki temelidir. Ders kapsamında özellikle önleme araması konusu özel güvenlik yetkileriyle karşılaştırılmıştır. Polis; kanunda belirtilen şartlarla halkın topluca bulunduğu veya bulunabileceği yerlerde, umuma açık yerlerde, toplu taşıma araçlarında ve kanunda sayılan diğer alanlarda önleme araması yapabilir. Konut, kamuya açık olmayan işyeri ve eklentileri bakımından önleme araması yetkisi aynı kapsamda değildir.</p>\n<h3>TCK bakımından temel kavramlar</h3>\n<ul>\n<li><strong>Gece vakti:</strong> TCK’daki tanım, güneşin batmasından bir saat sonra başlayıp doğmasından bir saat önceye kadar devam eden zaman dilimidir.</li>\n<li><strong>Ceza sorumluluğunun şahsiliği:</strong> Kişi, başkasının fiilinden dolayı cezalandırılamaz.</li>\n<li><strong>Kast ve taksir:</strong> Ceza sorumluluğunun temel manevi unsur başlıklarıdır; ham notta TCK 27 “kast” şeklinde yazılmış olsa da TCK 27 esasen ceza sorumluluğunu kaldıran nedenlerde sınırın aşılmasına ilişkindir.</li>\n<li><strong>İşkence, eziyet, tehdit, şantaj, cebir, kişiyi hürriyetinden yoksun kılma, konut dokunulmazlığının ihlali, özel hayatın gizliliği, mala zarar verme ve belgede sahtecilik</strong> görev sırasında sınırların aşılması bakımından bilinmesi gereken suç tipleri arasındadır.</li>\n<li><strong>Zimmet:</strong> Görev nedeniyle zilyetliği devredilmiş veya koruma/gözetimiyle yükümlü olunan malın kendisinin ya da başkasının zimmetine geçirilmesi.</li>\n<li><strong>İrtikâp:</strong> Kamu görevinin sağladığı nüfuzun kötüye kullanılmasıyla menfaat sağlanmasıyla bağlantılı suç tipidir.</li>\n</ul>\n<h3>İnsan hakları çerçevesi</h3>\n<p>Ders notunda İnsan Hakları Evrensel Bildirgesi ve Avrupa insan hakları sistemi birlikte anılmıştır. Akademik terminolojide “Avrupa İnsan Hakları Beyannamesi” yerine <strong>Avrupa İnsan Hakları Sözleşmesi (AİHS)</strong> ifadesi kullanılmalıdır. ÖGG’nin yetki kullanımı; kişi özgürlüğü, özel hayat, konut dokunulmazlığı, mülkiyet ve kötü muamele yasağı gibi temel haklarla doğrudan ilişkilidir.</p>\n<h3>Normlar hiyerarşisi</h3>\n<p>Ders notunda Anayasa, milletlerarası antlaşmalar, kanunlar, Cumhurbaşkanlığı kararnameleri, yönetmelikler, yönergeler ve tebliğler şeklinde bir çalışma şeması tutulmuştur. Bu şema sınav hafızası için yararlıdır; ancak milletlerarası antlaşmalar ile kanunların çatışması ve Cumhurbaşkanlığı kararnamelerinin alanı Anayasa’daki özel hükümler nedeniyle basit bir “tek sıra” olarak değerlendirilmemelidir.</p>\n"
+        "html": "\n<h3>2559 sayılı Polis Vazife ve Salahiyet Kanunu</h3>\n<p>PVSK, polis yetkilerinin hukuki temelidir. Ders kapsamında özellikle önleme araması konusu özel güvenlik yetkileriyle karşılaştırılmıştır. Polis; kanunda belirtilen şartlarla halkın topluca bulunduğu veya bulunabileceği yerlerde, umuma açık yerlerde, toplu taşıma araçlarında ve kanunda sayılan diğer alanlarda önleme araması yapabilir. Konut, kamuya açık olmayan işyeri ve eklentileri bakımından önleme araması yetkisi aynı kapsamda değildir.</p>\n<h3>TCK bakımından temel kavramlar</h3>\n<ul>\n<li><strong>Gece vakti:</strong> TCK’daki tanım, güneşin batmasından bir saat sonra başlayıp doğmasından bir saat önceye kadar devam eden zaman dilimidir.</li>\n<li><strong>Ceza sorumluluğunun şahsiliği:</strong> Kişi, başkasının fiilinden dolayı cezalandırılamaz.</li>\n<li><strong>Kast ve taksir:</strong> Ceza sorumluluğunun temel manevi unsur başlıklarıdır; ham notta TCK 27 “kast” şeklinde yazılmış olsa da TCK 27 esasen ceza sorumluluğunu kaldıran nedenlerde sınırın aşılmasına ilişkindir.</li>\n<li><strong>İşkence, eziyet, tehdit, şantaj, cebir, kişiyi hürriyetinden yoksun kılma, konut dokunulmazlığının ihlali, özel hayatın gizliliği, mala zarar verme ve belgede sahtecilik</strong> görev sırasında sınırların aşılması bakımından bilinmesi gereken suç tipleri arasındadır.</li>\n<li><strong>Zimmet:</strong> Görev nedeniyle zilyetliği devredilmiş veya koruma/gözetimiyle yükümlü olunan malın kendisinin ya da başkasının zimmetine geçirilmesi.</li>\n<li><strong>İrtikâp:</strong> Kamu görevinin sağladığı nüfuzun kötüye kullanılmasıyla menfaat sağlanmasıyla bağlantılı suç tipidir.</li>\n</ul>\n<h3>İnsan hakları çerçevesi</h3>\n<p>Ders notunda İnsan Hakları Evrensel Bildirgesi ve Avrupa insan hakları sistemi birlikte anılmıştır. Akademik terminolojide “Avrupa İnsan Hakları Beyannamesi” yerine <strong>Avrupa İnsan Hakları Sözleşmesi (AİHS)</strong> ifadesi kullanılmalıdır. ÖGG’nin yetki kullanımı; kişi özgürlüğü, özel hayat, konut dokunulmazlığı, mülkiyet ve kötü muamele yasağı gibi temel haklarla doğrudan ilişkilidir.</p>\n<h3>Normlar hiyerarşisi</h3>\n<p>Ders notunda Anayasa, milletlerarası antlaşmalar, kanunlar, Cumhurbaşkanlığı kararnameleri, yönetmelikler, yönergeler ve tebliğler şeklinde bir çalışma şeması tutulmuştur. Bu şema sınav hafızası için yararlıdır; ancak milletlerarası antlaşmalar ile kanunların çatışması ve Cumhurbaşkanlığı kararnamelerinin alanı Anayasa’daki özel hükümler nedeniyle basit bir “tek sıra” olarak değerlendirilmemelidir.</p>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "TCK 27 → Kasıt.",
+            "academic": "Ham notta böyle geçti. Akademik olarak TCK m.27, ceza sorumluluğunu kaldıran veya azaltan nedenlerde sınırın aşılmasına ilişkindir; 'kast' kavramı TCK m.21'de düzenlenir."
+          }
+        ]
       },
       {
         "id": "ozel-guvenlik-hukuku-10",
         "title": "4857 Sayılı İş Kanunu: Çalışma Süresi, Fazla Çalışma, İzin ve Gece Çalışması",
-        "html": "\n<h3>Haftalık çalışma ve fazla çalışma</h3>\n<ul>\n<li>Genel kural olarak haftalık çalışma süresi <strong>45 saat</strong>tir.</li>\n<li>Fazla çalışma ücreti normal saat ücretinin yüzde 50 artırılmış tutarı üzerinden hesaplanır.</li>\n<li>Yıllık fazla çalışma toplamı kural olarak 270 saati aşamaz.</li>\n<li>Ulusal bayram ve genel tatil günlerinde çalışma için İş Kanunundaki ayrıca ücret hükümleri uygulanır.</li>\n</ul>\n<h3>Deneme süresi</h3>\n<p>İş sözleşmesinde deneme süresi en çok iki ay olabilir; toplu iş sözleşmesiyle dört aya kadar uzatılabilir. Deneme süresi sigortasız çalışma dönemi değildir.</p>\n<h3>Yıllık ücretli izin</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Hizmet süresi</th><th>Asgari yıllık izin</th></tr>\n<tr><td>1 yıldan 5 yıla kadar (5 yıl dahil)</td><td>14 gün</td></tr>\n<tr><td>5 yıldan fazla, 15 yıldan az</td><td>20 gün</td></tr>\n<tr><td>15 yıl ve üzeri</td><td>26 gün</td></tr>\n</tbody></table></div>\n<p>18 yaşından küçük ve 50 yaşından büyük işçilere verilecek yıllık ücretli izin süresi 20 günden az olamaz.</p>\n<h3>Ara dinlenmeleri</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Günlük çalışma</th><th>Asgari ara dinlenmesi</th></tr>\n<tr><td>4 saate kadar</td><td>15 dakika</td></tr>\n<tr><td>4 saatten fazla, 7,5 saate kadar</td><td>30 dakika</td></tr>\n<tr><td>7,5 saatten fazla</td><td>60 dakika</td></tr>\n</tbody></table></div>\n<p>Ara dinlenmeleri çalışma süresinden sayılmaz.</p>\n<h3>Gece dönemi ve özel güvenlik istisnası</h3>\n<p>Çalışma hayatında gece dönemi en geç 20.00’de başlayıp en erken 06.00’ya kadar geçen ve her hâlde en fazla 11 saat süren dönemdir. Genel kural işçinin gece çalışmasının 7,5 saati aşmamasıdır.</p>\n<blockquote><strong>ÖGG için önemli istisna:</strong> Turizm, özel güvenlik ve sağlık hizmetlerinde işçinin <strong>yazılı onayı</strong> alınması şartıyla 7,5 saatin üzerinde gece çalışması yaptırılabilir. Ham ders notundaki “gece en fazla 7,5 saat” cümlesi bu nedenle özel güvenlik sektörü açısından tek başına eksiktir.</blockquote>\n"
+        "html": "\n<h3>Haftalık çalışma ve fazla çalışma</h3>\n<ul>\n<li>Genel kural olarak haftalık çalışma süresi <strong>45 saat</strong>tir.</li>\n<li>Fazla çalışma ücreti normal saat ücretinin yüzde 50 artırılmış tutarı üzerinden hesaplanır.</li>\n<li>Yıllık fazla çalışma toplamı kural olarak 270 saati aşamaz.</li>\n<li>Ulusal bayram ve genel tatil günlerinde çalışma için İş Kanunundaki ayrıca ücret hükümleri uygulanır.</li>\n</ul>\n<h3>Deneme süresi</h3>\n<p>İş sözleşmesinde deneme süresi en çok iki ay olabilir; toplu iş sözleşmesiyle dört aya kadar uzatılabilir. Deneme süresi sigortasız çalışma dönemi değildir.</p>\n<h3>Yıllık ücretli izin</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Hizmet süresi</th><th>Asgari yıllık izin</th></tr>\n<tr><td>1 yıldan 5 yıla kadar (5 yıl dahil)</td><td>14 gün</td></tr>\n<tr><td>5 yıldan fazla, 15 yıldan az</td><td>20 gün</td></tr>\n<tr><td>15 yıl ve üzeri</td><td>26 gün</td></tr>\n</tbody></table></div>\n<p>18 yaşından küçük ve 50 yaşından büyük işçilere verilecek yıllık ücretli izin süresi 20 günden az olamaz.</p>\n<h3>Ara dinlenmeleri</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Günlük çalışma</th><th>Asgari ara dinlenmesi</th></tr>\n<tr><td>4 saate kadar</td><td>15 dakika</td></tr>\n<tr><td>4 saatten fazla, 7,5 saate kadar</td><td>30 dakika</td></tr>\n<tr><td>7,5 saatten fazla</td><td>60 dakika</td></tr>\n</tbody></table></div>\n<p>Ara dinlenmeleri çalışma süresinden sayılmaz.</p>\n<h3>Gece dönemi ve özel güvenlik istisnası</h3>\n<p>Çalışma hayatında gece dönemi en geç 20.00’de başlayıp en erken 06.00’ya kadar geçen ve her hâlde en fazla 11 saat süren dönemdir. Genel kural işçinin gece çalışmasının 7,5 saati aşmamasıdır.</p>\n<blockquote><strong>ÖGG için önemli istisna:</strong> Turizm, özel güvenlik ve sağlık hizmetlerinde işçinin <strong>yazılı onayı</strong> alınması şartıyla 7,5 saatin üzerinde gece çalışması yaptırılabilir. Ham ders notundaki “gece en fazla 7,5 saat” cümlesi bu nedenle özel güvenlik sektörü açısından tek başına eksiktir.</blockquote>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Bir işçi gece en fazla 7,5 saat çalıştırılabilir.",
+            "academic": "Genel kural bu yöndedir; özel güvenlik hizmetlerinde işçinin yazılı onayıyla 7,5 saatin üzerinde gece çalışması yapılabilen istisna vardır."
+          }
+        ]
       }
     ],
     "editorialStatus": "curated",
@@ -101,7 +122,14 @@ export const oggLessons = [
       {
         "id": "temel-ilk-yardim-3",
         "title": "OED / AED, Kurtarma Pozisyonu ve Şok",
-        "html": "\n<h3>Otomatik eksternal defibrilatör</h3>\n<p>OED/AED kalp ritmini analiz eden ve gerektiğinde kullanıcıyı şok uygulaması için yönlendiren cihazdır. Cihazın sesli ve görsel komutları takip edilir.</p>\n<ul>\n<li>Pedlerin çıplak ve mümkün olduğunca kuru cilde yapışması gerekir.</li>\n<li>Göğüste kalp pili/implante cihaz çıkıntısı görülüyorsa ped doğrudan cihazın üzerine yerleştirilmez.</li>\n<li>Metal, sıvı, oksijen kaynağı ve elektriksel riskler açısından çevre değerlendirilir.</li>\n<li>Ritim analizi ve şok sırasında kimse hastaya temas etmez.</li>\n</ul>\n<h3>Kurtarma pozisyonu</h3>\n<p>Bilinci kapalı fakat normal soluyan kişide, travma şüphesi ve diğer kontrendikasyonlar değerlendirilerek yan yatış/kurtarma pozisyonu kullanılabilir.</p>\n<h3>Şokta pozisyon</h3>\n<p>Ham notta “sırtüstü, ayaklar havada” şeklinde şok pozisyonu kaydı bulunur. Bu, her yaralıya otomatik uygulanacak bir kural değildir; travma, omurga/kalça/bacak yaralanması, solunum sıkıntısı ve kişinin klinik durumu dikkate alınır. Güncel ilk yardım protokolü esas alınmalıdır.</p>"
+        "html": "\n<h3>Otomatik eksternal defibrilatör</h3>\n<p>OED/AED kalp ritmini analiz eden ve gerektiğinde kullanıcıyı şok uygulaması için yönlendiren cihazdır. Cihazın sesli ve görsel komutları takip edilir.</p>\n<ul>\n<li>Pedlerin çıplak ve mümkün olduğunca kuru cilde yapışması gerekir.</li>\n<li>Göğüste kalp pili/implante cihaz çıkıntısı görülüyorsa ped doğrudan cihazın üzerine yerleştirilmez.</li>\n<li>Metal, sıvı, oksijen kaynağı ve elektriksel riskler açısından çevre değerlendirilir.</li>\n<li>Ritim analizi ve şok sırasında kimse hastaya temas etmez.</li>\n</ul>\n<h3>Kurtarma pozisyonu</h3>\n<p>Bilinci kapalı fakat normal soluyan kişide, travma şüphesi ve diğer kontrendikasyonlar değerlendirilerek yan yatış/kurtarma pozisyonu kullanılabilir.</p>\n<h3>Şokta pozisyon</h3>\n<p>Ham notta “sırtüstü, ayaklar havada” şeklinde şok pozisyonu kaydı bulunur. Bu, her yaralıya otomatik uygulanacak bir kural değildir; travma, omurga/kalça/bacak yaralanması, solunum sıkıntısı ve kişinin klinik durumu dikkate alınır. Güncel ilk yardım protokolü esas alınmalıdır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Şok pozisyonu: sırtüstü, ayaklar havada.",
+            "academic": "Sınav ezberi olarak korunur. Gerçek uygulamada travma, solunum güçlüğü ve yaralanma türü değerlendirilmeden otomatik uygulanmaz."
+          }
+        ]
       }
     ],
     "editorialStatus": "curated",
@@ -141,7 +169,14 @@ export const oggLessons = [
       {
         "id": "guvenlik-sistemleri-3",
         "title": "X-Ray, Dozimetre, Cihaz Kontrolü ve Kalibrasyon",
-        "html": "\n<h3>X-Ray görüntüleme notları</h3>\n<p>Ham notlarda monokrom görüntülemede metallerin koyu/siyah; renkli görüntülemede ise materyal yoğunluğu ve cihazın sınıflandırma algoritmasına göre farklı tonlarda gösterilebildiği not edilmiştir. Renklerin kesin anlamı cihaz üreticisine ve görüntüleme moduna göre değişebileceğinden cihaz eğitiminde üretici şeması esas alınır.</p>\n<h3>Dozimetre</h3>\n<p>Dozimetre, iyonlaştırıcı radyasyona maruziyeti takip etmek amacıyla kullanılan ölçüm aracıdır. Notta “rem / 250 milirem” ifadesi yer almakla birlikte bu değer burada genel bir güvenlik sınırı olarak kabul edilmemiştir; radyasyon birimleri ve mesleki maruziyet limitleri güncel radyasyon mevzuatına göre değerlendirilmelidir.</p>\n<h3>Kontrol ve kalibrasyon</h3>\n<p>Güvenlik cihazları kullanım kılavuzuna göre periyodik olarak test edilmeli; gerekiyorsa yetkili/akredite kuruluşlarca kalibrasyon ve bakım yapılmalıdır. Ham notta geçen “TAEK” ifadesi eski kurumsal terminolojidir; güncel nükleer düzenleme ve metroloji yapısı ayrıca kontrol edilmelidir.</p>"
+        "html": "\n<h3>X-Ray görüntüleme notları</h3>\n<p>Ham notlarda monokrom görüntülemede metallerin koyu/siyah; renkli görüntülemede ise materyal yoğunluğu ve cihazın sınıflandırma algoritmasına göre farklı tonlarda gösterilebildiği not edilmiştir. Renklerin kesin anlamı cihaz üreticisine ve görüntüleme moduna göre değişebileceğinden cihaz eğitiminde üretici şeması esas alınır.</p>\n<h3>Dozimetre</h3>\n<p>Dozimetre, iyonlaştırıcı radyasyona maruziyeti takip etmek amacıyla kullanılan ölçüm aracıdır. Notta “rem / 250 milirem” ifadesi yer almakla birlikte bu değer burada genel bir güvenlik sınırı olarak kabul edilmemiştir; radyasyon birimleri ve mesleki maruziyet limitleri güncel radyasyon mevzuatına göre değerlendirilmelidir.</p>\n<h3>Kontrol ve kalibrasyon</h3>\n<p>Güvenlik cihazları kullanım kılavuzuna göre periyodik olarak test edilmeli; gerekiyorsa yetkili/akredite kuruluşlarca kalibrasyon ve bakım yapılmalıdır. Ham notta geçen “TAEK” ifadesi eski kurumsal terminolojidir; güncel nükleer düzenleme ve metroloji yapısı ayrıca kontrol edilmelidir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Dozimetre: Rem — 250 milirem dayanıklılık. Kalibrasyon: Türkiye Atom Enerjisi Kurumu.",
+            "academic": "Bu ifadeler ders notundaki haliyle korunur. Birim/limit ve yetkili kurum terminolojisi güncel radyasyon mevzuatına göre farklılaşabilir."
+          }
+        ]
       },
       {
         "id": "guvenlik-sistemleri-4",
@@ -197,7 +232,14 @@ export const oggLessons = [
       {
         "id": "silah-bilgisi-6",
         "title": "Namlu, Yiv–Set ve Temel Balistik Kavramlar",
-        "html": "\n<h3>Yiv ve set</h3>\n<p>Yivli namluda yiv ve setler çekirdeğe dönme hareketi kazandırır. <strong>Yiv–set sayısı ve dönüş yönü silah modeline göre değişir;</strong> ham nottaki “tabancada 6, uzun namluda 4” ifadesi evrensel kural değildir.</p>\n<h3>Rayyür</h3>\n<p>Adli balistikte namlu, fişek yatağı, iğne, tırnak ve diğer mekanik parçaların çekirdek/kapsül/kovan üzerinde bırakabildiği karakteristik izler karşılaştırma amacıyla incelenir. Notta bu izler “rayyür” başlığı altında ele alınmıştır.</p>\n<h3>Hatve</h3>\n<p>Hatve, yiv-setin namlu içinde bir tam dönüşü tamamladığı mesafeyi ifade eden balistik/geometrik kavramdır. Ham nottaki “çekirdeğin namluda aldığı yol” ifadesi bu nedenle teknik olarak daraltılarak düzeltilmiştir.</p>\n<h3>Nişan elemanları</h3>\n<p>Gez ve arpacık mekanik nişangâhın temel iki unsurudur. Dersin ezber sorusunda “nişan hattında en hareketli parça” cevabı <strong>arpacık</strong> olarak kaydedilmiştir; bunun bağlamı nişan hatası ve namlu hareketinin hedef üzerindeki etkisidir.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görseller 3–4</b><span>Notion’da namlu/balistik konusuna ait iki görsel bulunuyor; görsel yerleri korunmuştur.</span></div>"
+        "html": "\n<h3>Yiv ve set</h3>\n<p>Yivli namluda yiv ve setler çekirdeğe dönme hareketi kazandırır. <strong>Yiv–set sayısı ve dönüş yönü silah modeline göre değişir;</strong> ham nottaki “tabancada 6, uzun namluda 4” ifadesi evrensel kural değildir.</p>\n<h3>Rayyür</h3>\n<p>Adli balistikte namlu, fişek yatağı, iğne, tırnak ve diğer mekanik parçaların çekirdek/kapsül/kovan üzerinde bırakabildiği karakteristik izler karşılaştırma amacıyla incelenir. Notta bu izler “rayyür” başlığı altında ele alınmıştır.</p>\n<h3>Hatve</h3>\n<p>Hatve, yiv-setin namlu içinde bir tam dönüşü tamamladığı mesafeyi ifade eden balistik/geometrik kavramdır. Ham nottaki “çekirdeğin namluda aldığı yol” ifadesi bu nedenle teknik olarak daraltılarak düzeltilmiştir.</p>\n<h3>Nişan elemanları</h3>\n<p>Gez ve arpacık mekanik nişangâhın temel iki unsurudur. Dersin ezber sorusunda “nişan hattında en hareketli parça” cevabı <strong>arpacık</strong> olarak kaydedilmiştir; bunun bağlamı nişan hatası ve namlu hareketinin hedef üzerindeki etkisidir.</p>\n<div class=\"ogg-image-transcript\"><b>Kaynak görseller 3–4</b><span>Notion’da namlu/balistik konusuna ait iki görsel bulunuyor; görsel yerleri korunmuştur.</span></div>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yiv-set: tabancada 6, uzun namluda 4. Hatve: merminin namlu içerisinde aldığı yol.",
+            "academic": "Sınavda kurs materyali bu kalıpla sorulabilir. Teknik olarak yiv-set sayısı modele göre değişir; hatve, yiv-setin bir tam dönüşü tamamladığı mesafedir."
+          }
+        ]
       },
       {
         "id": "silah-bilgisi-7",
@@ -207,7 +249,14 @@ export const oggLessons = [
       {
         "id": "silah-bilgisi-8",
         "title": "Revolver Tabancalar, Yakın Koruma ve Ruhsat Kavramları",
-        "html": "\n<h3>Revolver</h3>\n<p>Revolver tabancalarda fişekler döner tamburda bulunur; klasik çıkarılabilir şarjör kullanılmaz. Boş kovanların toplu şekilde çıkarılmasında ejector/çıkarıcı yıldız mekanizması görev yapar.</p>\n<p>Ham notta “iğne tertibatı yoktur” ifadesi yer almaktadır; bu evrensel değildir. Revolver tasarımına göre horoza bağlı veya gövdeye yerleştirilmiş ateşleme iğnesi sistemleri bulunabilir.</p>\n<h3>Silahlı yakın koruma notu</h3>\n<p>Ders notunda yakın koruma görevlisinin silah taşıma yetkisinin korunan kişiyle birlikte bulunma ve koruma kararının coğrafi kapsamıyla ilişkili olduğu özellikle vurgulanmıştır. Uygulamada karar metni ve 5188 sayılı mevzuat esas alınır.</p>\n<h3>Ruhsat kavramları</h3>\n<ul><li>Taşıma ruhsatı</li><li>Bulundurma ruhsatı</li></ul>\n<p>Silah ruhsatları yetkili idari makamlar tarafından düzenlenir ve mevzuatta öngörülen sürelerde yenilenir. Özel güvenlik hizmetinde kullanılan görev silahları bakımından ayrıca 5188 sayılı sistemdeki izin, kayıt ve muhafaza hükümleri uygulanır.</p>"
+        "html": "\n<h3>Revolver</h3>\n<p>Revolver tabancalarda fişekler döner tamburda bulunur; klasik çıkarılabilir şarjör kullanılmaz. Boş kovanların toplu şekilde çıkarılmasında ejector/çıkarıcı yıldız mekanizması görev yapar.</p>\n<p>Ham notta “iğne tertibatı yoktur” ifadesi yer almaktadır; bu evrensel değildir. Revolver tasarımına göre horoza bağlı veya gövdeye yerleştirilmiş ateşleme iğnesi sistemleri bulunabilir.</p>\n<h3>Silahlı yakın koruma notu</h3>\n<p>Ders notunda yakın koruma görevlisinin silah taşıma yetkisinin korunan kişiyle birlikte bulunma ve koruma kararının coğrafi kapsamıyla ilişkili olduğu özellikle vurgulanmıştır. Uygulamada karar metni ve 5188 sayılı mevzuat esas alınır.</p>\n<h3>Ruhsat kavramları</h3>\n<ul><li>Taşıma ruhsatı</li><li>Bulundurma ruhsatı</li></ul>\n<p>Silah ruhsatları yetkili idari makamlar tarafından düzenlenir ve mevzuatta öngörülen sürelerde yenilenir. Özel güvenlik hizmetinde kullanılan görev silahları bakımından ayrıca 5188 sayılı sistemdeki izin, kayıt ve muhafaza hükümleri uygulanır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Revolver tabancalarda iğne tertibatı yoktur.",
+            "academic": "Ders notu ezberi olarak korunur; gerçek revolver tasarımlarında ateşleme iğnesinin yerleşimi modele göre değişebilir."
+          }
+        ]
       }
     ],
     "editorialStatus": "curated",
@@ -272,12 +321,26 @@ export const oggLessons = [
       {
         "id": "kalabalik-yonetimi-8",
         "title": "Cop: Türler, Duruşlar ve Hukuki Çerçeve",
-        "html": "\n<p>Cop, zor kullanma araçlarından biridir; kullanımı görevlinin kanuni yetkisi, zorunluluk ve ölçülülük ilkeleriyle sınırlıdır. Ders notunda kısa, orta, uzun, teleskopik ve farklı tasarımlı cop türleri ile bunların kullanım alanları sınıflandırılmıştır.</p>\n<h3>Duruş ve kontrol kavramları</h3>\n<p>Rahat, hazır, mülakat, savunma ve caydırma duruşları; görevlinin tehdit seviyesine göre beden pozisyonunu değiştirdiği eğitim kategorileridir. Amaç, mümkün olan en düşük müdahale düzeyinde kontrolü sağlamaktır.</p>\n<h3>Müdahale teknikleri</h3>\n<p>Ders notunda itme, dürtme, bloklama, taşıma ve kelepçelemeye yardımcı kontrol teknikleri sayılmıştır. Bu tekniklerin uygulaması yalnızca yetkili eğitim ortamında öğretilmeli; blog metni pratik uygulama talimatı olarak kullanılmamalıdır.</p>\n<p class=\"editorial-warning\"><strong>Editoryal güvenlik notu:</strong> Ham notlarda ayrıntılı “vuruş bölgeleri” listesi vardır. Akademik sürümde bu liste, kişiye zarar vermeyi kolaylaştıracak uygulama kılavuzuna dönüştürülmeden; yalnızca güç kullanımının hayati bölgelerden kaçınma, orantılılık ve son çare ilkeleriyle sınırlandığı çerçevede tutulmuştur.</p>"
+        "html": "\n<p>Cop, zor kullanma araçlarından biridir; kullanımı görevlinin kanuni yetkisi, zorunluluk ve ölçülülük ilkeleriyle sınırlıdır. Ders notunda kısa, orta, uzun, teleskopik ve farklı tasarımlı cop türleri ile bunların kullanım alanları sınıflandırılmıştır.</p>\n<h3>Duruş ve kontrol kavramları</h3>\n<p>Rahat, hazır, mülakat, savunma ve caydırma duruşları; görevlinin tehdit seviyesine göre beden pozisyonunu değiştirdiği eğitim kategorileridir. Amaç, mümkün olan en düşük müdahale düzeyinde kontrolü sağlamaktır.</p>\n<h3>Müdahale teknikleri</h3>\n<p>Ders notunda itme, dürtme, bloklama, taşıma ve kelepçelemeye yardımcı kontrol teknikleri sayılmıştır. Bu tekniklerin uygulaması yalnızca yetkili eğitim ortamında öğretilmeli; blog metni pratik uygulama talimatı olarak kullanılmamalıdır.</p>\n<p class=\"editorial-warning\"><strong>Editoryal güvenlik notu:</strong> Ham notlarda ayrıntılı “vuruş bölgeleri” listesi vardır. Akademik sürümde bu liste, kişiye zarar vermeyi kolaylaştıracak uygulama kılavuzuna dönüştürülmeden; yalnızca güç kullanımının hayati bölgelerden kaçınma, orantılılık ve son çare ilkeleriyle sınırlandığı çerçevede tutulmuştur.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Cop çeşitleri ve vuruş bölgeleri; öncelikli, ikincil ve son çare bölgeler şeklinde sınıflandırıldı.",
+            "academic": "Sınavda terminoloji olarak karşılaşılabilir. Blog, teknik uygulama talimatı vermeden bu sınıflandırmanın varlığını korur; gerçek kullanım kanunilik, zorunluluk ve ölçülülükle sınırlıdır."
+          }
+        ]
       },
       {
         "id": "kalabalik-yonetimi-9",
         "title": "Göz Yaşartıcı Maddeler, Koruyucu Donanım ve İlk Müdahale",
-        "html": "\n<h3>CS ve OC</h3>\n<p><strong>CS</strong>, kolluk uygulamalarında kullanılan sentetik göz yaşartıcı ajanlardan biridir. <strong>OC</strong> ise oleoresin capsicum temelli irritan maddedir ve yaygın biçimde “biber gazı” olarak anılır.</p>\n<p>Ders notunda gaz, aerosol ve duman yoluyla yayılım; maske ve filtre kullanımı; göz/solunum sistemi üzerindeki irritan etkiler gibi başlıklar ele alınmıştır.</p>\n<h3>Korunma ve ilk yardım</h3>\n<ul>\n<li>Maruziyet alanından temiz havaya çıkmak,</li>\n<li>gözleri ovuşturmamak,</li>\n<li>kontamine giysiyi dikkatle uzaklaştırmak,</li>\n<li>bol temiz suyla uygun yıkama yapmak,</li>\n<li>solunum sıkıntısı, ciddi göz bulgusu veya devam eden şikâyette sağlık desteği almak.</li>\n</ul>\n<p>Maske ve filtrelerin raf ömrü ürüne göre değişir; ham nottaki “10 yıl” değeri evrensel değildir. Üretici son kullanma tarihi ve saklama koşulları esas alınmalıdır.</p>"
+        "html": "\n<h3>CS ve OC</h3>\n<p><strong>CS</strong>, kolluk uygulamalarında kullanılan sentetik göz yaşartıcı ajanlardan biridir. <strong>OC</strong> ise oleoresin capsicum temelli irritan maddedir ve yaygın biçimde “biber gazı” olarak anılır.</p>\n<p>Ders notunda gaz, aerosol ve duman yoluyla yayılım; maske ve filtre kullanımı; göz/solunum sistemi üzerindeki irritan etkiler gibi başlıklar ele alınmıştır.</p>\n<h3>Korunma ve ilk yardım</h3>\n<ul>\n<li>Maruziyet alanından temiz havaya çıkmak,</li>\n<li>gözleri ovuşturmamak,</li>\n<li>kontamine giysiyi dikkatle uzaklaştırmak,</li>\n<li>bol temiz suyla uygun yıkama yapmak,</li>\n<li>solunum sıkıntısı, ciddi göz bulgusu veya devam eden şikâyette sağlık desteği almak.</li>\n</ul>\n<p>Maske ve filtrelerin raf ömrü ürüne göre değişir; ham nottaki “10 yıl” değeri evrensel değildir. Üretici son kullanma tarihi ve saklama koşulları esas alınmalıdır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Gaz maskesi ve filtre: açılmamış hâlde raf ömrü 10 yıl.",
+            "academic": "Bu değer ders ezberi olarak tutulur; gerçek raf ömrü ürün ve üreticiye göre değişir."
+          }
+        ]
       },
       {
         "id": "kalabalik-yonetimi-10",
@@ -409,7 +472,14 @@ export const oggLessons = [
       {
         "id": "yangin-guvenligi-6",
         "title": "Yangın Sınıfları ve Uygun Söndürme Yaklaşımı",
-        "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Sınıf</th><th>Yanıcı madde</th><th>Genel yaklaşım</th></tr>\n<tr><td>A</td><td>Katı maddeler</td><td>Su, köpük veya uygun çok amaçlı söndürücü; malzemeye göre seçilir.</td></tr>\n<tr><td>B</td><td>Yanıcı sıvılar / sıvılaşabilen katılar</td><td>Köpük, kuru kimyevi toz veya uygun gazlı sistem; suyun doğrudan kullanımı riskli olabilir.</td></tr>\n<tr><td>C</td><td>Yanıcı gazlar</td><td>Öncelik mümkünse gaz akışını güvenli biçimde kesmek; uygun söndürücü kullanmak.</td></tr>\n<tr><td>D</td><td>Yanıcı metaller</td><td>Metal türüne uygun özel D sınıfı söndürücü.</td></tr>\n<tr><td>F</td><td>Pişirme yağları</td><td>F sınıfına uygun söndürücü / yangın battaniyesi; su kullanılmaz.</td></tr>\n</tbody></table></div>\n<blockquote><strong>Önemli düzeltme:</strong> Güncel TS EN 2 sınıflandırmasında “E = elektrik yangını” şeklinde ayrı bir yangın sınıfı yoktur. Enerjili elektrikli ekipman, yangının yakıt sınıfından ayrı olarak elektrik çarpması ve iletkenlik riski yaratır; mümkünse enerji kesilir ve ekipmana uygun söndürücü seçilir.</blockquote>"
+        "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Sınıf</th><th>Yanıcı madde</th><th>Genel yaklaşım</th></tr>\n<tr><td>A</td><td>Katı maddeler</td><td>Su, köpük veya uygun çok amaçlı söndürücü; malzemeye göre seçilir.</td></tr>\n<tr><td>B</td><td>Yanıcı sıvılar / sıvılaşabilen katılar</td><td>Köpük, kuru kimyevi toz veya uygun gazlı sistem; suyun doğrudan kullanımı riskli olabilir.</td></tr>\n<tr><td>C</td><td>Yanıcı gazlar</td><td>Öncelik mümkünse gaz akışını güvenli biçimde kesmek; uygun söndürücü kullanmak.</td></tr>\n<tr><td>D</td><td>Yanıcı metaller</td><td>Metal türüne uygun özel D sınıfı söndürücü.</td></tr>\n<tr><td>F</td><td>Pişirme yağları</td><td>F sınıfına uygun söndürücü / yangın battaniyesi; su kullanılmaz.</td></tr>\n</tbody></table></div>\n<blockquote><strong>Önemli düzeltme:</strong> Güncel TS EN 2 sınıflandırmasında “E = elektrik yangını” şeklinde ayrı bir yangın sınıfı yoktur. Enerjili elektrikli ekipman, yangının yakıt sınıfından ayrı olarak elektrik çarpması ve iletkenlik riski yaratır; mümkünse enerji kesilir ve ekipmana uygun söndürücü seçilir.</blockquote>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "E sınıfı = Elektrik yangını; CO₂ veya KKT ile müdahale.",
+            "academic": "Bu kalıp klasik ÖGG/yangın eğitim materyallerinde sınav sorusu olarak görülebilir. Güncel TS EN 2'de ayrı 'E sınıfı' yoktur; elektrik enerjisi ayrı bir tehlike olarak değerlendirilir."
+          }
+        ]
       },
       {
         "id": "yangin-guvenligi-7",
@@ -429,12 +499,26 @@ export const oggLessons = [
       {
         "id": "yangin-guvenligi-10",
         "title": "Yanıcı, Oksitleyici ve İnert Gazlar",
-        "html": "\n<h3>Yanıcı gaz örnekleri</h3>\n<p>Asetilen, hidrojen, metan, etan, propan, LPG ve doğal gaz yanıcı gazlara örnektir. Karbonmonoksit de uygun konsantrasyonda yanabilir.</p>\n<h3>Oksitleyici gaz</h3>\n<p><strong>Oksijen</strong> yanıcı değildir; yanmayı destekleyen oksitleyici gazdır.</p>\n<h3>İnert / yanmayı desteklemeyen gazlar</h3>\n<p>Ham notta helyum, karbondioksit ve argon “yakıcı gazlar” altında yazılmıştır; bu sınıflandırma yanlıştır. Helyum ve argon inert gazlardır; CO₂ de normal koşullarda yanmayı desteklemez ve bazı söndürme sistemlerinde kullanılır. Kapalı ortamda bu gazların yüksek yoğunluğu boğucu/asfiksan risk oluşturabilir.</p>"
+        "html": "\n<h3>Yanıcı gaz örnekleri</h3>\n<p>Asetilen, hidrojen, metan, etan, propan, LPG ve doğal gaz yanıcı gazlara örnektir. Karbonmonoksit de uygun konsantrasyonda yanabilir.</p>\n<h3>Oksitleyici gaz</h3>\n<p><strong>Oksijen</strong> yanıcı değildir; yanmayı destekleyen oksitleyici gazdır.</p>\n<h3>İnert / yanmayı desteklemeyen gazlar</h3>\n<p>Ham notta helyum, karbondioksit ve argon “yakıcı gazlar” altında yazılmıştır; bu sınıflandırma yanlıştır. Helyum ve argon inert gazlardır; CO₂ de normal koşullarda yanmayı desteklemez ve bazı söndürme sistemlerinde kullanılır. Kapalı ortamda bu gazların yüksek yoğunluğu boğucu/asfiksan risk oluşturabilir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yakıcı gazlar: Oksijen, Helyum, Karbondioksit, Argon.",
+            "academic": "Kurs notu böyle tutulmuş. Teknik olarak oksijen oksitleyicidir; helyum ve argon inerttir, CO₂ yanmayı desteklemez."
+          }
+        ]
       },
       {
         "id": "yangin-guvenligi-11",
         "title": "Taşınabilir Yangın Söndürücüler: Yapı, Kontrol ve Kullanım",
-        "html": "\n<h3>Temel parçalar</h3>\n<ul><li>Gövde,</li><li>manometre (basınç göstergesi bulunan modellerde),</li><li>emniyet pimi,</li><li>tetik/kol mekanizması,</li><li>hortum,</li><li>lans/nozul.</li></ul>\n<p>ABC kuru kimyevi tozlu söndürücülerde monoamonyum fosfat (MAP) yaygın söndürme bileşenlerinden biridir. Basınçlandırmada azot gibi inert gazlar kullanılabilir.</p>\n<h3>Kontrol</h3>\n<p>Manometreli cihazlarda ibrenin üreticinin normal çalışma aralığında olması gerekir. Mühür/pim, hortum, gövde ve son bakım tarihi düzenli kontrol edilir.</p>\n<h3>Kullanım prensibi</h3>\n<p>Kullanıcı güvenli kaçış yolunu arkasında tutar, rüzgârı ve yangın sınıfını değerlendirir, güvenli mesafeden alevin değil <strong>yanan yüzey/kaynağın tabanına</strong> yönelir ve süpürme hareketiyle müdahale eder. Yangın büyümüşse veya duman/ısı güvenli yaklaşımı engelliyorsa tahliye ve profesyonel itfaiye müdahalesi önceliklidir.</p>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Ham nottaki “90 cm montaj yüksekliği” ve “4 yıl geçerlilik” ifadeleri tüm söndürücüler için evrensel kural olarak yayımlanmadı; yerleşim, periyodik kontrol ve dolum süreleri yürürlükteki yönetmelik/standart ve üretici talimatına göre belirlenir.</p>"
+        "html": "\n<h3>Temel parçalar</h3>\n<ul><li>Gövde,</li><li>manometre (basınç göstergesi bulunan modellerde),</li><li>emniyet pimi,</li><li>tetik/kol mekanizması,</li><li>hortum,</li><li>lans/nozul.</li></ul>\n<p>ABC kuru kimyevi tozlu söndürücülerde monoamonyum fosfat (MAP) yaygın söndürme bileşenlerinden biridir. Basınçlandırmada azot gibi inert gazlar kullanılabilir.</p>\n<h3>Kontrol</h3>\n<p>Manometreli cihazlarda ibrenin üreticinin normal çalışma aralığında olması gerekir. Mühür/pim, hortum, gövde ve son bakım tarihi düzenli kontrol edilir.</p>\n<h3>Kullanım prensibi</h3>\n<p>Kullanıcı güvenli kaçış yolunu arkasında tutar, rüzgârı ve yangın sınıfını değerlendirir, güvenli mesafeden alevin değil <strong>yanan yüzey/kaynağın tabanına</strong> yönelir ve süpürme hareketiyle müdahale eder. Yangın büyümüşse veya duman/ısı güvenli yaklaşımı engelliyorsa tahliye ve profesyonel itfaiye müdahalesi önceliklidir.</p>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Ham nottaki “90 cm montaj yüksekliği” ve “4 yıl geçerlilik” ifadeleri tüm söndürücüler için evrensel kural olarak yayımlanmadı; yerleşim, periyodik kontrol ve dolum süreleri yürürlükteki yönetmelik/standart ve üretici talimatına göre belirlenir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yangın tüpü: yerden yüksekliği 90 cm; 4 yıl geçerlidir; azot iticidir; ibre yeşilde olmalıdır.",
+            "academic": "Sınav ezberi olarak tamamı korunur. Montaj ve bakım/periyot ayrıntıları cihaz tipi, standart ve mevzuata göre ayrıca doğrulanmalıdır."
+          }
+        ]
       }
     ],
     "editorialStatus": "curated",
@@ -465,12 +549,31 @@ export const oggLessons = [
       {
         "id": "guvenlik-tedbirleri-2",
         "title": "Nokta Hizmetleri",
-        "html": "\n<h3>Nokta nedir?</h3>\n<p>Nokta; kamu düzeni ve güvenliğinin desteklenmesi, suçların önlenmesi, belirli kişi/yer/tesisin korunması ve çevreye güven hissi verilmesi amacıyla sınırları belirlenmiş sabit görev yeridir. Burada görev yapan personele nokta görevlisi denir.</p>\n<h3>Görev alanını terk etmeme</h3>\n<p>Nokta görevlisi, usulüne uygun devir teslim yapılmadan görev yerini terk etmemelidir. Ham nottaki “20 adım” perimetre ifadesi eğitimde kullanılan pratik bir sınırlandırmadır; her kurum için kanuni ve evrensel bir metre/adım kuralı değildir.</p>\n<h3>Devir teslim</h3>\n<p>Görevi devralacak personel gelmemişse durum amire bildirilir ve kurum prosedürü uygulanır. Ham notta yer alan “3 maaş/yevmiye” ve “meslekten ihraç” gibi yaptırım ifadeleri kurum/iş sözleşmesi ve disiplin mevzuatına göre değişebileceğinden genel hukuk kuralı olarak yayımlanmamıştır.</p>"
+        "html": "\n<h3>Nokta nedir?</h3>\n<p>Nokta; kamu düzeni ve güvenliğinin desteklenmesi, suçların önlenmesi, belirli kişi/yer/tesisin korunması ve çevreye güven hissi verilmesi amacıyla sınırları belirlenmiş sabit görev yeridir. Burada görev yapan personele nokta görevlisi denir.</p>\n<h3>Görev alanını terk etmeme</h3>\n<p>Nokta görevlisi, usulüne uygun devir teslim yapılmadan görev yerini terk etmemelidir. Ham nottaki “20 adım” perimetre ifadesi eğitimde kullanılan pratik bir sınırlandırmadır; her kurum için kanuni ve evrensel bir metre/adım kuralı değildir.</p>\n<h3>Devir teslim</h3>\n<p>Görevi devralacak personel gelmemişse durum amire bildirilir ve kurum prosedürü uygulanır. Ham notta yer alan “3 maaş/yevmiye” ve “meslekten ihraç” gibi yaptırım ifadeleri kurum/iş sözleşmesi ve disiplin mevzuatına göre değişebileceğinden genel hukuk kuralı olarak yayımlanmamıştır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Nokta görevlisi görev noktasını 20 adımdan fazla terk edemez.",
+            "academic": "Kurs/sınav ezberi olarak korunur; her kurum için evrensel kanuni mesafe sınırı değildir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Değişime gelmeyene 3 maaş/yevmiye; görev yerini terk edene meslekten ihraç/sözleşme feshi.",
+            "academic": "Ders notundaki yaptırım kalıbıdır; gerçek yaptırım iş sözleşmesi, toplu sözleşme ve disiplin mevzuatına göre değerlendirilir."
+          }
+        ]
       },
       {
         "id": "guvenlik-tedbirleri-3",
         "title": "Devriye Hizmetleri: Amaç, Tür ve Yöntem",
-        "html": "\n<h3>Devriyenin amacı</h3>\n<p>Devriye; belirlenen alanı düzenli olarak gözlemek, risk ve düzensizlikleri erken fark etmek, suçları önlemek, can-mal güvenliğini desteklemek, ihtiyaç sahiplerine yardım etmek ve olay sonrası ilk güvenlik tedbirlerini almak için yürütülen hareketli güvenlik hizmetidir.</p>\n<h3>Devriye türleri</h3>\n<ul><li>Yaya,</li><li>araçlı,</li><li>motosikletli,</li><li>bisikletli,</li><li>atlı,</li><li>özel alanlara uyarlanmış devriye (ör. sahil/plaj).</li></ul>\n<h3>Devriye yöntemleri</h3>\n<ul><li>Olağan/rutin devriye,</li><li>planlı devriye,</li><li>dairesel devriye,</li><li>geri dönüşlü devriye.</li></ul>\n<h3>Görev kategorileri</h3>\n<ul><li><strong>Önleyici:</strong> suç ve tehlikeyi gerçekleşmeden fark etmek.</li><li><strong>Koruyucu:</strong> can, mal ve tesis güvenliğini sürdürmek.</li><li><strong>Yardım:</strong> aciz, yaşlı, kısıtlı veya yardıma ihtiyaç duyan kişilere görev sınırında destek olmak.</li><li><strong>Adli nitelikli ilk görevler:</strong> olay gerçekleştikten sonra alanı/delili korumak, bildirmek ve teslim sürecini yürütmek.</li></ul>\n<p>Personel sayısı, güzergâh, üniforma ve teçhizat kurum risk analizi ve görev talimatına göre belirlenir; ham nottaki “devriye daima en az iki kişi” ifadesi her görev için evrensel kanun kuralı değildir.</p>"
+        "html": "\n<h3>Devriyenin amacı</h3>\n<p>Devriye; belirlenen alanı düzenli olarak gözlemek, risk ve düzensizlikleri erken fark etmek, suçları önlemek, can-mal güvenliğini desteklemek, ihtiyaç sahiplerine yardım etmek ve olay sonrası ilk güvenlik tedbirlerini almak için yürütülen hareketli güvenlik hizmetidir.</p>\n<h3>Devriye türleri</h3>\n<ul><li>Yaya,</li><li>araçlı,</li><li>motosikletli,</li><li>bisikletli,</li><li>atlı,</li><li>özel alanlara uyarlanmış devriye (ör. sahil/plaj).</li></ul>\n<h3>Devriye yöntemleri</h3>\n<ul><li>Olağan/rutin devriye,</li><li>planlı devriye,</li><li>dairesel devriye,</li><li>geri dönüşlü devriye.</li></ul>\n<h3>Görev kategorileri</h3>\n<ul><li><strong>Önleyici:</strong> suç ve tehlikeyi gerçekleşmeden fark etmek.</li><li><strong>Koruyucu:</strong> can, mal ve tesis güvenliğini sürdürmek.</li><li><strong>Yardım:</strong> aciz, yaşlı, kısıtlı veya yardıma ihtiyaç duyan kişilere görev sınırında destek olmak.</li><li><strong>Adli nitelikli ilk görevler:</strong> olay gerçekleştikten sonra alanı/delili korumak, bildirmek ve teslim sürecini yürütmek.</li></ul>\n<p>Personel sayısı, güzergâh, üniforma ve teçhizat kurum risk analizi ve görev talimatına göre belirlenir; ham nottaki “devriye daima en az iki kişi” ifadesi her görev için evrensel kanun kuralı değildir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Devriye; belirli süre ve güzergahta, en az 2 personel, resmi üniformalı, kimlikli ve tam teçhizatlı yapılır.",
+            "academic": "Sınavda bu liste ezber olarak gelebilir. Gerçek personel sayısı ve uygulama görev planı/risk değerlendirmesine bağlı olabilir."
+          }
+        ]
       },
       {
         "id": "guvenlik-tedbirleri-4",
@@ -521,7 +624,14 @@ export const oggLessons = [
       {
         "id": "genel-kolluk-2",
         "title": "Özel Güvenlik Denetleme Başkanlığı: Kurumsal Yapı ve Görev Alanı",
-        "html": "\n<p>Özel Güvenlik Denetleme Başkanlığı; özel güvenlik hizmetleri ile sivil kullanım amaçlı silah ve patlayıcı madde alanındaki merkezî EGM birimidir. 2019’daki yeniden yapılanmayla eski Özel Güvenlik Daire Başkanlığının alt birimleri ve görevleri Denetleme Başkanlığı çatısı altında birleştirilmiştir.</p>\n<h3>Başlıca görev alanları</h3>\n<ul>\n<li>Özel güvenlik şirketleri, birimleri ve eğitim kurumları,</li>\n<li>alarm izleme merkezleri,</li>\n<li>özel güvenlik görevlileri ve yöneticiler,</li>\n<li>eğitim ve sınav hizmetleri,</li>\n<li>denetim,</li>\n<li>sivil silah ve patlayıcı madde işlemleri,</li>\n<li>genel kolluk–özel güvenlik koordinasyonu,</li>\n<li>dijital sistem ve projeler.</li>\n</ul>"
+        "html": "\n<p>Özel Güvenlik Denetleme Başkanlığı; özel güvenlik hizmetleri ile sivil kullanım amaçlı silah ve patlayıcı madde alanındaki merkezî EGM birimidir. 2019’daki yeniden yapılanmayla eski Özel Güvenlik Daire Başkanlığının alt birimleri ve görevleri Denetleme Başkanlığı çatısı altında birleştirilmiştir.</p>\n<h3>Başlıca görev alanları</h3>\n<ul>\n<li>Özel güvenlik şirketleri, birimleri ve eğitim kurumları,</li>\n<li>alarm izleme merkezleri,</li>\n<li>özel güvenlik görevlileri ve yöneticiler,</li>\n<li>eğitim ve sınav hizmetleri,</li>\n<li>denetim,</li>\n<li>sivil silah ve patlayıcı madde işlemleri,</li>\n<li>genel kolluk–özel güvenlik koordinasyonu,</li>\n<li>dijital sistem ve projeler.</li>\n</ul>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Emniyet Genel Müdürlüğü Denetleme Daire Başkanlığı.",
+            "academic": "Kurs materyalinde eski/alışılmış adlandırma görülebilir. Güncel kurumsal yapı 'Özel Güvenlik Denetleme Başkanlığı' adını kullanır."
+          }
+        ]
       },
       {
         "id": "genel-kolluk-3",
@@ -551,7 +661,14 @@ export const oggLessons = [
       {
         "id": "genel-kolluk-8",
         "title": "PATBİS ve ASİP",
-        "html": "\n<h3>PATBİS</h3>\n<p><strong>PATBİS = Patlayıcı Maddeler ve Silah Bilgi Sistemi.</strong> Sivil kullanım amaçlı patlayıcı maddeler ile silah/mermi işlemlerinin kayıt, izleme ve kurumlar arası koordinasyonunu dijitalleştirmeyi amaçlar.</p>\n<h3>ASİP</h3>\n<p><strong>ASİP = Ateşli Silahlar Projesi.</strong> EGM’nin sivil silah işlemleri alanında geliştirdiği proje başlıklarından biridir.</p>\n<p>Ham notta PATBİS yalnızca “patlayıcı madde işlemleri” gibi dar yazılmıştır; güncel resmî açılım silah boyutunu da açıkça içerir.</p>"
+        "html": "\n<h3>PATBİS</h3>\n<p><strong>PATBİS = Patlayıcı Maddeler ve Silah Bilgi Sistemi.</strong> Sivil kullanım amaçlı patlayıcı maddeler ile silah/mermi işlemlerinin kayıt, izleme ve kurumlar arası koordinasyonunu dijitalleştirmeyi amaçlar.</p>\n<h3>ASİP</h3>\n<p><strong>ASİP = Ateşli Silahlar Projesi.</strong> EGM’nin sivil silah işlemleri alanında geliştirdiği proje başlıklarından biridir.</p>\n<p>Ham notta PATBİS yalnızca “patlayıcı madde işlemleri” gibi dar yazılmıştır; güncel resmî açılım silah boyutunu da açıkça içerir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "PATBİS = Patlayıcı Madde iş ve işlemleri.",
+            "academic": "Sınav ezberi olarak bu kısa ifade korunur; güncel resmî açılım 'Patlayıcı Maddeler ve Silah Bilgi Sistemi'dir."
+          }
+        ]
       },
       {
         "id": "genel-kolluk-9",
@@ -649,4 +766,5 @@ export const oggLessonsMeta = {
   source: 'Saygıyla Sunar Notion · Eylül 2026 ÖGG eğitim notları',
   updatedAt: '2026-09-30',
   fullVersion: true,
+  examLayer: true,
 }
