@@ -43,7 +43,7 @@ function routeTitle() {
   if (route.name === 'service-detail') return localize(getService(route.params.slug)?.title)
   if (route.name === 'project-detail') return localize(getProject(route.params.slug)?.title)
   if (route.name === 'music') return locale.value === 'tr' ? 'Müzik · Saygıyla Sunar' : 'Music · Saygıyla Sunar'
-  if (route.name === 'ogg') return 'ÖGG Kurs Programı'
+  if (route.name === 'ogg') return 'ÖGG Çalışma Notları'
   if (route.name === 'home') return ''
   return t(`meta.${route.meta.title || ''}`, '')
 }
@@ -61,7 +61,7 @@ function routeDescription() {
       : 'Saygıyla Sunar is the artist name used by Ersen Filiz for music releases. Find Spotify, YouTube Music and Apple Music listening links here.'
   }
   if (route.name === 'ogg') {
-    return 'Eylül 2026 silahlı özel güvenlik kurs programı; ders saatleri, eğitmenler, sınıflar ve uygulama günleri düzenli takvim görünümünde.'
+    return 'Silahlı özel güvenlik temel eğitimi için düzenlenmiş ÖGG çalışma notları; hukuk, güvenlik tedbirleri, ilk yardım, güvenlik sistemleri, silah bilgisi, kalabalık yönetimi, kişi koruma, yangın, genel kolluk ilişkileri ve etkili iletişim başlıkları ile Eylül 2026 kurs programı arşivi.'
   }
   return baseDescription()
 }
