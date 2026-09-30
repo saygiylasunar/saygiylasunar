@@ -10,8 +10,8 @@
         </div>
         <h1>{{ lesson.title }}</h1>
         <p>
-          Eylül 2026 silahlı özel güvenlik temel eğitimi sırasında tutulan Notion notlarının
-          konu hiyerarşisine göre düzenlenmiş tam metin sürümüdür.
+          Eylül 2026 silahlı özel güvenlik temel eğitimi sırasında tutulan Notion notları ve
+          kurs slaytlarının konu hiyerarşisine göre düzenlenmiş tam çalışma sürümüdür.
         </p>
         <div class="lesson-meta">
           <span>{{ lesson.categories.length }} ana konu</span>
@@ -95,11 +95,12 @@
         <aside class="lesson-source-note">
           <p class="tech-label">KAYNAK / EDİTORYAL NOT</p>
           <p>
-            İçerik, kişisel ÖGG kurs notlarının tam sürümüdür. Notion sunum etiketleri ve tekrar
-            boşlukları temizlenmiş; ders ve konu başlıkları akademik okunabilirlik için
-            sınıflandırılmıştır. Mevzuatla ilgili uygulamalarda güncel resmî kaynaklar esas alınmalıdır.
+            İçerik, kişisel ÖGG kurs notları ile sağlanan kurs PowerPoint'lerinin tam çalışma sürümüdür.
+            Kaynaklardaki sınav terminolojisi korunmuş; editoryal veya güncel açıklamalar ayrı katmanda
+            gösterilmiştir. Mevzuatla ilgili uygulamalarda güncel resmî kaynaklar esas alınmalıdır.
           </p>
-          <a :href="lesson.sourceUrl" target="_blank" rel="noopener noreferrer">Notion kaynak sayfası ↗</a>
+          <p v-if="lesson.sourceDeck" class="source-deck"><strong>Kurs slaytı:</strong> {{ lesson.sourceDeck }}</p>
+          <a v-if="lesson.sourceUrl" :href="lesson.sourceUrl" target="_blank" rel="noopener noreferrer">Notion kaynak sayfası ↗</a>
         </aside>
       </main>
     </div>
