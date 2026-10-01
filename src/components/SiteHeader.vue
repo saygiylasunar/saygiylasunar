@@ -25,12 +25,22 @@
         :class="{ 'is-open': menuOpen }"
         :aria-label="t('common.primaryNavAria')"
       >
-        <RouterLink to="/services">{{ t('nav.services') }}</RouterLink>
-        <RouterLink to="/projects">{{ t('nav.projects') }}</RouterLink>
-        <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
-        <RouterLink to="/experience">{{ t('nav.experience') }}</RouterLink>
-        <RouterLink to="/about">{{ t('nav.about') }}</RouterLink>
-        <RouterLink class="nav-contact" to="/contact">{{ t('nav.contact') }}</RouterLink>
+        <RouterLink to="/projects">{{ locale === 'tr' ? 'Projeler' : 'Projects' }}</RouterLink>
+        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink to="/tools">{{ locale === 'tr' ? 'Araçlar' : 'Tools' }}</RouterLink>
+        <RouterLink to="/experience">{{ locale === 'tr' ? 'Deneyim' : 'Experience' }}</RouterLink>
+
+        <details ref="moreEl" class="nav-more">
+          <summary>{{ locale === 'tr' ? 'Keşfet' : 'Explore' }}</summary>
+          <div class="nav-more-panel">
+            <RouterLink to="/services">{{ locale === 'tr' ? 'Hizmetler' : 'Services' }}</RouterLink>
+            <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
+            <RouterLink to="/ogg">ÖGG</RouterLink>
+            <RouterLink to="/arsalar">{{ locale === 'tr' ? 'Arsalar' : 'Land' }}</RouterLink>
+            <RouterLink to="/about">{{ locale === 'tr' ? 'Hakkımda' : 'About' }}</RouterLink>
+            <RouterLink class="nav-contact" to="/contact">{{ locale === 'tr' ? 'İletişim' : 'Contact' }}</RouterLink>
+          </div>
+        </details>
 
         <div class="header-actions">
           <button
@@ -41,9 +51,29 @@
           >
             {{ locale === 'tr' ? 'EN' : 'TR' }}
           </button>
-          <button class="icon-button" type="button" :aria-label="themeLabel" @click="toggleTheme">
-            {{ theme === 'dark' ? '☀' : '◐' }}
-          </button>
+
+          <details ref="themeEl" class="theme-picker">
+            <summary class="icon-button" :aria-label="themePickerLabel">◑</summary>
+            <div class="theme-picker-panel">
+              <div class="theme-picker-heading">
+                <span>{{ locale === 'tr' ? 'Tema' : 'Theme' }}</span>
+                <small>{{ currentThemeLabel }}</small>
+              </div>
+              <button
+                v-for="item in themes"
+                :key="item.id"
+                class="theme-option"
+                :class="{ 'is-active': theme === item.id }"
+                type="button"
+                :aria-pressed="theme === item.id"
+                @click="setTheme(item.id)"
+              >
+                <span class="theme-swatch" :class="`theme-swatch-${item.id}`" aria-hidden="true"></span>
+                <span>{{ locale === 'tr' ? item.tr : item.en }}</span>
+                <span class="theme-option-check" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </details>
         </div>
       </nav>
     </div>
@@ -58,20 +88,44 @@ import { locale, setLocale, t } from '../lib/locale.js'
 
 const route = useRoute()
 const menuOpen = ref(false)
+const moreEl = ref(null)
+const themeEl = ref(null)
+
+const themes = [
+  { id: 'light', tr: 'Ivory', en: 'Ivory', meta: '#f3f0e8' },
+  { id: 'dark', tr: 'Koyu', en: 'Dark', meta: '#0b0d10' },
+  { id: 'pastel', tr: 'Pastel', en: 'Pastel', meta: '#f8f4fb' },
+  { id: 'earth', tr: 'Toprak', en: 'Earth', meta: '#f6eee5' },
+  { id: 'green', tr: 'Adaçayı', en: 'Sage', meta: '#f0f6ef' },
+  { id: 'flowers', tr: 'Çiçek', en: 'Bloom', meta: '#fff5f7' },
+  { id: 'ocean', tr: 'Okyanus', en: 'Ocean', meta: '#edf8fa' },
+  { id: 'night', tr: 'Gece', en: 'Night', meta: '#10182b' },
+  { id: 'gold-white', tr: 'Altın Açık', en: 'Gold Light', meta: '#fffdf7' },
+  { id: 'gold-black', tr: 'Altın Gece', en: 'Gold Night', meta: '#0d0c0a' },
+]
+
 const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-const theme = ref(localStorage.getItem('site-theme') || preferredTheme)
-const themeLabel = computed(() =>
-  theme.value === 'dark' ? t('common.switchToLight') : t('common.switchToDark'),
+const storedTheme = localStorage.getItem('site-theme')
+const theme = ref(themes.some((item) => item.id === storedTheme) ? storedTheme : preferredTheme)
+
+const currentTheme = computed(() => themes.find((item) => item.id === theme.value) || themes[0])
+const currentThemeLabel = computed(() => locale.value === 'tr' ? currentTheme.value.tr : currentTheme.value.en)
+const themePickerLabel = computed(() =>
+  locale.value === 'tr'
+    ? `Tema seç · ${currentThemeLabel.value}`
+    : `Choose theme · ${currentThemeLabel.value}`,
 )
 
 function applyTheme() {
   document.documentElement.dataset.theme = theme.value
   localStorage.setItem('site-theme', theme.value)
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', currentTheme.value.meta)
 }
 
-function toggleTheme() {
-  theme.value = theme.value === 'dark' ? 'light' : 'dark'
+function setTheme(id) {
+  theme.value = id
   applyTheme()
+  if (themeEl.value) themeEl.value.open = false
 }
 
 function toggleLocale() {
@@ -80,10 +134,17 @@ function toggleLocale() {
 
 function closeMenu() {
   menuOpen.value = false
+  if (moreEl.value) moreEl.value.open = false
+  if (themeEl.value) themeEl.value.open = false
 }
 
 function onKeydown(event) {
   if (event.key === 'Escape') closeMenu()
+}
+
+function onDocumentPointer(event) {
+  if (moreEl.value?.open && !moreEl.value.contains(event.target)) moreEl.value.open = false
+  if (themeEl.value?.open && !themeEl.value.contains(event.target)) themeEl.value.open = false
 }
 
 watch(() => route.fullPath, closeMenu)
@@ -91,7 +152,11 @@ watch(() => route.fullPath, closeMenu)
 onMounted(() => {
   applyTheme()
   window.addEventListener('keydown', onKeydown)
+  document.addEventListener('pointerdown', onDocumentPointer)
 })
 
-onUnmounted(() => window.removeEventListener('keydown', onKeydown))
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
+  document.removeEventListener('pointerdown', onDocumentPointer)
+})
 </script>

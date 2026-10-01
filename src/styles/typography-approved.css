@@ -1,0 +1,127 @@
+/* Approved typography pass.
+   ÖGG selectors are intentionally excluded from this file. */
+
+/* Core site: All Round Gothic + Exo 2 + Noka */
+.page-view:not(.ogg-index-view):not(.ogg-lesson-view) {
+  font-family: var(--font-exo);
+}
+
+.page-view:not(.ogg-index-view):not(.ogg-lesson-view) h1,
+.page-view:not(.ogg-index-view):not(.ogg-lesson-view) h2,
+.page-view:not(.ogg-index-view):not(.ogg-lesson-view) h3 {
+  font-family: var(--font-all-round);
+}
+
+.home-view .hero-copy h1,
+.home-view .section-heading h2,
+.home-view .home-directory-card > strong,
+.home-view .identity-main strong {
+  font-family: var(--font-all-round);
+}
+
+.home-view .eyebrow,
+.home-view .identity-code,
+.home-view .identity-main p,
+.home-view .home-directory-card > span {
+  font-family: var(--font-noka);
+}
+
+.site-header,
+.site-footer {
+  font-family: var(--font-exo);
+}
+
+.site-header .brand-copy strong,
+.site-footer .footer-name {
+  font-family: var(--font-all-round);
+}
+
+.primary-nav,
+.nav-more-panel,
+.header-actions {
+  font-family: var(--font-exo);
+}
+
+/* Experience: intentionally more technical / futuristic. */
+.experience-view {
+  font-family: var(--font-exo);
+}
+
+.experience-view .page-hero h1,
+.experience-view .resume-section > h2,
+.experience-view .timeline-item h3,
+.experience-view .skill-grid h3 {
+  font-family: var(--font-noka);
+  letter-spacing: -0.025em;
+}
+
+.experience-view .eyebrow,
+.experience-view .timeline-period,
+.experience-view .resume-nav,
+.experience-view .tag-cloud,
+.experience-view .timeline-item strong {
+  font-family: var(--font-chakra);
+}
+
+.experience-view .timeline-item p,
+.experience-view .page-hero p {
+  font-family: var(--font-exo);
+}
+
+/* Blog: soft / rounded / girly without newspaper-serif language. */
+.blog-view,
+.blog-detail-view {
+  font-family: var(--font-quicksand);
+}
+
+.blog-view h1,
+.blog-view h2,
+.blog-view h3,
+.blog-detail-view h1,
+.blog-detail-view h2,
+.blog-detail-view h3,
+.blog-section-card strong,
+.blog-card h2,
+.home-blog-card h3,
+.article-aside-block > strong {
+  font-family: var(--font-all-round);
+}
+
+.blog-view .blog-hero .eyebrow,
+.blog-detail-view .blog-post-head .eyebrow {
+  font-family: var(--font-didactica);
+  font-size: 1.08rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: none;
+}
+
+.blog-card > p,
+.home-blog-card p,
+.article-body,
+.article-aside-block > p:last-child {
+  font-family: var(--font-quicksand);
+}
+
+.blog-section-card > span,
+.blog-feed-count,
+.blog-card-meta,
+.article-meta,
+.blog-card .tag-cloud,
+.article-body code {
+  font-family: var(--font-chakra);
+}
+
+.article-body blockquote {
+  font-family: var(--font-didactica);
+  font-size: clamp(1.35rem, 2.2vw, 1.95rem);
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+/* Keep compact metadata readable even when the display face gets expressive. */
+.blog-read-link,
+.article-related-link,
+.back-link {
+  font-family: var(--font-exo);
+}

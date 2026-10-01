@@ -1,0 +1,1215 @@
+// ÖGG academic study archive data.
+export const oggLessons = [
+  {
+    "id": "ozel-guvenlik-hukuku",
+    "no": "01",
+    "slug": "ozel-guvenlik-hukuku-ve-kisi-haklari",
+    "title": "Özel Güvenlik Hukuku ve Kişi Hakları",
+    "course": "Özel Güvenlik Hukuku ve Kişi Hakları",
+    "tag": "Hukuk",
+    "updatedAt": "2026-09-14T08:47:02.666Z",
+    "imageCount": 0,
+    "introHtml": "\n<p>Türkiye’de özel güvenlik faaliyetlerinin tarihsel mevzuat çizgisinde 1981 tarihli 2495 sayılı düzenleme ilk temel kanuni çerçeveyi oluşturmuş; güncel özel güvenlik sistemi ise 2004 tarihli <strong>5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun</strong> ve bu Kanunun uygulanmasına ilişkin yönetmelik etrafında kurulmuştur.</p>\n<p>Özel güvenlik görevlisi, genel kolluğun yerine geçen bir kolluk teşkilatı değildir. Özel güvenlik hizmeti, 5188 sayılı Kanunun sistematiğinde <strong>kamu güvenliğini tamamlayıcı mahiyette</strong> yürütülür. Ders boyunca 5188 sayılı Kanun yanında CMK, TCK, Türk Medeni Kanunu, Türk Borçlar Kanunu, PVSK, İş Kanunu ve ilgili ikincil mevzuat birlikte ele alınmıştır.</p>\n",
+    "categories": [
+      {
+        "id": "ozel-guvenlik-hukuku-1",
+        "title": "Kolluk Yapısı ve Özel Güvenliğin Hukuki Konumu",
+        "html": "\n<h3>Genel kolluk, özel kolluk ve adli kolluk</h3>\n<p>Ders notlarında kolluk yapısı üç farklı açıdan sınıflandırılmıştır. Genel kolluk bakımından polis, jandarma ve sahil güvenlik; özel kolluk bakımından gümrük muhafaza, orman muhafaza ve belediye zabıtası gibi belirli hizmet alanlarına özgülenmiş teşkilatlar; adli kolluk bakımından ise ceza soruşturmasıyla bağlantılı görev yapan kolluk birimleri ele alınmıştır.</p>\n<ul>\n<li><strong>Genel kolluk:</strong> Polis, Jandarma, Sahil Güvenlik.</li>\n<li><strong>Özel kolluk örnekleri:</strong> Gümrük Muhafaza, Orman Muhafaza, Belediye Zabıtası ve özel kanunları uyarınca belirli alanlarda görev yapan diğer birimler.</li>\n<li><strong>Adli kolluk:</strong> CMK kapsamındaki soruşturma görevleri bakımından polis, jandarma, sahil güvenlik ve mevzuatının verdiği ölçüde gümrük muhafaza.</li>\n</ul>\n<blockquote><strong>Temel ayrım:</strong> Özel güvenlik teşkilatı bir genel kolluk teşkilatı değildir. TSK ve MİT de kolluk sınıflandırmasının içinde değerlendirilmez.</blockquote>\n<h3>Özel güvenliğin tamamlayıcı niteliği</h3>\n<p>5188 sayılı Kanunun özel güvenlik sistemine verdiği temel rol, kamu güvenliğini tamamlamaktır. Bu nedenle özel güvenlik görevlisinin yetkileri, genel kolluk yetkileriyle aynı kapsamda değildir; kanunda sayılan hâller, görev alanı ve görev süresi ile sınırlı şekilde kullanılır.</p>\n"
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-2",
+        "title": "5188 Sayılı Kanun ve Özel Güvenlik Faaliyet İzinleri",
+        "html": "\n<h3>5188 sayılı Kanunun temel amacı</h3>\n<p>5188 sayılı Kanun; özel güvenlik izni, özel güvenlik komisyonu, faaliyet izinleri, ek önlemler, özel güvenlik görevlilerinin yetkileri ve görev alanı, çalışma izni, kimlik, kıyafet, eğitim, tazminat, yasaklar, yaptırımlar, mali sorumluluk sigortası ve denetim gibi başlıkları düzenler.</p>\n<h3>Geçici ve acil hâllerde özel güvenlik</h3>\n<p>Toplantı, konser, sahne gösterisi, para veya değerli eşya nakli gibi geçici ve acil hâllerde özel güvenlik izni, özel güvenlik komisyonu kararı aranmaksızın valilik tarafından verilebilir. Ders notunda bu tür başvurular için <strong>48 saat önceden başvuru</strong> ve etkinlikten önce idari kararın bildirilmesine ilişkin süreler özellikle ezber noktası olarak işaretlenmiştir.</p>\n<h3>Sürekli / daimi uygulamalar</h3>\n<ul>\n<li>Kişi, kurum veya kuruluşların sürekli özel güvenlik uygulamalarında karar mekanizması özel güvenlik komisyonu ile valilik üzerinden yürür.</li>\n<li>Kişi koruma taleplerinde komisyon kararı ve valilik onayı esas alınır.</li>\n<li>Özel güvenlik birimi, hizmeti dışarıdan bir şirketten satın almak yerine kurumun kendi bünyesinde kurduğu özel güvenlik yapılanmasıdır.</li>\n<li>Alarm izleme merkezleri elektronik sistemler aracılığıyla kişi, kurum, site, banka ve benzeri yerlerin güvenlik sinyallerini izleyen yapılardır.</li>\n<li>Özel güvenlik şirketleri Türk Ticaret Kanunu hükümlerine göre kurulur; özel güvenlik alanındaki faaliyet izni İçişleri Bakanlığından alınır.</li>\n<li>Özel güvenlik eğitim kurumları temel eğitim, yenileme eğitimi ve mevzuatta öngörülen diğer eğitimleri vermek üzere faaliyet izni alır.</li>\n</ul>\n<h3>Uygulamanın sona erdirilmesi</h3>\n<p>Ders notlarında geçici uygulama ile sürekli uygulamanın sona erdirilme süreçlerinin birbirinden ayrılması gerektiği vurgulanmıştır. Sürekli özel güvenlik uygulamasının sona erdirilmesinde komisyon kararı ve valilik onayı süreci bulunur; başvuru süreleri güncel yönetmelik üzerinden kontrol edilmelidir.</p>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Geçici özel güvenlik izni için valiliğe 48 saat önceden başvurulur; 24 saat kala olumlu/olumsuz cevap verilir; geçici faaliyet izni 1 yıldan fazla olamaz.",
+            "academic": "Bu süreler kurs defterindeki sınav ezberi olarak aynen korunur. Mevzuat değişikliğinde güncel yönetmelik/EGM metni ayrıca esas alınır."
+          }
+        ]
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-3",
+        "title": "Özel Güvenlik Komisyonu, Yönetici ve Güvenlik Sorumlusu",
+        "html": "\n<h3>Komisyonun yapısı</h3>\n<p>Özel güvenlik komisyonu il düzeyinde oluşturulur. Komisyona valinin görevlendireceği vali yardımcısı başkanlık eder; emniyet, jandarma ve ticaret/sanayi odaları temsilcileri komisyon yapısında yer alır. Özel güvenlik izninin verilmesi veya kaldırılmasıyla doğrudan ilgili durumlarda başvuran kişi ya da kuruluşun temsilcisi de ilgili toplantıya katılır.</p>\n<ul>\n<li>Kararlar oy çokluğuyla alınır.</li>\n<li>Çekimser oy kullanılmaz.</li>\n<li>Oyların eşitliği hâlinde başkanın bulunduğu taraf çoğunluk kabul edilir.</li>\n</ul>\n<h3>Komisyonun başlıca görevleri</h3>\n<ul>\n<li>Koruma ve güvenlik hizmetinde çalıştırılacak azami personel sayısını belirlemek.</li>\n<li>Bulundurulabilecek veya taşınabilecek silah ve teçhizatın miktar ve niteliğini belirlemek.</li>\n<li>Koruma ve güvenlik hizmetinin yürütüleceği görev alanını belirlemek.</li>\n<li>Zorunlu hâllerde görev alanını genişletmek veya daraltmak.</li>\n<li>Özel güvenlik uygulamasının sona erdirilmesine ilişkin talepleri karara bağlamak.</li>\n<li>Fiziki ve elektronik güvenlik tedbirleri konusunda gerekli kararları almak.</li>\n</ul>\n<h3>Yabancı kişi ve kuruluşlar</h3>\n<p>Yabancıların Türkiye’de özel güvenlik alanında hizmet verebilmesinde <strong>mütekabiliyet (karşılıklılık)</strong> ilkesi aranır. Karşılıklılık şartının değerlendirilmesinde Dışişleri Bakanlığı görüşü önem taşır.</p>\n<h3>Yönetici ve güvenlik sorumlusu</h3>\n<p>Özel güvenlik şirketi yöneticiliği ve güvenlik sorumluluğu için mevzuatta eğitim ve yeterlilik şartları düzenlenmiştir. Ders notlarında yöneticinin dört yıllık yükseköğretim mezuniyeti ile özel güvenlik temel eğitimini tamamlaması; belirli büyüklüğün üzerindeki birim ve şubelerde ayrıca güvenlik sorumlusu görevlendirilmesi sınav açısından dikkat edilmesi gereken başlıklar olarak kaydedilmiştir.</p>\n<p class=\"editorial-warning\"><strong>Güncellik notu:</strong> Yönetici, güvenlik sorumlusu ve personel sayısına bağlı eğitim şartları yönetmelik/genelge değişikliklerinden etkilenebildiğinden sınav öncesinde EGM’nin güncel mevzuat kitabından kontrol edilmelidir.</p>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "15 ve üzeri ÖGG bulunan yerlerde en az 1 güvenlik sorumlusu; güvenlik sorumlusu en az ön lisans. Personel sayısı 10'u geçmiyorsa bölüm yöneticisi için en az lise mezuniyeti.",
+            "academic": "Bu, kurs sırasında tutulmuş sayısal/öğrenim ezberidir. Güncel yönetici ve güvenlik sorumlusu şartları güncel mevzuattan doğrulanmalıdır."
+          }
+        ]
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-4",
+        "title": "Bildirimler, Mali Sorumluluk Sigortası ve Ek Önlemler",
+        "html": "\n<h3>Personel ve hizmet bildirimleri</h3>\n<p>Ders notlarında özel güvenlik hizmetinin başladığı tarih, işe yeni başlayan veya işten ayrılan özel güvenlik görevlileri, aynı şirkete bağlı farklı işyerinde görevlendirme ve koruma-güvenlik planlarının valiliğe bildirilmesi gibi süreli işlemler özellikle sınav konusu olarak işaretlenmiştir.</p>\n<ul>\n<li>Üçüncü kişilere verilen koruma ve güvenlik hizmetlerinin ilgili valiliğe bildirilmesi gerekir.</li>\n<li>İşe başlayan, işten ayrılan veya aynı şirket bünyesinde başka bir işyerinde görevlendirilen personel için mevzuatta bildirim yükümlülükleri bulunur.</li>\n<li>Koruma ve güvenlik planları, ilgili idari makama sunulmak üzere hazırlanır ve güncel yönetmelik/genelgede belirtilen süre içinde gönderilir.</li>\n</ul>\n<h3>Özel güvenlik mali sorumluluk sigortası</h3>\n<p>Özel hukuk tüzel kişileri ve özel güvenlik şirketleri, istihdam ettikleri özel güvenlik görevlilerinin üçüncü kişilere verebilecekleri zararların karşılanması amacıyla <strong>özel güvenlik mali sorumluluk sigortası</strong> yaptırmakla yükümlüdür.</p>\n<h3>5442 sayılı İl İdaresi Kanunu kapsamında ek önlemler</h3>\n<p>Kamu güvenliğinin sağlanmasına ilişkin ek önlemler bakımından vali ve kaymakamların yetkileri bulunur. Ders notunun özellikle ayırdığı iki kavram şudur:</p>\n<ul>\n<li><strong>Ek önlem aldırma:</strong> Mülki idare amirinin kamu güvenliği amacıyla istediği ilave tedbirler.</li>\n<li><strong>Görev alanının genişletilmesi/daraltılması:</strong> Özel güvenlik komisyonunun görev alanıyla ilgili kararı.</li>\n</ul>\n<blockquote>Bu iki başlık sınav sorularında birbirine benzetilebilir; idari ek tedbir ile özel güvenlik görev alanının değiştirilmesi aynı işlem değildir.</blockquote>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "İşe başlayan/ayrılan veya aynı şirketin başka işyerine geçen ÖGG 15 gün içinde valiliğe bildirilir. Mali sorumluluk sigortası 15 gün içinde; koruma ve güvenlik planı 1 ay içinde valiliğe gönderilir.",
+            "academic": "Sınavda süre eşleştirmesi olarak çıkabilecek ham kurs kaydıdır. Güncel süre ve işlemler EGM mevzuatıyla kontrol edilmelidir."
+          }
+        ]
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-5",
+        "title": "Özel Güvenlik Görevlisinin Yetkileri",
+        "html": "\n<p>5188 sayılı Kanunun 7’nci maddesinde özel güvenlik görevlilerine tanınan yetkiler sayılmıştır. Yetkilerin kullanılması bakımından temel çerçeve <strong>görev alanı, görev süresi ve geçerli özel güvenlik kimlik kartı</strong> ilişkisidir.</p>\n<h3>1. Güvenlik kontrolü: duyarlı kapı, dedektör ve X-Ray</h3>\n<p>Koruma ve güvenliğini sağladıkları alanlara girmek isteyen kişileri duyarlı kapıdan geçirme, kişilerin üstlerini dedektörle kontrol etme ve eşyaları X-Ray veya benzeri güvenlik sistemlerinden geçirme yetkisi bulunur.</p>\n<h3>2. Kimlik sorma</h3>\n<p>Toplantı, konser, spor müsabakası, sahne gösterisi ve benzeri etkinlikler ile mevzuatta belirtilen törenlerde kimlik sorma yetkisi kullanılabilir. Kimlik sorma, kimlik tespiti amacıyla yapılan idari kontrol işlemidir; genel kolluğun tüm yetkilerinin devri anlamına gelmez.</p>\n<h3>3. Suçüstü hâlinde yakalama</h3>\n<p>CMK 90 kapsamındaki suçüstü hâlinde herkesin sahip olduğu yakalama yetkisi özel güvenlik görevlisi bakımından da geçerlidir. Yakalama kişi hürriyetini geçici olarak sınırlayan bir işlemdir; gereksiz şekilde uzatılması hukuka aykırı özgürlük kısıtlamasına dönüşebilir.</p>\n<h3>4. Yakalama emri veya mahkûmiyet kararı bulunan kişilerin yakalanması</h3>\n<p>Görev alanında hakkında yakalama emri veya mahkûmiyet kararı bulunan kişiyi yakalama ve kanunun izin verdiği ölçüde güvenlik araması yapma yetkisi vardır.</p>\n<h3>5. Afet ve imdat hâlinde özel alana giriş</h3>\n<p>Yangın, deprem gibi doğal afetlerde veya imdat istenmesi hâlinde, görev alanındaki işyeri ve konutlara yardım amacıyla girilebilir.</p>\n<h3>6. Aramada bulunan suç unsuru veya tehlikeli eşyanın emanete alınması</h3>\n<p>Arama/kontrol sırasında suç teşkil eden, delil olabilecek veya suç teşkil etmemekle birlikte tehlike doğurabilecek eşya, genel kolluğa derhâl bildirmek şartıyla emanete alınabilir.</p>\n<h3>7. Terk edilmiş ve bulunmuş eşyanın emanete alınması</h3>\n<p>Buluntu veya terk edilmiş eşya koruma amacıyla emanete alınır ve kayıt/teslim süreci kurum prosedürü ile mevzuata uygun yürütülür.</p>\n<h3>8. Kişiyi mevcut tehlikeden korumak amacıyla yakalama</h3>\n<p>Kişinin vücudu veya sağlığı bakımından mevcut bir tehlikeden korunması amacıyla yakalama yetkisi, koruyucu nitelikteki yetkiler arasındadır.</p>\n<h3>9. Olay yeri ve delilleri koruma</h3>\n<p>CMK 168 ile bağlantılı olarak olay yerini ve delilleri koruma; yetkisiz müdahaleyi önleme ve genel kolluk gelene kadar alan güvenliğini sağlama özel güvenlik görevlisinin temel adli nitelikli görevlerindendir.</p>\n<h3>10. Zor kullanma</h3>\n<p>Zor kullanma, kanunun izin verdiği durumda direnme veya saldırıyı etkisiz hâle getirmek için zorunlu ve ölçülü kuvvet kullanılmasını ifade eder. ÖGG bakımından Türk Medeni Kanunu, Türk Borçlar Kanunu ve TCK’daki meşru savunma/kanunun hükmünü yerine getirme gibi hükümlerle birlikte değerlendirilir.</p>\n"
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-6",
+        "title": "Zor Kullanma, Emir, Meşru Savunma ve Silah Taşıma",
+        "html": "\n<h3>Zor kullanmanın temel ilkeleri</h3>\n<ul>\n<li><strong>Zorunluluk:</strong> Müdahalenin gerçekten gerekli olması.</li>\n<li><strong>Kanunilik:</strong> Müdahalenin hukuki bir yetkiye dayanması.</li>\n<li><strong>Ölçülülük / dengelilik:</strong> Kullanılan gücün direnme veya saldırının niteliğini aşmaması.</li>\n<li><strong>Kademelilik:</strong> Mümkün olduğu ölçüde ikaz, bedeni kuvvet ve maddi güç şeklinde artan bir müdahale çizgisi izlenmesi.</li>\n</ul>\n<p>Zor kullanma sonrasında olayın şartlarına göre genel kolluğun bilgilendirilmesi ve tutanak/teslim işlemlerinin yapılması gerekir. Yetkinin sınırının aşılması ceza ve tazminat sorumluluğu doğurabilir.</p>\n<h3>Emir ve konusu suç teşkil eden emir</h3>\n<p>Göreve ilişkin emir hukuka uygun olmalıdır. Hukuka aykırılığı görülen emir bakımından Anayasa ve TCK’daki “kanunsuz emir” hükümleri uygulanır. <strong>Konusu suç teşkil eden emir hiçbir şekilde yerine getirilemez.</strong></p>\n<h3>TCK 24 ve TCK 25 ile bağlantı</h3>\n<p>TCK 24 kanunun hükmünü ve yetkili merciin emrini yerine getirme; TCK 25 ise meşru savunma ve zorunluluk hâli bakımından temel ceza hukuku çerçevesini oluşturur. Ders notundaki “meşru savunma” ve “zaruret/zorunluluk hâli” kavramları aynı başlıkta yazılmış olsa da TCK 25 içinde ayrı hukuki kurumlar olarak değerlendirilmelidir.</p>\n<h3>Suçüstü ve yakalama</h3>\n<p>Suçüstü; işlenmekte olan veya henüz işlenmiş suç ile suçun hemen sonrasında takip edilen kişi ya da suçun pek az önce işlendiğini gösteren eşya/delille yakalanan kişiyle bağlantılı hâlleri kapsar. CMK 90’daki şartlarda herkes yakalama yapabilir.</p>\n<h3>Silah taşıma ve görev yerleri</h3>\n<p>Özel güvenlik hizmetinde kullanılan ateşli silahların taşınması ve bulundurulması 5188 sayılı Kanun, 6136 sayılı Kanun ve ilgili özel güvenlik mevzuatı birlikte değerlendirilerek yürütülür. Ders notlarında ayrıca 2521 sayılı Kanun kapsamındaki yivsiz av tüfekleri ve av bıçaklarıyla ilgili ayrım kaydedilmiştir.</p>\n<ul>\n<li>Silahlı görev yapan ÖGG, kimlik ve silaha ilişkin gerekli belgeleri mevzuata uygun şekilde yanında bulundurur.</li>\n<li>Eğitim ve öğretim kurumları, sağlık tesisleri, talih oyunları işletmeleri ve içkili yerlerde silahlı özel güvenlik görevlisi çalıştırılmasına ilişkin sınırlamalar vardır.</li>\n<li>Özel toplantılar, spor müsabakaları, sahne gösterileri ve benzeri etkinliklerde silahla görev yapılmasına ilişkin yasak/sınırlamalar 5188 sayılı Kanunda ayrıca düzenlenmiştir.</li>\n</ul>\n"
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-7",
+        "title": "Kimlik, Kıyafet ve Özel Güvenlik Eğitimi",
+        "html": "\n<h3>Özel güvenlik kimlik kartı</h3>\n<ul>\n<li>Kimlik kartı valilik tarafından verilir.</li>\n<li>Kart üzerinde görevlinin adı-soyadı ile silahlı veya silahsız statüsü belirtilir.</li>\n<li>Görev sırasında kimlik kartı herkes tarafından görülebilecek şekilde taşınır.</li>\n<li>Kimlik ve çalışma izinlerinin yenilenmesi belirli süre ve eğitim şartlarına bağlıdır.</li>\n</ul>\n<h3>Kıyafet</h3>\n<p>Özel güvenlik görevlisinin kıyafeti, görev alanı ve kurumun onaylı kıyafet düzeniyle bağlantılıdır. Kamu kurumlarında kullanılan kıyafetler ve özel güvenlik logosu için ayrıca EGM yönergeleri bulunmaktadır.</p>\n<h3>Temel eğitim ve yenileme eğitimi</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Eğitim</th><th>Silahsız</th><th>Silahlı</th></tr>\n<tr><td>Temel eğitim</td><td>100 saat</td><td>120 saat</td></tr>\n<tr><td>Yenileme eğitimi</td><td>50 saat</td><td>60 saat</td></tr>\n</tbody></table></div>\n<p>Silahlı temel eğitimde silah bilgisi ve atış eğitimi, silahsız temel eğitime eklenir. Özel güvenlik eğitimleri İçişleri Bakanlığının gözetimindeki yetkili eğitim kurumları ve mevzuatta izin verilen yükseköğretim kurumları eliyle yürütülür.</p>\n<h3>Temel eğitimden muafiyetle ilgili not</h3>\n<p>Ders notlarında genel kolluk ve MİT’te belirli süre çalışmış/emekli personel ile güvenlikle ilgili yükseköğretim programı mezunlarının temel eğitim bakımından özel düzenlemelere tabi olduğu kaydedilmiştir. Yükseköğretim mezuniyetindeki muafiyet silah eğitimi bakımından ayrıca değerlendirilir.</p>\n<p class=\"editorial-warning\"><strong>Güncel not:</strong> Sınav notundaki “%75 devam / %25 devamsızlık” ifadesi burada kesin kural olarak yayınlanmadı; devam şartı ve muafiyetler güncel yönetmelik üzerinden kontrol edilmelidir.</p>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Devam zorunluluğu %75, devamsızlık hakkı %25.",
+            "academic": "Bu oranı sınav ezberi olarak koruyoruz; güncel devam şartı için yürürlükteki yönetmelik ve EGM duyurusu ayrıca kontrol edilir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Özel güvenlik kimlik kartı valilikçe verilir ve 5 yılda bir yenilenir.",
+            "academic": "Bu ifade kurs/sınav notu olarak korunur; yenileme eğitimi ve kimlik süreci güncel mevzuat şartlarıyla birlikte değerlendirilir."
+          }
+        ]
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-8",
+        "title": "Tazminat, Yasaklar, Yaptırımlar ve Denetim",
+        "html": "\n<h3>Tazminat</h3>\n<p>Kamu kurum ve kuruluşlarında görev yapan özel güvenlik görevlilerinin görev sırasında yaralanması, engelli hâle gelmesi veya ölümü hâlinde 2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun ile iş sözleşmesi/toplu iş sözleşmesinden doğan hakların ilişkisi önem taşır. Özel sektörde çalışanlar bakımından iş hukuku ve sosyal güvenlik hükümleri ayrıca uygulanır.</p>\n<h3>Temel yasaklar</h3>\n<ul>\n<li>Özel güvenlik personeli, kanunda belirtilen koruma ve güvenlik hizmetleri dışında çalıştırılamaz.</li>\n<li>ÖGG greve katılamaz.</li>\n<li>ÖGG lokavt nedeniyle işten uzaklaştırılamaz.</li>\n<li>Üniforma ve özel güvenlik statüsünün toplantı/gösteri gibi faaliyetlerde kullanılması ciddi idari yaptırımlara yol açabilir.</li>\n</ul>\n<h3>Kimlik kartı ve görev disipliniyle ilgili yaptırımlar</h3>\n<p>Kimlik kartını başkasına kullandırma, göreve ilişkin bildirim yükümlülüklerini yerine getirmeme, genel kollukla müşterek görevde verilen hukuka uygun görevi yerine getirmeme, denetim sırasında yönetici/güvenlik sorumlusu bulundurmama ve mülki idare amirince istenen ek tedbirleri almama gibi fiiller için 5188 sayılı Kanunda idari para cezası, görevden uzaklaştırma veya kimlik iptali gibi farklı yaptırımlar öngörülmüştür.</p>\n<h3>Denetim</h3>\n<p>İçişleri Bakanlığı ve valilikler; özel güvenlik birimlerini, özel güvenlik şirketlerini, eğitim kurumlarını ve özel güvenlik hizmetinin yürütülmesini denetlemeye yetkilidir. Denetimde tespit edilen eksikliklerin giderilmesi için mevzuatta süre ve yaptırım mekanizmaları düzenlenmiştir.</p>\n<blockquote>ÖGG, göreviyle bağlantılı suçlarda TCK bakımından kamu görevlisine ilişkin hükümlerle karşılaşabilir. Buna karşılık özel güvenlik görevlisinin tüm hukuki statüsü “memur” statüsüyle aynı değildir.</blockquote>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Greve katılan ÖGG 6 ay görevden uzaklaştırılır; genel kolluğun görevle ilgili emrini yerine getirmeyen 1 yıl görevden uzaklaştırılır; genel kolluğa fiziki mukavemette kimlik iptali; 2911 kapsamında üniformalı katılımda kimlik kartı süresiz iptal.",
+            "academic": "Bunlar kurs defterindeki yaptırım ezberleridir. Ceza/idari yaptırım sorularında sınav kaydı korunur; gerçek olayda yürürlükteki 5188 ve ikincil mevzuat uygulanır."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Denetimde tespit edilen eksikliklerin giderilmesi için 7 gün süre verilir.",
+            "academic": "Kurs defterindeki sınav süresidir; güncel mevzuat metniyle birlikte çalışılmalıdır."
+          }
+        ]
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-9",
+        "title": "PVSK, TCK, İnsan Hakları ve Normlar Hiyerarşisi",
+        "html": "\n<h3>2559 sayılı Polis Vazife ve Salahiyet Kanunu</h3>\n<p>PVSK, polis yetkilerinin hukuki temelidir. Ders kapsamında özellikle önleme araması konusu özel güvenlik yetkileriyle karşılaştırılmıştır. Polis; kanunda belirtilen şartlarla halkın topluca bulunduğu veya bulunabileceği yerlerde, umuma açık yerlerde, toplu taşıma araçlarında ve kanunda sayılan diğer alanlarda önleme araması yapabilir. Konut, kamuya açık olmayan işyeri ve eklentileri bakımından önleme araması yetkisi aynı kapsamda değildir.</p>\n<h3>TCK bakımından temel kavramlar</h3>\n<ul>\n<li><strong>Gece vakti:</strong> TCK’daki tanım, güneşin batmasından bir saat sonra başlayıp doğmasından bir saat önceye kadar devam eden zaman dilimidir.</li>\n<li><strong>Ceza sorumluluğunun şahsiliği:</strong> Kişi, başkasının fiilinden dolayı cezalandırılamaz.</li>\n<li><strong>Kast ve taksir:</strong> Ceza sorumluluğunun temel manevi unsur başlıklarıdır; sınav notunda TCK 27 “kast” şeklinde yazılmış olsa da TCK 27 esasen ceza sorumluluğunu kaldıran nedenlerde sınırın aşılmasına ilişkindir.</li>\n<li><strong>İşkence, eziyet, tehdit, şantaj, cebir, kişiyi hürriyetinden yoksun kılma, konut dokunulmazlığının ihlali, özel hayatın gizliliği, mala zarar verme ve belgede sahtecilik</strong> görev sırasında sınırların aşılması bakımından bilinmesi gereken suç tipleri arasındadır.</li>\n<li><strong>Zimmet:</strong> Görev nedeniyle zilyetliği devredilmiş veya koruma/gözetimiyle yükümlü olunan malın kendisinin ya da başkasının zimmetine geçirilmesi.</li>\n<li><strong>İrtikâp:</strong> Kamu görevinin sağladığı nüfuzun kötüye kullanılmasıyla menfaat sağlanmasıyla bağlantılı suç tipidir.</li>\n</ul>\n<h3>İnsan hakları çerçevesi</h3>\n<p>Ders notunda İnsan Hakları Evrensel Bildirgesi ve Avrupa insan hakları sistemi birlikte anılmıştır. Akademik terminolojide “Avrupa İnsan Hakları Beyannamesi” yerine <strong>Avrupa İnsan Hakları Sözleşmesi (AİHS)</strong> ifadesi kullanılmalıdır. ÖGG’nin yetki kullanımı; kişi özgürlüğü, özel hayat, konut dokunulmazlığı, mülkiyet ve kötü muamele yasağı gibi temel haklarla doğrudan ilişkilidir.</p>\n<h3>Normlar hiyerarşisi</h3>\n<p>Ders notunda Anayasa, milletlerarası antlaşmalar, kanunlar, Cumhurbaşkanlığı kararnameleri, yönetmelikler, yönergeler ve tebliğler şeklinde bir çalışma şeması tutulmuştur. Bu şema sınav hafızası için yararlıdır; ancak milletlerarası antlaşmalar ile kanunların çatışması ve Cumhurbaşkanlığı kararnamelerinin alanı Anayasa’daki özel hükümler nedeniyle basit bir “tek sıra” olarak değerlendirilmemelidir.</p>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "TCK 27 → Kasıt.",
+            "academic": "Sınav notunda böyle geçti. Akademik olarak TCK m.27, ceza sorumluluğunu kaldıran veya azaltan nedenlerde sınırın aşılmasına ilişkindir; 'kast' kavramı TCK m.21'de düzenlenir."
+          }
+        ]
+      },
+      {
+        "id": "ozel-guvenlik-hukuku-10",
+        "title": "4857 Sayılı İş Kanunu: Çalışma Süresi, Fazla Çalışma, İzin ve Gece Çalışması",
+        "html": "\n<h3>Haftalık çalışma ve fazla çalışma</h3>\n<ul>\n<li>Genel kural olarak haftalık çalışma süresi <strong>45 saat</strong>tir.</li>\n<li>Fazla çalışma ücreti normal saat ücretinin yüzde 50 artırılmış tutarı üzerinden hesaplanır.</li>\n<li>Yıllık fazla çalışma toplamı kural olarak 270 saati aşamaz.</li>\n<li>Ulusal bayram ve genel tatil günlerinde çalışma için İş Kanunundaki ayrıca ücret hükümleri uygulanır.</li>\n</ul>\n<h3>Deneme süresi</h3>\n<p>İş sözleşmesinde deneme süresi en çok iki ay olabilir; toplu iş sözleşmesiyle dört aya kadar uzatılabilir. Deneme süresi sigortasız çalışma dönemi değildir.</p>\n<h3>Yıllık ücretli izin</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Hizmet süresi</th><th>Asgari yıllık izin</th></tr>\n<tr><td>1 yıldan 5 yıla kadar (5 yıl dahil)</td><td>14 gün</td></tr>\n<tr><td>5 yıldan fazla, 15 yıldan az</td><td>20 gün</td></tr>\n<tr><td>15 yıl ve üzeri</td><td>26 gün</td></tr>\n</tbody></table></div>\n<p>18 yaşından küçük ve 50 yaşından büyük işçilere verilecek yıllık ücretli izin süresi 20 günden az olamaz.</p>\n<h3>Ara dinlenmeleri</h3>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Günlük çalışma</th><th>Asgari ara dinlenmesi</th></tr>\n<tr><td>4 saate kadar</td><td>15 dakika</td></tr>\n<tr><td>4 saatten fazla, 7,5 saate kadar</td><td>30 dakika</td></tr>\n<tr><td>7,5 saatten fazla</td><td>60 dakika</td></tr>\n</tbody></table></div>\n<p>Ara dinlenmeleri çalışma süresinden sayılmaz.</p>\n<h3>Gece dönemi ve özel güvenlik istisnası</h3>\n<p>Çalışma hayatında gece dönemi en geç 20.00’de başlayıp en erken 06.00’ya kadar geçen ve her hâlde en fazla 11 saat süren dönemdir. Genel kural işçinin gece çalışmasının 7,5 saati aşmamasıdır.</p>\n<blockquote><strong>ÖGG için önemli istisna:</strong> Turizm, özel güvenlik ve sağlık hizmetlerinde işçinin <strong>yazılı onayı</strong> alınması şartıyla 7,5 saatin üzerinde gece çalışması yaptırılabilir. Ham ders notundaki “gece en fazla 7,5 saat” cümlesi bu nedenle özel güvenlik sektörü açısından tek başına eksiktir.</blockquote>\n",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Bir işçi gece en fazla 7,5 saat çalıştırılabilir.",
+            "academic": "Genel kural bu yöndedir; özel güvenlik hizmetlerinde işçinin yazılı onayıyla 7,5 saatin üzerinde gece çalışması yapılabilen istisna vardır."
+          }
+        ]
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Faaliyetleri Hakkında",
+        "href": "https://egm.gov.tr/ozelguvenlik/ozel-guvenlik-faaliyetleri-hakkinda"
+      }
+    ]
+  },
+  {
+    "id": "temel-ilk-yardim",
+    "no": "02",
+    "slug": "temel-ilk-yardim",
+    "title": "Temel İlk Yardım",
+    "course": "Temel İlk Yardım",
+    "tag": "İlk Yardım",
+    "updatedAt": "2026-09-04T06:16:01.176Z",
+    "imageCount": 0,
+    "introHtml": "<p>Bu dersin notları temel ilk yardım yaklaşımını, bilinç kaybında ilk değerlendirmeyi, temel yaşam desteğini, otomatik eksternal defibrilatör (OED/AED) kullanım mantığını ve temel pozisyonları içerir. Uygulamada güncel Sağlık Bakanlığı/ilk yardım eğitim protokolü ve sertifikalı eğitimci talimatı esas alınmalıdır.</p>",
+    "categories": [
+      {
+        "id": "temel-ilk-yardim-1",
+        "title": "İlk Yardımın Temel Yaklaşımı",
+        "html": "\n<p>Dersin ana ezber zinciri <strong>Koruma → Bildirme → Kurtarma</strong> olarak tutulmuştur.</p>\n<ul>\n<li><strong>Koruma:</strong> Önce ilk yardımcı, yaralı ve çevre için olay yeri güvenliği sağlanır.</li>\n<li><strong>Bildirme:</strong> Profesyonel yardım mümkün olan en erken aşamada çağrılır; Türkiye’de acil çağrı numarası 112’dir.</li>\n<li><strong>Kurtarma:</strong> İlk yardımcı, eğitim düzeyi ve olayın şartları içinde yaşamı korumaya ve kötüleşmeyi önlemeye yönelik müdahaleyi sürdürür.</li>\n</ul>\n<blockquote>Temel amaç yalnızca müdahale etmek değil; yeni tehlike oluşturmamak ve mevcut durumun kötüleşmesini önlemektir.</blockquote>\n<p>Gaz kaçağı, elektrik, yangın veya trafik gibi ikincil tehlikeler varsa yaralıya yaklaşmadan önce çevre güvenliği değerlendirilmelidir. Olay yeri, hem güvenlik hem de gerektiğinde adli inceleme bakımından mümkün olduğunca korunur.</p>"
+      },
+      {
+        "id": "temel-ilk-yardim-2",
+        "title": "Bilinç Kaybı, Solunum ve Temel Yaşam Desteği",
+        "html": "\n<h3>İlk değerlendirme</h3>\n<p>Ham notlarda bilinç kaybı için <strong>Airway – Breathing – Circulation</strong> (hava yolu – solunum – dolaşım) hatırlatması tutulmuştur. Güncel temel yaşam desteği eğitimlerinde değerlendirme sırası kullanılan protokole göre ifade edilebilir; uygulamada sertifikalı ilk yardım eğitimi esas alınmalıdır.</p>\n<ul>\n<li>Bilinci kontrol et.</li>\n<li>Hava yolunun açıklığını değerlendir.</li>\n<li>Normal solunumu değerlendir.</li>\n<li>Yardım çağrısını organize et.</li>\n</ul>\n<h3>Yardım çağrısının organizasyonu</h3>\n<p>Çevrede birden fazla kişi varsa “biri 112’yi arasın” şeklinde belirsiz çağrı yerine belirli bir kişiyi görevlendirmek daha etkilidir. Görevlendirilen kişinin geri dönerek yardımın çağrıldığını bildirmesi iletişim döngüsünü kapatır.</p>\n<h3>CPR / temel yaşam desteği</h3>\n<p>Yetişkin temel yaşam desteğinde eğitimlerde kullanılan standart oran <strong>30 göğüs basısı + 2 soluk</strong> şeklindedir. Müdahale profesyonel yardım gelene, kişi yaşam belirtisi gösterene veya ilk yardımcının güvenli biçimde devam edemeyeceği bir durum oluşana kadar protokole uygun sürdürülür.</p>"
+      },
+      {
+        "id": "temel-ilk-yardim-3",
+        "title": "OED / AED, Kurtarma Pozisyonu ve Şok",
+        "html": "\n<h3>Otomatik eksternal defibrilatör</h3>\n<p>OED/AED kalp ritmini analiz eden ve gerektiğinde kullanıcıyı şok uygulaması için yönlendiren cihazdır. Cihazın sesli ve görsel komutları takip edilir.</p>\n<ul>\n<li>Pedlerin çıplak ve mümkün olduğunca kuru cilde yapışması gerekir.</li>\n<li>Göğüste kalp pili/implante cihaz çıkıntısı görülüyorsa ped doğrudan cihazın üzerine yerleştirilmez.</li>\n<li>Metal, sıvı, oksijen kaynağı ve elektriksel riskler açısından çevre değerlendirilir.</li>\n<li>Ritim analizi ve şok sırasında kimse hastaya temas etmez.</li>\n</ul>\n<h3>Kurtarma pozisyonu</h3>\n<p>Bilinci kapalı fakat normal soluyan kişide, travma şüphesi ve diğer kontrendikasyonlar değerlendirilerek yan yatış/kurtarma pozisyonu kullanılabilir.</p>\n<h3>Şokta pozisyon</h3>\n<p>Sınav notunda “sırtüstü, ayaklar havada” şeklinde şok pozisyonu kaydı bulunur. Bu, her yaralıya otomatik uygulanacak bir kural değildir; travma, omurga/kalça/bacak yaralanması, solunum sıkıntısı ve kişinin klinik durumu dikkate alınır. Güncel ilk yardım protokolü esas alınmalıdır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Şok pozisyonu: sırtüstü, ayaklar havada.",
+            "academic": "Sınav ezberi olarak korunur. Gerçek uygulamada travma, solunum güçlüğü ve yaralanma türü değerlendirilmeden otomatik uygulanmaz."
+          }
+        ]
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "Sağlık Bakanlığı · OED",
+        "href": "https://acilafet.saglik.gov.tr/TR-115987/oed.html"
+      },
+      {
+        "label": "Sağlık Bakanlığı · İlk Yardım Eğitim Sunumları",
+        "href": "https://karsism.saglik.gov.tr/TR-328074/ilk-yardim-egitim-sunumlari.html"
+      }
+    ]
+  },
+  {
+    "id": "guvenlik-sistemleri",
+    "no": "03",
+    "slug": "guvenlik-sistem-ve-cihazlari",
+    "title": "Güvenlik Sistem ve Cihazları",
+    "course": "Güvenlik Sistem ve Cihazları",
+    "tag": "Teknik Sistemler",
+    "updatedAt": "2026-09-05T09:33:00.162Z",
+    "imageCount": 0,
+    "introHtml": "<p>Güvenlik sistemleri dersi; insan gözetimini destekleyen fiziki ve elektronik sistemleri, algılama–değerlendirme zincirini, metal dedektörlerini, geçiş kontrol sistemlerini ve cihazların bakım/kalibrasyon mantığını ele alır.</p>",
+    "categories": [
+      {
+        "id": "guvenlik-sistemleri-1",
+        "title": "Fiziki ve Elektronik Güvenlik Sistemleri",
+        "html": "\n<h3>Fiziki sistemler</h3>\n<p>Fiziki güvenlik unsurları kendi başına muhakeme üretmeyen; bariyer, kapı, kilit, turnike ve benzeri pasif/operatör destekli tedbirler olarak düşünülebilir. Etkinlikleri yerleşim, insan kontrolü ve prosedürle birlikte değerlendirilir.</p>\n<h3>Elektronik sistemler</h3>\n<p>Elektronik güvenlik sistemlerinde temel mantık ders notunda şu zincirle tutulmuştur:</p>\n<blockquote><strong>Sensör → Filtre → Değerlendirme → Karar / Alarm</strong></blockquote>\n<p>Sensör çevresel veriyi algılar; sistem filtre/parametreler aracılığıyla sinyali işler; kontrol paneli veya yazılım değerlendirme sonucunu kullanıcıya alarm, kayıt ya da erişim kararı olarak sunar.</p>"
+      },
+      {
+        "id": "guvenlik-sistemleri-2",
+        "title": "Elektronik Güvenlik Sistemlerinin Kullanım Alanları",
+        "html": "\n<p>Ders notunda elektronik güvenlik sistemleri üç ana kullanım alanında sınıflandırılmıştır:</p>\n<ol>\n<li>Güvenlik personeline yardımcı sistemler,</li>\n<li>İşletme içi güvenlik sistemleri,</li>\n<li>İşletme çevre/perimetre güvenlik sistemleri.</li>\n</ol>\n<p>Elektronik sistem, güvenlik görevlisinin yerini tamamen alan bir karar mercii değil; algılama, kayıt ve doğrulama kapasitesini artıran destek unsurudur.</p>"
+      },
+      {
+        "id": "guvenlik-sistemleri-3",
+        "title": "X-Ray, Dozimetre, Cihaz Kontrolü ve Kalibrasyon",
+        "html": "\n<h3>X-Ray görüntüleme notları</h3>\n<p>Ham notlarda monokrom görüntülemede metallerin koyu/siyah; renkli görüntülemede ise materyal yoğunluğu ve cihazın sınıflandırma algoritmasına göre farklı tonlarda gösterilebildiği not edilmiştir. Renklerin kesin anlamı cihaz üreticisine ve görüntüleme moduna göre değişebileceğinden cihaz eğitiminde üretici şeması esas alınır.</p>\n<h3>Dozimetre</h3>\n<p>Dozimetre, iyonlaştırıcı radyasyona maruziyeti takip etmek amacıyla kullanılan ölçüm aracıdır. Notta “rem / 250 milirem” ifadesi yer almakla birlikte bu değer burada genel bir güvenlik sınırı olarak kabul edilmemiştir; radyasyon birimleri ve mesleki maruziyet limitleri güncel radyasyon mevzuatına göre değerlendirilmelidir.</p>\n<h3>Kontrol ve kalibrasyon</h3>\n<p>Güvenlik cihazları kullanım kılavuzuna göre periyodik olarak test edilmeli; gerekiyorsa yetkili/akredite kuruluşlarca kalibrasyon ve bakım yapılmalıdır. Sınav notunda geçen “TAEK” ifadesi eski kurumsal terminolojidir; güncel nükleer düzenleme ve metroloji yapısı ayrıca kontrol edilmelidir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Dozimetre: Rem — 250 milirem dayanıklılık. Kalibrasyon: Türkiye Atom Enerjisi Kurumu.",
+            "academic": "Bu ifadeler ders notundaki haliyle korunur. Birim/limit ve yetkili kurum terminolojisi güncel radyasyon mevzuatına göre farklılaşabilir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Monokrom X-Ray görüntüsünde metaller siyah; renkli görüntüde metaller siyaha yakın koyu görünür.",
+            "academic": "Bu cihaz davranışı kurs ezberi olarak korunur. Gerçek renk kodları cihaz/üretici algoritmasına göre farklılık gösterebilir."
+          }
+        ]
+      },
+      {
+        "id": "guvenlik-sistemleri-4",
+        "title": "Metal Dedektörleri ve Geçiş Kontrol Sistemleri",
+        "html": "\n<h3>Metal dedektörleri</h3>\n<ul>\n<li>El tipi metal dedektörü,</li>\n<li>Kapı tipi metal dedektörü.</li>\n</ul>\n<p>Dedektörün alarm vermesi yasaklı bir eşyanın kesin olarak bulunduğu anlamına gelmez. <strong>Alarm kaynağı açıklığa kavuşturulmalı</strong>; kontrol görev alanı, mevzuat ve kurum prosedürü içinde sürdürülmelidir.</p>\n<h3>Geçiş kontrol sistemleri</h3>\n<ul>\n<li>Kartlı geçiş kontrol sistemleri,</li>\n<li>Biyometrik doğrulama sistemleri,</li>\n<li>Kapalı devre görüntüleme / kimlik belirleme sistemleri,</li>\n<li>Yetki seviyesine göre çalışan turnike ve kapı kontrol sistemleri.</li>\n</ul>\n<p>Bu sistemlerde erişim yetkisi, log/kayıt yönetimi ve kişisel verilerin korunması birlikte ele alınmalıdır.</p>"
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
+  },
+  {
+    "id": "uyusturucu-madde-bilgileri",
+    "no": "04",
+    "slug": "uyusturucu-madde-bilgileri",
+    "title": "Uyuşturucu Madde Bilgileri",
+    "course": "Uyuşturucu Madde Bilgileri",
+    "tag": "Madde / Farkındalık",
+    "updatedAt": "2026-09-30T20:59:00.000Z",
+    "imageCount": 0,
+    "introHtml": "\n<p>Uyuşturucu Madde Bilgileri dersi; uyuşturucu ve uyarıcı maddelerin temel tanımını, bağımlılık kavramlarını, merkezi sinir sistemi üzerindeki etkilerine göre sınıflandırılmasını, yaygın madde türlerini, kullanım belirtilerini ve ilgili temel hukuk başlıklarını ele alır.</p>\n<p>Sınav açısından özellikle <strong>fiziksel ve psikolojik bağımlılık, yoksunluk, tolerans, madde sınıfları, TCK 188–192 eşleştirmeleri ve temel belirti grupları</strong> üzerinde durulur.</p>",
+    "categories": [
+      {
+        "id": "uyusturucu-madde-bilgileri-1",
+        "title": "Uyuşturucu Madde ve Madde Bağımlılığı",
+        "examNotes": [],
+        "html": "\n<p>Ders materyali uyuşturucu maddeyi; merkezi sinir sistemini etkileyebilen, alışkanlık/bağımlılık oluşturabilen ve hukuken kontrol altında tutulan doğal veya yapay maddeler çerçevesinde tanımlar.</p>\n<h3>Madde bağımlılığı</h3>\n<p>Ders materyalinde bağımlılık, kişinin doğal veya sentetik bir maddeyi iradesi dışında alma zorunluluğu hissetmesi biçiminde açıklanır.</p>\n<ul>\n<li><strong>Fiziksel bağımlılık:</strong> madde kullanılmadığında bedensel tepkilerin ortaya çıkması.</li>\n<li><strong>Psikolojik bağımlılık:</strong> maddeyi rahatlama/doyum sağlamak amacıyla ruhsal olarak arama ve kullanma eğilimi.</li>\n</ul>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-2",
+        "title": "Yoksunluk, Tolerans ve Bağımlılığın Sonuçları",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Yoksunluk: Madde bulunmadığında fiziksel ve ruhsal belirtilerin ortaya çıkması. Tolerans: Aynı etki için daha fazla miktarda madde alma ihtiyacı.",
+            "academic": "Bu iki tanım ders materyalinda doğrudan ezber kavramları olarak verilir."
+          }
+        ],
+        "html": "\n<h3>Yoksunluk</h3>\n<p>Ders materyali, bağımlı kişinin maddeyi kullanamadığında fiziksel ve ruhsal belirtiler göstermesini “yoksunluk” başlığı altında verir.</p>\n<h3>Tolerans</h3>\n<p>Aynı etkiyi elde etmek için daha yüksek miktara ihtiyaç duyulması olarak tanımlanır.</p>\n<h3>Sonuçlar</h3>\n<p>Fiziksel sonuçlar ve ruhsal/sosyal sonuçlar ayrı başlıklarla anlatılır. Ders materyali; kalp-damar ve nörolojik sorunlar, bellek sorunları, duygu-durum değişiklikleri, saldırganlık, sosyal uyum bozukluğu gibi örnekler verir.</p>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-3",
+        "title": "Uyuşturucu Maddelerin Sınıflandırılması",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Ana sınıflar: Merkezi sinir sistemini yavaşlatanlar – uyarıcılar – hayal gösterenler/duyuları bozanlar – sentetikler – uçucu maddeler.",
+            "academic": "Ders materyalinin sınav odaklı ana sınıflandırması bu başlıklar üzerinden ilerlemektedir."
+          }
+        ],
+        "html": "\n<p>ders materyali maddeleri merkezi sinir sistemi üzerindeki etkilerine ve kaynaklarına göre gruplandırır.</p>\n<div class=\"concept-grid\">\n<div><strong>Yavaşlatanlar</strong><small>Afyon ve türevleri; barbitürat, trankilizan ve sedatif örnekleri.</small></div>\n<div><strong>Uyarıcılar</strong><small>Kokain/crack ve amfetamin türevleri gibi örnekler.</small></div>\n<div><strong>Hayal gösterenler</strong><small>Esrar ve LSD gibi ders materyalinde duyu/algı bozukluğu başlığı altında verilen örnekler.</small></div>\n<div><strong>Sentetikler</strong><small>Ecstasy/MDMA ve Captagon gibi örnekler.</small></div>\n<div><strong>Uçucu maddeler</strong><small>Yapıştırıcı, çözücü, tiner/aseton ve bazı aerosol/gaz ürünleri.</small></div>\n</div>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-4",
+        "title": "Afyon, Morfin, Kodein ve Eroin",
+        "examNotes": [],
+        "html": "\n<h3>Afyon ve haşhaş</h3>\n<p>Ders materyali, afyonu haşhaş kapsülünden elde edilen doğal kaynaklı madde olarak; haşhaşı ise afyon ve bazı alkaloidlerin kaynağı olan bitki olarak anlatır.</p>\n<h3>Morfin</h3>\n<p>Afyonda doğal olarak bulunan başlıca alkaloidlerden biri olarak işlenir.</p>\n<h3>Kodein</h3>\n<p>Afyondan elde edilen, ders materyalinde morfinle kimyasal akrabalığı vurgulanan bir alkaloid olarak anlatılır.</p>\n<h3>Eroin</h3>\n<p>Morfinin yarı sentetik türevi olarak tanımlanır. Ders materyalindeki üretim/katkılama ayrıntıları çalışma notuna operasyonel tarif olarak aktarılmamıştır.</p>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-5",
+        "title": "Kokain, Crack ve Esrar",
+        "examNotes": [],
+        "html": "\n<h3>Kokain</h3>\n<p>Koka bitkisinin yapraklarından elde edilen ve merkezi sinir sistemi üzerinde uyarıcı etki gösteren madde olarak tanıtılır.</p>\n<h3>Crack</h3>\n<p>Ders materyali crack'i kokainin içilebilir formu olarak tanımlar. Üretim işlemiyle ilgili kimyasal adımlar burada tekrar edilmez.</p>\n<h3>Esrar</h3>\n<p>Kenevir bitkisiyle ilişkilendirilir; ders materyalinde reçine, toz, pres, gonca ve likit/sıvı esrar adları ayrı alt tür/biçim başlıkları olarak geçer.</p>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-6",
+        "title": "Sentetik Maddeler: Ecstasy, Captagon, LSD ve Sakinleştiriciler",
+        "examNotes": [],
+        "html": "\n<h3>Ecstasy / MDMA</h3>\n<p>Ders materyalinde amfetamin türevi sentetik bir madde olarak, tablet/kapsül/toz/sıvı biçimlerinde görülebileceği belirtilir.</p>\n<h3>Captagon</h3>\n<p>Ders materyali, tarihsel olarak fenetilin etken maddesiyle ilişkilendirir ve günümüzde yasa dışı ürünlerin içeriğinin değişken olabileceğini ayrıca not eder. Üretim aşamaları çalışma notuna aktarılmaz.</p>\n<h3>LSD</h3>\n<p>Ders materyalinde sentetik halüsinojen başlığı altında; küçük kâğıt/tabaka, tablet, sıvı veya jelatin benzeri taşıyıcılarda görülebileceği anlatılır.</p>\n<h3>Barbitürat, trankilizan ve sedatifler</h3>\n<p>Ders materyali bu maddeleri merkezi sinir sistemi üzerindeki yatıştırıcı/sakinleştirici etkileri üzerinden sınıflandırır ve tıbbi kullanımın hekim kontrolünde olması gerektiğini vurgular.</p>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-7",
+        "title": "Uçucu Maddeler ve Risk Farkındalığı",
+        "examNotes": [],
+        "html": "\n<p>Ders materyali; yapıştırıcılar, boya incelticileri/çözücüler, kuru temizleme sıvıları, benzin-gazyağı-tiner-aseton, LPG ve çeşitli sprey/aerosol ürünlerini “uçucu maddeler” başlığı altında örnekler.</p>\n<p>Bu maddelerin solunmasının ciddi sağlık riski taşıdığı; kullanılan kapalı alanların havalandırılması ve çocuklardan/gıda maddelerinden uzak tutulması gerektiği vurgulanır.</p>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-8",
+        "title": "Sokak İsimleri ve Tanıma Terminolojisi",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav notu",
+            "wording": "Ders materyali, Ecstasy için EX/X/XTC/E; eroin için H/dope/smack; kokain için coke/C/blow/crack gibi sokak adlarını örnekler.",
+            "academic": "Sokak adları zamana ve bölgeye göre değişebilir; bu liste yalnızca ders materyalinun terminolojisidir."
+          }
+        ],
+        "html": "\n<p>Ders materyali, güvenlik görevlisinin duyabileceği bazı argo/sokak adlarını ayrıca listeler. Bunlar sabit veya evrensel adlandırmalar değildir; sınavda tanıma kolaylığı sağlayan kaynak terimleri olarak tutulur.</p>\n<ul>\n<li><strong>Ecstasy:</strong> EX, X, XTC, E ve ders materyalinde sayılan çeşitli logo/argo adları.</li>\n<li><strong>Esrar:</strong> ot, kubar ve çeşitli İngilizce/yerel argo adları.</li>\n<li><strong>Eroin:</strong> H, dope, smack ve kaynakta sayılan başka argo adlar.</li>\n<li><strong>Kokain:</strong> coke, C, blow, crack ve kaynakta geçen başka adlandırmalar.</li>\n</ul>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-9",
+        "title": "Uyuşturucu ve Uyarıcı Madde Suçları",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "TCK 188–192: imal ve ticaret; tüzel kişiler hakkında güvenlik tedbiri; kullanılmasını kolaylaştırma; kullanmak için satın alma/kabul/bulundurma; etkin pişmanlık.",
+            "academic": "Bu eşleştirme ders materyalindan aynen korunmuştur; ceza maddelerinin güncel metni ayrıca resmî mevzuattan kontrol edilmelidir."
+          }
+        ],
+        "html": "\n<p>Ders materyali, uyuşturucu/uyarıcı madde suçlarını Türk Ceza Kanunu'nun <strong>188, 189, 190, 191 ve 192.</strong> maddeleriyle ilişkilendirir ve beş başlıkta toplar:</p>\n<ol>\n<li>Uyuşturucu veya uyarıcı madde imal ve ticareti,</li>\n<li>tüzel kişiler hakkında güvenlik tedbiri uygulanması,</li>\n<li>uyuşturucu veya uyarıcı madde kullanılmasını kolaylaştırma,</li>\n<li>kullanmak için satın alma, kabul etme veya bulundurma,</li>\n<li>etkin pişmanlık.</li>\n</ol>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-10",
+        "title": "Belirtiler, Tedavi ve Bağımlılığa İten Faktörler",
+        "examNotes": [],
+        "html": "\n<h3>Fiziksel belirtiler</h3>\n<p>Bitkinlik, dalgınlık, uyuklama/uyku bozukluğu, konuşma ve yürüme güçlüğü, burun akıntısı, terleme, titreme, dengesizlik, gözde kanlanma, göz bebeğinde değişiklik, mide-bağırsak yakınmaları ve solunum güçlüğü gibi örnekler verilir.</p>\n<h3>Toplumsal / ruhsal belirtiler</h3>\n<p>Duygu durumu değişikliği, ilgi-istek kaybı, donukluk, bilişsel bozulma, başarı düşüşü, bakımsız görünüş, içe kapanma, çevre değişikliği, aşırı para harcama ve davranış değişiklikleri örneklenir.</p>\n<h3>Tedavi başlıkları</h3>\n<p>Ders materyali detoksifikasyon/arındırma, terapi programları ve ilaç tedavisini temel yaklaşım başlıkları olarak sayar; AMATEM/UMATEM adlarını tedavi merkezleri bağlamında verir.</p>\n<h3>Bağımlılığa iten faktörler</h3>\n<p>Aileye ilişkin, kişiye ilişkin ve toplumsal nedenler olmak üzere üç ana çevresel/sosyal başlıkta sınıflandırılır.</p>"
+      },
+      {
+        "id": "uyusturucu-madde-bilgileri-11",
+        "title": "Tarihsel Gelişim ve Toplumsal Etkiler",
+        "examNotes": [
+          {
+            "label": "Sınav notu / tarihsel not",
+            "wording": "Ders materyali; Amerika kıtasında koka, Asya'da haşhaş ve birçok bölgede kenevir üzerinden tarihsel bir gelişim anlatısı kurar.",
+            "academic": "Bu bölüm kaynak ders materyalinin tarihsel çerçevesidir; tarihsel istatistik ve oranlar güncel veri olarak kullanılmamalıdır."
+          }
+        ],
+        "html": "\n<h3>Dünyadaki gelişim</h3>\n<p>Ders materyali, insanların bazı bitkileri tarih boyunca tıbbi/ağrı giderici amaçlarla tanıdığını; coğrafyaya göre <strong>koka, haşhaş ve kenevir</strong> gibi bitkilerin öne çıktığını anlatır. Zamanla sentetik maddelerin de ortaya çıkması bu tarihsel çizginin devamı olarak verilir.</p>\n<h3>Türkiye'ye ilişkin tarihsel notlar</h3>\n<p>Ders materyalinde 1938 ve Toprak Mahsulleri Ofisi bağlamında tarihsel bilgiler ile eski pazar payı oranları yer alır. Bu değerler güncel veri olarak kullanılmadığı için burada yalnızca “tarihsel ders materyali notu” olarak tutulmuştur.</p>\n<h3>Toplumsal etkiler</h3>\n<p>ders materyali toplumsal etkileri; <strong>sağlık sorunları, suç artışı, ekonomik/kara para etkileri ve güvenlik sorunları</strong> başlıklarıyla ilişkilendirir.</p>\n<h3>Bağımlılığa iten faktörler</h3>\n<p>Kaynak; aileye ilişkin, kişinin kendisine ilişkin ve toplumsal nedenleri üç ana çevresel/sosyal grup olarak tekrar vurgular.</p>"
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": []
+  },
+  {
+    "id": "silah-bilgisi",
+    "no": "05",
+    "slug": "silah-bilgisi-ve-atis",
+    "title": "Silah Bilgisi ve Atış",
+    "course": "Silah Bilgisi ve Atış",
+    "tag": "Silahlı Eğitim",
+    "updatedAt": "2026-09-30T20:59:00.000Z",
+    "imageCount": 5,
+    "introHtml": "<p>Silah bilgisi dersi; emniyet, bakım, ateşli silahların sınıflandırılması, fişek ve şarjör yapısı, tabancanın parçaları, temel balistik kavramlar, MP5 ve revolver sistemleri ile ruhsat kavramlarını içerir. Uygulamalı sökme–takma, arıza giderme ve atış yalnızca yetkili eğitmen gözetimindeki eğitim/poligon ortamında yapılmalıdır.</p>",
+    "categories": [
+      {
+        "id": "silah-bilgisi-1",
+        "title": "Silah Emniyeti, Bakım ve Temizlik",
+        "html": "\n<p>Ders notunda bakım için ana hatırlatma <strong>“atıştan sonra temizlik”</strong> şeklinde tutulmuştur. Temizlik ve bakım sıklığı silahın modeli, kullanım yoğunluğu, mühimmat, çevre şartları ve üretici talimatıyla birlikte değerlendirilir.</p>\n<p>Harbi seti/silah temizleme kiti; namlu ve erişilebilir parçaların bakımında kullanılan ekipmandır. Temizlik öncesi silahın boş olduğunun güvenli şekilde doğrulanması ve mühimmatın çalışma alanından ayrılması temel emniyet ilkesidir.</p>\n<blockquote>Uygulamalı sökme–takma ve arıza işlemleri için bu blog metni değil, üretici kılavuzu ve yetkili silah eğitmeni esas alınmalıdır.</blockquote>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Silahlar belirli bir periyotla değil, her atıştan sonra temizlenir.",
+            "academic": "Bu cümle kurs/sınav ezberidir. Gerçek bakım programı atış sonrası bakımın yanında üretici periyodik bakım talimatlarını da içerir."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-2",
+        "title": "Ateşli Silahların Sınıflandırılması",
+        "html": "\n<h3>Yarı otomatik silah</h3>\n<p>İlk dolduruş hareketinden sonra, tetiğin her ayrı çekilişinde tek atım yapan ve sonraki fişeği mekanik olarak atışa hazırlayan sistemdir.</p>\n<h3>Otomatik silah</h3>\n<p>Atış seçici ve mekanizma tasarımına bağlı olarak tetik basılı tutulduğu sürece ardışık atış yapabilen sistemdir.</p>\n<p>Sınıflandırmada “otomatik” ve “yarı otomatik” terimleri silahın çalışma çevrimini anlatır; tabanca/tüfek adıyla karıştırılmamalıdır.</p>\n\n<h3>Geniş sınıflandırma</h3>\n<p>Ders materyalinda silahlar; <strong>ateşli, ateşsiz, kimyasal, biyolojik ve nükleer</strong> başlıkları altında sınıflandırılmıştır. Ateşsiz silahlarda kesici/delici/ezici; ateşli silahlarda ise ağır-hafif, uzun-kısa namlulu ve çalışma sistemine göre alt gruplar gösterilir.</p>\n<p>Hafif ateşli silahlar, ders materyalinde bir kişi tarafından kullanılabilen; ağır ateşli silahlar ise birden fazla kişi veya araç/vasıta desteği gerektiren sistemler olarak tanımlanır.</p>\n<h3>Tabanca çalışma sistemi terimleri</h3>\n<ul>\n<li><strong>Yarı otomatik:</strong> tetiğin her çekilişinde bir atış ve sonraki fişeğin atışa hazırlanması.</li>\n<li><strong>Tam otomatik:</strong> seçici ve tasarıma bağlı olarak tetik basılı tutulduğunda ardışık atış.</li>\n<li><strong>Makineli tabanca:</strong> ders materyalinde yarı ve tam otomatik seçeneği bulunan, daha yüksek kapasiteli örnekler için kullanılan terim.</li>\n</ul>\n\n<h3>Silahın tanımı ve hukuki çerçeve</h3>\n<p>Ders materyalinin girişinde silah; uzaktan veya yakından canlıları öldürebilen, yaralayabilen ya da etkisiz bırakabilen; cansızları parçalayabilen/yok edebilen araç ve aletler biçiminde geniş bir ders tanımıyla verilir.</p>\n<p>Ayrıca 6136 sayılı Kanun kapsamında ders ders materyaliı; <strong>kama, hançer, saldırma, şişli baston, sustalı çakı, pala, kılıç, süngü, kasatura, sivri uçlu/oluklu bıçak, topuz, topuzlu kamçı, boğma teli ve muşta</strong> gibi aletleri sınav terminolojisi içinde örnekler.</p>\n<div class=\"editorial-warning\"><strong>Sınav notu:</strong> Ders materyalinde eski TCK madde numaralarına dayanan tarihsel atıflar da vardır. Bunlar güncel madde numarası gibi yeniden yazılmadı; sınav materyalinin tarihsel dili olarak işaretlenmiştir.</div>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Silah çeşitleri: Ateşli – Ateşsiz – Kimyasal – Biyolojik – Nükleer.",
+            "academic": "Bu beşli ders materyalinın ana sınıflandırmasıdır."
+          },
+          {
+            "label": "Sınav notu / tarihsel ifade",
+            "wording": "Ders materyalinde silah tanımı için eski TCK 189 ve 265 atıfları da kullanılıyor.",
+            "academic": "Bu madde numaraları kaynak ders materyalinin tarihsel terminolojisidir; güncel TCK madde numarası olarak kabul edilmemelidir."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-3",
+        "title": "Fişek ve Mühimmatın Temel Bileşenleri",
+        "html": "\n<p>Bir merkez ateşlemeli fişeğin temel bileşenleri ders notunda dört parça olarak tutulmuştur:</p>\n<ul><li><strong>Kapsül</strong></li><li><strong>Barut</strong></li><li><strong>Çekirdek</strong></li><li><strong>Kovan</strong></li></ul>\n<p>Kapsül ateşlemeyi başlatır; barut yanarak gaz üretir; oluşan basınç çekirdeği namlu boyunca hareket ettirir; kovan ise bileşenleri bir arada tutar ve atış sonrası mekanizma tarafından tahliye edilir.</p>"
+      },
+      {
+        "id": "silah-bilgisi-4",
+        "title": "Şarjörün Yapısı ve Görevi",
+        "html": "\n<p>Çıkarılabilir kutu tipi şarjörün temel parçaları notlarda <strong>şarjör gövdesi/tüpü, yay, gerdel, taban/kapak ve kilit</strong> olarak geçmektedir.</p>\n<h3>Gerdel (follower)</h3>\n<p>Gerdel, yayın kuvvetiyle fişekleri besleme dudaklarına doğru yükselten parçadır. Bazı tabanca sistemlerinde son fişekten sonra sürgü tutucunun devreye girmesine de katkı sağlar.</p>\n<p>Şarjör arızaları yalnızca gerdelden kaynaklanmaz; yay, besleme dudakları, kirlenme, mühimmat veya şarjörün fiziksel hasarı da besleme sorununa yol açabilir.</p>"
+      },
+      {
+        "id": "silah-bilgisi-5",
+        "title": "Tabancanın Ana Parçaları",
+        "html": "\n<h3>Alt gövde / çerçeve</h3>\n<ul>\n<li><strong>Kabze:</strong> Silahın elde tutulduğu, birçok tabancada şarjör yuvasını da içeren bölüm.</li>\n<li><strong>Şarjör çıkarma mandalı:</strong> Şarjörün gövdeden serbest bırakılmasını sağlar.</li>\n<li><strong>Tetik korkuluğu:</strong> Tetiği dış darbelerden koruyan yapı.</li>\n<li><strong>Tetik ve tetik mekanizması:</strong> Ateşleme sisteminin kullanıcı tarafından kumanda edilen bölümüdür.</li>\n<li><strong>Horoz / striker sistemi:</strong> Model tasarımına göre ateşleme enerjisinin iğneye aktarılma biçimi değişir.</li>\n<li><strong>Emniyet mekanizmaları:</strong> Manuel veya otomatik emniyetlerin varlığı modele göre farklıdır.</li>\n</ul>\n<h3>Üst sürgü</h3>\n<ul>\n<li>Arpacık ve gez,</li>\n<li>Kovan atma penceresi,</li>\n<li>Tırnak/extractor,</li>\n<li>Ateşleme iğnesi/striker tertibatı.</li>\n</ul>\n<h3>Namlu ve geri getirme sistemi</h3>\n<p>Namlu, icra yayı/geri getirme yayı ve kılavuz mili gibi parçalar çalışma çevriminin temel elemanlarıdır. Sınav notunda “namlu üst gövdenin ana parçası değildir” ayrımı özellikle sınav ifadesi olarak kaydedilmiştir.</p>\n\n<div class=\"study-figure\">\n  <b>GÖRSEL HAFIZA // TABANCA PARÇALARI</b>\n  <div class=\"concept-grid\">\n    <div><strong>ALT GÖVDE</strong><small>Kabze · şarjör mandalı · tetik · tetik korkuluğu · tetik mekanizması</small></div>\n    <div><strong>ÜST SÜRGÜ</strong><small>Gez · arpacık · kovan atma penceresi · tırnak · iğne/striker tertibatı</small></div>\n    <div><strong>NAMLU</strong><small>Yiv-set sistemi · fişek yatağı · modeline göre kilitleme yüzeyleri</small></div>\n    <div><strong>GERİ GETİRME</strong><small>İcra yayı / geri getirme yayı · kılavuz mili</small></div>\n  </div>\n  <p class=\"visual-caption\">Tabancanın temel parça gruplarını birlikte hatırlamak için hazırlanmış görsel özet.</p>\n</div>\n\n<h3>Fişek yatağı, hazne ve kovan atma tertibatı</h3>\n<p>Ders materyali, fişek yatağını atışa hazır fişeğin bulunduğu bölüm; hazneyi ise atış sırası bekleyen fişeklerin bulunduğu yer olarak ayrı kavramlaştırır. Otomatik tabancada hazne görevini şarjör, revolverde ise tambur/top yuvaları görür.</p>\n<p>Kovan atma tertibatı; fişek veya boş kovanın fişek yatağından çıkarılmasıyla ilgili parça grubunun genel adıdır.</p>\n<h3>Ateşleme tertibatı</h3>\n<p>Tetik, iğne/iğne yayı, horoz ve ilgili aktarım parçaları ders materyalinde ateşleme tertibatı içinde ele alınır. Sistemler <strong>horozlu, horozlu-iğneli ve iğneli</strong> olarak sınıflandırılmıştır.</p>"
+      },
+      {
+        "id": "silah-bilgisi-6",
+        "title": "Namlu, Yiv–Set ve Temel Balistik Kavramlar",
+        "html": "\n<h3>Yiv ve set</h3>\n<p>Yivli namluda yiv ve setler çekirdeğe dönme hareketi kazandırır. <strong>Yiv–set sayısı ve dönüş yönü silah modeline göre değişir;</strong> sınav notundaki “tabancada 6, uzun namluda 4” ifadesi evrensel kural değildir.</p>\n<h3>Rayyür</h3>\n<p>Adli balistikte namlu, fişek yatağı, iğne, tırnak ve diğer mekanik parçaların çekirdek/kapsül/kovan üzerinde bırakabildiği karakteristik izler karşılaştırma amacıyla incelenir. Notta bu izler “rayyür” başlığı altında ele alınmıştır.</p>\n<h3>Hatve</h3>\n<p>Hatve, yiv-setin namlu içinde bir tam dönüşü tamamladığı mesafeyi ifade eden balistik/geometrik kavramdır. Sınav notundaki “çekirdeğin namluda aldığı yol” ifadesi bu nedenle teknik olarak daraltılarak düzeltilmiştir.</p>\n<h3>Nişan elemanları</h3>\n<p>Gez ve arpacık mekanik nişangâhın temel iki unsurudur. Dersin ezber sorusunda “nişan hattında en hareketli parça” cevabı <strong>arpacık</strong> olarak kaydedilmiştir; bunun bağlamı nişan hatası ve namlu hareketinin hedef üzerindeki etkisidir.</p>\n\n<div class=\"study-figure\">\n  <b>GÖRSEL HAFIZA // NAMLU & BALİSTİK</b>\n  <div class=\"concept-grid\">\n    <div><strong>YİV</strong><small>Namlunun iç yüzeyindeki çukur helezonik kanallar.</small></div>\n    <div><strong>SET</strong><small>Yivler arasında kalan yüksek yüzeyler.</small></div>\n    <div><strong>RAYYÜR</strong><small>Namlu ve mekanik parçaların çekirdek/kovan üzerinde bırakabildiği karakteristik izler.</small></div>\n    <div><strong>HATVE</strong><small>Yiv-setin bir tam dönüş yaptığı mesafe; sınav notundaki farklı ifade ayrıca “Kurs/Sınav İfadesi” kutusunda korunur.</small></div>\n  </div>\n  <p class=\"visual-caption\">Yiv, set, rayyür ve hatve kavramlarını birlikte hatırlamak için hazırlanmış görsel özet.</p>\n</div>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yiv-set: tabancada 6, uzun namluda 4. Hatve: merminin namlu içerisinde aldığı yol.",
+            "academic": "Sınavda kurs materyali bu kalıpla sorulabilir. Teknik olarak yiv-set sayısı modele göre değişir; hatve, yiv-setin bir tam dönüşü tamamladığı mesafedir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Nişan hattında en hareketli parça: Arpacık.",
+            "academic": "Kursta doğrudan soru-cevap ezberi olarak tutulmuş ifade; sınav katmanında aynen korunur."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-7",
+        "title": "Atış Arızası, Kalibre ve MP5 Notları",
+        "html": "\n<h3>Atışta gecikme / arıza</h3>\n<p>Sınav notunda atış sırasında beklenmeyen bir ateşleme/arıza hâli için “15 saniye, atış istikametinde tut” şeklinde poligon güvenlik notu vardır. Bu süre ve prosedür evrensel bir arıza giderme talimatı olarak değil, <strong>eğitim yapılan poligonun güvenlik prosedürü</strong> olarak değerlendirilmelidir.</p>\n<h3>.38 kalibre notu</h3>\n<p>.38 inç nominal çap yaklaşık 9,65 mm’dir; fişek ve namlu ölçülerinde ticari adlandırma ile gerçek ölçü aynı olmayabilir.</p>\n<h3>MP5</h3>\n<p>MP5, seçici ateşleme sistemine sahip varyantları bulunan, kapalı sürgüden ateşleyen 9×19 mm makineli tabanca ailesidir. Ders notunda emniyet/tekli/seri seçici konumları, kurma kolu ve şarjör değişimi kavramları işlenmiştir.</p>\n<p>Kurma kolu, mekanizmayı geriye alarak ilk besleme ve belirli kontrol işlemlerinde kullanılır. Sökme-takma sırası ve arıza giderme adımları varyanta göre değişebileceğinden uygulama yalnızca yetkili eğitmen ve üretici dokümantasyonuyla yapılmalıdır.</p>\n\n<div class=\"study-figure\">\n  <b>GÖRSEL HAFIZA // MP5 DERS ETİKETLERİ</b>\n  <div class=\"study-flow\"><span>Emniyet</span><i>→</i><span>Tek Tek</span><i>→</i><span>Seri</span></div>\n  <div class=\"concept-grid\" style=\"margin-top:8px\">\n    <div><strong>KURMA KOLU</strong><small>Derste ilk besleme ve mekanizmayı geriye alma kavramıyla birlikte işlendi.</small></div>\n    <div><strong>ŞARJÖR</strong><small>Ders notunda besleme ve şarjör değişimi başlığıyla birlikte işlendi.</small></div>\n  </div>\n  <p class=\"visual-caption\">MP5 başlığındaki temel sınav terimlerini birlikte gösteren görsel özet.</p>\n</div>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": ".38 cal = 9,65 mm.",
+            "academic": "Kurs hesap/ezber ifadesi olarak korunur; ticari kalibre adlandırmaları gerçek çekirdek/namlu çapıyla her zaman birebir değildir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "MP5 seçici konumları: Emniyet – Tek Tek – Seri.",
+            "academic": "Kursta geçen temel parça/konum ezberi olarak korunur; model/varyant işaretlemeleri değişebilir."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-8",
+        "title": "Revolver Tabancalar, Yakın Koruma ve Ruhsat Kavramları",
+        "html": "\n<h3>Revolver</h3>\n<p>Revolver tabancalarda fişekler döner tamburda bulunur; klasik çıkarılabilir şarjör kullanılmaz. Boş kovanların toplu şekilde çıkarılmasında ejector/çıkarıcı yıldız mekanizması görev yapar.</p>\n<p>Sınav notunda “iğne tertibatı yoktur” ifadesi yer almaktadır; bu evrensel değildir. Revolver tasarımına göre horoza bağlı veya gövdeye yerleştirilmiş ateşleme iğnesi sistemleri bulunabilir.</p>\n<h3>Silahlı yakın koruma notu</h3>\n<p>Ders notunda yakın koruma görevlisinin silah taşıma yetkisinin korunan kişiyle birlikte bulunma ve koruma kararının coğrafi kapsamıyla ilişkili olduğu özellikle vurgulanmıştır. Uygulamada karar metni ve 5188 sayılı mevzuat esas alınır.</p>\n<h3>Ruhsat kavramları</h3>\n<ul><li>Taşıma ruhsatı</li><li>Bulundurma ruhsatı</li></ul>\n<p>Silah ruhsatları yetkili idari makamlar tarafından düzenlenir ve mevzuatta öngörülen sürelerde yenilenir. Özel güvenlik hizmetinde kullanılan görev silahları bakımından ayrıca 5188 sayılı sistemdeki izin, kayıt ve muhafaza hükümleri uygulanır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Revolver tabancalarda iğne tertibatı yoktur.",
+            "academic": "Ders notu ezberi olarak korunur; gerçek revolver tasarımlarında ateşleme iğnesinin yerleşimi modele göre değişebilir."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-9",
+        "title": "Ateşleme ve Emniyet Tertibatları",
+        "html": "\n<h3>Ateşleme sistemi türleri</h3>\n<ul>\n<li><strong>Horozlu sistem:</strong> horozun doğrudan kapsüle etki ettiği sistem.</li>\n<li><strong>Horozlu–iğneli sistem:</strong> horoz darbesinin iğne aracılığıyla kapsüle iletildiği sistem.</li>\n<li><strong>İğneli sistem:</strong> yayla kurulan iğnenin ateşleme görevini yaptığı sistem.</li>\n</ul>\n<h3>Emniyet tertibatları</h3>\n<p>Ders materyali ana/yardımcı emniyet başlığı altında şu adları özellikle sayar:</p>\n<div class=\"concept-grid\">\n<div><strong>Mandal emniyeti</strong><small>Mekanik kumanda ile ateşleme sisteminin belirli parçalarını bloke eden yapı.</small></div>\n<div><strong>Kabza emniyeti</strong><small>Bazı modellerde doğru kavrama/basınç olmadan ateşleme sistemini engeller.</small></div>\n<div><strong>Şarjör emniyeti</strong><small>Bazı modellerde şarjör takılı değilken ateşlemeyi engelleyen sistem.</small></div>\n<div><strong>Horoz emniyeti</strong><small>Horozun istenmeyen biçimde iğne/kapsüle temasını önlemeye yönelik mekanik çentik/düzen.</small></div>\n<div><strong>Tetik emniyeti</strong><small>Tetik çekilmeden düşme/çarpma gibi etkilerle ateşlemeyi önlemeye yönelik düzen.</small></div>\n<div><strong>İğne emniyeti</strong><small>Tetik çekilmediği sürece iğnenin ilerlemesini bloke eden mekanizma.</small></div>\n<div><strong>İkaz emniyeti</strong><small>Fişek yatağında fişek bulunduğunu görsel/dokunsal olarak bildiren işaretleyici.</small></div>\n<div><strong>Tırnak / işaret pimi</strong><small>Ders materyali şemasında yardımcı ikaz/emniyet göstergeleri arasında anılır.</small></div>\n</div>\n<p>Bu mekanizmaların tamamı her silahta bulunmaz; ders materyali bunları sınav terminolojisi olarak bir arada gösterir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Emniyet tertibatları: mandal, şarjör, kabza, horoz, tetik, iğne, ikaz emniyeti; tırnak ve işaret pimi.",
+            "academic": "Bu liste ders materyalindaki şemadan korunmuştur; modelden modele emniyet tertibatı değişebilir."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-10",
+        "title": "Bakım Türleri, Bakım Zamanları ve Malzemeleri",
+        "html": "\n<h3>Bakım türleri</h3>\n<ul>\n<li><strong>Basit bakım:</strong> kullanıcı seviyesinde rutin temizlik ve koruyucu bakım.</li>\n<li><strong>Kapsamlı bakım:</strong> ders materyalinde silah ustası/uzmanı tarafından yapılması gereken ileri bakım olarak tanımlanır.</li>\n<li><strong>Yıllık / periyodik bakım:</strong> belirli aralıklarla uzman kontrolü ve parçaların genel durum değerlendirmesi.</li>\n</ul>\n<h3>Bakım zamanları</h3>\n<p>Ders materyali; <strong>günlük bakım, “iki haftalık bakım” başlığı, atış öncesi bakım ve atış sonrası bakım</strong> ayrımı yapar. Ders materyalinde “iki haftalık bakım” başlığının altında “haftada bir kere” ifadesi de geçtiği için bu çelişki aynen sınav notu olarak aşağıda korunmuştur.</p>\n<h3>Ders materyalinde sayılan bakım malzemeleri</h3>\n<p>Bakır tel fırça, kıl fırça, temizleme bezi, ince uçlu ahşap, harbi, temizleyici/koruyucu yağlar ve uzun süreli muhafaza için gres yağı örneklenmiştir.</p>\n<blockquote>Detaylı söküm, parça değişimi ve arıza giderme uygulama talimatı bu çalışma sayfasında çoğaltılmaz; ders materyali da kapsamlı bakımın uzman tarafından yapılması gerektiğini ayrıca belirtir.</blockquote>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Bakım türleri: Basit bakım – Kapsamlı bakım – Yıllık/Periyodik bakım.",
+            "academic": "Silah Bilgisi ders materyalinindaki ana bakım sınıflandırmasıdır."
+          },
+          {
+            "label": "Ders materyali çelişkisi",
+            "wording": "Başlık '2. İki haftalık bakım' iken açıklamada 'silahın haftada bir kere...' ifadesi geçiyor.",
+            "academic": "Kaynak kendi içinde tutarsız olduğu için ifade düzeltilmeden işaretlendi; sınavda eğitmenin kullandığı kalıp ayrıca dikkate alınmalıdır."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-11",
+        "title": "Silahlı Görev ve Devir–Teslim Emniyeti",
+        "html": "\n<p>Ders materyalinin bu bölümü, görev silahının günlük kullanımında güvenli taşıma, muhafaza ve devir-teslim disiplinine odaklanır.</p>\n<ul>\n<li>Silahın gereksiz yere konuşma/şaka konusu yapılmaması ve kontrolsüz biçimde başkasına verilmemesi.</li>\n<li>Nakil ve muhafazada güvenli durumun doğrulanması; mühimmatın uygun ve güvenli şekilde saklanması.</li>\n<li>Görev devir-tesliminde silahın <strong>boş ve emniyetli</strong> olduğunun hem devreden hem devralan tarafından doğrulanması.</li>\n<li>Zimmet, seri numarası ve kurum prosedürünün takip edilmesi.</li>\n</ul>\n<p>Ders materyalinde devir-teslimin mekanik adımları ayrıntılı tarif edilmiştir; bu akademik çalışma sayfasında sınav için gerekli temel ilke korunmuş, ayrıntılı silah manipülasyon dizisi tekrar üretilmemiştir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Devir-teslimde silah boş ve emniyetli olarak teslim edilir; devralan da boş/emniyetli durumu yeniden doğrular.",
+            "academic": "Ders materyalinin devir-teslim bölümünün temel emniyet ezberidir."
+          }
+        ]
+      },
+      {
+        "id": "silah-bilgisi-12",
+        "title": "Atış Emniyeti ve Temel Atış Unsurları",
+        "html": "\n<p>ders materyali'in “Temel Atış Teknikleri” bölümünde atış başarısını etkileyen temel unsurlar liste halinde verilir:</p>\n<ul>\n<li>Duruş,</li>\n<li>nefes alma,</li>\n<li>göz–gez–arpacık ilişkisi,</li>\n<li>konsantrasyon,</li>\n<li>kabze kavrama,</li>\n<li>tetik düşürme.</li>\n</ul>\n<p>Bu sayfada bu unsurlar yalnızca <strong>sınav terminolojisi</strong> olarak tutulur; uygulamalı atış tekniği ve performans artırma talimatı verilmez.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Temel atış unsurları: Duruş – Nefes alma – Göz/Gez/Arpacık – Konsantrasyon – Kabze kavrama – Tetik düşürme.",
+            "academic": "Silah Bilgisi ve Atış ders materyalinindaki doğrudan öncelikler listesidir."
+          }
+        ]
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Sivil Kullanım Amaçlı Silahlar ve Mevzuat Uygulamaları",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Sivil-Kullanim-Amacli-Silahlar-ve-Mevzuat-Uygulamalari.pdf"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
+  },
+  {
+    "id": "kalabalik-yonetimi",
+    "no": "06",
+    "slug": "kalabalik-yonetimi",
+    "title": "Kalabalık Yönetimi",
+    "course": "Kalabalık Yönetimi",
+    "tag": "Toplumsal Olaylar",
+    "updatedAt": "2026-09-16T06:18:21.584Z",
+    "imageCount": 0,
+    "introHtml": "<p>Kalabalık yönetimi dersi; grup ve kalabalık kavramlarını, grup dinamiğini, toplumsal olayların gelişim safhalarını, kalabalık psikolojisini, güvenlik görevlisinin sözlü temasını, toplumsal olaylarda kullanılan düzenleri, zor kullanma araçlarına ilişkin temel kavramları, 2911 sayılı Kanun çerçevesini ve panik/çatışma yönetimini birlikte ele alır.</p>",
+    "categories": [
+      {
+        "id": "kalabalik-yonetimi-1",
+        "title": "Grup Kavramı, Liderlik ve Grup Türleri",
+        "html": "\n<h3>Grup kavramı</h3>\n<p>Grup; ortak fikir veya amaç çevresinde bulunan, üyeleri arasında karşılıklı etkileşim ve etkilenme görülen, belirli ölçüde süreklilik taşıyan ve çoğu zaman liderlik yapısı bulunan insan topluluğudur. Grup üyeliği her zaman aynı fiziksel mekânda bulunmayı gerektirmez.</p>\n<h3>Liderin grubu etkileme araçları</h3>\n<ul><li>İkna ve iletişim,</li><li>bireysel yetenek ve karizma,</li><li>ödül ve yaptırım mekanizmaları,</li><li>otorite ve güç kullanımı.</li></ul>\n<h3>Birincil ve ikincil gruplar</h3>\n<p><strong>Birincil grup</strong> yüz yüze, yakın ve duygusal ilişkilerin güçlü olduğu aile ve arkadaş çevresi gibi yapılardır. <strong>İkincil grup</strong> ise işyeri, kurum ve resmi daire gibi amaç ve görev ilişkisinin ağır bastığı yapılardır.</p>\n<p>Ders notlarında ayrıca saldırgan/sakin, paniğe kapılmış, amaçlı ve anlamlı grup başlıkları sınıflandırma örnekleri olarak yer almıştır.</p>"
+      },
+      {
+        "id": "kalabalik-yonetimi-2",
+        "title": "Grup Dinamiği, Gelişim Aşamaları ve Kolektif Davranış",
+        "html": "\n<p><strong>Grup dinamiği</strong>, grubun bir bölümünde ortaya çıkan değişimin diğer üyeler ve grup yapısı üzerindeki etkisini ifade eder.</p>\n<h3>Grubun gelişim aşamaları</h3>\n<ol><li>Oluşum,</li><li>fırtına/çatışma,</li><li>kuralların oluşması,</li><li>performans,</li><li>dağılma.</li></ol>\n<p><strong>Kolektif davranış</strong>, insanların ortak bir duygu, düşünce veya olay çevresinde birbirlerinin davranışından etkilenerek benzer biçimde hareket etmesidir. Ders notundaki “fikir ve hareket birliği / takım ruhu” ifadeleri bu başlık altında değerlendirilmiştir.</p>"
+      },
+      {
+        "id": "kalabalik-yonetimi-3",
+        "title": "Kalabalık Kavramı ve Kalabalık Türleri",
+        "html": "\n<h3>Kalabalık</h3>\n<p>Kalabalık; aynı yerde fiziksel olarak bulunan, ortak bir ilgi veya olay çevresinde toplanabilen fakat grup kadar sürekli ve örgütlü olmayan insan topluluğudur. Üyelerin birbirlerini tanıması veya kalıcı ilişki içinde olması gerekmez.</p>\n<blockquote>Grup için süreklilik ve etkileşim; kalabalık için geçicilik ve fiziksel birliktelik daha belirgin özelliklerdir.</blockquote>\n<h3>Sosyolojik açıdan kalabalıklar</h3>\n<ul><li>Tesadüfi kalabalık,</li><li>saldırgan kalabalık,</li><li>seyirci kalabalığı,</li><li>ilgiye dayanan kalabalık,</li><li>anlamlı kalabalık.</li></ul>\n<h3>Organizasyon açısından</h3>\n<ul>\n<li><strong>Organize aktif:</strong> toplantı, gösteri yürüyüşü, miting, grev gibi amaçlı topluluklar.</li>\n<li><strong>Organize pasif:</strong> spor, sanat veya inanç etkinliklerindeki seyirci/topluluklar.</li>\n<li><strong>Organize olmayan aktif:</strong> ani karışıklık, panik veya karşıt gösteri gibi hızla gelişen topluluklar.</li>\n<li><strong>Organize olmayan pasif:</strong> çarşı, pazar, trafik veya tesadüfi seyirci kalabalıkları.</li>\n</ul>"
+      },
+      {
+        "id": "kalabalik-yonetimi-4",
+        "title": "Kalabalık Psikolojisi ve Kalabalık İçindeki Kişilik Rolleri",
+        "html": "\n<h3>Kalabalık davranışını etkileyebilen psikolojik özellikler</h3>\n<ul><li>Telkine açıklık,</li><li>tesir altında kalma,</li><li>taklit/özenme,</li><li>yayılma/sirayet,</li><li>duygusallık,</li><li>anonimlik/isimsizlik,</li><li>bireysel iradenin grup etkisi altında zayıflaması.</li></ul>\n<h3>Kalabalık içindeki roller</h3>\n<p>Ders notlarında önder/lider, atılgan/girişimci, tesir altında kalan, ihtiyatlı, destekleyici, seyirci, karşı eylemci ve provokatör gibi davranış rolleri sayılmıştır. Bunlar hukuki kimlik değil, topluluk davranışını analiz etmek için kullanılan ders kategorileridir.</p>\n<h3>Provokasyon ve ajitasyon</h3>\n<p><strong>Provokasyon</strong>, topluluğu belirli bir tepkiye sürüklemeye yönelik kışkırtıcı davranışı; <strong>ajitasyon</strong> ise duygu ve heyecanı yoğunlaştıran iletişim biçimini ifade eder. “Ajan provokatör” kavramı, topluluğun içinde yönlendirici/kışkırtıcı rol üstlenen kişi için kullanılan tarihsel-toplumsal bir terimdir.</p>"
+      },
+      {
+        "id": "kalabalik-yonetimi-5",
+        "title": "Toplumsal Olayların Yapısı ve Gelişim Safhaları",
+        "html": "\n<h3>Hukuki açıdan topluluk</h3>\n<p>Ders kapsamında topluluklar yasal ve yasa dışı topluluklar şeklinde temel bir hukuki ayrıma tabi tutulmuştur. Bir topluluğun niteliği, katılımcıların düşüncesinden ziyade fiilin hukuka uygunluğu ve olayın somut şartlarıyla değerlendirilir.</p>\n<h3>Topluluk içindeki işlevsel roller</h3>\n<ul><li>İç ve dış yönlendiriciler,</li><li>koruma/yakın koruma görevlileri,</li><li>haberleşme görevlileri,</li><li>psikolojik etki ve pankart grupları,</li><li>eylem grupları.</li></ul>\n<h3>Toplumsal olayın gelişim safhaları</h3>\n<p>Ders notunda önderlik, fikrî hazırlık, topluluğun büyümesi, gerilimin/kabarma-horozlanmanın artması, çabuklaştırıcı olay, kontrolün kaybedilmesi ve zorbalık hareketlerinin yayılması gibi aşamalar bir süreç olarak sıralanmıştır. Gerçek olaylar bu sırayı zorunlu olarak izlemez; sınıflandırma risk değerlendirmesi için kullanılan öğretim modelidir.</p>\n<h3>Eylem biçimleri</h3>\n<p>Tahrik, nesne atılması, barikat kurulması, yangın çıkarılması, silah/patlayıcı kullanımı veya cenaze gibi hassas ortamlarda olay çıkarılması ders notunda şiddet riskinin farklı görünüm biçimleri olarak yer almıştır.</p>"
+      },
+      {
+        "id": "kalabalik-yonetimi-6",
+        "title": "Güvenlik Görevlisinin Kişilerle Görüşmesi ve Tepki Mesafesi",
+        "html": "\n<h3>Mesafe kavramı</h3>\n<p>Ders pratiğinde yaklaşık <strong>2 metre</strong> eşik alınarak daha yakın mesafe “tehlikeli bölge”, daha uzak mesafe ise “tepkisel bölge” şeklinde adlandırılmıştır. Bu sayı hukuki sınır değil, eğitimde kullanılan kişisel güvenlik referansıdır.</p>\n<h3>Temel duruş</h3>\n<p>Kişiyle sözlü temas sırasında görevlinin vücudunu tamamen cepheden kilitlemek yerine dengeli ve hareket kabiliyeti sağlayan bir açıyla durması; elleri görünür ve kontrollü tutması; iletişimi sürdürürken çevre farkındalığını koruması amaçlanır.</p>\n<h3>Hazır ve savunma duruşu</h3>\n<p>Hazır duruş, tehdit yükselmeden önce görevlinin hareket kabiliyetini artıran dikkat pozisyonudur. Savunma duruşu ise şiddet tehdidinin belirginleştiği durumda korunma ve geri çekilme kapasitesini artırmaya yöneliktir.</p>\n<blockquote>Öncelik sözlü iletişim, gerilimi düşürme ve güvenli mesafe yaratmadır; fiziksel müdahale kanuni yetki ve ölçülülük şartına bağlıdır.</blockquote>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "2 metrenin altı tehlikeli bölge, 2 metrenin üstü tepkisel bölge; temel görüşme duruşunda şahsa 45° açı ve en az 2 m mesafe.",
+            "academic": "Bu mesafe/açı kurs uygulama ezberidir; hukuken sabit bir metre sınırı değildir."
+          }
+        ]
+      },
+      {
+        "id": "kalabalik-yonetimi-7",
+        "title": "Toplumsal Olaylarda Müdahale ve Koruma Düzenleri",
+        "html": "\n<h3>Hat düzeni</h3>\n<p>Personelin tek veya çift sıra hâlinde yan yana konumlanmasıyla oluşturulan düzendir. Alan/yol sınırlandırma, iki grubu ayırma, bina veya kişiyi koruma ve kontrollü yönlendirme amacıyla kullanılabilir.</p>\n<h3>Kama düzeni</h3>\n<p>Öne doğru daralan düzen; kalabalık içinde geçiş koridoru açmak, grupları ayırmak veya görevli ekibin belirli bir noktaya ulaşmasını sağlamak gibi görevlerde eğitim konusu olarak ele alınmıştır.</p>\n<h3>Çember ve çatı düzeni</h3>\n<p>Çember, çevresel koruma; çatı ise belirli bir kişi/ekip veya hassas noktaya yönelik üst/çevre korumasını temsil eden formasyon başlıklarıdır. Uygulama, genel kolluk eğitim ve emir-komuta düzenine göre yürütülür.</p>\n<h3>Koruma düzenleri</h3>\n<p>Hakem koruma, sahne koruma ve araç koruma ders notunda farklı kalabalık ortamlarına uyarlanan koruma uygulamaları olarak yer almıştır.</p>"
+      },
+      {
+        "id": "kalabalik-yonetimi-8",
+        "title": "Cop: Türler, Duruşlar ve Hukuki Çerçeve",
+        "html": "\n<p>Cop, zor kullanma araçlarından biridir; kullanımı görevlinin kanuni yetkisi, zorunluluk ve ölçülülük ilkeleriyle sınırlıdır. Ders notunda kısa, orta, uzun, teleskopik ve farklı tasarımlı cop türleri ile bunların kullanım alanları sınıflandırılmıştır.</p>\n<h3>Duruş ve kontrol kavramları</h3>\n<p>Rahat, hazır, mülakat, savunma ve caydırma duruşları; görevlinin tehdit seviyesine göre beden pozisyonunu değiştirdiği eğitim kategorileridir. Amaç, mümkün olan en düşük müdahale düzeyinde kontrolü sağlamaktır.</p>\n<h3>Müdahale teknikleri</h3>\n<p>Ders notunda itme, dürtme, bloklama, taşıma ve kelepçelemeye yardımcı kontrol teknikleri sayılmıştır. Bu tekniklerin uygulaması yalnızca yetkili eğitim ortamında öğretilmeli; blog metni pratik uygulama talimatı olarak kullanılmamalıdır.</p>\n<p class=\"editorial-warning\"><strong>Güvenlik notu:</strong> Cop kullanımı; kanunilik, zorunluluk, ölçülülük ve hayati bölgelere zarar vermekten kaçınma ilkeleriyle sınırlandırılır. Uygulama teknikleri yalnızca yetkili eğitim ortamında çalışılmalıdır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Cop çeşitleri ve vuruş bölgeleri; öncelikli, ikincil ve son çare bölgeler şeklinde sınıflandırıldı.",
+            "academic": "Sınavda terminoloji olarak karşılaşılabilir. Blog, teknik uygulama talimatı vermeden bu sınıflandırmanın varlığını korur; gerçek kullanım kanunilik, zorunluluk ve ölçülülükle sınırlıdır."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Kısa cop 30–45 cm, orta cop 50–60 cm, uzun cop 70–90 cm.",
+            "academic": "Ölçüler kurs materyalindeki sınıflandırma olarak korunur; ürün standardı/kurum ekipmanı farklı olabilir."
+          }
+        ]
+      },
+      {
+        "id": "kalabalik-yonetimi-9",
+        "title": "Göz Yaşartıcı Maddeler, Koruyucu Donanım ve İlk Müdahale",
+        "html": "\n<h3>CS ve OC</h3>\n<p><strong>CS</strong>, kolluk uygulamalarında kullanılan sentetik göz yaşartıcı ajanlardan biridir. <strong>OC</strong> ise oleoresin capsicum temelli irritan maddedir ve yaygın biçimde “biber gazı” olarak anılır.</p>\n<p>Ders notunda gaz, aerosol ve duman yoluyla yayılım; maske ve filtre kullanımı; göz/solunum sistemi üzerindeki irritan etkiler gibi başlıklar ele alınmıştır.</p>\n<h3>Korunma ve ilk yardım</h3>\n<ul>\n<li>Maruziyet alanından temiz havaya çıkmak,</li>\n<li>gözleri ovuşturmamak,</li>\n<li>kontamine giysiyi dikkatle uzaklaştırmak,</li>\n<li>bol temiz suyla uygun yıkama yapmak,</li>\n<li>solunum sıkıntısı, ciddi göz bulgusu veya devam eden şikâyette sağlık desteği almak.</li>\n</ul>\n<p>Maske ve filtrelerin raf ömrü ürüne göre değişir; sınav notundaki “10 yıl” değeri evrensel değildir. Üretici son kullanma tarihi ve saklama koşulları esas alınmalıdır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Gaz maskesi ve filtre: açılmamış hâlde raf ömrü 10 yıl.",
+            "academic": "Bu değer ders ezberi olarak tutulur; gerçek raf ömrü ürün ve üreticiye göre değişir."
+          }
+        ]
+      },
+      {
+        "id": "kalabalik-yonetimi-10",
+        "title": "2911 Sayılı Kanun, Panik ve Çatışma Yönetimi",
+        "html": "\n<h3>Toplantı ve gösteri yürüyüşü hakkı</h3>\n<p>Anayasanın 34’üncü maddesi, herkesin önceden izin almadan silahsız ve saldırısız toplantı ve gösteri yürüyüşü düzenleme hakkını güvence altına alır. 2911 sayılı Kanun; bildirim, yer, güzergâh, zaman, düzenleme kurulu ve kamu düzeniyle ilgili uygulama ayrıntılarını düzenler.</p>\n<p>Ders notunda açık/kapalı toplantıların zaman sınırları, mahallî mülkî amirin toplantı alanlarıyla ilgili rolü, belirli alanlardaki sınırlamalar ve 2911 kapsamı dışındaki bazı toplantı türleri ezber başlıkları olarak yer almıştır. Bu ayrıntılar mevzuat değişikliklerine açık olduğundan güncel 2911 metniyle birlikte çalışılmalıdır.</p>\n<h3>Panik faktörleri</h3>\n<ul><li>Tehlikenin varlığı ve acil algılanması,</li><li>izdiham ve çıkışların yetersizliği,</li><li>takip/taklit davranışı,</li><li>korku ve güvenilir iletişim eksikliği,</li><li>ani fiziksel/kimyasal uyaranlar.</li></ul>\n<h3>Paniği azaltma</h3>\n<p>Doğru bilgi vermek, kaçış yollarını açık tutmak, tek ve anlaşılır iletişim kaynağı oluşturmak, çelişkili emirleri azaltmak ve gerekli kuvveti yalnızca ölçülü biçimde kullanmak temel yaklaşımlardır.</p>\n<h3>Çatışma nedenleri ve çözüm araçları</h3>\n<p>Kaynak paylaşımı, amaç ve algı farklılıkları, görev alanı belirsizliği, iletişim eksikliği, statü/çıkar/kişilik farklılıkları çatışma nedeni olabilir. Problem çözme, uzlaşma, kaçınma, uyma, hakeme başvurma, iletişimi artırma, kaynakları artırma ve yapısal değişiklik çatışma yönetimi araçları arasında sayılmıştır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Toplantı ve gösteri yürüyüşüne güneş doğmadan başlanamaz; açık yer toplantıları gece vaktinin başlamasıyla dağılacak şekilde, kapalı yer toplantıları 24.00'e kadar yapılır.",
+            "academic": "Bu zaman kalıpları sınav ezberi olarak korunur; 2911'in güncel metni ve değişiklikleri ayrıca kontrol edilir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yasak yerler ezberi: parklar, ibadethaneler, kamu hizmeti görülen bina/tesisler, TBMM çevresi, şehirlerarası karayolları, genel meydanlar ve geçiş güzergâhları.",
+            "academic": "Bu liste ham kurs notundaki sınav kaydıdır. Yasak/sınırlı alanların gerçek kapsamı 2911'in güncel maddeleri üzerinden değerlendirilir."
+          }
+        ]
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
+  },
+  {
+    "id": "kisi-koruma",
+    "no": "07",
+    "slug": "kisi-koruma",
+    "title": "Kişi Koruma",
+    "course": "Kişi Koruma",
+    "tag": "VIP / Yakın Koruma",
+    "updatedAt": "2026-09-30T20:59:00.000Z",
+    "imageCount": 2,
+    "introHtml": "<p>Kişi koruma dersi; koruma türleri, korunan kişiyle konumlanma, koruma halkaları, rutin ve bilgi güvenliği, öncü ekip, güzergâh planlama, darboğazlar, refakat koruması ve araçlı koruma prensiplerini içerir. Amaç saldırı tekniği öğretmek değil, koruma organizasyonunun riskleri nasıl öngördüğünü ve önlediğini anlamaktır.</p>",
+    "categories": [
+      {
+        "id": "kisi-koruma-1",
+        "title": "Kişi Korumanın Amacı ve Koruma Türleri",
+        "html": "\n<h3>Korumanın amacı</h3>\n<p>Kişi koruma; korunan kişinin yaşamına, vücut bütünlüğüne ve güvenli hareketine yönelik riskleri azaltmayı amaçlayan planlı güvenlik faaliyetidir. Koruma ihtiyacı kişinin “korku düzeyi” ile değil, somut tehdit ve risk değerlendirmesiyle belirlenir.</p>\n<h3>Koruma türleri</h3>\n<ul><li>Özel koruma,</li><li>yakın koruma/refakat koruması,</li><li>konut ve işyeri koruması,</li><li>mevzuatta veya adli-idari kararda düzenlenen çağrı/tedbir esaslı koruma uygulamaları.</li></ul>\n<p>Ders notunda koruma kararlarında valilik ve mahkeme kararlarının farklı bağlamlarda rol alabildiği belirtilmiştir. Uygulamada hangi makamın yetkili olduğu korumanın hukuki sebebine göre değerlendirilir.</p>"
+      },
+      {
+        "id": "kisi-koruma-2",
+        "title": "Birebir Koruma, Mesafe ve Konumlanma",
+        "html": "\n<p>Birebir korumada koruma görevlisi, korunan kişiyle hızlı temas kurabilecek fakat hareketini gereksiz yere kısıtlamayacak mesafede bulunur. Ders notunda “kol boyu” mesafe bu ilişkiyi hatırlatmak için kullanılmıştır.</p>\n<h3>Saat yönü referansı</h3>\n<p>Koruma eğitiminde korunan kişinin baktığı yön “saat 12” kabul edilerek çevresel yönler saat sistemiyle tarif edilebilir. Tek korumalı durumda görevli çevrenin tamamını izlemek zorunda olduğundan 360° farkındalık vurgulanır; ekip büyüdükçe sektörler paylaştırılır.</p>\n\n\n<h3>Sesli haberleşme</h3>\n<p>Ders materyali, koruma ekibinin kısa ve anlaşılır bir sesli haberleşme/ikaz sistemi belirlemesini ister. Tehdidin yönünü tarif etmek için saat yöntemi kullanılması da bu iletişim başlığı altında anlatılır.</p>\n<p>Bu çalışma notunda saat yöntemi yalnızca <strong>ortak yön referansı</strong> olarak tutulur; saldırı tekniği veya müdahale taktiği üretilmez.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "VIP her zaman saat 12'ye bakar; tek koruma 360°, iki korumada 12–6 / 6–12 sektör paylaşımı.",
+            "academic": "Koruma eğitiminde kullanılan saat yönü ezberidir; gerçek yerleşim tehdit, mekân ve ekip yapısına göre değişir."
+          }
+        ]
+      },
+      {
+        "id": "kisi-koruma-3",
+        "title": "Koruma Görevlisinin Sorumlulukları ve Bilgi Güvenliği",
+        "html": "\n<p>Yakın koruma görevlisi yalnızca fiziksel müdahaleye odaklanmaz. Korunan kişinin günlük rutini, hassasiyetleri, programı, ilişkileri ve hareket biçimi güvenli planlamanın girdileridir.</p>\n<ul>\n<li>Gereksiz rutinden kaçınmak,</li>\n<li>program ve güzergâh bilgisini ihtiyaç prensibiyle paylaşmak,</li>\n<li>korunan kişinin mahremiyetini korumak,</li>\n<li>çevresel riskleri önceden değerlendirmek,</li>\n<li>acil durumda korunan kişiyi tehlike alanından uzaklaştırmayı önceliklendirmek.</li>\n</ul>\n<blockquote>“Tam koruma” mümkün değildir; koruma hizmeti riski sıfırlamak yerine olasılığı ve etkiyi azaltmaya çalışır.</blockquote>"
+      },
+      {
+        "id": "kisi-koruma-4",
+        "title": "Koruma Halkaları",
+        "html": "\n<p>Koruma düzeni derslerde <strong>iç halka, orta halka ve dış halka</strong> olarak katmanlandırılır.</p>\n<ul>\n<li><strong>İç halka:</strong> Korunan kişiye en yakın personel ve doğrudan fiziksel/refakat güvenliği.</li>\n<li><strong>Orta halka:</strong> yakın çevre, giriş-çıkış, salon/alan kontrolü ve destek personeli.</li>\n<li><strong>Dış halka:</strong> daha geniş çevre, yaklaşma güzergâhları, araç/alan güvenliği ve erken uyarı.</li>\n</ul>\n<p>Katmanların amacı tehdidi korunan kişiye ulaşmadan daha dış bölgede fark etmek ve yönetmektir.</p>\n<div class=\"study-figure\">\n  <b>GÖRSEL HAFIZA // KORUMA HALKALARI</b>\n  <div class=\"ring-figure\" aria-label=\"VIP merkezde; iç, orta ve dış koruma halkaları\">\n    <div class=\"ring outer\">DIŞ HALKA</div>\n    <div class=\"ring middle\">ORTA HALKA</div>\n    <div class=\"ring inner\">İÇ HALKA</div>\n    <div class=\"vip\">VIP</div>\n  </div>\n  <p class=\"visual-caption\">Koruma halkalarının merkezden dışa doğru ilişkisini gösteren görsel özet.</p>\n</div>\n\n<h3>Dış halkada kontrol noktası</h3>\n<p>Ders materyali, kontrol noktasını özellikle dış çemberin girişlerinde konumlandırır. Şahıs, paket, araç ve kimlik kontrolleri bu katmanda yürütülür; amaç koruma halkasına girecek kişi ve eşyayı daha iç bölgeye ulaşmadan kontrol etmektir.</p>"
+      },
+      {
+        "id": "kisi-koruma-5",
+        "title": "Temel Koruma Prensipleri",
+        "html": "\n<ul>\n<li>Tam korumanın hiçbir zaman garanti edilemeyeceğini kabul etmek.</li>\n<li>Saldırı veya güvenlik ihlali ihtimalini sürekli risk değerlendirmesinde tutmak.</li>\n<li>Öngörülebilir rutini azaltmak.</li>\n<li>Bilgi güvenliği ve ketumluğu korumak.</li>\n<li>Planları önceden hazırlamak ve alternatifleri belirlemek.</li>\n<li>Korunan kişinin istekleri ile güvenlik gereklilikleri arasında profesyonel sınır kurmak.</li>\n</ul>"
+      },
+      {
+        "id": "kisi-koruma-6",
+        "title": "Öncü Ekip ve Etkinlik Hazırlığı",
+        "html": "\n<p>Öncü/advance ekip, korunan kişi gelmeden önce etkinlik veya ziyaret alanını değerlendirir. Görev; mekânı “saldırıya uygunluk” açısından değil, <strong>güvenli hareket, giriş-çıkış, sağlık desteği, tahliye ve koordinasyon</strong> açısından analiz etmektir.</p>\n<ul>\n<li>Alan ve giriş-çıkışları kontrol etmek,</li>\n<li>organizasyon sorumlularıyla koordinasyon kurmak,</li>\n<li>acil çıkış ve güvenli bekleme alanlarını belirlemek,</li>\n<li>alternatif güzergâh ve ulaşım planlarını hazırlamak,</li>\n<li>risk ve aksaklıkları koruma amirine raporlamak.</li>\n</ul>"
+      },
+      {
+        "id": "kisi-koruma-7",
+        "title": "Güzergâh, Alternatif Plan ve Darboğazlar",
+        "html": "\n<h3>Alternatif planlama</h3>\n<p>Ders notunda en az birkaç alternatif güzergâh/plan hazırlanması, kriz anında hangi seçeneğe geçileceğinin önceden belirlenmesi ve kaçış/tahliye noktalarının bilinmesi vurgulanmıştır.</p>\n<h3>Darboğaz / boğma noktası</h3>\n<p>Araç veya kişinin hareketinin yavaşladığı, yön değiştirme imkânının azaldığı ve çevresel kontrolün zorlaştığı noktalar koruma literatüründe riskli geçiş noktalarıdır. Trafik ışıkları, hemzemin geçitler, dar köprü/geçitler, kavşaklar ve araç iniş-biniş alanları bu açıdan değerlendirilir.</p>\n<p>Planlamanın amacı bu noktaları “kullanmak” değil, mümkün olduğunca azaltmak, alternatif oluşturmak ve geçiş süresini güvenli biçimde yönetmektir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "3 alternatif hazırlanır; ne kadar az darboğaz o kadar iyi; kriz anında tercih edilecek senaryo önceden bellidir.",
+            "academic": "Kurs planlama ezberi olarak korunur. Blog bunu koruyucu risk planlaması çerçevesinde ele alır."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "En yakın devlet kurumu en güvenli noktadır.",
+            "academic": "Bu ifade kurs notundaki ezberdir; gerçek acil durumda en güvenli yer olayın niteliğine, konuma ve kolluk/sağlık imkânına göre belirlenir."
+          }
+        ]
+      },
+      {
+        "id": "kisi-koruma-8",
+        "title": "Refakat Koruması ve Öncü İstihbarat",
+        "html": "\n<p>Refakat koruması, korunan kişinin günlük hareketi boyunca devam eden yakın koruma düzenidir. Koruma kararının süresi ve kapsamı karar metni/mevzuatla belirlenir.</p>\n<h3>Öncü istihbarat</h3>\n<p>Koruma bağlamında “istihbarat”, kişisel veri veya hukuka aykırı takip anlamına gelmez; ziyaret yeri, program, ulaşım, kalabalık, mevcut tehdit bilgisi, hava/afet koşulları ve organizasyonel riskler gibi <strong>güvenli planlama için gerekli yasal bilgilerin</strong> toplanıp değerlendirilmesidir.</p>"
+      },
+      {
+        "id": "kisi-koruma-9",
+        "title": "Saldırı Riskinin Safhaları: Koruma Açısından Farkındalık",
+        "html": "\n<p>Ders notunda suikast/saldırı olayları; hedef seçimi, hedef hakkında bilgi toplama, planlama, saldırının icrası ve kaçış gibi safhalara ayrılmıştır. Bu sınıflandırma <strong>saldırı planı öğretmek için değil</strong>, koruma ekibinin hangi aşamalarda önleyici belirti araması gerektiğini anlamak için kullanılır.</p>\n<ul>\n<li>Korunan kişinin program/rutin bilgilerinin sızmasını önlemek,</li>\n<li>şüpheli keşif veya olağandışı tekrarları fark etmek,</li>\n<li>mekân ve güzergâh risklerini önceden azaltmak,</li>\n<li>acil müdahale ve tahliye planı oluşturmak,</li>\n<li>olay sonrasında genel kollukla koordinasyon sağlamak.</li>\n</ul>"
+      },
+      {
+        "id": "kisi-koruma-10",
+        "title": "Araçlı Koruma ve İniş-Biniş Güvenliği",
+        "html": "\n<p>Araçlı korumada temel amaç makam/ana araç ile destek araçlarının güvenli, koordineli ve gereksiz duraksama yaratmadan hareket etmesidir.</p>\n<ul>\n<li>Araçların teknik olarak göreve hazır tutulması,</li>\n<li>sürücünün görev ve iletişim planını bilmesi,</li>\n<li>ana aracın çıkışını engelleyecek park düzeninden kaçınılması,</li>\n<li>koruma personelinin iniş-biniş anında çevre kontrolünü öncelemesi,</li>\n<li>korunan kişinin araçtan iniş ve araca biniş süresini güvenli şekilde yönetmek.</li>\n</ul>\n<p>Ders notundaki araç konumları ve metre bazlı mesafeler eğitim senaryosuna özgü olduğundan akademik metinde evrensel kural olarak verilmemiştir.</p>\n<div class=\"study-figure\">\n  <b>ARAÇLI KORUMA // KAVRAMSAL YERLEŞİM</b>\n  <div class=\"vehicle-figure\">\n    <div>Öncü / Eskort<br><small>güzergâh & koordinasyon</small></div>\n    <div class=\"main\">Ana / Makam Aracı<br><small>korunan kişi</small></div>\n    <div>Destek / Koruma<br><small>ekip desteği</small></div>\n  </div>\n  <p class=\"visual-caption\">Araçlı korumada ekip bileşenlerinin kavramsal ilişkisini gösteren görsel özet.</p>\n</div>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Şoför araçtan inmez; araç çalışır ve hazır olur; korumalar VIP'den önce iner; çekirdek kadro: eskort + makam aracı + korumalar; eskort araç yaklaşık 100 m ileridedir.",
+            "academic": "Kursta geçen araçlı koruma ezberi olarak korunur. Sabit mesafe ve araç dizilimi gerçek görevde standart, tehdit ve planlamaya göre değişebilir."
+          }
+        ]
+      },
+      {
+        "id": "kisi-koruma-11",
+        "title": "Koruma Planında Öncelikler ve Profesyonel Sınırlar",
+        "html": "\n<p>Koruma planında korunan kişinin kişisel araç tercihi, konforu veya alışkanlığı güvenlik değerlendirmesinin yerine geçmez. Öncelik; tehdidin azaltılması, güvenli hareket, alternatif plan, sağlık/acil durum erişimi ve ekip koordinasyonudur.</p>\n\n<div class=\"study-figure\">\n  <b>ARAÇLI KORUMA // GÖRSEL HAFIZA</b>\n  <p>Araçlı korumada görev dağılımı ve araç düzeni, risk ve görev planına göre belirlenir.</p>\n</div>"
+      },
+      {
+        "id": "kisi-koruma-12",
+        "title": "Kontrol Noktaları, Kimlik Kartları ve Rozetler",
+        "html": "\n<h3>Kontrol noktaları</h3>\n<p>Ders materyalia göre kontrol noktaları çoğunlukla dış çemberde; bina veya güvenlikli alan girişlerinde kurulur. Şahıs, paket, araç ve kimlik kontrolleri bu noktalardan yürütülür.</p>\n<h3>Kimlik kontrolü ve tanınma</h3>\n<p>Koruma halkalarında görevli personelin, önemli kişiye kimlerin ulaşabileceğini bilmesi gerekir. Tanınma; yüz aşinalığı, görevli listeleri, kimlik/giriş kartları ve gerektiğinde yerel güvenlik personelinin desteğiyle sağlanır.</p>\n<h3>Rozet</h3>\n<p>Rozet, kişinin belirli etkinlik/alan için davetli veya yetkili olduğunu uzaktan fark etmeye yarayan tanıtma aracıdır. Kabul, konuşma, yemek ve toplantı gibi etkinliklerde kullanılabileceği ders materyalinde belirtilir.</p>\n<h3>Kimlik / giriş kartı</h3>\n<ul>\n<li>Amaca göre fotoğraf, imza, seri numarası ve erişim alanı işaretleri taşıyabilir.</li>\n<li>Kaybolduğunda geçiş yetkisi iptal edilmelidir.</li>\n<li>Uzun süre aynı kartın kullanılması taklit riskini artırabileceğinden kart yönetimi düzenli yapılmalıdır.</li>\n<li>Özel etkinlik kartlarının dağıtımı kontrollü tutulmalı ve giriş listeleriyle eşleştirilebilmelidir.</li>\n</ul>",
+        "examNotes": []
+      },
+      {
+        "id": "kisi-koruma-13",
+        "title": "Koruma Teşkilatı: Amir, Ekip Amiri, Yakın Koruma ve Sürücü",
+        "html": "\n<h3>Koruma müdürü / amiri / şefi</h3>\n<p>Ders materyalinde koruma amiri; programı takip eden, tehdit bilgisini ilgili birimlerden alan, koruma planlarını hazırlatan, ekibi planlayan ve görev dönüşü değerlendirme yapan koordinasyon sorumlusu olarak anlatılır.</p>\n<h3>Yakın koruma ekip amiri</h3>\n<p>Koruma amirinin bulunmadığı durumda onun görevini devralabilecek hazırlıkta olmalı; ekibin aktif elemanı olarak korunan kişiye yakın çalışmalı, ekibi denetlemeli ve diğer görevli unsurlarla iletişimi sürdürmelidir.</p>\n<h3>Yakın koruma görevlisi</h3>\n<p>Koruma eğitimi, iletişim, protokol/görgü, ilk yardım, görev yetkilerini bilme, fiziki yeterlilik ve ekip çalışması ders materyalinde temel nitelikler arasında sayılmıştır.</p>\n<h3>Sürücü</h3>\n<p>Sürücünün aracı, güzergâhı, hastane/kolluk noktalarını ve araçtaki acil ekipmanı tanıması; aracı çalışır durumda tutması ve ekip koordinasyonuna uyması vurgulanmıştır.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Programlanan kalkıştan 30 dakika önce araç hazır; hareketten 15 dakika önce motor çalışır; görev bölgesinde sürücü aracı terk etmez.",
+            "academic": "Bu süreler ders materyalindaki operasyon ezberidir; gerçek görev planı kurum talimatı ve güvenlik planına göre değişebilir."
+          }
+        ]
+      },
+      {
+        "id": "kisi-koruma-14",
+        "title": "Yaya Koruma Düzenleri ve Personel Sayısı",
+        "html": "\n<p>Yaya koruma düzeni, korunan kişinin araç dışında bulunduğu açık/kapalı alanlarda devam eden iç-halka korumasıdır. Ders materyalinin temel ilkeleri:</p>\n<ul>\n<li>360° çevresel farkındalık sağlamak.</li>\n<li>Kalabalıkta halkayı daraltmak, daha açık ve düşük riskli alanda esnekleştirmek.</li>\n<li>Düzeni çevre ve tehdit düzeyine göre değiştirebilmek.</li>\n<li>Ekipte boşluk oluştuğunda kapatmak ve her personelin kendi sorumluluk alanını bilmesini sağlamak.</li>\n<li>Korunan kişiyi gereksiz yere kısıtlamadan güvenli hareket ettirmek.</li>\n</ul>\n<h3>Personel sayısına göre sınav sınıflandırması</h3>\n<ul>\n<li><strong>1 personel:</strong> az/orta tehdit için tek koruma yaklaşımı.</li>\n<li><strong>2 personel:</strong> iki görevlinin çevresel alanı paylaşması.</li>\n<li><strong>3 personel:</strong> ders materyali ezberinde kişi başına 120° sektör.</li>\n<li><strong>4 personel:</strong> amir korunan kişiye odaklanırken diğerleri çevreyi gözetler.</li>\n<li><strong>5 personel:</strong> ders materyalinde “koruyucu karo” ifadesi geçer.</li>\n<li><strong>6 personel:</strong> tehdit yönünde personel yoğunlaştırılabileceği belirtilir.</li>\n</ul>",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "3 personelli yaya korumada her eleman 120° koruma sağlar; 5 personelde 'koruyucu karo' ifadesi kullanılır.",
+            "academic": "Bu sınıflandırma ders materyalindaki sınav dilidir; gerçek düzen tehdit değerlendirmesi ve kurum planına göre değişebilir."
+          }
+        ]
+      },
+      {
+        "id": "kisi-koruma-15",
+        "title": "Araç, Tren, Deniz Aracı ve Binalarda Koruma",
+        "html": "\n<h3>Araçlarla koruma</h3>\n<p>Ders materyali, araçtan yaya korumaya ve yaya korumadan araçlı korumaya geçiş anlarını ayrıca önemli görür. Araç bakımının, sürücü hazırlığının, alternatif güzergâhların ve iniş-biniş alanlarının önceden değerlendirilmesini vurgular.</p>\n<h3>Trende koruma</h3>\n<p>Demiryolu idaresi ve yerel güvenlikle koordinasyon, güzergâhın ve kritik altyapı noktalarının önceden değerlendirilmesi, korunan kişinin bulunduğu bölümün erişim kontrolü ve biniş-inişin planlanması ders materyalinde ana başlıklardır.</p>\n<h3>Deniz araçlarında koruma</h3>\n<p>Yolcu/mürettebat ve bagaj kontrolü, can kurtarma araçları, haberleşme, hava durumu ve güzergâh planlaması temel güvenlik başlıkları olarak verilir.</p>\n<h3>Binalarda koruma</h3>\n<p>Korumanın işyeri, ikamet, otel ve diğer binalarda kesintisiz sürmesi; fiziksel güvenlik önlemleriyle desteklenmesi gerektiği vurgulanır. Ders materyali fiziki güvenlik örnekleri arasında duvar/çit, bariyer, turnike, alarm ve aydınlatmayı sayar.</p>",
+        "examNotes": []
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
+  },
+  {
+    "id": "yangin-guvenligi",
+    "no": "08",
+    "slug": "yangin-guvenligi-ve-tabii-afet",
+    "title": "Yangın Güvenliği ve Tabii Afet",
+    "course": "Yangın Güvenliği ve Tabii Afet",
+    "tag": "Yangın / Afet",
+    "updatedAt": "2026-09-12T12:01:27.240Z",
+    "imageCount": 0,
+    "introHtml": "<p>Yangın güvenliği dersi; yangın ve yanma kavramlarını, acil durum organizasyonunu, yangın sınıflarını, yangın nedenlerini, algılama ve söndürme sistemlerini, koruyucu donanımı, gazların özelliklerini ve taşınabilir yangın söndürücülerin temel yapısını kapsar. Ham dersteki eski sınıflandırmalar güncel teknik terminolojiyle düzeltilmiştir.</p>",
+    "categories": [
+      {
+        "id": "yangin-guvenligi-1",
+        "title": "İtfaiye Tarihçesi ve Teşkilatın Kuruluş Mantığı",
+        "html": "\n<h3>Ders tarihçesi notları</h3>\n<p>Notlarda Osmanlı döneminde 1579 tarihli yangın tedbirleri ve 18. yüzyılda tulumbacılık teşkilatının gelişimi tarihsel başlangıç noktaları olarak işlenmiştir. “Fransız Davut/Davut Tulumbası” ifadesi ders anlatımındaki tarihçe notudur; akademik kullanımda dönem kaynaklarıyla ayrıca doğrulanmalıdır.</p>\n<h3>İtfaiye teşkilatının planlanması</h3>\n<p>Yerel itfaiye yapılanması; nüfus, yapılaşma ve imar yoğunluğu, coğrafi/bitkisel riskler, sanayi ve özel riskli tesisler, ulaşım ve mevcut müdahale kapasitesi gibi değişkenler dikkate alınarak planlanır. Türkiye’de belediye itfaiyeleri yerel yangınla mücadelede temel kurumsal aktörlerdendir.</p>\n<h3>Orman yangınları</h3>\n<p>Ders notunda orman yangınları tepe, örtü ve gövde yangını şeklinde sınıflandırılmıştır. Bu sınıflandırma yangının orman dokusunda ilerlediği katmanı anlatır.</p>"
+      },
+      {
+        "id": "yangin-guvenligi-2",
+        "title": "İşyerlerinde Acil Durum Planı ve Ekipler",
+        "html": "\n<p>İşyerinde yangın güvenliği, yalnızca söndürücü bulundurmakla sınırlı değildir. Acil durum planı; alarm/bildirim, tahliye, toplanma, söndürme, kurtarma, koruma ve ilk yardım organizasyonunu birlikte ele alır.</p>\n<ul>\n<li><strong>Söndürme:</strong> başlangıç aşamasındaki yangına güvenli ve eğitimli ilk müdahale.</li>\n<li><strong>Kurtarma:</strong> insanların güvenli tahliyesi; yalnızca eşya kurtarmaya indirgenemez.</li>\n<li><strong>Koruma:</strong> tahliye güzergâhı, çevre ve kritik alan güvenliğinin sağlanması.</li>\n<li><strong>İlk yardım:</strong> yaralanan kişiye profesyonel sağlık yardımı gelene kadar uygun ilk yardım.</li>\n</ul>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Sınav notundaki “her ekip en az iki kişi / çalışan sayısının belirli yüzdesi” ifadesi evrensel kural değildir. Destek elemanı sayısı işyerinin tehlike sınıfı, çalışan sayısı ve yürürlükteki acil durum mevzuatına göre belirlenir.</p>"
+      },
+      {
+        "id": "yangin-guvenligi-3",
+        "title": "Yangın, Yanma ve Yanma Üçgeni",
+        "html": "\n<h3>Yangın</h3>\n<p>Kontrol altındaki ateşin istenmeyen biçimde yayılması ve can, mal veya çevre için tehlike oluşturması yangın olarak değerlendirilir.</p>\n<h3>Yanma</h3>\n<p>Yanma, yanıcı madde ile oksitleyicinin yeterli aktivasyon enerjisi/ısı altında gerçekleşen ekzotermik kimyasal tepkimesidir. Temel eğitimde bu ilişki <strong>yanıcı madde + ısı + oksijen</strong> şeklindeki “yanma üçgeni” ile anlatılır.</p>\n<h3>Yanıcı maddenin fiziksel hâli</h3>\n<ul><li>Katı: odun, tekstil, kâğıt vb.</li><li>Sıvı: benzin, solvent ve çeşitli yanıcı sıvılar.</li><li>Gaz: LPG, doğal gaz, hidrojen vb.</li></ul>"
+      },
+      {
+        "id": "yangin-guvenligi-4",
+        "title": "Hava, Oksijen, Isı ve Yanma Çeşitleri",
+        "html": "\n<h3>Havanın bileşimi</h3>\n<p>Kuru havanın yaklaşık %78’i azot, %21’i oksijendir; kalan yaklaşık %1’lik bölümün büyük kısmı argon başta olmak üzere diğer gazlardan oluşur. Sınav notundaki “%1 diğer zehirli gazlar” ifadesi teknik olarak yanlıştır.</p>\n<h3>Oksijen</h3>\n<p>Oksijen renksiz ve kokusuz bir gazdır; yanıcı değildir fakat yanmayı güçlü biçimde destekleyen <strong>oksitleyici</strong> bir gazdır. Sıvı oksijen yaklaşık −183 °C civarında oluşur ve özel kriyojenik şartlarda depolanır.</p>\n<h3>Isı kaynakları</h3>\n<p>Güneş, yıldırım ve volkanik faaliyet doğal ısı/ateşleme kaynakları; açık alev, elektrik arkı, sıcak yüzey, sürtünme ve insan yapımı cihazlar ise yapay ateşleme kaynakları olabilir.</p>\n<h3>Yanma çeşitleri</h3>\n<ul><li>Yavaş yanma,</li><li>hızlı yanma,</li><li>parlama/patlama niteliğindeki çok hızlı yanma,</li><li>kendiliğinden tutuşma.</li></ul>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Söndürmede oksijen %12'nin altına düşürülmeye çalışılır; ısı düşürülür.",
+            "academic": "Bu, kurs notundaki yanma üçgeni ezberidir. Gerçek söndürme stratejisi yangın türü ve söndürme ajanına göre belirlenir."
+          }
+        ]
+      },
+      {
+        "id": "yangin-guvenligi-5",
+        "title": "Yangının Belirtileri ve KDA Ezberi",
+        "html": "\n<p>Ders notunda erken farkındalık için <strong>KDA = Koku → Duman → Alev</strong> ezberi kullanılmıştır. Bu, sınav ve farkındalık için pratik bir hatırlatmadır; her yangının zorunlu olarak bu sırayla geliştiği anlamına gelmez. Bazı yangınlar görünür duman veya belirgin koku oluşmadan hızla alevlenebilir.</p>\n<p>Erken algılama sistemleri yangının türüne göre duman, ısı, alev veya belirli gazları algılayan sensörlerden yararlanabilir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "KDA = Koku → Duman → Alev.",
+            "academic": "Sınav ezberi olarak aynen korunur; her yangının fiziksel gelişimi zorunlu olarak bu sırayı izlemez."
+          }
+        ]
+      },
+      {
+        "id": "yangin-guvenligi-6",
+        "title": "Yangın Sınıfları ve Uygun Söndürme Yaklaşımı",
+        "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Sınıf</th><th>Yanıcı madde</th><th>Genel yaklaşım</th></tr>\n<tr><td>A</td><td>Katı maddeler</td><td>Su, köpük veya uygun çok amaçlı söndürücü; malzemeye göre seçilir.</td></tr>\n<tr><td>B</td><td>Yanıcı sıvılar / sıvılaşabilen katılar</td><td>Köpük, kuru kimyevi toz veya uygun gazlı sistem; suyun doğrudan kullanımı riskli olabilir.</td></tr>\n<tr><td>C</td><td>Yanıcı gazlar</td><td>Öncelik mümkünse gaz akışını güvenli biçimde kesmek; uygun söndürücü kullanmak.</td></tr>\n<tr><td>D</td><td>Yanıcı metaller</td><td>Metal türüne uygun özel D sınıfı söndürücü.</td></tr>\n<tr><td>F</td><td>Pişirme yağları</td><td>F sınıfına uygun söndürücü / yangın battaniyesi; su kullanılmaz.</td></tr>\n</tbody></table></div>\n<blockquote><strong>Önemli düzeltme:</strong> Güncel TS EN 2 sınıflandırmasında “E = elektrik yangını” şeklinde ayrı bir yangın sınıfı yoktur. Enerjili elektrikli ekipman, yangının yakıt sınıfından ayrı olarak elektrik çarpması ve iletkenlik riski yaratır; mümkünse enerji kesilir ve ekipmana uygun söndürücü seçilir.</blockquote>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "E sınıfı = Elektrik yangını; CO₂ veya KKT ile müdahale.",
+            "academic": "Bu kalıp klasik ÖGG/yangın eğitim materyallerinde sınav sorusu olarak görülebilir. Güncel TS EN 2'de ayrı 'E sınıfı' yoktur; elektrik enerjisi ayrı bir tehlike olarak değerlendirilir."
+          }
+        ]
+      },
+      {
+        "id": "yangin-guvenligi-7",
+        "title": "Yangın Nedenleri, Risk Kaynakları ve Tüp/Tank Tehlikeleri",
+        "html": "\n<h3>Yangın nedenleri</h3>\n<ul><li>Koruyucu önlemlerin yetersizliği,</li><li>ihmal ve dikkatsizlik,</li><li>kazalar ve teknik arızalar,</li><li>başka bir yangından sıçrama,</li><li>kasıt/sabotaj,</li><li>yıldırım ve diğer doğa olayları.</li></ul>\n<h3>Sık risk kaynakları</h3>\n<p>Bacalar, sigara ve açık alev, LPG/doğal gaz tesisatı, elektrik kıvılcımları, akaryakıt, sıcak yüzeyler ve yıldırım ders notunda başlıca risk kaynakları olarak sayılmıştır.</p>\n<h3>Basınçlı kaplar</h3>\n<p>LPG tüpü ve benzeri basınçlı kaplar yangında ısıya maruz kaldığında basınç artışı ve kap yırtılması riski oluşturabilir. “Boş” görünen kapta dahi yanıcı buhar/hava karışımı bulunabileceğinden güvenli kabul edilmez.</p>"
+      },
+      {
+        "id": "yangin-guvenligi-8",
+        "title": "Yapısal Önlemler, Algılama ve Sabit Söndürme Sistemleri",
+        "html": "\n<h3>Yapısal ve tesisat önlemleri</h3>\n<p>Yangın bölmelendirmesi, yangına dayanımlı yapı elemanları, kaçış yolları, acil aydınlatma, elektrik ve gaz tesisatının güvenliği ile bakım programları önleyici güvenliğin temelidir.</p>\n<h3>Algılama sistemleri</h3>\n<ul><li>Duman dedektörleri,</li><li>ısı dedektörleri,</li><li>alev dedektörleri,</li><li>belirli risklerde gaz dedektörleri.</li></ul>\n<h3>Sabit söndürme sistemleri</h3>\n<ul><li>Sprinkler/yağmurlama sistemleri,</li><li>köpüklü sistemler,</li><li>CO₂ ve diğer gazlı söndürme sistemleri,</li><li>kuru kimyevi tozlu sistemler,</li><li>özel riskler için temiz ajanlı sistemler.</li></ul>\n<p>Halon ajanları tarihsel olarak kullanılmıştır; ozon tabakasına etkileri nedeniyle üretim ve kullanımları uluslararası çevre düzenlemeleriyle büyük ölçüde sınırlandırılmıştır.</p>"
+      },
+      {
+        "id": "yangin-guvenligi-9",
+        "title": "Yangından Koruyucu Donanım ve Söndürme Maddeleri",
+        "html": "\n<h3>Koruyucu donanım</h3>\n<p>Yangınla mücadelede baret, koruyucu çizme/eldiven, ısıya dayanımlı koruyucu kıyafet ve eğitimli ekipler için temiz hava solunum cihazı gibi donanımlar kullanılabilir. Donanımın seviyesi müdahale görevine ve risk değerlendirmesine göre belirlenir.</p>\n<h3>Başlıca söndürme maddeleri</h3>\n<ul><li>Su,</li><li>köpük,</li><li>kuru kimyevi toz,</li><li>karbondioksit ve diğer uygun gazlı ajanlar,</li><li>metal veya yağ yangınları için özel ajanlar.</li></ul>\n<p>“En iyi söndürücü” diye tek bir madde yoktur; yanan maddenin sınıfı ve çevredeki elektrik/kimyasal riskler seçimi belirler.</p>"
+      },
+      {
+        "id": "yangin-guvenligi-10",
+        "title": "Yanıcı, Oksitleyici ve İnert Gazlar",
+        "html": "\n<h3>Yanıcı gaz örnekleri</h3>\n<p>Asetilen, hidrojen, metan, etan, propan, LPG ve doğal gaz yanıcı gazlara örnektir. Karbonmonoksit de uygun konsantrasyonda yanabilir.</p>\n<h3>Oksitleyici gaz</h3>\n<p><strong>Oksijen</strong> yanıcı değildir; yanmayı destekleyen oksitleyici gazdır.</p>\n<h3>İnert / yanmayı desteklemeyen gazlar</h3>\n<p>Sınav notunda helyum, karbondioksit ve argon “yakıcı gazlar” altında yazılmıştır; bu sınıflandırma yanlıştır. Helyum ve argon inert gazlardır; CO₂ de normal koşullarda yanmayı desteklemez ve bazı söndürme sistemlerinde kullanılır. Kapalı ortamda bu gazların yüksek yoğunluğu boğucu/asfiksan risk oluşturabilir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yakıcı gazlar: Oksijen, Helyum, Karbondioksit, Argon.",
+            "academic": "Kurs notu böyle tutulmuş. Teknik olarak oksijen oksitleyicidir; helyum ve argon inerttir, CO₂ yanmayı desteklemez."
+          }
+        ]
+      },
+      {
+        "id": "yangin-guvenligi-11",
+        "title": "Taşınabilir Yangın Söndürücüler: Yapı, Kontrol ve Kullanım",
+        "html": "\n<h3>Temel parçalar</h3>\n<ul><li>Gövde,</li><li>manometre (basınç göstergesi bulunan modellerde),</li><li>emniyet pimi,</li><li>tetik/kol mekanizması,</li><li>hortum,</li><li>lans/nozul.</li></ul>\n<p>ABC kuru kimyevi tozlu söndürücülerde monoamonyum fosfat (MAP) yaygın söndürme bileşenlerinden biridir. Basınçlandırmada azot gibi inert gazlar kullanılabilir.</p>\n<h3>Kontrol</h3>\n<p>Manometreli cihazlarda ibrenin üreticinin normal çalışma aralığında olması gerekir. Mühür/pim, hortum, gövde ve son bakım tarihi düzenli kontrol edilir.</p>\n<h3>Kullanım prensibi</h3>\n<p>Kullanıcı güvenli kaçış yolunu arkasında tutar, rüzgârı ve yangın sınıfını değerlendirir, güvenli mesafeden alevin değil <strong>yanan yüzey/kaynağın tabanına</strong> yönelir ve süpürme hareketiyle müdahale eder. Yangın büyümüşse veya duman/ısı güvenli yaklaşımı engelliyorsa tahliye ve profesyonel itfaiye müdahalesi önceliklidir.</p>\n<p class=\"editorial-warning\"><strong>Düzeltme:</strong> Sınav notundaki “90 cm montaj yüksekliği” ve “4 yıl geçerlilik” ifadeleri tüm söndürücüler için evrensel kural olarak yayımlanmadı; yerleşim, periyodik kontrol ve dolum süreleri yürürlükteki yönetmelik/standart ve üretici talimatına göre belirlenir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yangın tüpü: yerden yüksekliği 90 cm; 4 yıl geçerlidir; azot iticidir; ibre yeşilde olmalıdır.",
+            "academic": "Sınav ezberi olarak tamamı korunur. Montaj ve bakım/periyot ayrıntıları cihaz tipi, standart ve mevzuata göre ayrıca doğrulanmalıdır."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Yangın tüpü yaklaşık 100–150 cm geriden, kaynağa yönelerek süpürme/tarama hareketiyle kullanılır.",
+            "academic": "Bu, kurs pratiğinde geçen kullanım ezberidir. Cihazın tipi, güvenli mesafe ve üretici talimatı gerçek uygulamada önceliklidir."
+          }
+        ]
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "İstanbul İtfaiyesi · Yangın Güvenliği Terminolojisi / TS EN 2",
+        "href": "https://itfaiye.ibb.gov.tr/tr/terminoloji.html"
+      }
+    ]
+  },
+  {
+    "id": "guvenlik-tedbirleri",
+    "no": "09",
+    "slug": "guvenlik-tedbirleri",
+    "title": "Güvenlik Tedbirleri",
+    "course": "Güvenlik Tedbirleri",
+    "tag": "Saha Güvenliği",
+    "updatedAt": "2026-09-30T20:59:00.000Z",
+    "imageCount": 0,
+    "introHtml": "<p>Güvenlik tedbirleri dersi; nokta ve devriye hizmetlerini, zor kullanmanın genel çerçevesini, eşgal tanımını, olay yeri korumasını ve bulgu/delil sınıflandırmasını içerir. Dersin temel yaklaşımı, güvenliğin önleyici yönü ile olay sonrası adli süreç arasındaki sınırı doğru kurmaktır.</p>",
+    "categories": [
+      {
+        "id": "guvenlik-tedbirleri-1",
+        "title": "Mesleki Hazırlık, Kimlik ve Donanım",
+        "examNotes": [],
+        "html": "\n<p>Özel güvenlik görevlisinin göreve hazır olması; geçerli kimlik, uygun üniforma, görev ekipmanı, iletişim araçları, görev talimatı ve işverenin yerine getirmesi gereken bildirim/sigorta süreçlerinin birlikte tamamlanmasıyla değerlendirilir.</p>\n<p>Göreve hazırlık kapsamında <strong>bröve, üniforma, kimlik, ekipman ve emniyet bildirimi</strong> mesleki düzen ve görev disiplini unsurları olarak birlikte değerlendirilir.</p>\n<div class=\"study-figure\">\n  <b>GÖREVE HAZIRLIK ZİNCİRİ</b>\n  <div class=\"study-flow\"><span>Kimlik</span><i>→</i><span>Üniforma</span><i>→</i><span>Ekipman</span><i>→</i><span>Görev Talimatı</span><i>→</i><span>Bildirim</span></div>\n</div>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-2",
+        "title": "Nokta Hizmetleri ve Nöbet Devir-Teslim",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Nokta görevlisi görev noktasını 20 adımdan fazla terk edemez.",
+            "academic": "Kurs/sınav ezberi olarak korunur; her kurum için evrensel kanuni mesafe sınırı değildir."
+          },
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Değişime gelmeyene 3 maaş/yevmiye; görev yerini terk edene meslekten ihraç/sözleşme feshi.",
+            "academic": "Ders notundaki yaptırım kalıbıdır; gerçek yaptırım iş sözleşmesi, toplu sözleşme ve disiplin mevzuatına göre değerlendirilir."
+          }
+        ],
+        "html": "\n<h3>Nokta nedir?</h3>\n<p>Nokta; kamu düzeninin ve güvenliğin desteklenmesi, suçların önlenmesi, özel dikkat gerektiren kişi/tesis/alanların korunması ve çevreye güven verilmesi amacıyla sınırları belirlenmiş sabit görev yeridir. Burada görev yapan personele <strong>nokta görevlisi</strong> denir.</p>\n<h3>Nokta görevlisinin temel görevleri</h3>\n<ul>\n<li>Görev alanına izinsiz girişleri önlemek.</li>\n<li>Korunan kişi, bina, araç ve çevredeki olağan dışı değişiklikleri izlemek.</li>\n<li>Gelişen olayları amire ve gerektiğinde genel kolluğa bildirmek.</li>\n<li>Görev alanındaki insan ve araçları tanımaya çalışmak; rutin ile anormali ayırt etmek.</li>\n<li>Görev kayıtlarını ve nöbet defterini doğru tutmak.</li>\n</ul>\n<h3>Nöbet değişimi / devir-teslim</h3>\n<p>Sınav notunda önemli bir ayrıntı olarak, <strong>nöbet değişimi yapılmadan veya yerine görevli bırakılmadan noktanın terk edilmemesi</strong> yazılmıştır. Görevi devralacak personel gelmezse görev yeri doğrudan bırakılmaz; amire haber verilir ve kurumun devir-teslim prosedürü uygulanır.</p>\n<p>Devir-teslimde; devam eden olaylar, teslim alınan anahtar/cihaz/silah veya zimmet, arızalar, ziyaretçiler, özel talimatlar ve dikkat edilmesi gereken riskler yeni görevliye aktarılır.</p>\n<div class=\"study-figure\">\n  <b>NÖBET DEĞİŞİMİ</b>\n  <div class=\"study-flow\"><span>Mevcut Durumu Kontrol Et</span><i>→</i><span>Bilgiyi Aktar</span><i>→</i><span>Zimmeti Teslim Et</span><i>→</i><span>Kayıt / İmza</span><i>→</i><span>Görevi Devret</span></div>\n</div>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-3",
+        "title": "Devriye Hizmetleri: Tanım, Özellik, Tür ve Yöntem",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Devriye; belirli süre ve güzergahta, en az 2 personel, resmi üniformalı, kimlikli ve tam teçhizatlı yapılır.",
+            "academic": "Sınavda bu liste ezber olarak gelebilir. Gerçek personel sayısı ve uygulama görev planı/risk değerlendirmesine bağlı olabilir."
+          },
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Devriye turu öncesi hazırlık: Psikolojik hazırlık – Zihinsel hazırlık – Fiziksel hazırlık.",
+            "academic": "Bu üçlü sınıflandırma ders materyalinda doğrudan sınav kalıbı olarak geçmektedir."
+          },
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Telsiz mesajları kısa, açık ve anlaşılır olmalı; anlaşılması güç kelimelerde fonetik alfabe kullanılmalıdır.",
+            "academic": "Bu ifade Güvenlik Tedbirleri ders materyali'inin doğrudan sınav başlıklarından biridir."
+          }
+        ],
+        "html": "\n<h3>Devriye nedir?</h3>\n<p>Devriye; sorumluluk bölgesinde caydırıcılığı sağlamak, suç ve tehlikeyi önceden fark etmek, can-mal güvenliğini korumak, meydana gelen olaylarda ilk güvenlik tedbirlerini almak ve ihtiyaç hâlinde kişilere yardım etmek amacıyla belirli alanı hareketli biçimde kontrol etme faaliyetidir.</p>\n<h3>Devriye görevlisinin özellikleri</h3>\n<ul>\n<li>Çevresine karşı duyarlı, dikkatli ve tetikte olmalıdır.</li>\n<li>İyi iletişim kurabilmelidir.</li>\n<li>Görev bölgesini, acil çıkışları, kritik noktaları ve çalışanları tanımalıdır.</li>\n<li>Birden fazla devriye varsa diğer ekiplerle irtibatı sürdürmelidir.</li>\n<li>Telsiz ve diğer haberleşme araçlarını kurallara uygun kullanmalıdır.</li>\n<li>Ekipmanının bakımlı ve kullanılabilir durumda olmasını sağlamalıdır.</li>\n</ul>\n<h3>Devriye türleri — kullanılan vasıtaya göre</h3>\n<ul><li>Yaya,</li><li>motorize/araçlı,</li><li>motosikletli,</li><li>bisikletli,</li><li>atlı,</li><li>özel görev alanına uyarlanmış devriye.</li></ul>\n<h3>Devriye yöntemleri</h3>\n<ul>\n<li><strong>Olağan / rutin devriye:</strong> görevin normal akışı içinde yapılan genel kontrol.</li>\n<li><strong>Planlı devriye:</strong> belirlenmiş zaman ve/veya güzergâh planına göre yapılan devriye.</li>\n<li><strong>Dairesel devriye:</strong> alanın çevresini/katmanlarını dolaşarak kontrol etmeye dayanan yöntem.</li>\n<li><strong>Geri dönüşlü devriye:</strong> gidilen güzergâhın kontrol edilerek ters yönde tekrar taranması esasına dayanan yöntem.</li>\n</ul>\n<blockquote>Resmî sınavlarda “karesel”, “sınırlı”, “olağanüstü” ve bazı kitapçıklarda “doğrusal” gibi ifadeler çeldirici olarak kullanılabiliyor; soruda <em>devriye türü</em> ile <em>devriye yöntemi</em> ayrımını kaçırmamak gerekir.</blockquote>\n<h3>Devriyenin görev çeşitleri</h3>\n<ul>\n<li><strong>Önleyici:</strong> suç veya tehlikeyi gerçekleşmeden engellemeye yönelik faaliyetler.</li>\n<li><strong>Koruyucu:</strong> can, mal ve korunan alanın güvenliğini sürdürmek.</li>\n<li><strong>Yardım:</strong> yardıma ihtiyacı bulunan kişilere görev sınırında destek olmak.</li>\n<li><strong>Adli:</strong> suç meydana geldikten sonra olaya müdahale, olay yeri/delil koruma, bildirim, yakalama ve teslim gibi kanunun verdiği ilk işlemler.</li>\n</ul>\n\n<h3>Devriye turu öncesi hazırlık</h3>\n<ul>\n<li><strong>Psikolojik hazırlık:</strong> görev bölgesi, bölgedeki halk, bina ve tesisler hakkında bilgi edinme ve göreve zihnen hazırlanma.</li>\n<li><strong>Zihinsel hazırlık:</strong> göreve odaklanma, devriyenin amacı ve görev talimatlarını zihinde netleştirme.</li>\n<li><strong>Fiziksel hazırlık:</strong> kılık-kıyafet, teçhizat, araç ve gereç kontrolünü yapma.</li>\n</ul>\n<h3>Yaya devriyede ders ders materyalininın vurguları</h3>\n<ul>\n<li>Kısa duraklamalarla çevreyi kontrol etmek.</li>\n<li>Her zaman aynı güzergâhı kullanmamak.</li>\n<li>Dükkan/bina camları, girişler ve olağan dışı kişiler gibi çevresel değişiklikleri gözlemek.</li>\n<li>Elektrik, su ve gaz altyapısındaki olağan dışı durumları fark etmek.</li>\n<li>Durdurma ve kimlik sorma yetkisini görev ve kanuni sınır içinde; caydırma, suçun önlenmesi ve olay sonrası failin tespiti bağlamında değerlendirmek.</li>\n</ul>\n\n<h3>Telsiz ve haberleşme disiplini</h3>\n<ul>\n<li>Mesaj kısa, açık ve anlaşılır olmalıdır.</li>\n<li>Çağrılarda görev kodu/numarası kullanılması ve gereksiz isim-rütbe kullanımından kaçınılması ders materyali sorularında vurgulanır.</li>\n<li>Anlaşılması güç kelimelerde fonetik alfabe kullanılır.</li>\n<li>Telsiz sesi çevreye yayılmayacak, görevlinin duyabileceği seviyede tutulur.</li>\n</ul>\n<p>Ders materyalinin soru havuzunda Türkçe fonetik alfabe örnekleri (Fatsa, Edirne, Niğde, Denizli, İstanbul vb.) ayrıca sınanmıştır.</p>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-4",
+        "title": "Kontrol Noktası, Güvenlik Kontrolü ve Üst Arama",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Üst arama yöntemleri: ayakta durdurarak, diz çöktürerek, yüzüstü yatırarak, duvara veya araca yaslayarak. Sırtüstü yatırarak arama sınavlarda 'yöntem değildir' çeldiricisi olarak soruluyor.",
+            "academic": "Bu liste sınav terminolojisi olarak korunur. Fiziksel arama yetkisinin hukuki dayanağı ve uygulanabileceği yer/şartlar ayrıca 5188 sayılı Kanun ve genel kolluk gözetimiyle birlikte değerlendirilir."
+          },
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Kontrol noktasında üstünü ve eşyasını aratmak istemeyen kişiye ısrar edilmez; ancak içeriye girişine izin verilmez.",
+            "academic": "Bu cümle ders materyalindaki doğrudan soru-cevap kalıbıdır. Uygulamada görev alanının hukuki statüsü ve özel düzenlemeler dikkate alınır."
+          }
+        ],
+        "html": "\n<h3>Kontrol noktası</h3>\n<p>Kontrol noktası, korunan alana giriş-çıkışın düzenlendiği; personel, ziyaretçi, eşya ve gerektiğinde araç kontrollerinin yapıldığı güvenlik katmanıdır. İş yoğunluğu, risk seviyesi, görevli sayısı, kontrolsüz giriş-çıkış ihtimali ve görevlinin dikkat/monotonluk riski planlamada dikkate alınır.</p>\n<h3>Kontrol noktası personeli</h3>\n<ul>\n<li>Yönlendirme görevlisi,</li>\n<li>kontrol görevlisi,</li>\n<li>koruma görevlisi,</li>\n<li>kontrol nokta amiri / sorumlusu.</li>\n</ul>\n<p>Resmî soru kitapçıklarında <strong>ilk yardım görevlisi</strong>, “kontrol noktasında bulunması zorunlu personel değildir” biçiminde çeldirici olarak kullanılmıştır.</p>\n<h3>Cihazla güvenlik kontrolü</h3>\n<p>5188 sayılı Kanun çerçevesinde ÖGG; koruma ve güvenliğini sağladığı alanlara girmek isteyen kişileri duyarlı kapıdan geçirebilir, üstlerini <strong>el dedektörüyle</strong> kontrol edebilir ve eşyalarını <strong>X-Ray veya benzeri güvenlik sistemlerinden</strong> geçirebilir.</p>\n<div class=\"study-figure\">\n  <b>GİRİŞ KONTROLÜ</b>\n  <div class=\"study-flow\"><span>Yönlendir</span><i>→</i><span>Duyarlı Kapı</span><i>→</i><span>El Dedektörü</span><i>→</i><span>Eşya / X-Ray</span><i>→</i><span>Sonucu Değerlendir</span></div>\n</div>\n<h3>El ile / fiziki üst araması</h3>\n<p>Ders notunda ÖSYM sınavları ve spor müsabakaları gibi özel düzenlemeye tabi alanlarda, <strong>genel kolluğun denetim ve gözetiminde</strong> el ile/yoklama suretiyle üst aramasının ayrıca gündeme gelebildiği yazılmıştır. Genel kural olarak ÖGG’nin kontrol yetkisi güvenlik cihazlarıyla sınırlıdır; kanunun veya özel düzenlemenin izin verdiği hâller dışında rutin el ile üst araması yapılamaz.</p>\n<h3>Sınavda geçen üst arama pozisyon adları</h3>\n<ul>\n<li>Ayakta durdurarak,</li>\n<li>diz çöktürerek,</li>\n<li>yüzüstü yatırarak,</li>\n<li>duvara yaslayarak,</li>\n<li>araca yaslayarak.</li>\n</ul>\n<p>Bu bölüm yalnızca sınavdaki yöntem adlarını korur; fiziksel aramanın uygulama tekniği, eğitimli personel ve yetkili uygulama ortamında öğretilir.</p>\n<h3>Yakalanan kişinin güvenlik araması</h3>\n<p>Yakalanan kişinin kendisine veya başkasına zarar verebilecek bir nesne taşıdığına dair güvenlik ihtiyacı ortaya çıktığında, kanunun izin verdiği ölçüde kontrol yapılır; işlem ve bulunan eşya gerekiyorsa tutanakla kayıt altına alınarak genel kolluğa teslim sürecine dâhil edilir.</p>\n\n<h3>Kontrol noktasının çalışma esasları</h3>\n<p>Ders materyalinda kontrol noktasının çalışma saatleri ve risk yoğunluğuna göre planlanması; iletişim/acil haberleşme imkânı ve gerektiğinde yardımcı güvenlik cihazlarıyla desteklenmesi vurgulanır.</p>\n<ul>\n<li>Ziyaretçinin kimlik bilgileri alınır ve kayıt altına alınır.</li>\n<li>Eşyası güvenlik kontrolünden geçirilir.</li>\n<li>Ziyaretçi kartı verilir; gerekiyorsa refakatçi görevlendirilir.</li>\n<li>Ziyaret edilecek kişiyle görüşülerek ziyaret teyit edilir.</li>\n<li>Kontrolü kabul etmeyen kişiye zorla arama uygulanmaz; ders materyalinın sınav yaklaşımında içeri girişe izin verilmez.</li>\n</ul>\n<h3>Kontrol noktasında sayılan araç-gereçler</h3>\n<p>X-Ray cihazı, el/kapı tipi metal dedektörleri, yangın söndürücü, ilk yardım malzemeleri, bilgisayar-yazıcı, kırtasiye, yedek anahtarlar, gerekli trafik işaretleri, silah dolabı ve soyunma dolabı ders materyalinde örnek ekipman olarak sayılmıştır.</p>\n<h3>Özellikli şahıslar</h3>\n<p>Ders materyali; değerli madde taşıyanlar, hasta/fiziksel engelli kişiler, yaşlılar, çocuklar, diplomatik kişiler, VIP'ler ve kurum çalışanlarını “özellikli şahıslar” başlığı altında ayrıca ele alır. Bu başlık kişiye göre ayrımcı muamele değil, kontrolün sağlık/hukuk/statü şartlarına göre uygunlaştırılması bağlamındadır.</p>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-5",
+        "title": "Yakalama, Emanete Alma ve Genel Kolluğa Teslim",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Özel Güvenlik Hizmetlerine Dair Kanunda ÖGG'nin “el koyma / zapt etme” işleminin sınav karşılığı: Emanete alma.",
+            "academic": "ders materyali bunu doğrudan soru-cevap biçiminde işler; yetki terminolojisi sınav için bu şekilde korunur."
+          }
+        ],
+        "html": "\n<h3>Yakalama</h3>\n<p>Özel güvenlik görevlisinin yakalama yetkisi; suçüstü, hakkında yakalama emri/mahkûmiyet kararı bulunması, kişinin vücudu veya sağlığı bakımından mevcut bir tehlikeden korunması ve olay yeri/delil koruma tedbirlerine direnilmesi gibi kanunda gösterilen hâllerle sınırlıdır.</p>\n<h3>Emanete alma</h3>\n<p>Arama veya güvenlik kontrolü sırasında bulunan; suç teşkil eden, delil olabilecek, suç teşkil etmese bile tehlike doğurabilecek ya da terk edilmiş/bulunmuş eşya, <strong>genel kolluğa derhâl bildirmek şartıyla</strong> emanete alınabilir.</p>\n<h3>ÖGG ne yapmaz?</h3>\n<ul>\n<li>Gözaltı işlemi uygulamaz.</li>\n<li>Şüphelinin adli ifadesini almaz.</li>\n<li>Olay yerinde kriminal delil toplama/inceleme yapmaz.</li>\n<li>Yakalanan kişiyi soruşturma amacıyla sorgulamaz.</li>\n</ul>\n<div class=\"study-figure\">\n  <b>OLAY SONRASI TEMEL AKIŞ</b>\n  <div class=\"study-flow\"><span>Güvenliği Sağla</span><i>→</i><span>Yakalama / Emanet (şart varsa)</span><i>→</i><span>Genel Kolluğa Bildir</span><i>→</i><span>Olay Yeri / Delili Koru</span><i>→</i><span>Tutanakla Teslim</span></div>\n</div>\n\n<h3>Arama – yakalama – emanete alma ayrımı</h3>\n<p>Ders materyali soru havuzu; <strong>tutuklama</strong>, <strong>kimlik tespiti</strong> ve <strong>konut araması</strong> gibi yetkilerle ÖGG'nin kanuni yetkilerini birbirinden ayırmaya özellikle odaklanır. “El koyma/zapt etme” ifadesi sorulsa da 5188 bağlamında ÖGG için ezberlenecek karşılık <strong>emanete alma</strong> olarak verilir.</p>\n<p>Yakalama sonrası kişinin kendisine veya üçüncü kişilere zarar verebilecek eşya taşıma riskine karşı yapılan kaba güvenlik kontrolünün ayrıca tutanak konusu olabileceği ders materyali sorularında yer alır.</p>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-6",
+        "title": "Zor Kullanma ve Kelepçe",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Uygulama türüne göre kelepçe çeşitleri: parmak, zincir, masonet ve plastik kelepçe; “anahtar kelepçe” çeldiricidir.",
+            "academic": "Bu sınıflandırma ders materyalinın soru havuzundan korunmuştur."
+          }
+        ],
+        "html": "\n<h3>Zor kullanmanın temel şartları</h3>\n<ul><li>kanuni dayanak,</li><li>zorunluluk,</li><li>direnme veya saldırıyla bağlantı,</li><li>ölçülülük / dengelilik,</li><li>gerektiği ölçüde kademelilik.</li></ul>\n<h3>Ders notundaki sıra</h3>\n<p>Sınav notunda zor kullanma akışı <strong>fiziki gösteri → sözlü ikaz → bedeni kuvvet → maddi güç → kanuni şartları varsa silah kullanma</strong> şeklinde yazılmıştır. Ayrıca “ikaz et, kademeyi orantıyla artır, orantının gerektirdiği yerde bırak” cümlesi ezber mantığı olarak korunmuştur.</p>\n<blockquote>Silah kullanma, her olayda otomatik olarak ulaşılması gereken bir “son basamak” değildir; ayrıca ve ağır hukuki şartlara tabidir.</blockquote>\n<h3>Kelepçe</h3>\n<p>Kelepçe, yakalanan kişinin kaçma veya kendisine/başkasına zarar verme riskini kontrol etmek için kullanılan kısıtlama aracıdır. Sınav notunda <strong>“bir parmak boşluk bırak; kelepçe kendiliğinden sıkabilir”</strong> uyarısı özellikle yazılmıştır.</p>\n<ul>\n<li>Gereksiz sıkılık dolaşım ve doku hasarı oluşturabilir.</li>\n<li>Kısıtlama boyunca kişinin durumu gözlenmelidir.</li>\n<li>Gereklilik ortadan kalktığında kısıtlama sürdürülmemelidir.</li>\n</ul>\n<p>Kelepçe çeşitleri sınav terminolojisi içinde ayrıca değerlendirilir; uygulama türleri aşağıdaki sınav notunda gösterilmiştir.</p>\n\n<h3>Kelepçe çeşitleri — ders materyali soru havuzu</h3>\n<p>ders materyali soru havuzunda <strong>parmak kelepçe, zincir kelepçe, masonet kelepçe ve plastik kelepçe</strong> uygulama türüne göre örnekler arasında sayılır; “anahtar kelepçe” ise bu sınıflandırmada çeldirici olarak kullanılmıştır.</p>\n<p>Kelepçeleme pozisyonlarının isimleri de sınav terminolojisi olarak geçmektedir; uygulama tekniği bu çalışma notunda tarif edilmez.</p>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-7",
+        "title": "Eşgal, Kişi ve Eşya Tanımlama",
+        "examNotes": [],
+        "html": "\n<p><strong>Eşgal</strong>, bir kişi veya eşyanın ayırt edilmesini sağlayan tanımlayıcı bilgilerin sistematik şekilde aktarılmasıdır.</p>\n<h3>Kişi eşgali</h3>\n<p>Boy, beden yapısı, saç/yüz özellikleri, belirgin iz veya dövme gibi nispeten sabit özellikler önceliklidir. Kıyafet gibi değişebilir özellikler olay anı için kaydedilebilir; <strong>“sert mizaçlı”, “sinirli tip”</strong> gibi öznel kişilik yorumları eşgalin nesnel ölçütü değildir.</p>\n<h3>Eşya tanımı</h3>\n<p>Cins, renk, şekil, marka/model, seri numarası, ayırt edici hasar/işaret ve bulunduğu yer-zaman gibi gözlenebilir nitelikler kullanılır. Kişisel yorum yerine tarif edilebilir özellik yazılır.</p>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-8",
+        "title": "Olay Yeri İncelemesi, Bulgu ve Delil",
+        "examNotes": [],
+        "html": "\n<h3>Olay</h3>\n<p>Kanunlarda suç olarak tanımlanan veya adli açıdan araştırılması gereken fiilin belirli zaman ve mekânda gerçekleşmesidir.</p>\n<h3>Olay yeri</h3>\n<p>Olayın işlenişi ile mağdur, şüpheli/fail, kullanılan araçlar ve izler arasındaki ilişkinin kurulabildiği dinamik alanı ifade eder.</p>\n<h3>Olay yerine ilk gelen güvenlik ekibinin öncelikleri</h3>\n<ol>\n<li>Can güvenliği ve devam eden tehlikeyi değerlendirmek; gerekiyorsa 112 ve ilgili acil birimleri çağırmak.</li>\n<li>Suçun/tehlikenin devamını görev ve yetki sınırları içinde önlemeye çalışmak.</li>\n<li>Genel kolluğa gecikmeden bilgi vermek.</li>\n<li>Olay yerini sınırlandırmak; gereksiz kişi giriş-çıkışını önlemek.</li>\n<li>İz, eşya ve bulguların yerini değiştirmemek; zorunlu bir değişiklik yapılmışsa kaydetmek.</li>\n<li>Olayı gören kişileri ve ilk gözlemleri not etmek; adli ifade alma işlemine girişmemek.</li>\n<li>Genel kolluk geldiğinde yapılan işlemleri ve korunmuş alanı teslim etmek.</li>\n</ol>\n<div class=\"study-figure\">\n  <b>İLK GELEN EKİP // EZBER AKIŞI</b>\n  <div class=\"study-flow\"><span>Can Güvenliği</span><i>→</i><span>Bildirim</span><i>→</i><span>Çevre Emniyeti</span><i>→</i><span>Delili Koru</span><i>→</i><span>Not Al</span><i>→</i><span>Kolluğa Teslim</span></div>\n</div>\n<h3>Olay yeri incelemesinin amacı — sınav notundaki dört madde</h3>\n<ol>\n<li>Olay yerinin doğal özelliklerini olduğu gibi tespit etmek ve muhafaza etmek.</li>\n<li>Olayın fail veya faillerinin tespitine katkı sağlayacak izleri korumak.</li>\n<li>Tespit edilen özelliklerin kayıt altına alınmasını sağlamak.</li>\n<li>Fail–mağdur–olay yeri ilişkisini ortaya koyabilecek maddi bulguların bilimsel incelemeye ulaşmasını sağlamak.</li>\n</ol>\n<p><strong>Önemli:</strong> ÖGG olay yerinde kriminal inceleme ve delil toplama yapmaz; öncelikli görevi alanı ve mevcut izleri bozulmadan korumaktır. Delil toplama genel kolluğun olay yeri inceleme birimlerinin görevidir.</p>\n<h3>Bulgu ve delil</h3>\n<p><strong>Bulgu</strong>, olay yeri–fail–mağdur ilişkisini açıklamaya yardımcı olabilecek her türlü materyal veya izdir. <strong>Delil</strong>, hukuka uygun biçimde elde edilip soruşturma/yargılama sürecinde ispat aracı olarak değerlendirilebilen bulgudur.</p>\n<blockquote>Ezber: <strong>Her delil bir bulgudur; her bulgu delil değildir.</strong></blockquote>\n<h3>Maddi bulgu / delil sınıfları</h3>\n<ul>\n<li><strong>Biyolojik:</strong> kan, tükürük, doku, kıl/saç ve diğer biyolojik materyal.</li>\n<li><strong>Kimyasal:</strong> yanıcı/parlayıcı/patlayıcı madde kalıntıları, barut artıkları, narkotik maddeler, ilaçlar ve gazlar.</li>\n<li><strong>Fiziksel:</strong> silah, fişek, kovan/çekirdek, cam, giysi, para ve diğer nesneler.</li>\n<li><strong>İz:</strong> parmak, el, ayak/ayakkabı, diş, lastik ve alet/temas izleri.</li>\n<li><strong>Beyan:</strong> resmî soru havuzunda şüpheli, tanık, sanık veya mağdur anlatımları ayrıca beyan delili/bulgusu bağlamında sorulmaktadır.</li>\n</ul>\n<div class=\"study-figure\">\n  <b>OLAY YERİ KORUMA</b>\n  <div class=\"study-flow\"><span>Can Güvenliği</span><i>→</i><span>Kolluğa Haber</span><i>→</i><span>Alanı Sınırla</span><i>→</i><span>İzi / Bulguyu Bozma</span><i>→</i><span>Gözlemi Kaydet</span></div>\n</div>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-9",
+        "title": "Şüphe, Şüpheli Paket / Araç ve Durumsal Farkındalık",
+        "examNotes": [],
+        "html": "\n<p>Hatırlatma ezberi: <strong>“Bulunmaması gereken yerde bulunan her şey şüphelidir.”</strong> Bu cümle, kişileri önyargıyla suçlu ilan etmek için değil, çevredeki olağandışı değişiklikleri fark etmeyi hatırlatmak için kullanılır.</p>\n<h3>Şüpheli paket</h3>\n<p>Bağlamına uymayan şekilde bırakılmış, sahibi belirlenemeyen veya dış görünüşünde olağan dışı özellikler bulunan paketlerde görevli paketi açıp kurcalamaz. Çevre emniyetini alır, kişileri uzaklaştırır ve genel kolluğa/ilgili acil birime haber verir.</p>\n<h3>Şüpheli araç</h3>\n<p>Tek başına aracın eski model olması şüphe sebebi değildir. Plakasız/hasarlı plaka, yasak veya olağan dışı konumda park, aynı alan çevresinde tekrarlayan olağandışı hareket ve sürücünün olay bağlamındaki davranışları birlikte değerlendirilir.</p>\n<h3>Not alma ve tutanak disiplini</h3>\n<ul>\n<li>Tarih, saat ve yer açık yazılır.</li>\n<li>Gözlenen olgu ile kişisel yorum birbirinden ayrılır.</li>\n<li>Silinti/kazıntı yapılmaz; düzeltme usulüne uygun gösterilir.</li>\n<li>Gerekirse kroki ve yön bilgisi kullanılır.</li>\n<li>İmzadan kaçınılması hâli tutanakta belirtilir.</li>\n</ul>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-10",
+        "title": "Tutanak, Rapor ve Not Alma",
+        "examNotes": [
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Tutanağın 6 bölümü: Başlık – Giriş – Gelişme – Sonuç – Tarih ve Saat – İmza.",
+            "academic": "Güvenlik Tedbirleri ders materyalininda doğrudan sınav kalıbı olarak verilmiştir."
+          },
+          {
+            "label": "Kurs / sınav ifadesi",
+            "wording": "Tutanakta en az 2 resmî görevlinin imzası bulunur; kişi imzalamazsa 'İmzadan imtina etti' notu düşülür.",
+            "academic": "Bu ifade ders materyalindaki sınav yaklaşımıdır; belgenin türüne ve güncel usule göre özel hükümler ayrıca dikkate alınır."
+          }
+        ],
+        "html": "\n<h3>Tutanak nedir?</h3>\n<p>Ders materyalinda tutanak; bir iş veya olay sonucunda yapılanların, elde edilen bilgi-belge-duyumların belirli bir düzen içinde yazılı hâle getirilmesi olarak tanımlanır.</p>\n<h3>Tutanağın 6 bölümü</h3>\n<ol>\n<li><strong>Başlık:</strong> olayın/işlemin mahiyetini gösterir.</li>\n<li><strong>Giriş:</strong> olayın öğreniliş şekli, zaman ve yer gibi hazırlayıcı bilgileri içerir.</li>\n<li><strong>Gelişme:</strong> olayın oluş şekli, ilgili kişilerin kimlikleri, gözlenen iz/bulgular ve beyanların aktarıldığı bölümdür.</li>\n<li><strong>Sonuç:</strong> alınan önlemler ve tutanağın tamamlandığını gösteren kapanış bölümüdür.</li>\n<li><strong>Tarih ve saat:</strong> düzenleme/bitiş zamanı belirtilir.</li>\n<li><strong>İmza:</strong> ilgili kişilerin ad, unvan ve imzaları yer alır; imzadan kaçınma ayrıca yazılır.</li>\n</ol>\n<h3>Tutanak yazımında ders materyalinin vurguları</h3>\n<ul>\n<li>Yer, zaman ve olayın öğreniliş şekli açık yazılır.</li>\n<li>Silinti/kazıntı yapılmaz; yanlış ifade üzeri tek çizgiyle düzeltilir.</li>\n<li>Birden çok sayfa varsa sayfalar numaralandırılır ve imza disiplini korunur.</li>\n<li>Olay ve işlemle ilgili gözlenebilir bilgiler açık, kısa ve anlaşılır yazılır.</li>\n</ul>\n<h3>Ders materyalinde sayılan tutanak türleri</h3>\n<p>Olay yeri inceleme/tespit, görgü ve tespit, üst arama, ihbar, suçüstü, yangın yeri, buluntu eşya, nöbet devir-teslim, arama-yakalama-el koyma ve teslim tutanakları örneklenmiştir.</p>\n<h3>Rapor yazma</h3>\n<p>Rapor; görev sırasında görülen, bilinen veya meydana gelen durum/olayın üst makama belirli bir düzen içinde bildirilmesidir. Ders materyalinde temel iskelet <strong>Ne? Ne zaman? Nerede? Neden? Nasıl?</strong> sorularıyla verilir.</p>\n<p>Rapor türleri <strong>sözlü, görsel, elektronik ve yazılı</strong>; rapor çeşitleri ise <strong>bilgi, olay bildirim, gözlem ve ekspertiz</strong> olarak sıralanmıştır.</p>\n<h3>Not alma</h3>\n<p>Ders materyalinde not alma; duyu organlarıyla algılanan ve görev açısından önemli olan bilgilerin, unutulmaması ve daha sonra kullanılabilmesi için yazılı kayda geçirilmesi olarak açıklanır.</p>"
+      },
+      {
+        "id": "guvenlik-tedbirleri-11",
+        "title": "Güvenlik Tedbirleri – Hızlı Müfredat Tekrarı",
+        "examNotes": [
+          {
+            "label": "Sınav terminolojisi",
+            "wording": "EGM temel eğitim programında Güvenlik Tedbirleri kapsamında “el koyma” ifadesi de kullanılır.",
+            "academic": "5188 sayılı Kanunda ÖGG bakımından sınavda ayırt edilmesi gereken esas yetki adı çoğu durumda 'emanete alma'dır. Müfredattaki ifade ile kanuni yetki terminolojisini birlikte tanımak gerekir."
+          }
+        ],
+        "html": "\n<p>Güvenlik Tedbirleri dersinde sınav öncesi birlikte tekrar edilmesi gereken ana başlıklar:</p>\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Konu</th><th>Hatırlanacak ana fikir</th></tr>\n<tr><td>Kontrol hizmetleri</td><td>Giriş-çıkış, cihazla kontrol, ziyaretçi ve eşya kontrolü</td></tr>\n<tr><td>Nokta hizmetleri</td><td>Sabit görev yeri, nöbet ve devir-teslim disiplini</td></tr>\n<tr><td>Devriye hizmetleri</td><td>Hazırlık, türler, yöntemler ve önleyici görev</td></tr>\n<tr><td>Yakalama</td><td>Kanuni sebepler, ölçülülük ve genel kolluğa teslim</td></tr>\n<tr><td>Arama</td><td>Güvenlik kontrolü, üst arama terminolojisi ve yetki sınırları</td></tr>\n<tr><td>Emanete alma</td><td>Bulunan veya tehlikeli eşyanın kayıt ve teslim süreci</td></tr>\n<tr><td>Zor kullanma</td><td>Kanunilik, zorunluluk, denge ve kademelilik</td></tr>\n<tr><td>Tutanak / rapor</td><td>Başlık, giriş, gelişme, sonuç, tarih-saat ve imza</td></tr>\n<tr><td>Olay yeri</td><td>Can güvenliği, çevre emniyeti, bulgu ve delilin korunması</td></tr>\n<tr><td>Şüpheli kişi / paket / araç</td><td>Durumsal farkındalık, güvenli mesafe ve genel kolluğa bildirim</td></tr>\n<tr><td>Uyuşturucu madde bilgileri</td><td>Temel sınıflandırma, belirtiler, bağımlılık kavramları ve hukuk başlıkları</td></tr>\n</tbody></table></div>"
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      },
+      {
+        "label": "EGM · 114. Temel Eğitim Sınavı (12.04.2025) — devriye, üst arama, biyolojik bulgu, şüpheli araç",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Sinav-Kitapcik/Ozel-Guvenlik-Sinavi/114-90/TEMEL_-A-KITAPCIGI.pdf"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Temel Meslek Standardı — kontrol / arama",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/CALISTAY-RAPORU-03062024.pdf"
+      },
+      {
+        "label": "EGM · 91. Temel Eğitim Sınavı — devriye ve kontrol noktası örnekleri",
+        "href": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Duyurular/OZEL-GUVENLIK-91-TEMEL-EGITIM-YAZILI-SINAVI_A-KITAPCIGI.pdf"
+      },
+      {
+        "label": "EGM · 122. Temel Eğitim / 98. Yenileme Sınavı (2026) — en güncel yayımlanan kitapçıklar",
+        "href": "https://egm.gov.tr/ozelguvenlik/ozel-guvenlik-122-temel-egitim-ve-98-yenileme-egitimi-sinavina-ait-soru-kitapciklari-ve-cevap-anahtarlari-yayimlanmistir"
+      }
+    ]
+  },
+  {
+    "id": "genel-kolluk",
+    "no": "10",
+    "slug": "genel-kolluk-iliskileri",
+    "title": "Genel Kolluk İlişkileri",
+    "course": "Genel Kolluklar İlişkileri",
+    "tag": "Kolluk Koordinasyonu",
+    "updatedAt": "2026-09-16T07:54:17.680Z",
+    "imageCount": 0,
+    "introHtml": "<p>Genel Kolluk İlişkileri dersi; özel güvenliğin polis, jandarma ve sahil güvenlikle koordinasyonunu, Özel Güvenlik Denetleme Başkanlığının görev alanını, eğitim/sınav organizasyonunu ve EGM’nin özel güvenlik alanındaki dijital sistem ve projelerini kapsar. Sınav notundaki eski “Daire Başkanlığı” ifadeleri güncel kurumsal adla ayrıştırılmıştır.</p>",
+    "categories": [
+      {
+        "id": "genel-kolluk-1",
+        "title": "Genel Kolluk ile Özel Güvenlik Arasındaki Hukuki İlişki",
+        "html": "\n<p>Genel kolluk; genel emniyet ve asayişten sorumlu <strong>Polis, Jandarma ve Sahil Güvenliği</strong> ifade eder. Özel güvenlik görevlileri ise 5188 sayılı Kanunla verilen sınırlı yetkileri kendi görev alan ve sürelerinde kullanır.</p>\n<p>5442 sayılı <strong>İl İdaresi Kanunu</strong> ve özel güvenlik mevzuatı, kamu düzeni bakımından mülki idare amirinin ve genel kolluğun koordinasyon rolünü düzenler. Sınav notundaki “İl Özel İdaresi Kanunu” ifadesi bu nedenle düzeltilmiştir.</p>\n<ul><li>Suç veya şüpheli olayı genel kolluğa bildirmek,</li><li>olay yerini ve delilleri korumak,</li><li>yakalanan kişiyi ve emanete alınan suç unsurunu genel kolluğa teslim etmek,</li><li>müşterek görevde yetki ve emir-komuta sınırına uymak.</li></ul>"
+      },
+      {
+        "id": "genel-kolluk-2",
+        "title": "Özel Güvenlik Denetleme Başkanlığı: Kurumsal Yapı ve Görev Alanı",
+        "html": "\n<p>Özel Güvenlik Denetleme Başkanlığı; özel güvenlik hizmetleri ile sivil kullanım amaçlı silah ve patlayıcı madde alanındaki merkezî EGM birimidir. 2019’daki yeniden yapılanmayla eski Özel Güvenlik Daire Başkanlığının alt birimleri ve görevleri Denetleme Başkanlığı çatısı altında birleştirilmiştir.</p>\n<h3>Başlıca görev alanları</h3>\n<ul>\n<li>Özel güvenlik şirketleri, birimleri ve eğitim kurumları,</li>\n<li>alarm izleme merkezleri,</li>\n<li>özel güvenlik görevlileri ve yöneticiler,</li>\n<li>eğitim ve sınav hizmetleri,</li>\n<li>denetim,</li>\n<li>sivil silah ve patlayıcı madde işlemleri,</li>\n<li>genel kolluk–özel güvenlik koordinasyonu,</li>\n<li>dijital sistem ve projeler.</li>\n</ul>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Emniyet Genel Müdürlüğü Denetleme Daire Başkanlığı.",
+            "academic": "Kurs materyalinde eski/alışılmış adlandırma görülebilir. Güncel kurumsal yapı 'Özel Güvenlik Denetleme Başkanlığı' adını kullanır."
+          }
+        ]
+      },
+      {
+        "id": "genel-kolluk-3",
+        "title": "Eğitim ve Sınav Hizmetleri",
+        "html": "\n<h3>Başkanlığın yürüttüğü sınav başlıkları</h3>\n<ul>\n<li>Özel Güvenlik Temel Eğitim Sınavı,</li>\n<li>Özel Güvenlik Yenileme Eğitimi Sınavı,</li>\n<li>A/B/C sınıfı Ateşleyici Yeterlilik Belgesi sınavları,</li>\n<li>Silah Tamir Yeri Açma sınavı,</li>\n<li>Görev hayvanı ve idarecisine ilişkin sınavlar.</li>\n</ul>\n<h3>Sınav organizasyonu</h3>\n<p>Sınav komisyonlarının oluşturulması, soru bankası ve sınav evrakının hazırlanması, optik formlar, salon/görevli planlaması, matbaa-kurye güvenliği, sınavın uygulanması, değerlendirilmesi ve sonuçların açıklanması bu hizmet zincirinin parçalarıdır.</p>"
+      },
+      {
+        "id": "genel-kolluk-4",
+        "title": "Şirketler, Eğitim Kurumları ve ÖGG İşlemleri",
+        "html": "\n<p>Başkanlık; özel güvenlik şirketi, eğitim kurumu, özel güvenlik birimi ve alarm izleme merkezlerine ilişkin kurucu/temsilci/yönetici başvuruları ile faaliyet izin süreçlerinde merkezî görevler yürütür.</p>\n<h3>ÖGG süreçleri</h3>\n<ul><li>Temel ve yenileme eğitim süreçleri,</li><li>silahlı/silahsız yeterlilik işlemleri,</li><li>sınav ve kimlik sistemleri,</li><li>eğitim standartları,</li><li>alan, branş ve hizmet içi eğitimlerin geliştirilmesi.</li></ul>"
+      },
+      {
+        "id": "genel-kolluk-5",
+        "title": "Denetleme Faaliyetleri",
+        "html": "\n<p>Denetim; özel güvenlik hizmetinin mevzuata ve izin şartlarına uygun yürütülmesini sağlamak, eksiklikleri tespit etmek ve uygulama birliğini geliştirmek amacıyla yapılır.</p>\n<h3>Denetlenen yapılar</h3>\n<ul><li>Özel güvenlik şirketleri,</li><li>eğitim kurumları,</li><li>özel güvenlik birimleri,</li><li>alarm izleme merkezleri,</li><li>özel güvenlik hizmeti verilen kurum/kuruluşlar.</li></ul>\n<h3>Denetimin amaçları</h3>\n<ul><li>mevzuata uygunluk,</li><li>eksikliklerin giderilmesi,</li><li>hizmet kalitesi,</li><li>standart ve uygulama birliği,</li><li>risk ve performans takibi.</li></ul>"
+      },
+      {
+        "id": "genel-kolluk-6",
+        "title": "Silah ve Sivil Kullanım Amaçlı Patlayıcı Madde İşlemleri",
+        "html": "\n<h3>İlgili temel kanunlar</h3>\n<ul>\n<li><strong>6136 sayılı Kanun:</strong> ateşli silahlar, bıçaklar ve diğer aletler.</li>\n<li><strong>2521 sayılı Kanun:</strong> avda/sporda kullanılan tüfekler, nişan tabancaları ve av bıçakları.</li>\n<li><strong>5729 sayılı Kanun:</strong> ses ve gaz fişeği atabilen silahlar.</li>\n</ul>\n<p>Silah ruhsatlandırma süreçleri, silah tamir yerleri ve ilgili kayıt sistemleri Başkanlığın görev alanıyla bağlantılıdır.</p>\n<h3>Patlayıcı maddeler</h3>\n<p>Sivil kullanım amaçlı patlayıcı maddelerin üretim/ithalat, depolama, nakil, satış, kullanım, denetim ve ateşleyici yeterlilik süreçleri ayrı mevzuat ve izin rejimine tabidir.</p>"
+      },
+      {
+        "id": "genel-kolluk-7",
+        "title": "ÖGNET — Özel Güvenlik Bilgi Sistemi Otomasyonu",
+        "html": "\n<p><strong>ÖGNET</strong>, özel güvenlik sektöründeki idarî iş ve işlemleri elektronik ortama taşıyan bilgi sistemi otomasyonudur.</p>\n<ul><li>ÖGG ve yönetici kayıtları,</li><li>şirket ve eğitim kurumu süreçleri,</li><li>özel güvenlik birimleri,</li><li>başvuru, eğitim ve sınav işlemleri,</li><li>merkez-taşra ve sektör arasındaki dijital süreçler.</li></ul>\n<blockquote>Ezber: <strong>ÖGNET = Özel Güvenlik Bilgi Sistemi Otomasyonu.</strong></blockquote>"
+      },
+      {
+        "id": "genel-kolluk-8",
+        "title": "PATBİS ve ASİP",
+        "html": "\n<h3>PATBİS</h3>\n<p><strong>PATBİS = Patlayıcı Maddeler ve Silah Bilgi Sistemi.</strong> Sivil kullanım amaçlı patlayıcı maddeler ile silah/mermi işlemlerinin kayıt, izleme ve kurumlar arası koordinasyonunu dijitalleştirmeyi amaçlar.</p>\n<h3>ASİP</h3>\n<p><strong>ASİP = Ateşli Silahlar Projesi.</strong> EGM’nin sivil silah işlemleri alanında geliştirdiği proje başlıklarından biridir.</p>\n<p>Sınav notunda PATBİS yalnızca “patlayıcı madde işlemleri” gibi dar yazılmıştır; güncel resmî açılım silah boyutunu da açıkça içerir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "PATBİS = Patlayıcı Madde iş ve işlemleri.",
+            "academic": "Sınav ezberi olarak bu kısa ifade korunur; güncel resmî açılım 'Patlayıcı Maddeler ve Silah Bilgi Sistemi'dir."
+          }
+        ]
+      },
+      {
+        "id": "genel-kolluk-9",
+        "title": "KAAN — Genel Kolluk ve Özel Güvenlik İşbirliği",
+        "html": "\n<p><strong>KAAN = Genel Kolluk – Özel Güvenlik İşbirliği ve Entegrasyonu.</strong></p>\n<p>Uygulamanın amacı özel güvenlik görevlileri ile genel kolluk arasında etkili iletişim ve koordinasyon kurarak suçun önlenmesine katkı sağlamak ve meydana gelen olaylarda genel kolluğun hızlı biçimde bilgilendirilmesini sağlamaktır.</p>\n<h3>KAAN kapsamındaki temel işlevler</h3>\n<ul><li>şüpheli olayların zamanında bildirilmesi,</li><li>önleyici güvenliğe katkı,</li><li>devam eden olayda genel kollukla koordinasyon,</li><li>olay yeri ve delillerin korunması,</li><li>yakalanan kişi ve suç unsurunun genel kolluğa teslimi.</li></ul>\n<blockquote>Ezber: <strong>KAAN = Genel Kolluk + Özel Güvenlik işbirliği.</strong></blockquote>"
+      },
+      {
+        "id": "genel-kolluk-10",
+        "title": "ÖZGE ve SEP — Eğitim Projeleri",
+        "html": "\n<h3>ÖZGE</h3>\n<p><strong>ÖZGE</strong>, özel güvenlik eğitimlerinin geliştirilmesi ile alan/branş eğitimlerine odaklanan proje başlığıdır. AVM, hastane, üniversite, turizm tesisi, spor müsabakası, toplu taşıma ve kritik tesis gibi farklı görev alanlarının özgün risklerine uygun eğitimlerin geliştirilmesi hedeflenir.</p>\n<h3>SEP</h3>\n<p><strong>SEP = Sürekli Eğitim Projesi.</strong> Temel/yenileme eğitiminin ötesinde mesleki bilginin güncel tutulmasını hedefleyen EGM proje başlıklarındandır.</p>"
+      },
+      {
+        "id": "genel-kolluk-11",
+        "title": "ÖGYS ve Diğer Dijital Eğitim/Kayıt Araçları",
+        "html": "\n<p>Ders notunda <strong>ÖGYS = Özel Güvenlik Yoklama Sistemi</strong> başlığı ayrıca tutulmuştur. Kurs devamı ve yoklama süreçlerinin elektronik takibi bakımından kullanılan sistemlerle ÖGNET’in idarî veri/işlem fonksiyonları birbirinden ayrılmalıdır.</p>\n<p>EGM’nin özel güvenlik alanındaki dijital dönüşümü yalnızca tek sisteme dayanmaz; kimlik, eğitim, sınav, silah, patlayıcı madde ve kolluk koordinasyonu farklı modül/projeler üzerinden yürütülebilir.</p>"
+      },
+      {
+        "id": "genel-kolluk-12",
+        "title": "Sınav Eşleştirmeleri ve Ezber Haritası",
+        "html": "\n<div class=\"ogg-data-table\"><table><tbody>\n<tr><th>Kavram</th><th>Karşılığı</th></tr>\n<tr><td>ÖGNET</td><td>Özel Güvenlik Bilgi Sistemi Otomasyonu</td></tr>\n<tr><td>PATBİS</td><td>Patlayıcı Maddeler ve Silah Bilgi Sistemi</td></tr>\n<tr><td>ASİP</td><td>Ateşli Silahlar Projesi</td></tr>\n<tr><td>KAAN</td><td>Genel Kolluk – Özel Güvenlik İşbirliği ve Entegrasyonu</td></tr>\n<tr><td>ÖZGE</td><td>Özel Güvenlik Eğitimlerinin Geliştirilmesi / Alan-Branş Eğitimleri</td></tr>\n<tr><td>SEP</td><td>Sürekli Eğitim Projesi</td></tr>\n<tr><td>ÖGYS</td><td>Özel Güvenlik Yoklama Sistemi</td></tr>\n</tbody></table></div>\n<p>Dersin kısa ezber haritası:</p>\n<blockquote><strong>ÖG – DEN – SIN – SİL – PAT – KAAN – ÖZGE</strong><br>Özel güvenlik → denetim → sınav → silah → patlayıcı → kolluk işbirliği → eğitim.</blockquote>"
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Denetleme Başkanlığı Hakkımızda",
+        "href": "https://egm.gov.tr/ozelguvenlik/hakkimizda"
+      },
+      {
+        "label": "EGM · PATBİS",
+        "href": "https://www.egm.gov.tr/ozelguvenlik/patbis"
+      },
+      {
+        "label": "EGM · Özel Güvenlik Faaliyetleri Hakkında",
+        "href": "https://egm.gov.tr/ozelguvenlik/ozel-guvenlik-faaliyetleri-hakkinda"
+      }
+    ]
+  },
+  {
+    "id": "etkili-iletisim",
+    "no": "11",
+    "slug": "etkili-iletisim",
+    "title": "Etkili İletişim",
+    "course": "Etkili İletişim",
+    "tag": "İletişim",
+    "updatedAt": "2026-09-17T10:29:00.219Z",
+    "imageCount": 3,
+    "introHtml": "<p>Etkili iletişim dersi; iletişimin amaçlarını, iletişim sürecinin öğelerini, kodlama-kod çözme ilişkisini, geribildirimi, kişisel ve çevresel iletişim faktörlerini, örgüt içi çatışmayı ve kitle iletişim araçlarını ele alır. Güvenlik görevlisi için iletişim aynı zamanda gerilimi düşürme ve doğru bilgi aktarma aracıdır.</p>",
+    "categories": [
+      {
+        "id": "etkili-iletisim-1",
+        "title": "İletişimin Tanımı ve Temel Amaçları",
+        "html": "\n<p><strong>İletişim</strong>, canlılar veya insanlar ile teknik sistemler arasında anlam, bilgi, duygu veya komut aktarımının gerçekleştiği süreçtir. Ders notundaki geniş tanım “insan–hayvan–bitki–makine arasında çeşitli yollarla gerçekleşen bilgi alışverişi” şeklindedir.</p>\n<h3>Temel amaçlar</h3>\n<ul><li>paylaşmak,</li><li>bilgi aktarmak,</li><li>haberleşmek,</li><li>etkilemek,</li><li>kendini ifade etmek/var olmak,</li><li>ikna etmek,</li><li>gelişmek ve öğrenmek,</li><li>yönlendirmek.</li></ul>\n<p>“Yönlendirme” ile “manipülasyon” aynı şey değildir. Yönlendirme açık ve meşru bir iletişim amacı olabilir; manipülasyon ise çoğu zaman karşı tarafın bilgi veya iradesini örtülü biçimde etkilemeyi ifade eder.</p>"
+      },
+      {
+        "id": "etkili-iletisim-2",
+        "title": "İletişim Süreci ve Temel Öğeler",
+        "html": "\n<p>Dersin temel iletişim modeli:</p>\n<blockquote><strong>Kaynak → Mesaj → Kanal → Hedef/Alıcı → Geribildirim</strong></blockquote>\n<ul>\n<li><strong>Kaynak:</strong> mesajı oluşturan/gönderen kişi veya sistem.</li>\n<li><strong>Mesaj:</strong> aktarılmak istenen bilgi, duygu veya düşünce.</li>\n<li><strong>Kanal:</strong> mesajın taşındığı sözlü, yazılı, görsel, işitsel veya dijital ortam.</li>\n<li><strong>Hedef/alıcı:</strong> mesajın ulaştığı kişi veya grup.</li>\n<li><strong>Geribildirim:</strong> alıcının mesaja verdiği tepki; iletişim döngüsünü tamamlar.</li>\n<li><strong>Kodlama/kod çözme:</strong> anlamın sözcük, sembol, jest veya işaretlere dönüştürülmesi ve alıcı tarafından yeniden anlamlandırılması.</li>\n</ul>\n\n<div class=\"study-figure\">\n  <b>GÖRSEL HAFIZA // İLETİŞİM DÖNGÜSÜ</b>\n  <div class=\"study-flow\"><span>Kaynak</span><i>→</i><span>Kodlama</span><i>→</i><span>Mesaj</span><i>→</i><span>Kanal</span><i>→</i><span>Hedef / Alıcı</span><i>→</i><span>Kod Çözme</span><i>→</i><span>Geribildirim</span></div>\n  <p class=\"visual-caption\">İletişim sürecinin temel öğelerini gösteren akış şeması.</p>\n</div>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "İletişimin temel öğeleri: Kaynak – Mesaj – Kanal – Hedef – Geribildirim – Kodlama.",
+            "academic": "Kursta kullanılan sınav sıralaması aynen korunur; farklı iletişim modelleri 'gürültü', bağlam ve kod çözmeyi ayrıca öğe olarak gösterebilir."
+          }
+        ]
+      },
+      {
+        "id": "etkili-iletisim-3",
+        "title": "Kodlama, Kod Çözme, Bağlam ve Önyargı",
+        "html": "\n<p>Kaynak düşünceyi bir iletişim koduna dönüştürür; hedef/alıcı bu kodu kendi dil, deneyim ve bağlamı üzerinden çözer. Aynı cümle sözlük anlamından farklı bir kültürel anlam taşıyabilir.</p>\n<p>Ders notundaki “avucunu yala” ve “ayağını denk al” örnekleri, kelimelerin tek tek anlamının mesajın gerçek anlamını açıklamaya yetmediği <strong>deyimsel/kültürel kodlama</strong> örnekleridir.</p>\n<h3>İletişim engelleri</h3>\n<p>Önyargı, yanlış varsayım, dikkat bölünmesi, mesaj kesintisi/interruption, dil farkı ve bağlam eksikliği kod çözmeyi bozabilir. Güvenlik iletişiminde kısa, açık, gözlenebilir olguya dayalı ifade tercih edilmelidir.</p>"
+      },
+      {
+        "id": "etkili-iletisim-4",
+        "title": "İletişimi Etkileyen Kişisel, Sosyal ve Fiziksel Faktörler",
+        "html": "\n<h3>Kişisel faktörler</h3>\n<ul><li>yaş ve gelişim özellikleri,</li><li>eğitim ve bilgi düzeyi,</li><li>sosyal rol/statü,</li><li>deneyim, dil ve kültürel arka plan.</li></ul>\n<h3>Sosyal ortam</h3>\n<p>İletişimin resmî veya samimi oluşu, tarafların rol ve yetki ilişkisi, grup baskısı ve kurum kültürü mesajın biçimini değiştirir.</p>\n<h3>Fiziksel ortam</h3>\n<p>Isı, ışık, gürültü, kalabalık, mekânın büyüklüğü ve insan yoğunluğu; mesajın duyulması, dikkat ve stres düzeyi üzerinde doğrudan etkilidir.</p>\n\n<div class=\"study-figure\">\n  <b>İLETİŞİMİ ETKİLEYEN 3 KATMAN</b>\n  <div class=\"concept-grid\">\n    <div><strong>KİŞİSEL</strong><small>Yaş · eğitim · deneyim · sosyal rol · dil/kültür</small></div>\n    <div><strong>SOSYAL</strong><small>Resmiyet · samimiyet · kurum kültürü · rol/yetki ilişkisi</small></div>\n    <div><strong>FİZİKSEL</strong><small>Isı · ışık · gürültü · kalabalık · insan yoğunluğu</small></div>\n    <div><strong>SONUÇ</strong><small>Dikkat, anlamlandırma ve geribildirim kalitesi değişir.</small></div>\n  </div>\n  <p class=\"visual-caption\">İletişimi etkileyen kişisel, sosyal ve fiziksel faktörlerin görsel özeti.</p>\n</div>"
+      },
+      {
+        "id": "etkili-iletisim-5",
+        "title": "Örgüt İçi İletişim ve Çatışmalar",
+        "html": "\n<p>Örgüt içi iletişimde emir, bilgi, rapor ve geribildirim farklı yönlerde hareket eder. Güvenlik hizmetinde görev devri, olay bildirimi ve amir–personel iletişimindeki belirsizlik doğrudan operasyonel hataya dönüşebilir.</p>\n<h3>Ders notunda öne çıkan çatışmalar</h3>\n<ul><li><strong>Ast–üst çatışması:</strong> yetki, beklenti, iletişim tarzı veya görev yorumundan doğabilir.</li><li><strong>Rol çatışması:</strong> bir kişiden aynı anda birbiriyle uyumsuz görev veya beklentiler talep edildiğinde oluşabilir.</li></ul>\n<p>Çatışmayı azaltmak için görev tanımı, iletişim zinciri, yazılı prosedür, aktif dinleme ve zamanında geribildirim önemlidir.</p>\n\n<div class=\"study-figure\">\n  <b>ÖRGÜT İÇİ ÇATIŞMA // DERS GÖRSELİ KARŞILIĞI</b>\n  <div class=\"concept-grid\">\n    <div><strong>AST–ÜST ÇATIŞMASI</strong><small>Yetki · beklenti · emir/geribildirim · iletişim tarzı</small></div>\n    <div><strong>ROL ÇATIŞMASI</strong><small>Birbiriyle uyumsuz görev veya beklentilerin aynı kişide kesişmesi</small></div>\n  </div>\n  <p class=\"visual-caption\">Örgüt içi çatışmanın temel türlerini karşılaştıran görsel özet.</p>\n</div>"
+      },
+      {
+        "id": "etkili-iletisim-6",
+        "title": "Kitle İletişim Araçları ve İletişim Ortamı",
+        "html": "\n<h3>Kitle iletişim araçları</h3>\n<p>Akıllı telefon, televizyon, radyo, gazete, dergi, sinema, internet, bilgisayar ve açık hava reklam panoları geniş kitlelere mesaj ulaştırabilen araçlardır.</p>\n<h3>Araç ve ortam ayrımı</h3>\n<p>Ders notundaki önemli ayrım; <strong>iletişim aracı</strong> ile iletişimin gerçekleştiği <strong>ortam/mekânın</strong> aynı kavram olmamasıdır. Örneğin okul veya tiyatro binası bir iletişim ortamı olabilir; tek başına “kitle iletişim aracı” sayılması gerekmez.</p>\n<p>Günümüzde sosyal medya, mesajlaşma platformları, dijital yayın ve çevrim içi toplantı sistemleri de kitle veya grup iletişiminde temel kanallar hâline gelmiştir.</p>",
+        "examNotes": [
+          {
+            "label": "Kurs/sınav ifadesi",
+            "wording": "Kitle iletişim araçları: akıllı telefon, TV, radyo, gazete, dergi, sinema, internet, bilgisayar, reklam panoları. Tiyatro ve okul araç değil, ortamdır.",
+            "academic": "Bu ayrım kurs/sınav cevabı olarak korunur; iletişim bilimi sınıflandırmaları bağlama göre daha geniş olabilir."
+          }
+        ]
+      }
+    ],
+    "editorialStatus": "curated",
+    "references": [
+      {
+        "label": "EGM · Özel Güvenlik Mevzuat Kitabı",
+        "href": "https://www.egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Ozel-Guvenlik-Mevzuat-Kitabi-06_2023.pdf"
+      }
+    ]
+  }
+]
+
+export const oggLessonsMeta = {
+  "title": "ÖGG Akademik Çalışma Notları",
+  "description": "Silahlı özel güvenlik temel eğitimi ders notlarının ders ve konu hiyerarşisine göre düzenlenmiş tam sürümü.",
+  "updatedAt": "2026-09-30",
+  "fullVersion": true,
+  "examLayer": true
+}

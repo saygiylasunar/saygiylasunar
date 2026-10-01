@@ -1,0 +1,232 @@
+/* Site information architecture and first-pass home/navigation refinement.
+   Typography intentionally inherits the current site baseline until the final font system is approved. */
+
+.nav-more {
+  position: relative;
+}
+
+.nav-more > summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text);
+}
+
+.nav-more > summary::-webkit-details-marker { display: none; }
+.nav-more > summary::after { content: '⌄'; color: var(--muted); font-size: .72rem; }
+
+.nav-more-panel {
+  position: absolute;
+  z-index: 80;
+  top: calc(100% + 18px);
+  right: 0;
+  display: grid;
+  width: 230px;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 16px;
+  padding: 8px;
+  background: var(--surface-solid);
+  box-shadow: var(--shadow);
+}
+
+.nav-more-panel a {
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: var(--text);
+}
+
+.nav-more-panel a:hover,
+.nav-more-panel a.router-link-active {
+  background: var(--bg-soft);
+  color: var(--accent);
+}
+
+.home-directory {
+  display: grid;
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-directory-card {
+  position: relative;
+  display: grid;
+  min-height: 190px;
+  align-content: space-between;
+  gap: 22px;
+  border-right: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+  padding: 24px;
+  background: transparent;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.home-directory-card:hover {
+  z-index: 2;
+  background: var(--surface);
+  transform: translate(-2px, -2px);
+}
+
+.home-directory-card > span {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .7rem;
+}
+
+.home-directory-card > strong {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  line-height: 1;
+}
+
+.home-directory-card > small {
+  color: var(--muted);
+  font-size: .74rem;
+}
+
+.home-directory-card > b {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.home-blog-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-blog-card {
+  display: grid;
+  min-height: 310px;
+  align-content: start;
+  gap: 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-small);
+  padding: 24px;
+  background: var(--surface);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.home-blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.home-blog-card > span,
+.home-blog-card > time {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .66rem;
+}
+
+.home-blog-card h3 {
+  margin: 8px 0 0;
+  font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+  line-height: 1.05;
+}
+
+.home-blog-card p {
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.65;
+}
+
+.home-blog-card > time { margin-top: auto; }
+
+.footer-grid-rich {
+  grid-template-columns: minmax(0, .8fr) minmax(520px, 1.2fr);
+}
+
+.footer-identity {
+  max-width: 420px;
+}
+
+.footer-email {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.footer-map {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-map > div {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.footer-map strong {
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.footer-map a,
+.footer-socials a {
+  font-size: .82rem;
+  font-weight: 650;
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+@media (max-width: 960px) {
+  .nav-more > summary {
+    border-bottom: 1px solid var(--line);
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+
+  .nav-more-panel {
+    position: static;
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    padding: 0 0 8px 16px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nav-more-panel a {
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    padding: 12px 0;
+  }
+
+  .footer-grid-rich {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-directory,
+  .home-blog-grid,
+  .footer-map {
+    grid-template-columns: 1fr;
+  }
+
+  .home-directory-card {
+    min-height: 150px;
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+  }
+}

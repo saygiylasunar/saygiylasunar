@@ -1,0 +1,28 @@
+/* Turkish-safe typography pool.
+   Every family below is used only after Turkish glyph coverage was confirmed.
+   Adobe web project: aww8lcp. Exo 2 is self-hosted through Fontsource. */
+:root {
+  --font-all-round:
+    "all-round-gothic", "Exo 2 Variable",
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-exo:
+    "Exo 2 Variable",
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-noka:
+    "noka", "Exo 2 Variable",
+    ui-sans-serif, system-ui, sans-serif;
+
+  --font-quicksand:
+    "quicksand", "All Round Gothic", "Exo 2 Variable",
+    ui-sans-serif, system-ui, sans-serif;
+
+  --font-didactica:
+    "didactica-cursive", "Quicksand", "Exo 2 Variable",
+    cursive;
+
+  --font-chakra:
+    "chakra-petch", "Exo 2 Variable",
+    ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,19 @@
+/* Route-level visual identity hook.
+   Typography is intentionally neutral until the final font system is approved.
+   data-section remains available for future color, spacing and type decisions. */
+
+.page-view {
+  font-family: inherit;
+}
+
+/* Keep section hooks without imposing font families. */
+html[data-section='journal'] .page-view,
+html[data-section='lab'] .page-view,
+html[data-section='security'] .page-view,
+html[data-section='work'] .page-view,
+html[data-section='profile'] .page-view,
+html[data-section='property'] .page-view,
+html[data-section='music'] .page-view,
+html[data-section='studio'] .page-view {
+  font-family: inherit;
+}
