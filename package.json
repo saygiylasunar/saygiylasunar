@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:ogg": "node scripts/check-ogg-content.mjs",
+    "prebuild": "npm run check:ogg"
   },
   "dependencies": {
     "vue": "^3.4.0",
