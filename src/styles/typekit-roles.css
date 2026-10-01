@@ -1,38 +1,28 @@
-/* Adobe Fonts web project: aww8lcp
-   Role tokens stay separate from page styling so families can be auditioned safely. */
+/* Turkish-safe typography pool.
+   Every family below is used only after Turkish glyph coverage was confirmed.
+   Adobe web project: aww8lcp. Exo 2 is self-hosted through Fontsource. */
 :root {
-  --font-ui-artisan:
-    "all-round-gothic", "new-order",
+  --font-all-round:
+    "all-round-gothic", "Exo 2 Variable",
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  --font-tech-soft:
-    "noka", "chakra-petch",
+  --font-exo:
+    "Exo 2 Variable",
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-noka:
+    "noka", "Exo 2 Variable",
     ui-sans-serif, system-ui, sans-serif;
 
-  --font-editorial:
-    "essay-text",
-    Georgia, "Times New Roman", serif;
+  --font-quicksand:
+    "quicksand", "All Round Gothic", "Exo 2 Variable",
+    ui-sans-serif, system-ui, sans-serif;
 
-  --font-editorial-display:
-    "ivymazarin-variable", "ivymazarin",
-    "essay-text", Georgia, serif;
-
-  --font-coquette:
-    "cisne-variable", "cisne",
-    "ivymazarin-variable", "ivymazarin", Georgia, serif;
-
-  --font-cursive:
-    "didactica-cursive",
+  --font-didactica:
+    "didactica-cursive", "Quicksand", "Exo 2 Variable",
     cursive;
 
-  --font-artisan-display:
-    "urbane-adscript",
-    "all-round-gothic", ui-sans-serif, system-ui, sans-serif;
-
-  --font-display-alt:
-    "schwager-sans",
-    "noka", ui-sans-serif, system-ui, sans-serif;
-
-  --font-mono-editorial:
-    "courier-prime", "Courier New", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-chakra:
+    "chakra-petch", "Exo 2 Variable",
+    ui-sans-serif, system-ui, sans-serif;
 }
