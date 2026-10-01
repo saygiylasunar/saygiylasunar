@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
+import '@fontsource-variable/exo-2/wght.css'
 import './styles/typekit-roles.css'
 import './styles/section-themes.css'
 import './styles/global.css'
@@ -19,6 +20,8 @@ import './styles/lands-mobile.css'
 import './styles/music.css'
 import './styles/blog.css'
 import './styles/site-overhaul.css'
+import './styles/typography-approved.css'
+import './styles/theme-palettes.css'
 
 const app = createApp(App)
 const revealObservers = new WeakMap()
