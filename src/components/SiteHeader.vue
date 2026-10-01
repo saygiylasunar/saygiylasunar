@@ -25,12 +25,22 @@
         :class="{ 'is-open': menuOpen }"
         :aria-label="t('common.primaryNavAria')"
       >
-        <RouterLink to="/services">{{ t('nav.services') }}</RouterLink>
-        <RouterLink to="/projects">{{ t('nav.projects') }}</RouterLink>
-        <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
-        <RouterLink to="/experience">{{ t('nav.experience') }}</RouterLink>
-        <RouterLink to="/about">{{ t('nav.about') }}</RouterLink>
-        <RouterLink class="nav-contact" to="/contact">{{ t('nav.contact') }}</RouterLink>
+        <RouterLink to="/projects">{{ locale === 'tr' ? 'Projeler' : 'Projects' }}</RouterLink>
+        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink to="/tools">{{ locale === 'tr' ? 'Araçlar' : 'Tools' }}</RouterLink>
+        <RouterLink to="/experience">{{ locale === 'tr' ? 'Deneyim' : 'Experience' }}</RouterLink>
+
+        <details ref="moreEl" class="nav-more">
+          <summary>{{ locale === 'tr' ? 'Keşfet' : 'Explore' }}</summary>
+          <div class="nav-more-panel">
+            <RouterLink to="/services">{{ locale === 'tr' ? 'Hizmetler' : 'Services' }}</RouterLink>
+            <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
+            <RouterLink to="/ogg">ÖGG</RouterLink>
+            <RouterLink to="/arsalar">{{ locale === 'tr' ? 'Arsalar' : 'Land' }}</RouterLink>
+            <RouterLink to="/about">{{ locale === 'tr' ? 'Hakkımda' : 'About' }}</RouterLink>
+            <RouterLink class="nav-contact" to="/contact">{{ locale === 'tr' ? 'İletişim' : 'Contact' }}</RouterLink>
+          </div>
+        </details>
 
         <div class="header-actions">
           <button
@@ -58,6 +68,7 @@ import { locale, setLocale, t } from '../lib/locale.js'
 
 const route = useRoute()
 const menuOpen = ref(false)
+const moreEl = ref(null)
 const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 const theme = ref(localStorage.getItem('site-theme') || preferredTheme)
 const themeLabel = computed(() =>
@@ -80,10 +91,15 @@ function toggleLocale() {
 
 function closeMenu() {
   menuOpen.value = false
+  if (moreEl.value) moreEl.value.open = false
 }
 
 function onKeydown(event) {
   if (event.key === 'Escape') closeMenu()
+}
+
+function onDocumentPointer(event) {
+  if (moreEl.value?.open && !moreEl.value.contains(event.target)) moreEl.value.open = false
 }
 
 watch(() => route.fullPath, closeMenu)
@@ -91,7 +107,11 @@ watch(() => route.fullPath, closeMenu)
 onMounted(() => {
   applyTheme()
   window.addEventListener('keydown', onKeydown)
+  document.addEventListener('pointerdown', onDocumentPointer)
 })
 
-onUnmounted(() => window.removeEventListener('keydown', onKeydown))
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
+  document.removeEventListener('pointerdown', onDocumentPointer)
+})
 </script>
