@@ -1419,3 +1419,10 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Shared keyboard focus treatment, retained from the portfolio accessibility foundation. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
