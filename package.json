@@ -8,11 +8,15 @@
     "build": "vite build",
     "preview": "vite preview",
     "check:ogg": "node scripts/check-ogg-content.mjs",
-    "prebuild": "npm run check:ogg"
+    "prebuild": "npm run check:ogg && npm run check:site && npm run generate:sitemap",
+    "check:site": "node scripts/check-site-content.mjs",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "vue": "^3.4.0",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "dompurify": "^3.3.0",
+    "marked": "^16.4.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
