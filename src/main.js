@@ -18,6 +18,7 @@ import './styles/lands-density.css'
 import './styles/lands-mobile.css'
 import './styles/music.css'
 import './styles/blog.css'
+import './styles/site-overhaul.css'
 
 const app = createApp(App)
 const revealObservers = new WeakMap()
