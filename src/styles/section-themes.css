@@ -1,0 +1,64 @@
+/* Route-level visual grammar. Individual views may refine these tokens locally. */
+.page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-ui-artisan);
+  --section-meta: var(--font-mono-editorial);
+  font-family: var(--section-body);
+}
+
+.page-view h1,
+.page-view h2,
+.page-view h3 {
+  font-family: var(--section-display);
+}
+
+html[data-section='journal'] .page-view {
+  --section-body: var(--font-editorial);
+  --section-display: var(--font-editorial-display);
+  --section-meta: var(--font-mono-editorial);
+}
+
+html[data-section='lab'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-tech-soft);
+  --section-meta: var(--font-mono-editorial);
+}
+
+html[data-section='security'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-tech-soft);
+  --section-meta: var(--font-mono-editorial);
+}
+
+html[data-section='work'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-display-alt);
+}
+
+html[data-section='profile'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-editorial-display);
+}
+
+html[data-section='property'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-display-alt);
+}
+
+html[data-section='music'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-artisan-display);
+}
+
+html[data-section='studio'] .page-view {
+  --section-body: var(--font-ui-artisan);
+  --section-display: var(--font-ui-artisan);
+}
+
+/* Technical labels inherit the section's metadata voice unless a view overrides it. */
+.page-view .eyebrow,
+.page-view .tech-label,
+.page-view .project-meta,
+.page-view .timeline-period {
+  font-family: var(--section-meta);
+}
