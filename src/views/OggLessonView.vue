@@ -52,7 +52,10 @@
             <a href="https://saygiylasunar.com" target="_blank" rel="noopener noreferrer">Website ↗</a>
             <a href="https://github.com/saygiylasunar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             <a href="https://linkedin.com/in/saygiylasunar" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="https://linktr.ee/saygiylasunar" target="_blank" rel="noopener noreferrer">Linktree ↗</a>
+            <a href="https://youtube.com/@saygiylasunar" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+            <a href="https://instagram.com/saygiylasunar" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://www.tiktok.com/@saygiylasunar" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            <a href="https://x.com/saygiylasunar" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
           </nav>
           <div class="related-work">
             <span>İLGİLİ ÇALIŞMA</span>
@@ -127,7 +130,10 @@
             <a href="https://saygiylasunar.com" target="_blank" rel="noopener noreferrer">Website ↗</a>
             <a href="https://github.com/saygiylasunar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             <a href="https://linkedin.com/in/saygiylasunar" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="https://linktr.ee/saygiylasunar" target="_blank" rel="noopener noreferrer">Linktree ↗</a>
+            <a href="https://youtube.com/@saygiylasunar" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+            <a href="https://instagram.com/saygiylasunar" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://www.tiktok.com/@saygiylasunar" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            <a href="https://x.com/saygiylasunar" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
             <a href="https://yavuzozelguvenlik.netlify.app" target="_blank" rel="noopener noreferrer">Yavuz ÖGG ↗</a>
           </nav>
         </aside>
