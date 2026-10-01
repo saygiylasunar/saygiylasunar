@@ -1,4 +1,5 @@
-/* Site information architecture and first-pass home/navigation refinement. */
+/* Site information architecture and first-pass home/navigation refinement.
+   Typography intentionally inherits the current site baseline until the final font system is approved. */
 
 .nav-more {
   position: relative;
@@ -72,12 +73,11 @@
 
 .home-directory-card > span {
   color: var(--accent);
-  font-family: var(--font-mono-editorial);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: .7rem;
 }
 
 .home-directory-card > strong {
-  font-family: var(--font-ui-artisan);
   font-size: clamp(1.4rem, 2.5vw, 2.2rem);
   line-height: 1;
 }
@@ -121,20 +121,18 @@
 .home-blog-card > span,
 .home-blog-card > time {
   color: var(--muted);
-  font-family: var(--font-mono-editorial);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: .66rem;
 }
 
 .home-blog-card h3 {
   margin: 8px 0 0;
-  font-family: var(--font-editorial-display);
   font-size: clamp(1.45rem, 2.5vw, 2.2rem);
   line-height: 1.05;
 }
 
 .home-blog-card p {
   margin: 0;
-  font-family: var(--font-editorial);
   font-size: .88rem;
   line-height: 1.65;
 }
@@ -170,7 +168,7 @@
 .footer-map strong {
   margin-bottom: 5px;
   color: var(--muted);
-  font-family: var(--font-mono-editorial);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: .68rem;
   letter-spacing: .06em;
   text-transform: uppercase;
