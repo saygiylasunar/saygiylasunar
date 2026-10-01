@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
+import './styles/typekit-roles.css'
 import './styles/global.css'
 import './styles/additions.css'
 import './styles/phase2.css'
