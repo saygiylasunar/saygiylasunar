@@ -11,7 +11,7 @@
     <SiteFooter />
     <IntentModal v-if="route.name !== 'lands' && route.name !== 'ogg' && route.name !== 'ogg-lesson'" />
     <LandsFab v-if="route.name !== 'ogg' && route.name !== 'ogg-lesson'" />
-    <ToolsFab v-if="route.name !== 'ogg' && route.name !== 'ogg-lesson'" />
+    <ToolsFab />
   </div>
 </template>
 
