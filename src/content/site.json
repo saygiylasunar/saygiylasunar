@@ -6,14 +6,17 @@
   },
   "profiles": {
     "github": "https://github.com/saygiylasunar",
-    "linkedin": "https://linkedin.com/in/saygiylasunar"
+    "linkedin": "https://linkedin.com/in/saygiylasunar",
+    "youtube": "https://youtube.com/@saygiylasunar",
+    "instagram": "https://instagram.com/saygiylasunar",
+    "tiktok": "https://www.tiktok.com/@saygiylasunar",
+    "x": "https://x.com/saygiylasunar"
   },
   "music": {
     "artistName": "Saygıyla Sunar",
     "spotify": "https://open.spotify.com/intl-tr/artist/1lQ2zuoAoaTYLih8coqO7R",
     "youtubeMusic": "https://music.youtube.com/search?q=Sayg%C4%B1yla%20Sunar",
-    "appleMusic": "https://music.apple.com/tr/search?term=Sayg%C4%B1yla%20Sunar",
-    "linktree": "https://linktr.ee/saygiylasunar"
+    "appleMusic": "https://music.apple.com/tr/search?term=Sayg%C4%B1yla%20Sunar"
   },
   "availability": true,
   "copyrightStartYear": 2025
