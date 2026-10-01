@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "programmatic-font-geometry",
+    "publishedAt": "2026-09-08",
+    "updatedAt": "2026-10-01",
+    "visibility": "public",
+    "language": "tr",
+    "featured": true,
+    "section": "design-engineering",
+    "category": {"tr":"Tipografi · Programatik Geometri","en":"Typography · Programmatic Geometry"},
+    "title": {"tr":"Bir Fontu Harf Harf Değil, Geometrik Bir Sistem Olarak Tasarlamak","en":"Designing a Typeface as a Geometric System, Not Letter by Letter"},
+    "description": {"tr":"Glifleri tek tek çizmek yerine ortak motif, genişlik, terminal davranışı ve programatik geometri kuralları üzerinden tutarlı bir font sistemi oluşturma yaklaşımı.","en":"An approach to building a consistent typeface through shared motifs, widths, terminal behavior and programmatic geometry rather than drawing glyphs independently."},
+    "tags":["typography","font-engineering","geometry","design-systems"],
+    "relatedProjects":[]
+  },
+  {
+    "slug": "pixel-art-downscaling-is-not-just-resize",
+    "publishedAt": "2026-09-08",
+    "updatedAt": "2026-10-01",
+    "visibility": "public",
+    "language": "tr",
+    "featured": true,
+    "section": "ai-visual",
+    "category": {"tr":"AI · Pixel Art · Görüntü İşleme","en":"AI · Pixel Art · Image Processing"},
+    "title": {"tr":"Pixel Art Downscale Neden Sadece Resize Değil?","en":"Why Pixel-Art Downscaling Is More Than Resize"},
+    "description": {"tr":"Nearest, area ve medoid örnekleme yaklaşımlarının farklı görsel yapıları neden farklı koruduğu; pixel-art downscale problemini tersine tile generation gibi ele alma fikri.","en":"Why nearest, area and medoid sampling preserve different structures, and how pixel-art downscaling can be framed as the inverse of tiled generation."},
+    "tags":["pixel-art","downscale","sampling","comfyui","ai"],
+    "relatedProjects":["ai-visual-workflows"]
+  },
+  {
+    "slug": "reversenui-local-first-ai-workbench",
+    "publishedAt": "2026-09-08",
+    "updatedAt": "2026-10-01",
+    "visibility": "public",
+    "language": "tr",
+    "featured": true,
+    "section": "ai-tools",
+    "category": {"tr":"AI Engineering · Local-first","en":"AI Engineering · Local-first"},
+    "title": {"tr":"ReversenUI: AI Çıktısını Dosya Değil Mühendislik Artifaktı Olarak Okumak","en":"ReversenUI: Treating AI Output as an Engineering Artifact"},
+    "description": {"tr":"Generatif görselin prompt, model, LoRA, VAE ve workflow bilgisini yeniden okunabilir hale getiren local-first bir AI engineering workbench tasarlarken oluşan mimari yaklaşım.","en":"The architecture behind a local-first AI engineering workbench that recovers prompt, model, LoRA, VAE and workflow information from generative-image artifacts."},
+    "tags":["local-first","comfyui","ai-tooling","metadata"],
+    "relatedProjects":["ai-visual-workflows"]
+  }
+]
