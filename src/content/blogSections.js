@@ -1,0 +1,12 @@
+export const blogSections = [
+  { slug: 'game-theory', title: { tr: 'Oyun Teorisi', en: 'Game Theory' }, description: { tr: 'Karar, strateji, teşvik ve rekabet modelleri.', en: 'Decision, strategy, incentive and competition models.' } },
+  { slug: 'ai-tools', title: { tr: 'AI Araçları', en: 'AI Tools' }, description: { tr: 'Yerel ve bulut tabanlı üretim, araştırma ve geliştirme araçları.', en: 'Local and cloud tools for production, research and development.' } },
+  { slug: 'ai-visual', title: { tr: 'ComfyUI · Modeller', en: 'ComfyUI · Models' }, description: { tr: 'ComfyUI, güncel model aileleri ve kontrollü görsel üretim akışları.', en: 'ComfyUI, current model families and controlled visual-production workflows.' } },
+  { slug: 'technology', title: { tr: 'Teknoloji Radarı', en: 'Technology Radar' }, description: { tr: 'Geliştirici araçları, frameworkler ve güncel teknoloji eğilimleri.', en: 'Developer tools, frameworks and current technology trends.' } },
+  { slug: 'cyber-security', title: { tr: 'Siber Güvenlik', en: 'Cybersecurity' }, description: { tr: 'Hesap, cihaz, ağ ve veri güvenliğine yönelik savunmacı uygulamalar.', en: 'Defensive practices for account, device, network and data security.' } },
+  { slug: 'personal-security', title: { tr: 'Kişisel Güvenlik', en: 'Personal Security' }, description: { tr: 'Günlük yaşamda risk azaltma, gizlilik ve güvenli davranış.', en: 'Risk reduction, privacy and safer everyday practices.' } },
+  { slug: 'auth-encryption', title: { tr: '2FA · Kimlik · Şifreleme', en: '2FA · Identity · Encryption' }, description: { tr: 'Kimlik doğrulama, parola yönetimi, 2FA ve temel şifreleme sistemleri.', en: 'Authentication, password management, 2FA and foundational encryption systems.' } },
+  { slug: 'health', title: { tr: 'Sağlık', en: 'Health' }, description: { tr: 'Kaynaklı sağlık okuryazarlığı ve kavram açıklamaları.', en: 'Source-based health literacy and concept explainers.' }, highStakes: true },
+  { slug: 'psychology', title: { tr: 'Psikoloji', en: 'Psychology' }, description: { tr: 'Psikoloji kavramları, davranış ve dijital yaşam üzerine kaynaklı notlar.', en: 'Source-based notes on psychology concepts, behavior and digital life.' }, highStakes: true },
+  { slug: 'design-engineering', title: { tr: 'Tasarım · Mühendislik', en: 'Design · Engineering' }, description: { tr: 'Tipografi, arayüz ve programatik tasarım sistemleri.', en: 'Typography, interfaces and programmatic design systems.' } }
+]
