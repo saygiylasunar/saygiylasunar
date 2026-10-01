@@ -1,0 +1,134 @@
+{
+  "tr": {
+    "home": {
+      "title": "Ersen Filiz · Saygıyla Sunar — Yazılım, AI, Tasarım ve Dijital Üretim",
+      "description": "Ersen Filiz’in yazılım, yapay zekâ, UI/UX, grafik tasarım, yaratıcı teknoloji, araç geliştirme, müzik ve bağımsız dijital projelerini bir araya getiren kişisel çalışma alanı."
+    },
+    "services": {
+      "title": "Hizmetler ve Çalışma Alanları",
+      "description": "Yapay zekâ, yazılım sistemleri, web geliştirme, UI/UX, görsel tasarım, oyun geliştirme, ses ve kurumsal dijital dönüşüm çalışma alanları."
+    },
+    "projects": {
+      "title": "Projeler ve Ürünler",
+      "description": "Ersen Filiz’in yazılım, yapay zekâ, tasarım, oyun, üretken görsel sistemler ve bağımsız dijital ürün projeleri."
+    },
+    "blog": {
+      "title": "Blog — AI, ComfyUI, Güvenlik, Teknoloji ve Tasarım Notları",
+      "description": "AI araçları, ComfyUI ve güncel modeller, oyun teorisi, teknoloji, siber güvenlik, kişisel güvenlik, 2FA, şifreleme, sağlık okuryazarlığı ve psikoloji üzerine kaynaklı teknik notlar."
+    },
+    "music": {
+      "title": "Müzik · Saygıyla Sunar",
+      "description": "Ersen Filiz’in Saygıyla Sunar adıyla yayımladığı müzik çalışmaları ve ilgili yayın bağlantıları."
+    },
+    "experience": {
+      "title": "Deneyim, Eğitim ve Yetkinlikler",
+      "description": "Ersen Filiz’in bilgisayar mühendisliği, frontend geliştirme, UI/UX, grafik tasarım, bilgi işlem, kurumsal iletişim ve sivil toplum deneyimi."
+    },
+    "about": {
+      "title": "Ersen Filiz Hakkında",
+      "description": "Bilgisayar mühendisi Ersen Filiz’in yazılım, yapay zekâ, tasarım, ürün geliştirme ve yaratıcı teknoloji eksenindeki profesyonel profili."
+    },
+    "contact": {
+      "title": "İletişim",
+      "description": "Yazılım, yapay zekâ, web, tasarım, yaratıcı teknoloji ve dijital ürün çalışmaları için Ersen Filiz ile iletişim bilgileri."
+    },
+    "tools": {
+      "title": "Tarayıcı Araçları",
+      "description": "Parola üretimi, EXIF temizleme, WebP dönüştürme, görsel boyutlandırma, hash, JSON ve kontrast işlemleri için tarayıcı tabanlı mini araçlar."
+    },
+    "password": {
+      "title": "Parola Oluşturucu",
+      "description": "Web Crypto API ile tarayıcı içinde parola üreten hızlı ve yerel parola oluşturma aracı."
+    },
+    "exif": {
+      "title": "EXIF ve Metadata Temizleyici",
+      "description": "Görselleri tarayıcı içinde yeniden işleyerek EXIF ve benzeri gömülü metadata alanlarını temizleyen araç."
+    },
+    "webp": {
+      "title": "WebP Dönüştürücü",
+      "description": "Görselleri tarayıcı içinde WebP biçimine dönüştürmek için yerel çalışan web aracı."
+    },
+    "resize": {
+      "title": "Görsel Boyutlandırma Aracı",
+      "description": "Görselleri tarayıcı içinde yeniden boyutlandırmak için hızlı ve yerel web aracı."
+    },
+    "hash": {
+      "title": "Hash Aracı",
+      "description": "Metin ve veriler için tarayıcı tabanlı hash üretimi ve doğrulama yardımcı aracı."
+    },
+    "json": {
+      "title": "JSON Aracı",
+      "description": "JSON verisini biçimlendirmek, kontrol etmek ve okunabilir hale getirmek için tarayıcı aracı."
+    },
+    "contrast": {
+      "title": "Renk Kontrast Aracı",
+      "description": "Arayüz renk çiftlerinin kontrastını incelemek için tarayıcı tabanlı erişilebilirlik yardımcı aracı."
+    },
+    "lands": {
+      "title": "Sultandağı Kayran Arsa ve Parsel Bilgileri",
+      "description": "Afyonkarahisar Sultandağı Kayran’daki yayımlanmış aile taşınmazlarına ait parsel, alan, konum, görsel, fiyat ve temel imar bilgilerinin bilgi görünümü."
+    },
+    "ogg": {
+      "title": "ÖGG Ders Notları ve Sınav Çalışma Arşivi",
+      "description": "Silahlı özel güvenlik temel eğitimi için 11 ders ve 105 ana konudan oluşan ÖGG çalışma arşivi; ders notları, sınav ifadeleri, güncel açıklamalar ve resmî doğrulama kaynakları."
+    },
+    "notFound": {
+      "title": "Sayfa Bulunamadı",
+      "description": "İstenen sayfa bulunamadı."
+    }
+  },
+  "en": {
+    "home": {
+      "title": "Ersen Filiz · Saygıyla Sunar — Software, AI, Design and Digital Production",
+      "description": "The personal work space of Ersen Filiz, bringing together software, artificial intelligence, UI/UX, graphic design, creative technology, tools, music and independent digital projects."
+    },
+    "services": {
+      "title": "Services and Capabilities",
+      "description": "Work across artificial intelligence, software systems, web development, UI/UX, visual design, game development, audio and institutional digital transformation."
+    },
+    "projects": {
+      "title": "Projects and Products",
+      "description": "Software, artificial intelligence, design, game, generative visual-system and independent digital-product projects by Ersen Filiz."
+    },
+    "blog": {
+      "title": "Blog — AI, ComfyUI, Security, Technology and Design Notes",
+      "description": "Source-aware technical notes on AI tools, ComfyUI and current models, game theory, technology, cybersecurity, personal security, 2FA, encryption, health literacy and psychology."
+    },
+    "music": {
+      "title": "Music · Saygıyla Sunar",
+      "description": "Music released by Ersen Filiz under the artist name Saygıyla Sunar and related release links."
+    },
+    "experience": {
+      "title": "Experience, Education and Skills",
+      "description": "Ersen Filiz’s background in computer engineering, frontend development, UI/UX, graphic design, IT, institutional communication and nonprofit work."
+    },
+    "about": {
+      "title": "About Ersen Filiz",
+      "description": "The professional profile of computer engineer Ersen Filiz across software, artificial intelligence, design, product development and creative technology."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact information for software, AI, web, design, creative-technology and digital-product work with Ersen Filiz."
+    },
+    "tools": {
+      "title": "Browser Tools",
+      "description": "Browser-based utilities for password generation, EXIF cleanup, WebP conversion, image resizing, hashing, JSON and contrast checks."
+    },
+    "password": {"title":"Password Generator","description":"A fast local password generator powered by the Web Crypto API and executed in the browser."},
+    "exif": {"title":"EXIF and Metadata Cleaner","description":"A browser utility that rebuilds images locally to remove EXIF and related embedded metadata."},
+    "webp": {"title":"WebP Converter","description":"A local browser utility for converting images to WebP."},
+    "resize": {"title":"Image Resize Tool","description":"A local browser utility for resizing images."},
+    "hash": {"title":"Hash Tool","description":"A browser utility for hashing and verification tasks."},
+    "json": {"title":"JSON Tool","description":"A browser utility for formatting and validating JSON data."},
+    "contrast": {"title":"Color Contrast Tool","description":"A browser accessibility utility for checking color-pair contrast."},
+    "lands": {
+      "title": "Sultandağı Kayran Land and Parcel Information",
+      "description": "Published parcel, area, location, imagery, pricing and basic zoning information for family-owned properties in Kayran, Sultandağı, Afyonkarahisar."
+    },
+    "ogg": {
+      "title": "Private Security Course Notes and Exam Study Archive",
+      "description": "A structured study archive covering 11 subjects and 105 core topics for armed private-security basic training, with course notes and official verification sources."
+    },
+    "notFound": {"title":"Page Not Found","description":"The requested page could not be found."}
+  }
+}
