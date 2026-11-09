@@ -25,20 +25,20 @@
         :class="{ 'is-open': menuOpen }"
         :aria-label="t('common.primaryNavAria')"
       >
-        <RouterLink to="/projects">{{ locale === 'tr' ? 'Projeler' : 'Projects' }}</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
-        <RouterLink to="/tools">{{ locale === 'tr' ? 'Araçlar' : 'Tools' }}</RouterLink>
         <RouterLink to="/experience">{{ locale === 'tr' ? 'Deneyim' : 'Experience' }}</RouterLink>
+        <RouterLink to="/projects">{{ locale === 'tr' ? 'Projeler' : 'Projects' }}</RouterLink>
+        <RouterLink to="/services">{{ locale === 'tr' ? 'Hizmetler' : 'Services' }}</RouterLink>
+        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink class="nav-contact" to="/contact">{{ locale === 'tr' ? 'İletişim' : 'Contact' }}</RouterLink>
 
         <details ref="moreEl" class="nav-more">
           <summary>{{ locale === 'tr' ? 'Keşfet' : 'Explore' }}</summary>
           <div class="nav-more-panel">
-            <RouterLink to="/services">{{ locale === 'tr' ? 'Hizmetler' : 'Services' }}</RouterLink>
+            <RouterLink to="/tools">{{ locale === 'tr' ? 'Araçlar' : 'Tools' }}</RouterLink>
             <RouterLink to="/music">{{ locale === 'tr' ? 'Müzik' : 'Music' }}</RouterLink>
             <RouterLink to="/ogg">ÖGG</RouterLink>
             <RouterLink to="/arsalar">{{ locale === 'tr' ? 'Arsalar' : 'Land' }}</RouterLink>
             <RouterLink to="/about">{{ locale === 'tr' ? 'Hakkımda' : 'About' }}</RouterLink>
-            <RouterLink class="nav-contact" to="/contact">{{ locale === 'tr' ? 'İletişim' : 'Contact' }}</RouterLink>
           </div>
         </details>
 

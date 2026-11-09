@@ -172,6 +172,18 @@
   --shadow: 0 26px 82px rgba(95, 74, 28, 0.14);
 }
 
+/* Keep primary CTA labels readable on the lighter accent palettes. */
+:root[data-theme='dark'] .button-primary,
+:root[data-theme='pastel'] .button-primary,
+:root[data-theme='green'] .button-primary,
+:root[data-theme='flowers'] .button-primary,
+:root[data-theme='ocean'] .button-primary,
+:root[data-theme='night'] .button-primary,
+:root[data-theme='gold-white'] .button-primary,
+:root[data-theme='gold-black'] .button-primary {
+  color: #0b0d10;
+}
+
 /* Theme chooser */
 .theme-picker {
   position: relative;

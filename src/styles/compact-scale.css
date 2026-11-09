@@ -24,43 +24,91 @@ h3 {
 
 .eyebrow {
   margin-bottom: 12px;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
 }
 
 .button {
-  min-height: 44px;
-  padding: 10px 18px;
-  font-size: 0.86rem;
+  min-height: 48px;
+  padding: 11px 20px;
+  font-size: 0.98rem;
 }
 
 .header-inner {
-  min-height: 36px;
+  min-height: 68px;
+  gap: 18px;
 }
 
 .brand-mark {
-  width: 21px;
-  height: 21px;
-  font-size: 0.56rem;
+  width: 34px;
+  height: 34px;
+  font-size: 0.82rem;
 }
 
 .brand-copy strong {
-  font-size: 0.66rem;
+  font-size: 0.98rem;
 }
 
 .brand-copy small {
-  font-size: 0.48rem;
+  font-size: 0.72rem;
 }
 
 .primary-nav {
-  gap: 9px;
-  font-size: 0.65rem;
+  gap: clamp(10px, 1.25vw, 18px);
+  font-size: 0.94rem;
+}
+
+.primary-nav > a,
+.nav-more > summary {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
 }
 
 .text-button,
 .icon-button {
-  min-width: 23px;
-  height: 23px;
-  font-size: 0.58rem;
+  min-width: 44px;
+  height: 44px;
+  font-size: 0.9rem;
+}
+
+/* Keep supporting copy legible without scaling up the whole layout. */
+.home-view .home-directory-card > span,
+.home-view .home-blog-card > span,
+.home-view .home-blog-card > time {
+  font-size: 0.8rem;
+}
+
+.home-view .home-directory-card > small,
+.home-view .home-blog-card p,
+.site-footer .footer-map a,
+.site-footer .footer-socials a {
+  font-size: 0.9rem;
+}
+
+.intent-modal .intent-about p,
+.intent-modal .intent-card small,
+.intent-modal .intent-quick-grid small {
+  font-size: 0.9rem;
+}
+
+/* Experience should lead with actual records, not a half-screen intro. */
+.experience-view .page-hero {
+  min-height: 0;
+  padding: clamp(56px, 7vw, 88px) 0 clamp(28px, 4vw, 48px);
+}
+
+.experience-view .resume-layout {
+  gap: clamp(24px, 4vw, 56px);
+}
+
+.experience-view .resume-nav a,
+.experience-view .timeline-item strong {
+  font-size: 0.95rem;
+}
+
+.experience-view .timeline-period,
+.experience-view .compact-tags span {
+  font-size: 0.82rem;
 }
 
 .hero-section {
@@ -174,7 +222,18 @@ h3 {
 
 @media (max-width: 960px) {
   .header-inner {
-    min-height: 35px;
+    min-height: 64px;
+  }
+
+  .menu-button {
+    min-height: 44px;
+    justify-content: center;
+    font-size: 0.94rem;
+  }
+
+  .primary-nav {
+    max-height: calc(100svh - 64px);
+    overflow-y: auto;
   }
 
   .hero-section {
@@ -197,21 +256,26 @@ h3 {
   }
 
   .header-inner {
-    min-height: 34px;
+    min-height: 64px;
   }
 
   .brand-mark {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
   }
 
   .brand-copy strong {
-    font-size: 0.64rem;
+    font-size: 0.94rem;
   }
 
   .menu-button {
-    padding: 3px 6px;
-    font-size: 0.62rem;
+    min-height: 44px;
+    padding: 9px 14px;
+    font-size: 0.94rem;
+  }
+
+  .experience-view .page-hero {
+    padding: 40px 0 24px;
   }
 
   .hero-section {
