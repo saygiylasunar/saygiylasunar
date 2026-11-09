@@ -9,8 +9,8 @@
           <h1>{{ site.brand.name }} · {{ site.brand.studio }}</h1>
           <p class="hero-intro">{{ copy.intro }}</p>
           <div class="hero-actions">
-            <RouterLink class="button button-primary" to="/projects">{{ copy.projects }} →</RouterLink>
-            <RouterLink class="button button-ghost" to="/blog">Blog →</RouterLink>
+            <RouterLink class="button button-primary" to="/experience">{{ copy.experience }} →</RouterLink>
+            <RouterLink class="button button-ghost" to="/projects">{{ copy.projects }} →</RouterLink>
           </div>
         </div>
 

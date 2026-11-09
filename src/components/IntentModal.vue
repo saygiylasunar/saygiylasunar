@@ -34,7 +34,7 @@
               <strong>{{ t('intent.workTitle') }}</strong>
               <small>{{ t('intent.workText') }}</small>
             </button>
-            <button class="intent-card" type="button" @click="choose('/about')">
+            <button class="intent-card" type="button" @click="choose('/experience')">
               <span>02</span>
               <strong>{{ t('intent.knowTitle') }}</strong>
               <small>{{ t('intent.knowText') }}</small>
@@ -72,6 +72,7 @@ const closeButtonRef = ref(null)
 const titleId = 'intent-title'
 let previousFocus = null
 let previousOverflow = ''
+let openingTimer = null
 
 function restoreDocument() {
   document.body.style.overflow = previousOverflow
@@ -144,8 +145,9 @@ watch(open, async (isOpen) => {
 
 onMounted(() => {
   if (!sessionStorage.getItem('intent-seen-v2')) {
-    window.setTimeout(() => {
+    openingTimer = window.setTimeout(() => {
       open.value = true
+      openingTimer = null
     }, 350)
   }
   window.addEventListener('open-intent', reopen)
@@ -153,6 +155,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+  if (openingTimer !== null) window.clearTimeout(openingTimer)
   window.removeEventListener('open-intent', reopen)
   window.removeEventListener('keydown', onKeydown)
   if (open.value) restoreDocument()
